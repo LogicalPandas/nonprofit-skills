@@ -7,6 +7,7 @@ metadata:
   supervision_note: "Filed with the IRS; errors carry penalties and public-disclosure consequences."
   date_added: "2026-09-07"
   date_added_source: "git:1860ed47a83901ff5e6d45abc4a2ef05be8fd4cd"
+  last_reviewed: "2026-11-11"
 ---
 
 # Nonprofit Form 990 Preparation & Compliance
@@ -31,14 +32,18 @@ Match gross receipts and asset thresholds to the correct form (verify current-ye
 before relying on exact dollar figures, since they are periodically adjusted):
 
 - **990-N (e-Postcard)** — organizations normally with gross receipts ≤ $50,000; an 8-question
-  online-only filing. No paper alternative exists — missing three consecutive years causes automatic
-  revocation of exemption regardless of how small the organization is.
+  online-only filing. No paper alternative exists (an eligible organization may instead choose to file
+  990-EZ or the full 990), and Form 8868 cannot extend its due date — missing three consecutive years
+  causes automatic revocation of exemption regardless of how small the organization is.
 - **990-EZ** — gross receipts < $200,000 AND total assets < $500,000; a shortened version of the full
   return still requiring applicable schedules.
 - **990 (full)** — gross receipts ≥ $200,000 OR total assets ≥ $500,000; the complete form with all
   applicable schedules.
 - **990-PF** — required for all private foundations regardless of size (asset/receipts thresholds
   don't apply — a private foundation always files 990-PF, never 990-N/EZ/full).
+- **E-filing**: the 990, 990-EZ, and 990-PF must be filed electronically (paper is limited to returns
+  outside the IRS e-file window, such as older or late amended returns) — confirm the preparer's
+  e-file software and authorized signer well before the deadline.
 - Organizations should not "choose" a smaller variant to reduce disclosure burden if the actual
   numbers require a larger one — filing the wrong variant is itself a compliance error, not merely a
   transparency choice.
@@ -47,13 +52,17 @@ before relying on exact dollar figures, since they are periodically adjusted):
 
 - **Schedule A** — public charity status and the **public support test**: tracks whether the
   organization still qualifies as a public charity (vs. private foundation) under the 33⅓% support
-  test or the 10%-facts-and-circumstances test, averaged over a 5-year period. A multi-year decline
+  test or the 10%-facts-and-circumstances test, averaged over a 5-year period (this is the section
+  170(b)(1)(A)(vi) test; section 509(a)(2) organizations use a different one-third support test that
+  also caps investment and net unrelated business income at one-third). A multi-year decline
   in broad-based public support (e.g., increasing reliance on a small number of large donors/grants)
   can push an organization toward failing this test — flag this early, since reclassification as a
   private foundation triggers materially different excise tax and payout rules.
-- **Schedule B** — schedule of contributors above the reporting threshold; generally NOT required to
-  be made public (donor names/addresses on Schedule B are confidential, unlike the rest of the 990) —
-  a common disclosure mistake is releasing an unredacted Schedule B.
+- **Schedule B** — schedule of contributors above the reporting threshold; contributor names and
+  addresses are generally NOT required to be made public for 990/990-EZ filers (amounts and other
+  non-identifying information remain public) — a common disclosure mistake is releasing an unredacted
+  Schedule B. Exceptions: Schedule B is fully public for 990-PF filers and section 527 political
+  organizations.
 - **Schedule C** — political campaign and lobbying activities; ties directly to the 501(h) election
   and lobbying expenditure limits covered in depth in `nonprofit-c3-c4-structure`.
 - **Schedule G** — fundraising events and gaming; reconciles gross revenue, direct expenses, and net
@@ -75,13 +84,17 @@ before relying on exact dollar figures, since they are periodically adjusted):
 
 ## Part VI: Governance, Management, and Disclosure
 
-This section is scrutinized closely by funders, GuideStar/Candid, and state regulators as a proxy
+This section is scrutinized closely by funders, Candid (formerly GuideStar), and state regulators as a proxy
 for governance quality even though most of its questions are not strictly mandatory practices:
 
-1. Report actual voting board member count and how many are independent (no compensation or
-   material financial interest beyond director fees) — a low independence ratio invites follow-up.
-2. Answer whether the full board (not just a subcommittee) reviewed the 990 before filing — best
-   practice is a documented board or audit-committee review with adequate advance time, minuted.
+1. Report actual voting board member count and how many are independent (per the instructions: not
+   compensated as an officer or employee, no more than $10,000 as an independent contractor beyond
+   reasonable director compensation, and no Schedule L-reportable transaction involving the member or
+   a family member) — a low independence ratio invites follow-up.
+2. Answer whether a complete copy of the final 990 was provided to every voting board member before
+   filing (line 11a; "available on request" is a "No"), and describe the review process, if any, in
+   Schedule O (line 11b) — best practice is a documented board or audit-committee review with adequate
+   advance time, minuted.
 3. Confirm and describe: written conflict-of-interest policy (yes, with annual disclosure — see
    `nonprofit-bylaws-policy`), written whistleblower policy, written document retention policy, and
    the process used to determine compensation for the top management official and other officers
@@ -92,34 +105,46 @@ for governance quality even though most of its questions are not strictly mandat
 
 ## Public Disclosure Requirements
 
-- Organizations must provide copies of their three most recent Form 990s (excluding Schedule B donor
-  information) and their original exemption application (Form 1023/1024) with determination letter
-  to anyone who requests them in person or in writing, within statutory timeframes (in-person
-  requests: same day; written requests: within 30 days).
-- Widely available exception: if the return is posted on the organization's own website or a
-  recognized public database (e.g., the IRS's own tax-exempt organization search, or Candid/
-  GuideStar/ProPublica Nonprofit Explorer) in a downloadable format, the organization is not required
-  to separately fulfill individual copy requests.
-- A reasonable copying/mailing fee may be charged for paper fulfillment; the request cannot be
-  refused outright, and refusal or unreasonable delay carries per-day IRS penalties against
-  responsible individuals, not just the organization.
+- Organizations must provide copies of their three most recent Form 990s (excluding Schedule B
+  contributor names and addresses, except for private foundations and section 527 organizations)
+  and their exemption application (Form 1023/1024, with supporting documents and IRS letters such as
+  the determination letter) to anyone who requests them in person or in writing, within statutory timeframes (in-person
+  requests: same day, absent limited unusual circumstances; written requests: within 30 days of
+  receiving the request, or of payment if payment is required in advance).
+- Widely available exception: if the return is posted on the organization's own website or as part
+  of a third-party database of similar returns (e.g., Candid or ProPublica Nonprofit Explorer) that
+  meets the regulation's conditions (exact image of the filed return, free download, instructions on
+  the page), the organization is not required to separately fulfill individual copy requests. It
+  must still allow public inspection at its offices and tell each requester where the document is
+  posted (immediately for in-person requests, within 7 days for written ones).
+- A reasonable copying/mailing fee (no more than the IRS per-page copying charge plus actual
+  postage) may be charged for paper fulfillment; the request cannot be refused outright, and refusal
+  or unreasonable delay carries per-day IRS penalties ($20 per day, up to $10,000 per return; no cap
+  for the exemption application) against responsible individuals, not just the organization.
 
 ## Compliance Calendar
 
 1. **Due date**: the 15th day of the 5th month after fiscal year-end (e.g., May 15 for a calendar-
-   year filer) — build the internal prep calendar backward from this date, not forward from year-
-   start.
+   year filer; next business day if that falls on a weekend or legal holiday) — build the internal
+   prep calendar backward from this date, not forward from year-start.
 2. **Extension**: a single automatic 6-month extension is available via Form 8868, moving a calendar-
-   year filer's deadline to November 15 — file the extension before the original deadline, not after.
+   year filer's deadline to November 15 — file the extension by the original deadline, not after.
+   Form 8868 cannot extend a 990-N.
 3. **Internal milestones to calendar**: books closed and reconciled (30-60 days after year-end) →
    draft return from preparer/accountant → board or audit committee review window (allow at least
-   2 weeks, not a same-day rubber stamp) → filing → posting to organization's website/GuideStar
+   2 weeks, not a same-day rubber stamp) → filing → posting to organization's website/Candid
    profile update.
 4. **Automatic revocation risk**: failing to file for three consecutive years (including 990-N)
-   triggers automatic loss of tax-exempt status with no separate IRS notice beyond standard
-   correspondence — reinstatement requires a new exemption application and, depending on timing, back
-   -filing and a reasonable-cause statement. Treat three consecutive missed 990-Ns as seriously as a
-   missed full 990, since small organizations are the most common revocation victims.
+   triggers automatic loss of tax-exempt status, effective on the original due date of the third
+   missed return — the IRS is required to send a notice after two consecutive missed years and sends a
+   revocation letter (CP-120A) afterward, but revocation does not depend on the organization reading
+   either. Reinstatement requires a new exemption application (Form 1023, 1023-EZ, 1024, or 1024-A)
+   with the user fee. Retroactive reinstatement is available through the streamlined process
+   (990-EZ/990-N-eligible, first revocation, applying within 15 months of the revocation letter or
+   listing) or with a reasonable-cause statement (covering one missed year if within 15 months, all
+   three if later); outside the streamlined process it also requires paper back-filing of the missed
+   returns. Treat three consecutive missed 990-Ns as seriously as a missed full 990, since small
+   organizations are the most common revocation victims.
 
 ## Standard Deliverables
 
