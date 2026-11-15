@@ -1,6 +1,6 @@
 ---
 name: nonprofit-brand-messaging
-description: "Defines a nonprofit's brand voice, positioning statement, and messaging house (mission-aligned pillar messages, proof points, boilerplate) for consistent use across every channel. Use for tasks like \"define our brand voice and tone,\" \"write a positioning statement,\" \"build a messaging house/message map,\" \"create boilerplate language for our org,\" \"our website copy and our social posts sound inconsistent, fix that,\" or \"draft messaging guidelines for staff to use.\" Does not cover writing individual beneficiary stories (nonprofit-storytelling), annual report structure (nonprofit-annual-report), platform-specific social content calendars (nonprofit-social-media), press release writing (nonprofit-media-relations), or donation-page conversion copy (nonprofit-donation-page-copy) — those channels should draw on, but this skill does not produce, channel-specific copy."
+description: "Defines a nonprofit's brand voice, positioning statement, and messaging house (pillar messages, proof points, boilerplate, lexicon) as the source of truth for every channel. Use when asked to \"define our brand voice,\" \"write a positioning statement,\" \"build a messaging house,\" or \"our website and social posts sound inconsistent.\" Not for channel copy: beneficiary stories (use nonprofit-storytelling), annual reports (use nonprofit-annual-report), social calendars (use nonprofit-social-media), press releases (use nonprofit-media-relations), or donation pages (use nonprofit-donation-page-copy)."
 license: MIT
 metadata:
   supervision: "unsupervised"
@@ -11,26 +11,20 @@ metadata:
 
 # Nonprofit Brand Messaging
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to establish or fix the foundational messaging layer that every other communications
-channel should draw from: voice and tone, positioning relative to peer organizations, and a
-structured messaging house. Typical triggers: a rebrand or brand refresh, inconsistent tone across
-channels reported by staff or a board member, a merger requiring unified messaging
-(pairs with `nonprofit-mergers-fiscal-sponsorship`), a new ED wanting to reset public narrative, or
-onboarding new staff/volunteers who need a messaging reference.
-
-**Boundary:** This skill produces the reusable *messaging foundation* (voice, positioning, pillar
-messages, boilerplate) — not channel-specific execution. Individual beneficiary narratives are
-`nonprofit-storytelling`; annual report content structure is `nonprofit-annual-report`; social
-calendars/captions are `nonprofit-social-media`; press materials are `nonprofit-media-relations`;
-donation page copy is `nonprofit-donation-page-copy`. Those skills should cite this skill's messaging
-house as their source of truth for word choice and positioning, not redefine it.
+- This skill produces the reusable messaging foundation, not channel-specific execution. Channel
+  skills cite this messaging house as their source of truth and should not redefine it:
+  `nonprofit-storytelling` (beneficiary narratives), `nonprofit-annual-report` (report structure),
+  `nonprofit-social-media` (calendars and captions), `nonprofit-media-relations` (press materials),
+  `nonprofit-donation-page-copy` (donation page copy).
+- Merger-driven unified messaging pairs with `nonprofit-mergers-fiscal-sponsorship`.
+- Inconsistent internal answers about positioning can be a strategy symptom; pair with
+  `nonprofit-strategic-planning`.
 
 ## Standard Deliverable: The Messaging House
 
-Structure messaging as a "house" — a standard framework (roof, pillars, foundation) that keeps every
-channel's language traceable to one source of truth:
+Keep every channel's language traceable to one messaging house:
 
 - **Foundation:** Mission statement, vision statement, and 1-2 sentence "elevator pitch" (what we do,
   who we serve, why it matters, in plain language a stranger understands in 10 seconds).
@@ -52,6 +46,23 @@ channel's language traceable to one source of truth:
 - **Lexicon/terminology rules:** Approved and disallowed terms (e.g., "people experiencing
   homelessness" not "the homeless"; program-specific terms of art defined once) so language is
   consistent and identity-respectful across every writer.
+
+One-page messaging guide skeleton:
+
+```
+[ORG] MESSAGING GUIDE — owner: [name] · last reviewed: [date] · next review: [annual-report cycle]
+FOUNDATION   Mission: [ ]   Vision: [ ]   Elevator pitch (10 seconds): [ ]
+ROOF         Positioning: For [audience], [org] is the [category] that [differentiator],
+             because [reason to believe].   Peer test: could [named peer] say this? [no — why]
+PILLARS      1. Claim: [ ]  Proof point: [fact + source]  Supporting language: [ ]
+             2. Claim: [ ]  Proof point: [fact + source]  Supporting language: [ ]
+             3. Claim: [ ]  Proof point: [fact + source]  Supporting language: [ ]
+VOICE        [Trait 1] — We sound like: "[ ]"  Not like: "[ ]"
+             [Trait 2] — We sound like: "[ ]"  Not like: "[ ]"
+TONE SHIFTS  Crisis: [ ]   Celebration: [ ]   Volunteer recruitment: [ ]
+BOILERPLATE  About [Org]: [2-4 sentences]
+LEXICON      Use: [ ]   Avoid: [ ]   Defined terms: [ ]
+```
 
 ## Step-by-Step: Building or Refreshing Messaging
 
@@ -93,12 +104,8 @@ channel's language traceable to one source of truth:
 - **Skipping internal alignment** before external rollout — if the ED and board chair describe the
   mission differently in the same donor meeting, no channel-level fix will resolve the inconsistency.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the practitioner** (communications/ED staff): use the stakeholder interview step to surface
-  internal disagreement before writing anything, and ship the one-page guide, not just a strategy
-  deck — adoption depends on staff actually being able to find and use it.
-- **As an advisor/consultant**: treat divergent stakeholder answers to "what do we do and for whom"
-  as a diagnostic finding worth reporting to the board directly — inconsistent internal understanding
-  of positioning is often a governance/strategy symptom (pairs with `nonprofit-strategic-planning`),
-  not merely a communications polish issue.
+- Treat divergent stakeholder answers to "what do we do and for whom" as a diagnostic finding worth
+  reporting to the board directly, not merely a communications polish issue.
+- Ship the one-page guide, not just a strategy deck; adoption depends on staff being able to find it.

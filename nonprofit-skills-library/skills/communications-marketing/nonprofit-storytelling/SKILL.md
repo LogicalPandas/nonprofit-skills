@@ -1,6 +1,6 @@
 ---
 name: nonprofit-storytelling
-description: "Builds ethical beneficiary and impact storytelling for a nonprofit's case for support: selecting and structuring stories (narrative arc, protagonist framing), running dignity-safe informed-consent and interview processes, and rewriting \"poverty porn\"/savior-framed drafts into strengths-based narratives. Use for tasks like \"write a beneficiary story for our gala program,\" \"review this story for savior framing,\" \"build our case-for-support narrative,\" or \"train our team on ethical storytelling guidelines.\" Does not cover annual report layout/structure (nonprofit-annual-report), brand voice/messaging house (nonprofit-brand-messaging), social captions or content calendars (nonprofit-social-media), press releases/media pitching (nonprofit-media-relations), or donation-page conversion copy (nonprofit-donation-page-copy)."
+description: "Builds ethical beneficiary and impact stories for a nonprofit's case for support: dignity-centered story structure, informed consent and interview protocols, and rewriting savior-framed or \"poverty porn\" drafts into strengths-based narratives. Use when asked to \"write a beneficiary story for our gala,\" \"review this story for savior framing,\" \"build our case-for-support narrative,\" or \"train our team on ethical storytelling.\" Not for annual report structure (use nonprofit-annual-report), the messaging house (use nonprofit-brand-messaging), social posts (use nonprofit-social-media), press pitching (use nonprofit-media-relations), or donation page copy (use nonprofit-donation-page-copy)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,27 +11,14 @@ metadata:
 
 # Nonprofit Storytelling
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit needs to develop, vet, or fix narrative content that centers a
-beneficiary, client, community, or program impact — the "case for support" underlying fundraising,
-program, and communications work. Typical triggers:
-
-- Writing or editing a beneficiary/client story for a newsletter, gala video script, grant narrative,
-  or website "our impact" section.
-- Reviewing an existing story draft for dignity violations, savior framing, or trauma exploitation
-  before it goes public.
-- Building or revising an organization's storytelling/ethics guidelines, consent process, or
-  interview protocol.
-- Training board members, program staff, or volunteers on how to talk about clients publicly.
-- Structuring the overarching "case for support" narrative that other materials (appeals, proposals,
-  annual reports) will draw from.
-
-**Boundary:** This skill produces the *narrative content and ethical process* — the story itself. It
-does not lay out an annual report (`nonprofit-annual-report`), define brand voice/tone/key messages
-(`nonprofit-brand-messaging`), format social posts (`nonprofit-social-media`), pitch a story to a
-journalist (`nonprofit-media-relations`), or write conversion-optimized donation page copy
-(`nonprofit-donation-page-copy`). Those skills consume storytelling output; this skill creates it.
+- This skill creates the narrative content and the ethical process; channel skills consume it and
+  this skill does not reformat for them: `nonprofit-annual-report` (layout), `nonprofit-brand-messaging`
+  (voice, tone, key messages), `nonprofit-social-media` (posts), `nonprofit-media-relations` (pitching
+  a story to journalists), `nonprofit-donation-page-copy` (conversion copy),
+  `nonprofit-grant-writing` (proposal narrative sections), `nonprofit-annual-appeals` (appeal copy).
+- Formalizing storytelling guidelines as board-adopted policy: pair with `nonprofit-bylaws-policy`.
 
 ## Core Framework: The Dignity-Centered Narrative Arc
 
@@ -73,6 +60,14 @@ Flag and rewrite if the story contains any of these:
   disclosure.
 - Lack of a name, or use of only a diagnosis/condition/need as the identifying label ("a homeless
   man," "an at-risk youth").
+
+### Before/After Rewrite Example (illustrative, fictional)
+
+| | Text |
+|---|---|
+| Before (savior-framed) | "When Maria came to us, she had nothing. Homeless and hopeless, she didn't know where to turn. Thanks to your generosity, we saved her family." |
+| After (dignity-centered) | "Maria is a home health aide and the mother of two who sings in her church choir. When her rent rose by a third in one year, she and her kids lost their apartment. Maria worked with our housing team to find a unit near her clients. 'I want my kids to finish the school year where their friends are,' she says. Next, she's studying for her CNA license." |
+| What changed | Context before crisis; structural cause (rent increase) named; Maria acts, the org partners; her own words; closes on her goal, not a rescue. Consent and review required before use. |
 
 ## Consent and Interview Process (Standard Deliverable: Story Consent Protocol)
 
@@ -126,12 +121,8 @@ A defensible protocol has five parts — build this as a one-page document if th
 - **Skipping internal review**: program staff closest to the relationship should sanity-check drafts
   for accuracy and re-traumatization risk before communications finalizes copy.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the practitioner** (development/communications staff): use the consent protocol and dignity
-  checklist directly as your production workflow before every published story; keep the withdrawal
-  log current.
-- **As an advisor/consultant**: introduce the savior-framing checklist as a governance tool — propose
-  it become a board-adopted storytelling policy (pairs with `nonprofit-bylaws-policy` for
-  formalizing it), and use an audit of the client's last 5-10 published stories against the checklist
-  as a low-cost, high-credibility diagnostic deliverable early in an engagement.
+- Audit the client's last 5-10 published stories against the savior-framing checklist as a low-cost,
+  high-credibility early diagnostic.
+- Propose the checklist as a board-adopted storytelling policy (pairs with `nonprofit-bylaws-policy`).
