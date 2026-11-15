@@ -1,6 +1,6 @@
 ---
 name: nonprofit-eos-traction
-description: "Adapts the EOS/Traction operating system for nonprofits: Vision/Traction Organizer (V/TO), Rocks (90-day priorities), Level 10 Meetings (L10s) with IDS, weekly Scorecards with leading-indicator metrics, and the Accountability Chart mapped onto a nonprofit's ED/board/staff structure. Use when a user says things like \"we want to run EOS,\" \"help me set our quarterly Rocks,\" \"how do I structure an L10 meeting,\" \"build our accountability chart,\" or \"our meetings are unproductive and we want more accountability.\" Does not cover setting the 3-5 year strategic priorities themselves (use nonprofit-strategic-planning, whose output feeds the V/TO's long-term goals) and does not cover board governance structure, board meeting agendas, or committee design (use nonprofit-board-governance)."
+description: "Adapts the EOS/Traction operating system for nonprofits: Vision/Traction Organizer, quarterly Rocks, weekly Level 10 meetings with IDS, leading-indicator Scorecards, and an Accountability Chart mapped onto ED, board, and staff roles. Use when someone says 'we want to run EOS,' 'help me set our quarterly Rocks,' 'how do I run an L10,' or 'our meetings are unproductive and nothing gets done between them.' Not for setting 3-5 year strategic priorities (use nonprofit-strategic-planning, which feeds the V/TO), board meetings or committees (use nonprofit-board-governance), or the board-facing KPI dashboard (use nonprofit-executive-dashboard)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,75 +11,57 @@ metadata:
 
 # Nonprofit EOS/Traction Operating System
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when an organization wants to install or troubleshoot the Entrepreneurial Operating
-System (EOS), as described in Gino Wickman's *Traction*, adapted for nonprofit structure and
-culture. Typical triggers: "our staff meetings are chaos and nothing gets done between them," "we
-want quarterly priorities we actually track," "set up our scorecard," "who owns what on our team,"
-"run our L10," "what are our Rocks this quarter." This is an *execution and meeting-rhythm* system,
-not a strategy-setting process.
+An *execution and meeting-rhythm* system for the staff leadership team, not a strategy-setting
+process. EOS terminology (Rocks, L10, Integrator/Visionary) comes from a trademarked methodology
+(EOS Worldwide): internal use is fine, but a certified rollout with full materials is a separate,
+paid path through a licensed EOS Implementer.
 
-**Boundary with siblings:**
-- The organization's 3-5 year strategic priorities and environmental scan are
-  `nonprofit-strategic-planning`. EOS takes those priorities as a given and translates them into
-  quarterly Rocks and weekly metrics — it does not generate them. If a client has no strategic plan
-  yet, recommend running that skill first (or in parallel, using the V/TO's 3-Year Picture as a
-  lightweight substitute).
-- Formal board governance — board meeting structure, committee charters, board self-assessment — is
-  `nonprofit-board-governance`. The Accountability Chart and L10 in this skill cover the *staff*
-  leadership team, not the board. EOS can inform how the ED reports to the board, but does not
-  replace board process.
-- Executive transition and leadership pipeline planning is `nonprofit-succession-planning`; the
-  Accountability Chart here is a current-state org design tool, not a succession tool.
+- 3-5 year strategic priorities and environmental scan: `nonprofit-strategic-planning`. EOS takes
+  those priorities as given. With no plan yet, run that skill first (or use the V/TO's 3-Year
+  Picture as a lightweight substitute in parallel).
+- Board meeting structure, committee charters, board self-assessment: `nonprofit-board-governance`.
+  The Accountability Chart and L10 here cover the staff leadership team, not the board.
+- The ED's monthly KPI dashboard and quarterly board scorecard: `nonprofit-executive-dashboard`
+  (it borrows the Scorecard discipline but does not install EOS).
+- Executive transition and leadership pipeline: `nonprofit-succession-planning`; the
+  Accountability Chart is a current-state design tool, not a succession tool.
 
-## Core EOS Terminology and Tools
+## EOS Tools — Nonprofit Adaptations
 
-EOS is built around six components: Vision, People, Data, Issues, Process, Traction. For a
-nonprofit adopting EOS, translate/adapt these named tools:
+1. **V/TO** — reframe the 10-year target as a bold long-range mission milestone (not a revenue
+   number) and marketing strategy as constituent/beneficiary strategy. Feed the 3-Year Picture and
+   1-Year Plan from the strategic plan rather than generating them inside EOS.
+2. **Core Values** — 3-5 observable behaviors the org hires, fires, reviews, and recognizes
+   against. Nonprofit failure mode: aspirational mission language ("we care about equity") instead
+   of behaviors ("we assume positive intent," "we finish what we start"). If a value can't be used
+   in a hiring interview or performance conversation, rewrite it.
+3. **Accountability Chart** — 3-7 functional Seats (e.g., Programs, Development, Finance & Ops,
+   Communications), one name per Seat, 3-5 key outcomes each. Map the ED into the Integrator seat;
+   if a founder or long-tenured ED functions as external face, fundraiser, and vision-holder, name
+   that the Visionary seat. Many nonprofit EDs are Visionary-Integrator hybrids — a capacity strain
+   worth addressing with a COO/Director of Operations hire once budget allows.
+4. **Rocks** — 3-5 per person or team per 90-day quarter (EOS allows up to 7; start at 3-5), each
+   with a single owner and a binary done/not-done definition. Company Rocks roll up from the
+   1-Year Plan.
+5. **Scorecard** — 5-15 weekly leading-indicator numbers with a target per line, reviewed every
+   L10. Annual lagging metrics (total revenue, annual outcomes) belong in board reporting, not the
+   weekly pulse. Example format (targets are placeholders to set locally):
 
-1. **V/TO (Vision/Traction Organizer)** — A two-page document: page one is the 8 Vision questions
-   (core values, core focus/mission-niche, 10-year target — reframe as a bold long-range mission
-   milestone for a nonprofit rather than a revenue number, marketing strategy reframed as
-   constituent/beneficiary strategy, 3-year picture); page two is the Traction section (1-year plan,
-   quarterly Rocks, issues list). For nonprofits, feed the 3-year picture and 1-year plan directly
-   from an existing strategic plan's priorities rather than generating them fresh inside EOS.
-2. **Core Values** — 3-5 behaviors the organization actually hires, fires, reviews, and recognizes
-   against. Nonprofit-specific failure mode: teams write aspirational mission language ("we care
-   about equity") instead of observable behaviors ("we assume positive intent," "we finish what we
-   start") — Core Values must be usable in a hiring interview or a performance conversation, or
-   they're just a plaque on the wall.
-3. **Accountability Chart** — Not an org chart of titles; a chart of the 3-7 major *functions*
-   (Seats) a healthy organization needs (e.g., Programs, Development/Fundraising, Finance & Ops,
-   Marketing/Communications) with one name in each seat, plus that seat's 3-5 key roles/outcomes.
-   Map the ED into the "Integrator" seat (running the day-to-day, holding the team accountable) and,
-   if a founder or long-tenured ED functions more as external face/fundraiser/vision-holder, name
-   that the "Visionary" seat — many nonprofit EDs are actually Visionary-Integrator hybrids, which
-   this system flags as a common capacity strain worth addressing with a COO/Director of Operations
-   hire once budget allows.
-4. **Rocks** — The 3-5 most important priorities (EOS allows up to 7; start at 3-5) each person/leadership team commits to finishing in
-   the current 90-day quarter, each with a single owner and a measurable "done" definition. Company
-   Rocks roll up from the V/TO's annual plan; each leader also sets individual Rocks. A Rock without
-   a named owner and a binary done/not-done definition is not a real Rock.
-5. **Scorecard** — A weekly single-page sheet of 5-15 leading-indicator numbers (not lagging
-   outcomes) with a goal/target per line, reviewed every L10. Nonprofit examples: dollars in pledged
-   gifts this week (leading), volunteer hours logged, program enrollment vs. capacity, cost per
-   outcome, days-cash-on-hand. Avoid populating the Scorecard only with lagging annual metrics
-   (total revenue, annual outcomes) — those belong in board reporting, not a weekly pulse check.
-6. **L10 Meeting (Level 10 Meeting)** — A strict weekly 90-minute leadership team meeting with a
-   fixed agenda:
-   - Segue (5 min): good news, personal and organizational
-   - Scorecard review (5 min): numbers only, flag misses
-   - Rock review (5 min): on-track/off-track status, no discussion yet
-   - Customer/Stakeholder & Employee Headlines (5 min): brief updates
-   - To-Do List review (5 min): prior week's action items
-   - IDS — Identify, Discuss, Solve (60 min): the meeting's real work; the team lists Issues, prioritizes
-     the top 3, and solves them one at a time to a documented resolution
-   - Conclude (5 min): recap to-dos, rate the meeting 1-10, cascading messages
-   A meeting that skips straight to open discussion without this structure is not an L10 — the
-   discipline of the agenda, not the topics, is what EOS calls "Traction."
-7. **Issues List** — A running list of obstacles, opportunities, and ideas parked for IDS rather
-   than derailing other agenda items or one-on-one conversations in the moment.
+   | Measurable | Owner | Weekly goal | Wk 1 | Wk 2 | Wk 3 |
+   |------------|-------|-------------|------|------|------|
+   | Pledged gift dollars this week | Dev director | [ ] | | | |
+   | Volunteer hours logged | Volunteer manager | [ ] | | | |
+   | Program enrollment vs. capacity | Program director | [ ]% | | | |
+   | Days cash on hand | Finance lead | ≥ [ ] | | | |
+   | Grant reports due in next 30 days, on track | Grants manager | 100% | | | |
+
+6. **L10 Meeting** — weekly 90 minutes, fixed agenda: segue, Scorecard, Rock review,
+   stakeholder/employee headlines, to-do review (5 minutes each), IDS on the top 3 issues (60
+   minutes), conclude with to-dos, cascading messages, and a 1-10 rating. Skipping straight to open
+   discussion is not an L10; the agenda discipline is the point.
+7. **Issues List** — park obstacles and ideas for IDS rather than derailing other agenda items.
 
 ## Nonprofit-Specific Adaptation Steps
 
@@ -103,23 +85,25 @@ nonprofit adopting EOS, translate/adapt these named tools:
    every L10 personally with no one else empowered to call out a skipped step, the system tends to
    erode within 6 months.
 
-## Advisor Framing
+## For advisors
 
-As a consultant introducing EOS to a nonprofit client:
-- Confirm there's an underlying strategic direction (formal plan or at least a clear board-endorsed
-  direction) before selling EOS — EOS is an execution operating system, not a substitute for
-  strategy; installing it on top of an undefined strategy just produces well-run meetings about the
-  wrong priorities.
-- Be explicit that EOS terminology (Rocks, L10, Integrator/Visionary) is drawn from a trademarked
-  methodology (EOS Worldwide); using the branded terms and tools with a client is fine for internal
-  use, but flag to clients considering a certified rollout that engaging a licensed EOS Implementer
-  is a separate, paid path if they want full certification and materials.
-- The highest-leverage diagnostic question for a nonprofit client: "who is your Integrator?" — if
-  the honest answer is "nobody, the ED does everything," that capacity gap, not the meeting format,
-  is usually the real presenting problem.
-- Expect resistance to Core Values work from mission-driven staff who read it as corporate jargon;
-  reframe Core Values explicitly as "the behaviors that make our mission-driven culture real," not
-  as an import from the business world.
+- Confirm a board-endorsed strategic direction exists before selling EOS; otherwise it produces
+  well-run meetings about the wrong priorities.
+- Ask "who is your Integrator?" first — if the honest answer is "nobody, the ED does everything,"
+  that capacity gap, not the meeting format, is the presenting problem.
+- Expect mission-driven staff to read Core Values work as corporate jargon; frame it as "the
+  behaviors that make our mission-driven culture real."
+
+## Verify Before Acting
+
+Before rolling out the V/TO, Rocks, or Scorecard to staff:
+
+- [ ] The 3-Year Picture and 1-Year Plan match the board-approved strategic plan's priorities.
+- [ ] Every Rock has one owner and a binary done definition; no one holds more than 3-5.
+- [ ] Every Scorecard number can be pulled weekly from a named system without a manual scramble,
+      confirmed with the finance/data lead.
+- [ ] Every Seat on the Accountability Chart has one name; people holding 3+ Seats are flagged.
+- [ ] Someone besides the ED is empowered to hold L10 agenda discipline.
 
 ## Common Failure Modes
 

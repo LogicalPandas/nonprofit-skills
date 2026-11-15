@@ -1,6 +1,6 @@
 ---
 name: nonprofit-strategic-planning
-description: "Runs an end-to-end nonprofit strategic planning process: environmental scans (SWOT/PEST), stakeholder input (board/staff/community surveys and interviews), priority-setting retreats, 3-5 year plan structure (mission/vision alignment, strategic pillars, goals, objectives), and board/staff facilitation agendas. Use when a user says things like \"we need a strategic plan,\" \"our strategic plan expires this year,\" \"help me facilitate a board retreat to set priorities,\" or \"how do we structure a 3-year plan.\" Does not cover translating a chosen program strategy into a logic model or theory of change (use nonprofit-program-design), does not cover installing a weekly execution/accountability operating system like EOS (use nonprofit-eos-traction), and does not cover evaluating specific new revenue streams (use nonprofit-revenue-diversification)."
+description: "Runs an end-to-end nonprofit strategic planning process: scoping, environmental scan and stakeholder input, a priority-setting retreat, a 3-5 year plan with priorities, goals, objectives, and owners, a plan on a page, and board adoption. Use when someone says 'we need a strategic plan,' 'our strategic plan expires this year,' 'help me facilitate a board retreat to set priorities,' or 'how do we structure a 3-year plan.' Not for program logic models (use nonprofit-program-design), weekly execution systems like EOS (use nonprofit-eos-traction), KPI dashboards (use nonprofit-executive-dashboard), or vetting specific revenue streams (use nonprofit-revenue-diversification)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,26 +11,16 @@ metadata:
 
 # Nonprofit Strategic Planning
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to run or advise on a full strategic planning cycle: launching the process, scanning
-the environment, gathering stakeholder input, facilitating priority-setting, drafting the plan
-document, and getting board approval. Typical triggers: "our 3-year strategic plan is expiring,"
-"we just got a new ED and need to reset direction," "the board wants a retreat to set priorities,"
-"write our SWOT analysis," "how many strategic priorities should we have," "help me build a
-strategic plan on one page."
-
-**Boundary with siblings:**
-- Once a strategic priority names a *program* direction (e.g., "expand youth services to a new
-  region"), building the actual logic model / theory of change for that program is
-  `nonprofit-program-design`.
-- Turning the *approved* plan into weekly/quarterly execution habits (Rocks, scorecards, L10s) is
-  `nonprofit-eos-traction`. This skill produces the plan; EOS/Traction runs it day to day.
-- If a priority is "diversify revenue," the feasibility work on specific earned-income or social
-  enterprise models is `nonprofit-revenue-diversification`. This skill just names the priority and
-  its success measure.
-- Leading the organization *through* the disruption a plan causes (layoffs, restructuring, pivot
-  communication) is `nonprofit-change-management`.
+- Logic model / theory of change for a program a priority names: `nonprofit-program-design`.
+- Weekly/quarterly execution habits for the approved plan (Rocks, scorecards, L10s):
+  `nonprofit-eos-traction`. This skill produces the plan; EOS runs it day to day.
+- The ED dashboard and board scorecard that measure the plan: `nonprofit-executive-dashboard`.
+- Feasibility of specific earned-income or social enterprise models under a "diversify revenue"
+  priority: `nonprofit-revenue-diversification`. This skill names the priority and its measure.
+- Leading the organization through the disruption a plan causes (layoffs, restructuring, pivot
+  communication): `nonprofit-change-management`.
 
 ## Core Framework: The Five-Phase Planning Cycle
 
@@ -54,7 +44,8 @@ or Phase 5 (plan approved, then shelved and never referenced again).
    senior leadership should have an input channel but rarely sit on the committee itself.
 3. Decide whether to engage an **outside facilitator**. Rule of thumb: use one when (a) the ED/board
    chair relationship is a topic the plan needs to address, (b) the last plan failed to get
-   traction, or (c) budget allows ($3,000-$25,000+ depending on org size and process depth). Small
+   traction, or (c) budget allows (one rough range is $3,000-$25,000+ depending on org size and
+   process depth; get current local quotes before budgeting). Small
    orgs with healthy dynamics can self-facilitate using this skill's agendas.
 4. Set a **timeline**: typical cycle is 4-6 months from kickoff to board adoption. Compress to
    6-8 weeks only for bridge plans.
@@ -65,15 +56,10 @@ or Phase 5 (plan approved, then shelved and never referenced again).
 
 Run these scans in parallel; each produces raw material for Phase 3, not a deliverable in itself.
 
-- **SWOT Analysis** (Strengths, Weaknesses, Opportunities, Threats) — Strengths/Weaknesses are
-  internal (staff capacity, brand, financial health, program quality); Opportunities/Threats are
-  external (funding landscape, competitor/peer orgs, policy shifts, demographic trends). Collect via
-  a facilitated staff session plus a separate board session — do not run them together, since board
-  members often self-censor around staff and vice versa.
-- **PEST/PESTLE Scan** (Political, Economic, Social, Technological, [Legal, Environmental]) — Use
-  this specifically to surface external trends the SWOT's "Threats/Opportunities" column tends to
-  miss, e.g., shifting government funding priorities, AI adoption in the sector, demographic change
-  in the service area.
+- **SWOT** — collect via a facilitated staff session plus a separate board session; do not run
+  them together, since board members often self-censor around staff and vice versa.
+- **PEST/PESTLE** — use it to surface external trends the SWOT tends to miss, e.g., shifting
+  government funding priorities, AI adoption in the sector, demographic change in the service area.
 - **Stakeholder input**: board survey, staff survey, and — critically, and most often skipped —
   structured input from clients/beneficiaries, funders, and community partners. Use short (8-12
   question) surveys plus 6-10 one-on-one or small-group interviews with key informants (major
@@ -124,41 +110,63 @@ staff-facing appendix with more operational detail):
 Also produce a **one-page visual summary** (a "plan on a page") for staff-wide distribution — this
 is the version that actually gets referenced day to day, not the full narrative document.
 
+```
+[Organization] Strategic Plan [start year]-[end year] — Plan on a Page
+Mission: [one sentence]        Vision: [one sentence]        Values: [3-5 words]
+
+Priority 1: [name]
+  3-year goal: [outcome]
+  Year-1 objectives: [objective] — owner: [name] — metric: [measure + target]
+Priority 2: [name]   (same shape)
+Priority 3: [name]   (same shape; 3-5 priorities maximum)
+
+We will stop or de-prioritize: [items]
+How we'll track it: quarterly board check-in; annual refresh in [month]
+```
+
 ### Phase 5: Adopt & Cascade
 
 1. Present to the full board for formal adoption (board vote/resolution, not just "discussion").
 2. Cascade to staff: an all-staff meeting where the ED walks through the plan-on-a-page and
    explicitly connects it to department/team work plans.
 3. Set a **quarterly check-in cadence** at board meetings (a standing 15-minute agenda item
-   reviewing objective status by priority) and a **annual refresh** (revisit priorities, not a full
+   reviewing objective status by priority) and an **annual refresh** (revisit priorities, not a full
    re-plan, each year of the 3-year cycle).
 4. Assign an internal owner (often the ED or a COO/deputy director) accountable for keeping the plan
    alive between board meetings — plans with no assigned owner are the ones that get shelved.
 
-## Advisor Framing
+## For advisors
 
-As an outside advisor or consultant guiding a client through this process:
-- Sell the *process design* first, separate from content: propose the phase timeline, governance
-  structure, and facilitator role before touching any actual strategy content — clients often
-  conflate "we need a strategic plan" with "we need a consultant to tell us the answer," and part of
-  the engagement is resetting that expectation.
-- Frame the board's job as **ratifying tradeoffs**, not wordsmithing — if a board session turns into
-  editing sentence-level language, redirect to whether the underlying priority and resource
-  commitment are right.
-- Watch for the ED using the planning process to relitigate a decision the board already made, or a
-  board faction using it to challenge the ED — flag this as a governance dynamic to name directly
-  with the board chair, not something to paper over in the plan document.
-- Price/scope multi-phase engagements distinctly (scan phase vs. facilitation vs. document drafting)
-  so the client can choose to self-serve part of the process using this skill's frameworks.
+- Sell the *process design* (phase timeline, governance, facilitator role) before any content;
+  reset the expectation that the consultant will supply the answer. Scope scan, facilitation, and
+  drafting as separate phases so the client can self-serve parts.
+- Frame the board's job as **ratifying tradeoffs**, not wordsmithing.
+- If the ED is using the process to relitigate a board decision, or a board faction is using it to
+  challenge the ED, name it with the board chair as a governance issue rather than papering over it.
+
+## Verify Before Acting
+
+Before the plan goes to the board for adoption:
+
+- [ ] 3-5 priorities, each a real choice with tradeoffs, plus a written stop-doing list.
+- [ ] Every annual objective has a named owner and a metric with a target.
+- [ ] Trend data (revenue mix, enrollment/outcomes, unit costs) cited in the plan matches the
+      finance and program records.
+- [ ] Resource implications are flagged and handed to `nonprofit-budgeting` (or
+      `nonprofit-revenue-diversification`) before adoption.
+- [ ] Client/beneficiary, funder, and partner input is reflected, not only board and staff input.
+- [ ] The adoption motion, quarterly check-in slot, and internal plan owner are set.
 
 ## Common Failure Modes
 
-- **Plan as shelf-ware**: no cascade, no quarterly check-in, no owner — the plan is adopted in June
-  and never mentioned again until the next cycle starts.
-- **Priority sprawl**: 8+ "priorities" that are really just a list of everything the org already
-  does, signaling no real choices were made.
+- **No owner between board meetings**: the plan is adopted in June and never mentioned again. Name
+  the internal owner and put the quarterly check-in on the board calendar before the adoption vote.
+- **Priority sprawl and operational duties**: 8+ "priorities," or baseline duties like "run great
+  programs" listed as priorities, signal that no choice was made. Test each with "what would we stop doing to fund this?"
 - **Scan without synthesis**: months of surveys and data with no facilitated session to turn it into
-  decisions — data collection becomes a substitute for deciding.
-- **ED-only plan**: staff and board never had real input, so buy-in is missing at rollout.
-- **No resourcing link**: priorities adopted with no discussion of the budget, staffing, or fundraising
-  implications, so Year 1 objectives quietly fail for lack of funded capacity.
+  decisions. Circulate a written scan summary before the retreat and cut off data collection at
+  the deadline.
+- **Input collected but not reflected**: staff and community gave input that never visibly shaped
+  the plan, so buy-in is missing at rollout. Include a "what we heard and what changed" page.
+- **No resourcing link**: priorities adopted with no budget, staffing, or fundraising discussion,
+  so Year 1 objectives quietly fail. Cost Year 1 objectives against the next budget before adoption.

@@ -1,6 +1,6 @@
 ---
 name: nonprofit-mergers-fiscal-sponsorship
-description: "Assesses and structures formal inter-organizational combinations: merger/consolidation feasibility studies, joint venture structuring, and fiscal sponsorship arrangements (Model A comprehensive vs. Model C pre-approved grant relationship), including due diligence checklists, culture-fit assessment, integration planning, and sponsorship agreement terms (fees, liability, IP/donor-list ownership on exit). Use for \"we're considering merging with another nonprofit,\" \"should we become a fiscally sponsored project,\" \"we want to sponsor a smaller grassroots group,\" \"evaluate this merger partner,\" or \"draft our fiscal sponsorship agreement terms.\" Not for 501(c)(3)/501(c)(4) dual-entity lobbying structures (use nonprofit-c3-c4-structure), advocacy coalitions of legally separate orgs (use nonprofit-coalition-building), or leading staff/culture through the resulting transition (use nonprofit-change-management)."
+description: "Assesses and structures formal nonprofit combinations on two tracks: merger, consolidation, and joint venture feasibility (due diligence, culture fit, structure, integration planning), and fiscal sponsorship (Model A vs. Model C, agreement terms on fees, liability, and IP/donor-list ownership on exit). Use when someone says 'we're considering merging with another nonprofit,' 'should we become a fiscally sponsored project,' or 'draft our fiscal sponsorship agreement terms.' Not for c3/c4 dual-entity structures (use nonprofit-c3-c4-structure), advocacy coalitions (use nonprofit-coalition-building), or leading staff through the transition (use nonprofit-change-management)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -11,36 +11,26 @@ metadata:
 
 # Nonprofit Mergers & Fiscal Sponsorship
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for formal legal/structural combinations between nonprofits: full mergers,
-consolidations, parent-subsidiary restructures, joint ventures, and fiscal sponsorship (both
-becoming a sponsored project and acting as a sponsor). Typical triggers: "two similar orgs in our
-region are talking about combining," "our funder is pushing us to consider a merger," "we're too
-small to have our own 501(c)(3) status yet, should we get fiscally sponsored," "we want to sponsor
-emerging grassroots groups," "what should be in our fiscal sponsorship agreement."
+Formal legal/structural combinations: mergers, consolidations, parent-subsidiary restructures,
+joint ventures, and fiscal sponsorship (becoming a sponsored project or acting as a sponsor).
+Two tracks with separate procedures: **merger/JV feasibility** (Merger Feasibility Process below)
+and **fiscal sponsorship** (model choice plus the Agreement Key Terms Checklist).
 
-**Boundary with siblings:**
-- Operating two related but distinct legal entities specifically to separate charitable and
-  lobbying/political activity (501(c)(3)/501(c)(4) pairs) is `nonprofit-c3-c4-structure` — a
-  different structuring problem (tax/advocacy compliance) than the growth/consolidation questions
-  here.
-- Informal, non-legal partnerships where organizations stay independent but align on an advocacy
-  campaign (MOUs for shared campaign work, not shared corporate structure) are
-  `nonprofit-coalition-building`.
-- Once a merger or sponsorship decision is made, the people-side work of managing the transition —
-  culture integration communication, staff anxiety, layoff/role-consolidation messaging — is
-  `nonprofit-change-management`. This skill covers the feasibility analysis and deal structuring;
-  that skill covers leading people through it.
+- 501(c)(3)/501(c)(4) pairs that separate charitable and lobbying/political activity:
+  `nonprofit-c3-c4-structure`.
+- Informal partnerships where organizations stay independent and align on an advocacy campaign
+  (MOUs, not shared corporate structure): `nonprofit-coalition-building`.
+- The people side once a decision is made — culture integration communication, staff anxiety,
+  role-consolidation messaging: `nonprofit-change-management`.
 
 ## Core Framework: Types of Combination
 
-Nonprofit combinations exist on a spectrum from least to most integrated:
+From least to most integrated: strategic alliance (closer to `nonprofit-coalition-building` if
+advocacy-focused) → joint venture (a new, often jointly governed program or entity; parents stay
+independent) → fiscal sponsorship → full merger/consolidation.
 
-1. **Strategic alliance / partnership** — Independent entities collaborating on a defined activity,
-   no shared governance. (Falls closer to `nonprofit-coalition-building` if advocacy-focused.)
-2. **Joint venture** — Entities create a new, often jointly governed program or entity for a
-   specific purpose while both parents remain independent.
 3. **Fiscal sponsorship** — A sponsored project operates under a sponsor's 501(c)(3) status rather
    than obtaining its own; two standard models:
    - **Model A (Comprehensive/Direct)**: The project's staff become employees of the sponsor, the
@@ -95,7 +85,8 @@ Nonprofit combinations exist on a spectrum from least to most integrated:
 6. **Board approval and legal filing**: both boards must formally approve per their bylaws and
    applicable state nonprofit corporation law; file merger/consolidation documents with the state,
    notify the IRS, and update charitable registrations in every state where either entity is
-   registered to solicit.
+   registered to solicit. Confirm current filing, notice, and attorney general requirements with
+   counsel and the state's secretary of state and charity regulator before setting the timeline.
 7. **Integration planning** (100-day plan): systems (CRM, financial, HR/payroll) consolidation
    sequence, brand transition plan, staff role finalization, board seating — hand off the
    people/culture execution of this plan to `nonprofit-change-management`.
@@ -104,7 +95,8 @@ Nonprofit combinations exist on a spectrum from least to most integrated:
 
 - **Fee**: typically 5-15% of the project's revenue, scaled to the administrative burden the sponsor
   actually carries (Model A comprehensive relationships justify higher fees than a light-touch
-  Model C).
+  Model C). This is a market norm, not a rule; verify current norms with the National Network of
+  Fiscal Sponsors or comparable sponsors before quoting.
 - **Scope of sponsor's control and liability** (should match the chosen model — Model A sponsors
   need real approval authority over hiring/spending to justify their liability exposure).
 - **IP and asset ownership**: who owns the project name, donor list, website, and any created IP if
@@ -117,22 +109,30 @@ Nonprofit combinations exist on a spectrum from least to most integrated:
 - **Reporting cadence** (financial reports the project must supply to the sponsor for the sponsor's
   own 990 and books).
 
-## Advisor Framing
+## For advisors
 
-As a consultant guiding a merger or sponsorship engagement:
-- Serve as the neutral third party holding the process — EDs and board chairs on both sides are
-  poor process-facilitators for their own merger given obvious incentive conflicts (job security,
-  legacy, brand).
-- Push clients past "merger of equals" language when it isn't true — naming the real power balance
-  (funding size, staff size, brand strength) early prevents a slower, more damaging collapse of
-  trust during integration planning.
-- For fiscal sponsorship, help a prospective sponsored project honestly assess whether they actually
-  need their own 501(c)(3) at all, or whether permanent fiscal sponsorship (not just a bridge to
-  independence) better fits their scale — many small projects over-invest in incorporating
-  independently when sponsorship indefinitely would serve the mission better and cheaper.
-- Advise sponsors to formally vet a prospective sponsored project's leadership and financial
-  controls before signing — the sponsor inherits real legal and reputational risk, especially under
-  Model A.
+- Hold the process as the neutral third party; EDs and board chairs are poor facilitators of their
+  own merger (job security, legacy, brand). Name the real power balance (funding, staff, brand
+  strength) early instead of accepting "merger of equals" language that isn't true.
+- Help a prospective sponsored project test whether it needs its own 501(c)(3) at all; permanent
+  fiscal sponsorship often serves small projects better and cheaper than incorporating.
+- Have sponsors formally vet a prospective project's leadership and financial controls before
+  signing — the sponsor inherits real legal and reputational risk, especially under Model A.
+
+## Verify Before Acting
+
+Before either board votes or anyone signs:
+
+- [ ] Counsel has reviewed the structure, the merger documents or sponsorship agreement, and the
+      state nonprofit corporation law steps (expert-required).
+- [ ] Due diligence ran in both directions and covered all five categories, including culture and
+      governance.
+- [ ] Restricted funds, namesake gifts, and contracts needing change-of-control consent have a
+      documented treatment.
+- [ ] Sponsorship agreements match the chosen model (Model A control and liability vs. Model C
+      expenditure responsibility) and include IP, donor-list, and exit terms.
+- [ ] The agreement and all materials say "fiscal sponsor," not "fiscal agent."
+- [ ] Charitable registration updates are listed for every state where either entity solicits.
 
 ## Common Failure Modes
 
