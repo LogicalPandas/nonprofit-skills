@@ -1,6 +1,6 @@
 ---
 name: nonprofit-coalition-building
-description: "Builds and runs multi-organization advocacy coalitions: partner recruitment, coalition MOUs and governance structures, shared decision-making rules, message alignment across partners, and joint sign-on letters. Use when a user asks to form or join an advocacy coalition, draft a coalition MOU or governance charter, resolve disagreement between partner orgs on messaging or strategy, coordinate a joint sign-on letter or statement, or design how a coalition makes decisions and shares credit/resources. Covers cross-organizational structure and alignment, not single-org issue research (nonprofit-policy-analysis), not one org's legislator meetings (nonprofit-legislative-advocacy), and not public supporter mobilization tactics (nonprofit-grassroots-mobilization)."
+description: "Builds and runs multi-organization advocacy coalitions: partner recruitment, governance models, coalition MOUs and decision rules, message alignment across partners, joint sign-on letters, and conflict resolution and wind-down. Use when asked 'help six orgs set up how we'll work as a coalition,' 'draft a coalition MOU,' 'a partner broke from our agreed position,' or 'coordinate a joint sign-on letter.' Not for single-org issue research (use nonprofit-policy-analysis), one org's legislator meetings (use nonprofit-legislative-advocacy), public supporter mobilization (use nonprofit-grassroots-mobilization), or one org's c3/c4 lobbying limits (use nonprofit-c3-c4-structure)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,23 +11,8 @@ metadata:
 
 # Nonprofit Coalition Building
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when advocacy work spans more than one organization:
-
-- Identifying and recruiting partner organizations for a new advocacy coalition
-- Drafting a coalition MOU, charter, or governance document (decision rules, membership criteria,
-  exit/dissolution terms)
-- Designing coalition governance structure: steering committee, working groups, backbone/lead-org
-  model, rotating chair
-- Aligning message and strategy across partner organizations with different priorities, risk
-  tolerances, or (c)(3)/(c)(4) status
-- Drafting and circulating a joint sign-on letter or public statement
-- Resolving internal coalition conflict (a partner org breaking from an agreed position, credit
-  disputes, funding allocation disagreements)
-- Winding down or formally dissolving a coalition at campaign end
-
-**Boundary — hand off when the ask is:**
 - Researching/writing the underlying policy content a coalition will use → `nonprofit-policy-analysis`
 - One organization's own legislator meetings or testimony (even if done "on behalf of" a coalition,
   the individual-org prep work is that skill) → `nonprofit-legislative-advocacy`
@@ -40,6 +25,10 @@ Use this skill when advocacy work spans more than one organization:
 Choose a governance model deliberately — most coalition dysfunction traces back to skipping this
 choice and defaulting to informal consensus, which breaks down once membership exceeds ~5-6 orgs or
 disagreement arises on a high-stakes decision.
+
+**Default:** a steering committee (model 2) for coalitions of roughly 6-15 organizations. Use consensus
+only for small, high-trust coalitions under 6; add working groups (model 4) at 15+; use a backbone org
+(model 1) when one member already holds the funding and staff and partners accept its final call.
 
 1. **Backbone/lead-organization model:** One organization holds the fiscal/legal responsibility and
    staffs coordination (often called the "backbone org," per the collective impact literature);
@@ -98,6 +87,19 @@ action, covering:
    dated, versioned final so a late "one more edit" request from a single signer doesn't hold the
    letter hostage.
 
+## Verify Before Acting
+
+Before circulating an MOU or sign-on letter:
+
+- [ ] Every MOU section above is filled in, including out-of-scope items, exit terms and a sunset review date.
+- [ ] Decision thresholds are stated for each decision type, with delegated vs. full-membership decisions named.
+- [ ] Each member's lobbying status (501(h)-elected c3, non-electing c3, c4) is confirmed and the MOU says
+      each member tracks its own lobbying.
+- [ ] Spokesperson and joint-statement approval steps are named, with the default-approve deadline.
+- [ ] Sign-on letters are a locked, dated, versioned final with a signature deadline.
+- [ ] The organization's ED (or designee) has reviewed the MOU before signing; it commits the organization
+      to partners.
+
 ## Common Failure Modes
 
 - **No written decision rule.** Informal consensus works until the first real disagreement, at which
@@ -116,16 +118,13 @@ action, covering:
   weaker than a smaller, tightly-aligned one — vet prospective members against the shared message
   framework before inviting them, not after.
 
-## Practitioner vs. Advisor Application
+## For advisors
 
-- **As the practitioner (coalition coordinator or founding-org staff):** Draft the MOU before the
-  first public action, run the message-alignment circulation with a hard deadline and default-approve
-  clause, and keep a living decision log so new members can see how past disagreements were resolved.
-- **As an advisor/consultant:** When brought in to fix a struggling coalition, first diagnose whether
-  the root problem is governance (no decision rule) or alignment (real strategic disagreement no
-  governance process can paper over) — recommend a governance-model change only for the former; for
-  the latter, help members narrow scope or split into parallel coalitions on sub-issues rather than
-  forcing artificial consensus.
+- When brought in to fix a struggling coalition, first diagnose whether the root problem is governance (no
+  decision rule) or alignment (real strategic disagreement no governance process can paper over) —
+  recommend a governance-model change only for the former; for the latter, help members narrow scope or
+  split into parallel coalitions on sub-issues rather than forcing artificial consensus.
+- Keep a living decision log so new members can see how past disagreements were resolved.
 
 ## Example
 

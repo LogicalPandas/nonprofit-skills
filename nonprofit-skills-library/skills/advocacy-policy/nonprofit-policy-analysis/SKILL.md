@@ -1,6 +1,6 @@
 ---
 name: nonprofit-policy-analysis
-description: "Researches and writes issue briefs, policy position papers, one-pagers, and comparative bill/regulation analyses for a nonprofit's advocacy agenda. Use when a user asks to draft a policy brief or white paper, analyze a bill or proposed regulation, write a position statement or talking points on an issue, build an evidence base for a policy ask, or compare policy options before deciding a stance. Covers research and written analysis only, not scheduling legislator meetings or delivering testimony (nonprofit-legislative-advocacy), not multi-org sign-on or coalition messaging governance (nonprofit-coalition-building), and not action alerts or petition copy to mobilize supporters (nonprofit-grassroots-mobilization)."
+description: "Researches and writes issue briefs, position papers, one-pagers, regulatory comment letters and bill or regulation analyses for a nonprofit's advocacy agenda. Use when asked 'draft a policy brief on SB 214,' 'analyze this proposed rule for our clients,' 'write talking points on this issue,' or 'compare these two bills so the board can take a position.' Not for legislator meetings or testimony (use nonprofit-legislative-advocacy), coalition sign-on or shared messaging (use nonprofit-coalition-building), action alerts or petitions (use nonprofit-grassroots-mobilization), or 501(h) and c3/c4 questions (use nonprofit-c3-c4-structure)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,25 +11,11 @@ metadata:
 
 # Nonprofit Policy Analysis
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to produce the written research and analysis that underpins a nonprofit's advocacy
-positions:
-
-- Drafting an issue brief, white paper, or policy position paper on a specific bill, regulation, or
-  systemic issue
-- Writing a one-page fact sheet or leave-behind summarizing a policy problem and the org's ask
-- Analyzing a specific bill, amendment, or proposed agency rule section-by-section for impact on the
-  org's constituents
-- Comparing two or more policy options/proposals to recommend a stance
-- Building the evidence base (data, precedent, case studies) that a board or ED needs before adopting
-  a formal position
-- Responding to a regulatory agency's request for public comment with substantive analysis (the
-  comment letter itself; see also the comment/testimony boundary note below)
-
-**Boundary — hand off when the ask is:**
 - Scheduling and running legislator meetings, lobby days, or delivering oral/written testimony at a
-  hearing → `nonprofit-legislative-advocacy`
+  hearing → `nonprofit-legislative-advocacy` (this skill writes regulatory comment letters and the
+  content of one-pagers used there)
 - Negotiating a joint position across multiple organizations, MOUs, or shared campaign governance →
   `nonprofit-coalition-building`
 - Turning a position into an action alert, petition, or supporter call-to-action → `nonprofit-grassroots-mobilization`
@@ -96,6 +82,19 @@ When asked to analyze a specific bill or proposed rule:
   script, which belongs to `nonprofit-legislative-advocacy`)
 - **Bill comparison table** (when tracking multiple competing bills on the same issue in a session)
 
+## Verify Before Acting
+
+Before a brief, one-pager or comment letter is published or used in a meeting:
+
+- [ ] Every figure has a named source and a year; nothing relies on an unsourced or stale number.
+- [ ] The bill or rule version (as introduced, amended, engrossed; docket number for rules) is stated and
+      still current.
+- [ ] The position is exactly one of the four postures; support-if-amended includes the amendment language.
+- [ ] Any fiscal-note comparison uses the official estimate as published, and the org's contrary data is cited.
+- [ ] If the piece includes a call to action on specific legislation, it is flagged for lobbying
+      classification (`nonprofit-c3-c4-structure`); if meant as nonpartisan analysis, the call to action is removed.
+- [ ] The position has been adopted through the ED/board process before public use.
+
 ## Common Failure Modes
 
 - **Leading with the story instead of the ask.** Legislative and funder audiences want the
@@ -110,19 +109,16 @@ When asked to analyze a specific bill or proposed rule:
 - **Skipping the fiscal/operational impact check.** Emotional or rights-based arguments alone often
   fail with fiscally-focused committees; pair values-based framing with a cost/benefit or
   cost-of-inaction data point whenever possible.
+- **Version drift.** Analyzing the as-introduced text after an amendment has changed the bill mid-session.
 - **Writing one brief for two audiences.** A board-facing white paper and a legislator-facing
   one-pager need different lengths and openings; don't hand a legislative staffer the board version.
 
-## Practitioner vs. Advisor Application
+## For advisors
 
-- **As the practitioner (policy/advocacy staff):** Draft the brief yourself using the structure
-  above, pull primary-source bill text, build the stakeholder matrix, and route the recommendation
-  through your ED/board for formal position adoption before it's used publicly.
-- **As an advisor/consultant:** Frame the brief-writing process as a facilitated decision tool for
-  the board — position papers should surface the four-posture decision (support/oppose/amend/monitor)
-  explicitly so the board is voting on a clear recommendation, not absorbing raw research. Flag for
-  the client when a "position" question is actually a 501(h)/lobbying-classification question that
-  needs `nonprofit-c3-c4-structure` input before publication.
+- Frame brief-writing as a facilitated decision tool: position papers should surface the four-posture
+  decision explicitly so the board votes on a clear recommendation, not raw research.
+- Flag when a "position" question is actually a 501(h)/lobbying-classification question that needs
+  `nonprofit-c3-c4-structure` input before publication.
 
 ## Example
 

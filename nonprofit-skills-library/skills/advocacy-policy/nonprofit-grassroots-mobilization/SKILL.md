@@ -1,6 +1,6 @@
 ---
 name: nonprofit-grassroots-mobilization
-description: "Builds action alerts, petition campaigns, call-in/email-to-legislator tools, and supporter activation tactics that generate public pressure on a policy issue. Use when a user asks to write an action alert or 'take action' email, set up a click-to-call or email-your-legislator campaign, draft petition copy and a petition-to-signature-to-action funnel, plan a rapid-response mobilization for a breaking policy moment, or design a supporter activation ladder from low-effort to high-effort engagement. Covers public-facing supporter activation and grassroots lobbying content specifically; the org's own direct legislator meetings/testimony are nonprofit-legislative-advocacy, the underlying policy research is nonprofit-policy-analysis, and nonpartisan election-specific activity is nonprofit-voter-engagement."
+description: "Builds action alerts, petitions, click-to-call and email-your-legislator campaigns, rapid-response mobilizations, and supporter activation ladders that create public pressure on a policy issue. Use when asked 'write a take-action email on SB 214,' 'set up a click-to-call campaign,' 'the committee vote moved to Thursday, mobilize supporters fast,' or 'draft petition copy.' Not for the org's own legislator meetings or testimony (use nonprofit-legislative-advocacy), the underlying policy research (use nonprofit-policy-analysis), election-related activity (use nonprofit-voter-engagement), or general social content (use nonprofit-social-media)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,22 +11,8 @@ metadata:
 
 # Nonprofit Grassroots Mobilization
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for tactics aimed at activating the public/supporter base to pressure decision-makers
-on a policy issue:
-
-- Writing an action alert email or SMS ("take action now") urging supporters to contact legislators
-- Setting up a click-to-call or email-your-legislator tool/campaign
-- Drafting petition copy and designing the funnel from signature to deeper action
-- Planning a rapid-response mobilization when a bill moves unexpectedly or a policy moment breaks in
-  the news
-- Designing a supporter activation ladder (awareness → petition signature → email → call → in-person
-  action) to build a base of increasingly engaged advocates
-- Writing social media copy specifically designed to drive a policy action (distinct from general
-  brand social content)
-
-**Boundary — hand off when the ask is:**
 - The org's own staff/board meeting directly with a legislator or delivering testimony →
   `nonprofit-legislative-advocacy`
 - Researching and writing the underlying issue brief or position that the alert is based on →
@@ -40,16 +26,13 @@ on a policy issue:
 Treat supporters as being at different rungs of engagement, and design tactics to move them up one
 rung at a time rather than asking a first-time contact for a high-effort action:
 
-1. **Awareness** — sees the issue (social post, email subject line, news mention)
-2. **Low-effort action** — signs a petition or clicks "I agree" (single click, no typing)
-3. **Medium-effort action** — sends a pre-drafted but editable email/message to a legislator (some
-   typing, personal identification required)
-4. **Higher-effort action** — makes a phone call using a provided script (requires speaking, higher
-   drop-off but far higher perceived impact on legislative staff — a phone call is generally weighted
-   more heavily by congressional/legislative offices than a form email)
-5. **High-effort/in-person action** — attends a rally, town hall, or lobby day, or agrees to be a
-   spokesperson/storyteller
-6. **Leadership action** — becomes a recruiter/organizer bringing in other supporters
+1. **Awareness** — sees the issue
+2. **Low-effort action** — signs a petition or clicks "I agree"
+3. **Medium-effort action** — sends a pre-drafted but editable message to a legislator
+4. **Higher-effort action** — makes a scripted phone call (higher drop-off, but generally weighted more
+   heavily by legislative offices than a form email)
+5. **High-effort/in-person action** — rally, town hall, lobby day, or spokesperson/storyteller
+6. **Leadership action** — recruits and organizes other supporters
 
 Design each campaign's ask at the rung appropriate to the audience segment's prior engagement history
 — asking a brand-new email subscriber to call a legislator on day one produces poor conversion;
@@ -111,6 +94,19 @@ When a bill moves unexpectedly or a policy moment breaks:
    timeline, then follow with email
 4. Set a hard internal deadline tied to the actual legislative deadline, and state it to supporters
 
+## Verify Before Acting
+
+Before sending any alert or launching a tool:
+
+- [ ] One ask, one target, and the ask matches the current adopted position from the policy lead.
+- [ ] Any deadline or urgency marker is real (vote date, comment close) and stated accurately.
+- [ ] The call/email tool is district-matched and the message is editable.
+- [ ] No candidate, party or election reference appears; if one is needed, stop and use `nonprofit-voter-engagement`.
+- [ ] If the alert asks the public to contact legislators about specific legislation, it is flagged as
+      grassroots lobbying and its costs are logged for the organization's lobbying limits
+      (see `nonprofit-c3-c4-structure`).
+- [ ] The alert has been reviewed by the person who approves public statements; it speaks for the organization.
+
 ## Common Failure Modes
 
 - **Multi-ask alerts.** Asking for a signature, a donation, and a call in one email measurably
@@ -128,17 +124,13 @@ When a bill moves unexpectedly or a policy moment breaks:
   advocacy; alerts that reference a candidate's election require the stricter nonpartisan rules in
   `nonprofit-voter-engagement` — never blend a legislative action alert with candidate framing.
 
-## Practitioner vs. Advisor Application
+## For advisors
 
-- **As the practitioner (advocacy/campaigns staff):** Build and maintain a small library of
-  rapid-response-ready templates (alert copy, call script, social copy) before session/legislative
-  activity peaks, and review activation-ladder analytics (velocity, conversion by rung) monthly, not
-  just after a campaign ends.
-- **As an advisor/consultant:** When a client's mobilization program plateaus, diagnose whether the
-  problem is list health (audience segment mismatched to ask effort), message design (multi-ask
-  alerts, locked templates), or missing infrastructure (no legislator-lookup tool, no rapid-response
-  template) — these have very different fixes and clients often misdiagnose a list-fatigue problem
-  as a "we need better copy" problem.
+- When a mobilization program plateaus, diagnose whether the problem is list health (audience segment
+  mismatched to ask effort), message design (multi-ask alerts, locked templates), or missing infrastructure
+  (no legislator-lookup tool, no rapid-response template) — clients often misdiagnose a list-fatigue
+  problem as a "we need better copy" problem.
+- Review activation-ladder analytics (velocity, conversion by rung) monthly, not just after a campaign ends.
 
 ## Example
 
