@@ -119,7 +119,8 @@ Two layers, both flow-through entities (partnership or corporation; trusts canno
    QOZBs invoking it to attest to that fact and identify the month qualification was lost.
 
 Testing reference: [IRS final regulations, 90% standard, first-year rules, and intangible-property use](https://www.irs.gov/pub/irs-drop/td-9889.pdf),
-pp. 362, 454–456, and 472. Verify the rules applicable to the transaction before reliance.
+pp. 362, 454–456, and 472. Last checked September 15, 2026; verify the rules applicable to the
+transaction before reliance.
 This is not expert sign-off.
 
 **Nonprofit-specific structural facts:**

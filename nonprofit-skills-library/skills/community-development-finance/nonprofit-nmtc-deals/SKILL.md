@@ -189,8 +189,8 @@ borrower and repayment source through year 7 and exit. Tax counsel and a CPA rev
 structure and calculations before reliance, and the board reviews the financing decision.
 
 Structure reference: [CDFI Fund NMTC guide, leverage structure and glossary](https://www.cdfifund.gov/system/files/2023-10/CDFI_NMTC_NI_Self-Assessment_Guide_Final.pdf).
-Verify current structure guidance with the CDFI Fund before relying on it; this reference is not
-independent expert sign-off.
+Last checked September 15, 2026. Verify current structure guidance with the CDFI Fund before
+relying on it; this is not independent expert sign-off.
 
 ## Step 4 — Apply the Eligible Use Rules
 
