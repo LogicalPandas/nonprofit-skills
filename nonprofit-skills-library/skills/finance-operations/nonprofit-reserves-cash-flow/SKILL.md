@@ -1,6 +1,6 @@
 ---
 name: nonprofit-reserves-cash-flow
-description: "Designs operating reserve policy (target months of expense, funding sources, drawdown/replenishment triggers), builds 12-13 week and annual cash flow forecasts, and plans bridge financing for seasonal or grant-timing funding gaps (lines of credit, grant advances, reimbursement-cycle float). Use when asked how many months of reserves a nonprofit should hold, to build a cash flow forecast or cash flow projection, to diagnose a cash crunch or seasonal gap, to write a board reserve policy, or to plan around delayed reimbursement grants. Does not cover the annual operating budget itself (use nonprofit-budgeting), producing GAAP financial statements (use nonprofit-financial-statements), or indirect cost rate/true-cost analysis (use nonprofit-cost-allocation)."
+description: "Designs operating reserve policy (target months, funding, drawdown and replenishment rules), builds 13-week and annual cash flow forecasts, and plans bridge financing for seasonal or grant-reimbursement gaps. Use when asked 'how many months of reserves should we hold,' 'build a 13-week cash flow forecast,' 'we have a cash crunch even though the budget balances,' or 'should we open a line of credit.' Not for the annual operating budget (use nonprofit-budgeting), GAAP financial statements (use nonprofit-financial-statements), or indirect cost rates and true-cost analysis (use nonprofit-cost-allocation)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,18 +11,11 @@ metadata:
 
 # Nonprofit Reserves & Cash Flow
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to set or evaluate an operating reserve policy, build a cash flow forecast, or plan
-around a funding timing gap. Trigger tasks include: "how many months of reserves should we hold,"
-"draft a board reserve policy," "we have a cash crunch in Q3 even though our budget is balanced for
-the year," "build a 13-week cash flow forecast," "our biggest grant reimburses 60 days after we
-spend — how do we bridge that," or "should we open a line of credit."
-
-Boundary: this skill is about liquidity and reserves, not the underlying revenue/expense plan itself
-(that's `nonprofit-budgeting`) or GAAP-format reporting of what already happened
-(`nonprofit-financial-statements`). It does not cover indirect cost rate methodology
-(`nonprofit-cost-allocation`).
+- This skill covers liquidity and reserves. The revenue/expense plan itself: `nonprofit-budgeting`.
+- GAAP-format reporting of what already happened: `nonprofit-financial-statements`.
+- Indirect cost rate methodology: `nonprofit-cost-allocation`.
 
 ## Core Framework: Two Distinct Problems
 
@@ -78,13 +71,11 @@ wrong first response to a timing problem (a line of credit or accelerated invoic
   1. Start with the approved annual budget (`nonprofit-budgeting` output) as the base.
   2. Re-time each revenue line to its expected cash-receipt month (not accrual/recognition month).
   3. Re-time each expense line to its expected cash-disbursement month.
-  4. Add beginning cash balance for month 1.
-  5. Roll forward: ending cash (month N) = beginning cash + cash in − cash out, becomes beginning
-     cash for month N+1.
-  6. Flag every month where the projected ending balance drops below the reserve floor or a
+  4. Start month 1 from the actual bank balance (unrestricted cash shown separately) and roll forward.
+  5. Flag every month where the projected ending balance drops below the reserve floor or a
      board-set minimum operating cash threshold — these are the months needing a bridge plan, not
      year-end totals.
-  7. Update monthly (or weekly, in a tight period) with actuals; re-forecast the remaining months
+  6. Update monthly (or weekly, in a tight period) with actuals; re-forecast the remaining months
      rather than treating the original forecast as fixed.
 
 ## Bridging Seasonal and Reimbursement-Timing Gaps
@@ -92,7 +83,8 @@ wrong first response to a timing problem (a line of credit or accelerated invoic
 - **Line of credit (LOC)**: the standard bridge tool for predictable, recurring timing gaps (e.g.,
   reimbursement grants). Secure it *before* it's needed — a lender underwriting during a cash crisis
   is a much worse negotiating position. Many community foundations and CDFIs (Community Development
-  Financial Institutions) offer nonprofit-specific LOCs.
+  Financial Institutions) offer nonprofit-specific LOCs and short-term bridge loans for grant-timing
+  gaps; research these before defaulting to a commercial LOC.
   Nonprofit Finance Fund is a well-known specialty lender in this space.
 - **Grant/contract advance or accelerated invoicing**: for government cost-reimbursement contracts,
   ask the funder about advance payment provisions or invoice more frequently (monthly instead of
@@ -100,12 +92,32 @@ wrong first response to a timing problem (a line of credit or accelerated invoic
 - **Deferred/negotiated payables**: for a short, known gap, negotiating vendor payment terms is
   cheaper and faster than new debt — but don't rely on this as an ongoing strategy since it damages
   vendor relationships and shifts risk downstream (see `nonprofit-vendor-facilities`).
-- **Bridge/emergency loan funds**: some community foundations and CDFIs offer short-term nonprofit
-  bridge loans specifically for grant-timing gaps — worth researching before defaulting to a
-  commercial LOC.
 - Never use restricted funds to cover an unrestricted cash shortfall (a common improper "borrowing"
   that becomes a legal and audit problem) — this is a compliance red line, not a judgment call; keep
   restricted-fund cash physically/system-segregated if reimbursement timing tempts commingling.
+
+## 13-Week Forecast Template
+
+| Week of | Beginning cash | Cash in (by source) | Cash out (payroll, rent, other) | Ending cash | Floor | Below floor? | Bridge action |
+|---------|----------------|---------------------|---------------------------------|-------------|-------|--------------|---------------|
+| Wk 1    | [bank balance] |                     |                                 |             |       |              |               |
+| Wk 2    | [= Wk 1 ending]|                     |                                 |             |       |              |               |
+| ...     |                |                     |                                 |             |       |              |               |
+| Wk 13   |                |                     |                                 |             |       |              |               |
+
+Notes under the table: unrestricted vs. restricted cash at start; largest receivables with expected
+receipt dates and source (invoice, reimbursement request, pledge); LOC availability and balance.
+
+## Verify Before Acting
+
+- [ ] Month-1 (or week-1) beginning cash ties to the actual bank balance, with restricted cash shown
+      separately and excluded from what is available for operations.
+- [ ] Annual forecast totals reconcile to the approved budget totals; differences are timing only and
+      are explained.
+- [ ] Every lumpy receipt (reimbursement, pledge, event) has a dated, sourced expected receipt.
+- [ ] Every below-floor period has a named bridge action, and none of them uses restricted funds.
+- [ ] The reserve policy's definition counts only board-designated unrestricted funds and states
+      drawdown authority and a replenishment timeline.
 
 ## Common Failure Modes
 
@@ -125,12 +137,11 @@ wrong first response to a timing problem (a line of credit or accelerated invoic
 - Annual monthly cash flow forecast tied to the approved budget
 - Bridge financing plan/LOC application package for known seasonal gaps
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the ED/finance lead**, keep the 13-week forecast as a living document, not a one-time exercise,
-  and bring the board a reserve policy proposal with a specific number and funding mechanism rather
-  than an abstract commitment to "build reserves someday."
-- **As an advisor**, diagnose whether a client's stated "cash problem" is actually a reserve adequacy
-  problem, a pure timing problem, or (most often) both — and don't recommend "raise more money" as
-  the fix for a timing problem when a line of credit or renegotiated reimbursement cadence solves it
-  faster and cheaper.
+- Diagnose whether a client's stated "cash problem" is a reserve adequacy problem, a pure timing
+  problem, or (most often) both.
+- Don't recommend "raise more money" as the fix for a timing problem when a line of credit or a
+  renegotiated reimbursement cadence solves it faster and cheaper.
+- Bring the board a reserve policy proposal with a specific number and funding mechanism, not an
+  abstract commitment to "build reserves someday."
