@@ -7,6 +7,7 @@ metadata:
   supervision_note: "Indirect cost rates and NICRAs under 2 CFR 200 are negotiated with the federal government."
   date_added: "2026-09-07"
   date_added_source: "git:1860ed47a83901ff5e6d45abc4a2ef05be8fd4cd"
+  last_reviewed: "2026-11-11"
 ---
 
 # Nonprofit Cost Allocation
@@ -73,6 +74,11 @@ timing questions (`nonprofit-reserves-cash-flow`).
    increased de minimis rate, or silently replace an existing NICRA's $25,000 subaward base with
    $50,000. Honor its approved base until appropriately revised. See
    [COFFA implementation guidance](https://www.energy.gov/sites/default/files/2025-08/COFFA-FY%202024%20Revisions%20to%202%20CFR-%20Federal%20Agency%20Implementation.pdf).
+   Also check for later rulemaking: OMB's May 29, 2026 proposed rule (91 FR 32198) would revise
+   much of Part 200, including a preference for lower indirect cost rates in discretionary awards
+   and an end to fixed amount subawards, but does not propose changing the rate negotiation system
+   or de minimis rate. It changes nothing until a final rule takes effect; confirm its status at use.
+   See [the proposed rule](https://www.federalregister.gov/documents/2026/05/29/2026-10817/regulation-for-federal-financial-assistance).
 2. **Check current agreements and eligibility.** Identify Federal versus pass-through negotiation,
    rate type (including provisional), effective dates, extensions, base, and outstanding settlements.
    Use a current Federal negotiated rate subject to applicable exceptions. If none exists, assess
@@ -187,6 +193,7 @@ grow or sunset a program, setting a per-participant cost for a funder conversati
   indirect cap as an explicit subsidy amount so the board can weigh it as a real cost of accepting
   that grant, not an invisible one.
 
-Targeted federal indirect-cost check: September 16, 2026. Recheck the linked regulations,
+Federal indirect-cost rules last checked: November 11, 2026 (2 CFR 200 text unchanged since the
+October 1, 2024 revisions). Recheck the linked regulations, any final rule on the 2026 proposal,
 agency implementation, and actual award/rate documents at use; this is not a certification
-of an organization's eligibility or a comprehensive professional review of this skill.
+of an organization's eligibility or a substitute for qualified professional review.
