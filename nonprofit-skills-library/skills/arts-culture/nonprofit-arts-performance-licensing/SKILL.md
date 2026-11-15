@@ -14,7 +14,7 @@ metadata:
 
 ## Boundaries
 
-Covers rights clearance for performance, venue music, streaming/archival/video, and film screening, including the rights for a student matinee of a licensed play. Users are typically an executive, managing, or producing director, or marketing/gala staff. This skill does not determine ownership or authorize performance under any particular agreement. Hand off:
+Covers rights clearance for performance, venue music, streaming/archival/video, and film screening, including the rights for a student matinee of a licensed play. Users are typically an executive, managing, or producing director, or marketing/gala staff. This skill does not determine ownership or authorize performance under any particular agreement (boundary last checked September 16, 2026). Hand off:
 
 - New-work commissions (playwright agreements, IP ownership, approvals, co-commissions): `nonprofit-arts-commissioning-new-work`. Do not infer copyright ownership or premiere permission from a commission: verify an executed production license or an explicit premiere performance grant in the signed commissioning agreement, including applicable royalty terms.
 - The org's obligations as the rented venue (insurance, house rules, whether its PRO licenses flow down to renters): `nonprofit-arts-venue-rental-earned-income`

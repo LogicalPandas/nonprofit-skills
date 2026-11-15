@@ -271,7 +271,7 @@ an exclusion — but the exceptions are exactly where arts venues get hurt. The 
    and have the org's CPA review the entire arrangement before adopting a contract structure
    or tax position. Loss of this exclusion alone does not settle every element of UBIT.
    References: [IRC §512(b)(3)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section512&num=0&edition=prelim)
-   and [IRS Publication 598, rents](https://www.irs.gov/publications/p598). This is not a full
+   and [IRS Publication 598, rents](https://www.irs.gov/publications/p598). Last checked September 16, 2026; this is not a full
    rental-tax review.
 4. **Exception — mixed leases (personal property).** Where a lease bundles real and personal
    property (the hall plus the lighting rig, sound system, chairs, pianos), rent attributable to

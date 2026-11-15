@@ -89,7 +89,7 @@ A balanced season typically carries one new-work slot (premiere, second producti
 
 **New-work rights check:** a commission or option alone is not permission to perform the
 premiere — apply the contract gate in the launch checklist (Part 4, item 1), and follow
-`nonprofit-arts-commissioning-new-work` for the grant and contract terms. Actual rights and
+`nonprofit-arts-commissioning-new-work` for the grant and contract terms. Last checked September 16, 2026. Actual rights and
 royalties remain agreement-specific.
 
 ## Part 3 — Budgeting the Season: Per-Title Cost Estimating
