@@ -1,6 +1,6 @@
 ---
 name: nonprofit-revenue-diversification
-description: "Evaluates and builds earned-income ventures, social enterprise models, fee-for-service programs, and overall revenue-mix diversification strategy beyond traditional fundraising: revenue concentration/dependency analysis, business model selection (related vs. unrelated business, program-integrated vs. arm's-length social enterprise), UBIT (unrelated business income tax) screening, break-even/pricing analysis, and a staged launch plan. Use when a user says things like \"we're too dependent on one funder,\" \"should we start charging fees for this program,\" \"we want to launch a social enterprise,\" \"help us diversify our revenue mix,\" or \"is this earned-income idea financially viable.\" Does not cover annual fund/major gift/grant fundraising tactics (use the Fundraising & Development skills), does not cover the day-to-day operating budget once revenue streams are set (use nonprofit-budgeting), and does not cover merger or fiscal sponsorship as a growth path (use nonprofit-mergers-fiscal-sponsorship)."
+description: "Evaluates and builds earned income and revenue-mix diversification: concentration and dependency analysis, fee-for-service and social enterprise model selection, UBIT screening, break-even and pricing analysis, and a staged pilot and launch plan. Use when someone says 'we're too dependent on one funder,' 'should we start charging fees for this program,' 'we want to launch a social enterprise,' or 'is this earned-income idea viable.' Not for contributed-revenue tactics (use nonprofit-annual-appeals, nonprofit-major-gifts, or nonprofit-grant-research), the operating budget (use nonprofit-budgeting), or mergers and fiscal sponsorship (use nonprofit-mergers-fiscal-sponsorship)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -11,28 +11,19 @@ metadata:
 
 # Nonprofit Revenue Diversification
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when an organization is assessing its revenue concentration risk and evaluating
-non-fundraising ways to grow or stabilize income: fee-for-service, social enterprise, licensing,
-consulting/training arms, cause-marketing product lines, membership models, or facility rental.
-Typical triggers: "60% of our budget comes from one government contract," "should our job-training
-program charge employers a placement fee," "we want to sell products beneficiaries make," "build a
-business case for a new earned-income stream," "how risky is our funding mix."
+Covers *earned* income (fee-for-service, social enterprise, licensing, consulting/training arms,
+cause-marketing products, membership, facility rental) and overall mix strategy across earned and
+contributed sources.
 
-**Boundary with siblings:**
-- This skill does not cover traditional contributed-revenue tactics (annual appeals, major gifts,
-  grants, events) — those live in the Fundraising & Development category skills
-  (`nonprofit-annual-appeals`, `nonprofit-major-gifts`, `nonprofit-grant-research`, etc.). This skill
-  is specifically about *earned* income and overall mix strategy across both earned and contributed
-  sources.
-- Once a revenue stream is approved and running, folding it into the annual operating budget and
-  cash flow plan is `nonprofit-budgeting` and `nonprofit-reserves-cash-flow`.
-- Calculating true program cost/indirect rate to price a fee-for-service offering correctly draws on
-  `nonprofit-cost-allocation` — use that skill's methodology for the cost side of the pricing math
-  here.
-- If the growth path under consideration is combining with another organization rather than
-  building a new revenue line, that's `nonprofit-mergers-fiscal-sponsorship`.
+- Contributed-revenue tactics (annual appeals, major gifts, grants, events): `nonprofit-annual-appeals`,
+  `nonprofit-major-gifts`, `nonprofit-grant-research`, `nonprofit-grant-writing`,
+  `nonprofit-fundraising-events`.
+- Folding an approved stream into the operating budget and cash flow plan: `nonprofit-budgeting`,
+  `nonprofit-reserves-cash-flow`.
+- True program cost and indirect rate for the cost side of pricing: `nonprofit-cost-allocation`.
+- Combining with another organization as a growth path: `nonprofit-mergers-fiscal-sponsorship`.
 
 ## Core Framework: Revenue Concentration & Diversification
 
@@ -41,11 +32,12 @@ business case for a new earned-income stream," "how risky is our funding mix."
    income vs. events), and (c) government funding overall. A widely used rule of thumb: no single
    source above roughly 25-30% of total revenue is a healthier risk profile; above ~50% from one
    source or one revenue type is a red-flag concentration that funders, auditors, and rating
-   agencies (e.g., Charity Navigator's revenue diversification factors) will flag.
-2. **Classify current mix** against a simple matrix: Contributed (grants, individual gifts,
-   corporate/foundation) vs. Earned (fees, sales, contracts, rental, licensing, investment income).
-   Nonprofits with resilient balance sheets typically blend both; pure earned-income shifts can
-   drift mission focus, and pure contributed-reliance creates funder-dependency risk.
+   agencies (e.g., Charity Navigator's revenue diversification factors) will flag. These are rules
+   of thumb, not standards; verify current rating methodology on Charity Navigator's site before
+   citing it to a board or funder.
+2. **Classify current mix** as contributed vs. earned. Resilient organizations typically blend
+   both; pure earned-income shifts can drift mission focus, and pure contributed reliance creates
+   funder-dependency risk.
 3. **Screen earned-income ideas using the Social Enterprise Spectrum**: purely philanthropic (no
    earned revenue) → program-integrated social enterprise (the venture *is* the program, e.g., a
    job-training cafe) → mission-related business (funds the mission, doesn't deliver it directly,
@@ -79,12 +71,28 @@ business case for a new earned-income stream," "how risky is our funding mix."
    arm's-length transfer pricing between entities). Rule of thumb: use a subsidiary once a venture's
    revenue or risk profile is large relative to the parent's budget, or if there's outside investment
    or complex liability exposure (e.g., a commercial kitchen, a retail lease).
+   UBIT rules, exceptions, and Form 990-T requirements change; confirm current IRS guidance (Pub.
+   598 and the Form 990-T instructions) with the accountant or counsel.
 5. **Pilot before scaling**: Launch a time-boxed pilot (one site, one cohort, 6-12 months) with clear
    go/no-go financial and mission-fit thresholds before committing capital to a full build-out.
 6. **Governance and approval**: Present the business case to the board as a distinct decision (not
    buried in the annual budget) — boards should approve venture capital commitments, any new debt or
    lease obligations, and the risk tolerance for a venture that might operate at a loss during
    ramp-up.
+
+## Worked Example and Templates
+
+Break-even (illustrative numbers, not benchmarks): fee $60 per client session; variable cost $20
+per session (materials, contractor time); fixed costs $48,000 per year (allocated staff, space,
+and overhead per `nonprofit-cost-allocation`). Contribution margin = $60 − $20 = $40. Break-even
+volume = $48,000 ÷ $40 = 1,200 sessions per year (about 100 per month). If realistic demand is
+below that, the venture is a subsidized program, not a revenue strategy.
+
+Idea-screening scorecard (score 1-5; any 1 on demand or mission fit kills the idea):
+
+| Idea | Market demand / willingness to pay | Mission fit | Startup capital | Time to break-even | Staff capability gap | Total | Go to modeling? |
+|------|-----------------------------------|-------------|-----------------|--------------------|----------------------|-------|-----------------|
+| [Idea] | | | | | | | |
 
 ## Standard Deliverables
 
@@ -94,22 +102,26 @@ business case for a new earned-income stream," "how risky is our funding mix."
 - UBIT risk memo per venture (for accountant/counsel review)
 - Board-facing business case memo with pilot plan, funding ask, and go/no-go metrics
 
-## Advisor Framing
+## For advisors
 
-As a consultant advising a nonprofit client on revenue diversification:
-- Start with the concentration diagnosis, not the exciting new idea — clients often arrive already
-  attached to a specific venture concept; redirect first to whether diversification is actually the
-  right strategic response to their funding risk, versus deepening existing revenue lines.
-- Be explicit that earned income is not free money: it typically requires working capital, new
-  staff skill sets (retail, sales, production management) the org may not have, and a tolerance for
-  early-stage losses that many nonprofit boards underestimate.
-- Push back on "mission-integrated" framing used to justify a venture with poor unit economics —
-  name directly when a program-integrated model's training/production tradeoff means it will
-  likely never break even, and reframe it honestly as a subsidized program rather than a revenue
-  strategy.
-- Loop in tax counsel/CPA formally on the UBIT question rather than giving a definitive tax opinion
-  yourself — flag the risk and the applicable exceptions, but treat the final UBIT determination as
-  outside this skill's scope.
+- Start with the concentration diagnosis, not the client's favorite venture idea; test whether
+  diversification is the right response versus deepening existing revenue lines.
+- Say plainly that earned income needs working capital, new skill sets (retail, sales, production),
+  and tolerance for early losses that boards underestimate; call a program-integrated venture that
+  will never break even a subsidized program.
+- Flag UBIT risk and applicable exceptions, but leave the final determination to tax counsel or
+  the CPA (expert-required).
+
+## Verify Before Acting
+
+Before the business case goes to the board:
+
+- [ ] Concentration percentages reconcile to the latest audited or board-approved financials.
+- [ ] Pricing uses full cost, including allocated overhead, and the break-even math is shown.
+- [ ] The UBIT screen and any exception relied on are documented and reviewed by the accountant
+      or counsel.
+- [ ] The pilot has a time box and written go/no-go financial and mission-fit thresholds.
+- [ ] Capital, debt, lease, and loss-tolerance asks are stated as distinct board decisions.
 
 ## Common Failure Modes
 
