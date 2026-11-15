@@ -35,15 +35,14 @@ Anchor these; the landscape is moving (all "as of" September 2026):
 - **FEMA Public Assistance policy**: the Public Assistance Program and Policy Guide (PAPPG), **Version 5.0
   Amended (FP 104-009-2), issued January 2025, effective for incidents declared on or after January 6,
   2025** — supersedes V4.1. Use V5 for any new declaration.
-- **Cost share**: baseline federal share is **at least 75%** of eligible PA costs, with per-disaster
-  increases to 90% or 100% still appearing in 2025 declaration amendments (e.g., 90% for some states, 100%
-  for debris/emergency work windows of 120 days). The **Public Assistance Mitigation Cost Share Incentives
+- **Cost share**: per-disaster increases above the 75% baseline to 90% or 100% still appeared in 2025
+  declaration amendments (e.g., 90% for some states, 100% for debris/emergency work windows of 120 days).
+  The **Public Assistance Mitigation Cost Share Incentives
   Policy** (issued September 26, 2024, which offered up to an 85% federal share) was **rescinded retroactively
   for all disasters by FEMA's June 10, 2025 bulletin** — do not plan around mitigation-based cost-share bumps.
-- **Project thresholds, FY2026**: minimum project cost **$4,100**; **Large Project threshold $1,093,800**
-  (FY2025: $4,000 / $1,062,900). Thresholds are set each federal fiscal year by CPI and apply to incidents
-  declared within that fiscal year — always pull the current table from FEMA's Per Capita Impact Indicator
-  page.
+- **Project thresholds**: FY2025 was $4,000 minimum / $1,062,900 Large Project (FY2026 figures below).
+  Thresholds are set each federal fiscal year by CPI and apply to incidents declared within that fiscal
+  year — always pull the current table from FEMA's Per Capita Impact Indicator page.
 - **BRIC is gone**: FEMA announced on **April 4, 2025** it was ending the Building Resilient Infrastructure
   and Communities pre-disaster mitigation program, returning roughly $882 million to Treasury. Post-disaster
   mitigation money now runs mainly through HMGP and CDBG-MIT.
@@ -55,13 +54,10 @@ Anchor these; the landscape is moving (all "as of" September 2026):
   a standing framework of waivers and alternative requirements that activates with each Allocation
   Announcement Notice (AAN); it was amended in **March 2025** to conform to executive orders. New CDBG-DR
   appropriations follow this structure.
-- **SBA**: 2025-2026 SBA announcements quote nonprofit physical disaster loan rates **as low as 3.625%**
-  (terms up to 30 years), and the loan cap is **$2 million** (combined physical + EIDL), with a 12-month
-  deferral and no interest accrual in the first 12 months.
 
 ## The Federal Rebuild Funding Map
 
-Work the map in this order — sequence matters because eligibility and duplication-of-benefits rules cascade:
+Work the map in order — eligibility and duplication-of-benefits rules cascade:
 
 | Program | What it funds for a nonprofit | Nonprofit access path |
 |---|---|---|
@@ -108,7 +104,7 @@ or vocational activities, academic training, or conferences. Mixed-use facilitie
 
 For noncritical facilities, **FEMA only funds Permanent Work costs an SBA disaster loan will not cover**.
 Apply to SBA first; if SBA denies the loan or authorizes an insufficient amount, FEMA fills the verified
-gap. Taking the full SBA loan you can afford is often correct — it arrives years faster than CDBG-DR.
+gap. Taking the full SBA loan you can afford is often correct (see SBA section).
 
 ### Emergency Work (Categories A-B) for Nonprofits
 
@@ -133,7 +129,7 @@ facility's own property.
 4. **Assign a Grants Portal owner and a single point of contact**; attend the applicant briefings the
    state (Recipient) runs after every declaration.
 5. **Photograph all damage before cleanup; keep every invoice, contract, payroll record, and bank
-   statement** — PA is cost-reimbursement for large projects; undocumented costs are denied costs.
+   statement** — PA is cost-reimbursement for large projects; undocumented costs are denied.
 6. **Notify insurers immediately and track all insurance advances** — FEMA reduces awards by insurance
    proceeds, and failure to obtain obtainable insurance is a stated eligibility problem in later awards.
 7. **Document pre-disaster condition** (photos, maintenance records, appraisals) to support
@@ -170,10 +166,9 @@ tiers run on **60-day clocks**:
 2. **Second appeal** — to the FEMA Regional Administrator within **60 days** of the first-appeal decision.
    No second appeal means the first-appeal decision is final agency action.
 
-Use FEMA's public PA Appeals database — thousands of analyzed appeals show what arguments succeed (legal
-responsibility, facility eligibility, documentation sufficiency). **Route appeals through counsel or an
-experienced disaster-recovery consultant**: deadline misses are fatal and first-appeal records bind the
-second appeal.
+Use FEMA's public PA Appeals database — thousands of analyzed appeals show what arguments succeed
+(legal responsibility, facility eligibility, documentation sufficiency). **Route appeals through counsel or an experienced
+disaster-recovery consultant**: deadline misses are fatal and first-appeal records bind the second appeal.
 
 ## SBA Disaster Loans for Nonprofits
 
@@ -183,9 +178,8 @@ As of 2025-2026 SBA announcements and sba.gov/disaster:
   or replace disaster-damaged or destroyed real estate, machinery and equipment, fixtures, inventory, and
   leasehold improvements — losses not fully covered by insurance. No upgrades or expansion except
   code-required changes.
-- **Rates and terms**: nonprofit physical loans quoted **as low as 3.625%** (recent SBA releases), up to
-  **30 years**; when SBA determines credit is available elsewhere, rates run up to 8%. **First payment
-  deferred and no interest accrual for 12 months.**
+- **Rates and terms**: nonprofit physical loans quoted **as low as 3.625%**, up to **30 years**; when SBA determines credit
+  is available elsewhere, rates run up to 8%. **First payment deferred and no interest accrual for 12 months.**
 - **Mitigation add-on**: up to a **20% loan increase above verified real-estate damage** for mitigation
   — often the cheapest resilience capital a nonprofit can get.
 - **EIDL**: nonprofits of any size suffering substantial economic injury may get working-capital EIDL;
@@ -195,14 +189,13 @@ As of 2025-2026 SBA announcements and sba.gov/disaster:
 - **Collateral**: required to the extent available for physical loans over $50,000 in presidential
   declarations; SBA will not decline solely for lack of collateral.
 
-Sequence rule: **apply to SBA regardless** — the application is free, the denial letter is exactly what a
-noncritical PNP needs to unlock FEMA PA permanent work, and a low-cost loan closes the gap years before
-CDBG-DR money moves.
+Sequence rule: **apply to SBA regardless** — the application is free, a denial letter unlocks FEMA PA
+permanent work for a noncritical PNP, and a low-cost loan closes the gap years before CDBG-DR moves.
 
 ## FEMA Individual Assistance Interfaces
 
-Nonprofits rarely receive IA funds for themselves, but they deliver IA-adjacent services and should know
-the architecture (FEMA's March 22, 2024 IA reforms apply to disasters declared on or after that date —
+Nonprofits rarely receive IA funds themselves but deliver IA-adjacent services (FEMA's March 22, 2024 IA reforms
+apply to disasters declared on or after that date —
 Serious Needs Assistance, Displacement Assistance, flexible housing assistance, reduced documentation
 burdens):
 
@@ -229,10 +222,10 @@ and public hearings for larger allocations) → HUD approves → the grantee run
 subrecipients administering programs, (2) direct beneficiaries receiving rebuild assistance, and (3)
 service providers under procurement.
 
-Action plan patterns to watch for (2025 vintage): housing repair/rebuild programs, voluntary buyouts,
-infrastructure, and economic revitalization — each with published eligibility, national objective, and
-beneficiary selection criteria. Comment on the action plan the moment the state posts it — programs get
-shaped in the comment period, not after approval.
+Action plan patterns (2025 vintage): housing repair/rebuild programs, voluntary buyouts, infrastructure,
+and economic revitalization — each with published eligibility, national objective, and beneficiary
+selection criteria. Comment the moment the state posts the plan — programs get shaped in the comment
+period, not after approval.
 
 ### National Objectives and Buyout/Acquisition Rules
 
@@ -258,7 +251,7 @@ refusals or declines preserve CDBG-DR room. Keep a single DOB ledger per project
 
 ### CDBG-DR Subrecipient Readiness Plan
 
-Prepare this **before** an RFP drops — grantees award to administratively ready nonprofits:
+Prepare **before** an RFP drops — grantees award to administratively ready nonprofits:
 
 1. **Entity standing**: active SAM/UEI, good standing, audited or professionally reviewed financials,
    no unresolved monitoring findings. **Completion condition:** pre-award self-audit passes.
@@ -277,8 +270,7 @@ Prepare this **before** an RFP drops — grantees award to administratively read
 
 ## The Facility Rebuild Capital Stack
 
-Build the stack as a sources-and-uses table with sequencing rules. Standard sources, in probable draw
-order:
+Build a sources-and-uses table with sequencing rules. Standard sources, in probable draw order:
 
 | Layer | Source | Timing | Watch-outs |
 |---|---|---|---|
@@ -294,15 +286,15 @@ order:
 **Uses**: site work, demolition, hard costs, soft costs (A/E, permits), code-required upgrades,
 furniture/equipment, contingency (10%+), temporary facilities and relocation, and the non-federal match.
 
-Stack rules: (1) no source may exceed its eligible share of a documented need; (2) every dollar of
-insurance, FEMA, and SBA reduces CDBG-DR eligibility for the same loss; (3) sequence commitments so the
-slowest, cheapest-when-fully-layered money (CDBG-DR) is applied last; (4) carry a bridge facility (CDFI
-loan or line of credit) because PA is reimbursement — you front the cash; (5) rebuild mitigation in (406,
+Stack rules: (1) no source may exceed its eligible share of a documented need (DOB — insurance, FEMA,
+and SBA dollars reduce CDBG-DR eligibility for the same loss); (2) sequence commitments so the
+slowest, cheapest-when-fully-layered money (CDBG-DR) is applied last; (3) carry a bridge facility (CDFI
+loan or line of credit) because PA is reimbursement — you front the cash; (4) rebuild mitigation in (406,
 SBA 20%, HMGP) since insurers and FEMA increasingly price unmaintained risk.
 
 ## Disaster-Finance Calendar — Registration to Closeout
 
-Anchor dates from declaration (DR) forward; actual dates vary by disaster — build this table per event:
+Anchor dates from declaration (DR) forward; dates vary — build this table per event:
 
 - **Day 0**: Declaration. Record DR number, designated counties, IA/PA categories, cost share.
 - **Days 1-14**: Insurance notice of claim; damage photos; emergency protective measures log; join
@@ -347,23 +339,23 @@ Before any FEMA, SBA, or CDBG-DR filing:
 - **Missing the 30-day RPA or 60-day SBA deadlines.** Remedy: calendar both on declaration day; request
   written extensions immediately if missed — silence forfeits.
 - **Noncritical PNP assumes FEMA will rebuild the facility.** Remedy: run the SBA-first path on day one;
-  treat FEMA PA permanent work as the residual, CDBG-DR as the long-gap filler.
+  FEMA PA permanent work is the residual.
 - **Cleaning up before documenting.** Remedy: photograph everything, keep debris and disposal records,
-  log volunteer labor — pre-cleanup evidence is the claim.
-- **Letting a 60-day appeal clock run out.** Remedy: on any adverse determination, same-day calendar the
-  first-appeal deadline and open the FEMA appeals database for precedent; engage counsel.
+  log volunteer labor.
+- **Letting a 60-day appeal clock run out.** Remedy: same-day calendar the first-appeal deadline on any
+  adverse determination; check the appeals database; engage counsel.
 - **Committing CDBG-DR funds before environmental clearance, or drawing before costs incurred.** Remedy:
   environmental review first; draw only on documented expenses; reconcile monthly.
-- **Blowing the DOB ledger.** Remedy: one ledger per project tracking insurance, FEMA, SBA, charity,
-  and CDBG-DR; update at every settlement; disclose everything to the grantee.
-- **Skipping the action-plan comment period, then fighting the program rules.** Remedy: comment within
-  the 30-day window; meet grantee staff during drafting.
+- **Blowing the DOB ledger.** Remedy: update the per-project ledger at every settlement; disclose
+  everything to the grantee.
+- **Skipping the action-plan comment period.** Remedy: comment within the 30-day window; meet grantee
+  staff during drafting.
 - **Fronting large-project costs without a bridge.** Remedy: line up CDFI/philanthropic bridge capital
   sized to the expected reimbursement lag before construction starts.
 - **Assuming BRIC still exists, or planning around the rescinded cost-share incentive policy.** Remedy:
   anchor mitigation plans to HMGP, CDBG-MIT, and Section 406 only; re-verify federal rules each
-  declaration — this landscape moved repeatedly in 2025-2026.
+  declaration.
 - **Advisors vs. practitioners**: practitioners live in Grants Portal, insurance claims, and grantee
-  monitoring visits; advisors should focus on the funding map briefing for the board, the capital-stack
-  table, appeal strategy, and grantee negotiation — and should verify every program parameter against
-  current FEMA/SBA/HUD sources before it reaches a client.
+  monitoring visits; advisors should focus on the board funding-map briefing, the capital-stack table,
+  appeal strategy, and grantee negotiation, verifying every program parameter against current
+  FEMA/SBA/HUD sources before it reaches a client.

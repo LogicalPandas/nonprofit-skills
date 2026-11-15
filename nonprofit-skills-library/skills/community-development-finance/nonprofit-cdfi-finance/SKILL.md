@@ -38,8 +38,8 @@ development mission**, serve an eligible **Target Market**, provide **developmen
 alongside financing, and be accountable to their Target Market through governance or membership.
 Treasury certification under the Riegle Community Development and Regulatory Improvement Act
 of 1994 (12 U.S.C. § 4701 et seq.), tightened by the 2023 statutory and application overhaul, is
-the gatekeeper — "CDFI" is a federal designation, not a self-description. More than 1,000 certified CDFIs operate across three
-institutional types, and type drives what each can do for you:
+the gatekeeper — "CDFI" is a federal designation, not a self-description. More than 1,000
+certified CDFIs operate across three institutional types, and type drives what each can do:
 
 - **Loan funds** (the majority, and the most common nonprofit form) — nondepository lenders:
   flexible, mission-driven, will do predevelopment, mini-perm, subordinate, and
@@ -57,17 +57,14 @@ Adjacent but distinct: a **CDE** (Community Development Entity) certification is
 Tax Credits (`nonprofit-nmtc-deals`) — many CDFIs also hold CDE certification, but the two
 designations, applications, and compliance regimes are separate.
 
-**2025-2026 turbulence — verify before relying on any program date.** The CDFI Fund has been
-through a turbulent cycle: the FY 2025 CDFI Program FA/TA round (opened January 16, 2025, closed
-March 21, 2025) went through NOFA amendments in September 2025, a NOFA-update deadline moved to
-April 10, 2026, and OMB did not apportion the ~$289 million in FY 2025 funds until April 2026 —
-with final FA awards still unannounced as of September 2026 and the FY 2025 appropriation
-expiring September 30, 2026. The FY 2026 FA/TA NOFA had not been released as of September 2026.
-Congress funded the CDFI Fund at $324 million for FY 2026 (level with FY 2025) and a Continuing
-Resolution runs through December 11, 2026. Treasury also announced (April 2026) PRWORA-related
-rulemaking on "federal public benefits" and new anti-discrimination provisions in CDFI Fund
-agreements. Treat every cycle date in this skill as "verify at cdfifund.gov before acting" —
-the landscape is moving.
+**2025-2026 turbulence — verify before relying on any program date.** The FY 2025 CDFI Program
+FA/TA round (opened January 16, 2025, closed March 21, 2025) went through NOFA amendments in
+September 2025, a NOFA-update deadline moved to April 10, 2026, and OMB did not apportion the
+~$289 million in FY 2025 funds until April 2026 — with final FA awards still unannounced as of
+September 2026 and the FY 2025 appropriation expiring September 30, 2026. A Continuing Resolution
+runs through December 11, 2026. Treasury also announced (April 2026) PRWORA-related rulemaking on
+"federal public benefits" and new anti-discrimination provisions in CDFI Fund agreements. Treat
+every cycle date in this skill as "verify at cdfifund.gov before acting."
 
 ## Part 1 — Finding and Working with a CDFI as Borrower or Deal Partner
 
@@ -83,30 +80,28 @@ the landscape is moving.
    activity in public sources; a CDFI that lends $50K-$500K working capital will not lead a $12M
    construction loan, and a mortgage-scale CDFI will not touch a $75K tenant-improvement deal.
    Ask directly: largest project deal in the last 24 months, current participation appetite.
-3. **Confirm certification status.** The certified-CDFI list has churned badly — the 2023
-   application overhaul forced every CDFI certified as of December 7, 2023 to reapply, and the
-   Fund's June 10, 2026 list update showed roughly 168 organizations removed and 38 added. A
-   "CDFI" that lost certification may be fine to borrow from, but cannot receive CDFI Fund
-   awards or participate in Fund-linked structures. Verify against the current published list.
+3. **Confirm certification status** against the current published list. The 2023 application
+   overhaul forced every CDFI certified as of December 7, 2023 to reapply, and the Fund's June
+   10, 2026 list update showed roughly 168 organizations removed and 38 added. A "CDFI" that
+   lost certification may be fine to borrow from, but cannot receive CDFI Fund awards or
+   participate in Fund-linked structures.
 
 ### Understand how CDFI underwriting differs from commercial underwriting
 
-CDFI underwriting is bank-like in structure and different in substance. They apply the same
-**5 Cs** (character, capacity, capital, collateral, conditions) but re-weight them:
+CDFIs apply the same **5 Cs** as banks (character, capacity, capital, collateral, conditions)
+but re-weight them:
 
-- **Character and mission fit outweigh financial ratios.** CDFIs underwrite the borrower's
-  commitment to community outcomes, the credibility of the project team, and relationship
-  history. A weak-but-workable pro forma with a trusted sponsor and clear community benefit
-  often clears CDFI credit committees where a bank credit committee would decline.
+- **Character and mission fit outweigh financial ratios.** CDFIs underwrite commitment to
+  community outcomes, project-team credibility, and relationship history. A weak-but-workable
+  pro forma with a trusted sponsor and clear community benefit often clears a CDFI credit
+  committee where a bank would decline.
 - **Development services are part of the deal.** CDFIs pair loans with technical assistance —
-  financial statement help, cash-flow projections, board governance coaching. Expect the
-  lender to act partly as a capacity-builder. Nonprofits with thin finance staff should treat
-  this as a feature, not an intrusion.
+  financial statement help, cash-flow projections, board governance coaching. Nonprofits with
+  thin finance staff should treat this capacity-building as a feature, not an intrusion.
 - **Development performance replaces pure repayment performance.** CDFIs answer to Treasury,
-  philanthropy, and impact investors; their own reporting requires documenting jobs created,
-  units financed, businesses served. They will ask you to underwrite data collection and
-  reporting into the deal. Build the data plan early — a nonprofit that cannot report outcomes
-  is a harder credit.
+  philanthropy, and impact investors and must document jobs created, units financed, businesses
+  served. They will ask you to underwrite data collection and reporting into the deal. Build
+  the data plan early; a nonprofit that cannot report outcomes is a harder credit.
 - **They take risk banks price out — with structure, not just rate.** Expect longer amortizations
   with balloons, interest-only during ramp-up, flexible collateral, borrower-friendly workouts —
   offset by covenants, reserve requirements, and reporting conditions a bank might not impose.
@@ -122,8 +117,8 @@ CDFI underwriting is bank-like in structure and different in substance. They app
 - **Predevelopment and acquisition loans** — the riskiest tranche, often from loan funds or
   with philanthropic first-loss; expect personal/board guarantees on thin-balance-sheet
   nonprofits, and negotiate caps.
-- **Participations** — CDFIs join bank-led facilities at fixed rates to bring pricing down;
-  nonprofits benefit from bank pricing discipline plus CDFI flexibility in workout scenarios.
+- **Participations** — CDFIs join bank-led facilities at fixed rates to bring pricing down,
+  adding CDFI flexibility in workouts to bank pricing discipline.
 - **Subordinate debt** — CDFIs routinely take second or third positions (behind banks, bonds,
   HUD-insured debt) where their mission mandate and award-subsidized cost of capital justify
   the risk. This is the single most valuable structural role CDFIs play in nonprofit capital
@@ -163,25 +158,24 @@ would require — cross-shopping between CDFIs is expected and productive.
 ## Part 2 — Treasury CDFI Fund Programs (verified status as of September 2026)
 
 The CDFI Fund is a Treasury agency whose programs fall into two buckets: **awards** (grants and
-TA to certified CDFIs) and **guarantees/tax-credit allocation authority**. The FY 2026
-appropriation was $324 million, level-funded with FY 2025; note the President's FY 2026 budget
-proposal sought to eliminate several programs and create a new Rural Financial Assistance
-Program — Congress kept the traditional programs funded instead, but expect future proposals
-to revisit this. The two-cycle appropriations quirk matters: an FY 2025 appropriation can only
-be awarded by September 30, 2026 — which is exactly why the delayed FY 2025 FA/TA awards became
-a crisis.
+TA to certified CDFIs) and **guarantees/tax-credit allocation authority**. Congress funded it at
+$324 million for FY 2026, level with FY 2025, although the President's FY 2026 budget proposal
+sought to eliminate several programs and create a new Rural Financial Assistance Program —
+Congress kept the traditional programs funded instead, but expect future proposals to revisit
+this. The two-cycle appropriations quirk matters: an FY 2025
+appropriation can only be awarded by September 30, 2026 — which is why the delayed FY 2025 FA/TA
+awards became a crisis.
 
 **Core award programs:**
 
 - **CDFI Program — Financial Assistance (FA)**: the flagship. Competitive awards to **certified
   CDFIs only**, in loans, grants, equity-equivalent investments (EQ2s), deposits, or credit
   union shares; must be matched dollar-for-dollar with non-federal funds; historically up to
-  ~$2M per awardee per round, sized to the CDFI's scale. **Status:** FY 2025 round (opened
-  1/16/2025, closed 3/21/2025) still unannounced as of September 2026 — OMB apportioned ~$289M
-  in April 2026, litigation (CAMEO Network v. Treasury, filed August 2026) seeks to force
-  obligation before the funds expire 9/30/2026. FY 2026 FA/TA NOFA had not been released as of
-  September 2026 (FA/TA FY 2026 funds appeared on an apportionment list for 2027). Verify
-  current status before advising any applicant.
+  ~$2M per awardee per round, sized to the CDFI's scale. **Status:** FY 2025 round (1/16/2025 to
+  3/21/2025) still unannounced as of September 2026 — OMB apportioned ~$289M in April 2026, and
+  litigation (CAMEO Network v. Treasury, filed August 2026) seeks to force obligation before the
+  funds expire 9/30/2026. The FY 2026 FA/TA NOFA had not been released as of September 2026
+  (FA/TA FY 2026 funds appeared on an apportionment list for 2027).
 - **CDFI Program — Technical Assistance (TA)**: capacity-building grants; open to certified
   CDFIs and **Emerging CDFIs** that can certify within three years — the on-ramp for
   nonprofits not yet certifiable. A partial list of 56 TA awardees was announced in September
@@ -203,9 +197,8 @@ a crisis.
   cannot receive a BEA award — but a bank partner's BEA behavior can be a signal of CDFI
   partnership appetite.
 - **Capital Magnet Fund (CMF)**: competitive grants to certified CDFIs **and** nonprofit
-  affordable housing organizations for affordable housing and related economic development —
-  open to nonprofits that are not CDFIs (certification not required for nonprofit housing
-  developers). Award-for-leverage design (each award must leverage at least 10x); rounds are
+  affordable housing organizations (certification not required for nonprofit housing
+  developers) for affordable housing and related economic development. Award-for-leverage design (each award must leverage at least 10x); rounds are
   episodic — the FY 2024 round opened 2/14/2024, closed 4/16/2024, and announced $246.4M to
   48 organizations on 10/23/2024 (down from $321.2M the prior year), and BEA and CMF rounds
   planned for FY 2025 did not take place, so verify round timing. Housing
@@ -213,8 +206,7 @@ a crisis.
 - **CDFI Bond Guarantee Program (BG)**: Treasury guarantees bonds issued by Qualified Issuers,
   minimum $100M guarantee per bond issue; FY 2026 NOGA opened June 30, 2026 (up to $500M in
   guarantee authority, applications due July 8, 2026). Wholesale capital for large CDFIs —
-  relevant to a nonprofit borrower only as context for where big CDFIs' cheap fixed-rate money
-  comes from.
+  for a nonprofit borrower, only context for where big CDFIs' cheap fixed-rate money comes from.
 
 **All CDFI Fund applications are filed in AMIS** (Awards Management Information System). Award
 agreements carry compliance obligations: reporting (Transaction Level Reports and Annual
@@ -231,15 +223,13 @@ Run this before recommending any application:
    credible Emerging CDFI plan. CMF requires CDFI certification OR nonprofit housing developer
    status. BEA is banks-only; BG is for large CDFIs. If the client fails the gate, the path is
    TA-then-certification or a partner CDFI, not the award itself.
-2. **Match test (FA).** FA must be matched dollar-for-dollar with non-federal funds. A CDFI
-   without match capacity should not apply for FA it cannot deploy — consider a smaller FA
-   request or TA first.
-3. **Absorption capacity.** FA is capital for lending, not operating support: does the CDFI
-   have the pipeline, staff, and credit infrastructure to deploy the award within the
-   performance period? Undeployed awards are the classic first-time-awardee failure.
+2. **Match test (FA).** A CDFI without dollar-for-dollar non-federal match capacity should not
+   apply for FA it cannot deploy — consider a smaller FA request or TA first.
+3. **Absorption capacity.** FA is lending capital, not operating support: can the CDFI's
+   pipeline, staff, and credit infrastructure deploy it within the performance period?
+   Undeployed awards are the classic first-time-awardee failure.
 4. **Timing and cycle risk.** Given 2025-2026 cycle delays, model award receipt 12-24 months
-   after application, not at the NOFA's stated announcement date. Never bridge operations on
-   an anticipated award.
+   after application, not at the NOFA's stated announcement date.
 5. **Compliance readiness.** TLR-level transaction data systems, ACR discipline, audit-ready
    files, and now the anti-discrimination policy stack — a thin-staff CDFI should price the
    compliance cost into the award decision.
@@ -252,11 +242,10 @@ Run this before recommending any application:
 
 Certification unlocks FA awards, NACA (for Native-focused CDFIs), and preferred status in some
 bank partnership and philanthropic investment programs; it imposes Target Market discipline,
-federal reporting (ACR, TLR), and Treasury oversight. The strategic case is strongest for
-nonprofit lenders that (a) already do 60%+ Target Market lending, (b) want Fund awards to grow
-their loan book, and (c) have staff to sustain federal compliance. It is weakest for nonprofits
-whose lending is incidental to programs — the certification and reporting burden will outweigh
-the benefits.
+federal reporting (ACR, TLR), and Treasury oversight. The case is strongest for nonprofit
+lenders that (a) already do 60%+ Target Market lending, (b) want Fund awards to grow their loan
+book, and (c) have staff to sustain federal compliance. It is weakest where lending is
+incidental to programs — the burden will outweigh the benefits.
 
 ### What certification requires (post-2023 revised standards)
 
@@ -280,8 +269,6 @@ as of 2026. The applicant must demonstrate, in some cases along with affiliates:
    announced in September 2025 it would significantly restrict race/ethnicity-based OTP
    treatment, and many OTP-based certifications have been phased out), or multistate/other
    markets. Geography-based IA strategies have become the safer path for new applicants.
-   **Both** benchmarks matter: a portfolio can pass on loan count and fail on dollars (a few
-   large loans outside the Target Market sink the dollar test).
 5. **Development services** — nonfinancial services (training, TA, counseling) provided in
    conjunction with financing activities.
 6. **Accountability to the Target Market** — governing-board representation, member or
@@ -307,16 +294,15 @@ Supporting mechanics to know:
 - **Non-metro Customized Investment Areas** — effective August 6, 2026, at least 60% (down from
   75%) of eligible activity within a non-metro CIA must occur in individually qualified census
   tracts for the whole CIA to count toward the benchmark; other CIAs remain at 85%.
-- **Recertification churn** — every CDFI certified as of December 7, 2023 had to reapply under
-  the revised standards; some lost certification for missed deadlines or data gaps, and the
-  revised Certification Agreements add a **full recertification every five years** plus new
+- **Recertification churn** — some CDFIs lost certification in the mandatory reapplication
+  (see Part 1) for missed deadlines or data gaps, and the revised Certification Agreements add a **full recertification every five years** plus new
   anti-discrimination provisions (Section 5.17(b)). The 2026 cure-period episode (notices of
   noncompliance issued April 2026; cure by filing a new application by May 1, 2026) shows the
   Fund will enforce deadlines with award repayment on the table.
 
 ### Certification readiness assessment
 
-Assess against the seven criteria above; the standard readiness deliverable has three layers:
+Assess against the seven criteria above, in three layers:
 
 1. **Data audit** — reconstruct the last full fiscal year of originations at transaction level;
   geocode every borrower; run the 60%/60% test against candidate Target Market definitions
@@ -335,8 +321,8 @@ Assess against the seven criteria above; the standard readiness deliverable has 
 ## Standard Deliverables
 
 1. **CDFI partner-selection memo** — shortlist with fit rationale, product/sector match,
-   capacity screen, certification status verified, and a recommended sequencing (which CDFI
-   gets the first conversation and what to ask).
+   capacity screen, verified certification status, and sequencing (which CDFI gets the first
+   conversation and what to ask).
 2. **Certification readiness assessment** — criteria-by-criteria scorecard, 60%/60% benchmark
    run on actual transaction data, gaps memo with owners and dates, and a go/no-go with the
    compliance carry priced in.
@@ -373,8 +359,8 @@ Assess against the seven criteria above; the standard readiness deliverable has 
   non-Target-Market loans blow the 60%-by-dollar test. Fix: test both benchmarks by product
   and in aggregate.
 - **Building a plan on Fund award timing.** The FY 2025 FA round's awards were pending for
-  18+ months past application. Fix: never make payroll, a closing, or a bridge contingent on
-  a CDFI Fund award; treat awards as upside capital.
+  18+ months past application. Fix: never bridge operations, payroll, or a closing on an
+  anticipated CDFI Fund award; treat awards as upside capital.
 - **Confusing CDE and CDFI certification.** A nonprofit certified as a CDE for NMTC purposes
   assumes it is a certified CDFI (or vice versa) and files the wrong application. Fix: check
   which designation the strategy actually needs — CDE is for NMTC allocations
@@ -384,12 +370,11 @@ Assess against the seven criteria above; the standard readiness deliverable has 
   Fix: confirm genuine independence — separate board, own EIN, no government control —
   before investing in an application (tribal entities are exempt from this bar).
 - **Assuming "CDFI" means currently certified.** The recertification churn (2024-2026)
-  removed organizations that missed reapplication or failed new benchmarks. Fix: verify
-  against the Fund's current published certified list before any partnership or award plan.
+  removed organizations that missed reapplication or failed new benchmarks; verify against the
+  current published list before any partnership or award plan.
 - **Underestimating compliance carry.** First-time FA awardees deploy slowly, miss TLR/ACR
-  rhythms, and end up in noncompliance notices (as April 2026 showed, with award repayment
-  cited). Fix: staff the compliance function before the award decision, and use TA awards to
-  build it first.
+  rhythms, and draw noncompliance notices (April 2026, with award repayment cited). Fix: staff
+  compliance before the award decision, and use TA awards to build it first.
 - **Stale program facts.** Quoting FA maximums, round dates, or program existence from a
   pre-2025 memory — the Fund's cycles, rules, and even program lineup have changed. Fix:
   verify at cdfifund.gov and the Federal Register before any program-specific claim in a
