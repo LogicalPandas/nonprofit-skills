@@ -7,6 +7,7 @@ metadata:
   supervision_note: "IRS Form 8283 and qualified appraisals over $5,000; the donor's deduction depends on it."
   date_added: "2026-09-07"
   date_added_source: "git:1860ed47a83901ff5e6d45abc4a2ef05be8fd4cd"
+  last_reviewed: "2026-11-11"
 ---
 
 # Nonprofit In-Kind Gift Acceptance
@@ -46,38 +47,57 @@ updated:
    organization; the donor determines fair market value themselves.
 3. **$500-$5,000**: donor must file **IRS Form 8283, Section A**, generally with tax return, describing
    the property and how/when acquired; the organization does not sign this section but may be asked
-   to confirm receipt.
-4. **Over $5,000** (except publicly traded securities): donor generally needs a **qualified
+   to confirm receipt. Publicly traded securities are reported in Section A at any value.
+4. **Over $5,000** (except publicly traded securities): the $5,000 test applies per item or group of
+   similar items, counting all similar items the donor gave that year, even to other charities — so a
+   large batch of similar resale goods can cross it. Donor generally needs a **qualified
    appraisal** by a qualified appraiser and must file **Form 8283, Section B**, which requires the
    organization's authorized representative to sign acknowledging receipt of the described property
    — signing acknowledges receipt only, not the appraised value, and the organization should never
    represent or imply agreement with the donor's valuation.
-5. **Over $500,000**: the appraisal itself generally must be attached to the donor's return.
+5. **Over $500,000**: the appraisal itself generally must be attached to the donor's return (for
+   art, a complete copy of the signed appraisal must be attached at $20,000 or more).
+
+**Vehicles, boats, and airplanes are a special case.** For a qualified vehicle with a claimed value
+over $500, the organization must furnish a contemporaneous written acknowledgment — Copy B of **Form
+1098-C** may serve — within 30 days of the sale (or of the contribution, if an exception to the
+gross-proceeds rule applies), and file Form 1098-C with the IRS; without it the donor cannot deduct
+more than $500. If the organization sells the vehicle, the donor's deduction is generally limited to
+the gross proceeds of the sale, unless the organization certifies a significant intervening use,
+a material improvement, or a below-market gift or sale to a needy individual.
 
 Note the **donee reporting trigger**: if the organization sells, exchanges, or disposes of
 contributed property (Form 8283 Section B item) within 3 years of the contribution, it may need to
-file **Form 8282** with the IRS and send a copy to the donor — directly relevant to resale operations,
-since reselling a high-value donated item within the window can trigger this filing. Track Section-B
-items with a disposal date for this reason.
+file **Form 8282** with the IRS within 125 days after the disposition and send a copy to the original
+donor — directly relevant to resale operations, since reselling a high-value donated item within the
+window can trigger this filing. Two exceptions apply: items the donor identified on Form 8283 as
+appraised at $500 or less, and items consumed or distributed without charge in carrying out the
+organization's exempt purpose. Form 8282 also asks whether tangible personal property was put to a
+use related to the organization's purpose; knowingly certifying a related use falsely carries a
+$10,000 penalty. Track Section-B items with a disposal date for this reason.
 
 ## Standard Terminology
 
 - **Contemporaneous written acknowledgment (CWA)**: the donor's required receipt for gifts of $250+,
-  obtained before the donor files their return; must state whether goods/services were exchanged.
+  obtained by the earlier of the date the donor files their return or the return's due date
+  (including extensions); must state whether goods/services were exchanged.
 - **Qualified appraisal / qualified appraiser**: an appraisal meeting specific IRS requirements
-  (performed no more than 60 days before the gift, by an appraiser meeting defined credentialing and
+  (signed and dated no earlier than 60 days before the gift and no later than the due date, including
+  extensions, of the return claiming the deduction, by an appraiser meeting defined credentialing and
   independence requirements) required for most non-cash gifts over $5,000.
 - **Form 8283**: the donor's tax form for reporting non-cash charitable contributions; Section A for
   $500-$5,000, Section B (with organization signature) for over $5,000.
 - **Form 8282**: the organization's required filing if it disposes of a Section-B-reported item within
-  3 years of receiving it, notifying the IRS and donor of the disposal and sale price.
+  3 years of receiving it, filed within 125 days of the disposal, notifying the IRS and donor of the
+  disposal and sale price.
 - **Gift acceptance policy**: the board-adopted written policy defining what types of in-kind gifts
   the organization will and won't accept (e.g., real estate with environmental liability, vehicles
   needing costly repair/disposal, restricted or encumbered property) and the approval chain for
   exceptions.
 - **Quid pro quo contribution**: a gift where the donor receives something of value in return (e.g., a
-  gala ticket); the CWA must state the fair market value of what was received so the donor can deduct
-  only the excess.
+  gala ticket); the CWA must include a description and good-faith estimate of the value of what was
+  received so the donor can deduct only the excess. Separately, for any quid pro quo payment over $75,
+  the organization must give the donor a written disclosure statement saying so.
 
 ## Step-by-Step: Handling an In-Kind Gift Request
 
@@ -101,8 +121,9 @@ items with a disposal date for this reason.
 6. **Log every Section-B-signed item with its receipt date** in a tracking register so the 3-year
    Form 8282 disposal-reporting window is monitored — this matters directly for a resale operation
    likely to sell a high-value item well within 3 years.
-7. **File Form 8282 within the required window** if a tracked item is sold/disposed of within 3 years
-   of the original gift, sending a copy to the original donor as required.
+7. **File Form 8282 within 125 days of the disposal** if a tracked item is sold/disposed of within 3
+   years of the original gift (unless an exception applies), sending a copy to the original donor as
+   required.
 8. **Review and update the gift acceptance policy** at least every 1-2 years or whenever the org
    encounters a new gift type it hadn't anticipated, and get board adoption/re-adoption on record.
 9. **Train front-line intake and development staff** to recognize when a donation crosses from
@@ -128,10 +149,13 @@ items with a disposal date for this reason.
   a high-value donated item is resold quickly.
 - **No written, board-adopted gift acceptance policy**, leading to ad hoc acceptance of high-liability
   gifts (encumbered real estate, vehicles needing costly disposal) at the point of donation.
+- **Missing the 30-day Form 1098-C acknowledgment for a donated vehicle**, which caps the donor's
+  deduction at $500.
 - **Front-line intake staff issuing only the basic at-donation receipt** for a gift that actually needs
   a CWA or Form 8283 cooperation, leaving the donor under-documented at tax time.
-- **Appraisal obtained after, not before, signing Section B**, creating sequencing problems with the
-  IRS's 60-day appraisal-timing requirement.
+- **Signing Section B before the appraisal is in hand**, so the signer can't check that the property
+  described matches what was received — and missing that the appraisal must be signed no earlier
+  than 60 days before the gift and no later than the donor's return due date (including extensions).
 
 ## Practitioner vs. Advisor Framing
 
