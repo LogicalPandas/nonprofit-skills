@@ -1,6 +1,6 @@
 ---
 name: nonprofit-needs-assessment
-description: "Plans and conducts community needs assessments and landscape/gap scans to justify launching, continuing, or discontinuing a nonprofit program, including secondary data review, primary data collection (surveys, focus groups, key informant interviews), asset mapping, and gap analysis against existing providers. Use when a user asks to assess community need before starting a program, prove there is unmet demand for a funder or board, conduct a landscape scan of who else serves this population, run a gap analysis, plan community listening sessions or focus groups, or decide whether to sunset a program because the need has shifted. Covers the pre-program research phase, not the causal design of the program itself once need is established (nonprofit-program-design) and not measuring outcomes once the program is running (nonprofit-outcomes-measurement)."
+description: "Plans and conducts community needs assessments and landscape/gap scans to justify launching, continuing, or sunsetting a nonprofit program: secondary data, surveys, focus groups and key informant interviews, asset mapping, and gap analysis against existing providers. Use when asked \"is there actually demand for this program,\" \"the funder wants evidence of need,\" \"who else serves this population,\" or \"should we sunset this program.\" Not for designing the program once need is established (use nonprofit-program-design) or measuring a running program's outcomes (use nonprofit-outcomes-measurement)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,28 +11,13 @@ metadata:
 
 # Nonprofit Needs Assessment
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for research that establishes whether — and what kind of — a community need exists,
-before or independent of designing a specific program response. Concrete triggers:
-
-- "We want to start a new program — is there actually demand for it?"
-- "The funder wants evidence of need in our proposal."
-- "Do a landscape scan: who else in the region serves this population?"
-- "Run a gap analysis between what's needed and what's currently provided."
-- "Plan community listening sessions / focus groups / key informant interviews."
-- "Should we sunset this program? Has the need changed?"
-- "Build a community needs assessment report for the board or a funder."
-
-**Boundary — read before starting:**
-- Once need is established, building the logic model/theory of change for the program response is
-  `nonprofit-program-design` — this skill stops at "here is the documented need and the gap," not
-  "here is how the program will address it."
-- Tracking whether a running program is achieving outcomes is `nonprofit-outcomes-measurement` — a
-  needs assessment is normally a point-in-time (or periodic, e.g., every 3–5 years) study, not an
-  ongoing monitoring system.
-- If the ask is about assessing a funder or partner's fit rather than a community's need, that is
-  `nonprofit-grant-research`, not this skill.
+- This skill stops at "here is the documented need and the gap." Building the logic model/theory of
+  change for the response is `nonprofit-program-design`; hand off a continue-and-redesign finding there.
+- Tracking whether a running program achieves outcomes is `nonprofit-outcomes-measurement`; a needs
+  assessment is a point-in-time (or periodic, e.g., every 3–5 years) study, not ongoing monitoring.
+- Assessing a funder's or partner's fit rather than a community's need is `nonprofit-grant-research`.
 
 ## Core Frameworks
 
@@ -40,10 +25,10 @@ before or independent of designing a specific program response. Concrete trigger
 
 Credible needs assessments triangulate three data types — do not rely on only one:
 
-1. **Secondary/quantitative data**: existing public data (Census/ACS, county health rankings,
-   school district data, CDC/state health department data, HUD point-in-time homelessness counts,
-   Bureau of Labor Statistics, 211 call data, existing needs assessments from hospitals/United
-   Ways/community foundations that may already cover the geography).
+1. **Secondary/quantitative data**: existing public data (default starting set: Census/ACS, county
+   and state health department data, school district data, 211 call data, and existing needs
+   assessments from hospitals/United Ways/community foundations that may already cover the geography;
+   add domain sources such as HUD point-in-time counts as relevant).
 2. **Primary quantitative data**: surveys of the target population or service providers, structured
    to produce comparable numbers (Likert-scale need ratings, service utilization/barriers surveys).
 3. **Primary qualitative data**: key informant interviews (service providers, government officials,
@@ -62,8 +47,8 @@ Before concluding a gap exists, map what already serves the population:
 - **Provider inventory**: who else offers this or an adjacent service in the geography (name,
   capacity/slots, eligibility criteria, waitlist status, funding source).
 - **Community assets, not just deficits**: existing informal supports, cultural/faith institutions,
-  natural helpers — an assets-based (vs. purely deficit-based) framing is increasingly expected by
-  funders and avoids a report that only catalogs problems.
+  natural helpers — use an assets-based (vs. purely deficit-based) framing; many funders expect it,
+  and it avoids a report that only catalogs problems.
 - **Capacity vs. demand gap**: the actual gap is rarely "no service exists" — more often it's
   insufficient capacity, wrong eligibility criteria, wrong hours/location/language access, or long
   waitlists. Name the *specific* gap type; "duplicative service" is a common and damaging finding if
@@ -109,15 +94,28 @@ nothing decision-ready.
     on a major demographic/funding/policy shift, and say so in the report so it isn't treated as a
     one-time artifact.
 
+## Verify Before Acting
+
+- [ ] Population, age range, and geography (zip codes/neighborhoods) are stated precisely in the report.
+- [ ] Every finding cites its data source and year; secondary figures are pulled from the current
+      release at the named agency (e.g., Census/ACS, county health department), not copied from an
+      older report.
+- [ ] Methodology states sample sizes, response rates, recruitment method, and limitations,
+      including selection bias.
+- [ ] All three data types are present (secondary, primary quantitative, primary qualitative), and
+      divergences are reported rather than smoothed over.
+- [ ] Participant consent, privacy, and compensation were handled as planned before data collection.
+- [ ] The landscape scan was completed and each gap ends in an organizational implication (fill,
+      refer/partner, or stand down).
+
 ## Common Failure Modes
 
-- **Secondary-data-only assessments** presented as if they establish local, specific need — funders
-  increasingly probe for primary data and community voice.
+- **Secondary-data-only assessments** presented as if they establish local, specific need — always
+  include primary data and community voice; funders commonly probe for both.
 - **Skipping the landscape scan**, leading to a program proposal that duplicates an existing,
   underused service instead of addressing the real gap (access, capacity, or eligibility).
 - **Deficit-only framing** that ignores existing community assets and reads as extractive rather than
-  collaborative — increasingly penalized by funders committed to community-centered/equity-based
-  grantmaking.
+  collaborative — a weakness with funders committed to community-centered/equity-based grantmaking.
 - **Non-representative sampling** — surveying only people already in the organization's database,
   systematically missing the unserved population the assessment is supposed to reach.
 - **No compensation or accessibility planning** for community participants (transportation, child
@@ -138,12 +136,9 @@ nothing decision-ready.
   surface uncomfortable findings (e.g., "your flagship program isn't reaching the population with
   greatest need") are the ones most likely to be quietly shelved without a structured decision
   conversation attached.
-- Standard advisory deliverable: a needs assessment report (methodology, findings, landscape/asset
-  map, gap analysis, recommendations) plus a short board-facing decision memo translating the gap
-  analysis into 2–3 concrete organizational options.
 - Where the client's real question is "should we keep funding this program," reframe the assessment
-  around a sunset/continue/redesign decision explicitly, and hand off a positive continue-and-redesign
-  finding to `nonprofit-program-design`.
+  around an explicit sunset/continue/redesign decision; the board memo should translate the gap
+  analysis into 2–3 concrete organizational options.
 
 ## Standard Deliverables
 

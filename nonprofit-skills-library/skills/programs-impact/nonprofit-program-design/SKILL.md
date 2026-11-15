@@ -1,6 +1,6 @@
 ---
 name: nonprofit-program-design
-description: "Builds logic models and theory-of-change frameworks that connect a nonprofit program's inputs, activities, and outputs to short-, mid-, and long-term outcomes. Use when a user asks to design a new program, articulate a theory of change, build or revise a logic model, map program assumptions and external factors, define a program's causal chain before writing a grant proposal, or diagnose why a program's activities aren't producing the outcomes leadership expects. Covers the design and structuring of the model itself, not writing it into a funder narrative (nonprofit-grant-writing) and not measuring whether the outcomes actually occurred (nonprofit-outcomes-measurement)."
+description: "Builds logic models and theories of change that connect a nonprofit program's inputs, activities, and outputs to short-, mid-, and long-term outcomes, with assumptions and external factors named. Use when asked to \"build a logic model for our program,\" \"we need a theory of change,\" \"show the funder how our activities lead to outcomes,\" or \"why isn't this program producing results.\" Not for writing the model into a funder narrative (use nonprofit-grant-writing), measuring whether outcomes occurred (use nonprofit-outcomes-measurement), establishing need (use nonprofit-needs-assessment), or adapting to new sites (use nonprofit-program-scaling)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,41 +11,28 @@ metadata:
 
 # Nonprofit Program Design
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the task is to build, revise, or troubleshoot the causal design of a nonprofit
-program — the logic that connects what the program puts in and does to the change it claims to
-produce. Concrete triggers:
-
-- "Build a logic model for our [tutoring / food access / job training] program."
-- "We need a theory of change for the board retreat / strategic plan / new program pitch."
-- "Our funder wants to see how our activities lead to outcomes."
-- "We're redesigning an existing program — help us map inputs to outcomes."
-- "What assumptions are we making that could break this program's logic?"
-- A program has been running for years but nobody can articulate why it should work.
-
-**Boundary — read before starting:**
-- Turning a finished logic model into funder-facing prose (narrative, budget narrative) is
-  `nonprofit-grant-writing`. This skill produces the model; that skill writes it up for a specific RFP.
-- Deciding what to measure, how to collect data, and how to report actual results against the model
-  is `nonprofit-outcomes-measurement`. This skill defines *what should happen*; that skill defines
-  *how you'll know if it did*.
-- Determining whether a new program is needed in the first place, based on community data, is
-  `nonprofit-needs-assessment`. Program design assumes the need is already established (or hands off
-  from it).
-- Adapting a working model to new sites/populations is `nonprofit-program-scaling`.
+- Turning a finished model into funder-facing prose for a specific RFP: `nonprofit-grant-writing`.
+- What to measure, how to collect data, and reporting results against the model:
+  `nonprofit-outcomes-measurement` (this skill defines what should happen; that skill defines how
+  you'll know if it did).
+- Whether the program is needed at all: `nonprofit-needs-assessment` (program design assumes need is
+  established or hands off from it).
+- Adapting a working model to new sites/populations: `nonprofit-program-scaling`.
 
 ## Core Frameworks
 
 ### 1. Logic Model (linear, single-program)
 
-The standard logic model: Kellogg's five components (inputs, activities, outputs, outcomes,
-impact), with outcomes split by time horizon, in the sequence funders (United Way, W.K. Kellogg
-Foundation, CDC) expect:
+Default layout: Kellogg's five components (inputs, activities, outputs, outcomes, impact), shown as
+six columns because outcomes are split by time horizon, in the sequence funders (United Way, W.K.
+Kellogg Foundation, CDC) expect:
 
 | Inputs | Activities | Outputs | Short-Term Outcomes | Mid-Term Outcomes | Long-Term Outcomes / Impact |
 |---|---|---|---|---|---|
 | Resources invested: staff, funding, volunteers, curriculum, partners, facilities | What the program *does* with those resources | Direct, countable products of activities (units of service) | Change in knowledge, attitude, skill (0-1 yr) | Change in behavior or practice (1-3 yr) | Change in condition/status — the ultimate impact (3+ yr) |
+| Example (illustrative): 2 job coaches, employer partners, curriculum | Job-readiness workshops and mock interviews | [#] workshops; [#] participants completing | Participants gain interview skills | Participants secure interviews and are hired | Participants retain employment and stable income |
 
 Rules of thumb that catch most first-draft errors:
 - **Outputs are not outcomes.** "50 workshops delivered" or "200 meals served" is an output — it
@@ -81,17 +68,13 @@ program. Use a **theory of change** when the organization needs to articulate or
 underlying causal hypothesis — new program design, strategic planning, or when a funder explicitly
 asks "what is your theory of change."
 
-### 3. Common Program Design Frameworks to Recognize
+### 3. Related Frameworks
 
-- **Results-Based Accountability (RBA) / Mark Friedman's "Turn the Curve"** — distinguishes
-  population-level results (community-wide conditions) from performance measures (how well a
-  program did its job); useful when a program is one contributor among many to a community outcome.
-- **Collective Impact backbone logic** — when the program sits inside a multi-org initiative, the
-  logic model should show the program's contribution to a shared community-level outcome, not claim
-  sole attribution.
-- **Kellogg Foundation Logic Model Development Guide** — the most widely cited public template;
-  default to its five components, laid out as in the table above, unless the
-  funder specifies its own.
+- **Results-Based Accountability (RBA, "Turn the Curve")** — use its population-results vs.
+  performance-measures split when the program is one contributor among many to a community outcome.
+- **Collective Impact** — when the program sits inside a multi-org initiative, show contribution to
+  the shared outcome, not sole attribution.
+- Default to the Kellogg layout above unless the funder specifies its own template.
 
 ## Instructions
 
@@ -151,16 +134,15 @@ When facilitating this for a client:
 - Bring an external framework name (logic model vs. ToC vs. RBA) into the room explicitly; clients
   often conflate "outcomes" and "outputs" and having a named framework to point to depersonalizes the
   correction.
-- Deliverable for a client engagement: a facilitated logic model workshop output (draft table),
-  a revised final one-pager, and a short memo listing assumptions/risks the client should monitor —
-  separate from the model itself so it survives as a standing risk register.
+- Keep the assumptions/risk memo separate from the model itself so it survives as a standing risk
+  register.
 - Flag scope explicitly to the client: this engagement builds the model; recommend
   `nonprofit-outcomes-measurement` as a distinct follow-on engagement (often a different SOW) rather
   than assuming measurement design is included.
 
 ## Standard Deliverables
 
-- One-page logic model (table format, Kellogg-style, as in the table above)
+- One-page logic model (six-column table, Kellogg-style, as above)
 - Theory-of-change narrative (1–2 pages) with assumptions, pathways, and evidence base
 - Assumptions/risk register (bulleted list, owner-assigned)
 - Handoff notes flagging which outcomes need indicators (for `nonprofit-outcomes-measurement`) and
