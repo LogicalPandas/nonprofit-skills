@@ -28,28 +28,26 @@ Covers renting the org's space to third parties when it is dark, and the ancilla
 
 ## Part 1 — Audit the Rentable Inventory
 
-Before pricing anything, establish what the org actually has to sell, hour by hour. Most arts
-orgs under-audit: they rent the theater and forget the lobby, or price the studio as one unit when
-two rentable halves exist.
+Before pricing anything, establish what the org actually has to sell, hour by hour. Most arts orgs
+under-audit: they rent the theater and forget the lobby, or price the studio as one unit when two
+rentable halves exist.
 
 1. **List every distinct rentable space** — theater, black box, concert hall, main gallery, project
    room, dance studio, rehearsal hall, lobby/atrium, green room, conference room, outdoor
    plaza/garden, kitchen (if certified for commercial use), and the parking lot. For each: capacity
    (seated, standing, dance), square footage, and what the fire code actually permits for assembly
    use. **Completion:** a one-page inventory with legal occupancy per space.
-2. **Rate each space's rentable condition.** For each space, note: heating/cooling capability when
-   dark; sound isolation (can two events run simultaneously?); rigging, lighting, and A/V
-   inventory that comes with the room; floor condition (a sprung floor rents for more than a
-   concrete one, and a marley floor limits shoe types); ADA access and restroom count per
-   occupancy; and parking spaces within the org's control. This determines what channel the space
-   can serve at all — a gallery with no loading door cannot host a film shoot needing equipment
-   trucks.
-3. **Compute true dark hours.** Pull the production calendar and identify genuinely available
-   windows: the theater is unrentable during a run (set is in), but the lobby may be rentable on
-   show nights as a pre-theater event space; studios are dark mid-day; galleries between
-   exhibitions. Rental potential is a function of *dark hours by space*, not of the building.
-   Coordinate the master calendar with `nonprofit-arts-season-planning` — the season calendar and
-   the rental calendar must be one artifact.
+2. **Rate each space's rentable condition:** heating/cooling when dark; sound isolation (can two
+   events run simultaneously?); rigging, lighting, and A/V inventory that comes with the room;
+   floor condition (a sprung floor rents for more than concrete, and a marley floor limits shoe
+   types); ADA access and restroom count per occupancy; and parking spaces within the org's
+   control. This determines which channels the space can serve — a gallery with no loading door
+   cannot host a film shoot needing equipment trucks.
+3. **Compute true dark hours.** From the production calendar, identify genuinely available
+   windows: the theater is unrentable during a run (set is in), but the lobby may rent on show
+   nights as a pre-theater event space; studios are dark mid-day; galleries between exhibitions.
+   Rental potential is *dark hours by space*, not the building. The season calendar
+   (`nonprofit-arts-season-planning`) and the rental calendar must be one artifact.
 4. **Map the hard constraints.** Noise curfews in the lease or zoning, loading dock hours and
    load-in corridors, shared spaces (a lobby used by a wedding at 6 PM cannot be the
    subscribers'- lounge at 7:30), insurance riders the org's own policy imposes, and any funder or
@@ -70,34 +68,33 @@ exists to serve. Build three or four rate tiers per space:
 | **Production (film, TV, photo shoots)** | Rigging access, power, control of the room | Day rate for 10–12 hour "shooting days"; surcharges for rigging, generator use, after-hours crew | Insurance requirements much higher; location agreement governs (a different contract form than the event license) |
 | **Long-term/rehearsal (dance companies, teaching artists, church plants)** | Predictable weekly access | Low hourly rate in bulk; monthly agreements | Off-peak hours only; minimal staffing; own agreement form |
 
-1. **Benchmark before setting rates.** Pull the published rental rates of five comparable venues in
-   the market (other theaters, event halls, hotel ballrooms of similar capacity). Comparable data
+1. **Benchmark before setting rates.** Pull the published rental rates of five comparable venues
+   in the market (other theaters, event halls, hotel ballrooms of similar capacity) — data that
    also arms the ED against the board member who "just feels" the hall should rent for half the
    market. **Completion:** a benchmark table with the org's proposed rates placed against it.
-2. **Price the prime assets deliberately, not by square foot.** In most markets the wedding channel
-   prices the *date*, not the room: Saturday evenings in high season carry a premium of 30–50% over
-   the same room on a Tuesday in February. A museum-theater lobby with good architecture is a
-   wedding product; the black box is a corporate/production product; the studio is a
-   rehearsal-rate product. Match each space to its highest-value channel and price it there, then
-   discount down for mission-fit renters.
+2. **Price the prime assets deliberately, not by square foot.** In most markets the wedding
+   channel prices the *date*, not the room: Saturday evenings in high season carry a premium of
+   30–50% over the same room on a Tuesday in February. A museum-theater lobby with good
+   architecture is a wedding product; the black box a corporate/production product; the studio a
+   rehearsal-rate product. Price each space for its highest-value channel, then discount down for
+   mission-fit renters.
 3. **Charge for the true drivers: staffing, A/V, and time.** Base rent should be the smallest line
-   in the quote. Build the quote as: base rent + house staffing (house manager, technician,
-   security — priced per hour with a minimum) + A/V package (tie-line, projector, lighting
-   rep) + setup/strike fees (the hours before and after the renter's event, which the renter
-   forgets exist) + damage deposit. Publish the per-hour overtime rate and enforce it — overtime
-   is where rentals become unprofitable for the org.
+   in the quote: base rent + house staffing (house manager, technician, security — per hour with a
+   minimum) + A/V package (tie-line, projector, lighting rep) + setup/strike fees (the hours
+   before and after the event, which renters forget exist) + damage deposit. Publish and enforce
+   the per-hour overtime rate — overtime is where rentals become unprofitable.
 4. **Set discount policy, not case-by-case charity.** A written policy (e.g., "501(c)(3)
-   organizations and public schools receive 30% off base rent; staff and A/V billed at cost") keeps
-   the community-rate channel honest and protects staff from negotiation pressure. If the org
-   wants to give space away, book it as an **in-kind contribution** so it shows up in the
-   development and `nonprofit-cost-allocation` records — an undocumented discount is invisible
-   mission impact and lost evidence for grant narratives.
+   organizations and public schools receive 30% off base rent; staff and A/V billed at cost")
+   keeps the community-rate channel honest and protects staff from negotiation pressure. If the org
+   wants to give space away, book it as an **in-kind contribution** so it shows up in development and
+   `nonprofit-cost-allocation` records — an undocumented discount is invisible mission impact and
+   lost evidence for grant narratives.
 
 ## Part 3 — The Rental Agreement Checklist
 
-Every rental that binds the org needs a written license agreement — a short-form license for
-community room use, a full event license for private/corporate events, and a location agreement
-for shoots. Whatever the form, it must contain, at minimum:
+Every rental that binds the org needs a written license agreement — short-form for community room
+use, a full event license for private/corporate events, a location agreement for shoots —
+containing at minimum:
 
 1. **Parties, space, date, and hours** — including the exact load-in and load-out times, separate
    from the event hours, and an itemized list of included rooms and equipment. **Completion:**
@@ -122,18 +119,16 @@ for shoots. Whatever the form, it must contain, at minimum:
    naming the org. Shoots and large events carry special-event or production insurance at higher
    limits — typically $2M+ for productions. Any org-specific coverage questions beyond the rental
    context route to `nonprofit-risk-management`.
-5. **Staffing requirements** — the agreement states which org staff are mandatory: house manager
-   (or event supervisor) for every private event; technician whenever stage lighting, sound, or
-   projection is touched (renters may not rig or patch); security for large-capacity or
-   alcohol-serving events; custodial before and after. All mandatory staffing is billed, not
-   bundled into base rent invisibly.
-6. **Alcohol terms** — the agreement states who controls alcohol service: (a) the org holds the
-   appropriate license/permit and serves through its own trained staff, (b) a licensed caterer
-   holds the license and serves, or (c) with a licensed caterer pouring, the renter supplies
-   product under a permitted structure. Never allow self-serve or renter-controlled service.
-   Whichever party controls the alcohol typically inherits dram-shop liability — which is why
-   "who controls the alcohol" is the single most important question in the alcohol section. See
-   the liquor mechanics block below.
+5. **Staffing requirements** — which org staff are mandatory: house manager (or event supervisor)
+   for every private event; technician whenever stage lighting, sound, or projection is touched
+   (renters may not rig or patch); security for large-capacity or alcohol-serving events;
+   custodial before and after. All mandatory staffing is billed, not hidden in base rent.
+6. **Alcohol terms** — who controls alcohol service: (a) the org holds the appropriate
+   license/permit and serves through its own trained staff, (b) a licensed caterer holds the
+   license and serves, or (c) with a licensed caterer pouring, the renter supplies product under a
+   permitted structure. Never allow self-serve or renter-controlled service. The party controlling
+   the alcohol typically inherits dram-shop liability, making this the most important question in
+   the alcohol section (mechanics below).
 7. **Load-in rules** — loading dock and freight elevator hours, approved entrances, floor
    protection (masonite over the stage; no tape on the sprung floor except gaff), rigging limits
    and point loads, prohibited items (open flame, confetti, glitter, sand, fog machines, nails in
@@ -149,10 +144,9 @@ for shoots. Whatever the form, it must contain, at minimum:
    right to let a crew film the paintings on its walls). For private events: the org's own
    photography rights (marketing use) and a music clause that puts performance-rights liability
    where it belongs — route ASCAP/BMI/SESAC/GMR questions to `nonprofit-arts-performance-licensing`.
-10. **Signature authority.** The agreement is signed by someone with actual authority under the
-    org's delegation policy — this is the supervision point: a rental agreement binds the org,
-    and it needs a knowledgeable ED/Managing Director read before signature, not a
-    front-of-house signature.
+10. **Signature authority.** Signed by someone with actual authority under the org's delegation
+    policy — the supervision point: a rental agreement binds the org and needs a knowledgeable
+    ED/Managing Director read before signature, not a front-of-house signature.
 
 ## Liquor, COIs, and other operating mechanics
 
@@ -168,34 +162,33 @@ for shoots. Whatever the form, it must contain, at minimum:
   generalize across states:** verify the org's own state's permit types, fees, lead times
   (temporary permits can require 10–30+ days' advance filing), and nonprofit discounts with the
   state alcohol authority and local government before quoting alcohol to a renter.
-- **Server training.** Require every person pouring — org staff, caterer staff, or volunteer —
-  to hold a recognized responsible-service credential (e.g., **TIPS** or **ServSafe Alcohol**;
-  some states/jurisdictions mandate a specific state certification). Check ID protocols, serving
-  limits, and incident logs in the house bar policy. Some private-event hosts will push for
-  untrained "friends behind the bar" — the agreement must prohibit it.
-- **COI intake is a process, not a drawer.** Standard practice: collect the ACORD 25 certificate
-  at contracting, check it against a requirements checklist (limits, additional insured
-  endorsement attached, primary/non-contributory wording, policy dates spanning the event,
-  liquor liability if alcohol), and re-verify for annual or repeat renters. A certificate with a
-  typed "additional insured" line and no endorsement is the classic gap — the venue is named on
-  paper and has no actual coverage rights.
+- **Server training.** Require every person pouring — org staff, caterer staff, or volunteer — to
+  hold a recognized responsible-service credential (e.g., **TIPS** or **ServSafe Alcohol**; some
+  states/jurisdictions mandate a specific state certification). Check ID protocols, serving limits,
+  and incident logs in the house bar policy. Some private-event hosts will push for untrained
+  "friends behind the bar" — the agreement must prohibit it.
+- **COI intake is a process, not a drawer.** Collect the ACORD 25 certificate at contracting,
+  check it against a requirements checklist (limits, additional insured endorsement attached,
+  primary/non-contributory wording, policy dates spanning the event, liquor liability if alcohol),
+  and re-verify for annual or repeat renters. A typed "additional insured" line with no
+  endorsement is the classic gap.
 - **House-policy riders.** Give renters the org's house rules as an
   exhibit to the agreement, not as a separate courtesy document — only what's in the contract is
   enforceable.
 
 ## Part 4 — Conflict Calendar: Rentals vs. the Season
 
-Rentals destroy more programming than they support when the calendar is informal. Rules that
-make coexistence work:
+Rentals destroy more programming than they support when the calendar is informal. Rules for
+coexistence:
 
 1. **One master calendar, two layers.** The artistic/production calendar
    (`nonprofit-arts-season-planning`) is the senior layer; rentals book into remaining windows. A rental may never bump a
    scheduled production, exhibition install, or education program — and staff must not "squeeze" a
    rental into a dark day that is actually a rest day for the stage crew.
-2. **Protect the production buffer.** The theater is unrentable from first load-in through
-   strike — typically several days around every run. The lobby may rent on performance nights only
-   with explicit front-of-house sign-off. Galleries are unrentable during install and deinstall.
-   Write these blackouts into the rental policy so rental staff don't have to argue case by case.
+2. **Protect the production buffer.** The theater is unrentable from first load-in through strike
+   — typically several days around every run. The lobby may rent on performance nights only with
+   explicit front-of-house sign-off. Galleries are unrentable during install and deinstall. Write
+   these blackouts into the rental policy so staff don't argue case by case.
 3. **Hold the prime dates in advance.** Each season, pre-block the org's own highest-value
    dates (holiday party season, festival weekends) before opening prime Saturdays to weddings.
    Decide deliberately whether a Saturday-night rental is worth more than a potential
@@ -213,9 +206,9 @@ make coexistence work:
 
 ## Part 5 — Ancillary Lines and Their Margins
 
-Ancillaries are where rental events actually make money — the base rent often just covers fixed
-costs. Track each line's margin separately in the chart of accounts; `nonprofit-budgeting` treats
-them as distinct earned lines.
+Ancillaries are where rental events actually make money — base rent often just covers fixed costs.
+Track each line's margin separately in the chart of accounts; `nonprofit-budgeting` treats them as
+distinct earned lines.
 
 | Line | Margin profile | Mechanics that protect the margin |
 |---|---|---|
@@ -234,17 +227,16 @@ liability — in the rental agreement, not in an email.
 ## Part 6 — UBIT Basics: When Rental Income Is Taxable
 
 Unrelated Business Income Tax (UBIT) applies to net income from a trade or business regularly
-carried on that is not substantially related to exempt purposes. Venue rental usually fits inside
-an exclusion — but the exceptions are exactly where arts venues get hurt. The mechanics
-(verified against IRS guidance as of September 2026):
+carried on that is not substantially related to exempt purposes. Venue rental usually fits an
+exclusion — but the exceptions are where arts venues get hurt. The mechanics (verified against IRS
+guidance as of September 2026):
 
 1. **The general rule: rents from real property are excluded** from unrelated business taxable
    income under **IRC §512(b)(3)**. A theater hall, gallery, studio, or lobby rented for a fixed
-   fee to an outside renter is classic rent from real property, excluded from UBIT. IRS examples
-   make the point directly: an exempt school renting its tennis facilities for a fixed fee to an
-   unrelated operator produced excludable rent (Rev. Rul. 80-297), and income from the **occasional
-   use of a meeting hall** is likewise excluded (Rev. Rul. 69-178). Occasional hall rentals are,
-   in fact, the textbook excluded case.
+   fee to an outside renter is classic rent from real property. IRS examples: an exempt school
+   renting its tennis facilities for a fixed fee to an unrelated operator produced excludable rent
+   (Rev. Rul. 80-297), and income from the **occasional use of a meeting hall** is likewise
+   excluded (Rev. Rul. 69-178) — the textbook excluded case.
 2. **Exception — substantial personal services.** Payments for space where the org renders
    services primarily for the occupant's convenience are *not* rent from real property. The
    dividing line: services "usually or customarily rendered in connection with the rental" (heat
@@ -317,23 +309,23 @@ Keep the schedule with the org's tax file and refresh it when the deal mix or mo
 
 ## Part 7 — Cost the Rental Program
 
-The most common rental failure ("the rental that cost us money") is invisible underpricing of real costs. A $2,000 hall rental
-that consumes 14 staff hours ($35/hr loaded = $490), a technician for 8 hours ($560), custodial
-before and after ($240), utilities and wear on a $40,000 lighting rep, and 3 hours of
-coordinator time ($105) has roughly $1,400 of direct cost before the org's overhead — and if a
-technician is pulled off a show-prep day, the true cost includes production delay. Run the
-arithmetic before setting rates:
+The most common rental failure ("the rental that cost us money") is invisible underpricing of real
+costs. A $2,000 hall rental that consumes 14 staff hours ($35/hr loaded = $490), a technician for
+8 hours ($560), custodial before and after ($240), utilities and wear on a $40,000 lighting rep,
+and 3 hours of coordinator time ($105) has roughly $1,400 of direct cost before overhead — and
+pulling a technician off a show-prep day adds production delay. Run the arithmetic before setting
+rates:
 
 1. **Build a per-event cost model.** For each space: mandatory staffing hours by event type,
    loaded hourly rates, setup/strike custodial hours, utilities, consumables, and an amortized
    wear charge on equipment. **Completion:** base rates that clear direct costs with margin,
    stated as "rate = direct cost × target multiple" so the board sees the logic.
-2. **Kill the free-staff habit.** Staff who "help out" at rentals off the clock are both a wage-
-   and-hour problem and a hidden subsidy that makes the rental line look profitable when it is
-   not. All rental staffing is scheduled, compensated, and billed.
-3. **Price the calendar cost, too.** Recurring rentals that force the season to design around
-   them (Part 4) have a real opportunity cost — the org's own programming has value. When a
-   recurring rental conflicts with the season, price the conflict in or decline.
+2. **Kill the free-staff habit.** Staff who "help out" at rentals off the clock are a
+   wage-and-hour problem and a hidden subsidy that makes the rental line look profitable when it
+   is not. All rental staffing is scheduled, compensated, and billed.
+3. **Price the calendar cost, too.** Recurring rentals that force the season to design around them
+   (Part 4) carry real opportunity cost; when one conflicts with the season, price the conflict in
+   or decline.
 4. **Track rental-program profitability annually** as its own line (revenue minus all direct
    costs, before allocating overhead) — if the program loses money after two full years of
    honest accounting, fix rates, cut channels, or stop. A mission-subsidized rental program can
@@ -363,13 +355,13 @@ Blackouts: production load-in through strike; gallery install/deinstall; [held p
 
 ## Common Failure Modes
 
-- **Flat-rate pricing across channels.** One rate for everything means weddings are underpriced
-  and community groups are priced out. Fix: tiered rates per Part 2, written discount policy.
-- **The typed-line COI.** Accepting an ACORD 25 with "additional insured: [org]" typed on it, no
-  endorsement, no primary/non-contributory wording — no actual coverage for the org. Fix: the COI
-  checklist in Part 3, verified before load-in.
-- **Self-serve alcohol.** Renter's uncle behind the org's bar. Fix: agreement prohibits
-  renter-poured service; trained servers only; licensed caterer or org-run bar.
+- **Flat-rate pricing across channels.** Weddings underpriced, community groups priced out. Fix:
+  tiered rates per Part 2, written discount policy.
+- **The typed-line COI.** An ACORD 25 with "additional insured: [org]" typed on it, no
+  endorsement, no primary/non-contributory wording. Fix: the Part 3 COI checklist, verified before
+  load-in.
+- **Self-serve alcohol.** Renter's uncle behind the org's bar. Fix: prohibit renter-poured
+  service; trained servers only; licensed caterer or org-run bar.
 - **The invisible overtime.** Renter's event "ends at 10" and the vendor load-out runs to 1 AM
   with staff on the clock. Fix: hourly overtime in the agreement, deposit at risk, staff
   authorized to enforce.
@@ -379,11 +371,10 @@ Blackouts: production load-in through strike; gallery install/deinstall; [held p
 - **Surprise 990-T.** A percentage-of-bar deal or a mostly-rented debt-financed building quietly
   creates taxable income no one filed for. Fix: the per-line UBIT schedule (Part 6), refreshed
   when deal structures change; deep mechanics to `nonprofit-form-990`.
-- **The profitable-looking unprofitable program.** Rental revenue booked gross, staffing costs
-  buried in program departments. Fix: per-event cost model and annual program P&L.
-- **Recurring renter becomes a tenant.** A "weekly rental" that has run three years, treats the
-  studio as its own facility, and now the org can't get the space back. Fix: cap recurring
-  blocks and review annually.
+- **The profitable-looking unprofitable program.** Revenue booked gross, staffing buried in
+  program departments. Fix: per-event cost model and annual program P&L.
+- **Recurring renter becomes a tenant.** A three-year "weekly rental" treats the studio as its own
+  facility and the org can't get the space back. Fix: cap recurring blocks and review annually.
 
 ## Verify Before Acting
 
