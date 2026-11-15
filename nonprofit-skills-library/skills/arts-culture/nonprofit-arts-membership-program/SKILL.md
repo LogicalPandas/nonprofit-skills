@@ -1,6 +1,6 @@
 ---
 name: nonprofit-arts-membership-program
-description: "Arts membership program design: member tier and benefit architecture (3-4 tiers, belonging-shaped benefits, not donor recognition), pricing anchored to single-ticket value, the subscriber→member→donor ladder, renewal campaigns and lapse winback, young-patron circles, benefit fulfillment, and the token-benefit substantiation rules membership drives (2026 thresholds verified). Use when a user says 'design our membership program,' 'members aren't renewing,' 'how should we price member tiers,' 'start a young patrons circle,' or 'what part of a membership is tax-deductible.' Not for season subscriptions, flex passes, or ticket pricing (use nonprofit-arts-box-office-subscriptions), the annual fund and general appeals (use nonprofit-annual-appeals), major gifts and gift societies (use nonprofit-major-gifts), galas and benefit events (use nonprofit-fundraising-events), corporate season sponsorship (use nonprofit-arts-season-sponsorship), or member-program outcomes measurement (use nonprofit-outcomes-measurement)."
+description: "Designs arts membership programs: 3-4 tier and benefit architecture built on belonging and access rather than donor recognition, pricing anchored to single-ticket value, the subscriber-to-member-to-donor ladder, renewal and lapse winback, young-patron circles, benefit fulfillment, and the quid-pro-quo and token-benefit math behind deductibility statements. Use when a user says 'design our membership program,' 'members aren't renewing,' 'how should we price member tiers,' or 'what part of a membership is tax-deductible.' Not for subscriptions or ticket pricing (use nonprofit-arts-box-office-subscriptions), the annual fund (use nonprofit-annual-appeals), gift societies (use nonprofit-major-gifts), or galas (use nonprofit-fundraising-events)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,11 +12,18 @@ metadata:
 
 # Arts Membership Programs
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit arts organization — theater, orchestra, dance or opera company, presenting organization, community arts center, gallery — is designing, pricing, running, or rescuing a **membership program**: the paid belonging product in which a household or individual pays annual dues for member benefits (discounts, early access, member events, a magazine), distinct from buying tickets and distinct from making a gift. The user is typically an executive or managing director, development or marketing director, membership manager, or a consultant to the org. Trigger tasks: "design our membership program from scratch," "our members aren't renewing — the renewal campaign isn't working," "how do we price member tiers," "should we launch a young patrons circle," "what's the difference between a subscriber and a member," "how much of a $150 membership is tax-deductible," "we want members to eventually become donors."
+Covers the paid belonging product: annual dues for member benefits, distinct from buying tickets and from making a gift. Users are typically an executive or managing director, development or marketing director, membership manager, or consultant. Hand off:
 
-**Boundary:** Season subscription packages, flex passes, ticket bundles, dynamic pricing, and subscriber acquisition campaigns are **earned-income product decisions** — route them to `nonprofit-arts-box-office-subscriptions`; membership sits above them in the ladder but never re-solves the ticket product. The **annual fund and general appeals** (year-end campaigns, direct-mail acquisition, monthly giving) route to `nonprofit-annual-appeals`. **Major gifts and gift societies** (five- and six-figure patrons, named funds) route to `nonprofit-major-gifts`; membership is the ladder's middle rung, not a giving society. **Benefit and gala events** route to `nonprofit-fundraising-events`; if a member benefit is an event, this skill defines the benefit, that one runs the event. **Corporate packages** — season sponsorship, production underwriting, corporate benefit bundles — route to `nonprofit-arts-season-sponsorship` (and `nonprofit-corporate-sponsorships`); membership is the consumer analog. **Evaluating the program** (surveys, member outcomes, impact measurement) routes to `nonprofit-outcomes-measurement`. CRM configuration for member records routes to `nonprofit-donor-crm`; member-email cadence design routes to `nonprofit-email-newsletter`; volunteer-run member programs route to `nonprofit-volunteer-management`. Donor-level retention analytics beyond the membership file route to `nonprofit-donor-retention`.
+- Subscription packages, flex passes, ticket bundles, dynamic pricing, subscriber acquisition: `nonprofit-arts-box-office-subscriptions` (membership sits above them in the ladder but never re-solves the ticket product)
+- Year-end campaigns, direct-mail acquisition, monthly giving: `nonprofit-annual-appeals`
+- Five- and six-figure patrons, gift societies, named funds: `nonprofit-major-gifts`
+- Benefit and gala events: `nonprofit-fundraising-events` (this skill defines an event benefit; that one runs the event)
+- Season sponsorship, production underwriting, corporate bundles: `nonprofit-arts-season-sponsorship` and `nonprofit-corporate-sponsorships`
+- Member surveys, outcomes, impact measurement: `nonprofit-outcomes-measurement`
+- CRM configuration: `nonprofit-donor-crm`; member-email cadence: `nonprofit-email-newsletter`; volunteer-run member programs: `nonprofit-volunteer-management`; donor retention analytics beyond the membership file: `nonprofit-donor-retention`
+- $250 acknowledgments and Form 990 reporting of dues: `nonprofit-form-990`
 
 ## Part 0 — Where Membership Sits: the Engagement Ladder
 
@@ -55,13 +62,6 @@ Run this when creating or revamping tiers:
 3. **Distinguish recurring vs. one-time benefits.** Recurring (member price all year, priority booking, magazine) drives renewal; one-time (a join gift, a tote bag) drives acquisition only. Every tier needs at least two recurring benefits a member touches in the first 60 days — a member who exercises no benefit in the first 60 days is the most likely first-year lapse. This is the belonging-vs-transaction line: transaction members join, get the tote, and churn; belonging members use a benefit in month one, attend a member event by month three, and renew.
 4. **Make the middle tier the offer.** Price and position the Household/Dual tier as the obvious choice for most buyers; the top tier exists partly to make the middle look reasonable and partly to catch the member→donor transition.
 5. **Write the tier table and test it.** One page: tier, price, named benefits (with caps), member count assumption, direct benefit cost per member, fulfillment owner. Have someone outside the program read it and say back what $95 buys — if they can't, simplify.
-
-### Common benefit-design failure modes
-
-- **Discount-stacking wars.** Member prices that stack with promo codes and group rates collapse net revenue; require the box office to enforce "member price is exclusive of other offers."
-- **Benefits the org can't scale.** A "backstage tour for all members" that the production department can host four times a year for 25 people each: cap the benefit by invitation, or make it a lottery.
-- **The phantom magazine.** A quarterly member magazine absorbs most of Individual-tier dues in printing and postage; convert to a digital member newsletter (`nonprofit-email-newsletter`) for low tiers, print only for upper tiers.
-- **Recognition creep.** Development adds "your name in the program" to every tier and the benefit-cost sheet shows recognition dominating; pull recognition back to the top tier only.
 
 ## Part 2 — Price It
 
@@ -139,7 +139,10 @@ Membership economics live or die on renewal. The renewal campaign is a fixed cal
 
 - **The membership-as-discount war.** A membership sold purely as a ticket discount becomes a bulk-ticket purchase — the org trains members to lapse whenever the season doesn't interest them, and the program's renewal rate tracks the season's popularity. Fix: every tier carries at least one non-ticket belonging benefit (member events, previews, insider content), and the renewal copy leads with belonging, not savings.
 - **Tier sprawl.** Six and seven tier menus with $25 steps and micro-differentiated benefit lists; buyers stall, fulfillment churns, and the "which tier are you?" question eats box-office time. Fix: cut to 3-4 tiers; merge the two that differ only by recognition.
-- **Recognition masquerading as membership.** A tier whose only delta over the annual fund is "your name listed" — it's a gift society; its economics are annual-fund economics, and its members get the wrong tax message. Fix: strip recognition out of all but the top tier and route gift societies to `nonprofit-major-gifts`.
+- **Recognition masquerading as membership (and recognition creep).** A tier whose only delta over the annual fund is "your name listed" — it's a gift society; its economics are annual-fund economics, and its members get the wrong tax message. The same drift happens when development adds "your name in the program" to every tier until recognition dominates the benefit-cost sheet. Fix: strip recognition out of all but the top tier and route gift societies to `nonprofit-major-gifts`.
+- **Discount-stacking wars.** Member prices that stack with promo codes and group rates collapse net revenue. Fix: the box office enforces "member price is exclusive of other offers."
+- **Benefits the org can't scale.** A "backstage tour for all members" that production can host four times a year for 25 people each. Fix: cap the benefit by invitation, or make it a lottery.
+- **The phantom magazine.** A quarterly member magazine absorbs most of Individual-tier dues in printing and postage. Fix: a digital member newsletter (`nonprofit-email-newsletter`) for low tiers, print only for upper tiers.
 - **Stale deductible-portion claims.** The website still says "$60 of your $95 membership is deductible" from three price structures ago — a public promise about members' taxes, wrong. Fix: the deductible line is regenerated from the pricing memo whenever a tier changes, and threshold figures are re-verified each fall.
 - **Blowing the aggregation rule.** A $7 mug at join, a $6 poster at renewal — individually under the low-cost threshold, aggregated over the year they fail, and the org's "fully deductible" token claims collapse. Fix: calendar all logo merchandise per member per calendar year against the current threshold.
 - **No 60-day activation.** New members never touch a benefit, never open the member email, and lapse at 80% in year one. Fix: automated first-60-day welcome sequence — benefit-use prompt (book with your member price now), member-event invitation, magazine/newsletter delivery — with a fallback call from the membership manager for non-openers.

@@ -1,6 +1,6 @@
 ---
 name: nonprofit-arts-venue-rental-earned-income
-description: "Venue rental and ancillary earned income for arts orgs: rentable inventory (hall, studio, gallery, lobby); renter channels (weddings, corporate, film shoots, community groups) and tiered pricing; rental agreement checklist (COI, damage deposits, load-in, staffing, liquor licensing); season conflict rules; ancillary lines (parking, concessions, bar, merchandise) and margins; UBIT basics (IRC 512(b)(3), 514). Use when a user says 'should we rent our theater for weddings,' 'a production company wants to shoot in our gallery,' 'do renters need a certificate of insurance,' or 'is rental income taxable as UBIT.' Not for the org's own ticketing (use nonprofit-arts-box-office-subscriptions), music rights (use nonprofit-arts-performance-licensing), facilities/vendor management (use nonprofit-vendor-facilities), fundraising galas (use nonprofit-fundraising-events), risk management (use nonprofit-risk-management), or the museum shop (use nonprofit-retail-store-operations)."
+description: "Builds the venue-rental and ancillary earned-income line for arts orgs: inventory audit, channel pricing (community, weddings, corporate, film shoots, rehearsal), rental agreements (COI, deposits, staffing, alcohol), season conflict rules, parking, concessions and bar margins, per-event cost models, and UBIT basics. Use when a user says 'should we rent our theater for weddings,' 'a production company wants to shoot in our gallery,' 'do renters need a certificate of insurance,' or 'is rental income taxable.' Not for the org's own ticketing (use nonprofit-arts-box-office-subscriptions), music rights (use nonprofit-arts-performance-licensing), galas (use nonprofit-fundraising-events), insurance programs (use nonprofit-risk-management), or deep 990-T work (use nonprofit-form-990)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,36 +12,19 @@ metadata:
 
 # Venue Rental and Ancillary Earned Income
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit theater, community arts center, gallery, dance studio, or presenting
-organization wants to build or fix the **venue-rental line** — renting its space to outsiders when
-the space is dark — and the **ancillary earned lines** that ride along with rentals: parking,
-concessions, bar, and merchandise. The user is typically an executive director, managing director,
-facility or operations director, or development director; the concrete tasks are auditing what is
-actually rentable, setting rates by renter type, drafting the rental agreement and its insurance
-requirements, staffing rentals safely, keeping rentals off the collision course with the org's own
-season, and knowing which lines create tax exposure. Trigger phrases: "should we rent our theater
-for weddings," "a production company wants to shoot in our gallery," "what should we charge a
-corporate for an all-day offsite," "a bride's planner is asking about a damage deposit and COI,"
-"the bar makes more money than the ticket sales," "does rental income blow up our 990-T," or "a
-community group wants our hall every Saturday — can we say yes?"
+Covers renting the org's space to third parties when it is dark, and the ancillary earned lines attached to those events (parking, concessions, bar, merchandise). Users are typically an executive, managing, facility/operations, or development director. Hand off:
 
-**Boundary:** This skill covers renting the org's space to third parties and the ancillary earned
-lines attached to those events. Ticketing, subscriptions, and box-office policy for the org's own
-programming are `nonprofit-arts-box-office-subscriptions`. Music licensing obligations when a renter
-(or the org) plays or performs music — ASCAP/BMI/SESAC/GMR venue licenses, grand vs small rights —
-are `nonprofit-arts-performance-licensing`. General facilities management, maintenance, and vendor
-contracts unrelated to rentals are `nonprofit-vendor-facilities`. Events whose purpose is
-fundraising — galas, benefit nights, auctions — are `nonprofit-fundraising-events`. The org's
-overall insurance program, waivers, child-safety rules, and enterprise risk management are
-`nonprofit-risk-management`. A bricks-and-mortar museum or gift shop operation is
-`nonprofit-retail-store-operations`. Season calendar design and the artistic program that rental
-dates must work around are `nonprofit-arts-season-planning`. Deep Form 990-T mechanics,
-cost-allocation methodology, and tax positions beyond the UBIT basics here are `nonprofit-form-990`
-(with `nonprofit-cost-allocation` for the staffing-overhead math) and `nonprofit-budgeting` for the
-earned-income budget itself. Pricing of sponsorships attached to the org's own season is
-`nonprofit-arts-season-sponsorship`.
+- Ticketing, subscriptions, box-office policy for the org's own programming: `nonprofit-arts-box-office-subscriptions`
+- Music licensing when a renter or the org plays music (ASCAP/BMI/SESAC/GMR, grand vs. small rights): `nonprofit-arts-performance-licensing`
+- Facilities, maintenance, and vendor contracts unrelated to rentals: `nonprofit-vendor-facilities`
+- Galas, benefit nights, auctions: `nonprofit-fundraising-events`
+- The org's overall insurance program, waivers, child safety, enterprise risk: `nonprofit-risk-management`
+- A museum or gift shop operation: `nonprofit-retail-store-operations`
+- Season calendar and artistic program rentals must work around: `nonprofit-arts-season-planning`
+- Deep Form 990-T mechanics and tax positions beyond the UBIT basics here: `nonprofit-form-990`; staffing-overhead math: `nonprofit-cost-allocation`; the earned-income budget: `nonprofit-budgeting`
+- Sponsorships attached to the org's own season: `nonprofit-arts-season-sponsorship`
 
 ## Part 1 — Audit the Rentable Inventory
 
@@ -196,7 +179,7 @@ for shoots. Whatever the form, it must contain, at minimum:
   liquor liability if alcohol), and re-verify for annual or repeat renters. A certificate with a
   typed "additional insured" line and no endorsement is the classic gap — the venue is named on
   paper and has no actual coverage rights.
-- **Conflict-of-interest and house-policy riders.** Give renters the org's house rules as an
+- **House-policy riders.** Give renters the org's house rules as an
   exhibit to the agreement, not as a separate courtesy document — only what's in the contract is
   enforceable.
 
@@ -288,8 +271,8 @@ an exclusion — but the exceptions are exactly where arts venues get hurt. The 
    and have the org's CPA review the entire arrangement before adopting a contract structure
    or tax position. Loss of this exclusion alone does not settle every element of UBIT.
    References: [IRC §512(b)(3)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section512&num=0&edition=prelim)
-   and [IRS Publication 598, rents](https://www.irs.gov/publications/p598).
-   Last checked September 16, 2026; not a full rental-tax review.
+   and [IRS Publication 598, rents](https://www.irs.gov/publications/p598). Last checked September 16, 2026; this is not a full
+   rental-tax review.
 4. **Exception — mixed leases (personal property).** Where a lease bundles real and personal
    property (the hall plus the lighting rig, sound system, chairs, pianos), rent attributable to
    personal property is excludable only if it is an incidental share of total rents; if **more
@@ -332,9 +315,9 @@ and the CPA's review status. Do not label a revenue share taxable solely because
 percentage-based, or protect a base fee automatically when rent also depends on net profits.
 Keep the schedule with the org's tax file and refresh it when the deal mix or mortgage changes.
 
-## The Failure Mode: "The rental that cost us money"
+## Part 7 — Cost the Rental Program
 
-The most common rental failure is invisible underpricing of real costs. A $2,000 hall rental
+The most common rental failure ("the rental that cost us money") is invisible underpricing of real costs. A $2,000 hall rental
 that consumes 14 staff hours ($35/hr loaded = $490), a technician for 8 hours ($560), custodial
 before and after ($240), utilities and wear on a $40,000 lighting rep, and 3 hours of
 coordinator time ($105) has roughly $1,400 of direct cost before the org's overhead — and if a
@@ -355,6 +338,28 @@ arithmetic before setting rates:
    costs, before allocating overhead) — if the program loses money after two full years of
    honest accounting, fix rates, cut channels, or stop. A mission-subsidized rental program can
    be a deliberate choice; an accidentally unprofitable one is just a slow leak.
+
+## Standard Deliverables
+
+1. **Inventory and constraints sheet** (Part 1).
+2. **Rental rate card** (template below), with the benchmark table behind it.
+3. **Rental license agreement** — the Part 3 checklist, in the short-form, event, or location form.
+4. **COI intake checklist and house bar policy** (Part 3 and the operating mechanics).
+5. **Per-line UBIT schedule** (Part 6) and **per-event cost model / annual rental P&L** (Part 7).
+
+```
+[Org] Rental Rate Card — effective [date]; benchmarked against [5 venues], [date]
+| Space | Capacity (seated/standing) | Community/nonprofit | Private event | Corporate | Production (shoot day) | Rehearsal/long-term |
+|---|---|---|---|---|---|---|
+| [Hall] | | $/half-day | $/block; prime-date surcharge [%] | $/day | $/10-12 hr day | $/hr |
+Required staffing (billed per hour, [n]-hr minimum): house manager $[ ]; technician $[ ]; security $[ ]; custodial $[ ]
+Setup/strike: $[ ]/hr   Overtime: $[ ]/hr   A/V packages: [list, $]
+Deposits: date hold $[ ] (non-refundable, converts to deposit); damage deposit $[ ]
+Insurance: CGL $[ ]/$[ ] with additional insured endorsement, primary and non-contributory; liquor liability if alcohol
+Alcohol: [org-run bar | licensed caterer] only — no renter-poured service
+Discount policy: [eligibility] receive [%] off base rent; staff and A/V billed at [cost/rate]
+Blackouts: production load-in through strike; gallery install/deinstall; [held prime dates]
+```
 
 ## Common Failure Modes
 
@@ -377,8 +382,8 @@ arithmetic before setting rates:
 - **The profitable-looking unprofitable program.** Rental revenue booked gross, staffing costs
   buried in program departments. Fix: per-event cost model and annual program P&L.
 - **Recurring renter becomes a tenant.** A "weekly rental" that has run three years, treats the
-   studio as its own facility, and now the org can't get the space back. Fix: cap recurring
-   blocks and review annually.
+  studio as its own facility, and now the org can't get the space back. Fix: cap recurring
+  blocks and review annually.
 
 ## Verify Before Acting
 

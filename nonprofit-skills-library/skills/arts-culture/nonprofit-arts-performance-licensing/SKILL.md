@@ -1,6 +1,6 @@
 ---
 name: nonprofit-arts-performance-licensing
-description: "Rights clearance for nonprofit arts orgs: grand vs small rights; play and musical licensing houses (Concord Theatricals, Samuel French, R&H, Dramatists Play Service, MTI, TRW) with per-performance royalty quotes set by seating, ticket prices, performance count, amateur vs pro tier, and market exclusivity; PRO blanket licenses (ASCAP, BMI, SESAC, GMR) and the dramatic-use exception; streaming/archival/video rights as separate grants; film screening licenses (Swank, MPLC). Use when a user says 'how do we get rights to a show,' 'what will our royalty quote be,' 'does ASCAP cover our musical,' 'can we livestream the show,' or 'screen a movie at our gala.' Not for commissioning new work (use nonprofit-arts-commissioning-new-work), renter obligations when the org is the venue (use nonprofit-arts-venue-rental-earned-income), union agreements and artist visas (use nonprofit-arts-union-agreements-visas), general contract risk (use nonprofit-risk-management), or budgeting royalty costs (use nonprofit-budgeting)."
+description: "Clears rights for nonprofit arts performances: grand vs. small rights; play and musical licensing houses (Concord Theatricals, MTI, TRW and others) and how royalty quotes are set; PRO blanket licenses (ASCAP, BMI, SESAC, GMR) and the dramatic-use limit; streaming, archival and video riders; film screening licenses (Swank, MPLC). Use when a user says 'how do we get rights to a show,' 'what will our royalty quote be,' 'does ASCAP cover our musical,' or 'can we livestream the show.' Not for commissioning new work (use nonprofit-arts-commissioning-new-work), renter obligations when the org is the venue (use nonprofit-arts-venue-rental-earned-income), union terms (use nonprofit-arts-union-agreements-visas), or royalty budgeting (use nonprofit-budgeting)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,14 +12,16 @@ metadata:
 
 # Performance and Music Rights Licensing
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit arts organization needs the legal right to perform, play, record, or screen someone else's copyrighted work: securing amateur or professional production rights to a play or musical from a licensing house, understanding what a venue's ASCAP/BMI/SESAC/GMR blanket music license actually covers, getting permission to record or stream a production, or licensing a public film screening. The user is typically an executive director, managing director, producing director, or marketing/gala staff member asking: "how do we get the rights to *Into the Woods*," "what will our royalty quote be," "does our ASCAP license cover the musical," "can we livestream or record the show," "we want to screen a movie at our gala," or "the high school is doing our show — do they have rights?"
+Covers rights clearance for performance, venue music, streaming/archival/video, and film screening, including the rights for a student matinee of a licensed play. Users are typically an executive, managing, or producing director, or marketing/gala staff. This skill does not determine ownership or authorize performance under any particular agreement (boundary last checked September 16, 2026). Hand off:
 
-**Boundary:** This skill covers rights clearance for performance, venue music, streaming/archival/video, and film screening. Commissioning a new work — playwright agreements, IP ownership, approvals, co-commissions — is `nonprofit-arts-commissioning-new-work`. Do not infer copyright ownership or premiere permission from a commission: verify an executed production license or an explicit premiere performance grant in the signed commissioning agreement, including applicable royalty terms. The org's own obligations as the *rented venue* — insurance, house rules, whether the org's PRO licenses flow down to renters — is `nonprofit-arts-venue-rental-earned-income`. Union terms triggered by recording or streaming (Actors' Equity, SAG-AFTRA media contracts, AFM) and artist visas or foreign-artist tax withholding are `nonprofit-arts-union-agreements-visas`. General contract risk review, insurance, and indemnification strategy is `nonprofit-risk-management`. Building the royalty line into the annual or production budget — and season selection tradeoffs when quotes come in too high — is `nonprofit-budgeting` (and `nonprofit-arts-season-planning` for title selection). School partnerships and teaching-artist logistics are `nonprofit-arts-education-programs`; the *rights* for a student matinee of a licensed play are handled here.
-
-Last checked September 16, 2026; this does not
-determine ownership or authorize performance under any particular agreement.
+- New-work commissions (playwright agreements, IP ownership, approvals, co-commissions): `nonprofit-arts-commissioning-new-work`. Do not infer copyright ownership or premiere permission from a commission: verify an executed production license or an explicit premiere performance grant in the signed commissioning agreement, including applicable royalty terms.
+- The org's obligations as the rented venue (insurance, house rules, whether its PRO licenses flow down to renters): `nonprofit-arts-venue-rental-earned-income`
+- Union terms triggered by recording or streaming (AEA, SAG-AFTRA, AFM), artist visas, foreign-artist withholding: `nonprofit-arts-union-agreements-visas`
+- General contract risk, insurance, indemnification: `nonprofit-risk-management`
+- The royalty line in the budget: `nonprofit-budgeting`; title tradeoffs when quotes run high: `nonprofit-arts-season-planning`
+- School partnerships and teaching-artist logistics: `nonprofit-arts-education-programs`
 
 ## The One Distinction That Drives Everything: Grand Rights vs. Small Rights
 
@@ -42,9 +44,9 @@ Play and musical rights sit with a handful of licensing houses. Catalogs have co
 | House | What it owns / known for | Mechanics to know |
 |---|---|---|
 | **Concord Theatricals** (concordtheatricals.com) | The largest licensor: R&H Theatricals (Rodgers & Hammerstein), Tams-Witmark (*Hello, Dolly!*, *The Wizard of Oz*, *Bye Bye Birdie*), Samuel French (plays: August Wilson, Arthur Miller, Tennessee Williams, Lorraine Hansberry; musicals incl. *Grease*, *Chicago*), the Andrew Lloyd Webber Collection, **Dramatists Play Service** (3,300+ plays) and **Playscripts**. In May 2025 Concord acquired **Broadway Licensing Global**, whose imprints — Broadway Licensing, Dramatists Play Service, Playscripts, and **Stage Rights** — are being folded into Concord Theatricals (Stageworks and Broadway On Demand were *not* included). | One website and account now covers the merged catalogs; title pages include a license estimator tool that produces a royalty estimate before you submit a request. Amateur and professional licenses are handled by separate teams. Some titles carry restrictions that prohibit or slow clearance. |
-| **Music Theatre International (MTI)** (mtishows.com) | ~400+ musicals — the Broadway canon (*Les Misérables* school edition, *Annie*, *Into the Woods*) plus recent acquisitions (*& Juliet*, *Kimberly Akimbo*, *The Notebook*, *Suffs*, *The Great Gatsby*) and Lerner & Loewe secondary rights (*My Fair Lady*). Majority-owned by Cameron Mackintosh since 2015. | Quotes a per-performance royalty from seating capacity, ticket prices, and number of performances. Publishes "Do's and Don'ts of Licensing" — the as-is rule. Offers Video Licenses for select titles (Part 4). |
-| **Theatrical Rights Worldwide (TRW)** (theatricalrights.com) | Independent licensor (founded 2006, owned by CEO Steve Spiegel) — TRW Musicals and TRW Plays; known for *Jersey Boys* and contemporary Broadway/West End titles. | License required for every performance; apply per title with venue, dates, and pricing. |
-| **Dramatic Publishing** (dramaticpublishing.com) | Independent house since 1885 (Woodstock, IL) — plays and musicals for schools, community, and professional theatres. | Royalties owed for any performance before a non-class audience, charged or not. |
+| **Music Theatre International (MTI)** (mtishows.com) | ~400+ musicals — the Broadway canon (*Les Misérables* school edition, *Annie*, *Into the Woods*) plus recent acquisitions (*& Juliet*, *Kimberly Akimbo*, *The Notebook*, *Suffs*, *The Great Gatsby*) and Lerner & Loewe secondary rights (*My Fair Lady*). | Quotes a per-performance royalty from seating capacity, ticket prices, and number of performances. Publishes "Do's and Don'ts of Licensing" — the as-is rule. Offers Video Licenses for select titles (Part 4). |
+| **Theatrical Rights Worldwide (TRW)** (theatricalrights.com) | Independent licensor — TRW Musicals and TRW Plays; known for *Jersey Boys* and contemporary Broadway/West End titles. | License required for every performance; apply per title with venue, dates, and pricing. |
+| **Dramatic Publishing** (dramaticpublishing.com) | Independent house — plays and musicals for schools, community, and professional theatres. | Royalties owed for any performance before a non-class audience, charged or not. |
 | **Pioneer Drama Service** (pioneerdrama.com) | 900+ plays and musicals aimed at schools, churches, community groups. | **Automatic licensing**: fixed, published royalty prices — rights are guaranteed the moment you order scripts for each cast member. Fast, predictable; the low-friction option for youth programs. |
 | **Broadway Play Publishing** | Contemporary American plays for professional, nonprofessional, and competition performance. | Contact per title. |
 
@@ -101,7 +103,22 @@ Decision rule for the user: film *as an event* (promoted, ticketed, or the eveni
 ## Standard Deliverables
 
 1. **Rights clearance memo** — for each candidate title: current rights holder (verified on the licensor's site, dated), availability in the market for the proposed dates, quote status, restrictions, and total license package cost vs. the production budget.
-2. **License application package** — the information every house asks for, ready to submit: venue and seating capacity, dates and performance count, ticket prices and admission model, amateur/professional status, cast size, and any requested changes needing written permission.
+2. **License application package** — the information every house asks for, ready to submit:
+
+```
+License Request — [Title] — [Org] — prepared [date]
+Rights holder (verified on licensor site [date]): [house]   Market restrictions checked: [Y/N]
+Tier: [amateur | professional]   Performers paid: [Y/N]   Union contracts: [ ]
+Venue: [name, city]   Seating capacity: [ ]
+Dates: [first-last]   Performance count: [ ]   Previews: [ ]
+Ticket prices: [range by zone]   Admission charged: [Y/N]   Comps/free performances: [ ]
+Cast size: [ ]   Edition: [full | school | concert]
+Requested changes needing written permission: [cuts, gender, orchestration, language]
+Riders requested: archival video [Y/N]; streaming [model]; promo clips [Y/N]
+Materials: scripts/scores/tracks [rental dates, deposit]
+Quote received: royalty $[ ]/perf; materials $[ ]; deposit $[ ]; fees $[ ]; total $[ ]
+Announce only after: license signed and paid [date]
+```
 3. **License compliance checklist** — billing credits, script/score sourcing, no-change rule, performance count cap, reporting deadlines, materials return date, and which riders (archival video, streaming, promo clips) are or are not included.
 4. **Venue music license inventory** — which PRO blankets the org (or its building) holds, for which uses, and the gap list (which of ASCAP/BMI/SESAC/GMR is missing, and whether any planned use is dramatic and therefore outside blanket coverage entirely).
 

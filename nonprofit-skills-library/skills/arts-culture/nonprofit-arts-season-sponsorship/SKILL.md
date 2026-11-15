@@ -1,6 +1,6 @@
 ---
 name: nonprofit-arts-season-sponsorship
-description: "Arts underwriting model for nonprofit arts orgs (theaters, orchestras, dance, galleries, presenters): the season presenter / production sponsor / exhibition underwriter / program sponsor ladder; benefits matrix (credits, tickets, hospitality, CSR activation); cash and in-kind valuation; the sponsor pitch and one-pager; opening-night hospitality; sponsor reporting and renewal; credit and naming conventions. Use when a development director says 'we need a season sponsor,' 'a company wants to underwrite a show — what do we charge,' 'our sponsor wants ad copy in the playbill,' or 'the sponsor wants a renewal report.' Not for corporate-partnership strategy or cause marketing (use nonprofit-corporate-sponsorships), stewardship beyond the package (use nonprofit-donor-retention), galas and benefit events (use nonprofit-fundraising-events), season programming (use nonprofit-arts-season-planning), capital naming rights (use nonprofit-capital-campaigns), or arts-funder grants (use nonprofit-arts-grant-writing)."
+description: "Builds and sells arts season sponsorships: the season presenter, production, exhibition and program sponsor ladder; benefits matrix and pricing; in-kind valuation; the qualified sponsorship vs. advertising tax line; pitch, one-pager and agreement; opening-night hospitality; renewal reports; credit conventions. Use when a development director says 'we need a season sponsor,' 'a company wants to underwrite a show, what do we charge,' 'our sponsor wants ad copy in the playbill,' or 'the sponsor wants a renewal report.' Not for corporate-partnership strategy (use nonprofit-corporate-sponsorships), galas (use nonprofit-fundraising-events), capital naming rights (use nonprofit-capital-campaigns), or arts grants (use nonprofit-arts-grant-writing)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,17 +12,24 @@ metadata:
 
 # Season and Production Sponsorship
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit arts or culture organization — theater, orchestra, dance or opera company, presenting organization, community arts center, gallery or exhibition space — is building or selling sponsorships tied to its artistic season: the **season presenter** deal ("The 2026-27 Season is presented by..."), **production or show sponsors**, **exhibition underwriters**, **program sponsors** (education, access, new-work development), and **day/event sponsors**. It covers the full workflow: designing the benefits menu, pricing cash and in-kind packages, keeping credits on the right side of the sponsorship/advertising tax line, pitching prospects, negotiating the agreement, delivering benefits and opening-night hospitality, and reporting and renewing. Trigger phrases: "we need a season sponsor," "a company wants to underwrite a show — what do we charge," "our sponsor wants ad copy in the playbill," "build our sponsor benefits menu," "the sponsor wants a renewal report," or "what's the difference between a sponsor and a donor."
+Covers the arts-specific underwriting deal: packaging, pricing, pitching, activating, reporting, and renewing season, production, exhibition, program, and day/event sponsorships. Hand off:
 
-**Boundary:** This skill covers the arts-specific underwriting model — packaging, pricing, pitching, activating, reporting, and renewing season/production/exhibition/program sponsorships. General corporate-partnership strategy — cause marketing, commercial co-ventures, broad corporate cultivation and multi-year corporate giving programs — is `nonprofit-corporate-sponsorships`; this skill covers the arts-specific deal, that one the corporate-side strategy around it. Sponsor relationships maintained beyond the package — personal stewardship, board-level relationships, treating lapsed sponsors as donors — is `nonprofit-donor-retention`. Galas, benefit concerts, and auctions are `nonprofit-fundraising-events` (a gala *sponsorship* uses this skill's pricing and benefits logic; the event itself routes there). Which shows or exhibitions are in the season — and resistance to sponsor input on content — is `nonprofit-arts-season-planning`. Capital naming rights for buildings, theaters, and lobby spaces, and the campaigns that carry them, are `nonprofit-capital-campaigns`. Grants from NEA, state arts agencies, and arts foundations are `nonprofit-arts-grant-writing`. Ticket-based packages for individuals are `nonprofit-arts-box-office-subscriptions` (subscriptions) and `nonprofit-arts-membership-program` (membership); venue-rental income is `nonprofit-arts-venue-rental-earned-income`. Press strategy for sponsor announcements routes to `nonprofit-media-relations`.
+- Cause marketing, commercial co-ventures, broad corporate cultivation and giving programs: `nonprofit-corporate-sponsorships`
+- Stewardship beyond the package (personal and board-level relationships, lapsed sponsors as donors): `nonprofit-donor-retention`
+- Galas, benefit concerts, auctions: `nonprofit-fundraising-events` (a gala sponsorship uses this skill's pricing and benefits logic)
+- Which shows are in the season, and resisting sponsor input on content: `nonprofit-arts-season-planning`
+- Building, theater, and lobby naming rights: `nonprofit-capital-campaigns`
+- NEA, state arts agency, and arts foundation grants: `nonprofit-arts-grant-writing`
+- Individual ticket packages: `nonprofit-arts-box-office-subscriptions`; membership: `nonprofit-arts-membership-program`; venue rental: `nonprofit-arts-venue-rental-earned-income`
+- Press for sponsor announcements: `nonprofit-media-relations`
 
 ## The Arts Underwriting Model in Brief
 
-Arts sponsorship differs from generic nonprofit sponsorship in three ways. First, it is **calendar-anchored**: the sellable inventory is the season — every production, exhibition, and program is a property with a fixed run, and the season announcement (typically late spring for a fall-opening season) starts the sales clock. Second, it is **credit-driven**: the core deliverable is public acknowledgment — "presented by," "production sponsor," "underwritten by" — in the playbill/program, lobby signage, curtain speech, website, and marketing materials, not ad space. Third, it is **hospitality-rich**: opening nights, house seats, and backstage access are benefits that cost the org almost nothing (unsold inventory) but are worth a great deal to a sponsor entertaining clients or rewarding employees. Design packages around all three.
+Design packages around three arts-specific traits: inventory is **calendar-anchored** (each production, exhibition, and program is a property with a fixed run, and the season announcement — typically late spring for a fall-opening season — starts the sales clock); the core deliverable is **credit**, not ad space ("presented by," "production sponsor," "underwritten by"); and benefits are **hospitality-rich** (opening nights, house seats, backstage access cost little but are worth a great deal to a sponsor entertaining clients or employees).
 
-**Market context — verify before pricing strategy.** The 2025–2026 funding environment has cut both ways: the federal side deteriorated (NEA grant terminations began in spring 2025, and the administration's FY 2026 budget proposal sought to eliminate the agency outright — see `nonprofit-arts-grant-writing` for that landscape), pushing more arts orgs toward corporate sponsorship precisely as corporate marketing budgets tightened. Net effect in many markets: more sellers chasing similar money, which rewards orgs with real audience data and disciplined pricing, and punishes vague "support us" pitches. Treat market conditions as local and moving — verify with peer orgs before setting strategy.
+**Market context — verify before pricing strategy.** Federal arts funding deteriorated in 2025 (see `nonprofit-arts-grant-writing`), pushing more orgs toward corporate sponsorship as corporate marketing budgets tightened. In many markets that rewards real audience data and disciplined pricing; treat conditions as local and moving, and check with peer orgs before setting strategy.
 
 ## Part 1 — Design the Packages
 
@@ -100,7 +107,7 @@ This is the load-bearing compliance fact for every benefits matrix. Under IRC §
 
 Every pitch needs a single-page leave-behind with this structure:
 
-1. **Header:** org name, the property ("2026–27 Season Presentation" or "'[Title' Production Sponsorship]"), and one line of reach ("6 productions, 200 performances, 60,000 attendees").
+1. **Header:** org name, the property ("2026–27 Season Presentation" or "'[Title]' Production Sponsorship"), and one line of reach ("6 productions, 200 performances, 60,000 attendees").
 2. **Audience block:** who comes — size, demographics, and the psychographic one-liner ("educated, discretionary income, arts-attending households — your customers and recruits").
 3. **The offer:** tier name, price, and the benefits in a compact table — exactly the matrix row.
 4. **Exclusivity note:** the category slot, stated plainly ("one bank").
@@ -111,9 +118,7 @@ For the season-presenter deal, add a deck: audience data, media/social reach, sp
 
 ### The ask meeting
 
-- **Open on their objectives, not your need.** First question: "What does your marketing/HR/community plan need this year?" Then map their answer to the matrix. Never open with "we have a funding gap."
-- **Present two tiers, not one.** Anchor high: the choice should be *which* package, not *whether*.
-- **Ask for the multi-year term** with the discount in hand.
+- **Open on their objectives** (marketing, HR, community) and map the answer to the matrix; present two tiers, anchored high, and ask for the multi-year term with the discount in hand.
 - **Leave the one-pager and a materials deadline.** Sponsor decisions are calendar-driven by *their* campaign cycles; a deadline tied to the season brochure's ad close ("logo needed by June 1 to make the brochure") converts better than "let us know."
 
 ### The agreement — terms checklist

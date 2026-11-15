@@ -1,6 +1,6 @@
 ---
 name: nonprofit-arts-box-office-subscriptions
-description: "Nonprofit arts box office strategy: ticketing platforms (Tessitura, Spektrix, AudienceView, PatronManager, Eventbrite — fee models, embedded vs passed-through fees); subscription packages (full-season, mini, flex); zone, preview, dynamic and tiered pricing; subscriber renewal economics; group sales and school matinees; fee disclosure under the FTC all-in rule, exchanges, refunds. Use when a user says 'our subscribers aren't renewing,' 'should we switch ticketing platforms,' 'is dynamic pricing right for us,' 'what do we charge for previews,' or 'our service fees feel too high.' Not for member tiers (use nonprofit-arts-membership-program), venue rental (use nonprofit-arts-venue-rental-earned-income), galas (use nonprofit-fundraising-events), sponsorships (use nonprofit-arts-season-sponsorship), donor conversion (use nonprofit-donor-retention), CRM selection (use nonprofit-donor-crm), season selection (use nonprofit-arts-season-planning), or education programming (use nonprofit-arts-education-programs)."
+description: "Plans nonprofit arts ticketing: platform and fee model, zone, preview and dynamic pricing, subscription packages (fixed, choose-your-own, flex), renewal economics, single-ticket forecasts, group sales, school-matinee booking, and box office policy (all-in fees, exchanges, refunds). Use when a user says 'our subscribers aren't renewing,' 'should we switch ticketing platforms,' 'is dynamic pricing right for us,' or 'our service fees feel too high.' Not for member tiers (use nonprofit-arts-membership-program), venue rental (use nonprofit-arts-venue-rental-earned-income), sponsorships (use nonprofit-arts-season-sponsorship), CRM choice (use nonprofit-donor-crm), or education programs (use nonprofit-arts-education-programs)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,35 +12,21 @@ metadata:
 
 # Box Office and Season Subscriptions
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit arts organization — theater, orchestra, dance, opera, presenting
-organization, community arts center — is making decisions about how it sells tickets: which
-ticketing platform to run, how to price the house, how to structure and renew season subscription
-packages, how to forecast single-ticket vs. subscription revenue, how to run group sales and
-school matinees, and what its box office policies say about fees, exchanges, and refunds. The
-user is typically a managing director, marketing director, box office manager, or a consultant
-helping one. Trigger phrases: "our subscribers aren't renewing," "should we switch off our
-ticketing platform," "is dynamic pricing right for a nonprofit," "what do we charge for
-previews," "our service fees feel too high," "we need a group sales policy," "how do we price
-zones in our house."
+Covers the earned-income machinery of selling tickets: platforms, pricing, subscriptions, group
+sales, and box office policy. Users are typically a managing director, marketing director, box
+office manager, or consultant. General event ticketing for workshops and small events on a
+consumer platform stays here. Hand off:
 
-**Boundary:** This skill covers the earned-income machinery of selling tickets: platforms,
-pricing, subscriptions, group sales, and box office policy. Membership programs (member tiers,
-benefits, member communications) are `nonprofit-arts-membership-program`. Renting the hall,
-studio, or gallery, and ancillary lines like parking, concessions, and bar, are
-`nonprofit-arts-venue-rental-earned-income`. Galas and benefit events are
-`nonprofit-fundraising-events`. Pricing and valuation for season and production sponsorships are
-`nonprofit-arts-season-sponsorship`. Converting subscribers into donors beyond the subscription
-relationship, and lapsed-subscriber win-back framed as giving, are `nonprofit-donor-retention`.
-Choosing or replacing the fundraising CRM (and whether ticketing should live in the same
-database as development) is `nonprofit-donor-crm`. Selecting the season itself, balancing budget
-against artistic ambition, and setting the calendar are `nonprofit-arts-season-planning` —
-coordinate with that skill when forecasting the single-ticket/subscription mix. Teaching-artist
-rosters, curriculum, arts-education funders, and program evaluation are
-`nonprofit-arts-education-programs`; this skill covers only the box-office logistics of school
-matinee sales. General event-ticketing for workshops and small events that a nonprofit runs
-through a consumer platform can stay here; fundraising events route out as above.
+- Member tiers, benefits, member communications: `nonprofit-arts-membership-program`
+- Renting the hall, studio, or gallery; parking, concessions, bar: `nonprofit-arts-venue-rental-earned-income`
+- Galas and benefit events: `nonprofit-fundraising-events`
+- Season and production sponsorship pricing: `nonprofit-arts-season-sponsorship`
+- Converting subscribers into donors; lapsed-subscriber win-back framed as giving: `nonprofit-donor-retention`
+- Choosing or replacing the CRM (and whether ticketing shares the database): `nonprofit-donor-crm`
+- Season selection and calendar: `nonprofit-arts-season-planning` (coordinate on the single-ticket/subscription mix)
+- Teaching-artist rosters, curriculum, arts-education funders, evaluation: `nonprofit-arts-education-programs` (this skill covers only school-matinee box-office logistics)
 
 ## Part 1 — Choose the Ticketing Platform
 
@@ -125,9 +111,7 @@ Divide the house by sightline quality, not by seat count symmetry:
 
 Previews (the performances before opening night, 2–4 is typical) are a distinct product:
 
-1. **Price previews 20–50% below regular prices** and label them previews openly. Previews
-   sell to two audiences at once: price-sensitive buyers who fill the early house, and
-   word-of-mouth multi-ticket buyers who spread hype before press night.
+1. **Price previews 20–50% below regular prices** and label them previews openly.
 2. **Use previews to test demand before you commit on-sales pricing.** If previews outsell
    expectations, you have evidence to open single-ticket sales one tier higher.
 3. **Never sell a preview as a regular performance at a discount** — name the product
@@ -194,7 +178,18 @@ season (for loyalists), a mini-subscription (3–4 shows), and a flex pass (4–
    on sale until the renewal window closes (Part 4), and the calendar should say so — "prices
    are lowest and seats are best now" is only credible if it is true.
 4. **Completion condition:** a one-page package grid (type, show count, price by zone, discount
-   vs. single rate, key benefits, restrictions) that the whole staff can answer questions from.
+   vs. single rate, key benefits, restrictions) that the whole staff can answer questions from:
+
+```
+[Season] Subscription Package Grid — prices verified [date]
+| Package | Type | Shows/credits | Zone A | Zone B | Zone C | Discount vs. single | Benefits | Restrictions |
+|---|---|---|---|---|---|---|---|---|
+| Full season | Fixed | | | | | | Free exchanges, seat retention, priority | |
+| Mini | Fixed or CYO | 3-4 | | | | | | |
+| Flex pass | Ticket credits | 4-6 | | | | | Subscriber rate on any performance | Expire season end; no galas |
+On-sale calendar: renewal window [dates] -> new subs [date] -> add-ons [date] -> single tickets [date]
+Renewal ladder: loyalty [%], early-renewal [incentive], new [price], lapsed win-back [%]
+```
 
 ## Part 4 — Subscriber Acquisition and Renewal Economics
 
@@ -371,8 +366,7 @@ Rep, Arden Theatre):
    negotiate (data ownership, exit, merchant processing), and two peer references.
 2. **Pricing architecture one-pager** — zone map with price ladder, preview pricing, dynamic
    tier triggers per production, and the subscriber price-lock statement.
-3. **Subscription package grid** — fixed/CYO/flex/mini packages with prices by zone, discount
-   vs. single rate, benefits, restrictions, and the on-sale calendar.
+3. **Subscription package grid** — the Part 3 template.
 4. **Renewal and acquisition plan** — cohort renewal ladder (loyalty, early-bird, new, lapsed
    win-back), onboarding sequence for first-year subscribers, new-subscriber targets from the
    retain-vs-acquire model, and campaign calendar ending before single on-sale.
@@ -406,9 +400,6 @@ Rep, Arden Theatre):
 - **No group contract terms.** Verbal group bookings with no deposit deadline, no
   adjust-until-final-payment rule, and no no-refund clause produce April no-shows at scale.
   Fix: publish terms like the orgs cited in Part 6 and attach them to every group invoice.
-- **Trusting last year's platform pricing.** Vendors reprice frequently (consumer platforms
-  especially); a memo quoting stale per-ticket rates misleads the finance committee. Fix:
-  re-verify vendor pricing pages the week you write the memo, and date every number.
 
 ## Verify Before Acting
 

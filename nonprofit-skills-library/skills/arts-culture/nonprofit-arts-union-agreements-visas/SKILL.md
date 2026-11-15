@@ -1,6 +1,6 @@
 ---
 name: nonprofit-arts-union-agreements-visas
-description: "Artist employment for nonprofit arts orgs: when AEA, IATSE, AFM, and SAG-AFTRA agreements apply (SPT, LOA, Guest Artist tiers; overhire rules; signatory tiers); costs beyond wages (Equity-League and AFM-EPF contributions, work-rule premiums, minimum calls); guest-artist contracts (fees, travel, housing, riders); O-1 and P visa petitions for foreign artists (petitioner choice, union consultation letters, premium processing); and foreign-artist tax withholding (the 30% rule, Central Withholding Agreements). Use when a user says 'do we need an Equity contract,' 'how do we bring in a director from abroad,' 'the venue says we need IATSE crew,' or 'our foreign artist owes 30% withholding.' Not for general staff HR (use nonprofit-hr), staff retention (use nonprofit-staff-retention), commissioning new work (use nonprofit-arts-commissioning-new-work), general risk (use nonprofit-risk-management), or executive hiring (use nonprofit-executive-search)."
+description: "Prepares artist engagements for nonprofit arts orgs: when AEA, IATSE, AFM and SAG-AFTRA agreements apply and what they cost beyond wages; guest-artist letter agreements (fees, travel, housing, riders); O-1 and P visa petitions for foreign artists (category, petitioner, union consultation, premium processing); and foreign-artist tax withholding (the 30% rule, Central Withholding Agreements, treaties). Use when a user says 'do we need an Equity contract,' 'how do we bring in a director from abroad,' 'the venue says we need IATSE crew,' or 'our foreign artist owes 30% withholding.' Not for general staff HR (use nonprofit-hr), commissioning new work (use nonprofit-arts-commissioning-new-work), general risk (use nonprofit-risk-management), or executive hiring (use nonprofit-executive-search)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -12,11 +12,16 @@ metadata:
 
 # Union Agreements and Guest-Artist Visas
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit arts organization is engaging people to make art under employment rules that differ from ordinary staff HR: contracting actors, stage managers, run crew, and musicians under the union agreements of Actors' Equity Association (AEA), IATSE, the American Federation of Musicians (AFM), or SAG-AFTRA; papering guest-artist engagements (directors, choreographers, designers, conductors, soloists) with fees, travel, housing, and riders; and bringing foreign guest artists to the U.S. — which is two separate legal machines at once, immigration (O-1 and P-1/P-2/P-3 visa petitions filed with USCIS) and tax (the 30% withholding rule and Central Withholding Agreements with the IRS). Triggers include: "do we need an Equity contract for this show, or can we just pay people," "we want to bring a director from London in for our fall production — what do we need," "the presenter's rider requires IATSE labor," "our foreign guest artist just told us we should have withheld 30% of their fee," "we're co-producing a film version of our show — do we need to be SAG-AFTRA signatory."
+Covers artist employment under union agreements (AEA, IATSE, AFM, SAG-AFTRA), guest-artist engagements, foreign-artist visas (O-1, P-1/P-2/P-3 petitions with USCIS), and foreign-artist withholding (the 30% rule and Central Withholding Agreements with the IRS). Hand off:
 
-**Boundary:** This skill covers artist employment, guest-artist engagement, foreign-artist visas, and foreign-artist withholding. General staff HR — hiring, handbooks, performance management, employee vs. contractor classification for ordinary staff, and any non-artist wage-and-hour question — is `nonprofit-hr`. Staff succession, retention, and career-path work is `nonprofit-staff-retention`. Commissioning agreements for new work — playwright IP, approvals, milestones, premieres — is `nonprofit-arts-commissioning-new-work` (that skill covers the *creative* contract; this one covers the *employment* contract once people are hired to make it). General organizational risk, insurance, and liability questions are `nonprofit-risk-management`. Hiring an executive or artistic director is `nonprofit-executive-search`. Licensing a play or musical (MTI, Concord, Dramatists) is `nonprofit-arts-performance-licensing`, and teaching-artist contracts are `nonprofit-arts-education-programs`.
+- Hiring, handbooks, performance management, classification of ordinary staff, non-artist wage-and-hour questions: `nonprofit-hr`
+- Staff succession, retention, career paths: `nonprofit-staff-retention`
+- The creative contract for new work (playwright IP, approvals, milestones, premieres): `nonprofit-arts-commissioning-new-work` (this skill covers the employment contract once people are hired to make it)
+- Organizational risk, insurance, liability: `nonprofit-risk-management`
+- Hiring an executive or artistic director: `nonprofit-executive-search`
+- Licensing a play or musical: `nonprofit-arts-performance-licensing`; teaching-artist contracts: `nonprofit-arts-education-programs`
 
 **The two supervision rules.** First, immigration: an O or P petition is a formal filing with USCIS; this skill tells the user when to engage immigration counsel and what to gather, but counsel files the petition — no exception. Second, unions: an AEA/IATSE/AFM agreement or SAG-AFTRA signatory status binds the organization with contribution and work-rule obligations that outlast any single production. Any agreement or signatory application gets a read from the union's business office (or a labor attorney) before signature. Treat this skill as the org-side preparation layer that makes both professionals cheap and fast.
 
@@ -159,6 +164,33 @@ The full checklist for engaging a foreign guest artist (the union-only version d
 7. **Track the artist's visa issuance and travel** — approval is not a visa; the artist consular-processes (except Canadians) and should arrive with documents matching the petition. **Completion:** artist on site, I-94 period verified by counsel.
 8. **Pay correctly** — remit withholding per the CWA/8233/30% plan and file the annual Form 1042 with Form 1042-S for each recipient (no W-2 — these are NRA independent contractors), truing up at year end. **Completion:** all payments and filings made per plan.
 9. **Deliver the engagement and close out** — credit per contract, union reports (Equity-League weekly reports, AFM B-forms and pension remittances, work dues), and the org's own file of everything (petition, CWA, contracts) retained for the audit windows. **Completion:** union reports filed, retention file complete.
+
+## Standard Deliverables
+
+1. **Engagement checklist** — the Part 6 sequence, with owners and completion dates, kept in the engagement file.
+2. **Union labor budget** — base scale plus the six Part 2 layers, at 1.3-1.5x until the actual agreement is signed.
+3. **Guest-artist letter agreement** — the Part 3 anatomy.
+4. **Foreign-artist visa and withholding timeline** (template below), built at contract time with counsel.
+
+```
+Foreign Artist Timeline — [Artist], [role], [production] — first rehearsal [date]
+Immigration counsel: [name]   Withholding agent: [name]   Org staff lead: [name]
+| Step | Target date | Owner | Status |
+|---|---|---|---|
+| Engagement letter signed (with visa contingency) | T-120 | | |
+| Counsel confirms category (O-1B / O-1B MPTV / O-2 / P-1B / P-2 / P-3) | T-110 | counsel | |
+| Petitioner set (org as employer / U.S. agent) and itinerary complete | T-105 | | |
+| Withholding method chosen (CWA / treaty Form 8233 / 30% of gross) | T-100 | CPA/counsel | |
+| CWA Form 13930 submitted (no later than 45 days before first event) | T-[ ] | artist/agent | |
+| Union consultation(s) requested from national office(s): [unions] | T-95 | counsel | |
+| I-129 + I-907 premium processing filed | T-75 | counsel | |
+| Approval notice / RFE response | T-60 | counsel | |
+| Consular visa issued (not needed for Canadians); travel booked | T-30 | artist | |
+| Arrival; I-94 verified | T-[ ] | counsel | |
+| Payments with withholding; Form 1042 / 1042-S filed | per plan | finance | |
+```
+
+Adjust dates to current USCIS and IRS processing; the T-minus targets are planning defaults, not legal deadlines (except the 45-day CWA rule).
 
 ## Common Failure Modes
 

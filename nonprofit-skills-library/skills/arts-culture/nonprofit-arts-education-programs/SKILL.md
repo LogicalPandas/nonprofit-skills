@@ -1,6 +1,6 @@
 ---
 name: nonprofit-arts-education-programs
-description: "Arts education for nonprofit arts orgs: teaching-artist rosters and contracts (W-2 vs 1099 practice, fee norms), district partnerships (arts integration, teacher PD, transport), student matinees, National Core Arts Standards and state standards, youth safety (background checks, mandated reporting, ratios, releases), arts-ed funders (NEA GAP arts education, state rosters, Title IV-A/Title I/21st CCLC), evaluation at arts-ed scale. Use when a user says 'build a teaching artist roster and set pay rates,' 'are teaching artists 1099 or W-2,' 'the district wants standards alignment,' 'we're adding student matinees,' or 'do teaching artists need background checks.' Not for general program design (use nonprofit-program-design), outcomes measurement (use nonprofit-outcomes-measurement), worker classification (use nonprofit-hr), matinee ticketing (use nonprofit-arts-box-office-subscriptions), arts grants (use nonprofit-arts-grant-writing), or teaching-artist union rules (use nonprofit-arts-union-agreements-visas)."
+description: "Builds arts education programs for nonprofit arts orgs: teaching-artist rosters, pay and contracts (W-2 vs. 1099), school partnerships and residencies, student matinees, standards alignment, youth safety (background checks, mandated reporting, ratios, releases), arts-ed funders, and evaluation. Use when a user says 'set teaching artist pay rates,' 'are teaching artists 1099 or W-2,' 'the district wants standards alignment,' or 'do teaching artists need background checks.' Not for general program design (use nonprofit-program-design), measurement systems (use nonprofit-outcomes-measurement), classification tests (use nonprofit-hr), matinee ticketing (use nonprofit-arts-box-office-subscriptions), or grant applications (use nonprofit-arts-grant-writing)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,11 +12,18 @@ metadata:
 
 # Teaching Artists and Arts Education Programs
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit arts organization — theater, orchestra, dance company, opera, presenting organization, community arts center, gallery — builds or runs education and outreach programming: staffing it with teaching artists, partnering with schools and districts, running student matinees and field trips, aligning curricula to arts standards, funding the work, and proving it works. The user is typically an education director, program director, executive director, or development staffer saying things like "we want teaching artists in five schools this year," "should our teaching artists get 1099s," "the district wants standards alignment," "how much should we pay teaching artists," "how do student matinees even work," or "do our teaching artists really need background checks?"
+Covers education and outreach programming inside a nonprofit arts organization. Users are typically an education director, program director, executive director, or development staffer. Hand off:
 
-**Boundary:** This skill covers arts education programming inside a nonprofit arts organization. General program design (logic models, program architecture) is `nonprofit-program-design`. Outcomes measurement frameworks (theory of change, indicator systems, data collection infrastructure) is `nonprofit-outcomes-measurement` — this skill covers only how evaluation looks different at arts-education scale. General HR and worker-classification rules (the classification tests themselves, onboarding, benefits) is `nonprofit-hr` — this skill covers the arts-specific practice: how teaching artists are actually paid and where classification goes wrong in arts orgs. Ticketing mechanics for student matinees (fees, exchanges, refunds, group-sales software) is `nonprofit-arts-box-office-subscriptions` — this skill covers the program design around the tickets. Arts grant applications, panel narratives, and funder grant management is `nonprofit-arts-grant-writing` — this skill covers which funders fund arts education. Union rules for teaching artists in covered situations (AEA or AFM scale work, choreography under a collective bargaining agreement) is `nonprofit-arts-union-agreements-visas`. Season-calendar fit for matinee dates is `nonprofit-arts-season-planning`. Youth-program insurance and waiver architecture is `nonprofit-risk-management`.
+- Logic models and program architecture: `nonprofit-program-design`
+- Theory of change, indicator systems, data infrastructure: `nonprofit-outcomes-measurement` (this skill covers only how evaluation differs at arts-ed scale)
+- Classification tests, onboarding, benefits: `nonprofit-hr` (this skill covers how arts orgs actually pay teaching artists and where classification goes wrong)
+- Student-matinee ticketing (fees, exchanges, refunds, group-sales software): `nonprofit-arts-box-office-subscriptions` (this skill covers the program design around the tickets)
+- Grant applications, panel narratives, NEA cycle dates, grants management: `nonprofit-arts-grant-writing` (this skill maps which funders fund arts education)
+- Union rules for teaching artists in covered work (AEA, AFM, choreography under a CBA): `nonprofit-arts-union-agreements-visas`
+- Season-calendar fit for matinee dates: `nonprofit-arts-season-planning`
+- Youth-program insurance and waivers: `nonprofit-risk-management`
 
 ## Part 1 — The Teaching-Artist Roster and the Employment Question
 
@@ -56,7 +63,7 @@ Use these 2025 benchmarks to set rates and to price programs; verify locally, si
 - **The residency cost stack.** In Chicago applications, median in-school partner services ran ~$8,000 per residency (about $182 per program hour across disciplines), with teacher-planning stipends (~$650 median) and field-trip costs (~$1,000 median) budgeted separately. Use these as sanity checks when pricing a school contract.
 - **Write contracts — most orgs are sloppy, and it costs them.** The 2025 NYC study found 59% of TAs had contracts with all their employers — meaning 41% had at least one employer with no contract. Every engagement gets a written agreement: scope (dates, sessions, planning hours), rate and payment schedule, classification status, cancellation/payment-for-cancellation terms, background-check compliance, media and IP terms, and — for 1099s — an explicit statement that the TA controls the means and methods of instruction.
 
-**Advisor note:** consultants should run the classification exposure review (which programs, in which states, with what control) BEFORE pricing a new residency line, and bake payroll-tax load into every budget submitted to a school or funder.
+**For advisors:** run the classification exposure review (which programs, in which states, with what control) BEFORE pricing a new residency line, and bake payroll-tax load into every budget submitted to a school or funder.
 
 ## Part 2 — School and District Partnerships
 
@@ -117,7 +124,7 @@ This is the supervision-triggering core of the skill. Any program where teaching
 
 Route application drafting to `nonprofit-arts-grant-writing`; this section is the funder map.
 
-- **NEA Grants for Arts Projects (GAP), arts-education strand.** The NEA funds three arts-education project types: **Direct Learning** (arts instruction for pre-K–12 students), **Professional Development** (for educators and teaching artists), and **Collective Impact** (community-wide arts-ed access planning). Award sizes: $10,000–$100,000 (Challenge America fixed at $10,000; local arts agency subgranting projects $30,000–$150,000), 1:1 match required. **Verify current cycles — the NEA has been turbulent:** the FY 2026 round's February 13, 2025 deadline was canceled and restructured mid-cycle, agency funding-priority language shifted in 2025, FY 2027 deadlines fell on February 12 and July 9, 2026, and FY 2028 guidelines were anticipated around late December 2026. Check arts.gov before advising any applicant.
+- **NEA Grants for Arts Projects (GAP), arts-education strand.** The NEA funds three arts-education project types: **Direct Learning** (arts instruction for pre-K–12 students), **Professional Development** (for educators and teaching artists), and **Collective Impact** (community-wide arts-ed access planning). Award sizes: $10,000–$100,000 (Challenge America fixed at $10,000; local arts agency subgranting projects $30,000–$150,000), 1:1 match required. **Verify current cycles at arts.gov before advising any applicant** — deadlines and priorities have shifted repeatedly since 2025; cycle dates, eligibility, and match mechanics are kept in `nonprofit-arts-grant-writing`.
 - **State arts agencies — the bread and butter.** Nearly every state arts agency runs an Arts in Education grant line (for schools and arts orgs partnering with them) and maintains a **juried teaching-artist roster** (Virginia, Maryland, Hawai'i, Alaska, Minnesota, and most others). Getting your TAs onto the state roster (a) signals quality to districts, (b) often unlocks grant eligibility that requires roster artists, and (c) sometimes pays better rates — some states set or suggest TA fees (Kentucky's Teaching Art Together program, for instance, paid $80/session with defined session limits). Check your state agency's roster application cycle and its AIE grant deadlines annually.
 - **Federal education dollars flowing through districts.** Districts can pay arts orgs with: **Title IV-A** (Student Support and Academic Enrichment, ESSA) — arts are explicitly part of a "well-rounded education"; **Title I** — permissible for arts education as a strategy to help Title I students meet state academic standards (per long-standing U.S. Department of Education guidance); and **21st Century Community Learning Centers** — federal out-of-school-time funds where nonprofits are eligible subrecipients providing "academic and artistic enrichment." Your program design work in Parts 2–4 is precisely what makes an org competitive for these; sell to districts with the standards alignment and the evidence plan (Part 7). The district is the applicant/grantee — you are the vendor or subrecipient.
 - **Community foundations and local funders.** Most cities' community foundations and family foundations hold arts-education as a stated priority; district-level education foundations (many districts have their own) fund exactly this. Local arts coalitions (Ingenuity in Chicago, Mindpop in Austin's Creative Learning Initiative, the Kennedy Center's Any Given Child partner communities) are worth joining — collective-impact infrastructure funding increasingly flows through them.
@@ -132,6 +139,29 @@ Frameworks, indicator systems, and full measurement theory are `nonprofit-outcom
 3. **Measure engagement and access honestly.** Session counts, contact hours, student-days, school and district demographics, free/reduced-lunch-linked fee waivers served — these are the numbers district contracts and NEA arts-ed grants actually report. Build the data plan into the residency contract (TAs log sessions and attendance; one reflection meeting produces a written debrief).
 4. **Right-size to the program.** A 10-session residency needs a rubric and a debrief; a district-wide initiative needs a `nonprofit-outcomes-measurement` design partner. Never let evaluation appetite eat the teaching budget — a 5–10% evaluation line is standard.
 5. **Collect teacher testimony as evidence, not decoration.** Structured pre/post teacher surveys (change in student engagement, change in teacher arts-integration confidence) are the cheapest defensible outcome data in the field. Quote teachers in grant reports; route the full report drafting to `nonprofit-arts-grant-writing`.
+
+## Standard Deliverables
+
+1. **Program design one-pager** (template below) for each residency, PD series, or matinee program.
+2. **School partnership MOU / residency contract** — scope (sessions, planning and reflection meetings, culminating sharing), named classroom teacher, schedule, standards codes, transport owner, district compliance items, data the TA logs, fees and cancellation terms.
+3. **Teaching-artist agreement** — the Part 1 contract terms, with classification status set after review with `nonprofit-hr`.
+4. **Youth-safety file** — clearances, training records, ratio policy, two-adult rule, consent flags (Part 5).
+5. **Evaluation plan** — rubric keyed to anchor standards, engagement counts, teacher surveys (Part 7).
+
+```
+Program Design One-Pager — [Program name] — [school year]
+Model: [sequential residency | PD series | student matinee | assembly (outreach only)]
+Partners: [district/school]; classroom teacher(s): [names]
+Grade band / students / classes: [ ]
+Arc: planning meeting -> [n] sessions -> mid-arc reflection -> culminating sharing -> debrief
+Arts objectives and state standard codes: [ ]
+Cross-curricular links (only if co-taught): [ ]
+Staffing: TAs [names, 2+ qualified]; classification [W-2 | 1099, reviewed]; ratio [ ]
+Youth safety: clearances on file [date]; mandated-reporter training [date]; consents [source]
+Budget: delivery hours x rate; planning hours x rate; teacher stipends; transport [owner]; evaluation (5-10%)
+Funding: [district Title IV-A/Title I/21st CCLC | SAA AIE | foundation | earned]
+Evidence: rubric [ ]; engagement counts [ ]; teacher pre/post survey [ ]
+```
 
 ## Common Failure Modes
 

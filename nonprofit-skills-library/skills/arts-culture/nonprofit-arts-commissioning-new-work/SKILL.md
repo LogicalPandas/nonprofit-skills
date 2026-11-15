@@ -1,6 +1,6 @@
 ---
 name: nonprofit-arts-commissioning-new-work
-description: "Commissioning and new-work development for nonprofit arts orgs: commission agreement anatomy (scope, milestones, approvals/consultation rights, billing, IP ownership, options and premiere rights); the development pipeline (29-hour readings, workshops, labs); co-commissioning and consortia; commission fee benchmarks (Dramatists Guild, Meet The Composer); and gallery consignment and public-art basics. Use when a user says 'we want to commission a new play,' 'the playwright's agent wants approval over the director,' 'two other theaters want to co-commission,' 'who owns copyright in a commissioned work,' or 'the city percent-for-art program wants a proposal.' Not for licensing existing plays or musicals (use nonprofit-arts-performance-licensing), union rules for workshops and readings (use nonprofit-arts-union-agreements-visas), season slot decisions (use nonprofit-arts-season-planning), teaching-artist contracts (use nonprofit-arts-education-programs), or general contract risk (use nonprofit-risk-management)."
+description: "Structures commissions of new work by nonprofit arts orgs: commission agreement terms (fee schedule, milestones, approvals, billing, IP, option and premiere rights), the development pipeline (readings, workshops, labs), co-commissions and consortia, fee benchmarks, plus gallery consignment and public-art basics. Use when a user says 'we want to commission a new play,' 'the agent wants approval over the director,' 'two other theaters want to co-commission,' or 'who owns copyright in a commissioned work.' Not for licensing existing works (use nonprofit-arts-performance-licensing), union rules for readings and workshops (use nonprofit-arts-union-agreements-visas), season slots (use nonprofit-arts-season-planning), or general contract risk (use nonprofit-risk-management)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,11 +12,30 @@ metadata:
 
 # Commissioning and New-Work Development
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit arts organization — theater, orchestra, dance or opera company, presenting organization, community arts center, gallery — is **paying an artist to create a new work** or shepherding one through development. Concrete tasks: drafting or reviewing a commission agreement (play, musical, concert piece, dance, opera, site-specific or public artwork); setting the fee and payment schedule; structuring approvals, billing, and first-production rights; planning and budgeting the development pipeline (table reads, readings, workshops, labs); structuring a co-commission or consortium; running a gallery consignment program; or responding to a municipal percent-for-art opportunity. Trigger phrases: "we want to commission a new play for our 50th season," "the playwright's agent wants approval over the director and casting," "two other theaters want to co-commission with us — how do we split it," "who owns the copyright in a commissioned work," "our board wants a work-for-hire clause in the commission contract," "the city percent-for-art program wants a proposal from us."
+Covers commissioning agreements and the new-work pipeline with the organization as commissioner or developer (theater, orchestra, dance, opera, presenter, community arts center, gallery). Hand off:
 
-**Boundary:** This skill covers commissioning agreements and the new-work development pipeline for the organization as commissioner or developer. Licensing or producing an **existing** play, musical, film, or venue music (Dramatists Play Service, Concord, MTI, R&H quotes; ASCAP/BMI/SESAC/GMR; grand-rights requests to publishers) is `nonprofit-arts-performance-licensing`. Union rules that govern development activity — Actors' Equity (AEA) reading, workshop, lab, and development contract tiers, and AFM/IATSE equivalents — are `nonprofit-arts-union-agreements-visas` (this skill tells you where each pipeline stage touches a union rule and routes there). Deciding **whether and when** a new work occupies a season slot, and holdover/extension economics, is `nonprofit-arts-season-planning`. Contracts with teaching artists and school-based residencies are `nonprofit-arts-education-programs`. General contract risk review, insurance, and indemnity posture outside the artistic specifics covered here is `nonprofit-risk-management`. Underwriting a commission with a sponsor package is `nonprofit-arts-season-sponsorship`; arts-funder applications (NEA, state arts agency, foundations) are `nonprofit-arts-grant-writing`; who holds budget authority to greenlight a commission is `nonprofit-arts-ad-ed-partnership`. Individual artists' careers, agents, and museums' collections work are out of the whole pack.
+- Licensing or producing an existing play, musical, film, or venue music (DPS, Concord, MTI, R&H; ASCAP/BMI/SESAC/GMR; grand-rights requests): `nonprofit-arts-performance-licensing`
+- AEA reading, workshop, lab and development tiers, and AFM/IATSE equivalents: `nonprofit-arts-union-agreements-visas` (this skill flags where each stage touches a union rule)
+- Whether and when a new work takes a season slot; holdover/extension economics: `nonprofit-arts-season-planning`
+- Teaching-artist contracts and school residencies: `nonprofit-arts-education-programs`
+- General contract risk, insurance, indemnity: `nonprofit-risk-management`
+- Sponsor underwriting of a commission: `nonprofit-arts-season-sponsorship`; arts-funder applications: `nonprofit-arts-grant-writing`
+- Who holds budget authority to greenlight a commission: `nonprofit-arts-ad-ed-partnership`
+- Individual artists' careers, agents, and museum collections work are out of scope for the whole arts-culture collection.
+
+## Commissioning Workflow
+
+1. **Scope and authority.** Define the work, the artistic rationale, and who approves the spend (`nonprofit-arts-ad-ed-partnership`). Clear underlying rights for any adaptation first.
+2. **Budget the whole pipeline**, not just the fee (Part 2), and identify funders (Part 2, Part 4).
+3. **Set the fee** against the anchors in Part 3 and the org's means.
+4. **Draft the agreement** against the Part 1 checklist, with IP handled as described below; add partner terms for a co-commission (Part 4).
+5. **Run development stages** on the contracted milestones, routing union engagements to `nonprofit-arts-union-agreements-visas`.
+6. **Exercise the option and sign the separate production contract** before the premiere; confirm billing and media rights.
+7. **After the premiere**, track the commissioning credit and any time-boxed subsidiary participation in later licensing.
+
+For gallery consignment use Part 5; for public art use Part 6.
 
 ## The IP Landscape — Read This Before Drafting Anything
 
@@ -26,7 +45,7 @@ Commissioning law is inverted from what most nonprofit managers assume: **the or
 - **Work-for-hire is a trap in the arts — and usually a nullity.** Under the Copyright Act, a specially commissioned work is work-for-hire only if it falls within nine enumerated statutory categories **and** there is a signed written work-for-hire agreement. A play, libretto, or choreography commissioned from an independent artist fits none of the categories, so a work-for-hire clause in a commission contract generally fails legally — it does not transfer the copyright to the org; it just poisons the relationship (the DG treats such clauses as contrary to industry standards) and creates mutual confusion about who can license what. If the org's counsel or board proposes work-for-hire language, push back: the org gets what it actually needs through an **exclusive option, a defined first-production window, and subsidiary-rights participation** (below), not through ownership.
 - **Composers vary — check the genre's custom before drafting.** In concert music (orchestral, chamber, choral), composers also customarily retain copyright; the commissioner typically buys premiere exclusivity for a defined period and shares in credit. In film and much commercial media the opposite is true (composer-for-hire is standard), which is why the habits collide when a theater commissions a score for a musical or an opera: the **dramatico-musical** rights to a commissioned score must be nailed down in writing. In practice, a musical's book writer, composer, and lyricist are co-authors of a single joint work and the org licenses from all of them.
 - **Grand rights are why a commissioned musical needs its own rights clause.** ASCAP (and BMI/SESAC) members license only **nondramatic ("small") rights** through their PROs; an ASCAP license never authorizes a dramatic performance — the performance of a dramatico-musical work (a musical, opera, or story-driven dance work) requires **grand rights** licensed directly from the copyright owner. For a commissioned musical, the commission agreement should therefore include (or clearly promise) a production license for the premiere, since the org cannot perform the work on a venue's ASCAP blanket license. Grand rights have no statutory definition — the industry works from custom — so define the granted performance rights explicitly in the contract.
-- **Put collaborator ownership in writing.** In *Thomson v. Larson* (2d Cir. 1998 — the *Rent* dramaturg case) a contributing dramaturg's claims had to be litigated because the collaborators never specified rights in a contract. The DG standard: a director or dramaturg is a co-author only if they collaborated from inception, made a copyrightable contribution, and there is a mutual written agreement to be co-authors; contributions the author chooses to incorporate belong to the author. Your commission contract should include a collaboration/co-authorship clause for team-written work and a clarification that director/dramaturg notes are suggestions the author may adopt.
+- **Put collaborator ownership in writing.** *Thomson v. Larson* (2d Cir. 1998, the *Rent* dramaturg case) was litigated because collaborators never specified rights in a contract. The DG standard: a director or dramaturg is a co-author only if they collaborated from inception, made a copyrightable contribution, and there is a mutual written agreement to be co-authors; contributions the author chooses to incorporate belong to the author. Your commission contract should include a collaboration/co-authorship clause for team-written work and a clarification that director/dramaturg notes are suggestions the author may adopt.
 - **Derivative works cut both ways.** Sets, costumes, and staging created for your production are ordinarily derivative of the play; without the author's permission they generally cannot be exploited separately (e.g., streamed or toured). If the org expects to film, stream, or archive the premiere, those media rights must be in the production license — see `nonprofit-arts-performance-licensing` for the streaming-rights mechanics.
 
 ## Part 1 — Anatomy of the Commission Agreement
@@ -106,6 +125,25 @@ When a city, county, developer, or the org itself initiates outdoor or civic art
 3. **Contract the milestones.** Field standards call for milestone payments that fund fabrication as it happens (e.g., a payment at **50% of fabrication**), proposal contracts that precede the fabrication/installation award, and artists' site visits at the commissioning agency's expense. Some jurisdictions (one published municipal policy example) require a **maintenance set-aside of ~10%** of the project budget — check whether your program's ordinance does.
 4. **Select the artist, not the artwork, and involve the public.** CAA's public-art guidelines: commission the artist based on qualifications, then engage the site community — stakeholders before the RFQ, and residents reviewing maquettes, renderings, and plans after selection. Public-art controversies are process failures; a documented engagement trail is the org's best defense.
 5. **Rights in public art.** The artist normally retains copyright in the work; the commissioning agency takes licenses (display, documentation, promotion). **VARA** (the Visual Artists Rights Act) grants artists of works of visual art moral rights — attribution and integrity — that are personal and non-transferable; a **waiver requires a written instrument signed by the author**. If the contract needs removal, modification, or relocation rights, address VARA explicitly with counsel before signature. Advise the artist to have a lawyer review the commissioning agency's contract — and if the org is the issuing agency, expect that advice.
+
+### Commission term sheet skeleton
+
+```
+Commission Term Sheet — [Work title / working title] — draft [date]
+Parties: [Org] and [all authors; book/music/lyrics for a musical]
+Work: [subject/source; length; forces]  Underlying rights cleared by: [author | org], cost borne by: [ ]
+Fee: $[ ] — installments: [signing] / [first draft] / [final draft or rehearsal start]
+Separate budget lines: research/travel $[ ]; development fees per stage $[ ]
+Milestones: outline [date]; first draft [date]; revision after [stage] [date]; final [date]
+Extension/consultation mechanism: [ ]
+Approvals: org consults/approves production elements [list]; author approves text
+Option: exercise by [date]; premiere opens by [date]; territory [ ]; reversion if not produced
+Billing: "Commissioned by [Org]" [placement]; funder credit [ ]; perpetual in licensing boilerplate
+Subsidiary participation: [%] of author's income, [years], [territory], after professional premiere only
+Media/recording/AI terms: [ ]
+Kill fee/unwind: [ ]
+Review: staff lead [name]; counsel [if first-of-its-kind or departs from DG model]
+```
 
 ## Standard Deliverables
 
