@@ -31,16 +31,15 @@ is about the rule itself.
 
 ## Core Frameworks
 
-Name the framework the program is operating inside before drafting artifacts — a food pantry
-under USDA TEFAP reads a "come to our chapel" flyer as a grant-terminating violation, and a
-church-basement pantry running only on private donations does not.
+Name the framework before drafting — under USDA TEFAP a "come to our chapel" flyer is a
+grant-terminating violation; at a church-basement pantry on private donations it is not.
 
 - **Charitable Choice / Equal Treatment Regulations** (HHS 45 CFR Part 87, HUD 24 CFR Part 5,
   DOL 29 CFR Part 2, USDA 7 CFR Part 16, DOJ 28 CFR Part 38). The rule itself is owned by
   `nonprofit-faith-religious-liberty-compliance`. Operationally, a direct-funded provider keeps its
-  religious character but must keep inherently religious activities out of the funded service,
-  offer them voluntary, separate and not a condition, give written notice with an
-  alternative-provider referral, and not discriminate against beneficiaries on religion.
+  religious character but keeps inherently religious activities out of the funded service (see
+  the voluntary / separate / not-a-condition test below), gives written notice with an
+  alternative-provider referral, and does not discriminate against beneficiaries on religion.
 - **Indirect vs. direct federal aid**. Restrictions apply to **direct** funds (grant, contract,
   cooperative agreement). **Indirect** aid — a voucher the beneficiary chooses to redeem — carries
   far fewer content restrictions under *Zelman v. Simmons-Harris*, 536 U.S. 639 (2002). A
@@ -84,15 +83,12 @@ church-basement pantry running only on private donations does not.
 
 ## Standard Deliverables
 
-Every request in scope resolves into one of these artifacts:
-
 - **Program design memo** — the model choice (e.g., client-choice pantry vs. commodity box,
   low-barrier shelter vs. sober-living transitional), with the religious-content design decision
-  and the motivation-vs-condition statement made explicit.
-- **Beneficiary written notice** — the notice required for direct-federally-funded programs:
-  right to receive the funded service without participating in any religious activity, right to
-  request a referral to an alternative provider, and non-discrimination on religion. Agency-
-  specific model language exists (HUD, HHS, USDA); use the funding agency's model.
+  and the motivation-vs-condition statement made explicit and referred back to in every content
+  review.
+- **Beneficiary written notice** — required for direct-federally-funded programs; use the
+  funding agency's model language (HUD, HHS, USDA; contents in checklist step 6).
 - **Alternative-provider referral list and MOU** — the identified secular provider that a
   beneficiary who declines the religious component can be referred to, with a memorandum of
   understanding describing referral warm-handoff and reciprocity.
@@ -109,12 +105,13 @@ Every request in scope resolves into one of these artifacts:
 
 ## Designing a Faith-Based Direct-Service Program — Numbered Checklist
 
-Run this checklist for any new program, expansion, or grant application. The failure mode is
-designing around the mission first and discovering funding-source incompatibility after launch.
+Run for any new program, expansion, or grant application. The failure mode is designing around
+the mission first and discovering funding-source incompatibility after launch — or treating
+compliance as "legal will handle it": drift found at year-end audit costs far more than
+compliance built into intake, notice, and staffing from day one.
 
-1. **Name the beneficiary and the vulnerability**. The beneficiary's dignity and access to the
-   service cannot depend on their response to a religious message from you — the ethical
-   foundation, not a legal afterthought.
+1. **Name the beneficiary and the vulnerability**. Their dignity and access cannot depend on
+   their response to a religious message — the ethical foundation, not a legal afterthought.
 2. **Separate motivation from condition**. Distinguish "**our motivation** for doing this work is
    religious" (protected First Amendment activity, expected of a faith-based org) from "**we
    require the beneficiary** to receive religious content to get the service" (illegal in direct-
@@ -128,9 +125,9 @@ designing around the mission first and discovering funding-source incompatibilit
    not. A single program can have mixed funding, in which case the strictest rule governs the
    funded portion.
 4. **Pick the program mode against the funding stack**. Three archetypes:
-   (a) **Fully secular delivery, religious character preserved at the org level** — the funded
-   service contains no religious content; religious character shows in name, art, mission, board,
-   and staff hiring. Use for direct-federally-funded services.
+   (a) **Fully secular delivery, religious character preserved at the org level** — no religious
+   content in the funded service; religious character shows in name, art, mission, board, and
+   staff hiring. Use for direct-federally-funded services.
    (b) **Optional / separate religious component** — the funded service is secular; a religious
    component (evening chapel, Bible study, prayer circle, community iftar) is offered alongside
    on a voluntary basis, separated in time or location, never a condition. Compatible with direct
@@ -151,25 +148,25 @@ designing around the mission first and discovering funding-source incompatibilit
 7. **Build the alternative-provider infrastructure before you need it** — a named secular
    provider, referral MOU and six-month verification (see "Alternative-Provider Infrastructure").
    Include the list in the beneficiary notice packet.
-8. **Design the staffing model to keep the two lanes clean** (see "Staffing the Two Lanes"). A
-   single person doing both the funded service and religious support, even sincerely, is the most
-   common source of compliance findings and beneficiary complaints.
+8. **Design the staffing model to keep the two lanes clean** (see "Staffing the Two Lanes").
 9. **Define outcomes in two reports** (see "Outcomes and Mission-Fulfillment"): funded-service
    outcomes to the grantor; mission-fulfillment metrics to board and donors only, never a
    service-access gate. Do not mix the two reports.
 10. **Cultural and religious accommodation as a design input**. Assume the beneficiary population
-    is more religiously diverse than the staff. Design for: dietary accommodation (halal, kosher,
-    vegetarian, no-pork defaults where relevant), gender-of-caseworker preference, prayer space
-    and time, holiday scheduling that does not force a beneficiary to choose between observance
-    and service, family-structure sensitivity. A Muslim beneficiary receiving food at a Christian
+    is more religiously diverse than the staff; defaults on diet, holidays, caseworker gender and
+    prayer-in-intake feel wrong to differently-situated beneficiaries. Design for: dietary
+    accommodation (halal, kosher, vegetarian, no-pork defaults where relevant),
+    gender-of-caseworker preference, prayer space and time, holiday scheduling that does not
+    force a beneficiary to choose between observance and service, family-structure sensitivity;
+    hire multi-tradition staff and build clergy visitation covering the population. A Muslim beneficiary receiving food at a Christian
     pantry, or a Christian beneficiary receiving resettlement services through HIAS, should
     experience the service with full dignity — the practical expression of the theology, not a
     compliance exercise.
 
 ## Program Family Playbooks
 
-Seven operational contexts; load the relevant subsection. Partner and agency rosters change —
-confirm current names, status and services before recommending.
+Seven contexts; use the relevant one. Partner and agency rosters change — confirm current names,
+status and services before recommending.
 
 ### Food security / food pantry
 
@@ -190,9 +187,6 @@ Partner-agreement violations put the sourcing relationship at risk long before a
 
 ### Addiction recovery
 
-Faith-based recovery has a well-developed ecosystem of programs with different theological
-depths and different compliance profiles:
-
 - **AA and NA** — religious-in-effect but formally non-sectarian; courts have repeatedly held
   (Warner, Kerr, Inouye) that mandating AA/NA attendance without a genuine secular alternative
   violates the Establishment Clause. A congregation hosting an AA meeting is providing space, not
@@ -209,8 +203,10 @@ depths and different compliance profiles:
   plus on-request chaplain access.
 
 Design considerations:
-- **Court-ordered attendance**: document that a genuine secular alternative was offered (see
-  Common Failure Modes).
+- **Court-ordered attendance**: a probation officer routing offenders to Celebrate Recovery or
+  Teen Challenge without a secular alternative creates Establishment Clause exposure. Document on
+  intake that the beneficiary was offered and declined a secular option, or refuse court-mandated
+  intake without it.
 - **SAMHSA / state-block-grant funding** triggers 42 CFR Part 54 (see Core Frameworks).
 - **Vouchers** (indirect aid) can send a beneficiary to a discipleship-integrated program under
   *Zelman* logic; the compliance surface is different from a direct grant.
@@ -243,10 +239,9 @@ with a locally coordinated entry system. Housing First orthodoxy governs most HU
 low-barrier admission, no sobriety or treatment or religious-participation preconditions, rapid
 move to permanent housing with wraparound support.
 
-Design choices:
 - **Low-barrier HUD-funded shelter**: the bed is the funded service; sobriety, treatment,
   employment, or religious participation cannot condition admission or continued stay. Evening
-  chapel is voluntary/separate/not-a-condition with written notice.
+  chapel must pass the three-prong test with written notice.
 - **Traditional / private-funded shelter**: Salvation Army corps community centers and the
   Rescue Mission network / Citygate (City Union of Rescue Missions) historically run private-
   funded programs that require sobriety and program participation. Compatible with private
@@ -299,8 +294,7 @@ EOIR.
 Standard architecture: **NVOAD member agencies → local Voluntary Organizations Active in Disaster
 (VOAD) chapter → coordinated response with FEMA Voluntary Agency Liaison → Long-Term Recovery
 Group in the affected community**. FEMA does not usually fund the faith-based response directly;
-the faith-based agencies are the response backbone, and FEMA public assistance and individual
-assistance flow to affected jurisdictions and households separately.
+FEMA public and individual assistance flow to affected jurisdictions and households separately.
 
 - **Response phase** (first 30 days): Southern Baptist Disaster Relief (mass feeding, chainsaw and
   mud-out crews), Salvation Army (mobile
@@ -339,7 +333,8 @@ order:
    different time slot or room; beneficiary can be in the funded-service space without being in
    the religious space; federally-funded staff do not lead the religious activity on federal
    time. **Not a condition** — no benefit, preference, better bed, faster appointment, favorable
-   case note, or informal favor available to attendees but not to non-attendees.
+   case note, or informal favor available to attendees but not to non-attendees. Sign-ins at
+   chapel or absence follow-up collapse "voluntary" into "monitored".
 4. **Written beneficiary notice** and **alternative-provider referral** are required for
    direct-funded services whether or not a religious activity is offered.
 
@@ -349,8 +344,10 @@ component privately, or to remove it from the program.
 ## Staffing the Two Lanes — Paid Staff vs. Spiritual Companions
 
 The most common source of both compliance findings and beneficiary complaints is a sincere staff
-member doing the funded service and the religious support simultaneously. Design around this from
-the start.
+member doing the funded service and the religious support simultaneously (a case manager who prays
+with a beneficiary and offers a Bible during a funded intake is experienced as a condition of
+service). Design around this from the start, with distinct roles, badges, role descriptions, and
+training.
 
 - **Paid program staff on a direct federal grant** perform the funded service. During federally-
   funded work time, they do not initiate religious conversation, distribute religious literature,
@@ -372,10 +369,11 @@ the start.
 The alternative-provider requirement is real, and a paper answer fails it.
 
 - **Identify a genuine secular provider** of the same service in the same catchment — a named
-  organization, not "any other pantry" — and sign a referral MOU (who refers, consented
+  organization, not "any other pantry" or "we'd refer them somewhere" — before the first federally
+  funded beneficiary walks in, and sign a referral MOU (who refers, consented
   information transfer, warm-handoff protocol, response time, reciprocity).
-- **Verify availability every six months**; a provider that has closed, moved or hit capacity is
-  not an alternative. Update the notice packet on verification.
+- **Verify availability every six months** (closed, moved or at-capacity is not an
+  alternative) and update the notice packet.
 - **Warm handoff**: staff call with the beneficiary present, confirm the intake appointment, help
   with transportation where feasible, follow up within one week. A brochure is not a referral.
 - **Document referrals** and report the count to the grantor. Zero referrals over years signals
@@ -383,10 +381,10 @@ The alternative-provider requirement is real, and a paper answer fails it.
 
 ## Outcomes and Mission-Fulfillment — The Two Reports
 
-Faith-based programs that fold "professions of faith" into the outcome report to the government
-funder will lose the grant and deserve to. Faith-based programs that refuse to count faith-
-formation activity at all lose the ability to steward the mission with board and donors. Keep
-two reports.
+Folding "professions of faith" into the government funder's outcome report is a legal and
+evaluation-integrity error that will lose the grant, and deservedly. Refusing to count
+faith-formation activity at all loses the ability to steward the mission with board and donors.
+Keep two reports.
 
 - **Funded-service outcomes** go to the grantor, board program committee and auditor: outputs,
   short-term outcomes (housed at exit, employed at 240 days, abstinence at six months), long-term
@@ -416,18 +414,16 @@ two reports.
   (Never a service gate; never sent to the government funder.)
   ```
 - **Do not moralize the two reports at each other**. Strong outcomes with low mission engagement
-  means the funded service is working and the religious component may not be reaching people;
-  strong mission engagement with weak outcomes means service drift. Both are diagnostics; neither
-  invalidates the other.
+  means the service works but the religious component may not be reaching people; strong mission
+  engagement with weak outcomes means service drift. Both are diagnostics; neither invalidates
+  the other.
 
 ## Partnering with Worship Communities as a Volunteer Pipeline
 
 Most faith-based service programs are volunteer-heavy, and the pipeline runs through worship
-communities — the church hosts the food pantry, the synagogue hosts the sponsor circle, the
-mosque hosts the community iftar and clothing distribution, congregations rotate overnight-
-shelter beds.
-
-Governance essentials for a congregation hosting a program:
+communities: the church hosts the food pantry, the synagogue hosts the sponsor circle, the
+mosque hosts the community iftar and clothing
+distribution, congregations rotate overnight-shelter beds. Governance essentials for a host:
 - **Written hosting agreement**: spaces used, insurance coverage, liability for beneficiary and
   volunteer injury, protocol when the program's religious character diverges from the host's
   (mainline church hosting a conservative recovery program; interfaith coalition hosting a
@@ -459,33 +455,17 @@ Before launch, a new funding stream, or a grant application:
 
 ## Common Failure Modes
 
-- **Confusing "our motivation is religious" with "we condition service on religion"**. Fix by
-  putting the motivation-vs-condition statement in the program design memo and referring back to
-  it in every content review.
-- **No genuine secular alternative provider identified**. "We'd refer them somewhere" is not
-  identification. Fix by building a named, MOU'd alternative-provider list before the first
-  federally funded beneficiary walks in, and verifying every six months.
-- **Volunteer-staff role collapse**. A case manager prays with a beneficiary and offers a Bible
-  during a funded intake; the beneficiary experiences that as a condition of service. Fix by
-  keeping paid federally-funded staff and lay spiritual-companion volunteers in distinct roles,
-  badges, role descriptions, and training.
-- **Attendance-taking at the "voluntary" religious component**. Sign-ins at chapel or absence
-  follow-up collapses "voluntary" into "monitored." Fix by removing attendance-taking from any
-  religious component adjacent to a funded service.
-- **Court-mandated participants without a documented secular alternative**. A probation officer
-  routing offenders to Celebrate Recovery or Teen Challenge without offering a secular alternative
-  creates Establishment Clause exposure. Fix by documenting on intake that the beneficiary was
-  offered and declined a secular option, or by refusing court-mandated intake without it.
-- **Reporting professions of faith to the government grantor as a program outcome**. Legal and
-  evaluation-integrity error. Fix by isolating mission-fulfillment metrics in a board/donor
-  report and stripping them from the grantor report.
-- **Assuming beneficiary religious homogeneity with staff**. Dietary defaults, holiday
-  scheduling, caseworker-gender assumptions, prayer-in-intake defaults — all feel wrong to
-  differently-situated beneficiaries. Fix by designing accommodations from the start, hiring
-  multi-tradition staff, and building clergy visitation covering the beneficiary population.
-- **Compliance treated as "legal will handle it" not as a program-design input**. Drift found at
-  year-end audit is far more expensive to fix than compliance built into intake, notice, and
-  staffing from day one.
+Each is detailed in the section named; use this as a final scan.
+
+- **Confusing "our motivation is religious" with "we condition service on religion"** (checklist
+  step 2; program design memo).
+- **No genuine secular alternative provider identified** (Alternative-Provider Infrastructure).
+- **Volunteer-staff role collapse** (Staffing the Two Lanes).
+- **Attendance-taking at the "voluntary" religious component** (test step 3).
+- **Court-mandated participants without a documented secular alternative** (Addiction recovery).
+- **Reporting professions of faith to the government grantor as a program outcome** (Two Reports).
+- **Assuming beneficiary religious homogeneity with staff** (checklist step 10).
+- **Compliance treated as "legal will handle it" not as a program-design input** (checklist intro).
 
 ## For advisors
 
