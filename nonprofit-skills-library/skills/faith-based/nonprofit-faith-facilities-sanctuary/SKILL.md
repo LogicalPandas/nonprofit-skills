@@ -1,6 +1,6 @@
 ---
 name: nonprofit-faith-facilities-sanctuary
-description: "US worship-building operations: state property-tax exemption for religious use, RLUIPA zoning, facility-use policies for outside renters (interfaith co-use, 12-step, day care, weddings, funerals, cell tower), IRC §512(b)(3) rental UBIT and the §514 debt-financed trap, house-of-worship insurance (misconduct riders, 15-passenger vans), deferred-maintenance FCAs, historic preservation, closed-church sale under denominational trust clauses (Dennis Canon, PCUSA, UMC, Jones v. Wolf), and sanctuary hosting. Use when asked about a 'facility use policy,' 'property tax exemption challenge,' 'wedding for non-member,' 'sell the building.' Not for trust-clause governance fights (nonprofit-faith-church-governance), church-990/UBIT (nonprofit-faith-990-exemption), RLUIPA statutory law (nonprofit-faith-religious-liberty-compliance), safe-sanctuary policy (nonprofit-faith-employment-ministerial-exception), or secular facilities (nonprofit-vendor-facilities, nonprofit-risk-management)."
+description: "Runs US worship-building operations: parcel-by-parcel property-tax exemption, zoning, facility-use policies and rental agreements, weddings and funerals, house-of-worship insurance, deferred maintenance, historic preservation, building closure or sale under trust clauses, and sanctuary hosting. Use when asked to 'draft a facility use policy', 'our property-tax exemption was challenged', 'a non-member wants a wedding here' or 'we're selling the building'. Not for rental UBIT (use nonprofit-faith-990-exemption), trust-clause governance fights (use nonprofit-faith-church-governance), RLUIPA law (use nonprofit-faith-religious-liberty-compliance) or child-protection policy (use nonprofit-faith-employment-ministerial-exception)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,35 +12,23 @@ metadata:
 
 # Faith Facilities and Sanctuary Space (Worship-Building Operations)
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the user is responsible for the **physical worship building** of a
-congregation or faith-based nonprofit and is working on how the building is shared, insured,
-taxed, used for life-cycle events, maintained, adapted, closed, or sold. Trigger phrases include:
-"draft a facility use policy," "a 12-step group / homeschool co-op / another congregation wants
-to rent our space," "our property-tax exemption got challenged," "the city denied our conditional
-use permit," "cell tower lease on our steeple," "wedding request from a non-member," "we're
-renting the fellowship hall for weddings — is that UBIT?", "our insurer is asking about safe-
-sanctuary practices before renewing," "15-passenger church van," "our building needs $2M of
-deferred maintenance," "we're on the National Register — can we replace the windows?", "we're
-closing and selling the building," or "a family facing deportation is asking to stay in our
-sanctuary."
+This skill is the building as an asset and shared physical space. Terms: "sanctuary" means the
+worship space; "sanctuary hosting" means sheltering a person facing deportation; "safe-sanctuary"
+means the child-protection program, which this skill touches only on the insurance side.
 
-Boundary: this skill is the **building as an asset and shared physical space**. Governance-side
-decisions about the property — a congregational split, denominational disaffiliation, a
-trust-clause lawsuit between the local congregation and its judicatory — belong to
-`nonprofit-faith-church-governance`; the underlying Form-990 exemption and general church UBIT
-framework belong to `nonprofit-faith-990-exemption`; the statutory text and litigation of RLUIPA,
-RFRA, and Charitable Choice belong to `nonprofit-faith-religious-liberty-compliance`; the
-safe-sanctuary child-protection policy itself (background checks, two-adult rule, reporting
-protocols) belongs to `nonprofit-faith-employment-ministerial-exception` — this skill covers only
-the **insurance side** of that policy. Fundraising a capital campaign to build or renovate the
-building is `nonprofit-faith-stewardship-giving`; the actual program design of the food pantry,
-recovery ministry, or shelter that operates inside the building is
-`nonprofit-faith-programs-social-services`. If the user's organization is a secular 501(c)(3)
-with no inherently religious character, hand off to `nonprofit-vendor-facilities` and
-`nonprofit-risk-management` — most of the doctrines below (property-tax exemption for religious
-use, RLUIPA zoning, church-mutual insurers, denominational trust clauses) do not apply.
+- Congregational splits, disaffiliation and trust-clause lawsuits with the judicatory →
+  `nonprofit-faith-church-governance`.
+- Federal exemption and the UBIT tax analysis of rental, parking and cell-tower income →
+  `nonprofit-faith-990-exemption` (this skill designs the rental arrangement and flags the issue).
+- RLUIPA, RFRA and Charitable Choice statute and litigation → `nonprofit-faith-religious-liberty-compliance`.
+- The safe-sanctuary policy itself (background checks, two-adult rule, reporting) →
+  `nonprofit-faith-employment-ministerial-exception`.
+- Capital campaigns for the building → `nonprofit-faith-stewardship-giving`; programs operating in
+  the building (pantry, recovery, shelter) → `nonprofit-faith-programs-social-services`.
+- A secular 501(c)(3) with no religious character → `nonprofit-vendor-facilities` and
+  `nonprofit-risk-management`.
 
 ## Core Frameworks
 
@@ -61,24 +49,11 @@ congregational-title polity.
   and bars unequal treatment vs. comparable secular assemblies. For statutory analysis, use
   `nonprofit-faith-religious-liberty-compliance`; here, treat RLUIPA as the operational leverage
   a congregation has when the planning commission says no.
-- **IRC §512(b)(3) — rental of real property**: rents from real property are generally excluded
-  from Unrelated Business Income Tax, so wedding-rental, hall-rental, and tenant-nonprofit
-  office rent are typically not UBIT for a church.
-- **IRC §514 — debt-financed property**: the §512(b)(3) rental exclusion is lost pro-rata to the
-  extent the property is subject to "acquisition indebtedness." A congregation that borrows to
-  build a large multi-purpose building and then rents it out has UBIT exposure on the borrowed
-  portion, even though bare rental is normally excluded. This is the single most-missed UBIT
-  trap in faith facilities.
-- **IRC §512(b)(3)(A) parenthetical — services rendered**: the rental exclusion is lost when the
-  church provides "substantial services" with the space (catering, event staffing, AV operation,
-  security, cleaning done as part of the rental package rather than a routine maintenance
-  overhead). Bare rental with tenant self-service is the safe posture; "wedding package with
-  coordinator, sound tech, and reception service" is not.
-- **Notice 2018-99 and the parking-lot mess**: the TCJA-era employee-parking UBIT rules created
-  a compliance panic for congregations that rent parking; the 2019 legislative repeal and
-  subsequent guidance simplified but did not eliminate the analysis. Event parking and permit
-  parking are still analyzed as real-property rental (usually excluded) unless services are
-  bundled.
+- **Rental UBIT (§512(b)(3), §514, services)**: bare real-property rental is generally excluded
+  from UBIT; the exclusion is lost pro-rata on debt-financed property (§514, the most-missed trap
+  in faith facilities) and lost when "substantial services" are bundled with the space. The tax
+  analysis lives in `nonprofit-faith-990-exemption`; here, design rentals to stay bare and flag
+  any debt or bundled services.
 - **Fulton v. City of Philadelphia, 593 U.S. 522 (2021)**: where the state acts as a
   contractor, a system of individualized exemptions triggers strict scrutiny of religious
   burdens. Read Fulton for the state-actor-pressure line (municipal facility-use conditions,
@@ -127,9 +102,26 @@ Every in-scope request resolves into one of these artifacts:
   plan translated into board-actionable language and reserve-funding targets.
 - **Building sale / closure memo** — the denominational-approval, deed-review, use-restriction,
   and reuse-buyer analysis for a congregation preparing to close or consolidate.
-- **Physical-sanctuary hosting policy** — the board-adopted policy governing whether and how the
+- **Sanctuary-hosting policy** — the board-adopted policy governing whether and how the
   congregation will provide physical shelter to vulnerable individuals (typically undocumented
   families facing deportation), and the operational protocol if it does.
+
+Facility use / rental agreement skeleton (adapt to the adopted policy and counsel's form):
+
+```
+[Congregation] Facility Use Agreement — under Facility Use Policy adopted [date]
+1. Parties; user category (member / faith community / nonprofit / civic / commercial)
+2. Space(s), dates, times, setup and restore-to-condition terms
+3. Permitted use description; mission-alignment and denial-review clause (per policy)
+4. Fee tier; deposit; cancellation schedule; force majeure
+5. Insurance: COI with congregation named as additional insured; limits ___
+   (per insurer); liquor liability if alcohol
+6. Rules: alcohol, kitchen/food handling, AV operation, keys/access, cleaning
+7. Minors present? confirm user's screening and supervision meet safe-sanctuary terms
+8. Services included: none (bare rental) / list any add-ons priced separately
+9. Indemnification, hold harmless, choice of law, reservation of rights
+10. Signatures; congregation contact; emergency contacts
+```
 
 ## Producing a Facility Use Policy — Numbered Checklist
 
@@ -240,8 +232,9 @@ For RLUIPA statutory strategy and case law, load `nonprofit-faith-religious-libe
 
 ## Shared Use, Rental, and UBIT
 
-Shared use is the single most common facilities question a congregation will bring. Work the
-UBIT analysis under §512(b)(3), §514, and §513 for every rental posture:
+Shared use is the single most common facilities question a congregation will bring. For each
+rental posture, note the operational terms below and flag the UBIT questions (debt financing,
+bundled services) for the tax analysis in `nonprofit-faith-990-exemption`:
 
 - **Ecumenical or interfaith co-use** — another faith community rents worship time (Jewish
   congregation Saturday, Christian congregation Sunday; two Christian congregations sharing).
@@ -260,9 +253,10 @@ UBIT analysis under §512(b)(3), §514, and §513 for every rental posture:
   to the §514 debt-financed analysis. Also check the property-tax pro-rata carve-out for the
   antenna footprint and require the carrier to indemnify for structural, RF-exposure, and
   access risks.
-- **Parking-lot rental**: post Notice 2018-99 and 2019 TCJA repeal, permit and event parking
-  are analyzed as real-property rental (usually excluded). Attended parking with congregation
-  staff bundled in tips into services-plus-space.
+- **Parking-lot rental**: permit and event parking are generally analyzed as real-property rental
+  (usually excluded); attended parking with congregation staff bundled in tips into
+  services-plus-space. Confirm current treatment with `nonprofit-faith-990-exemption` and the
+  current Form 990-T instructions.
 
 When drafting the rental agreement, include: use description, times, fee, insurance (COI +
 additional insured + minimum limits), damage deposit, kitchen / alcohol / tech rules,
@@ -277,7 +271,8 @@ House-of-worship insurance is a distinct market. The generic nonprofit commercia
 underprice or misrate the risks. Work with a broker who specializes in the sector and consider
 a church-mutual carrier — **Church Mutual, Brotherhood Mutual, GuideOne, Philadelphia
 Insurance, and Chubb Nonprofit** all have significant faith-sector books, with different
-appetites for denominational affiliation, size, and risk. Cover these lines and review annually:
+appetites for denominational affiliation, size, and risk (carrier appetites and market presence
+change; confirm with the broker at each renewal). Cover these lines and review annually:
 
 - **Sexual-misconduct / sexual-abuse liability**: usually a separate line or endorsement, not
   automatic in general liability. Almost always subject to sub-limits (often $1M-$5M),
@@ -418,7 +413,7 @@ actual documents:
    statutes, and the local corporation's dissolution provisions. A closing congregation may
    not simply hand the cash to a favored cause; distribution is typically constrained.
 
-## Physical Sanctuary of Vulnerable Individuals
+## Sanctuary Hosting of Vulnerable Individuals
 
 The sanctuary movement — a congregation offering physical shelter to a person facing
 deportation, typically an undocumented family — is a distinct decision from the immigration-
@@ -441,6 +436,18 @@ call:
 - **Governance**: the governing body adopts the sanctuary policy in writing, with a defined
   exit posture, a defined resource limit, and a defined chain of decision for encounters with
   federal agents.
+
+## Verify Before Acting
+
+- [ ] The facility-use policy and agreement were checked against the insurer's current COI,
+      additional-insured and safe-sanctuary requirements.
+- [ ] Mission-alignment, wedding-eligibility and denial clauses were reviewed by counsel against
+      the state and municipal public-accommodation posture.
+- [ ] Every rental with acquisition debt or bundled services was flagged for the UBIT analysis.
+- [ ] Each parcel's property-tax exemption status, renewal date and mixed-use worksheet are current.
+- [ ] Sale or closure advice rests on the deed, state statute, articles/bylaws and any trust
+      clause, with denominational counsel engaged.
+- [ ] The governing body adopted the policy in writing and the agreement cites it by date.
 
 ## Common Failure Modes
 
@@ -477,24 +484,13 @@ call:
   or operational protocol. Fix by adopting a sanctuary policy in advance if hosting is a live
   possibility, or declining and routing the family to a partner set up for it.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the executive / pastor / rabbi / imam / business administrator**: your defensive
-  priorities in order are (1) property-tax exemption filed and current for every parcel; (2)
-  written Facility Use Policy with COI + additional-insured on every outside user; (3)
-  insurance program reviewed with a house-of-worship broker within the last 12 months, sexual-
-  misconduct endorsement confirmed against actual safe-sanctuary practice; (4) FCA commissioned
-  within the last 5 years and a building reserve funded separately; (5) any wedding, funeral,
-  sanctuary hosting, or building-sale decisions made against written policy adopted by the
-  governing body, not case-by-case by clergy under pressure. Wedding-rental decisions that
-  touch the congregation's teachings on marriage and any sale under a denominational trust
-  clause go to counsel before commitment, not after.
-- **As an advisor** (denominational staff, board consultant, attorney, broker, or facilities
-  consultant): name the polity and the applicable denominational property trust clause before
-  touching a sale question; name the state's property-tax-exemption statute before touching an
-  exemption challenge; name the state's public-accommodation posture before advising on
-  wedding-rental eligibility. Push the client toward the artifacts (Facility Use Policy, FCA,
-  insurance schedule, sanctuary policy) rather than resolving each incident on its facts.
-  Coordinate with counsel on the four questions that most reliably become live cases: RLUIPA
-  zoning, denominational property-trust litigation, sanctuary hosting, and wedding-rental
-  discrimination.
+- Defensive priorities, in order: exemption filed and current for every parcel; a written
+  Facility Use Policy with COI and additional-insured on every outside user; insurance reviewed
+  with a house-of-worship broker in the last 12 months; an FCA within 5 years and a separately
+  funded building reserve; life-cycle, hosting and sale decisions made against adopted policy.
+- Name the polity and trust clause before a sale question, the state exemption statute before an
+  exemption challenge, and the state public-accommodation posture before wedding-rental advice.
+- Coordinate with counsel on the four questions that most often become live cases: RLUIPA zoning,
+  denominational property-trust litigation, sanctuary hosting and wedding-rental discrimination.

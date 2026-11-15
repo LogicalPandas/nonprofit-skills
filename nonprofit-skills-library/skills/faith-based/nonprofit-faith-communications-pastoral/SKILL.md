@@ -1,6 +1,6 @@
 ---
 name: nonprofit-faith-communications-pastoral
-description: "Pastoral-voice communications for US faith-based orgs: pastoral letters, funeral/memorial notices, crisis and tragedy responses, clergy misconduct letters, denominational statements, farewell/arrival letters, and Christian/Jewish/Muslim liturgical-calendar messages. Use when clergy or a faith-based ED says 'draft a pastoral letter,' 'should we say anything,' 'note about a death,' 'Ramadan greeting,' or 'letter about the investigation.' Not secular CEO all-staff (nonprofit-executive-communications), brand copy (nonprofit-brand-messaging), press releases (nonprofit-media-relations), giving letters (nonprofit-faith-stewardship-giving), or statement-adoption process (nonprofit-faith-church-governance)."
+description: "Drafts pastoral-voice messages for US faith communities and faith-based orgs: pastoral letters, death and memorial notices, crisis and tragedy responses, clergy misconduct letters to the congregation, denominational letters, farewell and arrival letters, and Christian, Jewish and Muslim holy-day messages. Use when clergy or a faith-based ED says 'draft a pastoral letter', 'should we say anything', 'note about a death' or 'Ramadan greeting to staff'. Not for secular ED messages (use nonprofit-executive-communications), brand copy (use nonprofit-brand-messaging), press releases (use nonprofit-media-relations), giving letters (use nonprofit-faith-stewardship-giving) or adopting a statement (use nonprofit-faith-church-governance)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,34 +12,20 @@ metadata:
 
 # Faith-Based Nonprofit Pastoral Communications
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the user is drafting, or helping clergy draft, a message that is expected to
-land in a **faith voice** rather than a brand or executive voice. The audience is a congregation,
-a parish, a synagogue or mosque community, a denominational membership, a faith-based
-organization's staff and constituents who share (or partly share) the tradition, or the family and
-friends of someone the community is mourning or celebrating. Trigger phrases include: "draft a
-pastoral letter," "note to the congregation about [Name]'s death," "how do we announce the
-funeral," "should we say anything about the shooting / election / verdict," "Ramadan greeting to
-staff," "Rosh Hashanah message to donors," "Holy Week email," "letter from the bishop," "farewell
-letter from Pastor X," "welcome letter for the new rabbi," "the imam wants to write to families
-this week," "the ED needs a word after last night's tragedy," "letter to the congregation about
-the investigation," or "prayer chain wording for a member in hospice."
+This skill is the pastoral (shepherd) voice. Route the rest:
 
-Boundary: this skill is the **pastoral voice**. Secular executive communications from the ED seat
-— all-staff memos, funder updates, town-hall talking points, layoff announcements, board-facing
-statements — are `nonprofit-executive-communications`, even for a faith-based org, whenever the
-message is in the org's executive register rather than a shepherd register. Brand voice, taglines,
-and outward-facing marketing copy are `nonprofit-brand-messaging`. Press releases and reporter
-relationships during a clergy-misconduct crisis are `nonprofit-media-relations`; this skill
-handles the pastoral letter to the congregation about the same event, coordinated with but distinct
-from the press piece. Giving letters, tithe appeals, pledge campaigns, and annual contribution
-statements are `nonprofit-faith-stewardship-giving`. The governance-side work of drafting,
-debating, voting, and adopting a denominational statement — committees, floor process, canonical
-approvals — is `nonprofit-faith-church-governance`; this skill takes the adopted decision and
-writes the pastoral letter that carries it. Mandatory-reporter rules and clergy-penitent privilege
-mechanics live in `nonprofit-faith-employment-ministerial-exception`; touch them here only to
-route the user out to that skill.
+- Executive-register messages from the ED seat, even at a faith-based org (all-staff, funder
+  updates, town halls, layoffs, board-facing statements) → `nonprofit-executive-communications`.
+- Brand voice, taglines, marketing copy → `nonprofit-brand-messaging`.
+- Press releases and reporters during a misconduct crisis → `nonprofit-media-relations`; this skill
+  writes the coordinated but separate letter to the congregation.
+- Giving letters, pledge campaigns, contribution statements → `nonprofit-faith-stewardship-giving`.
+- Drafting, debating and adopting a denominational statement → `nonprofit-faith-church-governance`;
+  this skill writes the letter that carries the adopted decision.
+- Mandatory-reporter rules and clergy-penitent privilege → `nonprofit-faith-employment-ministerial-exception`
+  (touch them here only to route out).
 
 ## Core Frameworks
 
@@ -61,13 +47,9 @@ deaf even when every sentence is technically correct.
   - **Media voice**: third-person, quotable, on-the-record, drafted with counsel, aimed at
     reporters rather than the community. A pastoral letter is not a press release; when both are
     needed for the same event, draft them separately and coordinate the facts.
-- **The "should we say anything" pastoral decision test.** Five questions in order: (1) Does the
-  community expect a word from clergy on this? (2) Does our tradition typically speak on matters
-  of this kind? (3) Is silence itself a message in this moment — silence about a local shooting
-  reads as absence, silence about a distant partisan controversy may read as restraint? (4) Who
-  is uniquely served by hearing from us that no other voice serves? (5) What will we regret
-  saying, or not saying, in six months? If four of five point toward speaking, speak. If two or
-  fewer, hold.
+- **The "should we say anything" test.** Five questions, run in the checklist below. Silence
+  about a local shooting reads as absence; silence about a distant partisan controversy may read
+  as restraint.
 - **Prophetic speech vs. partisan endorsement.** Faith traditions have long traditions of
   naming public wrongs (poverty, violence, injustice) from within the tradition's own moral
   vocabulary — this is prophetic speech and is squarely inside 501(c)(3) territory. Endorsing or
@@ -76,33 +58,17 @@ deaf even when every sentence is technically correct.
   prohibition on political-campaign intervention) and can jeopardize exempt status. When drafting
   named-issue statements near an election, route the user to a lawyer or to
   `nonprofit-faith-church-governance` for the political-activity discipline before publishing.
-- **Christian liturgical calendar (Western)**: Advent (four Sundays before Christmas) → Christmas
-  → Epiphany (Jan 6) → Ordinary Time → Ash Wednesday → Lent (40 days) → Holy Week (Palm Sunday,
-  Maundy Thursday, Good Friday, Holy Saturday) → Easter → Eastertide (50 days) → Pentecost →
-  Ordinary Time. Eastern Orthodox calendars shift Pascha and use the Julian calendar in many
-  jurisdictions; do not conflate dates.
-- **Jewish calendar (lunisolar; dates shift each secular year)**: weekly Shabbat (Friday sunset to
-  Saturday sunset); High Holy Days (Rosh Hashanah, Ten Days of Awe, Yom Kippur) in the fall;
-  Sukkot; Shemini Atzeret / Simchat Torah; Hanukkah (winter); Tu B'Shevat; Purim; Passover (Pesach,
-  spring, eight days in Diaspora); Counting of the Omer; Shavuot; Tisha B'Av (summer fast). Reform,
-  Conservative, Orthodox, and Reconstructionist communities observe with different expectations
-  around work, driving, and electronic communication — a Yom Kippur email that lands Friday
-  evening will not be read until Sunday in many communities.
-- **Islamic calendar (Hijri, lunar; dates shift ~11 days earlier each Gregorian year)**: Muharram
-  (including Ashura); Rabi' al-Awwal (Mawlid, observed in some communities and not others);
-  Ramadan (month of fasting) → Eid al-Fitr; Dhu al-Hijjah (Hajj) → Eid al-Adha. Ramadan and both
-  Eids are the two moments a US faith-based org that serves or employs Muslims most needs a
-  pastoral or greeting word; check moonsighting sources (or the community's convention) before
-  fixing a date.
+- **Calendars shift; verify every date.** Eastern Orthodox Pascha often follows the Julian
+  calendar; Jewish (lunisolar) and Islamic (lunar, about 11 days earlier each Gregorian year) dates
+  move every secular year. Observance of Shabbat and holy days varies across Reform, Conservative,
+  Orthodox and Reconstructionist communities — a Yom Kippur email that lands Friday evening will
+  not be read until Sunday in many. Check moonsighting sources (or the community's convention)
+  before fixing Ramadan or Eid dates. Seasonal cadence is under "Liturgical / Annual Calendar Cadence".
 - **Denominational vs. congregational locus of authority.** A message from the local clergy speaks
   for the congregation; a message from a bishop, presbytery, conference minister, denominational
   executive, or head of communion speaks for the wider body. On some matters (a local death) only
   the local voice can speak; on others (a policy of the tradition) only the denominational voice
   can bind; on many the two must be aligned in advance to avoid mixed signals.
-- **Clergy-penitent privilege and mandatory reporting.** Privilege is state-by-state and is
-  narrowed or abolished for child-abuse disclosures in many states; do not draft any pastoral
-  message that references confidential disclosures without routing the user to
-  `nonprofit-faith-employment-ministerial-exception` for the reporting analysis first.
 
 ## Standard Deliverables
 
@@ -161,8 +127,8 @@ require a word.
 5. **Set length.** Two to three short paragraphs is right for most public-moment pastoral letters;
    five paragraphs is almost always too many. If the clergy wants more, ask what a member reading
    this on a phone at 6:45 a.m. needs — and cut the rest.
-6. **Draft, then let the clergy own it.** Draft in the clergy's honest voice (see "Voice fidelity
-   when a staffer drafts" below), not in HR or comms boilerplate. The clergy is the author of
+6. **Draft, then let the clergy own it.** Draft in the clergy's honest voice (see "Voice Fidelity
+   When Drafting For Clergy" below), not in HR or comms boilerplate. The clergy is the author of
    record and must be able to read the message aloud without wincing.
 
 ## Drafting a Congregational Death Notice — Numbered Checklist
@@ -219,16 +185,15 @@ be looking for a word.
    makes it pastoral). Only then move to any meaning-making the tradition offers, and only last to
    any action (prayer service, blood drive, donation link). Reversing this order — action first,
    lament as an afterthought — reads as institutional.
-4. **Do not proof-text.** If you cite scripture or a sacred text, cite it (chapter and verse or
-   the equivalent) so the reader can look it up, and choose a passage that actually speaks to this
-   moment, not a favored verse repurposed. A misapplied text lands worse than no text.
+4. **Do not proof-text.** Follow the citation rule under "Language and Register Discipline"; a
+   misapplied text lands worse than no text.
 5. **Name the tradition's practice without moralizing at outsiders.** "As we prepare our hearts
    for Yom Kippur this week, this news lands especially heavily" is invitation; "you should be
    preparing for Yom Kippur" is scolding. The message is legible to members and non-members alike.
 6. **Prophetic without partisan.** Name the moral wrong (gun violence, hate, dehumanization)
    without naming a party, candidate, or election. If the moral wrong cannot be named without
    partisan reference, route through counsel and `nonprofit-faith-church-governance` first.
-7. **Two to three short paragraphs.** Publish under the clergy's name. Consider whether a short
+7. **Keep to the length rule** (checklist step 5). Publish under the clergy's name. Consider whether a short
    in-person gathering (vigil, prayer service, open sanctuary hour) is the right pastoral response
    and name it in the letter.
 
@@ -326,9 +291,6 @@ generic calendar. Describe the practice, do not endorse it, and never assume eve
   reader can look it up (Isaiah 40:1; Sura al-Baqara 2:286; Pirkei Avot 2:16). Do not string
   three unrelated citations together; one, well-chosen, does more work than three. Do not
   proof-text — do not attach a verse to a pastoral point it does not actually make.
-- **Naming the tradition's practice.** "As we approach Yom Kippur…" (invitation) rather than
-  "You should be preparing for Yom Kippur…" (scolding). Assume some readers observe and some do
-  not; write a sentence that lands for both.
 - **Multi-faith staff and beneficiary contexts.** A Christian ED writing to an interfaith staff
   names her own tradition without imposing it ("This is Holy Week for those of us in the
   Christian tradition; I know some of you are observing Passover this week, and I wish you a
@@ -339,15 +301,8 @@ generic calendar. Describe the practice, do not endorse it, and never assume eve
   communications where lament is not only permitted but expected. Name the pain in one honest
   sentence and stop — do not accessorize with adjectives ("this heartbreaking, devastating,
   crushing news"). One true sentence lands; three decorated ones read as performance.
-- **Voice fidelity when a staffer drafts for clergy.** Interview the clergy for three or four
-  actual phrases they would say aloud about the moment, and build the draft around those
-  phrases. Do not paste in comms boilerplate ("Our thoughts and prayers are with…") — clergy
-  do not talk that way, and members can hear the difference instantly. If the clergy has not
-  finished processing the topic themselves (which is common on hard moments), draft short and
-  honest, not long and polished.
-- **Length and finish.** Most pastoral communications are shorter than their authors want. Two
-  to three short paragraphs, signed by clergy, under the clergy's name — does more work than a
-  full page. If the draft is over 300 words for a public-moment pastoral letter, ask what can go.
+- **Length.** If a public-moment pastoral letter runs over 300 words, ask what can go (see
+  checklist step 5).
 
 ## Channels and Pacing
 
@@ -365,9 +320,7 @@ generic calendar. Describe the practice, do not endorse it, and never assume eve
   the website statement is fine, but writing pastoral content directly into a platform post
   strips the register. For a death, default to no social post at all unless the family requests
   it.
-- **Silence is a channel too.** Sending nothing is a legitimate pastoral choice when the answer
-  to the five-question test is "not our word to speak." Silence should be a decision, not a
-  default.
+- **Silence is a channel too** — a decision, not a default.
 
 ## Confidentiality and Privilege
 
@@ -377,7 +330,7 @@ and it takes years to rebuild trust.
 - **Clergy-penitent privilege** protects confidential communications made to clergy in the
   clergy's spiritual capacity — but the scope varies by state, and many states have narrowed or
   abolished privilege for disclosures of child abuse or neglect (mandatory-reporter statutes).
-  Route any drafting that references or alludes to a confidential disclosure to
+  Do not draft any message that references a confidential disclosure until this is resolved. Route any drafting that references or alludes to a confidential disclosure to
   `nonprofit-faith-employment-ministerial-exception` first for the reporting analysis.
 - **Prayer-chain confidentiality**: publish only what the individual or family authorized for the
   chain, and remind the chain in writing at every distribution that the request is not to be
@@ -398,7 +351,8 @@ the drafter's seat:
 1. **Interview the clergy for three or four phrases they would say aloud** about the moment,
    before drafting a single sentence. Ask what they are actually thinking, not what they think
    they should say.
-2. **Build the draft around those phrases.** Do not paste in comms boilerplate, do not import
+2. **Build the draft around those phrases.** Do not paste in comms boilerplate ("Our thoughts and
+   prayers are with…"), do not import
    language the clergy would never use in the pulpit, do not smooth away the clergy's honest
    register.
 3. **Match the clergy's cadence.** Some clergy write long sentences with subordinate clauses;
@@ -409,7 +363,41 @@ the drafter's seat:
    comms-scrubbed reads as institutional even when the words are right.
 5. **The clergy is the author of record.** Send the draft to the clergy with an explicit invite
    to change any sentence, and treat every edit they make as improving voice fidelity, not
-   degrading polish. Publish under the clergy's own name.
+   degrading polish. Publish under the clergy's own name. If the clergy has not finished
+   processing a hard moment, draft short and honest — "I am still holding this" is a legitimate
+   pastoral sentence.
+
+Crisis-letter skeleton (fill only with confirmed facts and the clergy's own phrases):
+
+```
+Subject: [Plain, specific: "After last night in [place]"]
+
+Dear [community's own form of address],
+
+[Lament: one honest sentence naming what happened, using only facts confirmed by
+authorities. "We do not yet know ___" if details are unconfirmed.]
+
+[Meaning: one or two sentences from the tradition, in the clergy's words; at most one
+cited text with its locator.]
+
+[Action: the gathering or help being offered — what, when, where, who to contact
+by name.]
+
+[Pastoral closing sentence.]
+
+[Clergy name], [role]
+```
+
+## Verify Before Acting
+
+- [ ] Every fact stated (names, numbers, cause, times) is publicly confirmed or authorized.
+- [ ] Family wording and permissions for any death, illness or milestone are recorded in
+      writing, and the draft discloses nothing beyond them.
+- [ ] Public-moment letters are within the length rule (about 300 words or less).
+- [ ] No candidate, party or election is named; near an election, counsel has seen named-issue text.
+- [ ] Any reference to a confidential disclosure has been cleared through the reporting analysis.
+- [ ] Holy-day dates and send times were checked for the specific community.
+- [ ] The clergy has reviewed and adopted the draft, and it is signed with their name.
 
 ## Common Failure Modes
 
@@ -454,27 +442,11 @@ the drafter's seat:
   through `nonprofit-faith-church-governance` when the moment is one the denomination will
   address.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the clergy person or faith-based ED**: your name is on the letter, and your voice is the
-  point. Draft short, in your own words, and let staff polish rather than compose. Run the
-  five-question test honestly before speaking on public moments — the pastoral voice loses power
-  when it speaks on everything, and gains it when it speaks rarely and truly. For a death, get
-  family consent in writing before any public word; for a crisis, lament before meaning-making
-  before action; for a misconduct disclosure, sign it yourself and center those harmed. When you
-  don't yet know what you think about a hard moment, the pastoral letter can be shorter and more
-  honest for it — "I am still holding this" is a legitimate pastoral sentence. Route
-  named-issue drafts near elections and any disclosure implicating clergy-penitent privilege out
-  to counsel and to the relevant sibling skill before publishing.
-- **As a staffer, chief of staff, denominational communications director, or outside advisor
-  drafting for clergy**: your job is voice fidelity, not authorship. Interview the clergy for the
-  three or four phrases they would actually say, build the draft around those phrases, and
-  publish under their name. Resist the temptation to smooth every hard edge — the clergy's
-  honest register is what the community will trust. Coordinate with, but do not defer to,
-  marketing, legal, and media staff: they own their artifacts (brand copy through
-  `nonprofit-brand-messaging`, executive messages through `nonprofit-executive-communications`,
-  press pieces through `nonprofit-media-relations`, giving letters through
-  `nonprofit-faith-stewardship-giving`), and you own the pastoral letter that must land in a
-  different register than any of theirs. When a clergy misconduct crisis is unfolding, insist
-  that the pastoral letter be drafted alongside — not by — the press response, so the
-  congregation is not addressed in the register of a legal statement.
+- Your job is voice fidelity, not authorship: draft short, publish under the clergy's name, and
+  resist smoothing every hard edge.
+- Coordinate with, but do not defer to, marketing, legal and media staff; they own their
+  artifacts, and you own the letter that must land in a different register.
+- In a misconduct crisis, insist the pastoral letter be drafted alongside — not by — the press
+  response, so the congregation is not addressed in the register of a legal statement.

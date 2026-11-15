@@ -1,6 +1,6 @@
 ---
 name: nonprofit-faith-church-governance
-description: "US worship-community governance and polity: congregational, presbyterian, episcopal, and elder-led Christian polity plus Jewish, Muslim, Hindu, and Buddhist analogs; church/synagogue/mosque bylaws, member vs. non-member models, congregational meetings and quorum, elder/vestry/shura/trustee structures, denominational reporting, pastor call and separation, member discipline, disaffiliation and property disputes, ecclesiastical abstention. Use when a pastor, rabbi, imam, administrator, elder chair, or vestry warden says 'redo our bylaws,' 'call a pastor,' 'leaving the denomination,' or 'quorum failed.' Not for secular boards (nonprofit-board-governance, nonprofit-bylaws-policy), clergy comp or ministerial firings (nonprofit-faith-employment-ministerial-exception, nonprofit-faith-finance-clergy-comp), church tax exemption (nonprofit-faith-990-exemption), building use (nonprofit-faith-facilities-sanctuary), or clergy's own board artifacts (nonprofit-ceo-board-partnership)."
+description: "Guides governance and polity for US worship communities: diagnosing congregational, presbyterian, episcopal or elder-led polity, bylaws, member vs. non-member form, congregational meetings and quorum, clergy call and separation from the congregation's side, member discipline, disaffiliation and ecclesiastical abstention. Use when asked to 'redo our church bylaws', 'call a pastor', 'we're voting to leave the denomination' or 'quorum failed'. Not for secular boards (use nonprofit-board-governance or nonprofit-bylaws-policy), clergy employment (use nonprofit-faith-employment-ministerial-exception), church tax status (use nonprofit-faith-990-exemption) or clergy's own board reports (use nonprofit-ceo-board-partnership)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,34 +12,21 @@ metadata:
 
 # Church, Synagogue, Mosque, and Temple Governance (Worship-Community Polity)
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the user is governing, staffing, or advising a **worship community** — a
-local church, synagogue, mosque, temple, or similar congregation — and is working on the
-governance layer that is specific to religious bodies: writing or rewriting the church/synagogue/
-mosque bylaws or constitution, running a congregational or annual meeting, calling or separating
-from a pastor/rabbi/imam from the congregation's side, admitting or removing a member,
-navigating a denominational reporting requirement or disaffiliation vote, or fielding a property,
-authority, or civil-court question that turns on the difference between a corporation and a
-religious body. Trigger phrases include: "redo our church bylaws," "member vs. non-member
-corporation," "our elders and board don't agree who decides," "we can't get quorum for the annual
-meeting," "the vestry says one thing, the rector says another," "we're voting to leave the
-denomination," "who owns the building if we leave," "we need to remove a member from the roll,"
-"the presbytery/bishop/diocese sent us a letter," "our shura is deadlocked," or "a member is
-threatening to sue over the vote."
+This skill is the congregation's own governance and polity. Route adjacent work:
 
-Boundary: this skill is the **congregation's own governance and polity**. Sibling faith-family
-skills own adjacent territory. Clergy employment terms, ministerial-exception firings, and
-safe-sanctuary policies are `nonprofit-faith-employment-ministerial-exception`; clergy
-compensation, housing allowance, and dual tax status are `nonprofit-faith-finance-clergy-comp`;
-automatic church exemption and the 990-filing exemption are `nonprofit-faith-990-exemption`;
-sanctuary and worship-space use policies (including the governance decision to host or refuse a
-use) route into `nonprofit-faith-facilities-sanctuary`. The senior clergy person's own artifacts
-toward the board — board reports, executive session, evaluation from the executive seat — are
-`nonprofit-ceo-board-partnership`. Purely secular 501(c)(3) board mechanics (recruitment,
-D&O, generic bylaws) are `nonprofit-board-governance` and `nonprofit-bylaws-policy`; use those
-when the religious dimension is incidental (e.g., a faith-based service nonprofit that is not a
-worship community).
+- Clergy employment terms, ministerial-exception firings, safe-sanctuary policies →
+  `nonprofit-faith-employment-ministerial-exception`.
+- Clergy compensation, housing allowance, dual tax status → `nonprofit-faith-finance-clergy-comp`.
+- Automatic church exemption and the 990-filing exemption → `nonprofit-faith-990-exemption`.
+- Worship-space use policies, including the decision to host or refuse a use →
+  `nonprofit-faith-facilities-sanctuary`.
+- Lay-leader recruitment, formation and terms in practice → `nonprofit-faith-volunteer-lay-leadership`.
+- The senior clergy person's own artifacts toward the board (board reports, executive session,
+  evaluation from the executive seat) → `nonprofit-ceo-board-partnership`.
+- Secular 501(c)(3) board mechanics and generic bylaws, or a faith-based service nonprofit that
+  is not a worship community → `nonprofit-board-governance` and `nonprofit-bylaws-policy`.
 
 ## Core Frameworks
 
@@ -110,7 +97,7 @@ Every request in scope resolves into one of these artifacts:
 - **Church/synagogue/mosque bylaws or constitution** — full rewrite or targeted amendment,
   aligned to the polity model and to the state nonprofit corporation act.
 - **Congregational-meeting packet** — call of meeting, agenda, quorum determination, motions
-  language, ballot design, member-roll certification, and minutes template.
+  language, ballot design, member-roll certification, and minutes (skeleton below).
 - **Pastor/rabbi/imam call or separation package** — from the congregation's side: search
   committee charter, call letter (not the compensation exhibit — that is a sibling skill),
   covenant of ministry, separation agreement scaffolding, and the required denominational
@@ -122,6 +109,22 @@ Every request in scope resolves into one of these artifacts:
   property analyses required to leave a denomination (or to withstand a schism internally).
 - **Governance-authority memo** — a clean answer to "who decides?" between clergy, elders,
   board/vestry/shura, and members, cross-walking bylaws, denominational standards, and state law.
+
+Congregational-meeting packet skeleton:
+
+```
+[Congregation legal name] — [Annual / Special] Congregational Meeting
+1. Call of meeting: called by ___ under Bylaws Art. __ ; state act § ___
+2. Notice: date sent ___ ; method(s) ___ ; period required __ days / given __ days
+   Business stated verbatim: [each motion to be considered]
+3. Record date and certified roll: record date ___ ; members on roll ___ ; certified by ___
+4. Quorum: required ___ (Bylaws Art. __) ; present ___ ; proxies/absentee allowed? Y/N
+5. Parliamentary authority: ___ ; chair ___ ; secretary ___
+6. Motions: exact text ; moved/seconded ; ballot type ; threshold required ___
+7. Results: yes ___ / no ___ / abstain ___ ; threshold met? Y/N
+8. Minutes: signed by secretary [and chair] ; filed ___ ; copy to [denominational body] if required
+9. Ballot retention until ___ (bylaws challenge window + state limitations period)
+```
 
 ## Diagnosing the Polity Model Before Drafting — Numbered Checklist
 
@@ -345,33 +348,19 @@ membership.
 
 The local body owes different things to the wider church depending on polity:
 
-- **Congregational (SBC, ABC, CBF, UCC, most independents)**: minimal — annual
-  statistical/church-profile report, voluntary financial contributions (Cooperative Program,
-  Our Church's Wider Mission), and (in some) messenger credentials for annual meetings. No
-  denominational jurisdiction over the local church's governance.
-- **Presbyterian (PCUSA, PCA, EPC, ECO)**: annual statistical report to the General Assembly;
-  annual review of session minutes by the presbytery; per-capita apportionment; presbytery
-  approval for major real-estate transactions and for calling or dismissing clergy.
-- **Episcopal / Anglican**: annual parochial report to the diocese and the national church;
-  diocesan assessment; diocesan approval for property alienation; canonical residence of
-  clergy in the diocese.
-- **UMC / AME / AMEZ / CME**: annual **charge conference** presided over by the district
-  superintendent, adopting the pastor's compensation, electing lay leaders, and reviewing
-  ministry; connectional apportionments; trustees hold property subject to the trust clause;
-  itinerant pastors appointed annually.
-- **Catholic**: parish is not a separate civil entity in most US dioceses (the diocese is a
-  corporation sole or religious corporation that owns parish property); parish council and
-  finance council are consultative to the pastor, who answers to the bishop.
-- **ELCA / LCMS**: constitutional relationship with the synod; synod bishop or president has
-  defined roles in clergy call and discipline; assessments to synod and churchwide.
-- **Reform (URJ) / Conservative (USCJ) / Orthodox (OU/Young Israel)**: movement dues; movement
-  standards (e.g., USCJ Standards for Congregational Practice); movement placement services
-  for rabbi search; but the congregation is legally independent and can disaffiliate at will.
-- **Islamic (ISNA, ICNA, MAS, tariqas)**: affiliation is honorary; no jurisdictional authority
-  in most cases.
+| Polity / body | What the local body owes |
+|---|---|
+| Congregational (SBC, ABC, CBF, UCC, most independents) | Minimal: annual statistical/church-profile report, voluntary contributions (Cooperative Program, Our Church's Wider Mission), messenger credentials in some. No jurisdiction over local governance. |
+| Presbyterian (PCUSA, PCA, EPC, ECO) | Annual statistical report to the General Assembly; presbytery review of session minutes; per-capita apportionment; presbytery approval for major real-estate transactions and for calling or dismissing clergy. |
+| Episcopal / Anglican | Annual parochial report to diocese and national church; diocesan assessment; diocesan approval for property alienation; canonical residence of clergy. |
+| UMC / AME / AMEZ / CME | Annual charge conference presided over by the district superintendent (adopts pastor's compensation, elects lay leaders, reviews ministry); connectional apportionments; trustees hold property under the trust clause; itinerant pastors appointed annually. |
+| Catholic | Parish usually not a separate civil entity (the diocese is a corporation sole or religious corporation owning parish property); parish and finance councils are consultative to the pastor, who answers to the bishop. |
+| ELCA / LCMS | Constitutional relationship with the synod; synod bishop or president has defined roles in call and discipline; assessments to synod and churchwide. |
+| Reform (URJ) / Conservative (USCJ) / Orthodox (OU/Young Israel) | Movement dues and standards (e.g., USCJ Standards for Congregational Practice); placement services for rabbi search; congregation legally independent and can disaffiliate at will. |
+| Islamic (ISNA, ICNA, MAS, tariqas) | Affiliation is honorary; no jurisdictional authority in most cases. |
 
 Every governance memo about the local body's obligations to the wider body should cite the
-specific provision of the denominational book, not paraphrase.
+specific provision of the denominational book (current edition), not paraphrase.
 
 ## Disaffiliation, Realignment, and Splits — Numbered Checklist
 
@@ -380,9 +369,11 @@ This is the highest-stakes governance workflow in the family. Handle it with a w
 1. **Determine whether disaffiliation is even legally available.** Read the denominational book:
    the UMC ¶2553 disaffiliation window closed December 31, 2023; ongoing disaffiliation now
    requires either ¶2548.2 (transfer to another Methodist denomination with annual conference
-   approval), ¶2549 (church closure), or civil-court action. PCUSA congregations use the
+   approval), ¶2549 (church closure), or civil-court action (verify against the current Book of
+   Discipline and annual-conference rules, which General Conference can change). PCUSA congregations use the
    presbytery-negotiated dismissal process; PCA has its own transfer procedure. Episcopal
-   parishes cannot unilaterally leave with property under the Dennis Canon. Independent and
+   parishes cannot unilaterally leave with property under the Dennis Canon. Verify the current
+   denominational provision before advising. Independent and
    most Baptist churches can leave any affiliation at will. Frame the memo around what is
    actually available, not what the congregation wishes were available.
 2. **Read the property trust clause.** UMC Discipline ¶2501, PCUSA G-4.0203, Episcopal Dennis
@@ -438,6 +429,20 @@ Give this memo whenever a governance dispute is on the edge of litigation.
   dispute-resolution article that channels disputes through the community's own process; and
   clear separation of the ecclesiastical call from the employment contract.
 
+## Verify Before Acting
+
+- [ ] The polity model is named in writing and matches the bylaws, denominational book,
+      property title and actual practice (or each gap is flagged).
+- [ ] Draft bylaws were checked against the state nonprofit or religious-corporation act and any
+      denominational book adopted by reference; denominational paragraph numbers were confirmed
+      in the current edition.
+- [ ] The authority map assigns every major decision (clergy, budget, real estate, amendments,
+      members, affiliation) to one body; members' reserved powers are explicit.
+- [ ] Quorum, notice, record date and vote thresholds in any meeting packet trace to a bylaws
+      article or statute.
+- [ ] Discipline and separation communications stay inside the membership and state no reasons.
+- [ ] Disaffiliation advice rests on a title opinion and counsel review, not the congregation's wishes.
+
 ## Common Failure Modes
 
 - **Polity drift** — the bylaws describe congregational polity, but the community actually
@@ -472,25 +477,10 @@ Give this memo whenever a governance dispute is on the edge of litigation.
   ultra vires. Fix by aligning the articles, bylaws, and actual governance to name the same
   body as corporate directors.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the practitioner (senior pastor, rabbi, imam, business administrator, board president,
-  elder chair, vestry warden, moderator, denominational staff)**: run the polity-diagnosis
-  checklist before you touch the bylaws, and clean the membership roll before you call the
-  meeting. Most of the "our governance is broken" complaints from inside the community are
-  actually roll-hygiene and notice-discipline problems, not authority-design problems. When you
-  face a disaffiliation or split question, get the title opinion and read the denominational
-  book before you schedule the vote — the vote is downstream of the property answer, not
-  upstream of it. Keep the ecclesiastical call and the employment agreement as two documents.
-  Route clergy compensation, ministerial-exception exposure, church tax exemption, and
-  worship-space use questions to the sibling faith-family skills rather than solving them
-  inside the bylaws.
-- **As an advisor to a worship community (attorney, denominational consultant, interim
-  minister, board coach)**: name the polity model explicitly in your first memo, and cross-walk
-  the community's stated model with its bylaws, its denominational book, its property title,
-  and its actual practice — the four often diverge, and the divergences are where the
-  litigation lives. Frame every disputed authority question by asking first whether it is a
-  question a civil court can decide on neutral principles or one only the community's
-  ecclesiastical process can decide; the answer changes both the advice and the venue. Push
-  the community to fix bylaws in peacetime, not in the middle of a dispute; amendments adopted
-  during a fight are themselves usually the next lawsuit.
+- Most "our governance is broken" complaints are roll-hygiene and notice problems, not
+  authority-design problems; check those first.
+- Cross-walk the stated polity, the bylaws, the denominational book, the property title and actual
+  practice in your first memo; the divergences are where the litigation lives.
+- Push bylaws fixes in peacetime; amendments adopted during a fight are usually the next lawsuit.

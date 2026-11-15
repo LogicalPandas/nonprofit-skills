@@ -1,6 +1,6 @@
 ---
 name: nonprofit-faith-990-exemption
-description: "Special US federal tax status of churches, synagogues, mosques, temples, integrated auxiliaries, and conventions/associations of churches: automatic IRC §501(c)(3) exemption without Form 1023, Form 990 filing exemption under §6033(a)(3)(A), the IRS 14-point church test, integrated-auxiliary internal-support test, denominational group exemption rulings, church UBIT and Form 990-T, and IRC §7611 church-audit procedures. Use when a church administrator, clergy, denominational staffer, or advisor asks about filing a 990 or 1023, integrated-auxiliary status, group rulings, UBIT on parking/cell-tower/bookstore income, or IRS church-audit protections. Does not cover generic 990 filing (use nonprofit-form-990), clergy comp / housing allowance (nonprofit-faith-finance-clergy-comp), federal-grant faith-based compliance (nonprofit-faith-religious-liberty-compliance), or property-tax exemption for the sanctuary (nonprofit-faith-facilities-sanctuary)."
+description: "Works out the special US federal tax status of churches and other houses of worship, their integrated auxiliaries and conventions of churches: automatic exemption without Form 1023, the Form 990 filing exemption, the 14-point church test, group rulings, church UBIT and §7611 audit protections. Use when asked 'do we need to file a 1023 for our new congregation', 'do churches file a 990', 'do we owe UBIT on the cell tower lease' or 'the IRS sent our church a letter'. Not for generic 990 filing (use nonprofit-form-990), clergy pay (use nonprofit-faith-finance-clergy-comp), federal-grant compliance (use nonprofit-faith-religious-liberty-compliance) or property-tax exemption (use nonprofit-faith-facilities-sanctuary)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,44 +12,22 @@ metadata:
 
 # Church, Integrated-Auxiliary, and Convention/Association Federal Tax Status (IRC §§508, 6033, 7611)
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the user is asking about the special federal tax treatment US law gives to
-**churches, their integrated auxiliaries, and conventions or associations of churches** — status
-that does not flow to a generic 501(c)(3). Trigger phrases: "do we need to file Form 1023 for our
-new congregation," "our accountant says churches don't file a 990 — is that right," "does our
-seminary / mission board / publishing house / denominational agency have to file," "we're
-starting a new mosque / temple / synagogue — what do we file with the IRS," "the denomination has
-a group exemption — how does that work for us," "we rent the parking lot / lease a cell tower /
-run a coffee shop — do we owe unrelated business income tax," "the IRS sent a letter about our
-church — what protections do we have," or "our foundation grantor is asking for our 501(c)(3)
-letter and we don't have one."
+This skill owns the federal exemption, the information-return exemption, denominational group
+rulings, church UBIT (including rental and parking income from church property) and IRC §7611
+audit procedure for houses of worship and closely related bodies. Route the rest:
 
-Trigger it too when a **denominational treasurer or advisor** is deciding whether a subordinate
-belongs on the group-exemption roster, when an independent congregation is weighing whether to
-file a 1023 despite being automatically exempt, or when a practitioner is staring at an IRS notice
-and needs to know whether IRC §7611 procedural protections apply.
-
-Boundary: this skill covers only the **federal tax exemption, federal information-return exemption,
-denominational group ruling, church UBIT, and IRC §7611 audit procedure** questions unique to
-houses of worship and their closely related bodies. For everything adjacent, route out:
-
-- Generic Form 990 / 990-EZ / 990-N filing mechanics for a normal 501(c)(3) that must file →
-  `nonprofit-form-990`.
-- Generic state charitable-solicitation registration and unified registration statement work →
-  `nonprofit-charitable-registration`.
-- Generic enterprise risk management for nonprofits (D&O, cyber, employment practices) →
-  `nonprofit-risk-management`.
-- Clergy federal income tax status, IRC §107 housing allowance, SECA / dual tax status, W-2 vs
-  1099 for clergy, love offerings, benevolence-fund controls → `nonprofit-faith-finance-clergy-comp`.
-- A faith-based org that takes federal grants and has to navigate Charitable Choice / Equal
-  Treatment separation of inherently religious activity → `nonprofit-faith-religious-liberty-compliance`
-  and `nonprofit-faith-programs-social-services`.
-- Real-property tax exemption for the sanctuary, shared-use agreements, and rental-income facility
-  interactions → `nonprofit-faith-facilities-sanctuary` (note: state property tax; this skill
-  covers only the federal-tax overlay).
-- Congregational vs. presbyterian vs. episcopal polity, bylaws, member meetings, denominational
-  reporting relationships → `nonprofit-faith-church-governance`.
+- Generic Form 990 / 990-EZ / 990-N filing for a 501(c)(3) that must file → `nonprofit-form-990`.
+- State charitable-solicitation registration → `nonprofit-charitable-registration`.
+- Generic enterprise risk and insurance (D&O, cyber, EPLI) → `nonprofit-risk-management`.
+- Clergy income tax, §107 housing allowance, SECA, W-2 vs 1099 for clergy, love offerings,
+  benevolence funds → `nonprofit-faith-finance-clergy-comp`.
+- Charitable Choice / Equal Treatment rules for federal grants → `nonprofit-faith-religious-liberty-compliance`;
+  running the funded program → `nonprofit-faith-programs-social-services`.
+- State property-tax exemption, facility-use agreements and the operational side of rentals →
+  `nonprofit-faith-facilities-sanctuary` (this skill covers only the federal-tax overlay).
+- Polity, bylaws, member meetings, denominational relationships → `nonprofit-faith-church-governance`.
 
 ## Core Frameworks
 
@@ -78,14 +56,8 @@ statute-driven, and generic 501(c)(3) advice is often wrong for a church.
 - **IRS 14-point church test** — the working definition the IRS uses in the absence of a statutory
   one. Restated in **IRS Publication 1828 (Tax Guide for Churches and Religious Organizations)**
   and applied in cases including American Guidance Foundation v. United States and Foundation of
-  Human Understanding v. Commissioner. The 14 characteristics: (1) distinct legal existence; (2)
-  recognized creed and form of worship; (3) definite and distinct ecclesiastical government; (4)
-  formal code of doctrine and discipline; (5) distinct religious history; (6) membership not
-  associated with any other church or denomination; (7) organization of ordained ministers; (8)
-  ordained ministers selected after completing prescribed courses of study; (9) literature of its
-  own; (10) established places of worship; (11) regular congregations; (12) regular religious
-  services; (13) Sunday schools for religious instruction of the young; and (14) schools for the
-  preparation of ministers. No single factor is dispositive; regular worship + an identifiable
+  Human Understanding v. Commissioner. The characteristics are walked in the church-status
+  checklist below. No single factor is dispositive; regular worship + an identifiable
   community of worshippers + a distinct religious ministry are the center of gravity. Synagogues,
   mosques, temples, gurdwaras, Buddhist sanghas, and indigenous religious communities satisfy the
   test on their own equivalents — "Sunday school" reads as regular religious instruction of
@@ -101,15 +73,11 @@ statute-driven, and generic 501(c)(3) advice is often wrong for a church.
 - **IRC §7611** — the special church-audit procedures. Restricts IRS church tax inquiries and
   examinations to those approved by a "high-level Treasury official" on "reasonable belief" of
   noncompliance, with mandatory written notice, staged inquiry-then-examination procedure, limited
-  scope, and a shorter statute of limitations. The IRS has since reorganization treated the
-  "appropriate high-level Treasury official" as the Commissioner of the Tax Exempt and Government
-  Entities (TE/GE) Division; the assignment has been litigated (see United States v. Living Word
-  Christian Center) — verify current IRS delegation before assuming a notice complies.
+  scope, and a shorter statute of limitations. Who counts as the "high-level Treasury official"
+  has moved and been litigated; see the §7611 deep dive and verify the current delegation.
 - **IRC §§511-514 (UBIT)** — churches owe unrelated business income tax on the same terms as any
-  other 501(c)(3). Rental income is generally excluded under §512(b)(3) unless the property is
-  debt-financed under §514, in which case the debt-financed fraction is taxed. Trade-or-business
-  activity regularly carried on and not substantially related to exempt purposes is UBI, and Form
-  990-T is due once gross UBI exceeds $1,000.
+  other 501(c)(3); see the Church UBIT deep dive for rental, §514 debt-financing and the Form 990-T
+  threshold.
 
 ## Standard Deliverables
 
@@ -131,6 +99,24 @@ A request in scope resolves into one of these artifacts:
   Form 990-T threshold and estimated-tax implications.
 - **§7611 response plan** — when an IRS letter arrives: church tax inquiry or examination; were
   procedural prerequisites met; what is the scope; what is the church's response window.
+
+Skeleton for the church-status and integrated-auxiliary memos (adapt headings to the entity):
+
+```
+[Entity legal name] — Federal Church / Integrated-Auxiliary Status Memo
+Prepared by / date / reviewed by (tax counsel): ___
+1. Question presented (church? integrated auxiliary? which filing exception?)
+2. Entity facts: state-law form, EIN, determination or group-listing letter (if any),
+   governing documents reviewed, affiliated entities mapped
+3. Analysis
+   - Church: 14-point factors satisfied / weak / absent, with evidence
+   - Integrated auxiliary: tax status; affiliation route under Reg. §1.6033-2(h)(2);
+     internal-support A and B findings, or (h)(5) special group; any (g)(1)(vii) school exception
+4. Conclusion (use the checklist's conclusion sentence)
+5. Residual risks and facts that would change the answer
+6. Filing consequences: what is not filed; what still is (see federal-filing map)
+7. Recheck date and owner
+```
 
 ## Determining Whether an Organization Is a "Church" for IRC Purposes — Numbered Checklist
 
@@ -226,7 +212,7 @@ affiliation alone nor a majority-fee calculation settles the result.
 
 Classification references: [Treas. Reg. §1.6033-2(g)(1)(vii), (h)(1)–(5)](https://www.irs.gov/pub/irs-regs/td8640.txt)
 and [IRS Publication 557, annual-return exceptions](https://www.irs.gov/pub/irs-pdf/p557.pdf).
-Last checked September 16, 2026; this is not tax-counsel sign-off.
+Last checked September 16, 2026; these references are not tax-counsel sign-off.
 
 ## Group Exemption Rulings for Denominations
 
@@ -259,7 +245,8 @@ churches) obtain a single IRS determination covering itself plus its listed subo
 
 Churches, their integrated auxiliaries, and conventions/associations of churches are exempt from
 Form 990/990-EZ/990-N. They are **not** exempt from most other federal filings. Build this map for
-every church you advise.
+every church you advise. Dollar thresholds and deadlines below change; verify the current figures
+in the form instructions on irs.gov and in IRS Publication 1828 before advising.
 
 - **Form 1023 or 1023-EZ**: NOT required (§508(c)(1)(A)). Optional — see decision section below.
 - **Form 990, 990-EZ, 990-N**: NOT required (§6033(a)(3)(A)(i) and (iii)).
@@ -329,7 +316,8 @@ substantially related to the church's exempt (religious) purposes.
 - **Investment income, dividends, interest, royalties**: generally excluded under §512(b)(1),
   (b)(2), and (b)(5) unless debt-financed.
 
-**Form 990-T mechanics**: the church files 990-T if gross UBI is $1,000 or more; tax is computed
+**Form 990-T mechanics** (verify current thresholds in the Form 990-T and 990-W instructions): the
+church files 990-T if gross UBI is $1,000 or more; tax is computed
 at the corporate rate. Estimated taxes on Form 990-W quarterly if tax owed will exceed $500. UBI
 losses can offset UBI gains within each unrelated trade or business ("silo" rule under §512(a)(6));
 losses may not offset the church's exempt-purpose activities.
@@ -367,10 +355,8 @@ non-church affiliated organizations. Confirm the target and the scope before inv
   criminal matters; (c) inquiries into third-party recordkeeping; (d) certain routine payroll and
   information-return audits (Form 941, W-2 matching). A payroll audit that opens the door to
   substantive-status questions can create dispute about whether §7611 was triggered — get counsel.
-- **Enforcement history**: church audits have been rare and often controversial (see the political-
-  campaign-intervention investigations of the mid-2000s, and subsequent litigation over the
-  §7611 delegation). The rarity does not make §7611 optional — always check the notice against
-  the statute.
+- **Rarity is not optionality**: church audits are rare, but always check the notice against the
+  statute.
 
 ## Should the Church File Form 1023 Anyway? — Decision Framework
 
@@ -385,7 +371,8 @@ right answer for every church; frame the tradeoffs and recommend.
   (Publication 78 / Tax Exempt Organization Search) donors and auditors can independently verify;
   (5) if the church later reorganizes or spins off a school or affiliate, a determination letter
   simplifies everything downstream.
-- **Against filing**: (1) filing fees ($275 for 1023-EZ, $600 for full 1023); (2) full 1023 is a
+- **Against filing**: (1) filing fees ($275 for 1023-EZ, $600 for full 1023; verify the current
+  user fee on irs.gov or Pay.gov); (2) full 1023 is a
   substantial narrative + financials package requiring outside help for most churches; (3) the
   church has affirmatively invited IRS review of its organization and operations; (4) no
   substantive protection is lost by not filing — automatic exemption is real; (5) for a small,
@@ -422,6 +409,18 @@ scoping any church-status advice; do not stop at federal.
   subsidiaries. Confirm state-by-state at the point of advice — an exemption in the home state
   does not follow the church to states where it fundraises. Route multi-state mechanics to
   `nonprofit-charitable-registration`.
+
+## Verify Before Acting
+
+- [ ] Every legal entity is mapped and classified separately (church, integrated auxiliary,
+      qualifying school, convention/association, ordinary 501(c)(3), taxable affiliate).
+- [ ] The memo conclusion cites the factors and evidence actually reviewed, not religious identity.
+- [ ] Integrated-auxiliary memos record affiliation route and internal-support A and B separately.
+- [ ] Group-ruling status, the group-ruling moratorium and any §7611 delegation were checked
+      against current IRS guidance before advising.
+- [ ] Every non-donation revenue stream was run through the UBI test, §512(b)(3) and §514.
+- [ ] Fees, dollar thresholds and filing deadlines were confirmed on irs.gov for the current year.
+- [ ] Qualified tax counsel has reviewed the conclusion before any filing or IRS response.
 
 ## Common Failure Modes
 
@@ -462,36 +461,13 @@ scoping any church-status advice; do not stop at federal.
   more defensible classification (ordinary §501(c)(3) religious org that files a 990) rather than
   claim-and-hope.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the church business administrator, treasurer, or senior clergy (or a chief-of-staff drafting
-  for one)**: your job is to keep the church's federal-tax house tidy without spending its money
-  on things it does not need. Do the church-status memo once and file it in the corporate record.
-  Do the integrated-auxiliary classification for each affiliated ministry once, and re-check
-  annually against the internal-support test. Build the federal-filings calendar (941 quarterly,
-  W-2/1099 January, 990-T May 15 if applicable, 5578 if you operate a school, 8282 event-driven,
-  1098-C event-driven) and the state overlay (state income, sales, property, charitable
-  solicitation) explicitly — most compliance failures in this space are calendar failures. Decide
-  once, in writing, whether the church will file Form 1023 anyway, and revisit the decision when
-  the church starts seeking foundation grants, planting daughter congregations, opening a school,
-  or expanding into new states. When an IRS letter arrives, do not respond substantively before
-  classifying it (regular correspondence vs. §7611 inquiry vs. §7611 examination vs. non-§7611
-  audit like payroll) and getting church-tax counsel involved — the §7611 protections are real but
-  only if invoked correctly.
-
-- **As an advisor (CPA, attorney, denominational staffer, or consultant)**: your first move is
-  disambiguating the entity — is this a church, an integrated auxiliary, a convention or
-  association of churches, an ordinary church-affiliated §501(c)(3), or a for-profit church-owned
-  entity — because the entire filings map turns on the answer, and the church often does not know.
-  Ask for the certificate of incorporation, EIN letter, any determination letter, any group-ruling
-  listing letter, the last three years of financials, and the payroll register before opining. When
-  a client is on a group ruling, verify current listing with the central org's group-ruling
-  administrator; when a client is independent, do the 14-point analysis and make an explicit
-  filing-strategy recommendation instead of leaving "automatic exemption" as an unstated default.
-  Do not confidently opine on §7611 mechanics without checking the current delegation of the
-  "high-level Treasury official" role — it has moved and been litigated more than once — and do
-  not assume the substantive-exemption protection extends to payroll or auxiliary audits. On UBIT,
-  push clients to inventory revenue streams proactively rather than annually rediscovering a
-  cell-tower lease at year-end; on state overlay, treat charitable-solicitation registration and
-  property-tax exemption as separate work products routed to
-  `nonprofit-charitable-registration` and `nonprofit-faith-facilities-sanctuary` respectively.
+- Before opining, collect the certificate of incorporation, EIN letter, any determination letter,
+  any group-ruling listing letter, the last three years of financials and the payroll register;
+  for group-covered clients, confirm current listing with the central org's group-ruling administrator.
+- Build the church's federal-filings calendar explicitly (941 quarterly, W-2/1099 in January, 990-T
+  May 15 if applicable, 5578 if the church runs a school, 8282 and 1098-C
+  event-driven) plus the state overlay; most failures here are calendar failures.
+- Record the "file a 1023 anyway?" decision in writing and revisit it when the church seeks
+  foundation grants, plants congregations, opens a school or fundraises in new states.
