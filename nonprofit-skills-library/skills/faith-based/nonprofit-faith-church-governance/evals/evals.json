@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-faith-church-governance",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I chair the elder board at Riverbend Community Church in Boise, Idaho — non-denominational, about 300 attendees, $900K budget. Our bylaws were copied from a Baptist church in 1998: they say the congregation votes on everything including the budget and pastor, but in practice our five elders have run things for 15 years and the congregation only votes on new elders. The membership roll says 410 members and the quorum for congregational meetings is 50% of members, so we haven't had a valid vote in years. Our articles of incorporation name a separate 'board of trustees' as directors, which hasn't met since 2019. We want to rewrite the bylaws this spring. Where do we start and what should the new bylaws cover?",
+      "expected_output": "Starts by diagnosing the polity model and the gap between documents and practice (articles, bylaws, actual elder-led practice, title), flags the trustees-vs-elders corporate-director mismatch and stale roll, then lays out a bylaws rewrite covering member vs. non-member form, observable membership criteria, realistic quorum, reserved member powers, clergy call/separation, discipline, dispute resolution, amendment and dissolution clauses, with counsel review.",
+      "assertions": [
+        "Begins with a polity diagnosis that reads the articles, current bylaws and property title and compares them to actual practice, naming the congregational-on-paper vs. elder-led-in-practice drift",
+        "Flags that the articles name a different body (trustees) as corporate directors, so elder decisions may be legally ultra vires, and recommends aligning articles, bylaws and practice on one body",
+        "Recommends cleaning the stale membership roll under a bylaws process and setting a realistically achievable quorum rather than 50% of an inflated roll",
+        "Advises a deliberate choice between member and non-member corporate form, explaining the trade-off for an elder-led church",
+        "Recommends enumerating members' reserved powers explicitly and protecting the doctrinal statement/amendment clause with a member supermajority",
+        "Recommends checking the draft against the state nonprofit corporation act and getting legal counsel review"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Special congregational meeting next month to vote on calling our new pastor. Bylaws need 80%. Small Baptist church in Georgia, ~95 members on the roll. What do I need to do so nobody can challenge the vote afterward? Give me a checklist.",
+      "expected_output": "Provides a meeting checklist/packet: certify the roll as of a record date, issue notice by the bylaws/state-act method with the call motion stated verbatim, confirm and record quorum before any motion, use the named parliamentary authority, written ballot, announce against the 80% threshold, retain ballots and file signed minutes.",
+      "assertions": [
+        "Instructs certifying the membership roll as of a record date, with only members on the roll then eligible to vote",
+        "Requires notice issued by the method and period in the bylaws and state act, with the call motion stated verbatim in the notice",
+        "Says to confirm and record quorum before the first motion and to adjourn rather than proceed if quorum fails",
+        "Recommends a written ballot and announcing the result against the 80% bylaws threshold rather than the raw count",
+        "Says to retain ballots through the challenge window/limitations period and file signed minutes as a corporate record"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our United Methodist congregation in rural Tennessee (St. Paul's UMC, ~180 members) wants to leave the denomination and keep our building and parsonage. Our church council voted 11-1 to pursue it, and a lot of people think we can just hold a congregational vote like churches did a couple of years ago and walk out with the property. Can we schedule the vote for January?",
+      "expected_output": "Cautions that the UMC's earlier disaffiliation window has closed and remaining paths must be verified in the current Book of Discipline, that the trust clause likely governs the property so a vote alone won't carry the building, and advises a title opinion and counsel before scheduling any vote, plus sequencing, minority protections and clergy benefits transitions.",
+      "assertions": [
+        "States that the earlier UMC disaffiliation window has closed and that current available paths must be verified against the current Book of Discipline and annual-conference rules",
+        "Identifies the UMC trust clause as likely holding the property in trust for the denomination, so a congregational vote alone does not secure the building and parsonage",
+        "Recommends obtaining a title opinion and legal counsel review before scheduling any vote",
+        "Lays out a vote sequence that includes denominational filings/approvals and property settlement, not just a congregational vote",
+        "Raises protections for the minority faction and transitions for clergy pension and benefits"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We need to update the bylaws for our food bank's board of directors — term limits and officer roles. We're a secular 501(c)(3).",
+      "better_skill": "nonprofit-bylaws-policy"
+    },
+    {
+      "query": "Our church is firing our youth pastor for performance reasons. Can she sue us for discrimination, or does the ministerial exception cover her?",
+      "better_skill": "nonprofit-faith-employment-ministerial-exception"
+    }
+  ]
+}

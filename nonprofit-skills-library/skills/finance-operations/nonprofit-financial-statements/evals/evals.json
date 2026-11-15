@@ -1,0 +1,53 @@
+{
+  "skill_name": "nonprofit-financial-statements",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Prepare the Q2 board financial presentation for Willow Creek Arts Center ($1.4M, calendar fiscal year, Vermont). Net assets are $620k without donor restrictions, including a $200k board-designated reserve, and $480k with donor restrictions, most of it a three-year foundation grant. Board members keep saying 'we have $1.1M, why can't we hire an education director?' Most of our board has no finance background.",
+      "expected_output": "A board-ready package led by a plain-language narrative and one-page dashboard that separates truly available funds from board-designated and donor-restricted money, with trend context and statements as appendix.",
+      "assertions": [
+        "Separates money available for any purpose (without donor restrictions minus board designations) from donor-restricted funds",
+        "Explains board-designated funds stay in the without-donor-restrictions class and are disclosed separately",
+        "Includes a one-page dashboard with revenue and expense vs. budget, available net assets, days of cash on hand and the functional expense ratio",
+        "Shows trend over several periods rather than a single quarter",
+        "Leads with a plain-language narrative and puts the full statements in an appendix",
+        "Explains change in net assets in plain terms (growth or shrinkage of the cushion) rather than as profit"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "our statement template still has temporarily restricted and permanently restricted columns lol. fine? also we've been spreading a 3-yr $150k grant evenly over 3 years",
+      "expected_output": "Flags the outdated three-class format and the spread-recognition error, and adds the conditional-contribution test before booking.",
+      "assertions": [
+        "States the three-class format is outdated since ASU 2016-14 and should be two classes (with and without donor restrictions)",
+        "Says an unconditional multi-year grant is recognized in full when promised, as with-donor-restriction revenue, not spread over the years",
+        "Says to first test whether the grant is conditional (barrier plus right of return/release) under ASU 2018-08, in which case funds received early are a refundable advance",
+        "Recommends confirming the treatment with the auditor or CPA"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our treasurer wants to show the $250k state grant we received this month as 'available cash' on the board dashboard since it's sitting in the bank. She also wants me to copy our functional expense statement directly into 990 Part IX and project whether we'll make payroll in February.",
+      "expected_output": "Rejects presenting restricted grant money as available, explains its classification and release, and hands off the 990 and payroll-forecast pieces to the right skills while noting GAAP-to-990 reconciliation.",
+      "assertions": [
+        "Says the restricted grant should not be described as available and explains it remains with donor restrictions until released",
+        "Notes GAAP functional expenses feed Part IX but amounts can differ, so they should be reconciled rather than copied",
+        "Hands Form 990 preparation to nonprofit-form-990",
+        "Hands the February payroll cash projection to nonprofit-reserves-cash-flow"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Build a 13-week cash flow forecast for our reimbursement gap",
+      "better_skill": "nonprofit-reserves-cash-flow"
+    },
+    {
+      "query": "Complete Schedule A's public support test on our Form 990",
+      "better_skill": "nonprofit-form-990"
+    }
+  ]
+}

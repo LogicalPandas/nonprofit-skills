@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-social-media",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the part-time (20 hrs/week) comms coordinator at Mesa Verde Adult Literacy in Albuquerque. We're on Facebook, Instagram, LinkedIn, TikTok, X and YouTube and post whenever we can — mostly 'donate now' graphics. Our donors are mostly 55+, and we always need volunteer tutors. Can you build a social strategy and a 6-week content calendar running into GivingTuesday (Dec 1)?",
+      "expected_output": "A strategy that narrows to 2-3 platforms matched to audience and capacity, with a goal per platform, a 90-day audit against the pillar mix, and a 4-6 week calendar tagged by pillar with asks concentrated around GivingTuesday. It includes consent checks, UTM links and monthly review by pillar.",
+      "assertions": [
+        "Recommends cutting from six platforms to 2-3 matched to audience and the 20-hour capacity (e.g., Facebook for older donors, Instagram or TikTok for volunteer recruitment), noting that inconsistent posting hurts reach and that audience demographics should be verified with current data and the org's own analytics",
+        "States a goal for each platform (e.g., donor stewardship, volunteer recruitment)",
+        "Uses a pillar mix of roughly 40% impact, 20% people spotlights, 20% behind-the-scenes, 10% asks and 10% reactive, and flags the current ask-heavy feed as ask fatigue",
+        "Provides a calendar of at least 4-6 weeks with each post tagged by pillar and asks concentrated around GivingTuesday rather than spread evenly",
+        "Includes consent checks for any identifiable learner or spotlight and UTM-tagged links on posts driving to donation or volunteer pages",
+        "Recommends a monthly review of reach, engagement rate and click-throughs by pillar rather than follower count"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "write an IG volunteer spotlight for Dolores Ramirez — she's driven Meals on Wheels routes for us every Monday and Thursday since 2015, retired school bus driver, knows every client's dog's name. we're Sun City Senior Meals.",
+      "expected_output": "A spotlight post with a specific human-detail hook, concrete description of what she does, a placeholder for her own quote, a volunteer-recruitment soft CTA, and a reminder to confirm consent to be named and tagged.",
+      "assertions": [
+        "Opens with a specific human detail (e.g., the dogs' names or years of routes) rather than a 'Volunteer Spotlight: Dolores' title hook",
+        "Describes what she actually does in concrete terms rather than 'supports our mission'",
+        "Includes a quote in her own words, or a clearly marked placeholder for one, rather than inventing it as fact",
+        "Ends with a soft volunteer-recruitment CTA suited to a volunteer spotlight",
+        "Reminds the user to confirm Dolores is comfortable being named and tagged publicly before posting"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our follower count at Brookside Family Shelter has doubled this year but donations from social are basically zero. My board wants to buy ads to hit 10k followers. Also I have a great photo of a mom and her kids in our shelter lobby crying — can I post it with a caption about how we rescued them?",
+      "expected_output": "The response diagnoses vanity-metric fixation and recommends tracking conversions by pillar instead of buying followers (paid ads are outside this skill). It refuses to post the photo without consent and with rescue framing, sending the story through the storytelling consent protocol.",
+      "assertions": [
+        "Identifies chasing follower count as vanity-metric fixation and recommends measuring engagement rate and whether social traffic converts (e.g., via UTM-tagged links) by pillar",
+        "Notes that paid ad strategy is outside this skill's scope or doesn't endorse buying followers as the fix",
+        "Advises against posting an identifiable client photo without informed consent, citing dignity and legal risk, and routes to nonprofit-storytelling's consent protocol",
+        "Flags the 'we rescued them' caption and crying imagery as savior framing and suggests dignity-centered alternatives"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Define our brand voice and write a positioning statement that distinguishes us from other shelters.", "better_skill": "nonprofit-brand-messaging"},
+    {"query": "Pitch our GivingTuesday results to the local TV station's community reporter.", "better_skill": "nonprofit-media-relations"}
+  ]
+}

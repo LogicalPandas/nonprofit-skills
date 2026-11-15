@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-executive-communications",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm ED of Pine County Family Resource Center (48 staff, $4M budget, Oregon). Our state early childhood contract wasn't renewed and I'm eliminating 9 positions — the entire home visiting team in Redmond plus 2 admin roles — effective January 31. Board approved it last night. Write the all-staff message and the rest of what I need to send.",
+      "expected_output": "A complete RIF bundle in the ED's first-person voice: all-staff message with BLUF and the know/don't-know/next-update block, manager talking points, a dated internal FAQ, a 1:1 notification talking track, follow-through cadence, and an audience sequence with affected staff told first, plus a note to send to employment counsel.",
+      "assertions": [
+        "All-staff message opens with the news and what it means for the reader in the first two sentences (BLUF), with no preamble",
+        "Includes what I know / what I don't yet know / when I will update you next, with a specific date rather than 'soon'",
+        "Writes in first-person CEO voice with active verbs and named specifics (e.g., 'I decided,' 'the home visiting team in Redmond') rather than corporate passive voice like 'the organization has made the difficult decision'",
+        "Delivers the bundle: one-page manager talking points, a versioned/dated internal FAQ, and a 1:1 notification talking track to be delivered in person or by video, never by email",
+        "States the audience sequence with directly affected staff told individually before the all-staff message, and schedules a town hall/Q&A within a few days",
+        "Recommends the layoff content go to employment counsel before sending"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "draft a short letter from me to Janet Ruiz, our program officer at the Hollis Foundation, telling her we're closing our Saturday youth program in March. they fund part of it. keep it human.",
+      "expected_output": "A personal, answerable funder letter in the ED's voice that leads with the news, gives honest context, and invites a specific response with a date.",
+      "assertions": [
+        "Leads with the news (closing the Saturday youth program in March) in the first sentence or two",
+        "Is written in first person to Janet by name, in plain language and active voice",
+        "Gives brief, honest context with the one or two real reasons rather than over-explaining",
+        "Invites a specific response (e.g., a short call this week) with a concrete next step and date"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "There's a big national controversy about a new federal immigration enforcement policy and some staff are demanding we put out a statement today. We're a literacy nonprofit in Ohio; maybe 15% of our learners are immigrants. Write me the statement.",
+      "expected_output": "Produces a 'should we speak?' decision memo first (mission impact, standing, cost of silence vs. speaking, who was consulted, what the org will do) and drafts a statement only if that answer is yes, with press work routed to media relations.",
+      "assertions": [
+        "Delivers a 'should we speak?' decision memo before (or instead of) the statement",
+        "Memo covers whether the issue directly affects mission/community/staff, the org's standing, cost of silence vs. cost of speaking, who has been consulted (board chair, most-affected staff, key funders), and what the org is prepared to do, not just say",
+        "Notes that if the answer is no or not yet, the deliverable is the memo rather than a statement",
+        "Warns about reactive statements creating future obligation to speak on every issue",
+        "Routes any press release or reporter outreach to the media relations skill"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Map out our stakeholder groups and the communication sequence and calendar for our upcoming restructure.",
+      "better_skill": "nonprofit-change-management"
+    },
+    {
+      "query": "Write our year-end donor appeal letter asking supporters to give before December 31.",
+      "better_skill": "nonprofit-annual-appeals"
+    }
+  ]
+}

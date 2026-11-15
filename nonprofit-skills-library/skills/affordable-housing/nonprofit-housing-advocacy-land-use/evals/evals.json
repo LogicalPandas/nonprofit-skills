@@ -1,0 +1,50 @@
+{
+  "skill_name": "nonprofit-housing-advocacy-land-use",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the ED of Cascade Commons Housing, a 501(c)(3) affordable developer in Salem, Oregon (budget about $3.2M, 9 staff). Our 48-unit family project on Lancaster Drive needs a conditional use permit and goes to the Salem Planning Commission on January 21. At our neighborhood meeting last week about 35 neighbors showed up upset, mostly saying 'traffic' and 'property values,' and one guy said he didn't want 'those people' near the elementary school. We have about nine weeks. Can you give me a campaign plan to win the hearing, including who should testify and what they should say?",
+      "expected_output": "A project-approval campaign plan built backward from the hearing that treats the CUP as a quasi-judicial decision won on the required findings, with neighbor one-on-ones, pre-negotiated conditions, a diversified witness list mapped to findings, a papered record, and outcome planning. It answers stated objections while addressing the real ones and routes the discriminatory comment to fair-housing counsel.",
+      "assertions": [
+        "Identifies the CUP as a quasi-judicial decision decided on codified findings and assigns specific speakers or testimony to each required finding rather than general support",
+        "Recommends sponsor-led one-on-one conversations with the nearest neighbors well before the hearing",
+        "Recommends confirming the hearing sign-up mechanics and deadline and submitting written testimony and studies into the record before the vote",
+        "Distinguishes stated objections (traffic, property values) from the real objection and advises not arguing the 'those people' point in the room, routing explicitly discriminatory opposition to counsel under the Fair Housing Act",
+        "Recommends proposing a few conditions of approval (e.g., traffic calming) to staff before the opposition does",
+        "Orders the witness list with neighbors/residents first, followed by employers, faith or civic leaders, and future tenants, and plans for both approval and continuance/denial outcomes"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "need a one-pager for council by thurs supporting the parking minimum repeal ord (Ord. 2026-31) in Fairview, WI. we're a small housing coalition lead org. keep it tight",
+      "expected_output": "A zoning-reform one-pager structured as local problem, specific change, who it homes, four rebuttals, and an explicit ask, with placeholders for localized numbers and a reminder to verify ordinance details and any cited laws.",
+      "assertions": [
+        "Follows the structure problem in local numbers → specific change → who it homes → counterargument rebuttals → explicit ask",
+        "Includes four anticipated counterargument rebuttals",
+        "Uses the parking-cost argument that parking costs pass into rent even for tenants without cars, and mentions repeal or alternatives such as parking maximums or unbundled parking",
+        "Leaves local figures as placeholders or flags them to be localized and checked against the agenda packet or staff report rather than inventing Fairview data",
+        "States the ask explicitly, naming the ordinance number"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our board chair at Tri-County Housing Partners (501(c)(3), Sacramento area, $5M budget, we made the 501(h) election) wants us to put $40,000 toward the county housing bond on the November ballot. Her idea is to write a check to the 'Yes on Measure H' committee from our general fund and maybe use some of our Wells Fargo housing grant for mailers. She's also friendly with a supervisor candidate who's championing the bond and wants to do a joint event with him. Is all of this okay?",
+      "expected_output": "Explains that supporting a ballot measure is grassroots lobbying a 501(c)(3) may do within its 501(h) ceilings, but flags the committee check, the restricted-grant mailers, and the candidate event as problems; recommends the org run its own communications funded from unrestricted funds and consult counsel.",
+      "assertions": [
+        "States that urging a yes vote on a housing bond is grassroots lobbying, which a 501(c)(3) may do, rather than prohibited electioneering",
+        "Warns that 501(c)(3) funds should not be contributed to the ballot-measure campaign committee; the org should run its own paid communications instead",
+        "Flags that restricted grant funds should not pay for vote-yes mailers; uses unrestricted funds",
+        "States that a 501(c)(3) may never support or oppose a candidate or coordinate with a candidate's campaign, flagging the joint event with the supervisor candidate",
+        "Notes that the grassroots lobbying sub-ceiling is smaller than the direct-lobbying ceiling and should be budgeted, telling the user to verify ceiling rules in IRS guidance",
+        "Recommends routing registration/reporting and compliance questions to counsel or to nonprofit-legislative-advocacy"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Can you explain how to calculate our 501(h) lobbying expenditure ceiling and set up our state lobby day with legislators next March?", "better_skill": "nonprofit-legislative-advocacy"},
+    {"query": "We want to form a regional housing coalition with eight other nonprofits—help me draft the MOU and governance structure for the coalition.", "better_skill": "nonprofit-coalition-building"}
+  ]
+}

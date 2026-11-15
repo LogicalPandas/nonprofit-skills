@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-program-design",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "We're Harbor Light Financial Coaching, a 9-person nonprofit in Baltimore. Our program: 1:1 financial coaching (6 sessions over 3 months) plus a monthly group workshop for low-income renters, staffed by 3 coaches, funded partly by a $180K bank CRA grant. The bank's new application asks for a logic model AND a theory of change. Can you build both?",
+      "expected_output": "A six-column logic model scoped to the coaching program and a theory-of-change narrative built by backward mapping, with assumptions, external factors, evidence base, and handoff notes for measurement and grant narrative.",
+      "assertions": [
+        "Produces a logic model table with inputs, activities, outputs, and short-, mid-, and long-term outcomes columns",
+        "Places counts like sessions delivered or workshops held in outputs, with outcomes written as changes in participants (knowledge, behavior, condition)",
+        "Includes a theory-of-change statement in an if…then…because form or equivalent causal hypothesis with an evidence base or a prompt to cite one",
+        "Names assumptions (e.g., participants can attend, have stable income/banking access) and external factors (e.g., rent increases, policy shifts) in a dedicated section",
+        "Avoids overreaching long-term claims (e.g., ending community poverty) or frames them as contribution",
+        "Includes handoff notes on which outcomes need indicators (outcomes measurement) and which sections go into grant narrative"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Program isn't working and I can't figure out why. 2 years of our teen parenting class, attendance is fine, but repeat pregnancies and school dropout numbers haven't budged. Can you help me rethink the design?",
+      "expected_output": "Diagnoses the program logic by working backward from the intended long-term change, stress-testing each link with 'so that,' surfacing unstated assumptions and missing intermediate outcomes, and recommends validation with frontline staff and participants.",
+      "assertions": [
+        "Works backward from the long-term outcome (e.g., school completion, healthy spacing of pregnancies) to identify the intermediate changes needed",
+        "Stress-tests the chain linking activities to outcomes (e.g., a 'so that' test) and points out where a link has no plausible mechanism",
+        "Identifies likely unstated assumptions (e.g., child care, transportation, partner/family support, school re-entry barriers) as explanations for underperformance",
+        "Recommends validating the redesign with frontline staff and participants rather than leadership alone",
+        "Notes that good attendance is an output, not evidence of outcome change"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Can you take the logic model we built for our youth soccer program and just swap in our new adult ESL classes? Same columns, I'll change the words. Funder deadline is Friday and I also need you to write the 2-page program narrative section for the RFP.",
+      "expected_output": "Declines to simply copy a logic model across structurally different programs, re-derives a model for ESL, and notes that turning it into RFP narrative belongs to grant writing.",
+      "assertions": [
+        "Warns against reusing one logic model for a structurally different program and re-derives the ESL model's activities, outputs and outcomes",
+        "Produces ESL-specific outcomes stated as participant change (e.g., language proficiency, employment or civic participation) rather than copied soccer outcomes",
+        "Names assumptions/external factors specific to adult ESL learners (e.g., work schedules, child care, transportation)",
+        "Identifies the 2-page funder narrative as grant-writing work (hand off or treat separately) rather than part of the logic model deliverable"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Our financial coaching logic model is done — what indicators, baselines and targets should we track for each outcome?",
+      "better_skill": "nonprofit-outcomes-measurement"
+    },
+    {
+      "query": "Write the 'Program Design and Logic' section of our Citi Foundation proposal from this logic model in compelling narrative voice.",
+      "better_skill": "nonprofit-grant-writing"
+    }
+  ]
+}

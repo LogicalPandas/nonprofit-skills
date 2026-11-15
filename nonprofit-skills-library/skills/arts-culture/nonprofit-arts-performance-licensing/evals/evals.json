@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-arts-performance-licensing",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Pine Ridge Community Players (all-volunteer, Bend, Oregon, 280-seat rented auditorium, $14 and $22 tickets) wants to do 'Into the Woods' next June, 8 performances. Our board president already wants to announce it at the spring fundraiser in March. We'd also like to cut the second-act Rapunzel scenes for time and film it so the cast can have a copy. How do we get the rights and what should we watch out for?",
+      "expected_output": "A rights-clearance plan: verify the current rights holder on the licensor's site, submit an application with honest capacity/price/performance numbers under the amateur tier, budget the full license package, hold the announcement until the license is signed and paid, request written permission for any cuts (as-is rule), and request a separate archival video rider; with staff/counsel review of the license.",
+      "assertions": [
+        "Tells the user to verify the current rights holder on the licensor's website rather than relying on memory",
+        "Advises against announcing the title publicly until the license is signed and paid",
+        "Explains that cuts violate the as-is rule unless approved in writing by the licensor in advance",
+        "States that a performance license does not include recording rights and that an archival video rider must be requested separately (and may not be available)",
+        "Describes the quote as a package (royalty plus materials/rental, deposits, fees) built from capacity, ticket prices and performance count, to be put in the budget before announcing",
+        "Recommends a knowledgeable staff lead or counsel review the license before execution"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Gala question — we're having a cover band play at our gala, a Spotify playlist in the lobby during intermissions all season, and a free summer outdoor showing of a Pixar movie in the park. We have ASCAP and BMI. Are we good?",
+      "expected_output": "Explains that ASCAP and BMI don't cover SESAC or GMR repertoire so the org should audit what's played against all four PROs, and that the movie screening needs a public performance license (Swank for an advertised event; MPLC blanket only for unadvertised, free use), with free admission not an exemption.",
+      "assertions": [
+        "Explains that each PRO represents different writers and no single license covers all four, so SESAC and GMR coverage must be checked against the repertoire actually played",
+        "States that free admission and nonprofit status do not exempt a public film screening",
+        "Recommends a per-title license (e.g., Swank) for an advertised/promoted screening and explains the MPLC blanket only covers unadvertised, no-admission showings",
+        "Advises auditing what music licenses the venue/building already holds and for which uses"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our youth theater (Columbus, OH) wants to do a 'concert version' of a Broadway jukebox musical — just the songs, but with costumes and a narrator connecting the story. Our venue's ASCAP license should cover that since it's basically a concert, right? We also want to livestream it for grandparents.",
+      "expected_output": "Explains that adding costumes and narrative framing makes it a dramatic use requiring grand rights from the licensing house, not a PRO blanket, and that livestreaming is a separate license class often unavailable, with union implications routed to the union skill.",
+      "assertions": [
+        "Distinguishes small (nondramatic) rights from grand (dramatic) rights and states that a staged or story-framed presentation of the songs is a dramatic use outside the ASCAP blanket",
+        "Says grand rights must come from the rights holder/licensing house for the musical",
+        "States that streaming is separately licensed, quoted per title, and often not available",
+        "Mentions that a youth/nonprofit purpose does not waive copyright and that performing without a signed license creates infringement exposure",
+        "Recommends title substitution or a licensed edition if rights are unavailable or too costly, rather than performing without rights"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "We're commissioning a new musical from a local composer — who owns the copyright and what premiere rights should we get?", "better_skill": "nonprofit-arts-commissioning-new-work"},
+    {"query": "Outside groups rent our theater — should our rental contract require them to get their own music licenses and insurance?", "better_skill": "nonprofit-arts-venue-rental-earned-income"}
+  ]
+}

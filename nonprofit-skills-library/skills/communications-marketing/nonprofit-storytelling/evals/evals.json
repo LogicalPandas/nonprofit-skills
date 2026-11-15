@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-storytelling",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Please review and rewrite this story for our gala program booklet. We're Second Harvest Housing Alliance in Tacoma. Draft: 'When James came to us, he was a broken man — homeless, addicted, and out of options. He had lost everything. Thanks to the generosity of donors like you, our caring staff rescued James from the streets. Today he has a home and a future. Your gift tonight can save another James.' What I know about James: 54, former longshoreman, injured on the job, lost his apartment when disability payments were delayed, now in permanent supportive housing for 2 years, volunteers at our community garden, wants to reconnect with his daughter.",
+      "expected_output": "A savior-framing review that names the specific problems, then a dignity-centered rewrite (context before crisis, structural cause, James as protagonist, the org as partner, his own words, forward agency) that uses only the facts provided. It requires James's informed consent and review before use.",
+      "assertions": [
+        "Flags specific savior-framing problems in the draft: the 'broken man'/'lost everything' crisis-first hook, before/after transformation language, staff and donors as rescuers, and identifying James by his condition",
+        "The rewrite opens with who James is (former longshoreman, gardener, father) before his hardship, and names the structural cause (workplace injury, delayed disability payments) instead of implying personal failing",
+        "Shows James acting with the org as a partner or resource, and closes on his own goal (reconnecting with his daughter) rather than a completed rescue",
+        "Uses only the facts provided and puts any quote from James as a placeholder to gather in an interview, not an invented quote presented as real",
+        "Says James must give informed, specific consent naming the uses (gala booklet and any reuse) and must review the final draft and photo before publication",
+        "Mentions a withdrawal path or a log of where the story is published"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "we don't have any kind of consent form for client stories. we're a youth mentoring org in Baltimore, most of our kids are 10-16. can you make us one?",
+      "expected_output": "A one-page story consent protocol covering informed, use-specific consent with guardian consent plus minor assent, right of review, power-aware interviewing, a compensation norm, and a withdrawal path with a publication log.",
+      "assertions": [
+        "Consent names specific uses (channels, duration, future reuse), and the protocol says a signature for one use doesn't cover others",
+        "Requires guardian consent and age-appropriate assent from the minor",
+        "Includes a right of review: the subject sees the final draft and photo selection and can request changes or withdraw",
+        "Covers power-aware interviewing (role disclosure, non-leading questions, not interviewing a current client alone where declining feels risky to services) and a disclosed compensation or reciprocity norm",
+        "Includes a withdrawal path with a named contact and a log of where each story or photo has been published"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "For our year-end appeal at Hillcrest Food Network, I want to combine details from three different clients into one story about 'Rosa' so it's more powerful, and reuse the photo of Mrs. Chen that she approved for our spring newsletter two years ago. Can you write the Rosa story and then also format it into the appeal letter and three Instagram posts?",
+      "expected_output": "The response warns that a composite presented as one real person needs disclosure and reuse of a two-year-old newsletter consent needs re-confirmation. It writes the story within those limits and hands appeal and social formatting to their channel skills instead of reformatting itself.",
+      "assertions": [
+        "Warns that a composite story presented as a single real person without disclosure is a legal and trust risk, and requires clear disclosure or a real consented individual",
+        "Flags reusing Mrs. Chen's photo in an appeal two years after a newsletter-only consent as consent creep, requiring re-confirmed, use-specific consent",
+        "Warns against pairing the story with a photo of a different person (photo-text mismatch)",
+        "Hands formatting into the appeal letter and Instagram posts to nonprofit-annual-appeals and nonprofit-social-media rather than reformatting in this skill",
+        "Recommends program staff review the draft for accuracy and re-traumatization risk"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Outline our annual report sections and figure out where the donor honor roll and financials go.", "better_skill": "nonprofit-annual-report"},
+    {"query": "Rewrite our donate page headline and suggested gift amounts to convert better.", "better_skill": "nonprofit-donation-page-copy"}
+  ]
+}

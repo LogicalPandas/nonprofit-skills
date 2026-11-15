@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-policy-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "HHS just published a proposed rule in the Federal Register changing Head Start eligibility verification — comments due January 30. I'm policy director at Sunrise Early Learning, which runs 14 Head Start classrooms in rural Georgia, ~280 kids. Can you outline our analysis and draft the structure of a regulatory comment letter?",
+      "expected_output": "An analysis built from the actual proposed rule text with practical mechanics, a stakeholder impact matrix, cost-estimate comparison, procedural status, a single four-posture position, and a comment letter in the agency's required format citing the docket.",
+      "assertions": [
+        "Instructs pulling the actual proposed rule text from the Federal Register and noting the docket number/version rather than working from summaries",
+        "Includes a stakeholder impact matrix with affected groups (families, staff, the org, partners) against impact types (financial, operational, access, rights)",
+        "Checks the agency's cost estimate/regulatory impact analysis and flags where the org's own caseload data contradicts it",
+        "States the position as exactly one of support, oppose, support-if-amended (with specific amendment language), or monitor — not merely 'concerned'",
+        "Comment letter structure cites specific rule sections and docket number, follows the agency's required format, and sources every figure with a year",
+        "Notes the position should be adopted through the ED/board process before submission"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Board meets in 2 wks. Two competing bills on short-term rental caps in Colorado — HB 1045 and SB 233. We're an affordable housing nonprofit. Need something so the board can pick a position.",
+      "expected_output": "A bill comparison and board-facing position paper that analyzes each bill's mechanics and impacts and surfaces a four-posture decision for a clear board vote.",
+      "assertions": [
+        "Produces a side-by-side bill comparison table of the two bills' mechanics (what each requires, effective dates, sunset, rulemaking authority)",
+        "Notes the bill versions being analyzed (as introduced/amended) and the risk of version drift mid-session",
+        "Includes a counterarguments section that steelmans opposing views",
+        "Frames a clear decision for the board using the four postures for each bill rather than raw research",
+        "Separates the analytical position from the decision about how much advocacy capacity to spend this session"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Write us a one-pager on the state child tax credit bill (HB 410) that we'll hand out at our community fair AND post publicly. End it with 'Call Rep. Martinez and Rep. Oyelaran today and tell them to vote YES — here are their numbers.' We want it to count as nonpartisan education so it doesn't hit our lobbying limits.",
+      "expected_output": "Explains that adding a call to action with legislator contact info makes it a lobbying communication, offers a nonpartisan-analysis version without the call to action or a flagged lobbying version, and recommends routing classification to the lobbying-structure skill/counsel.",
+      "assertions": [
+        "Flags that a call to action on specific legislation (telling readers to call named legislators with phone numbers) conflicts with treating the piece as nonpartisan analysis",
+        "Offers two options: remove the call to action for a nonpartisan educational version, or keep it and flag the piece for lobbying classification and expense tracking",
+        "Routes the lobbying classification question to the c3/c4 structure skill or counsel rather than settling it within the brief",
+        "Drafts the one-pager leading with the ask/summary and every figure sourced with a year",
+        "Notes the position should be adopted through the ED/board process before public use"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We have a coalition of 9 orgs that need to agree on one message about the child tax credit — how do we get sign-off fast?",
+      "better_skill": "nonprofit-coalition-building"
+    },
+    {
+      "query": "Turn our position on the child tax credit into an email asking supporters to contact their legislators this week.",
+      "better_skill": "nonprofit-grassroots-mobilization"
+    }
+  ]
+}

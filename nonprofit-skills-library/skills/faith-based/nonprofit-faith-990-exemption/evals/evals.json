@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-faith-990-exemption",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the volunteer treasurer at Cornerstone Fellowship, an independent (non-denominational) church in Columbus, Ohio. We incorporated as an Ohio nonprofit in 2024, have about 140 regular attendees, meet every Sunday in a leased school gym, run a kids' Sunday school, and our pastor was ordained through a Bible college. Budget is about $310,000, all from member giving, plus we pay a part-time secretary and a worship leader. We never filed a Form 1023. Now a local community foundation wants to give us a $25,000 grant for our food pantry and asked for our IRS determination letter. Do we actually have tax-exempt status, do we need to file a 1023, and what federal filings should we be doing anyway?",
+      "expected_output": "Explains that churches are exempt automatically under §508(c)(1)(A) and excused from Form 990 under §6033, walks Cornerstone through the 14-point church test on its facts, distinguishes automatic exemption from a determination letter that a foundation can require, recommends filing a 1023/1023-EZ given the grant, and maps the federal filings the church still owes.",
+      "assertions": [
+        "Cites §508(c)(1)(A) (or equivalent automatic church exemption) and explains that churches need not file Form 1023 or Form 990/990-N to be exempt",
+        "Applies church-status factors (regular worship, congregation, established place of worship, ordained clergy, religious instruction of the young) to Cornerstone's specific facts rather than concluding from religious identity alone",
+        "Explains that the foundation is not obliged to accept automatic status and that only filing a 1023 produces a determination letter, and recommends filing (1023 or 1023-EZ if eligible) because grant funding is sought",
+        "Lists filings the church still owes despite the 990 exemption, including Form 941 for non-clergy staff and W-2s (including for the pastor)",
+        "Tells the user to verify current user fees or thresholds on irs.gov rather than relying on stated figures",
+        "Recommends review by qualified tax counsel before filing"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "quick q - T-Mobile wants to lease space in our steeple for a cell antenna, ~$1,800/mo. we still have a mortgage on the sanctuary building. church finance committee asks if we owe tax on this. we're a Lutheran congregation in Minnesota",
+      "expected_output": "Runs the cell tower lease through the UBIT analysis: passive rental under §512(b)(3) is generally excluded, but the sanctuary mortgage triggers §514 debt-financed income for the debt-financed fraction, and services in the deal could lose the exclusion; explains Form 990-T and estimated-tax mechanics with a verify note.",
+      "assertions": [
+        "Identifies that passive rental of real property is generally excluded from UBI under §512(b)(3)",
+        "Flags that the mortgage on the sanctuary brings the debt-financed portion of the rent back into UBI under §514",
+        "Warns that lease terms including services (power, maintenance, security monitoring) beyond bare space could lose the passive-rental exclusion",
+        "Explains that Form 990-T is required if gross UBI meets the filing threshold, and that quarterly estimated tax (Form 990-W) may apply, telling the user to verify current thresholds in the IRS instructions",
+        "Rejects any notion that being a church exempts the congregation from UBIT"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our church, Grace Tabernacle in Memphis, just got a letter from the IRS about our payroll — they want to look at our Forms 941 and W-2s for 2024 and 2025, especially how we've been treating our two associate pastors and our daycare workers. Our board chair says churches have special audit protections and we should just write back and refuse unless they follow the church audit rules. Should we do that?",
+      "expected_output": "Classifies the notice first and explains that §7611 church audit procedures generally do not cover routine payroll/information-return audits, so demanding them risks credibility; notes a payroll audit that opens status questions can create dispute, and recommends counsel before responding.",
+      "assertions": [
+        "Advises classifying the notice first (which entity, tax years, which tax, what stage) before invoking any protections",
+        "States that §7611 church audit procedures generally do not apply to routine payroll / Form 941 / W-2 audits",
+        "Warns against refusing to cooperate or demanding §7611 procedures in an ordinary payroll audit because it can cost credibility",
+        "Notes that if the payroll audit expands into questions about church status or exemption, whether §7611 is triggered can become disputed",
+        "Recommends engaging qualified tax counsel before responding to the IRS"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Our pastor's housing allowance — how do we set it up for 2027 and does she still pay self-employment tax on it?",
+      "better_skill": "nonprofit-faith-finance-clergy-comp"
+    },
+    {
+      "query": "Our county assessor is questioning the property-tax exemption on our church parsonage and the fellowship hall we rent out on weekends. How do we defend it?",
+      "better_skill": "nonprofit-faith-facilities-sanctuary"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-strategic-planning",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Our strategic plan at Coastal Youth Sailing Foundation (San Diego, $2.2M, 18 staff, 13-member board) expires June 2027. Last time a consultant wrote a 40-page plan with 9 priorities that nobody looked at again. The board wants a new plan adopted by May. Design the process for us.",
+      "expected_output": "A five-phase process (scope, scan, focus, draft, adopt) with a planning committee, time-boxed scan including beneficiary/funder input and trend data, a priority-setting retreat narrowing to 3–5 priorities with a stop-doing list, a short plan plus plan-on-a-page, and adoption with an owner and quarterly check-ins.",
+      "assertions": [
+        "Structures the process in phases from scoping through board adoption with a 4–6 month timeline that fits the May deadline",
+        "Sets up a planning committee (board chair, ED, a few board members and senior staff) with the full board approving",
+        "Includes a time-boxed environmental scan with separate staff and board SWOT sessions, PEST, financial/program trend data, and input from participants/families, funders and partners",
+        "Plans a priority-setting retreat with the scan summary circulated in advance, narrowing to 3–5 priorities and naming what the org will stop doing",
+        "Requires each annual objective to have an owner and metric and produces a short plan plus a one-page plan-on-a-page",
+        "Addresses the last plan's shelving by naming an internal plan owner, a quarterly board check-in and annual refresh"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "quick sanity check on our draft priorities: 1) run excellent programs 2) grow revenue 3) expand to Oceanside 4) improve staff culture 5) upgrade tech 6) build brand 7) strengthen board 8) DEI. board retreat is saturday",
+      "expected_output": "Flags priority sprawl and operational duties restated as priorities, applies the stop-doing and tradeoff tests, and suggests consolidating to 3–5 real choices with goals, owners and metrics.",
+      "assertions": [
+        "Flags 8 priorities as too many and recommends narrowing to 3–5",
+        "Identifies 'run excellent programs' (and similar baseline duties) as operational duties rather than strategic choices",
+        "Applies a test like 'what would we stop doing to fund this?' and recommends a stop-doing list",
+        "Suggests consolidating or demoting items into goals/objectives and notes each objective needs an owner and metric",
+        "Offers a retreat exercise (e.g., affinity clustering and dot-voting) for Saturday"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're mid-crisis — our ED resigned last month, we lost a $400K county contract, and the board wants to do a full 5-year strategic plan right now so funders see we have direction. Our interim ED starts next week. Also someone suggested we use the plan to decide whether to start a fee-based program.",
+      "expected_output": "Recommends a 1-year bridge plan over a 5-year plan given crisis and transition, compresses the timeline appropriately, and routes the fee-based program feasibility to revenue diversification while naming it as a priority question.",
+      "assertions": [
+        "Recommends a 1-year bridge plan rather than a 3- or 5-year plan for an organization in crisis or leadership transition",
+        "Notes the bridge plan can be compressed to a shorter timeline (roughly 6–8 weeks)",
+        "Routes evaluating the specific fee-based program to the revenue diversification skill while the plan names the priority and its measure",
+        "Flags resource implications (lost contract) to hand to budgeting before adoption",
+        "Insists the plan draw on financial and program trend data (e.g., the impact of the lost contract) rather than going straight to brainstorming"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Build a logic model for our youth sailing program showing how lessons lead to confidence and STEM interest.",
+      "better_skill": "nonprofit-program-design"
+    },
+    {
+      "query": "Help me set up quarterly Rocks and weekly L10 meetings to execute our new strategic plan.",
+      "better_skill": "nonprofit-eos-traction"
+    }
+  ]
+}

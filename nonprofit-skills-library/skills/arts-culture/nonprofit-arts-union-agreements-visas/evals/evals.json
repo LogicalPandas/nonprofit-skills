@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-arts-union-agreements-visas",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm managing director of Northfield Opera Theatre in Minneapolis ($1.6M budget). We've booked a Spanish stage director, Lucía Ferrer, to direct our production of 'The Magic Flute' — first rehearsal is March 8, 2027, and her fee is $18,000. She's never worked in the US. Nothing is signed yet; our artistic director just emailed her a deal memo. What do we need to do and when?",
+      "expected_output": "An end-to-end foreign-artist plan: a letter agreement with an immigration contingency, immigration counsel engaged now to confirm the O-1B category and file the petition (the org as petitioner), a union consultation from the correct national office (SDC for a director), premium processing, and a withholding plan (30% of gross default vs. CWA with its 45-day deadline vs. treaty via counsel/CPA), laid out on a T-minus timeline.",
+      "assertions": [
+        "States that immigration counsel must handle the petition filing and should be engaged now, starting roughly 90-120 days before first rehearsal",
+        "Identifies O-1B as the likely category and notes the org (as U.S. employer) or a U.S. agent must petition — the artist cannot self-petition",
+        "Requires a written union consultation/advisory opinion from the appropriate national union office, identifying SDC for a stage director",
+        "Explains the default 30% withholding on gross fees, with the org liable as withholding agent, and the Central Withholding Agreement option with its hard 45-day-before-first-event deadline; treaty claims to be checked by counsel/CPA",
+        "Recommends the engagement letter include a visa-approval contingency allocating petition costs and a fallback, and that it not be finalized before counsel confirms the visa path is feasible",
+        "Provides a dated sequence/timeline (e.g., T-minus steps) covering contract, category, withholding method, consultation, I-129/premium processing filing, and payment"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "we're a tiny non-equity community theater in Asheville. our director wants to cast one Equity actor as the lead in our spring show. we're too small to have to deal with the union, right?",
+      "expected_output": "Corrects the assumption: coverage is triggered by the actor's union membership, not org size, so the theater must contract under an Equity agreement — likely a Guest Artist or Special Appearance-type route — confirmed by calling the regional AEA office, with costs budgeted beyond wages and the agreement reviewed by the union business office before signing.",
+      "assertions": [
+        "States there is no small-organization exemption — the actor's Equity membership triggers the need to contract under an Equity agreement",
+        "Identifies right-sized routes for one Equity actor in an otherwise non-Equity production (e.g., Guest Artist or Special Appearance agreement) and notes the org becomes employer of record for contributions",
+        "Recommends calling the regional AEA office/business staff to confirm the correct agreement rather than relying on a website",
+        "Flags costs beyond wages (Equity-League pension/health contributions, work rules such as hour caps) and suggests budgeting above base scale until the actual agreement is in hand",
+        "Says the agreement should be reviewed with the union's business office or a labor attorney before signing"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "A folk dance company from Ghana (14 dancers and drummers, together 6 years, 3 joined last spring) is coming to perform at our cultural center in Atlanta in May. Their manager says just pay the full $40K fee to their agency in London, no taxes needed since it's not paid in the US. We're also thinking about livestreaming the show. Can you help?",
+      "expected_output": "Lays out P-category options (P-1B with its 75%/one-year rule vs. P-3 for culturally unique programs) for counsel to confirm, says the 30% withholding follows the income even when paid to a foreign agent and must be planned before payment (CWA/treaty analysis), flags that filming/streaming changes union and visa implications, and insists immigration counsel and a CPA handle filings.",
+      "assertions": [
+        "Identifies group P-visa options — P-1B (internationally recognized group, with the rule that at least 75% of members have been with the group for at least a year) and P-3 (culturally unique program) — and checks the membership facts against the 75% rule",
+        "States that paying the foreign agent or a non-U.S. account does not avoid withholding — the 30% rule follows the income to whoever collects it, and the org is liable as withholding agent",
+        "Recommends running CWA or treaty analysis at contract time and confirming the withholding method in writing before the first payment",
+        "Flags that livestreaming/recording brings in recorded-media considerations (e.g., SAG-AFTRA/MPTV) and routes underlying rights to nonprofit-arts-performance-licensing",
+        "Requires immigration counsel to file the petition and union consultation(s) from the appropriate national office(s), with a CPA or counsel on the tax side"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Our box office staff want to know if they should be hourly or salaried and whether we owe them overtime.", "better_skill": "nonprofit-hr"},
+    {"query": "We're commissioning a new play — should the playwright keep the copyright, and how do we structure the fee installments?", "better_skill": "nonprofit-arts-commissioning-new-work"}
+  ]
+}

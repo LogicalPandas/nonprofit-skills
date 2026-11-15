@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-volunteer-management",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I coordinate volunteers at Second Chapter, an after-school reading program in Cleveland serving 300 kids at 6 library branches. We have about 120 volunteers: reading buddies (1:1 with kids, some sessions in a corner of the library without staff right there), event helpers for our spring book fair, and a couple of pro bono folks doing our website. We've never had written roles or a screening policy. Help me set this up properly.",
+      "expected_output": "Position descriptions for each role, a written risk-tiered screening policy (reading buddies as Tier 3), onboarding sequence, scheduling sized to volume, layered recognition and retention tracking, with a check of state law/insurer requirements.",
+      "assertions": [
+        "Provides or outlines position descriptions for each role including duties, time commitment, screening tier and named supervisor",
+        "Assigns screening tiers by risk in a written policy: event helpers low-tier, and reading buddies with potentially unsupervised access to minors at the highest tier (background check, sex offender registry check, fingerprinting where required)",
+        "Tells the user to confirm current state law and insurer/funder requirements for background checks before finalizing the policy",
+        "Separates orientation from role-specific training and includes a handbook and first-shift buddy",
+        "Recommends a volunteer management system given ~120 volunteers with automated 24–48 hour reminders and a no-show protocol",
+        "Includes layered recognition (in-the-moment, milestones, annual event, meaningful-role) and tracking 90-day and 12-month retention"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "volunteers keep ghosting after their first shift at our food bank. we get tons of signups from the corporate days. what's going on",
+      "expected_output": "Uses funnel data to locate the drop at the post-first-shift stage, diagnoses it as an onboarding/first-shift problem rather than recruitment, and recommends stage-specific fixes and tracking.",
+      "assertions": [
+        "Recommends pulling funnel numbers (inquiries → applications → placements → active after 90 days) to locate where the drop concentrates",
+        "Identifies post-first-shift drop-off as an onboarding/first-shift experience problem rather than a recruitment problem",
+        "Recommends a first-shift buddy, clear role/orientation, and a 2-week check-in",
+        "Recommends automated reminders and a no-show protocol rather than assuming a motivation problem",
+        "Warns against defaulting to 'more recognition' or more recruitment as a blanket fix"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We need to show the board what our volunteers are worth. Last year they gave 18,400 hours. Also, we just realized our Tuesday senior-center visitors have been going into homes alone with no background checks for 2 years. Can you handle both?",
+      "expected_output": "Calculates volunteer value using the current published rate (to be looked up) paired with outcomes and a capacity argument, and immediately flags the screening gap as a risk issue requiring Tier 3 screening and risk-management review.",
+      "assertions": [
+        "Tells the user to multiply hours by the current Independent Sector value-of-volunteer-time rate for their state and year (looked up at the source) rather than asserting a figure from memory",
+        "Pairs the dollar value with outcome stories and an FTE-equivalent capacity argument, warning that dollar value alone invites a 'replace them with money' misread",
+        "Immediately flags unsupervised in-home visits with vulnerable older adults and no background checks as a serious screening gap requiring Tier 3 screening",
+        "Recommends involving risk management/insurance review for the screening gap rather than waiting",
+        "Recommends documenting the tier in a written policy applied consistently"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We need to recruit two new board members with finance and legal skills — how do we build a skills matrix?",
+      "better_skill": "nonprofit-board-recruitment"
+    },
+    {
+      "query": "Our Habitat build days need a volunteer safety and site-supervision plan for construction volunteers.",
+      "better_skill": "nonprofit-housing-construction-volunteers"
+    }
+  ]
+}

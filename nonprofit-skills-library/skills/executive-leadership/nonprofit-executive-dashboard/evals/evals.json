@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-executive-dashboard",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm COO at Harvest Table Food Network, a $14M regional food bank in Kansas City with 85 staff. Our strategic plan priorities: (1) close the meal gap in 6 rural counties, (2) diversify revenue, (3) build a resilient workforce. Right now the ED gets a 30-tab spreadsheet and the board gets the same thing. Design our dashboard system.",
+      "expected_output": "Two separate artifacts — an 8–15 KPI ED dashboard and a 5–8 KPI board scorecard — traced to the three priorities across Balanced Scorecard perspectives, with leading/lagging tags, targets and thresholds, named owners, systems of record, a north-star metric, a KPI definitions doc and review rhythms.",
+      "assertions": [
+        "Splits the system into an ED/COO operational dashboard (8–15 KPIs, monthly) and a board scorecard (5–8 KPIs, quarterly) rather than one shared dashboard",
+        "Traces every KPI to one of the three strategic priorities and covers mission impact, financial health, stakeholder and learning & growth perspectives",
+        "Includes a finance panel with indicators like months of cash/LUNA, operating reliance, debt ratio and operating margin",
+        "Tags KPIs leading or lagging with at least one leading indicator per perspective",
+        "Provides a KPI definitions table with formula, system of record, a named person as owner, cadence, target and yellow/red thresholds",
+        "Names one north-star metric for the quarter and lays out a monthly leadership review agenda focused on red/yellow items plus a quarterly board review and annual reset"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "our board scorecard has 41 metrics and nobody reads it. help me cut it down. most are program output counts.",
+      "expected_output": "Diagnoses the current scorecard (lead/lag tags, objective mapping, owners), cuts to 5–8 board KPIs balanced across perspectives with thresholds, and moves operational metrics to the ED dashboard.",
+      "assertions": [
+        "Recommends diagnosing current metrics by mapping each to a strategic objective and tagging leading/lagging, cutting any that don't trace to an objective",
+        "Cuts the board scorecard to 5–8 KPIs and moves operational detail to the ED dashboard",
+        "Balances perspectives so the scorecard doesn't collapse into output counts, including financial health and people/culture",
+        "Requires targets with yellow/red thresholds and a named owner for each remaining KPI",
+        "Pulls program indicators from outcomes measurement definitions rather than designing new ones"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We don't have a strategic plan yet — the board says we'll do one next year — but our new ED wants a dashboard now. Also she wants me to build the program outcome indicators for our tutoring program from scratch and set up EOS L10 meetings while I'm at it.",
+      "expected_output": "Notes the dashboard must start from strategic objectives and recommends an interim set tied to provisional objectives or strategic planning first, and routes outcome indicator design and EOS rollout to their skills, borrowing only scorecard discipline.",
+      "assertions": [
+        "Explains every KPI must trace to a strategic objective and flags that without a plan the dashboard risks measuring whatever data is available",
+        "Recommends strategic planning (or provisional, explicitly temporary objectives) as the starting point and an annual reset once the plan exists",
+        "Routes designing tutoring program outcome indicators to the outcomes measurement skill, with the dashboard pulling from those definitions",
+        "Routes a full EOS/L10 rollout to the EOS skill, noting the dashboard borrows only scorecard discipline",
+        "Still includes the core dashboard requirements (owner, system of record, targets, thresholds) for any interim KPIs"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Help me pick outcome indicators, baselines and a follow-up survey plan for our rural meal delivery program.",
+      "better_skill": "nonprofit-outcomes-measurement"
+    },
+    {
+      "query": "Write the CEO narrative that goes with our dashboard in next month's board packet.",
+      "better_skill": "nonprofit-ceo-board-partnership"
+    }
+  ]
+}

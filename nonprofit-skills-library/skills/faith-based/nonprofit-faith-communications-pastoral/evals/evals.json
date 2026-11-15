@@ -1,0 +1,56 @@
+{
+  "skill_name": "nonprofit-faith-communications-pastoral",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm Rabbi Dana Feld at Temple Beth Shalom, a Reform congregation of about 350 households in Ann Arbor, Michigan. Our longtime member Harold Weiss died last night at 81. His daughter Miriam called me this morning. The funeral will probably be Wednesday and shiva at the family home. Can you draft the note to the congregation that goes out today? I want it to sound like me, not like the temple office.",
+      "expected_output": "Before or alongside a draft, confirms family consent and wording (circumstances, name, timing relative to family notifications), then provides a short first-person pastoral notice signed by the rabbi with Jewish funeral and shiva details marked as to-be-confirmed, a specific way to help with a named coordinator, a pastoral closing line, channel guidance, and a follow-up plan.",
+      "assertions": [
+        "Asks for or flags the need to confirm with Miriam/the family the wording, what may be shared about circumstances, how Harold is named, and that nothing goes out before family approval",
+        "Draft is in first person from the rabbi and does not open with logistics",
+        "Uses Jewish practice (funeral, shiva schedule/location, any donation-in-memory preference) rather than another tradition's cadence, with details left as placeholders to confirm",
+        "Includes a specific way to help with a named coordinator or sign-up rather than a generic 'let us know if you need anything'",
+        "Ends with a pastoral sentence and is signed with the rabbi's name and role, not the temple office",
+        "Advises against a social media post unless the family permits it and/or suggests a follow-up note (e.g., around shloshim)"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "pastor here (Methodist, suburban Ohio). there was a shooting at a grocery store in a city ~400 miles away yesterday, 6 dead. some folks are asking if I'm going to say something. honestly not sure. help me decide and if yes give me something short",
+      "expected_output": "Runs the 'should we say anything' test (naming event and community, the five questions with the speak/hold/escalate tally), notes timing and channel for a distant event, keeps it prophetic not partisan, and if speaking provides a short lament-first draft within the length rule using only confirmed facts.",
+      "assertions": [
+        "Works through the five decision questions (community expectation, tradition practice, whether silence is a message, who is served, six-month regret) or an equivalent explicit decision test before drafting",
+        "Treats silence as a legitimate decision and recommends a channel (e.g., pulpit with short follow-up email) rather than defaulting to social media",
+        "Any draft orders lament first, meaning second, action last, and states only facts confirmed by authorities",
+        "Any draft avoids naming a party, candidate or election while allowing naming the moral wrong",
+        "Any draft stays short (roughly 2-3 paragraphs / under about 300 words) and is to be signed by the pastor"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our associate pastor at Hope Presbyterian (Charlotte, NC) was put on leave Friday after a parent reported inappropriate texts with a 15-year-old in youth group. Police have been notified and the presbytery is starting an investigation. Our communications director drafted a statement for the local news and wants to just send that same statement to the congregation Sunday morning. Our senior pastor asked me to write the congregation letter instead. Can you draft it?",
+      "expected_output": "Drafts (or outlines) a separate congregation letter under the senior pastor's name, coordinated with counsel, insurer, presbytery and the media plan, that acknowledges harm before process, states established facts and steps underway without naming the accused while the investigation is open, gives a route to an independent investigator, and closes with care for those harmed rather than institutional defense.",
+      "assertions": [
+        "Says the congregation letter should be separate from the press statement (not the same text) while coordinating facts with the media plan",
+        "Recommends coordination with legal counsel, the insurer and the presbytery/denominational judicatory before sending",
+        "Letter acknowledges harm before describing process and does not minimize or sensationalize",
+        "Does not name the accused pastor while the investigation is unconcluded and disclosure is not authorized",
+        "Provides a way for people with information to reach an independent investigator or authorities directly, not only through the church",
+        "Is written under the senior pastor's name and closes with care for those harmed rather than defending the institution"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Draft our year-end giving letter asking members to fulfill their 2026 pledges and preview the 2027 stewardship campaign.",
+      "better_skill": "nonprofit-faith-stewardship-giving"
+    },
+    {
+      "query": "Our faith-based housing nonprofit is laying off 12 staff after losing a HUD contract. Help me write the all-staff announcement from me as ED.",
+      "better_skill": "nonprofit-executive-communications"
+    }
+  ]
+}

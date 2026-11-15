@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-housing-affordable-rental-operations",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Riverbend Housing Alliance (nonprofit, Toledo OH, ~210 units across 4 properties) is opening a new 56-unit building, Maple Terrace, in spring. Funding is LIHTC plus HOME on 11 units and a city housing trust loan. The board wants a draft tenant selection plan to adopt at its February meeting. We'd like a preference for people experiencing homelessness and a local residency preference for Lucas County. Can you draft the TSP?",
+      "expected_output": "A board-ready TSP draft covering the required sections (program description with document hierarchy, eligibility, preferences with justification, application/waitlist and purge rules, screening with individualized review, income certification, reasonable accommodation, grievance/appeal, amendment clause), flagged for fair-housing legal review before adoption.",
+      "assertions": [
+        "Includes the core TSP sections: program description, eligibility, preferences, application/waitlist procedures, screening criteria, income certification, reasonable accommodation, grievance/appeal, and amendment/effective date",
+        "States a hierarchy of controlling documents for when funding rules conflict",
+        "Ties each preference (homelessness, Lucas County residency) to a stated justification and flags the residency preference in particular for fair-housing/disparate-impact review",
+        "Specifies a documented waitlist purge protocol (notice, response window, documented removal)",
+        "Keeps criminal-history screening narrow and individualized (nature, severity, recency, rehabilitation) rather than a blanket ban",
+        "Recommends counsel or fair-housing review (nonprofit-housing-fair-housing) before board adoption"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "quick q — we're a 3-property, 120-unit nonprofit landlord in Spokane and we've been self-managing but our maintenance guy quit and collections are a mess. should we hire a third-party property manager? if so what do we look for",
+      "expected_output": "Walks through the in-house vs third-party decision using scale, capacity, and full-cost comparison, then gives an RFP approach with a weighted scorecard, management-agreement terms to check, and an owner oversight rhythm that preserves the asset-management function.",
+      "assertions": [
+        "Applies the in-house vs third-party criteria (portfolio size/scale, maintenance and collections capacity) and recommends a full-cost comparison including supervision overhead",
+        "Recommends a weighted scorecard with weights set before opening proposals",
+        "Lists management-agreement terms to check such as termination for convenience, fee structure and caps on extra fees, reporting package, and owner approval limits",
+        "Describes an ongoing oversight rhythm (monthly package review, quarterly site visits/file sampling, annual review)",
+        "Warns that the owner must keep the asset-management function and verify manager-reported occupancy and delinquency against the general ledger"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "I'm the finance director at Hilltop Homes, a 40-unit LIHTC property we own in Asheville (year 9 of the compliance period). The roof and boilers are going to need replacing in about 4 years and our replacement reserve won't cover it. Our property manager suggested we just pull $60k from the replacement reserve this year to cover an operating shortfall from insurance increases and replenish it later. The board meets next week. What should I tell them?",
+      "expected_output": "Advises against using the replacement reserve for operations except where the regulatory agreement permits and then only as a board decision with a written replenishment plan; frames the issue in an asset-management plan with reserve-study reconciliation and early recapitalization planning.",
+      "assertions": [
+        "Advises against funding operations from the replacement reserve, noting it is permitted only where the regulatory/loan agreement allows and should be checked there first",
+        "If considered at all, frames it as a board-level decision with a written replenishment plan",
+        "Recommends reconciling the reserve study's projected needs against the reserve balance and regulatory deposit and placing the gap in the risk register / asset-management plan",
+        "Recommends planning a recapitalization or refinancing a few years ahead rather than waiting, referring to nonprofit-housing-development-finance",
+        "Suggests modeling insurance and tax expense trends explicitly in the budget/asset-management plan"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Our state HFA monitoring visit is in three weeks — what has to be in each tenant file for the Section 42 compliance review and how do we fix missing TICs?", "better_skill": "nonprofit-housing-lihtc-hud-compliance"},
+    {"query": "A tenant filed a HUD fair-housing complaint saying we denied her service-animal accommodation. How do we respond to the complaint?", "better_skill": "nonprofit-housing-fair-housing"}
+  ]
+}

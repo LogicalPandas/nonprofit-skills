@@ -1,0 +1,47 @@
+{
+  "skill_name": "nonprofit-donation-page-copy",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Can you rewrite our donate page? We're Coastal Kids Swim Safety in Charleston, SC. Current page: headline 'Donate,' amounts $10/$20/$30/$40, a small unchecked 'make this monthly' box at the bottom, and required fields for name, email, phone, full address, birthday, and 'how did you hear about us.' Last 12 months: median online gift $60 from email traffic, $35 from Instagram. About 4,000 page views and 120 gifts. Swim lessons cost us about $45 per child per session, per our finance director.",
+      "expected_output": "A rewritten page following the skeleton: an impact headline, ask strings recalibrated to median gifts by traffic source with an upward anchor, verified impact-per-amount statements, monthly giving at equal weight, a trimmed form, trust signals near the form and a confirmation page. It notes the current conversion rate and recommends mobile QA and one-change-at-a-time testing.",
+      "assertions": [
+        "Replaces 'Donate' with a headline that states impact and why to give now",
+        "Rebuilds the ask string with 3-5 amounts anchored around the actual median gift, includes one amount noticeably above typical giving, and suggests different strings for email vs. Instagram traffic",
+        "Ties impact statements to the finance-provided $45 per child cost (or marks them as needing program/finance verification) rather than inventing ratios",
+        "Gives monthly and one-time giving equal visual weight instead of a buried checkbox, and cuts required fields to name, email, payment and address only if needed for receipting, moving phone, birthday and 'how did you hear' to post-gift follow-up",
+        "Places trust signals (501(c)(3)/EIN, secure checkout, rating seal if held, a transparency line) near the form and writes a confirmation page that confirms the amount, restates impact, covers the receipt and offers only one secondary action",
+        "Calculates or references the roughly 3% conversion rate (120/4,000), recommends mobile QA and suggests testing one change at a time"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "60% of people who start our donation form don't finish. what's wrong",
+      "expected_output": "The response diagnoses before rewriting: it asks for funnel data and step drop-off and checks mobile rendering and load speed first. It then covers form friction (required fields, multi-step progress) and separates copy fixes from platform problems.",
+      "assertions": [
+        "Asks for or recommends funnel data (page views, form starts, completions) and step-level drop-off to find the leak point before rewriting",
+        "Says to check mobile rendering and load speed first",
+        "Recommends cutting required fields to what is operationally necessary and showing step progress in multi-step forms",
+        "Distinguishes copy/UX fixes from payment-platform problems and routes platform reliability to nonprofit-digital-fundraising-tools"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Write our donate page for the Westside Food Pantry year-end campaign. Use '$1 = 10 meals' — every food bank says that, so it's probably fine for us too. Also make the email appeal letter that drives people to the page while you're at it.",
+      "expected_output": "The response refuses to borrow an unverified impact ratio and asks for program/finance verification of the pantry's own figure. It writes the page with placeholders and routes the appeal email to annual-appeals, noting the ask amounts must stay consistent.",
+      "assertions": [
+        "Declines to use an impact ratio the org can't substantiate and requires program or finance verification of its own per-dollar figure, noting the credibility and compliance risk",
+        "Uses bracketed placeholders for amounts and outcomes rather than publishing invented ratios",
+        "Routes the appeal email to nonprofit-annual-appeals and notes the page's ask amounts and framing should match the appeal",
+        "Still provides donation page structure (impact headline, ask string, recurring option, trust block, confirmation copy)"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Should we switch from PayPal Giving to Givebutter or Classy for our online donations? Compare fees and reliability.", "better_skill": "nonprofit-digital-fundraising-tools"},
+    {"query": "Write a personal fundraising page template for participants in our charity bike ride.", "better_skill": "nonprofit-peer-to-peer-fundraising"}
+  ]
+}

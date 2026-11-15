@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-executive-search",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm board chair of Cascade Watershed Council in Bend, Oregon ($3.4M, 24 staff). Our ED of 9 years is leaving in June 2027. We've never run an ED search. Board is 14 people and half want to be on the search committee. Where do we start and what's the process?",
+      "expected_output": "A phased search process starting with pre-search: a 5–7 member chartered committee with written decision rights, an opportunity-framed position profile, comp benchmarking before sourcing, then structured sourcing, interviews, references, offer within range, announcement and onboarding handoff, with counsel/tax advisor review of comp.",
+      "assertions": [
+        "Uses the pre-search / search / post-hire phases and starts with pre-search readiness before discussing candidates",
+        "Recommends a search committee of 5–7 rather than half the board, with voting members who are directors",
+        "Calls for a written charter with decision rights: full board hires and approves comp range/profile; committee recommends at least two ranked finalists; chair is spokesperson and delivers the offer",
+        "Recommends an opportunity-framed position profile (not a job description) with first-year outcomes, short must-haves and a published salary range",
+        "Requires compensation benchmarking from Form 990 Schedule J peers and sector surveys before sourcing, approved via the rebuttable-presumption process with counsel or tax advisor review",
+        "Includes structured interviews with a calibrated rubric, on-list and back-channel references, and an announcement/onboarding handoff"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "what should we pay our next ED? we're a $2M arts org in Tucson. board wants a number by next meeting",
+      "expected_output": "A comp benchmarking method: 8–15 Schedule J peers matched on mission, budget, geography and size, layered with current sector surveys, summarized in a benchmark memo with a recommended range and midpoint rationale, approved through the rebuttable-presumption process.",
+      "assertions": [
+        "Recommends pulling the latest Form 990 Schedule J filings for roughly 8–15 peers matched on mission area, budget size, geography and staff size from Candid/GuideStar or ProPublica, verifying each is the most recent year",
+        "Recommends layering sector compensation surveys for percentile context and confirming the current edition with the publisher",
+        "Describes a comp benchmark memo with methodology, peer list with links, comparison table, and a recommended range with midpoint rationale",
+        "Explains approval by an independent, conflict-free body with documented comparability data recorded contemporaneously, and recommends counsel or tax advisor confirmation",
+        "Avoids asserting a specific salary figure from memory"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We have one finalist, Dr. Alan Whitfield, and the board loves him after a great dinner. He's asking for $40K above the range the board approved. Our chair wants to just say yes on the spot and skip references since 'everyone knows him.' Can we?",
+      "expected_output": "Advises against single-finalist ratification without structure, insists on on-list and back-channel references and consented background checks, and requires any range exception to go back to the full board with rebuttable-presumption documentation and counsel review.",
+      "assertions": [
+        "Flags single-finalist syndrome and unstructured 'chemistry' evaluation as failure modes, recommending structured, rubric-scored evaluation and ideally at least two finalists",
+        "Insists on on-list and back-channel references using a structured guide, plus background checks on the finalist with written consent",
+        "States the chair should not exceed the approved range unilaterally — the exception must go back to the full board",
+        "Requires documenting the compensation decision under the rebuttable-presumption process (independent approval, comparability data, contemporaneous minutes)",
+        "Recommends counsel or tax advisor review of the offer and comp documentation"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We need an emergency succession plan in case our ED is suddenly unable to serve.",
+      "better_skill": "nonprofit-succession-planning"
+    },
+    {
+      "query": "I start as the new ED in January — help me build my first 90 days and listening tour.",
+      "better_skill": "nonprofit-executive-transitions"
+    }
+  ]
+}

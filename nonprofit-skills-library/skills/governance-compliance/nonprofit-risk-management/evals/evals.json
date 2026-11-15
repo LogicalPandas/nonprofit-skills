@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-risk-management",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the new ED of Camp Tamarack Outdoor Programs in northern Minnesota, $1.8M budget. We run summer overnight camp for about 600 kids aged 8-15 with 40 seasonal staff and 60 volunteers, and we're the fiscal sponsor for a small project called Northwoods Paddlers. Our insurance is general liability, property, auto and D&O. Please do a risk assessment and tell me where our coverage probably has gaps.",
+      "expected_output": "A scored, owned risk register and an insurance cross-walk that surfaces abuse/molestation, fiscally sponsored project and volunteer coverage gaps, starting from risk rather than from policies.",
+      "assertions": [
+        "Produces a risk register with categories, likelihood and impact scoring (e.g., 5x5 heat map), mitigation strategy, owner and review date",
+        "Flags that abuse/molestation coverage is not automatically included in GL or umbrella policies and must be confirmed",
+        "Flags that the fiscally sponsored project may not be covered unless specifically named on the policies",
+        "Raises whether volunteers are covered and whether workers' compensation is in place for paid staff",
+        "Cross-walks each 'transfer via insurance' mitigation against an actual policy and recommends a nonprofit-specialist broker",
+        "Recommends at least annual review of the register by the board or a risk/audit committee"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "need a safeguarding policy asap for our mentoring program in Grand Rapids. volunteer mentors matched 1:1 with teens 13-17, they meet at coffee shops and text each other. background checks at signup only.",
+      "expected_output": "A safeguarding policy that replaces trust-based 1:1 and texting contact with structural controls, adds periodic re-screening, state-specific mandatory reporting and an outside-the-chain reporting channel.",
+      "assertions": [
+        "Addresses one-on-one and texting contact with structural controls (e.g., two-adult rule, no unsupervised electronic contact) rather than relying on trust",
+        "Recommends periodic re-screening of volunteers rather than background checks only at signup",
+        "Requires mandatory-reporter training and tells the user to confirm Michigan's specific reporting obligations",
+        "Includes an incident reporting channel outside the normal chain of command and severity-based escalation to ED, board and legal counsel",
+        "Recommends confirming abuse/molestation insurance coverage"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Rough week. Our bookkeeper may have been writing herself checks for months, and a staff laptop with a donor spreadsheet was stolen from her car. Our board chair wants a 'risk plan' covering all of this by Thursday's emergency meeting.",
+      "expected_output": "Handles the crisis response, continuity and insurance pieces itself while routing fraud controls to financial-controls and the data breach response to data-privacy.",
+      "assertions": [
+        "Routes segregation-of-duties and fraud-control redesign to nonprofit-financial-controls rather than designing it in full here",
+        "Routes the donor-data breach notification/response to nonprofit-data-privacy",
+        "Provides crisis response elements: named crisis team with backup designees, internal/board notification before external statements, a spokesperson and a decision log",
+        "Recommends a prepared holding statement for the incidents",
+        "Recommends checking insurance (e.g., cyber liability) and adding both incidents to the risk register with owners"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Set up dual signatures and approval limits so no single staffer can write and sign checks",
+      "better_skill": "nonprofit-financial-controls"
+    },
+    {
+      "query": "Write a volunteer application and onboarding checklist for our food pantry shifts",
+      "better_skill": "nonprofit-volunteer-management"
+    }
+  ]
+}

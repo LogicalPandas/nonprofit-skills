@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-mergers-fiscal-sponsorship",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm board chair of Lakeview Arts Collective ($900K, Grand Rapids, MI). Our ED is retiring and we have no internal successor. Riverside Arts Center ($2.5M, same city, overlapping youth programs, and a different ED style) approached us about merging. Our board is split. How should we evaluate this?",
+      "expected_output": "A staged merger feasibility process: courtship conversations testing rationale, LOI/NDA, bidirectional due diligence across all five categories with emphasis on culture, non-monetary negotiation terms, structure options, board approval/filings with counsel, and an integration plan handed to change management.",
+      "assertions": [
+        "Recommends exploratory conversations to test strategic rationale (e.g., leadership succession without an internal successor, complementary programs) before formal commitment",
+        "Recommends an LOI and mutual NDA before deep due diligence covering exclusivity, timeline and cost-bearing",
+        "Lays out bidirectional due diligence across financial, legal/compliance, programmatic, culture/governance and HR, emphasizing culture fit as the most-skipped category",
+        "Explains there is no purchase price and the negotiation centers on board representation, naming/brand, leadership selection and honoring restricted funds",
+        "Compares structures (statutory merger, consolidation, parent-subsidiary) and requires counsel review of structure, documents and state law steps",
+        "Mentions a funded 100-day integration plan with people/culture execution handed to change management"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "we're a 3-person food justice project, no 501c3. a bigger org offered to be our 'fiscal agent' for 8%. what should be in the agreement? we want to spin off eventually",
+      "expected_output": "Corrects the 'fiscal agent' terminology, explains Model A vs. Model C relative to the spin-off goal, and lists key agreement terms (fee, control/liability, IP/donor list, exit, insurance, reporting), with counsel review.",
+      "assertions": [
+        "Corrects 'fiscal agent' to 'fiscal sponsor' and explains why the distinction matters for the arrangement's tax treatment",
+        "Explains Model A vs. Model C and which fits a project planning to eventually spin off",
+        "Lists key terms: fee, scope of sponsor control/liability matching the model, IP and asset/donor-list ownership, exit/transition including restricted grants, insurance/indemnification, and reporting cadence",
+        "Treats the fee as a market norm to verify with sponsors or the National Network of Fiscal Sponsors rather than a rule",
+        "Recommends counsel review the agreement before signing"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Hope House is about to run out of cash in 3 months. Their board asked if we'd merge with them to 'save the program.' Our programs don't really overlap but our ED feels a moral obligation. Can we just do it quickly — maybe in 60 days?",
+      "expected_output": "Flags merger-as-rescue as a fragile rationale, insists on full due diligence and counsel, questions the 60-day timeline, and explores alternatives such as a program transfer or lighter structure.",
+      "assertions": [
+        "Flags merging purely to rescue a failing organization without complementary strategic logic as a fragile rationale that can import its financial problems",
+        "Insists on financial due diligence including liabilities, debt, restricted fund obligations and pending litigation before any commitment",
+        "Requires counsel review and confirming state filing, notice and attorney general requirements before setting a timeline",
+        "Suggests less integrated alternatives (e.g., parent-subsidiary, joint venture, or taking on a specific program) rather than a rushed full merger",
+        "Notes contracts needing change-of-control consent and restricted funds need documented treatment"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We want to start a 501(c)(4) alongside our 501(c)(3) to do more lobbying — how do we structure it?",
+      "better_skill": "nonprofit-c3-c4-structure"
+    },
+    {
+      "query": "Our merger is approved — how do we communicate it to anxious staff and keep morale up?",
+      "better_skill": "nonprofit-change-management"
+    }
+  ]
+}

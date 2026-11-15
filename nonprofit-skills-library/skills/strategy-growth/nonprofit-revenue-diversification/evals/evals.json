@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-revenue-diversification",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm ED of Open Door Workforce Partners in Albuquerque — $2.8M budget, and the state Workforce Solutions contract is $1.9M of it. Board wants to diversify. Ideas on the table: (1) a fee-based employer training service teaching local businesses to hire people with records, (2) a café staffed by our trainees, (3) renting our training center on weekends. How do we evaluate these?",
+      "expected_output": "Starts with a concentration diagnosis, screens the three ideas on the scorecard, models full-cost break-even, runs a UBIT screen for each with accountant/counsel review, considers structure, and recommends a time-boxed pilot as a distinct board decision.",
+      "assertions": [
+        "Calculates or flags the concentration from the state contract (~68% of revenue) as a red-flag dependency, treating thresholds as rules of thumb",
+        "Places the ideas on the social enterprise spectrum (café as program-integrated, employer training as mission-related or program-related, rental as unrelated) and notes the mission vs. economics tradeoffs",
+        "Uses an idea-screening scorecard (demand, mission fit, startup capital, time to break-even, staff gap) and kills ideas failing demand or mission fit before modeling",
+        "Calls for a break-even model using full-cost pricing including allocated overhead",
+        "Runs the three-question UBIT screen per idea (trade or business, regularly carried on, substantially related) and recommends accountant/counsel review of the determination",
+        "Recommends a time-boxed pilot with go/no-go thresholds presented to the board as a distinct decision"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "should we start charging $25/session for our counseling program? we're a small nonprofit, clients are low income. what do i need to figure out first",
+      "expected_output": "Frames fee-for-service as an earned-income decision requiring demand/willingness-to-pay validation, full-cost unit economics and break-even, mission-fit and UBIT checks, and a pilot.",
+      "assertions": [
+        "Recommends checking market demand/willingness to pay and mission fit before financial modeling",
+        "Builds or outlines a break-even calculation (price, variable cost, fixed cost including allocated overhead) and notes that if demand is below break-even it's a subsidized program, not a revenue strategy",
+        "Warns against pricing on direct costs only",
+        "Recommends a time-boxed pilot with go/no-go thresholds"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our board treasurer says our new thrift store and our monthly parking-lot rental 'are tax-free because we're a 501(c)(3).' We already launched both last spring and they net about $90K. Is he right? Also can you add these to next year's budget?",
+      "expected_output": "Explains the UBIT screen, notes possible exposure for the parking rental and the donated-goods exception to check for the thrift store, recommends immediate accountant/counsel review, and routes budgeting to the budgeting skill.",
+      "assertions": [
+        "Explains that 501(c)(3) status doesn't automatically make earned income tax-free and walks through the three-question UBIT screen",
+        "Flags the parking rental as a likely unrelated business with potential UBIT exposure and notes the sale-of-donated-goods exception to check for the thrift store",
+        "Recommends prompt accountant or tax counsel review since the ventures are already generating revenue, leaving the final determination to them",
+        "Tells the user to confirm current IRS guidance (Pub. 598, Form 990-T instructions) rather than relying on memory",
+        "Routes folding the streams into next year's operating budget to the budgeting skill"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We're too dependent on one foundation — help me build a major gifts program to grow individual giving.",
+      "better_skill": "nonprofit-major-gifts"
+    },
+    {
+      "query": "Help me build next year's operating budget and cash flow projection.",
+      "better_skill": "nonprofit-budgeting"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-housing-homelessness-services",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the new director at Harbor Light Shelter in Bangor, Maine — 45 adult beds, ESG and city funding, about $1.4M budget. Our current house rules require a breathalyzer at the door, a photo ID, a 7pm curfew with no exceptions, and residents have to do two hours of chores a day or they lose their bed. Beds are running at 70% while people sleep outside in winter. I need to rewrite our shelter operations manual. Help me outline it and tell me what to change.",
+      "expected_output": "A shelter operations manual outline covering the 11 sections, with low-barrier changes (dropping sobriety testing, ID requirements, rigid curfews, chores as conditions), each rule tied to a safety reason with graduated responses, a housing plan started at intake, ESG compliance, and review by an attorney or insurer.",
+      "assertions": [
+        "Recommends removing barriers such as breathalyzer/sobriety requirements, ID at intake, no-exception curfews, and chores as conditions of stay, linking them to empty beds",
+        "Requires each remaining rule to be tied to a safety rationale with a graduated response and a guest grievance procedure",
+        "Outlines the manual sections including intake, rules of conduct, case management with a housing plan starting at intake, safety/emergencies, staffing/training, discharge, data/HMIS, and a compliance appendix (ESG, VAWA, Equal Access)",
+        "Includes overdose response (naloxone) and de-escalation-first rules where staff do not restrain",
+        "Recommends tracking bed utilization and median length of stay as core metrics",
+        "Recommends attorney or insurer review of the rules and safety sections before adoption"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "front desk staff keep turning people away saying 'have you tried staying with family?' and our CoC says that's not real diversion. can you give me a script + quick training for diversion convos? we're a 30-bed family shelter in Fresno",
+      "expected_output": "A diversion conversation script that opens with safety, asks what happened and where they could stay if money weren't an issue, brainstorms with small resources, and closes with unconditional shelter access; training that stresses diversion is minutes long and never gatekeeping, plus a decision tree with legal aid referral.",
+      "assertions": [
+        "Script opens with a safety check and routes to the DV protocol if someone is unsafe",
+        "Includes an open question like 'if money weren't an issue, where would you stay tonight and who might you call?' to draw on the household's own network",
+        "Lists small resources that unlock self-resolution (mediation, bus ticket, short motel or rent bridge, help with a specific barrier)",
+        "States that shelter access remains unconditional and that diversion must not become gatekeeping or be tied to a quota",
+        "Includes a decision tree or step that refers households with an eviction or court date to legal aid partners"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "The city of Millbrook is planning to clear the riverside encampment (about 40 people) on December 3 and wants our outreach team to come along and 'help move people along.' At the same time, a couple at the camp has an eviction hearing next week from their old apartment and asked if we could write their answer to the court. How should our outreach team handle both?",
+      "expected_output": "Advises not participating in the clearance without a rehousing plan, documenting every household and working the by-name list before the date, giving notice, using field safety rules; and declines to draft legal filings, instead noting facts and warmly referring the couple to legal aid.",
+      "assertions": [
+        "Advises not participating in a clearance/sweep without a rehousing plan",
+        "Recommends documenting each household's location, contacts, and Category 1 homeless status and working the by-name list before the closure date",
+        "Recommends warm handoffs into coordinated entry for people who consent",
+        "Declines to draft the court answer and routes the couple to legal aid partners",
+        "Mentions field safety practices such as two-person teams and check-in/check-out"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Design our rapid rehousing program: rental assistance taper, landlord recruitment, and case management ratios.", "better_skill": "nonprofit-housing-rapid-rehousing-transitional"},
+    {"query": "How do we measure Housing First fidelity in our 50-unit permanent supportive housing building?", "better_skill": "nonprofit-housing-permanent-supportive-housing"}
+  ]
+}

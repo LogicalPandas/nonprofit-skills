@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-faith-stewardship-giving",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the new stewardship chair at Trinity Episcopal Church in Asheville, NC (about 260 active households, $780K operating budget). Last year's 'campaign' was one letter with a pledge card in October and we got pledges from only 41% of households. The vestry wants a real fall 2027 stewardship campaign so we can build the 2028 budget on solid numbers. Can you lay out the plan — calendar, what happens each week, what goes on the pledge card, and how we follow up?",
+      "expected_output": "Delivers an annual stewardship campaign plan treated as formation, not just an appeal: calendar built backward from Commitment Sunday, explicit theological frame, 4–6 week preaching/teaching arc with small-group material, lay testimonies, a pledge card with the listed fields and statement-of-intent note, Commitment Sunday as a liturgical moment, 6–8 weeks of non-shaming follow-up, results reporting without individual amounts, and cash-flow modeling.",
+      "assertions": [
+        "Diagnoses last year's single letter-and-card approach as treating stewardship as a fundraising appeal and anchors the new plan in a formation cycle (preaching/teaching arc, small groups, testimony)",
+        "Builds the calendar backward from a named Commitment Sunday with several weeks of preaching/teaching and mailed/digital touches before it",
+        "Recommends choosing one explicit theological frame (e.g., tithe or proportional/percentage giving) and keeping it consistent across materials",
+        "Specifies pledge card contents including amount with weekly/monthly/annual translations, payment methods, recurring-giving opt-in, and a note that the pledge is a statement of intent, not a legal obligation",
+        "Plans 6–8 weeks of personal, non-shaming follow-up with non-pledging households and publishing aggregate results (total, participation, average/median) without individual amounts",
+        "Advises modeling the uneven cash-flow curve (December surge, summer dip) rather than assuming 1/12 per month"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Need to fix our January giving statements before they go out. Small Methodist church, PA. Right now they just list a yearly total per family and say 'Thank you for your generosity!' Some people also paid wedding fees and bought tickets to our spaghetti dinner fundraiser through their giving accounts. What do the statements actually need to say?",
+      "expected_output": "Specifies §170(f)(8) acknowledgment contents: organization name, amounts, each single gift of $250+ listed separately, and the safe-harbor statement (no goods or services, or intangible religious benefits only); separates quid-pro-quo items like wedding fees and dinner tickets with a good-faith value estimate; tells user to verify thresholds in IRS Pub. 1771 and deliver by January 31.",
+      "assertions": [
+        "States that each single contribution at or above the acknowledgment threshold must be listed on its own line rather than only as an annual total, and tells the user to verify the threshold in current IRS guidance (e.g., Pub. 1771)",
+        "Provides safe-harbor language stating no goods or services were provided, or only intangible religious benefits",
+        "Explains that wedding fees covering facility/services and dinner tickets are quid-pro-quo transactions that must be separated with a good-faith estimate of fair market value, not receipted as fully deductible",
+        "Notes the intangible-religious-benefit carveout means ordinary offerings do not need a quid-pro-quo valuation of worship",
+        "Recommends delivering statements by January 31 (or before donors file) so they count as contemporaneous"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our youth group is going on a mission trip to Guatemala next summer (Cornerstone Bible Church, Kansas). Parents and grandparents want to write checks to the church 'for Emily's trip' or 'for Josh's trip' and get a tax receipt. Our secretary has been writing receipts that say 'Gift for Emily Carter's mission trip.' Is that OK? Also a family wants to give $5,000 through the church to help another specific family with medical bills.",
+      "expected_output": "Explains that gifts earmarked for a named individual are generally not deductible (Rev. Rul. 62-113) unless the church keeps full control and discretion; recommends a written discretion policy, governing-body criteria, safe-harbor language on forms, receipting to the fund not the person, and actually exercising discretion; applies the same test to the medical-bills gift and routes benevolence recipient-side treatment to the clergy-comp/finance skill, with tax review.",
+      "assertions": [
+        "States that gifts designated for a specific named individual are generally not deductible because they are earmarked (citing Rev. Rul. 62-113 or the control-and-discretion rule)",
+        "Says receipts must name the fund or ministry (e.g., a mission trip fund), never the individual, so current receipts naming Emily should change",
+        "Recommends a written policy that designations are preferences and the church retains full control and discretion, with approved participant criteria and language on the giving form",
+        "Notes the church must actually exercise discretion (e.g., occasionally redirecting funds) for the policy to hold",
+        "Applies the same earmarking problem to the $5,000 gift for a specific family and points to a discretionary benevolence fund, routing recipient-side treatment to the clergy-comp/finance skill or a tax advisor"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Write the Advent pastoral letter from our rector to the parish about hope during a hard year for our town.",
+      "better_skill": "nonprofit-faith-communications-pastoral"
+    },
+    {
+      "query": "Our secular arts nonprofit wants to plan a $3M capital campaign for a new theater — what's the feasibility study process?",
+      "better_skill": "nonprofit-capital-campaigns"
+    }
+  ]
+}

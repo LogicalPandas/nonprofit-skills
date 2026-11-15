@@ -1,0 +1,56 @@
+{
+  "skill_name": "nonprofit-donation-intake-grading",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm operations director at Second Chapter Thrift, a 501(c)(3) in Spokane, WA whose store funds our adult literacy program (about $1.2M in store revenue). Our donation door is chaos: volunteers accept everything, we're throwing roughly 40% of what comes in into the dumpster, and our hauling bill hit $3,100 last month. Our only guidance online says 'bring your gently used items.' Can you design an intake process for us from the drop-off door through sorting, including what we should be measuring every month?",
+      "expected_output": "An intake funnel (acceptance, sort, grade, triage into four lanes, receipt) with a published accepted/not-accepted list, sort-station and grading-rubric design, and a monthly dashboard tracking discard and diversion rates plus hauling cost. It should diagnose the high discard rate as mainly an acceptance-policy and donor-communication problem.",
+      "assertions": [
+        "Lays out staged intake decisions covering acceptance, sorting, grading, triage and the donor receipt rather than one undifferentiated donations pile",
+        "Routes graded items to distinct lanes including sell-floor, sell-online, salvage/recycle and discard, with discard treated as the last resort",
+        "Identifies the vague 'gently used' guidance and the lack of a written accepted/not-accepted items list as the main driver of the 40% discard rate, rather than blaming the graders",
+        "Recommends tracking discard rate and diversion rate monthly, measured on the same basis (weight or unit) each month",
+        "Recommends adding hauling/tip/recycler fees into the true cost of donation processing",
+        "Recommends a sort station physically separate from the sales floor and/or testing electrical items before they reach the floor"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "quick one - our volunteers at the Hope Closet resale shop keep arguing about whether a shirt is 'good enough' to put out. two locations, ~60 volunteers. can you just give me a grading system for clothing we can laminate and stick at the sort table?",
+      "expected_output": "A concise clothing grading rubric with defined tiers (Premium/Boutique, Standard, Value/As-Is, Reject), clear criteria per tier, and the lane each tier routes to, formatted as a one-page station card with a note to add example photos.",
+      "assertions": [
+        "Provides a clothing rubric with distinct named tiers, including a top boutique/premium tier, a standard tier, a value/as-is tier and a reject tier",
+        "Gives observable criteria for each tier (e.g., stains, tears, odors, working zippers/buttons, wear level)",
+        "Assigns each tier a destination lane, with rejects routed to a textile recycler/salvage rather than straight to the trash except for wet or contaminated items",
+        "Recommends adding example photos for each tier on the laminated card to reduce disagreements between volunteers",
+        "Suggests routing like-new or designer pieces to a designated reviewer or online review instead of the general rack"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "A regular donor dropped off six bags of clothes and a box of kitchen stuff at our Habitat-style resale store in Ohio and asked our volunteer to write '$650' on the receipt so she can deduct it. The volunteer did it. Also our current receipt is just a blank slip with a date. What should our at-donation receipt say, and what do we do about this one?",
+      "expected_output": "A compliant at-donation receipt template (org name, EIN, date, category description, no value, no-goods-or-services statement) plus guidance that staff should never write a value; the $650 situation should be handed to the in-kind gift acceptance process because it crosses into donor tax valuation and Form 8283 territory.",
+      "assertions": [
+        "Provides a receipt template including the organization's name, EIN and date received, with items described by general category only",
+        "States that the organization should not write a dollar value on the receipt and that the donor is responsible for valuing their own non-cash gift",
+        "Includes a statement that no goods or services were provided in exchange for the donation",
+        "Explains that writing a value at the donor's request turns her valuation into an apparent organizational appraisal and should be stopped through volunteer training",
+        "Refers the $650 claim / Form 8283 question to the in-kind gift acceptance process (or nonprofit-in-kind-gift-acceptance) and tells the user to verify current IRS thresholds in IRS Publications 526 and 561",
+        "Recommends that a qualified reviewer or the person responsible for gift acceptance check the receipt wording before it is printed, since it is a tax document for the donor"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "A donor gave our thrift store a 2015 Honda Civic and wants a receipt showing what it's worth for her taxes. What do we need to send her?",
+      "better_skill": "nonprofit-in-kind-gift-acceptance"
+    },
+    {
+      "query": "Our sorted donations are piling up on the racks and nothing is moving. How should we set prices and markdowns for donated clothing?",
+      "better_skill": "nonprofit-retail-pricing-merchandising"
+    }
+  ]
+}

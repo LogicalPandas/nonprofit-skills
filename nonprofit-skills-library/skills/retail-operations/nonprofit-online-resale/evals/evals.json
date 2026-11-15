@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-online-resale",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "We're Northside Hospice Thrift in Grand Rapids, MI — three stores, about $2.4M in sales. Our sorters keep finding things like vintage Pyrex, designer handbags and Pendleton blankets that we've been putting out at $10-15. Leadership wants to start an online channel (ShopGoodwill and/or eBay) next quarter with one part-time staffer. Can you design the workflow from spotting an item to shipping it?",
+      "expected_output": "An online resale pipeline (identification, sold-comp research, photography and listing, fulfillment, customer service) with an identification threshold and category triggers, a listing template with condition disclosure, shipping standards, and a monthly channel report. It should also recommend starting narrow given one part-time staffer.",
+      "assertions": [
+        "Sets an identification threshold (a floor-price ceiling) plus named category triggers so a trained reviewer, not the general sort line, flags items for online review",
+        "Requires pricing from sold/completed comps on the target platform, not active asking prices, ideally at least three sold comps",
+        "Provides a listing structure with an explicit condition grade, itemized flaws tied to photos, and measurements/specs",
+        "Addresses shipping by measuring packed weight and box size and charging for or pricing in shipping, rather than absorbing it silently",
+        "Recommends starting with a narrow, high-confidence category because photography, listing and fulfillment are labor-intensive for one part-time staffer",
+        "Includes a monthly channel review covering metrics such as average sale price vs. floor estimate, sell-through time, shipping cost share, and dispute/return rate"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "our ebay seller rating just dropped to 96% after 4 bad reviews this month - 'item not as described' x3 and one 'took 9 days to ship'. we're a tiny church thrift shop doing maybe 30 listings a month. what are we doing wrong",
+      "expected_output": "Diagnoses the problems as condition under-disclosure and missed handling time, then recommends full flaw disclosure with photos, accurate condition grades, a same-day or next-day pack-and-ship routine, and generous dispute resolution to protect the seller rating.",
+      "assertions": [
+        "Links the 'not as described' complaints to under-disclosed or overstated condition and recommends naming every visible flaw in the listing text with a matching condition grade",
+        "Links the late-shipping complaint to batched or irregular fulfillment and recommends a same-day or next-day pack-and-ship routine within the platform's handling-time window",
+        "Explains that protecting the seller rating is an operational priority because disputes suppress future listing visibility",
+        "Recommends resolving open disputes generously rather than fighting buyers over a small sale price",
+        "Recommends standardized photography with close-ups of flaws and maker's marks"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "A sorter at our Goodwill-style store in Tucson pulled out what looks like a Louis Vuitton Neverfull, no receipt or dust bag, plus a box of 2019 baby walkers. My manager says list both on eBay tonight, the bag at $900 since that's what similar ones are listed at. Anything I should check first?",
+      "expected_output": "Advises checking authenticity before listing under the brand (list unbranded or route to the floor if unclear), pricing from sold comps rather than active listings, and checking the walkers against CPSC recalls and the platform's prohibited-items policy before listing anything.",
+      "assertions": [
+        "Warns against listing a possibly counterfeit item under the brand name and recommends authenticating first, or listing it as unbranded / routing to the floor if authenticity is unclear",
+        "Points out that $900 based on active listings is unreliable and recommends pricing from sold/completed comps",
+        "Recommends checking the baby walkers against CPSC recalls and the platform's prohibited/restricted items policy before listing",
+        "Notes that listing counterfeit, recalled or restricted items risks takedowns and account penalties"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We need a price list for the clothing racks in our thrift store and a color-tag markdown schedule.",
+      "better_skill": "nonprofit-retail-pricing-merchandising"
+    },
+    {
+      "query": "A donor gave us a painting worth maybe $8,000 and wants us to sign her Form 8283 before we sell it online. Do we need an appraisal?",
+      "better_skill": "nonprofit-in-kind-gift-acceptance"
+    }
+  ]
+}

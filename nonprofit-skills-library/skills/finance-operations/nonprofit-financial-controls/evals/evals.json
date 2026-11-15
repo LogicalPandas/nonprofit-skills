@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-financial-controls",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Mesa Verde Food Bank ($2.1M, Albuquerque) has a two-person finance team. Our bookkeeper Rosa enters all transactions, reconciles the bank accounts, holds the online banking login and can initiate ACH payments, and also sets up new vendors. Our ED signs checks. Our board treasurer is a retired CPA. Design our internal controls.",
+      "expected_output": "A segregation-of-duties map identifying Rosa's incompatible functions, specific compensating controls for a small team, a named threshold table and a board-adopted written policy, with auditor review.",
+      "assertions": [
+        "Maps authorization, custody and record-keeping and identifies that Rosa holds incompatible functions",
+        "Proposes independent monthly bank reconciliation review and sign-off by someone outside finance (e.g., the treasurer or ED)",
+        "Provides a specific approval/signing threshold table with dual approval above a set amount",
+        "Recommends bank positive pay and/or ACH block alerts as a compensating control",
+        "Requires a second approver for new vendor setup and payroll changes",
+        "Calls for a written, board-adopted financial policy and review by a licensed auditor"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "first audit ever, fieldwork in 10 weeks. we spent about $1.2M in federal pass-through funds this fiscal year. what do i need to do",
+      "expected_output": "An audit-prep plan that flags a likely Single Audit, a PBC list with owners and dates, book close steps, a single point of contact and board presentation.",
+      "assertions": [
+        "Flags that a Single Audit is likely required given federal expenditures counting pass-through awards, and tells the user to verify the current threshold",
+        "Provides a PBC list (e.g., trial balance, bank reconciliations, board minutes, grant agreements, payroll reports) with a named owner and due date for each item",
+        "Requires closing the books first: reconciliations, accruals, fixed assets and net asset roll-forward",
+        "Recommends one internal point of contact for auditor questions and an entrance conference",
+        "Recommends reviewing the draft statements and management letter before finalization and presenting the audit to the full board"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our auditor's management letter has two findings: (1) the ED approves her own credit card statement, and (2) there's no evidence anyone reviews the bank reconciliations. The ED wants me to respond that we're too small to fix these. Draft our response.",
+      "expected_output": "Drafts a corrective action plan that rejects the 'too small' framing and proposes compensating controls for each finding with root cause, owner and date.",
+      "assertions": [
+        "Does not accept 'too small' as the response and proposes compensating controls instead",
+        "Assigns credit card statement approval to a non-cardholder (e.g., board treasurer or chair) before payment",
+        "Proposes documented monthly bank reconciliation review and sign-off by someone who did not prepare it",
+        "Structures each response with the finding, root cause, specific control change, named owner and date",
+        "Recommends presenting the response to the finance committee/board and notes the repeat-finding risk"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Draft next year's operating budget and assumptions memo for the finance committee",
+      "better_skill": "nonprofit-budgeting"
+    },
+    {
+      "query": "Prepare our Q3 statement of activities by net asset class",
+      "better_skill": "nonprofit-financial-statements"
+    }
+  ]
+}

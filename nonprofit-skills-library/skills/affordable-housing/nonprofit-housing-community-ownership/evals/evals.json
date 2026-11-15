@@ -1,0 +1,50 @@
+{
+  "skill_name": "nonprofit-housing-community-ownership",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Northside Land Trust in Durham, NC is a new CLT (we have 6 homes, aiming for 40 in five years). Our board needs to pick a resale formula before our first resale. Some homes have HOME funds from the city. Typical scenario: buyer pays $175,000 for the building, does $4,000 of approved improvements, sells after 7 years; appraised building value then might be around $250,000 and area AMI has risen roughly 20%. Compare formula options and recommend one in a memo to the board.",
+      "expected_output": "A resale formula design memo that computes several formula families on the same worked example, shows what each resale price means for the next buyer's payment, addresses HOME fair-return requirements and resale-vs-recapture, and recommends putting the formula and example in the ground lease, with attorney review.",
+      "assertions": [
+        "Computes at least three formula families (e.g., fixed-percentage index, shared appreciation, AMI-indexed) on the same worked example with shown arithmetic",
+        "Computes or calls for the next buyer's monthly payment at each resale price and compares it to an affordability target, surfacing the subsidy/AMI trade-off",
+        "Addresses the HOME requirement that resale provisions give the owner a fair return and keep the home affordable to low-income buyers, and says each HOME unit uses resale or recapture, not both",
+        "Recommends that improvements credits require pre-approval and receipts and be capped",
+        "Recommends stating the formula and a worked example in the ground lease instrument rather than only in program policy",
+        "Recommends real-estate attorney review before adoption"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Our town (Bozeman-area, MT) has like 30 deed-restricted homes from a 2001 program, 30-year covenants, and honestly nobody's been tracking them since our housing coordinator left in 2019. Some expire in 2031. What do we do?",
+      "expected_output": "Lays out a stewardship rebuild: a portfolio registry, annual monitoring, public-records watch, an enforcement ladder, early renewal on a five-year-lead calendar, and permanent stewardship funding, with attorney review of renewal instruments.",
+      "assertions": [
+        "Recommends building a portfolio registry with recording data, expiration dates, formula terms, owner contacts, and lien status",
+        "Recommends renewing restrictions early, at least five years before expiration, rather than in the final year, using refinance or sale events as renewal moments",
+        "Describes an enforcement ladder from notice and negotiation through repurchase/ROFR to litigation as last resort",
+        "Warns that lapsed monitoring or tax foreclosure can make covenants unenforceable or extinguish them and recommends watching public records",
+        "Recommends dedicated, permanent stewardship funding (e.g., per-unit reserve or resale fee)",
+        "Recommends attorney review of any renewed or amended restrictions"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Can you just write the full ground lease for our CLT so we can start using it next month? We're in Burlington, VT, 501(c)(3), and our first two buyers close in December. Local credit union says they'll lend if the lease is 'standard.'",
+      "expected_output": "Declines to draft lease text and instead provides a ground lease key-terms outline for attorney drafting, emphasizing mortgagee protections and lender conformity, and notes the model and formula should be adopted first.",
+      "assertions": [
+        "Does not produce a ready-to-use lease and states the deliverable is a key-terms outline for a state real-estate attorney to draft or review before adoption or recording",
+        "Outlines the key ground lease sections including term, lease fee, use/occupancy, resale formula, repurchase option/ROFR, inheritance, mortgagee protections, and default/remedies",
+        "Emphasizes mortgagee protections (lender notice and cure, assignment to a qualified buyer, no termination while the mortgage is in good standing) as what makes homes financeable",
+        "Recommends confirming lease conformity with the lender and current Fannie Mae/Freddie Mac CLT ground lease requirements",
+        "Notes the board should adopt a model and resale formula before the key-terms outline is finalized"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "How should we run our homebuyer education class and choose which applicants get our next five CLT homes?", "better_skill": "nonprofit-housing-homeownership-programs"},
+    {"query": "We need to put together the capital stack and pro forma to acquire land for our community land trust's next 12 homes.", "better_skill": "nonprofit-housing-development-finance"}
+  ]
+}
