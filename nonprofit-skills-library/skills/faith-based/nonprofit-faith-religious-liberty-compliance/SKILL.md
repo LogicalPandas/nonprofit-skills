@@ -431,7 +431,7 @@ any applicable exceptions or defenses with counsel. Treat expressive-speech and 
 defenses as narrow and fact-dependent; retain the counsel-review gate before use.
 
 Title II reference: [DOJ statutory text, 42 USC §2000a](https://www.justice.gov/crt/title-ii-civil-rights-act-public-accommodations).
-Targeted coverage correction checked September 16, 2026; this is not a determination that
+Last checked September 16, 2026; this is not a determination that
 any particular faith-based venue is covered or exempt.
 
 ## Deep Dive: Fair Housing Act §3607(a)

@@ -53,8 +53,8 @@ the single most common cause of a search that collapses at the offer stage.
   compensation range and approving the final package under the IRS rebuttable-presumption-of-
   reasonableness process, and approving the position profile before it is published.
 - **Search committee** owns: running the process — sourcing strategy, screening, interview design
-  and scoring, reference calls, and recommending a finalist (typically one, sometimes two ranked)
-  to the full board. The committee does not hire; it recommends.
+  and scoring, reference calls, and recommending finalists (at least two, ranked, wherever the pool
+  allows) to the full board. The committee does not hire; it recommends.
 - **Board chair** owns: appointing the committee chair, being the single spokesperson to
   candidates on behalf of the board, and delivering the offer.
 - **Search firm (if engaged)** owns: sourcing execution, initial screening, market intelligence,

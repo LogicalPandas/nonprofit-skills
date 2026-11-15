@@ -75,8 +75,8 @@ accountability challenges. Build procedures assuming these conditions, not a sta
    sequence, and a designated closer sign-off.
 4. **Set the daily over/short threshold and escalation path**: define what dollar variance is normal
    register error (e.g., under $5) versus what triggers a manager review and, above a second
-   threshold, a report up to whoever owns org-wide financial controls per `nonprofit-financial-
-   controls`'s approval structure — this skill executes that org policy at store level rather than
+   threshold, a report up to whoever owns org-wide financial controls per
+   `nonprofit-financial-controls`'s approval structure — this skill executes that org policy at store level rather than
    setting the threshold itself.
 5. **Build the deposit and reconciliation cycle**: bank the counted deposit promptly (same or next
    business day), reconcile the bank-deposit slip against the POS close-of-day total, and route any

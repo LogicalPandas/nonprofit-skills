@@ -1,6 +1,6 @@
 ---
 name: nonprofit-faith-facilities-sanctuary
-description: "US worship-building operations: state property-tax exemption for religious use, RLUIPA zoning, facility-use policies for outside renters (interfaith co-use, 12-step, day care, weddings, funerals, cell tower), IRC §512(b)(3) rental UBIT and the §514 debt-financed trap, house-of-worship insurance (sexual-misconduct riders, 15-passenger van, Church Mutual / Brotherhood Mutual / GuideOne), deferred-maintenance FCAs, historic preservation, closed-church sale under denominational trust clauses (Dennis Canon, PCUSA, UMC, Jones v. Wolf), and sanctuary hosting. Triggers: 'facility use policy,' 'property tax exemption challenge,' 'wedding for non-member,' 'sell the building.' Not for trust-clause governance fights (nonprofit-faith-church-governance), church-990/UBIT (nonprofit-faith-990-exemption), RLUIPA statutory law (nonprofit-faith-religious-liberty-compliance), safe-sanctuary policy (nonprofit-faith-employment-ministerial-exception), or secular facilities (nonprofit-vendor-facilities, nonprofit-risk-management)."
+description: "US worship-building operations: state property-tax exemption for religious use, RLUIPA zoning, facility-use policies for outside renters (interfaith co-use, 12-step, day care, weddings, funerals, cell tower), IRC §512(b)(3) rental UBIT and the §514 debt-financed trap, house-of-worship insurance (misconduct riders, 15-passenger vans), deferred-maintenance FCAs, historic preservation, closed-church sale under denominational trust clauses (Dennis Canon, PCUSA, UMC, Jones v. Wolf), and sanctuary hosting. Use when asked about a 'facility use policy,' 'property tax exemption challenge,' 'wedding for non-member,' 'sell the building.' Not for trust-clause governance fights (nonprofit-faith-church-governance), church-990/UBIT (nonprofit-faith-990-exemption), RLUIPA statutory law (nonprofit-faith-religious-liberty-compliance), safe-sanctuary policy (nonprofit-faith-employment-ministerial-exception), or secular facilities (nonprofit-vendor-facilities, nonprofit-risk-management)."
 license: MIT
 metadata:
   supervision: "review"
@@ -79,7 +79,7 @@ congregational-title polity.
   subsequent guidance simplified but did not eliminate the analysis. Event parking and permit
   parking are still analyzed as real-property rental (usually excluded) unless services are
   bundled.
-- **Fulton v. City of Philadelphia, 593 U.S. ___ (2021)**: where the state acts as a
+- **Fulton v. City of Philadelphia, 593 U.S. 522 (2021)**: where the state acts as a
   contractor, a system of individualized exemptions triggers strict scrutiny of religious
   burdens. Read Fulton for the state-actor-pressure line (municipal facility-use conditions,
   government-tenant demands) — not as blanket authority for private-org rental discretion.

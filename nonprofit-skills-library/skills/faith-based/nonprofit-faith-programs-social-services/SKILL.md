@@ -228,7 +228,7 @@ designing around the mission first and discovering funding-source incompatibilit
 
 ## Program Family Playbooks
 
-Six operational contexts, each with the standard partners, funding, and religious-content design
+Seven operational contexts, each with the standard partners, funding, and religious-content design
 questions. Load the relevant subsection when the request is in that family.
 
 ### Food security / food pantry

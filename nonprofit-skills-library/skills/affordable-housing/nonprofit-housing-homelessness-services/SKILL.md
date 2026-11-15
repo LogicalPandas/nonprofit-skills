@@ -33,8 +33,8 @@ community's coordinated entry system. Concrete triggers:
   `nonprofit-housing-permanent-supportive-housing`.
 - Legal strategy for eviction defense or drafting court filings is outside this skill: note the
   issue and route the household to legal aid partners; do not draft legal documents.
-- International/humanitarian or refugee shelter (camps, displacement settings) belongs to the
-  library's international-aid pack, not this US-focused skill.
+- International/humanitarian or refugee shelter (camps, displacement settings) is outside this
+  US-focused skill and library.
 - Whole-community housing ecosystem mapping and gap analysis across AMI bands is
   `nonprofit-housing-continuum-planning`.
 - Fair-housing complaints and accommodation law deep-dives are `nonprofit-housing-fair-housing`.

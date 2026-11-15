@@ -87,7 +87,7 @@ within the signed commissioning agreement, covering the planned production and i
 terms. Budget the commission fee, development costs, and applicable production royalties
 separately; do not infer a royalty waiver or offset from payment of the commission fee.
 Follow `nonprofit-arts-commissioning-new-work` for the grant and contract terms.
-Targeted commissioning/licensing alignment checked September 16, 2026; actual rights and
+Last checked September 16, 2026; actual rights and
 royalties remain agreement-specific.
 
 ## Part 3 — Budgeting the Season: Per-Title Cost Estimating

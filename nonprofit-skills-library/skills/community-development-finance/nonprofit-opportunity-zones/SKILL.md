@@ -123,7 +123,7 @@ Two layers, both flow-through entities (partnership or corporation; trusts canno
    QOZBs invoking it to attest to that fact and identify the month qualification was lost.
 
 Testing reference: [IRS final regulations, 90% standard, first-year rules, and intangible-property use](https://www.irs.gov/pub/irs-drop/td-9889.pdf),
-pp. 362, 454–456, and 472. Targeted test correction checked September 15, 2026;
+pp. 362, 454–456, and 472. Last checked September 15, 2026;
 verify the rules applicable to the transaction before reliance. This is not expert sign-off.
 
 **Nonprofit-specific structural facts:**
@@ -256,8 +256,9 @@ commitments:
 - Treating OZ equity as "free mission money" — it is a tax-motivated equity product that expects
   market-rate returns; if the project can't carry those returns without gutting the mission, the
   answer is a covenant-heavy structure or no deal.
-- Forgetting that December 31, 2026 inclusion is **past** — legacy deferred gain came back into
-  income in 2026 tax year filings; verify the org's investors (if any) have addressed it, and
+- Forgetting the December 31, 2026 inclusion date — legacy deferred gain not already recognized
+  comes back into income on that date and is reported for the 2026 tax year; verify the org's
+  investors (if any) have planned for it, and
   never re-pitch the old fixed-date deferral to a 2027 investor.
 - Nonprofit takes a QOF LP interest expecting deferral — a (c)(3) has no capital-gain tax to defer;
   UBIT can flow through instead. Fix: PRI analysis or the sponsor role.
