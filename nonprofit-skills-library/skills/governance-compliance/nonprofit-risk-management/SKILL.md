@@ -1,6 +1,6 @@
 ---
 name: nonprofit-risk-management
-description: "Runs enterprise risk assessment and mitigation for nonprofits: insurance coverage review (general liability, D&O, professional liability, property, cyber, abuse/molestation), liability exposure mapping, crisis response and business continuity policy, and safeguarding/incident policy design for programs serving minors or vulnerable adults. Use when asked to conduct a risk assessment, review an insurance policy or coverage gaps, design a crisis communications/response plan, write an incident reporting and safeguarding policy, run background-check/screening protocols for staff or volunteers working with vulnerable populations, or build a business continuity/disaster recovery plan. Does not cover internal financial controls or fraud prevention (use nonprofit-financial-controls), data privacy/cybersecurity policy for donor data specifically (use nonprofit-data-privacy), or volunteer recruitment/onboarding mechanics generally (use nonprofit-volunteer-management)."
+description: "Runs nonprofit risk assessment and mitigation: risk register, insurance coverage review (GL, D&O, E&O, abuse/molestation, cyber, property), safeguarding and incident policy for programs serving minors or vulnerable adults, crisis response and business continuity. Use when asked 'do a risk assessment for our organization,' 'are we covered for this under our insurance,' 'we run programs for kids, what safeguarding policy do we need,' or 'build a business continuity plan.' Not for financial controls or fraud prevention (use nonprofit-financial-controls), donor data privacy (use nonprofit-data-privacy), or volunteer recruitment and onboarding (use nonprofit-volunteer-management)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,20 +11,16 @@ metadata:
 
 # Nonprofit Risk Management
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for organization-wide risk identification, insurance, crisis response, and
-safeguarding policy. Trigger tasks include: "do a risk assessment for our organization," "review our
-insurance policy — are we covered for X," "we run programs for kids — what safeguarding policy do we
-need," "write a crisis communications plan for [an incident]," "design an incident reporting
-procedure," "what background-check protocol should volunteers working with minors go through," or
-"build a business continuity plan in case we lose our building/ED/key system."
+This skill covers physical, reputational, program-safety and insurable risk.
 
-Boundary: this skill covers physical, reputational, program-safety, and insurable risk. Internal
-financial controls and fraud/segregation-of-duties design are `nonprofit-financial-controls`. Donor
-data privacy, PCI compliance, and data-sharing policy specifically are `nonprofit-data-privacy`.
-Volunteer recruitment and general onboarding mechanics are `nonprofit-volunteer-management` (this
-skill's screening protocols feed into, but don't replace, that onboarding process).
+- Internal financial controls, fraud and segregation-of-duties design: `nonprofit-financial-controls`.
+- Donor data privacy, PCI compliance and data-sharing policy: `nonprofit-data-privacy`.
+- Volunteer recruitment and general onboarding: `nonprofit-volunteer-management` (this skill's screening
+  protocols feed into, but don't replace, that onboarding process).
+- Executing media statements: `nonprofit-media-relations`. Full leadership pipeline planning:
+  `nonprofit-succession-planning`.
 
 ## Core Framework: Enterprise Risk Management (ERM) for Nonprofits
 
@@ -35,13 +31,11 @@ Move beyond ad hoc "what could go wrong" brainstorming to a structured **risk re
    (media/PR crisis, social media incident), compliance/legal (regulatory violation, employment
    claim), and governance (board dysfunction, ED departure without succession plan — see
    `nonprofit-succession-planning`).
-2. **Assess** each identified risk on two axes: **likelihood** (rare/unlikely/possible/likely/almost
-   certain) and **impact** (insignificant/minor/moderate/major/catastrophic) — plot on a 5x5 heat map
-   to prioritize, rather than treating every risk as equally urgent.
-3. **Mitigate** each high-priority risk with a named strategy: **avoid** (stop the activity),
-   **reduce** (add controls/training), **transfer** (insurance, contractual indemnification/waivers),
-   or **accept** (document the decision to retain the risk, usually for low-impact/low-likelihood
-   items only).
+2. **Assess** each risk on likelihood and impact (a 5x5 heat map is the default) to prioritize, rather
+   than treating every risk as equally urgent.
+3. **Mitigate** each high-priority risk with a named strategy (avoid, reduce, transfer via insurance or
+   contractual indemnification/waivers, or accept); document any decision to accept, usually for
+   low-impact/low-likelihood items only.
 4. **Assign ownership and review cadence** — a risk register with no named owner per risk and no
    review schedule (recommended: at least annually, presented to the board or a risk/audit committee)
    becomes a static document nobody revisits until after an incident occurs.
@@ -51,38 +45,27 @@ Move beyond ad hoc "what could go wrong" brainstorming to a structured **risk re
 
 ## Insurance Coverage Review
 
-Map coverage against the risk register rather than reviewing policies in isolation. Core policy
-types and what each actually covers:
+Map coverage against the risk register rather than reviewing policies in isolation. What each policy
+type misses is where the gaps hide:
 
-- **General Liability (GL)** — third-party bodily injury/property damage claims (e.g., a visitor
-  slips at an event); baseline coverage almost every nonprofit needs, but does not cover professional
-  errors or abuse claims — those need separate riders/policies below.
-- **Directors & Officers (D&O)** — covers board/officer decisions and governance-related claims
-  (e.g., wrongful termination allegations against the ED, a disgruntled former board member suing
-  over a removal); pairs with the bylaws indemnification clause (`nonprofit-bylaws-policy`) —
-  indemnification without D&O insurance behind it is a hollow protection if the organization lacks
-  funds to actually cover a claim.
-- **Professional Liability / Errors & Omissions (E&O)** — covers claims arising from the
-  professional service itself (e.g., a counseling nonprofit's clinical advice, a legal-aid org's
-  representation) — essential for any organization providing licensed or quasi-professional services,
-  not covered by GL.
-- **Abuse/Molestation Coverage** — a distinct rider or policy, NOT automatically included in GL or
-  even umbrella policies — mandatory to explicitly confirm for any organization serving minors,
-  elderly, or vulnerable adults (youth programs, camps, mentoring, disability services, some
-  faith-based programs); a shockingly common gap is assuming GL covers this when the policy
-  explicitly excludes it.
-- **Property insurance** — building, equipment, and contents; confirm whether the policy covers
-  replacement cost vs. actual cash value (depreciated), and whether it's adequate for owned vs.
-  leased space (see `nonprofit-vendor-facilities` for the lease-side obligations).
-- **Cyber liability** — data breach response costs, ransomware, and business interruption from a
-  cyber incident; increasingly necessary given donor/client PII exposure (coordinate with
-  `nonprofit-data-privacy` on the underlying data practices this insures against).
-- **Umbrella/excess liability** — extends limits above the underlying GL/auto/D&O policies for
-  catastrophic claims; cost-effective way to raise total coverage without buying up every underlying
-  policy's limit individually.
-- **Volunteer accident/workers' comp considerations** — confirm whether volunteers are covered under
-  GL, a separate volunteer accident policy, or excluded entirely; paid staff need workers'
-  compensation per state law regardless of nonprofit status.
+- **General Liability (GL)** — baseline third-party injury/property damage; does not cover professional
+  errors or abuse claims.
+- **Directors & Officers (D&O)** — governance claims (e.g., wrongful termination allegations against the ED,
+  a removed board member suing); pairs with the bylaws indemnification clause (`nonprofit-bylaws-policy`) —
+  indemnification without D&O insurance behind it is hollow if the organization lacks funds to cover a claim.
+- **Professional Liability / E&O** — claims from the service itself (clinical advice, legal-aid
+  representation); essential for licensed or quasi-professional services, not covered by GL.
+- **Abuse/Molestation Coverage** — a distinct rider or policy, NOT automatically included in GL or even
+  umbrella policies; confirm explicitly for any organization serving minors, elderly or vulnerable adults
+  (youth programs, camps, mentoring, disability services, some faith-based programs).
+- **Property** — confirm replacement cost vs. actual cash value, and fit for owned vs. leased space (see
+  `nonprofit-vendor-facilities` for lease-side obligations).
+- **Cyber liability** — breach response, ransomware, cyber business interruption (coordinate with
+  `nonprofit-data-privacy` on the underlying data practices).
+- **Umbrella/excess** — raises limits above GL/auto/D&O more cheaply than buying up each underlying limit.
+- **Volunteers and workers' comp** — confirm whether volunteers are covered under GL, a separate volunteer
+  accident policy, or excluded; paid staff need workers' compensation per state law regardless of
+  nonprofit status.
 
 ### Insurance Review Checklist
 
@@ -119,6 +102,21 @@ types and what each actually covers:
    notification vs. board notification vs. legal counsel engagement — a common failure mode is an
    incident that should have reached the board getting stuck at the program-manager level.
 
+Safeguarding policy skeleton:
+
+```
+[Organization] Safeguarding Policy — adopted [date], next review [date]
+1. Scope: programs, roles and settings covered; who counts as a minor or vulnerable adult
+2. Screening: checks required by role (background, registry, references); re-screen every [n] years
+3. Conduct: two-adult rule; no one-on-one unsupervised contact, including electronic/social media
+4. Training: mandatory-reporter obligations under [state] law; frequency; sign-off record
+5. Reporting a concern: channels (including one outside the chain of command); who receives reports
+6. Response: timeline; when law enforcement/child protective services is contacted (per [state] law)
+7. Escalation: severity levels -> ED / board / legal counsel notification
+8. Records: where incident records are kept, who can access them, retention period
+9. Insurance: abuse/molestation coverage confirmed (policy, limit, date checked)
+```
+
 ## Crisis Response and Business Continuity
 
 1. **Crisis response plan** structure: activation trigger (what counts as a crisis), a named crisis
@@ -147,13 +145,22 @@ types and what each actually covers:
 - Crisis response plan with holding statements
 - Business continuity/disaster recovery plan
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the ED or operations lead**, start from the risk register, not the insurance policy — buying
-  more coverage without first identifying what's actually exposed wastes budget on the wrong lines
-  and leaves real gaps (most commonly abuse/molestation coverage) unaddressed; run the tabletop
-  crisis exercise before an actual crisis, not after.
-- **As an advisor**, use the insurance-coverage cross-walk as a fast, concrete diagnostic to open a
-  broader risk conversation with a client board — a missing abuse/molestation rider or an unnamed
-  related entity on a D&O policy are specific, credible findings that build trust for a deeper
-  engagement, more effective than a generic "you should manage risk better" recommendation.
+- Start from the risk register, not the insurance policy; buying more coverage first wastes budget on the
+  wrong lines and leaves real gaps (most commonly abuse/molestation) unaddressed.
+- Use the insurance cross-walk as a fast, concrete diagnostic to open a broader risk conversation with a
+  client board; a missing abuse/molestation rider or an unnamed related entity on a D&O policy are specific,
+  credible findings.
+
+## Common Failure Modes
+
+- **Assuming GL covers abuse claims** when the policy explicitly excludes them; this is a shockingly common gap.
+- **Related entity not named** — a supporting 501(c)(4) or fiscal-sponsored project left off the parent's
+  policies.
+- **Incident stuck at program level** — an incident that should have reached the ED or board never leaves
+  the program manager.
+- **Single-person crisis team** with no backup designees, so the plan fails when that person is unreachable.
+- **Risk register with no owner or review date**, so nobody revisits it until after an incident.
+- **Screening only at hire**, with no periodic re-screen for staff and volunteers with unsupervised access.
+- **Untested crisis plan** — no tabletop exercise before an actual crisis.

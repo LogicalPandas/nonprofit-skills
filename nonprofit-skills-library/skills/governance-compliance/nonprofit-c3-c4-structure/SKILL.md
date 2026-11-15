@@ -1,6 +1,6 @@
 ---
 name: nonprofit-c3-c4-structure
-description: "Structures and operates paired 501(c)(3)/501(c)(4) entity arrangements: entity design decisions, the 501(h) expenditure test election for lobbying limits, substantial-part-test alternative, cost-sharing and shared-staff/shared-resource allocation compliance, common-control governance, and inter-entity transaction documentation. Use when asked to decide whether an organization needs a companion 501(c)(4), set up or review a dual c3/c4 structure, elect or evaluate the 501(h) expenditure test versus the substantial-part test, allocate shared staff time/overhead/facilities costs between the two entities, or document inter-entity transactions and cost-sharing agreements to withstand IRS scrutiny. Does not cover direct legislator meeting/testimony/lobby-day tactics (use nonprofit-legislative-advocacy) or general coalition MOU structuring (use nonprofit-coalition-building)."
+description: "Structures and operates paired 501(c)(3)/501(c)(4) entities: whether to form a companion c4, the 501(h) expenditure test versus the substantial-part test, shared-staff and overhead cost allocation, cost-sharing agreements and inter-entity grants. Use when asked 'should we set up a 501(c)(4) alongside our 501(c)(3),' 'should we make the 501(h) election,' 'how do we allocate shared staff time between our c3 and c4,' or 'draft a cost-sharing agreement.' Not for legislator meetings, testimony or lobby days (use nonprofit-legislative-advocacy) or coalition MOUs (use nonprofit-coalition-building)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -12,20 +12,12 @@ metadata:
 
 # Nonprofit 501(c)(3)/501(c)(4) Dual-Entity Structure
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for the legal/structural and compliance mechanics of operating a 501(c)(3) alongside
-a companion 501(c)(4), and for lobbying expenditure limit elections. Trigger tasks include: "should
-we set up a 501(c)(4) alongside our 501(c)(3)," "explain the difference between the 501(h)
-expenditure test and the substantial-part test," "should we make the 501(h) election," "how do we
-allocate shared staff time between our c3 and c4," "draft a cost-sharing/shared-services agreement
-between the two entities," or "are we at risk of the c4's activity jeopardizing the c3's exempt
-status."
-
-Boundary: this skill covers entity structure and expenditure-limit compliance. The actual tactics of
-meeting with legislators, preparing testimony, and lobby days are `nonprofit-legislative-advocacy`.
-Building multi-organization advocacy coalitions and their MOUs (a different kind of inter-
-organization document than the cost-sharing agreement here) is `nonprofit-coalition-building`.
+- Meeting with legislators, preparing testimony and lobby days: `nonprofit-legislative-advocacy`.
+- Multi-organization advocacy coalitions and their MOUs (a different kind of inter-organization
+  document than the cost-sharing agreement here): `nonprofit-coalition-building`.
+- Schedule C reporting on Form 990: `nonprofit-form-990`.
 
 ## Why Organizations Pair a 501(c)(3) with a 501(c)(4)
 
@@ -119,6 +111,28 @@ or resources — this is the failure mode every allocation practice below exists
    restriction language and monitoring confirming the funds are used only for activities the
    granting entity itself could fund directly.
 
+## Lobbying Expenditure Log
+
+Track continuously, one log per entity, so totals tie to Schedule C:
+
+| Date | Activity and bill/issue | Direct or grassroots | Entity (c3/c4) | Staff hours | Staff cost | Other cost | Running direct total | Running grassroots total | Limit check |
+|---|---|---|---|---|---|---|---|---|---|
+| [date] | [e.g., meeting with Rep. X staff on HB ___] | Direct | c3 | [hrs] | [$] | [$] | [$] | [$] | [under / near / over the elected limit] |
+
+## Verify Before Acting
+
+- [ ] Shared-staff allocations trace to contemporaneous timesheets, and shared costs trace to the signed
+      cost-sharing agreement's stated basis.
+- [ ] The c4 has actually paid its share of shared costs; any shortfall is flagged as a possible c3 subsidy
+      (and, for a 501(h) electee, a possible lobbying expenditure).
+- [ ] Lobbying totals are classified direct vs. grassroots and are under both the overall and grassroots
+      limits before Schedule C is prepared.
+- [ ] Any inter-entity grant has restriction language and monitoring; no c3 funds reach c4 political activity.
+- [ ] 501(h) limits, excise taxes and Form 5768 mechanics are confirmed against the statute and current
+      IRS guidance.
+- [ ] The structure or election recommendation is marked for review by tax counsel before the
+      organization acts; it carries tax-exemption risk.
+
 ## Common Failure Modes
 
 - No 501(h) election made, then treating lobbying informally under the vaguer substantial-part test
@@ -142,14 +156,10 @@ or resources — this is the failure mode every allocation practice below exists
 - Lobbying expenditure tracking log (direct vs. grassroots, against elected limits)
 - Inter-entity grant restriction language template
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the ED or general counsel liaison**, get contemporaneous timesheets and a signed cost-sharing
-  agreement in place before the c4 does any real work, not after — retroactively reconstructing an
-  allocation methodology under audit pressure is far harder than tracking it from day one; file Form
-  5768 early if the organization plans any regular advocacy work.
-- **As an advisor**, treat the decision to form a c4 as a significant structural commitment requiring
-  ongoing administrative discipline (separate books, timesheets, agreements), not a one-time legal
-  setup — flag to a client that the compliance burden of maintaining the wall between entities is
-  often underestimated relative to the benefit of unlimited lobbying capacity, and confirm the
-  organization's actual advocacy volume justifies it before recommending the structure.
+- Get contemporaneous timesheets and a signed cost-sharing agreement in place before the c4 does any real
+  work, not after; file Form 5768 early if the organization plans any regular advocacy work.
+- Treat forming a c4 as an ongoing administrative commitment (separate books, timesheets, agreements), not a
+  one-time legal setup; the compliance burden of the wall is often underestimated, so confirm the actual
+  advocacy volume justifies it before recommending the structure.
