@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-construction-volunteers
-description: "Run volunteer home-building (Habitat build model): multi-site build-season calendars, crew-leader development, skilled-trade recruitment, task design for unskilled volunteers, jobsite safety and incident response, AmeriCorps deployment, partner-family participation, food/hospitality logistics, and coordinating crews with the supervisor and inspection schedule. Use when a user says 'plan a build season across three sites', 'draft a build-day run-of-show', 'how do I grow crew leaders', 'what can unskilled volunteers do versus licensed trades', 'write the Saturday safety talk', or 'schedule around inspections'. Not for general volunteer recruitment and recognition (use nonprofit-volunteer-management), ReStore volunteer staffing (use nonprofit-retail-staffing), paid contractor scopes and repair programs (use nonprofit-housing-repair-preservation), site control and financing (use nonprofit-housing-development-finance), or sweat-equity policy design (use nonprofit-housing-homeownership-programs)."
+description: "Runs volunteer home-building on the Habitat build model: multi-site build-season calendars, task design for unskilled volunteers, crew-leader development, skilled-trade recruitment, jobsite safety and incident response, AmeriCorps deployment, partner-family build days, and inspection coordination. Use when a user says 'plan a build season across three sites', 'draft a build-day run-of-show', 'how do I grow crew leaders', or 'write the Saturday safety talk'. Not for general volunteer management (use nonprofit-volunteer-management), paid contractor repair programs (use nonprofit-housing-repair-preservation), or sweat-equity policy (use nonprofit-housing-homeownership-programs)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,22 +12,20 @@ metadata:
 
 # Volunteer Home Construction Program (the Habitat Build Model)
 
-## When to Use This Skill
+## Boundaries
 
-Use when the user says, in their own words:
+Covers the volunteer-powered new-construction cycle and produces four standard deliverables:
+build-season calendar, build-day run-of-show, site safety orientation outline, and crew-leader
+training outline.
 
-- "plan our build season across three sites without half the volunteers standing around"
-- "draft a run-of-show for Saturday's build day"
-- "how do I turn my Saturday regulars into crew leaders?"
-- "what can unskilled volunteers safely do, and what do we reserve for licensed trades?"
-- "write the tailgate safety talk for new volunteers"
-- "how should we deploy our AmeriCorps members?"
-- "the partner family starts on their own build Saturday — how do we run that?"
-- "who's bringing lunch, and do we have enough water and restrooms for 40 people?"
-
-Covers the volunteer-powered new-construction cycle and produces four standard deliverables: build-season calendar, build-day run-of-show, site safety orientation outline, and crew-leader training outline.
-
-**Boundary.** This skill covers volunteer construction operations only. Route out by exact name: general volunteer recruitment, retention, recognition, screening, and volunteer-program infrastructure → `nonprofit-volunteer-management`; ReStore and other retail volunteer staffing → `nonprofit-retail-staffing`; paid contractor scopes, critical home repair, weatherization, and preservation programs → `nonprofit-housing-repair-preservation`; site control, entitlements, pro formas, and the capital stack → `nonprofit-housing-development-finance`; sweat-equity policy design (hour requirements, qualifying activities, alternatives to construction hours) → `nonprofit-housing-homeownership-programs`.
+- General volunteer recruitment, retention, recognition, screening, and program infrastructure →
+  `nonprofit-volunteer-management`.
+- ReStore and other retail volunteer staffing → `nonprofit-retail-staffing`.
+- Paid contractor scopes, critical home repair, weatherization, preservation →
+  `nonprofit-housing-repair-preservation`.
+- Site control, entitlements, pro formas, capital stack → `nonprofit-housing-development-finance`.
+- Sweat-equity policy design (hour requirements, qualifying activities, alternatives) →
+  `nonprofit-housing-homeownership-programs`.
 
 ## The Operating Model
 
@@ -163,13 +161,16 @@ Partner families work construction hours on their own home and on others'; sched
 
 ## Food and Hospitality Logistics
 
-Hospitality is the program's retention engine; volunteers return for the work and the welcome.
+Hospitality is the program's retention engine. Put these on the run-of-show with named owners:
 
-1. Water: one station per 15–20 volunteers, checked hourly on hot days; shade or indoor rest area; electrolytes above 85°F. Done when the run-of-show names a hydration owner.
-2. Lunch: confirm provider, headcount, delivery time, and serving plan in writing 48 hours out; keep donated food simple (sandwiches, pizza) to limit food-safety risk; label dietary options. Done when the confirmation is attached to the run-of-show.
-3. Restrooms and handwashing: portable units serviced for peak headcount; handwash stations near food and before interior finish work. Done when service dates cover every build day.
-4. Registration and welcome: sign-in table with waivers, name tags, PPE issue, and a greeter who knows the day's plan. Done when a first-time volunteer is oriented within 15 minutes of arrival.
-5. End-of-day thanks: 5-minute wrap — what got done, what the house needs next, next sign-up ask. Done when the wrap is on the run-of-show.
+1. Water: one station per 15–20 volunteers, checked hourly on hot days; shade or indoor rest area;
+   electrolytes above 85°F.
+2. Lunch: confirm provider, headcount, and delivery time in writing 48 hours out; keep donated food
+   simple to limit food-safety risk.
+3. Restrooms and handwashing: portable units serviced for peak headcount on every build day;
+   handwash stations near food.
+4. Welcome and wrap: a first-time volunteer is oriented within 15 minutes of arrival; a 5-minute
+   end-of-day wrap covers what got done and the next sign-up ask.
 
 ## Coordinating with the Construction Supervisor and Inspection Schedule
 
@@ -210,6 +211,9 @@ The supervisor owns the scope; the volunteer coordinator owns the people; the ru
 - **Partner-family hours bottlenecked in the last month before closing.** Remedy: book family crew dates at season start and track monthly against their sweat-equity plan.
 - **First-time drywall or trim crew's rework exceeds the labor saved.** Remedy: pair a finish-quality crew leader, demo on a scrap surface first, and route finish coats to paid labor where warranty quality demands it.
 
-## Practitioner vs. Advisor
+## For advisors
 
-Practitioners (affiliate construction and volunteer staff): use the steps as daily operating discipline; the run-of-show, task cards, and handshake cadence are the working artifacts. Advisors and consultants assessing an affiliate: ask for one Saturday's run-of-show, the written youth and fall-protection policies, the incident and near-miss log, and the crew-leader roster with shadow-day counts — those four artifacts reveal more about program health than any mission statement.
+- To assess an affiliate, ask for one Saturday's run-of-show, the written youth and
+  fall-protection policies, the incident and near-miss log, and the crew-leader roster with
+  shadow-day counts. Those four artifacts reveal more about program health than any mission
+  statement.

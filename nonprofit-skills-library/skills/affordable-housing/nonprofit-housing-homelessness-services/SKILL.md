@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-homelessness-services
-description: "Operates US homelessness services: street outreach, emergency shelter operations, low-barrier and trauma-informed shelter practice, diversion and homelessness prevention, coordinated entry participation, HMIS data quality, and Point-in-Time counts. Use when a user says 'draft our shelter operations manual', 'what should our street outreach protocol include', 'train staff on diversion conversations', 'we need a coordinated entry access plan', 'plan our PIT count', or 'what are the ESG rules for shelter and prevention funding'. Not for rapid rehousing or transitional housing program design (use nonprofit-housing-rapid-rehousing-transitional), permanent supportive housing (use nonprofit-housing-permanent-supportive-housing), or drafting eviction-defense legal filings (route to legal aid partners)."
+description: "Operates US homelessness services: street outreach, emergency shelter operations, low-barrier and trauma-informed practice, diversion and homelessness prevention, coordinated entry access, HMIS data quality, and Point-in-Time counts. Use when a user says 'draft our shelter operations manual', 'what should our street outreach protocol include', 'train staff on diversion conversations', or 'plan our PIT count'. Not for rapid rehousing or transitional housing design (use nonprofit-housing-rapid-rehousing-transitional), permanent supportive housing (use nonprofit-housing-permanent-supportive-housing), or eviction-defense legal filings (route to legal aid partners)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,46 +12,30 @@ metadata:
 
 # Operating Homelessness Services
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for the front end of the homelessness system: reaching people where they are, getting
-them inside, keeping them from losing housing in the first place, and connecting everyone to the
-community's coordinated entry system. Concrete triggers:
+This skill covers the front end of the homelessness system: outreach, shelter, diversion and
+prevention, and connection to coordinated entry.
 
-- "Draft our emergency shelter operations manual."
-- "What should our street outreach protocol include? Teams keep getting turned away at encampments."
-- "Train staff on diversion / problem-solving conversations at the front door."
-- "We're a new provider — how do we plug into the Continuum of Care and coordinated entry?"
-- "Plan our Point-in-Time count."
-- "What can we actually spend ESG street outreach / prevention money on?"
-
-**Boundary — read before starting:**
-- Designing or operating rapid rehousing or transitional housing projects is
-  `nonprofit-housing-rapid-rehousing-transitional` — this skill covers them only as destinations to
-  refer households to.
-- Permanent supportive housing design and Housing First fidelity in permanent housing is
+- Designing or operating rapid rehousing or transitional housing →
+  `nonprofit-housing-rapid-rehousing-transitional` (this skill covers them only as referral
+  destinations).
+- Permanent supportive housing and Housing First fidelity in permanent housing →
   `nonprofit-housing-permanent-supportive-housing`.
-- Legal strategy for eviction defense or drafting court filings is outside this skill: note the
-  issue and route the household to legal aid partners; do not draft legal documents.
-- International/humanitarian or refugee shelter (camps, displacement settings) is outside this
-  US-focused skill and library.
-- Whole-community housing ecosystem mapping and gap analysis across AMI bands is
-  `nonprofit-housing-continuum-planning`.
-- Fair-housing complaints and accommodation law deep-dives are `nonprofit-housing-fair-housing`.
+- Eviction-defense strategy or court filings: note the issue and route the household to legal aid
+  partners; do not draft legal documents.
+- International/humanitarian or refugee shelter is outside this US-focused skill and library.
+- Community-wide continuum mapping and AMI-band gap analysis → `nonprofit-housing-continuum-planning`.
+- Fair-housing complaints and accommodation law → `nonprofit-housing-fair-housing`.
 
 ## The System Backbone: CoC, ESG, and HMIS
 
 Every deliverable in this skill sits inside three federal structures. Learn them first:
 
-1. **Continuum of Care (CoC)** — the regional planning body required by the McKinney-Vento Act as
-   amended by the HEARTH Act (2009), governed by the CoC Program rule (24 CFR Part 578). Key roles:
-   - **CoC Board** — sets written standards for administering assistance, ranks projects in the
-     annual HUD funding competition (the CoC NOFO), and can reallocate funds from underperforming
-     projects.
-   - **Collaborative Applicant** — submits the CoC's consolidated application and runs planning.
-   - **HMIS Lead** — operates the community's Homeless Management Information System.
-   - **Coordinated Entry Lead** — runs the access/assessment/prioritization pipeline.
-   - **Project applicants** — providers like the reader's organization.
+1. **Continuum of Care (CoC)** — the regional planning body under the CoC Program rule (24 CFR
+   Part 578). The CoC board sets written standards and ranks projects in the annual CoC NOFO (and
+   can reallocate funds from underperforming projects); know who your Collaborative Applicant,
+   HMIS Lead, and Coordinated Entry Lead are.
 2. **Emergency Solutions Grants (ESG)** — formula-allocated to states and entitlement
    localities, which subgrant to nonprofits. ESG components (24 CFR Part 576): **street outreach,
    emergency shelter, homelessness prevention, rapid rehousing, HMIS, and administration** (admin
@@ -137,10 +121,7 @@ subaward terms.
   outside; measure and manage bed utilization accordingly.
 - **Housing First orientation inside shelter**: housing search starts at intake, not after
   "readiness"; services are voluntary; sobriety and treatment are never conditions of staying.
-- **Trauma-informed practice** — institutionalize SAMHSA's six principles: physical and
-  psychological safety; trustworthiness and transparency; peer support; collaboration and
-  mutuality; empowerment, voice, and choice; and attention to cultural, historical, and gender
-  issues. In shelter terms: knock before entering a sleeping area; explain every rule and its
+- **Trauma-informed practice** — institutionalize SAMHSA's six principles. In shelter terms: knock before entering a sleeping area; explain every rule and its
   reason; give guests choices about location and services; ask "what happened to you," never "what's
   wrong with you."
 - **Equal access**: placement in single-sex facilities consistent with a person's gender identity

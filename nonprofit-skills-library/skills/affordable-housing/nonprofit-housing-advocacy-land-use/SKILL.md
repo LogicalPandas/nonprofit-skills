@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-advocacy-land-use
-description: "Advances affordable-housing and zoning-reform advocacy at the local level: upzoning, missing-middle, ADU, and parking-minimum policy arguments, inclusionary-zoning trade-offs, responding to NIMBY opposition at public hearings, housing element and housing action plan advocacy, housing ballot measures, and 501(c)(3) lobbying limits as they apply to housing work. Use when a user says 'help us prepare testimony for the planning commission hearing', 'the neighbors are organizing against our project', 'draft a one-pager supporting the missing-middle bill', 'our housing element is up for review', or 'can our 501(c)(3) support the housing bond'. Not for general lobbying mechanics and rules (use nonprofit-legislative-advocacy), coalition building (use nonprofit-coalition-building), elections and voter engagement (use nonprofit-voter-engagement), developing or financing the project itself (use nonprofit-housing-development-finance), or community housing-needs gap analysis (use nonprofit-housing-continuum-planning)."
+description: "Plans local affordable-housing and zoning-reform advocacy: upzoning, ADU, parking and inclusionary-zoning arguments, hearing testimony, answering NIMBY opposition, housing element comments, housing ballot measures, and 501(c)(3) lobbying classification for housing work. Use when a user says 'help us prepare testimony for the planning commission', 'the neighbors are organizing against our project', 'draft a one-pager on the missing-middle bill', or 'can our 501(c)(3) support the housing bond'. Not for general lobbying rules (use nonprofit-legislative-advocacy), coalition structure (use nonprofit-coalition-building), voter engagement (use nonprofit-voter-engagement), or financing the project (use nonprofit-housing-development-finance)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,32 +12,18 @@ metadata:
 
 # Nonprofit Housing Advocacy and Land Use
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit is trying to change what gets built where — or to get a specific
-affordable project approved — through local government:
-
-- "Help us write testimony for the planning commission hearing on the ADU ordinance."
-- "The neighbors are organizing against our 80-unit project — how do we respond?"
-- "Draft a one-pager supporting the missing-middle upzoning ordinance."
-- "Our city's housing element is up for review — how do we push for a stronger element?"
-- "Can our 501(c)(3) endorse and campaign for the affordable-housing bond measure?"
-- "We want to end parking minimums citywide — what's the case and who do we persuade?"
-
-**Boundary — hand off when the ask is:**
-- General legislative advocacy mechanics: 501(h) elections and ceiling calculations, legislator
-  meetings, statehouse lobby days → `nonprofit-legislative-advocacy` (this skill applies those rules
-  to housing and land use; it does not re-derive them)
-- Building or managing a multi-organization coalition's structure, MOUs, and sign-on letters →
-  `nonprofit-coalition-building` (this skill mobilizes supporters; it does not design coalitions)
-- Candidate elections, voter registration, nonpartisan election-year activity →
-  `nonprofit-voter-engagement` (a 501(c)(3) may lobby on ballot measures but may never support or
-  oppose a candidate)
-- Site control, entitlement strategy from the developer's side, pro formas, the capital stack →
-  `nonprofit-housing-development-finance` (this skill builds public support for a project; that
-  skill builds the project)
-- Mapping the community's housing continuum, AMI-band gap analysis, deciding the org's program niche →
-  `nonprofit-housing-continuum-planning` (this skill uses that gap data as advocacy evidence)
+- General lobbying mechanics (501(h) election, ceiling calculations, legislator meetings, lobby
+  days) → `nonprofit-legislative-advocacy`; this skill applies those rules to housing and land use.
+- Multi-organization coalition structure, MOUs, sign-on letters → `nonprofit-coalition-building`;
+  this skill mobilizes supporters.
+- Candidate elections and voter registration → `nonprofit-voter-engagement` (a 501(c)(3) may lobby
+  on ballot measures but may never support or oppose a candidate).
+- Site control, developer-side entitlement strategy, pro formas, capital stack →
+  `nonprofit-housing-development-finance`; this skill builds public support for the project.
+- Housing-continuum mapping and AMI-band gap analysis → `nonprofit-housing-continuum-planning`;
+  this skill uses that gap data as advocacy evidence.
 
 ## The Local Land-Use Decision Map
 
@@ -77,7 +63,9 @@ Argument bank — use the version the data supports, and localize every number:
   triplex, fourplex, cottage courts, townhomes) rent and sell at lower price points than
   high-rise or single-family new construction — they are the "naturally affordable" tier. Oregon
   legalized them citywide statewide in 2019 (HB 2001); Minneapolis ended single-family-only zoning
-  in its 2040 plan; California enabled lot splits and two-unit builds (SB 9). Pair every upzone
+  in its 2040 plan; California enabled lot splits and two-unit builds (SB 9). Verify the current
+  status of any state law you cite in the state's code or legislature site before it goes in
+  print. Pair every upzone
   argument with an anti-displacement commitment (tenant protections, preservation funds) — unpaired
   upzoning invites the "developer giveaway" frame and loses progressive votes.
 - **ADUs:** Lowest-cost new housing per unit, invisible from the street, built by small owners
@@ -121,8 +109,6 @@ For any planning commission or council hearing (either a citywide ordinance or a
 3. **Structure each oral testimony (2-3 min):** name and stake in one sentence ("I've lived in
    [neighborhood] 12 years and I teach at [school]") → the ask stated once, plainly ("I'm asking
    you to approve Ord. 2026-14") → one local number → one human consequence → close with the ask.
-   Write to be heard, not read: short sentences, no statistics read aloud, rehearse against a
-   stopwatch.
 4. **Diversify the witness list:** neighbors carry the most weight against "outsider" framing, so
    put residents first; then employers ("we can't hire — entry-level workers commute 90 minutes"),
    faith and civic leaders, teachers and school nurses, and — for project approvals — future
@@ -162,7 +148,7 @@ capital fix — conceding a real problem and solving it disarms the room more th
 2. Run a confirmation cycle at 72h and 24h out (turnout halves without it); assign a
    speaker-coordinator who manages the sign-up list, sequences witnesses, and holds reserve
    speakers for rebuttal at the end.
-3. Brief supporters in one 45-minute call: the ask, the standard, the one sentence each should
+3. Brief supporters in one call: the ask, the standard, the one sentence each should
    say, and the rule that supporters never boo, jeer, or respond to opponents — the body
    remembers who was disciplined.
 4. Collect every supporter's name/address/email on a sign-in sheet — the hearing list becomes the
@@ -200,8 +186,8 @@ site plan):
 6. **Prepare the paper record:** every finding, every study, every adverse answer in writing, so
    that a wrongful denial is legally challengeable — many states give denials of compliant
    affordable projects heightened scrutiny (California's Housing Accountability Act allows fee
-   recovery against jurisdictions that deny compliant projects without the required findings);
-   knowing this shapes what the body does with a hostile room.
+   recovery against jurisdictions that deny compliant projects without the required findings;
+   verify current remedies in the state's statute with counsel); knowing this shapes what the body does with a hostile room.
 7. **Plan for both outcomes:** an approval-with-conditions acceptance statement, and a
    continuation/denial response — appeal deadline, litigation-consult flag (counsel), and
    supporter-communication plan.
@@ -241,7 +227,7 @@ For bond measures, levies, initiatives, and referenda affecting housing:
   "insubstantial part" of operations with no bright line, which is why most housing nonprofits
   make the 501(h) election). The (h) grassroots ceiling is 25% of the direct-lobbying ceiling —
   a ballot-measure mailer program burns the smaller sub-ceiling fast, so budget it before
-  committing.
+  committing (verify current ceiling rules in IRS guidance on the 501(h) election).
 - **The org's limits are the ceiling and the prohibition on candidates — never support or oppose
   a candidate or coordinate with one's campaign** (any election-year activity →
   `nonprofit-voter-engagement`).
@@ -288,6 +274,19 @@ Completion condition: every advocacy activity since the last quarter appears in 
 classification and funding source, and the quarterly reconciliation shows headroom against both
 ceilings.
 
+## Verify Before Acting
+
+- [ ] The deciding body, vote threshold, and decision standard (legislative vs. quasi-judicial)
+      are named in writing for this hearing or measure.
+- [ ] Every local number, ordinance name and number in the one-pager or testimony is checked
+      against the current agenda packet or staff report.
+- [ ] Any state law cited (zoning preemption, streamlining, housing-element enforcement) is
+      confirmed as currently in force at the official state source.
+- [ ] Each planned activity is classified in the lobbying log, and the quarterly reconciliation
+      shows headroom against both 501(h) ceilings.
+- [ ] No (c)(3) funds or restricted grants flow to a ballot-measure committee or candidate, and
+      counsel has confirmed the local quasi-judicial characterization.
+
 ## Common Failure Modes
 
 - **Arguing the stated objection only.** Rebutting traffic statistics while the room's real
@@ -307,17 +306,12 @@ ceilings.
 - **Losing the element cycle.** Housing element advocacy is time-boxed — commenting after the
   state certification closes the leverage window until the next cycle (often years away).
 
-## Practitioner vs. Advisor Application
+## For advisors
 
-- **As the practitioner (organizer, policy director, ED):** Maintain the activity/lobbying log
-  weekly, run the 72h/24h supporter-confirmation cycle for every hearing, and hold the
-  kitchen-table conversations personally — the witness list's credibility is your relationship
-  capital.
-- **As an advisor/consultant:** For a client's first land-use campaign, do what clients skip:
-  force the decision-point timeline (they plan for the hearing, not the staff report or
-  continuations), pressure-test the stated-vs-real read of the opposition before testimony is
-  drafted, and audit planned activities against the lobbying classification table and the
-  client's 501(h) ceiling before the calendar fills.
+- On a client's first land-use campaign, force the full decision-point timeline: clients plan for
+  the hearing, not the staff report or continuations.
+- Audit planned activities against the classification table and the client's 501(h) ceiling
+  before the calendar fills.
 
 ## Example
 

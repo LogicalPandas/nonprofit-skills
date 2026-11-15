@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-rapid-rehousing-transitional
-description: "Designs and runs rapid re-housing (RRH) and transitional housing (TH) programs under HUD CoC and ESG rules: RRH core components, progressive engagement and tapering, TH models and TH-vs-RRH choices, landlord recruitment with risk-mitigation funds, program budgets and per-household costs, and exits to permanent housing. Use when a user says 'design our rapid rehousing program', 'draft a progressive engagement assistance policy', 'recruit landlords for our rehousing program', 'should we use transitional housing or rapid rehousing', or 'our exits to permanent housing are too low'. Not for street outreach, shelter, diversion, or coordinated entry (use nonprofit-housing-homelessness-services); permanent supportive housing (use nonprofit-housing-permanent-supportive-housing); program design or theory of change (use nonprofit-program-design); program evaluation (use nonprofit-outcomes-measurement); ESG/CoC audits (use nonprofit-housing-lihtc-hud-compliance); fair housing law (use nonprofit-housing-fair-housing)."
+description: "Designs and runs rapid re-housing (RRH) and transitional housing (TH) programs under HUD CoC and ESG rules: RRH core components, progressive engagement and tapering, TH models and TH-vs-RRH choices, landlord recruitment and risk-mitigation funds, budgets and per-household costs, and exits to permanent housing. Use when a user says 'design our rapid rehousing program', 'draft a progressive engagement assistance policy', 'should we use transitional housing or rapid rehousing', or 'our exits to permanent housing are too low'. Not for outreach, shelter, diversion, or coordinated entry (use nonprofit-housing-homelessness-services); permanent supportive housing (use nonprofit-housing-permanent-supportive-housing); or ESG/CoC audits (use nonprofit-housing-lihtc-hud-compliance)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,29 +12,15 @@ metadata:
 
 # Rapid Re-Housing and Transitional Housing Programs
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when designing, funding, or operating the two "bridge" interventions on the US
-homelessness continuum: rapid re-housing (RRH) — temporary rental and move-in assistance plus
-case management that moves a household into permanent housing fast — and transitional housing
-(TH) — temporary housing with services, up to roughly 24 months, for households that need a
-structured runway before permanent housing. Concrete triggers:
+This skill covers designing, funding, and operating the two "bridge" interventions: rapid
+re-housing (RRH) — temporary rental and move-in assistance plus case management that moves a
+household into permanent housing fast — and transitional housing (TH) — temporary housing with
+services, up to roughly 24 months. Consultants benchmark against peer programs and national
+evidence; practitioners must also match the local CoC's written standards — say which lens
+applies to every deliverable.
 
-- "Design our rapid rehousing program for the new CoC/ESG grant."
-- "Draft a progressive engagement financial assistance policy — how much help, for how long, and when we taper."
-- "Write a landlord recruitment and engagement plan for our rehousing programs."
-- "Should we use transitional housing or rapid rehousing for youth / DV survivors / people leaving treatment?"
-- "Our RRH exits to permanent housing are too low — help us diagnose and fix it."
-- "Build the program budget — what should a rehousing household cost us, and what caseloads are realistic?"
-- "We run a 40-unit project-based transitional program — should we convert to scattered-site or RRH?"
-
-Audience: program directors and case managers who run RRH/TH, housing navigators and landlord
-liaisons, CoC collaborative-applicant staff, and consultants helping an organization respond to
-a CoC Notice of Funding Availability (NOFO) or ESG allocation. Consultants benchmark against
-peer programs and national evidence; practitioners must also match the local CoC's written
-standards — say which lens applies to every deliverable.
-
-**Boundary — read before starting:**
 - Street outreach, emergency shelter, diversion, eviction-prevention, coordinated entry
   assessment, and HMIS setup/mechanics are `nonprofit-housing-homelessness-services`. This
   skill assumes referrals arrive through coordinated entry; it does not design intake systems.
@@ -129,10 +115,9 @@ Progressive engagement is the discipline that separates RRH from a shallow, one-
   nonprofit carries vacancy risk under the master lease — budget vacancy loss and a rent-
   coverage reserve.
 - **TH vs RRH evidence:** the HUD Family Options Study — the strongest US experiment on
-  families — found families assigned RRH exited shelter much faster, at a monthly cost around
-  $880 per family versus roughly $2,700 per family per month for project-based TH (and over
-  $4,800 for shelter itself); long-term stability was best with a permanent subsidy. RRH also
-  cost about $8,500 per placement in national estimates. Lesson: for most families, RRH first;
+  families — found families assigned RRH exited shelter much faster and at a far lower monthly
+  cost than project-based TH or shelter (figures under Program Budgets below); long-term
+  stability was best with a permanent subsidy. Lesson: for most families, RRH first;
   reserve TH for populations with a demonstrated need for a structured, time-limited setting.
 
 ### When TH beats RRH (and when it only looks like it does)
@@ -226,7 +211,8 @@ service plan.
    window at 90/60/30-day marks. *Done when every household file shows a dated exit plan with
    a destination pipeline.*
 5. Budget the building, not just the household: operations, on-site staffing, services —
-   compare the per-household-month cost to the ~$2,700/month Family Options benchmark and to
+   compare the per-household-month cost to the ~$2,700/month Family Options benchmark
+   (study-era dollars; inflate before comparing) and to
    your own RRH cost per household. *Done when per-month and per-exit costs are computed and
    reported to the funder's format.*
 
@@ -242,7 +228,7 @@ pilot, but a PSH-eligible flag outranks everything:
 | Barrier type | Screening/arrears barriers, solvable with landlord work | Needs supervised setting (youth, re-entry, clinical step-down) |
 | Safety | No active threat | DV/stalking requiring confidential site and planning time |
 | Population evidence | Most adult households and families | Youth, DV survivors, institutional step-downs |
-| Cost per exit | RRH typically ~$4K–$9K total per household | TH typically ~$2.7K per household-month |
+| Cost per exit | RRH typically ~$4K–$9K total per household (study-era; inflate) | TH typically ~$2.7K per household-month (study-era; inflate) |
 | Conversion path | Subsidy taper ends cleanly | Needs move-on planning; risk of long stays |
 
 ## Measuring Exits to Permanent Housing
@@ -265,7 +251,9 @@ pilot, but a PSH-eligible flag outranks everything:
 - Size the assistance pool from historical medians (deposit + typical 2–4 months of subsidy for
   a progressively engaged program), then hold a contingency for the long-tail households the
   policy must still serve.
-- Benchmarks (national, adjust to local rents): RRH all-in roughly $880 per household per month
+- Benchmarks (national, from the HUD Family Options Study, which enrolled families in
+  2010–2012, and older national estimates — inflate to current dollars and adjust to local
+  rents before using them; verify against current HUD/NAEH cost data): RRH all-in roughly $880 per household per month
   during assistance, ~$8,500 per placement; project-based TH ~$2,700 per household-month;
   emergency shelter $4,800+ per household-month — use the shelter cost as the "cost of doing
   nothing" comparison in board and funder materials.
