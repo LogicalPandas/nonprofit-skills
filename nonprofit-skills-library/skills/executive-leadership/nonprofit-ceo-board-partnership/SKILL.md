@@ -1,6 +1,6 @@
 ---
 name: nonprofit-ceo-board-partnership
-description: "The CEO/executive-director side of the US nonprofit CEO-board partnership: CEO board report and dashboard narrative, exec-session prep, board-chair 1:1 agendas, annual CEO evaluation from the CEO seat (self-eval memo, 360 request, response to eval), managing up to the board, packet narrative discipline, consent-agenda coaching for the chair, and CEO-initiated generative-mode board conversations. Use when a nonprofit CEO/ED (or chief of staff, or advisor) says 'write my board report,' 'prep me for exec session,' 'agenda for my chair 1:1,' 'draft my CEO self-eval,' or 'CEO review with no written criteria.' Does not cover board-side work — running the board, committees, self-assessment, member job descriptions, bylaws, recruitment, Form 990 governance disclosure — use nonprofit-board-governance, nonprofit-board-recruitment, nonprofit-bylaws-policy, or nonprofit-form-990; for CEO transition use nonprofit-executive-transitions; for all-staff or funder CEO messages use nonprofit-executive-communications."
+description: "Drafts the CEO/executive director's side of the nonprofit CEO-board partnership: board report narrative, exec-session prep, board-chair 1:1 agendas, the CEO self-evaluation and response to the board's review, and CEO-initiated generative board conversations. Use when a CEO/ED or chief of staff says 'write my board report,' 'prep me for exec session,' 'agenda for my chair 1:1,' or 'draft my CEO self-eval.' Not for board-side work (use nonprofit-board-governance, nonprofit-bylaws-policy, nonprofit-board-recruitment), CEO transitions (use nonprofit-executive-transitions), or all-staff and funder messages (use nonprofit-executive-communications)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,56 +12,38 @@ metadata:
 
 # Nonprofit CEO ↔ Board Partnership (Executive Side)
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the user is sitting in the **CEO / executive director seat** (or staffing that
-seat as chief of staff, or coaching a CEO as an advisor) and needs to produce or improve an
-artifact the CEO owns toward the board: the monthly/quarterly **board report** and dashboard
-narrative, **executive-session** talking points, the standing **board-chair 1:1** agenda, the
-**CEO self-evaluation memo** and response to the board's written evaluation, or the framing of a
-**generative-mode** conversation the CEO wants the board to have. Trigger phrases include: "help
-me write my board report," "what should I put in exec session," "agenda for my 1:1 with the
-chair," "we do the CEO review without written criteria," "the board got blindsided last meeting,"
-"I need a good generative question," "coach my chair on consent agenda," or "draft my CEO
-self-evaluation."
+This skill is the **executive's side of the table** (CEO/ED, a chief of staff drafting for one, or
+an advisor coaching one).
 
-Boundary: this skill is the **executive's side of the table**. Board-side work — running the
-board itself, designing committees, board self-assessment, board member job descriptions, bylaws
-and policies, recruiting or onboarding directors, or Form 990 Part VI governance disclosure — is
-`nonprofit-board-governance`, `nonprofit-board-recruitment`, `nonprofit-bylaws-policy`, or
-`nonprofit-form-990`. Transition in or out of the CEO role (first-90-days plan, resignation
-sequencing, interim CEO handoff) is `nonprofit-executive-transitions`. All-staff, funder, or
-public-facing CEO messages are `nonprofit-executive-communications`.
+- Running the board, committees, board self-assessment, board member job descriptions:
+  `nonprofit-board-governance`.
+- Recruiting or onboarding directors: `nonprofit-board-recruitment`.
+- Bylaws and board policies: `nonprofit-bylaws-policy`.
+- Form 990 Part VI governance disclosure: `nonprofit-form-990`.
+- Transition in or out of the CEO role (first-90-days plan, resignation sequencing, interim CEO
+  handoff): `nonprofit-executive-transitions`.
+- All-staff, funder, or public-facing CEO messages: `nonprofit-executive-communications`.
 
 ## Core Frameworks
 
 Name the model the CEO is operating under before drafting artifacts — the same board report reads
 very differently against Carver-style limits vs. a traditional approval board.
 
-- **BoardSource CEO–board partnership model**: the CEO and board share responsibility for mission,
-  strategy, resources, and impact; the board holds the CEO accountable for results while the CEO
-  equips the board to govern. The CEO's job is not to *report to* the board but to *partner with*
-  it — supplying the information, framing, and questions the board needs to do its own governance
-  work well.
-- **Chait, Ryan, and Taylor — "Governance as Leadership" (three modes)**: high-functioning boards
-  move fluidly between three modes of work, and the CEO's job is to signal which mode a given
-  agenda item lives in.
-  - **Fiduciary mode** — stewardship of assets, legal/financial oversight, compliance monitoring.
-    Handled by consent agenda and exception reporting where possible.
-  - **Strategic mode** — shaping strategy with the CEO, choosing among defined options, allocating
-    resources. Handled by decision items with pre-read analysis.
-  - **Generative mode** — sense-making about ambiguous, upstream questions ("what is the problem
-    we are actually solving?"). Handled by a framed generative question, not a memo asking for a
-    vote.
-- **Carver "Executive Limitations" discipline as it shows up in CEO reports**: even boards that
-  don't formally adopt Policy Governance benefit from the CEO reporting **against written
-  limits/expectations** — "here is the boundary the board set; here is the evidence I stayed
-  inside it (or didn't, and why)." This converts the CEO report from a status update into a
-  monitoring instrument the board can actually act on.
-- **Consent-agenda discipline**: routine items (minutes, standard financials within tolerance,
-  policy renewals with no changes, committee reports with no exceptions) are bundled into one
-  motion, pulled off only on request. The CEO's job is to be honest about what belongs on consent
-  and to resist the temptation to bury a controversial item there.
+- **BoardSource CEO–board partnership model**: the CEO's job is not to *report to* the board but
+  to *partner with* it — supplying the information, framing, and questions the board needs to do
+  its own governance work.
+- **Chait, Ryan, and Taylor — "Governance as Leadership"**: signal which mode each agenda item
+  lives in. Fiduciary items go to consent agenda and exception reporting; strategic items are
+  decision items with pre-read analysis; generative items get a framed question, not a memo
+  asking for a vote.
+- **Carver "Executive Limitations" discipline**: even boards that don't formally adopt Policy
+  Governance benefit from the CEO reporting **against written limits/expectations** — "here is
+  the boundary the board set; here is the evidence I stayed inside it (or didn't, and why)." This
+  converts the CEO report from a status update into a monitoring instrument.
+- **Consent-agenda discipline**: be honest about what belongs on consent and resist burying a
+  controversial item there.
 
 ## Standard Deliverables
 
@@ -103,6 +85,22 @@ instead of a governance instrument.
    deep-dive material into appendices flagged as "read if interested," not into the main flow.
    Land the packet 5–7 days before the meeting; late packets guarantee that the meeting is spent
    reading, not governing.
+
+### CEO report skeleton
+
+```
+CEO Report to the Board — [meeting date]
+1. Decisions requested (page one)
+   - [One sentence per decision, e.g., "Approve ..."; or "None this meeting."]
+2. What changed since the last meeting, and why (3-6 bullets)
+3. Exceptions against board-set limits and goals
+   | Limit / goal (as adopted) | Status: inside / outside | Evidence | CEO response |
+   |---------------------------|--------------------------|----------|--------------|
+4. Generative question for the board
+   - The question, why now, and the input wanted (sense-making, red-teaming, prioritization)
+5. Heads-up items (already previewed with the chair)
+6. Appendices — read if interested
+```
 
 ## Dashboard vs. Narrative
 
@@ -224,45 +222,40 @@ seemed most/least engaged by, follow-up commitments (yours and directors'), and 
 differently next meeting. This is the artifact that turns a series of meetings into an actual
 CEO-board partnership over time.
 
+## Verify Before Acting
+
+Before the packet or evaluation memo ships:
+
+- [ ] Every decision the board is asked to make appears on page one, one sentence each (or "none").
+- [ ] At least one framed generative question is included, or the last one was within two meetings.
+- [ ] Every exception is tied to a limit, budget threshold, or goal the board actually adopted.
+- [ ] Nothing material in the packet is news to the chair; it was previewed in a 1:1.
+- [ ] Numbers in the narrative match the dashboard and the finance committee's figures.
+- [ ] Packet goes out 5–7 days before the meeting; the CEO narrative is within roughly 2–4 pages.
+- [ ] For evaluations: the criteria cited are the ones adopted in writing at the start of the period.
+
 ## Common Failure Modes
 
 - **Surprise items in the packet** — a decision, financial variance, or personnel issue appears
   in the packet with no prior heads-up to the chair. Fix by socializing anything material in the
   chair 1:1 first; the meeting is not the moment to break news.
-- **Dashboard-vs-narrative confusion** — the narrative just restates the dashboard in prose,
-  wasting packet space and telling the board nothing new. Fix by making the narrative do only
-  what the dashboard cannot: explain change, name exceptions, surface not-yet-metric concerns.
-- **No explicit decisions requested** — the packet describes a lot and asks for nothing, so the
-  board defaults to advisory-committee behavior. Fix by putting a "Decisions Requested" block on
-  page one of the CEO report every cycle, even if the answer is "none this meeting."
-- **No generative question offered** — the board sees only fiduciary and (rarely) strategic
-  content, and never gets to do generative work, so it either drifts into micromanagement or
-  disengages. Fix by putting one framed generative question on the agenda at least every other
-  meeting.
-- **Executive session run reactively** — the first exec session of the year is called because
-  something went wrong, which makes exec session itself feel like an alarm. Fix by scheduling a
-  short standing exec session every meeting so it becomes routine.
-- **CEO evaluation done without pre-set criteria** — the board evaluates against whatever
-  directors remember, which is unfair to the CEO and useless to the organization. Fix by getting
-  written criteria adopted at the *start* of the review period and submitting a self-evaluation
-  memo before the board deliberates.
+- **Dashboard restated in prose** — fix by making the narrative do only what the dashboard cannot.
+- **No explicit decisions requested** — the board defaults to advisory-committee behavior. Fix with
+  the page-one "Decisions Requested" block every cycle.
+- **No generative question offered** — the board drifts into micromanagement or disengages. Put one
+  framed generative question on the agenda at least every other meeting.
+- **Executive session run reactively** — schedule a short standing exec session every meeting.
+- **CEO evaluation done without pre-set criteria** — get written criteria adopted at the *start* of
+  the review period and submit the self-evaluation memo before the board deliberates.
 - **Reporting to individual directors instead of the board** — the CEO ends up with several
-  parallel bosses and no coherent direction. Fix by routing all substantive direction through the
-  chair and the full board, in writing.
+  parallel bosses. Route all substantive direction through the chair and the full board, in writing.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the CEO/ED (or chief of staff drafting for one)**: rebuild the packet before you rebuild
-  the board. Most "our board isn't working" complaints from the CEO seat are actually packet-
-  discipline and chair-1:1-discipline problems: no decisions requested, no generative question,
-  surprise items, dashboard-not-narrative, and no debrief loop. Fix those four cycles in a row
-  before you propose committee restructures or bylaws changes. Own the CEO evaluation process
-  from the executive seat — pre-set the criteria in writing, submit the self-evaluation memo, and
-  respond to the written evaluation in writing — without trying to control the board's judgment.
-- **As an advisor to a CEO/ED**: name which model the board is operating under (BoardSource
-  partnership, Governance as Leadership, Carver/Policy Governance, or traditional approval) and
-  align the artifacts to it before critiquing them; a Carver board reads a status-update report
-  as noncompliance, and a traditional board reads a limits-only report as evasive. Push the CEO
-  to move at least one agenda item per cycle into generative mode and to fix the chair 1:1 cadence
-  before touching the full-board meeting design — most CEO-board pain lives between meetings, not
-  in them.
+- Rebuild the packet before you rebuild the board: most "our board isn't working" complaints from
+  the CEO seat are packet and chair-1:1 discipline problems. Fix those four cycles in a row before
+  proposing committee restructures or bylaws changes.
+- Name the board's operating model before critiquing artifacts: a Carver board reads a status-update
+  report as noncompliance, and a traditional board reads a limits-only report as evasive.
+- Fix the chair 1:1 cadence before touching full-board meeting design — most CEO-board pain lives
+  between meetings, not in them.

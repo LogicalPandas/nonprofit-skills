@@ -1,6 +1,6 @@
 ---
 name: nonprofit-executive-search
-description: "Runs a nonprofit ED/CEO or C-suite executive search led by a board search committee (with or without an outside firm): charters the committee, sets board-vs-committee decision rights, writes an opportunity-framed position profile, benchmarks pay via Form 990 Schedule J and sector comp surveys, manages sourcing and a structured slate with a calibrated rubric and structured interviews (behavioral, case, scenario), runs references and background checks, and handles offer and announcement. Use when asked to launch an ED/CEO search, staff a search committee, write a position profile, set or defend an ED salary range, interview finalists, run references, negotiate an offer, or draft the hire announcement. Does not cover non-executive staff hiring (use nonprofit-hr, nonprofit-staff-retention), board recruitment (use nonprofit-board-recruitment), leadership pipeline or emergency succession (use nonprofit-succession-planning), or the incoming executive's first-90-days plan (use nonprofit-executive-transitions)."
+description: "Runs a board-led nonprofit ED/CEO or C-suite search: committee charter and decision rights, opportunity-framed position profile, pay benchmarking from Form 990 Schedule J and sector surveys, structured interviews, references, offer, and announcement. Use when a board says 'our ED is leaving, where do we start,' 'write the position profile,' 'what should we pay a new ED,' or 'run references on our finalist.' Not for non-executive hiring (use nonprofit-hr or nonprofit-staff-retention), board recruitment (use nonprofit-board-recruitment), succession plans (use nonprofit-succession-planning), or the new executive's first 90 days (use nonprofit-executive-transitions)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -12,22 +12,17 @@ metadata:
 
 # Nonprofit Executive Search
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for a board-run search to hire an executive director (ED)/CEO or C-suite leader
-(COO, CFO, CDO, CPO) at a nonprofit — whether the committee runs the search itself or engages an
-outside executive search firm to support it. Trigger tasks include: "our ED is leaving in nine
-months, where do we start," "who should be on the search committee," "write the position profile
-for our next CEO," "what should we pay a new ED — the board thinks the number is too high,"
-"design the interview process so we don't just have chemistry chats," "run references on our
-finalist," "draft the offer letter and the announcement," or "the board and the search committee
-disagree on the finalist — who decides."
+Covers ED/CEO and C-suite (COO, CFO, CDO, CPO) hiring run by a board search committee, with or
+without an outside search firm.
 
-Boundary: this skill covers executive-level hiring processes run by a board search committee. For
-hiring, onboarding, and retaining non-executive staff, use `nonprofit-hr` and
-`nonprofit-staff-retention`. For recruiting new board members, use `nonprofit-board-recruitment`.
-For internal leadership pipeline and emergency-succession bench, use `nonprofit-succession-planning`.
-For the incoming executive's own first-90-days plan, use `nonprofit-executive-transitions`.
+- Hiring, onboarding, and retaining non-executive staff: `nonprofit-hr`,
+  `nonprofit-staff-retention`.
+- Recruiting board members: `nonprofit-board-recruitment`.
+- Internal leadership pipeline and emergency-succession bench: `nonprofit-succession-planning`.
+- The incoming executive's own first-90-days plan, and interim-ED workplans:
+  `nonprofit-executive-transitions`.
 
 ## Core Framework: BoardSource / TransitionGuides Executive Search Process
 
@@ -109,14 +104,15 @@ and credibility.
 - **Form 990 Schedule J** — the primary public source for nonprofit executive compensation. Pull
   the most recent 990s for 8-15 peer organizations matched on mission area, budget size (within
   roughly 0.5x-2x), geography, and staff size, from GuideStar/Candid or ProPublica Nonprofit
-  Explorer. Extract base compensation, bonus/incentive, other reportable compensation, retirement
+  Explorer (verify each filing is the latest available year). Extract base compensation, bonus/incentive, other reportable compensation, retirement
   and deferred comp, and nontaxable benefits from Schedule J Part II for the CEO/ED and for
   officers/key employees where the role is analogous.
 - **Sector compensation surveys** — layer on published surveys: GuideStar/Candid Nonprofit
   Compensation Report, Chronicle of Philanthropy annual nonprofit executive compensation coverage,
   and any subsector-specific survey (e.g., health, human services, arts, higher ed) the
   organization already has access to. Surveys give distributional context (25th/50th/75th
-  percentile) that a small 990 peer set cannot.
+  percentile) that a small 990 peer set cannot. Confirm the current edition and availability of
+  each survey with its publisher before citing it, and cite the edition year in the memo.
 - **Comp benchmark memo** — a 2-3 page deliverable to the committee and board: methodology, list
   of peer orgs used with links to the 990s cited, table of comparable roles with the extracted
   numbers, distributional context from the surveys, and a recommended range with midpoint
@@ -126,7 +122,9 @@ and credibility.
   independent body (typically full board or a compensation committee with no conflicts), rely on
   documented comparability data (this memo), and be recorded contemporaneously. Cross-reference
   `nonprofit-board-governance` for the mechanics of that vote and `nonprofit-form-990` for how the
-  decision is disclosed on Form 990 Part VI.
+  decision is disclosed on Form 990 Part VI. Verify current Form 990, Schedule J, and
+  intermediate-sanctions requirements in the IRS instructions for the filing year, and have
+  counsel or the organization's tax advisor confirm the process (see supervision note).
 
 ## Sourcing Strategy
 
@@ -178,7 +176,13 @@ Additional unbiased-hiring practices to build into the process:
 - **Calibrated scoring rubric** — a written scoring guide with anchored descriptions for each
   competency at each score level (e.g., 1-5), reviewed and calibrated by the committee on a
   practice candidate before real interviews. Every interviewer scores independently, then the
-  committee discusses divergences by evidence, not by feeling.
+  committee discusses divergences by evidence, not by feeling. Anchor format (one competency):
+
+  | Score | Financial stewardship (must-have) — what the evidence looks like |
+  |-------|-------------------------------------------------------------------|
+  | 1 | No example, or only team-level results with no personal role described |
+  | 3 | One relevant example with personal actions named; result stated but not measured |
+  | 5 | Specific example with personal actions, a measurable result, and reflection on what they would change |
 - **Consistent question set** — every candidate at a given stage gets substantially the same
   core questions in the same order, so scores are comparable.
 - **Diverse interview panels** — mixed by tenure, role, lived experience, and demographic
@@ -218,35 +222,42 @@ Additional unbiased-hiring practices to build into the process:
   call on the board for what" map. Then hand off to `nonprofit-executive-transitions` for the
   incoming executive's own entry plan.
 
-## Numbered Search Checklist
+## Numbered Search Checklist (with deliverables)
 
 1. **Charter** the search committee (5-7 members, written charge, decision rights vs. full board).
+   Deliverable: committee charter.
 2. **Profile** — write the position profile as an opportunity document with first-year outcomes.
+   Deliverable: position profile.
 3. **Benchmark** compensation via Form 990 Schedule J peers and sector surveys; board approves range.
+   Deliverable: comp benchmark memo.
 4. **Source** through search firm (if engaged), posting channels, direct outreach, and referrals.
+   Deliverables: written sourcing plan with target-org list and pool composition goal; slate tracker.
 5. **Screen** using blinded resume review scored against the rubric; advance candidates as a cohort.
+   Deliverable: calibrated scoring rubric with anchored score descriptions.
 6. **Interview** in structured rounds using behavioral + case + scenario questions and a
-   calibrated scoring rubric across a diverse panel.
+   calibrated scoring rubric across a diverse panel. Deliverable: structured interview guide.
 7. **Reference** with on-list and back-channel calls using a structured guide; run background
-   checks on finalists only.
+   checks on finalists only. Deliverable: reference-check guide tied to the same rubric.
 8. **Offer** — board chair delivers within the pre-approved comp range; document the rebuttable-
-   presumption process; escalate any range exception to the full board.
-9. **Announce** in the pre-sequenced order (staff → funders/partners → public).
+   presumption process; escalate any range exception to the full board. Deliverable: offer letter
+   framework with rebuttable-presumption documentation.
+9. **Announce** in the pre-sequenced order (staff → funders/partners → public). Deliverable:
+   announcement plan and drafts (internal, funder, public).
 10. **Onboard handoff** — board chair cadence and first-year expectations set; hand off to
     `nonprofit-executive-transitions`.
 
-## Standard Deliverables
+## Verify Before Acting
 
-- Search-committee charge and written charter with decision rights
-- Position profile (opportunity, context, first-year outcomes, must-haves, nice-to-haves, comp, timeline)
-- Compensation benchmark memo citing Form 990 Schedule J of comparable orgs plus sector surveys
-- Written sourcing plan with target-org list and pool composition goal
-- Candidate slate tracker
-- Calibrated candidate scoring rubric with anchored score descriptions
-- Structured interview guide with behavioral, case, and scenario questions
-- Reference-check guide (on-list and back-channel) tied to the same competency rubric
-- Offer letter framework with rebuttable-presumption documentation
-- Announcement communications plan and drafts (internal, funder, public)
+Before the offer is extended:
+
+- [ ] The full board (or a conflict-free compensation committee) approved the range and the final
+      package; no member with a conflict voted.
+- [ ] The comp benchmark memo is in the file, with links to the 990s and survey editions cited.
+- [ ] Board minutes record the decision, the comparability data relied on, and the vote,
+      contemporaneously.
+- [ ] The offer sits inside the approved range, or the exception went back to the full board.
+- [ ] Background-check consent is on file and any adverse finding was raised with the candidate.
+- [ ] Counsel or the tax advisor reviewed the offer letter and comp documentation (expert-required).
 
 ## Common Failure Modes
 
@@ -266,16 +277,11 @@ Additional unbiased-hiring practices to build into the process:
 - **Onboarding handoff dropped** — the announcement goes out and the board disappears; schedule
   the chair-ED cadence before the offer is even signed.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the board chair or search committee chair**, force the pre-search work to happen in the
-  right order: charter, profile, comp benchmark, and decision rights on paper — before any
-  candidate name is discussed. Every search failure this skill sees traces back to skipping one
-  of those four. Name which model applies to your search firm relationship (if any), including
-  where the firm's authority ends and the board's begins.
-- **As an advisor to a nonprofit board**, diagnose which of the common failure modes above is
-  actually in play before proposing tools — a board asking for "better interview questions" often
-  needs a written charter and a comp benchmark first. Frame recommendations as a sequenced action
-  plan tied to the numbered checklist with owners and dates, not a menu of best practices, and
-  flag decision-rights ambiguity in writing to the full board early enough to fix it before the
-  offer stage.
+- Force pre-search order — charter, profile, comp benchmark, and decision rights on paper —
+  before any candidate name is discussed; most search failures trace back to skipping one.
+- Diagnose which failure mode is in play before proposing tools: a board asking for "better
+  interview questions" often needs a written charter and a comp benchmark first.
+- Put any decision-rights ambiguity, including where a search firm's authority ends, in writing
+  to the full board early enough to fix it before the offer stage.

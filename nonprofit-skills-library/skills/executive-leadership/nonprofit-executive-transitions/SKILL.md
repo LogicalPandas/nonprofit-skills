@@ -1,6 +1,6 @@
 ---
 name: nonprofit-executive-transitions
-description: "Designs the transitioning nonprofit executive's own transition work: incoming ED/CEO/COO 30/60/90-day plan, listening-tour design and synthesis (board/staff/funders/partners/participants), first-board-meeting brief, interim/acting-ED workplan with mandate constraints, outgoing-ED handoff memo, and founder-to-professional-CEO or long-tenure-successor transitions. Use when asked to plan a new ED's first 90 days, design a listening tour, draft an interim/acting-ED mandate, write an outgoing ED's transition memo, prep the first board meeting, negotiate success with the board chair, run a STARS diagnosis, or manage a founder or long-tenure succession from the executive's own seat. Does not cover building an internal leadership pipeline or emergency-succession plan (use nonprofit-succession-planning); the board-run search that picks the next executive (use nonprofit-executive-search); or ongoing CEO-board partnership work past the transition (use nonprofit-ceo-board-partnership)."
+description: "Plans the transitioning nonprofit executive's own work: the incoming ED/CEO/COO 30/60/90-day plan, listening tour, first board meeting brief, interim-ED mandate and workplan, outgoing-ED handoff memo, and founder successions. Use when someone says 'build my first 90 days as the new ED,' 'design my listening tour,' 'I'm the interim ED, what goes in my workplan,' or 'I'm succeeding our founder.' Not for internal pipelines or emergency succession plans (use nonprofit-succession-planning), the board-run search (use nonprofit-executive-search), org-wide change plans (use nonprofit-change-management), or ongoing board partnership work (use nonprofit-ceo-board-partnership)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,48 +12,40 @@ metadata:
 
 # Nonprofit Executive Transitions
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for the transition work of the executive themselves — the incoming, outgoing, or
-interim ED/CEO/COO in the seat — not for the board's job of finding and hiring the next one.
-Trigger tasks include: "build my first 90-day plan as the new ED," "design my listening tour,"
-"prep me for my first board meeting," "write the outgoing ED's transition memo," "I'm the interim
-ED — what should be in my workplan," "we're moving from a founder to a professional CEO — how do
-I take the seat," "I'm succeeding a 20-year ED — what changes on day one and what doesn't,"
-"negotiate success with the board chair before I sign," or "map the risks in this founder
-transition." If the question is who to hire, the search timeline, or interview design, redirect
-to `nonprofit-executive-search`. If the question is how to build internal successors and an
-emergency plan, redirect to `nonprofit-succession-planning`. Once the executive is past ~180 days
-in seat, ongoing board partnership work moves to `nonprofit-ceo-board-partnership`.
+This skill is the transition work of the executive in the seat — incoming, outgoing, or interim
+ED/CEO/COO — not the board's job of finding and hiring the next one.
+
+- Who to hire, the search timeline, interview design: `nonprofit-executive-search`.
+- Building internal successors and an emergency succession plan: `nonprofit-succession-planning`.
+- The organization-wide change plan, stakeholder map, and reinforcement for a leadership change:
+  `nonprofit-change-management`. This skill is the executive's own entry or exit plan.
+- CEO-voice announcements and all-staff messages about the transition:
+  `nonprofit-executive-communications`.
+- Ongoing board partnership work once the executive is past ~180 days in seat:
+  `nonprofit-ceo-board-partnership`.
 
 ## Core Frameworks
 
 Three named frameworks anchor executive transition work; use them together.
 
-- **Watkins, *The First 90 Days*, adapted for nonprofits.** Diagnose the situation you're
-  inheriting using **STARS** — **S**tart-up (new program, no baseline), **T**urnaround
-  (organization in crisis, must staunch bleeding), **A**ccelerated growth (scale existing
-  success), **R**ealignment (once-successful org drifting, denial in the room), or **S**ustaining
-  success (inherit a healthy org from a strong predecessor). Each STARS type demands a different
-  posture: turnarounds reward decisive early cuts; realignments reward patient coalition-building
-  because the organization does not yet believe there is a problem; sustaining-success situations
-  punish premature change. Then plan **early wins** matched to the STARS type, and hold an
-  explicit **negotiating success** conversation with the board chair covering resources, expected
-  results, timeline, and what "success at 12 months" looks like — before the honeymoon ends.
-- **BoardSource / TransitionGuides executive transition management.** Divide the transition into
-  three phases: **pre-hire** (organizational readiness, transition committee, defining what the
-  role now requires — often the board's work but the incoming exec should ask what happened
-  here), **arrival** (announcement, first 90 days, formal introductions), and **post-arrival**
-  (6–18 month integration, board relationship reset, first strategic-plan cycle under the new
-  exec). A rushed handoff with no organizational readiness work predicts an 18-month failed
-  tenure regardless of the candidate's quality.
-- **Bridges transition model.** Distinguish the external **change** (the new ED starts Monday)
-  from the internal psychological **transition**, which moves through three zones: **ending**
-  (staff grieving the outgoing ED, letting go of "how we did it"), the **neutral zone**
-  (disorientation, low productivity, informal decision-making leaking to old power centers), and
-  **new beginning** (identification with the new direction). Most incoming EDs underestimate how
-  long staff and board live in the ending and neutral zone; naming which zone the organization is
-  in is often more useful than pushing harder for change.
+- **Watkins, *The First 90 Days*, adapted for nonprofits.** Diagnose the situation using
+  **STARS** (start-up, turnaround, accelerated growth, realignment, sustaining success). Each type
+  demands a different posture: turnarounds reward decisive early cuts; realignments reward patient
+  coalition-building because the organization does not yet believe there is a problem;
+  sustaining-success situations punish premature change. Plan **early wins** matched to the type,
+  and hold an explicit **negotiating success** conversation with the board chair (resources,
+  expected results, timeline, what "success at 12 months" looks like) before the honeymoon ends.
+- **BoardSource / TransitionGuides executive transition management.** Pre-hire (organizational
+  readiness, transition committee, what the role now requires — often the board's work, but the
+  incoming exec should ask what happened here), arrival, and post-arrival (6–18 month
+  integration, board relationship reset, first strategic-plan cycle). A rushed handoff with no
+  readiness work predicts an 18-month failed tenure regardless of the candidate's quality.
+- **Bridges transition model.** Name which zone the organization is in — ending (staff grieving
+  the outgoing ED), neutral zone (disorientation, informal decisions leaking to old power
+  centers), or new beginning. Most incoming EDs underestimate how long staff and board stay in the
+  ending and neutral zones; naming the zone is often more useful than pushing harder for change.
 
 ## The First 90 Days — Numbered Checklist
 
@@ -251,20 +243,11 @@ personally — expect this and pace the response.
   and is set up to fail. If this happened, use the negotiating-success conversation to
   retroactively install the missing readiness work.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the transitioning executive** (incoming, outgoing, or interim), your own first job is the
-  negotiating-success conversation with the board chair and the discipline to hold posture over
-  action for 60 days. Resist the pressure — from staff, board, and yourself — to prove you were
-  the right pick by moving fast. The listening tour, its synthesis, and the day-90 board brief
-  are your evidence base for everything that comes after; treat them as core work, not
-  onboarding admin. If you're the outgoing ED, your final deliverable is the handoff memo and a
-  clean, narrow post-departure availability commitment — nothing you do publicly after the
-  handoff helps your successor more than staying quiet.
-- **As an advisor to a transitioning executive or the board**, name which STARS situation and
-  which Bridges zone the organization is actually in before recommending pace; name whether the
-  role is incoming, outgoing, or interim and hold the mandate boundaries of each; and build the
-  founder-transition risk register explicitly rather than assuming goodwill will manage the
-  informal-authority problem. Frame every recommendation as a sequence with a decision date, not
-  a menu — a transition drifts into failure by accumulated small delays, not by a single wrong
-  call.
+- Name the STARS situation and the Bridges zone before recommending pace, and name whether the
+  role is incoming, outgoing, or interim so you hold that role's mandate boundaries.
+- Build the founder-transition risk register explicitly rather than assuming goodwill will manage
+  the informal-authority problem.
+- Frame every recommendation as a sequence with a decision date, not a menu — transitions drift
+  into failure by accumulated small delays, not by a single wrong call.

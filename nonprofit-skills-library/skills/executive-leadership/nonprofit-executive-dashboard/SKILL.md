@@ -1,6 +1,6 @@
 ---
 name: nonprofit-executive-dashboard
-description: "Designs the nonprofit ED/COO one-page executive dashboard and matching quarterly board scorecard: picking 8–15 cross-functional KPIs across finance, fundraising, programs, people/culture, and mission delivery; separating leading from lagging indicators; setting SMART targets and yellow/red thresholds; assigning owners and data sources; wiring the monthly leadership-team and quarterly board review rhythms; tying it to the strategic plan. Use when asked to build or fix an executive dashboard, KPI scorecard, leadership team scorecard, monthly ops review, or the board scorecard/metrics section of a board packet. Does not cover preparing the underlying financial statements (use nonprofit-financial-statements), program outcome and evaluation design (use nonprofit-outcomes-measurement), installing EOS org-wide (use nonprofit-eos-traction), writing the strategic plan (use nonprofit-strategic-planning), or the CEO's narrative board report that uses this dashboard (use nonprofit-ceo-board-partnership)."
+description: "Designs a one-page ED/COO KPI dashboard and a matching quarterly board scorecard: picks 8-15 cross-functional KPIs, balances leading and lagging indicators, sets targets and yellow/red thresholds, names owners and data sources, and sets review rhythms. Use when someone says 'design our ED dashboard,' 'our board scorecard has 40 metrics, cut it down,' or 'what leading indicators should we track.' Not for the financial statements (use nonprofit-financial-statements), program outcome design (use nonprofit-outcomes-measurement), full EOS rollout (use nonprofit-eos-traction), the strategic plan (use nonprofit-strategic-planning), or the CEO's board narrative (use nonprofit-ceo-board-partnership)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,27 +12,19 @@ metadata:
 
 # Nonprofit Executive Dashboard
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when an executive director, COO, CEO, or board chair needs a working
-cross-functional KPI system: a one-page dashboard the leadership team reviews monthly, and a
-shorter scorecard the board reviews quarterly. Trigger tasks include: "design our ED dashboard,"
-"pick the KPIs our leadership team should watch every month," "our board scorecard has 40 metrics
-and no one reads it — cut it down," "set targets and yellow/red thresholds for our KPIs," "we only
-report lagging numbers — what leading indicators should we add," "align the dashboard to the
-strategic plan," or "separate what the ED reviews weekly/monthly from what the board sees
-quarterly."
+This skill designs the dashboard *system* — metric selection, targets, thresholds, owners,
+layouts, and review rhythms — not the underlying data.
 
-Boundary: this skill designs the dashboard *system* — metric selection, targets, thresholds,
-owners, layouts, and review rhythms — not the underlying data. Preparing the financial statements
-that feed the finance KPIs is `nonprofit-financial-statements`. Designing program outcome
-indicators, theory of change, and evaluation methodology is `nonprofit-outcomes-measurement` (this
-skill *pulls from* those indicators but does not design them). Installing EOS across the whole
-organization (Vision/Traction Organizer, L10 meeting pulse, Rocks, People Analyzer) is
-`nonprofit-eos-traction`; this skill uses the scorecard *discipline* from EOS/Rockefeller Habits but
-does not install the full system. Writing the strategic plan the dashboard measures is
-`nonprofit-strategic-planning`. The CEO's narrative report to the board that *uses* this dashboard
-is `nonprofit-ceo-board-partnership`.
+- Financial statements that feed the finance KPIs: `nonprofit-financial-statements`.
+- Program outcome indicators, theory of change, evaluation methodology:
+  `nonprofit-outcomes-measurement` (this skill *pulls from* those indicators but does not design
+  them).
+- Installing EOS across the organization (V/TO, L10, Rocks, People Analyzer):
+  `nonprofit-eos-traction`; this skill borrows only the scorecard discipline.
+- The strategic plan the dashboard measures: `nonprofit-strategic-planning`.
+- The CEO's narrative board report that *uses* this dashboard: `nonprofit-ceo-board-partnership`.
 
 ## Core Framework: Two Dashboards, Not One
 
@@ -51,35 +43,27 @@ If the board is looking at monthly cash disbursements by vendor, the governance/
 broken (see `nonprofit-board-governance`). If the ED's team is only looking at quarterly
 lagging outcomes, they cannot steer.
 
-## Named Frameworks to Draw From
+## Frameworks and Defaults
 
-- **Balanced Scorecard, adapted for mission** (Kaplan & Norton, adapted): use four perspectives —
-  **mission impact** (replaces "customer" as the top perspective for a nonprofit), **financial
-  health**, **stakeholder/constituent**, and **learning & growth (people/culture)**. Force at least
-  one KPI per perspective so the dashboard cannot silently collapse into all-finance or all-output-
-  counts.
-- **Nonprofit Finance Fund financial-health indicators**: **months of cash / liquid unrestricted net
-  assets (LUNA)**, **operating reliance** (share of expenses covered by reliably renewable revenue),
-  **debt ratio**, and **operating surplus/deficit margin**. These are the finance-perspective floor
-  for any ED dashboard.
-- **Propel Nonprofits balance-sheet + income-statement indicators**: pairs balance-sheet strength
-  (months of LUNA, debt as % of unrestricted net assets, receivables aging) with income-statement
-  performance (revenue composition, program vs. M&G+fundraising expense mix, change in net assets)
-  — use to round out the finance panel beyond a single "months of cash" number.
-- **Rockefeller Habits / EOS scorecard discipline**: every KPI has a **named human owner** (not a
-  department), a **weekly or monthly cadence** with an actual number entered, and a **red/yellow/
-  green** status against target — reviewed at a standing leadership meeting. The point is not the
-  spreadsheet; it is the review meeting that closes the loop.
-- **Leading vs. lagging indicators**: a **lagging** indicator confirms what already happened (YTD
-  revenue, months of cash, program participants served). A **leading** indicator predicts it (major
-  gift pipeline stage-weighted value, grant proposals submitted this month, staff eNPS, program
-  waitlist growth). A dashboard with no leading indicators is a rearview mirror. Rule of thumb: aim
-  for at least one leading indicator per Balanced Scorecard perspective.
-- **SMART targets**: every KPI's target is Specific, Measurable, Achievable, Relevant, Time-bound —
-  and set *before* the period starts, not reverse-engineered from what was hit.
-- **The "one metric that matters most this quarter" rule**: name a single north-star KPI per quarter
-  (or per strategic priority) that the leadership team and board both watch. Prevents the dashboard
-  from becoming a wall of equal-weight numbers where nothing is actually the priority.
+- **Balanced Scorecard, adapted for mission**: four perspectives — **mission impact** (replaces
+  "customer" as the top perspective), **financial health**, **stakeholder/constituent**, and
+  **learning & growth (people/culture)**. Force at least one KPI per perspective so the dashboard
+  cannot silently collapse into all-finance or all-output-counts.
+- **Finance panel — default: Nonprofit Finance Fund indicators**: **months of cash / liquid
+  unrestricted net assets (LUNA)**, **operating reliance** (share of expenses covered by reliably
+  renewable revenue), **debt ratio**, and **operating surplus/deficit margin**. These are the
+  finance floor for any ED dashboard. Alternative: Propel Nonprofits' balance-sheet +
+  income-statement indicators (receivables aging, revenue composition, expense mix, change in net
+  assets) when the finance panel needs more than a single "months of cash" number.
+- **Scorecard discipline (Rockefeller Habits / EOS)**: every KPI has a **named human owner**, an
+  actual number entered on cadence, and a red/yellow/green status — reviewed at a standing
+  leadership meeting. The point is the review meeting that closes the loop, not the spreadsheet.
+- **Leading indicators**: a dashboard with no leading indicators is a rearview mirror. Nonprofit
+  examples: stage-weighted major gift pipeline, grant proposals submitted this month, staff eNPS,
+  program waitlist growth. Aim for at least one leading indicator per perspective.
+- **Targets set before the period starts**, never reverse-engineered from what was hit.
+- **One metric that matters most this quarter**: a single north-star KPI per quarter (or per
+  strategic priority) that both the leadership team and board watch.
 
 ## Numbered Checklist: Building the Dashboard
 
@@ -120,7 +104,13 @@ Follow in order — skipping steps is what produces the failure modes below.
   paired with the CEO narrative from `nonprofit-ceo-board-partnership`.
 - **KPI definitions document**, one row per KPI: name, plain-English definition, exact formula,
   system of record, owner (by name), cadence, target, yellow/red thresholds, leading/lagging tag,
-  strategic-objective link.
+  strategic-objective link. Format (rows are placeholders, not benchmarks):
+
+  | KPI | Definition / formula | System of record | Owner | Cadence | Target | Yellow / red | Lead/lag | Objective |
+  |-----|----------------------|------------------|-------|---------|--------|--------------|----------|-----------|
+  | Months of cash | Unrestricted cash ÷ avg monthly expenses | Accounting system | [CFO name] | Monthly | [ ] | [ ] / [ ] | Lag | [ ] |
+  | Weighted major gift pipeline | Sum of ask × stage probability | Donor CRM | [Dev director] | Monthly | [ ] | [ ] / [ ] | Lead | [ ] |
+  | Staff eNPS | Pulse survey score | HR survey tool | [HR lead] | Quarterly | [ ] | [ ] / [ ] | Lead | [ ] |
 - **Leadership-team monthly review agenda**: quick red/yellow scan (5 min) → focused discussion of
   every red and any newly-yellow KPI, owner narrates variance and proposed action (30–40 min) →
   north-star metric deep-dive (10 min) → decisions and owners captured. Reviews of green items are
@@ -132,12 +122,21 @@ Follow in order — skipping steps is what produces the failure modes below.
   and thresholds against the new budget; confirm owners and data sources; refresh the one-page
   layout; recommit to the review rhythm on the calendar.
 
+## Verify Before Acting
+
+Before the dashboard or board scorecard goes to the leadership team or board:
+
+- [ ] Every KPI traces to a named strategic objective; untraceable KPIs are cut.
+- [ ] Every KPI has a named owner (a person), one system of record, a cadence, a target, and
+      yellow/red thresholds.
+- [ ] Each Balanced Scorecard perspective has at least one KPI and at least one leading indicator.
+- [ ] Counts hold: 8–15 KPIs on the ED dashboard, 5–8 on the board scorecard, one north-star metric.
+- [ ] Finance KPI values reconcile to the latest financial statements from the finance lead.
+- [ ] Program indicators match the definitions used in `nonprofit-outcomes-measurement` work.
+
 ## Common Failure Modes
 
 - **Too many metrics / vanity-metric bloat** — a 40-KPI dashboard is a report, not a decision tool.
-  Cut to 8–15 for the ED, 5–8 for the board.
-- **No leading indicators** — dashboard only reports after the fact; team cannot steer. Force at
-  least one leading indicator per Balanced Scorecard perspective.
 - **Board scorecard = ED dashboard** — governance/management line broken. Split them and defend
   the split (see `nonprofit-board-governance`).
 - **No thresholds** — everything is a number with no red/yellow/green, so nothing ever triggers
@@ -151,15 +150,11 @@ Follow in order — skipping steps is what produces the failure modes below.
   scorecard measures whether they moved the needle. If the "dashboard" is a task list, it is a plan,
   not a scorecard.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the ED or COO**, protect the two-dashboard split and the monthly review meeting on the
-  calendar; those two decisions do 80% of the work. Bring one authored draft (candidate KPIs,
-  targets, thresholds, owners) to the leadership team rather than co-designing from a blank page —
-  the team edits far better than it invents, and dashboard-by-committee reliably lands at 30+
-  metrics.
-- **As an advisor**, diagnose before designing: pull the current dashboard, tag each metric
-  leading vs. lagging, map each to a strategic objective, and count owners — the gaps (usually: too
-  many lagging, no leading, no owners, no thresholds) name themselves and become the redesign
-  brief. Frame the redesign as a two-artifact deliverable — ED dashboard *and* board scorecard —
-  plus the KPI definitions document and the review-rhythm calendar, not just a prettier one-pager.
+- Bring one authored draft (candidate KPIs, targets, thresholds, owners) to the leadership team
+  rather than co-designing from a blank page; dashboard-by-committee reliably lands at 30+ metrics.
+- Diagnose before designing: tag each current metric leading vs. lagging, map it to an objective,
+  and count owners — the gaps name themselves and become the redesign brief.
+- Deliver two artifacts (ED dashboard *and* board scorecard) plus the KPI definitions document and
+  the review-rhythm calendar, not just a prettier one-pager.
