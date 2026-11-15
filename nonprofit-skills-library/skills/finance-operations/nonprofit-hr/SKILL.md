@@ -7,6 +7,7 @@ metadata:
   supervision_note: "FLSA exempt/non-exempt classification and wage-hour compliance carry DOL liability."
   date_added: "2026-09-07"
   date_added_source: "git:1860ed47a83901ff5e6d45abc4a2ef05be8fd4cd"
+  last_reviewed: "2026-11-11"
 ---
 
 # Nonprofit HR
@@ -76,14 +77,18 @@ volunteer recruitment/management is `nonprofit-volunteer-management`. Board memb
 
 - **FLSA exempt vs. non-exempt**: exemption requires meeting BOTH a duties test (executive,
   administrative, professional, or outside sales duties as defined by DOL regulations) AND a salary
-  threshold (a federally set minimum salary level, periodically updated — verify the current DOL
-  figure before classifying, since thresholds have changed multiple times in recent years and some
-  states set a higher threshold than federal). Misclassifying a non-exempt role as exempt to avoid
-  overtime is one of the most common and costly nonprofit wage-and-hour violations.
+  threshold (a federally set minimum salary level, periodically updated — as of November 2026 DOL
+  enforces $684/week, or $35,568/year, after a federal court vacated the 2024 increase in November
+  2024; verify the current DOL figure before classifying, since thresholds have changed multiple
+  times in recent years and some states set a higher threshold than federal). Misclassifying a
+  non-exempt role as exempt to avoid overtime is one of the most common and costly nonprofit wage-and-hour violations.
 - **Independent contractor vs. employee**: apply the IRS common-law test (behavioral control,
   financial control, relationship type) or the applicable state test (some states, e.g., California's
   ABC test, are stricter than the federal standard) before classifying any worker as a 1099
   contractor — misclassification exposure includes back payroll taxes, penalties, and unpaid benefits.
+  For FLSA minimum wage and overtime, DOL applies its own economic-reality analysis, which is in
+  flux: DOL has stopped applying its 2024 rule in investigations and proposed a replacement rule in
+  February 2026 — check DOL's current rule before relying on any federal test.
   A recurring, schedule-controlled program facilitator paid regularly is very likely an employee
   regardless of what the contract calls them.
 - **Volunteer vs. employee boundary**: an unpaid "volunteer" doing work that displaces a paid position
