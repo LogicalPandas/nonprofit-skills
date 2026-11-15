@@ -7,6 +7,7 @@ metadata:
   supervision_note: "Tracks 501(h) lobbying expenditure limits; exceeding them is a tax matter."
   date_added: "2026-09-07"
   date_added_source: "git:1860ed47a83901ff5e6d45abc4a2ef05be8fd4cd"
+  last_reviewed: "2026-11-11"
 ---
 
 # Nonprofit Legislative Advocacy
@@ -84,6 +85,11 @@ it with a constituent story and data, then restate the ask as the close:
 - **Q&A prep:** Anticipate the 3-5 most likely hostile questions from the brief's counterargument
   section and rehearse concise answers; "I don't know, I'll follow up in writing" is an acceptable
   and often better answer than an unsupported guess under oath/on record.
+- **Agency rulemaking testimony:** Under 501(h), "legislation" means action by a legislative body
+  (or the public on a ballot measure) and excludes executive, judicial, and administrative bodies, so
+  testimony on a proposed agency regulation is generally not a 501(h) lobbying expenditure. It can
+  still be lobbying under the federal Lobbying Disclosure Act or a state lobbying law, so check
+  those separately.
 - **Registration logistics:** Confirm the hearing's witness sign-up process and deadline (often
   same-day, first-come or pre-registered) separately for every committee — these rules vary widely
   and missing the window is the most common way an org loses its testimony slot.
@@ -91,25 +97,49 @@ it with a constituent story and data, then restate the ask as the close:
 ## 501(h) Direct vs. Grassroots Lobbying Classification
 
 For 501(c)(3) organizations that have made the 501(h) election, correctly classifying activity
-matters because direct and grassroots lobbying draw from separate expenditure ceilings (grassroots
-ceiling is set at 25% of the direct lobbying ceiling under the standard formula):
+matters because all lobbying (direct plus grassroots) counts against the overall lobbying
+nontaxable amount, and grassroots lobbying alone also has its own sub-limit equal to 25% of that
+overall amount (IRC 4911(c)):
 
 - **Direct lobbying:** Communication with a legislator, legislative staff, or other government
   employee who participates in formulating legislation, that refers to specific legislation and
   reflects a view on it. A legislator meeting, testimony, or a letter to a legislator urging a vote
-  all qualify.
+  all qualify. Communications with the public about a ballot measure (referendum, initiative) are
+  treated as direct lobbying, because the voters are the legislators for that measure.
 - **Grassroots lobbying:** Communication to the general public (not a legislator) that refers to
-  specific legislation, reflects a view on it, AND includes a "call to action" (urging the recipient
-  to contact a legislator). Missing the call-to-action element means it is not lobbying at all under
-  501(h) — this is the most common misclassification in either direction.
+  specific legislation, reflects a view on it, AND includes a "call to action." Under the
+  regulations a call to action is any of: telling the recipient to contact a legislator or staff;
+  giving a legislator's address, phone number, or similar contact information; providing a petition,
+  tear-off postcard, or similar material; or naming legislators as opposed, undecided, the
+  recipient's own representative, or members of the committee that will vote (naming the bill's
+  main sponsor just to identify the bill does not count). Missing the call-to-action element
+  generally means a public communication is not grassroots lobbying under 501(h) — a frequent
+  misclassification in either direction. Two exceptions to check: paid mass-media advertisements
+  that appear within two weeks before a legislative or full-committee vote on highly publicized
+  legislation can be presumed grassroots lobbying without a call to action, and communications
+  aimed mainly at the org's own members follow separate allocation rules (26 CFR 56.4911-5).
 - **Not lobbying under 501(h):** Nonpartisan analysis/research/study distributed broadly (this is why
   a well-built issue brief without a call to action, per `nonprofit-policy-analysis`, is generally
-  not itself a lobbying expenditure); responding to a written request from a legislative committee;
-  self-defense communications about the org's own existence.
+  not itself a lobbying expenditure); technical advice or assistance given to a governmental body or
+  committee in response to its written request; "self-defense" communications with a legislative
+  body about a possible action that might affect the org's existence, powers and duties, tax-exempt
+  status, or the deductibility of contributions to it; and advocacy to executive or administrative
+  bodies on regulations or other non-legislative actions.
 - **Practical step:** Log every meeting, testimony appearance, and legislator communication with
   staff time and any material costs allocated to it, and reconcile the total against the org's
-  501(h) ceiling quarterly, not just at year-end — year-end reconciliation surprises are the most
-  common 501(h) compliance failure.
+  501(h) ceiling quarterly, not just at year-end — year-end reconciliation surprises are a common
+  501(h) compliance failure. Electing organizations report direct and grassroots lobbying
+  expenditures on Form 990 Schedule C, Part II-A. Spending above either limit in a year triggers a
+  25% excise tax on the excess (IRC 4911(a)), and spending that normally exceeds the limits over a
+  four-year period can cost the organization its exemption.
+- **Other rules apply alongside 501(h):** 501(h) is a tax test only. Federal lobbying contacts can
+  require registration and quarterly reporting under the Lobbying Disclosure Act — after January 1,
+  2025, an organization with in-house lobbyists must register once its lobbying expenses exceed (or
+  are expected to exceed) $16,000 in a quarter and an employee makes more than one lobbying contact
+  and spends at least 20% of their time on lobbying activities (confirm current thresholds at
+  lobbyingdisclosure.house.gov). Most states have their own lobbyist registration and gift rules
+  with different definitions. Organizations with federal awards also cannot charge lobbying costs
+  to those awards (2 CFR 200.450). Have counsel confirm which regimes apply before a lobby day.
 
 ## Common Failure Modes
 
@@ -123,7 +153,8 @@ ceiling is set at 25% of the direct lobbying ceiling under the standard formula)
   per-hearing, don't assume last session's process still applies.
 - **Misclassifying grassroots vs. direct lobbying.** Counting nonpartisan research as a lobbying
   expenditure (or failing to count a call-to-action mailer as grassroots lobbying) skews the 501(h)
-  ceiling calculation and can trigger excise tax exposure if the ceiling is genuinely exceeded.
+  ceiling calculation and can trigger the 25% excise tax on the excess if a limit is genuinely
+  exceeded.
 
 ## Practitioner vs. Advisor Application
 
