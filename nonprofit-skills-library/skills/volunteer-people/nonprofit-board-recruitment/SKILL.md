@@ -1,6 +1,6 @@
 ---
 name: nonprofit-board-recruitment
-description: "Builds board recruitment pipelines for the governing board: board composition/skills matrices, gap analysis against strategic needs, prospective board member identification and cultivation, board candidate packets, term/rotation design, and new-board-member onboarding through their first meeting. Use for tasks like 'build a board skills matrix,' 'find and cultivate new board candidates,' 'design our board onboarding packet,' 'set board term limits,' or 'diagnose why our board recruitment keeps stalling.' Boundary: running existing board meetings, committee structure, and board self-assessment is nonprofit-board-governance; recruiting program/event volunteers is nonprofit-volunteer-management; ED transition planning is nonprofit-succession-planning."
+description: "Builds governing-board recruitment pipelines: skills and composition matrix, gap analysis against strategy, candidate sourcing and cultivation, letters of expectation, term and rotation design, and onboarding through the first meeting. Use when someone says 'build a board skills matrix,' 'find and cultivate new board candidates,' 'design our board onboarding packet,' or 'our board recruitment keeps stalling.' Not for running seated boards, committees, or self-assessment (use nonprofit-board-governance), program or event volunteers (use nonprofit-volunteer-management), ED succession (use nonprofit-succession-planning), or hiring an ED (use nonprofit-executive-search)."
 license: MIT
 metadata:
   supervision: "review"
@@ -13,55 +13,107 @@ metadata:
 
 # Nonprofit Board Recruitment
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for anything that happens **before and through the first meeting** of a new board member's tenure: figuring out who the board needs, finding them, cultivating them, and getting them started. Concrete triggers:
+Covers everything **before and through the first meeting** of a new board member's tenure.
 
-- Building or updating a board composition/skills matrix
-- Running a gap analysis (what expertise, networks, or demographics the current board lacks relative to strategic priorities)
-- Identifying and vetting prospective board candidates (from a matrix gap, staff/board referrals, or a board-matching platform)
-- Designing a cultivation sequence for a promising candidate (informational meeting, committee/advisory trial run, formal ask)
-- Writing board candidate packets, board member job descriptions, or letters of agreement/expectation
-- Setting board terms, term limits, and rotation/staggering design
-- Building a new-board-member onboarding packet or orientation agenda
-- Diagnosing a stalled or ad hoc board recruitment process (e.g., "we always just ask friends of current members")
+- Board meeting agendas, committee charters, board self-assessment, and ED-board dynamics once
+  someone is seated: `nonprofit-board-governance`.
+- Term limits written into bylaws or board policy: draft the policy language with
+  `nonprofit-bylaws-policy`.
+- Unpaid program or event volunteers: `nonprofit-volunteer-management`.
+- The ED's departure or leadership pipeline: `nonprofit-succession-planning`; hiring the next ED:
+  `nonprofit-executive-search`.
 
-Do **not** use this skill for: board meeting agendas, committee charters, board self-assessment surveys, or ED-board relationship dynamics once someone is seated (`nonprofit-board-governance`); recruiting unpaid program or event volunteers (`nonprofit-volunteer-management`); planning the ED's own departure or leadership pipeline (`nonprofit-succession-planning`).
+## Procedure: Matrix-Driven Recruitment
 
-## Core Framework: Matrix-Driven Recruitment
+The standard failure is relationship-driven recruiting ("who do we know?") instead of needs-driven
+recruiting ("what do we need, then who fits?"). Run these steps through the governance committee
+(create one if none exists), on a fixed annual cadence tied to strategic planning, not only when a
+seat empties.
 
-The standard failure mode in nonprofit board recruitment is relationship-driven recruiting ("who do we know?") instead of needs-driven recruiting ("what do we need, then who fits?"). Reverse that order using a **board skills/composition matrix**.
+1. **Build or refresh the matrix.** Rows = current and prospective members (anonymize if shared
+   outside the board). Columns in three bands:
+   - *Expertise/skills*: finance/accounting, legal, HR, fundraising/major gifts,
+     marketing/communications, program subject expertise, real estate/facilities, technology,
+     government/public sector.
+   - *Access/capacity*: wealth capacity, fundraising network, political or civic influence, lived
+     experience with the population served.
+   - *Representation*: demographics (race, gender, age, geography), community connections, and —
+     critically — the people the organization serves, which many boards under-recruit for.
+   Mark an X or a 1–5 rating per cell; the columns with the fewest marks are recruitment priorities.
+   Cross-check against the strategic plan and any funder or fiscal-sponsor composition requirements
+   (coordinate with `nonprofit-strategic-planning` if no plan exists).
+2. **Write the target profile before naming names.** For each open or upcoming seat, a one-paragraph
+   profile naming the 2–3 gap attributes it must fill. This prevents recruiting a well-liked but
+   redundant candidate who doesn't move the matrix.
+3. **Source 3–5 names per open seat** against the profile: board/staff/major-donor referrals,
+   associate board or advisory council graduates, corporate board-matching programs and local
+   nonprofit support centers (verify which matching platforms currently operate in your area), and
+   the underused channel — people already close to the mission (long-time volunteers, program
+   alumni, engaged donors). One name per seat stalls the process, because a single decliner resets
+   it to zero.
+4. **Cultivate before asking**, and track stage (identified → cultivating → invited →
+   seated/declined) like a donor pipeline: informational coffee/call sharing the strategic plan and
+   finances → observe a board meeting or serve one cycle on a committee/advisory role → formal ask
+   in person by the board chair or governance chair. Prepare the candidate packet and letter of
+   expectation before the ask, not after acceptance.
+5. **Formalize terms.** Standard practice is staggered terms (e.g., 3-year terms, up to two
+   consecutive terms, one year off before re-eligibility) so the whole board never turns over at
+   once. Put term limits and rotation in the bylaws or a board policy — recruiting without an exit
+   mechanism produces long-tenured, disengaged seats that block refresh.
+6. **Elect per the bylaws.** Present the slate to the full board or nominating committee for a vote
+   following the bylaws' election process.
+7. **Onboard before the first vote.** New-member packet: bylaws, current budget and most recent
+   Form 990, strategic plan, minutes from the last 2–3 meetings, D&O insurance summary,
+   conflict-of-interest and confidentiality policies to sign, roster with bios, and a 30/60/90-day
+   plan (peer mentor, 1:1 with the ED, committee assignment within 90 days).
 
-1. **Build the matrix.** Rows = current and prospective board members (anonymized if sharing outside the board). Columns = the attributes the board needs, grouped into three bands:
-   - *Expertise/skills*: finance/accounting, legal, HR, fundraising/major gifts, marketing/communications, program area subject expertise, real estate/facilities, technology, government/public sector.
-   - *Access/capacity*: personal wealth capacity, fundraising network/connections, political or civic influence, lived experience with the population served.
-   - *Representation*: demographics (race, gender, age, geography), community connections, and — critically — representation of the people the organization serves, which many boards under-recruit for.
-   Mark an X or a 1–5 rating in each cell for current members; the columns with the fewest marks are your recruitment priorities. Rebuild this matrix annually, tied to the strategic plan, not just when a seat opens.
-2. **Set the target profile before naming names.** For each open or upcoming seat, write the 2–3 gap attributes it must fill. This prevents the common failure of recruiting a well-liked but redundant candidate who doesn't move the matrix.
-3. **Source candidates against the profile**, not just personal networks: current board/staff/major-donor referrals, junior/associate board or advisory council graduates, corporate board-matching programs (e.g., BoardSource's Board Match-style networks, LinkedIn/BoardBuilder-type platforms, local nonprofit support centers), and — the underused channel — people already close to the mission (long-time volunteers, program alumni, engaged donors).
-4. **Cultivate before asking.** Use a short sequence: informational coffee/call to gauge interest and share the strategic plan and finances → invite to observe a board meeting or serve on a committee/advisory role for one cycle → formal ask by the board chair or governance committee chair, in person, with a written **board member job description and letter of expectation** covering: time commitment (meetings/year, committee load), give-or-get fundraising expectation if any, term length, fiduciary duties (duty of care, loyalty, obedience), and conflict-of-interest disclosure requirement.
-5. **Formalize terms.** Standard practice is staggered terms (e.g., 3-year terms, up to two consecutive terms, one-year-off before re-eligibility) so the whole board never turns over at once. Put term limits and rotation in the bylaws or a board policy — recruiting without an exit mechanism causes long-tenured, disengaged seats that block matrix-driven refresh.
-6. **Onboard before the first vote.** A new-member packet should include: bylaws, current budget and most recent Form 990, strategic plan, board meeting minutes from the last 2–3 meetings, D&O insurance summary, conflict-of-interest and confidentiality policies to sign, a board roster with bios, and a 30/60/90-day orientation plan (buddy/mentor pairing with a tenured member, a 1:1 with the ED, and a committee assignment within the first 90 days).
+## Templates
 
-## Instructions
+Skills matrix (columns abbreviated; use the full bands from step 1):
 
-### For hands-on practitioners (ED, board chair, governance committee)
+| Member | Term ends | Finance | Legal | Fundraising | Program expertise | Lived experience | Network/access | Geography | Other gap |
+|--------|-----------|---------|-------|-------------|-------------------|------------------|----------------|-----------|-----------|
+| [Name] | [Year] | | | | | | | | |
+| [Name] | [Year] | | | | | | | | |
+| **Gap count** | | | | | | | | | |
+| **Priority for next seat?** | | | | | | | | | |
 
-1. Convene the governance committee (or create one if none exists) to build or refresh the skills matrix; do this on a fixed annual cadence tied to strategic planning, not only reactively when a seat empties.
-2. Identify the 2–3 highest-priority gaps and write a one-paragraph target profile for each open seat.
-3. Generate a candidate list of 3–5 names per open seat from the sourcing channels above — a shallow bench (one name per seat) is the most common reason recruitment stalls, because a single decliner resets the process to zero.
-4. Run the cultivation sequence for each candidate; track stage (identified → cultivating → invited → seated/declined) the same way a donor pipeline is tracked.
-5. Prepare the board candidate packet and letter of expectation before the formal ask, not after acceptance.
-6. Present the slate to the full board or nominating committee for a vote per the bylaws' election process.
-7. Execute the onboarding packet and 30/60/90-day plan for every new member, and assign a peer mentor.
+```
+Letter of Expectation — [Organization] Board of Directors
+Role and term: [term length], up to [n] consecutive terms per [bylaws/policy section]
+Time commitment: [n] board meetings/year, [committee] assignment, est. [hours]/month
+Fundraising: [give-or-get expectation, or "personally meaningful gift" language, or none]
+Fiduciary duties: care, loyalty, obedience — [one line on what each means here]
+Conflict of interest: annual disclosure; recusal per [policy name]
+Confidentiality: per [policy name]
+Onboarding: orientation by [date]; peer mentor [name]
+What you can expect from us: [staff support, information, training]
+Signature / date
+```
 
-### For advisors/consultants guiding a nonprofit client
+## Verify Before Acting
 
-1. Ask to see the board's current recruitment approach and matrix (if any) before recommending candidates — the diagnostic deliverable is usually the matrix and gap analysis itself, not names.
-2. If the client's board is recruited entirely through personal relationships of current members, name this explicitly as a risk (groupthink, lack of diverse perspective, and shallow succession bench) and recommend formalizing a governance committee with recruitment as an explicit year-round charge, not a task that spins up only when a seat is vacant.
-3. Cross-check the matrix against the strategic plan and any funder/grant compliance requirements (e.g., some funders or fiscal sponsors require specific board composition); coordinate with `nonprofit-strategic-planning` if a plan doesn't exist yet.
-4. When advising on term limits, weigh institutional-knowledge loss against disengagement risk explicitly for the client's context — very small or founder-led boards often resist term limits; frame the recommendation as a staggered rotation policy rather than a blunt "everyone must leave" rule to make it adoptable.
-5. Deliver the onboarding packet and letter-of-expectation template as reusable artifacts the client can run without an advisor for future recruitment cycles.
+Before presenting a slate:
+
+- [ ] Each candidate maps to a written gap on the current matrix, not only to a relationship.
+- [ ] The bench has 3+ names per open seat, with stage tracked.
+- [ ] Every candidate received the job description and letter of expectation before the ask.
+- [ ] Term lengths, limits, and the election process match the current bylaws (check the text,
+      not memory).
+- [ ] Conflict-of-interest disclosures are collected before the vote.
+
+## For advisors
+
+- The diagnostic deliverable is usually the matrix and gap analysis, not names — ask for the current
+  approach first. If the board recruits entirely through members' relationships, name the risks
+  (groupthink, narrow perspective, shallow bench) and give the governance committee a year-round
+  recruitment charge.
+- With small or founder-led boards that resist term limits, weigh institutional-knowledge loss
+  against disengagement and frame the fix as a staggered rotation policy, not "everyone must leave."
+- Deliver the matrix, onboarding packet, and letter template as reusable artifacts the client can
+  run without an advisor.
 
 ## Common Failure Modes
 

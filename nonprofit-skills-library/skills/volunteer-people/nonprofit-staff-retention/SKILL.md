@@ -1,6 +1,6 @@
 ---
 name: nonprofit-staff-retention
-description: "Diagnoses and improves paid-staff culture, morale, and retention specifically under nonprofit resource constraints: turnover/exit-interview analysis, burnout diagnosis, non-cash total-rewards design, career-pathing without a hierarchy to climb, and manager practices for under-resourced teams. Use for tasks like 'why is our staff turnover so high,' 'design a retention plan on a flat budget,' 'build an exit interview process,' 'address burnout on my program team,' or 'improve staff morale without a raise budget.' Boundary: pay-band benchmarking, job descriptions, hiring/onboarding process, and formal personnel policy are nonprofit-hr; ED transition and leadership pipeline is nonprofit-succession-planning; unpaid volunteer retention is nonprofit-volunteer-management."
+description: "Diagnoses and improves paid-staff morale and retention under nonprofit resource limits: turnover and exit-interview analysis, stay interviews, burnout diagnosis, non-cash total rewards, career paths in flat organizations, and manager practices. Use when someone says 'why is our staff turnover so high,' 'design a retention plan on a flat budget,' 'address burnout on my team,' or 'improve morale without a raise budget.' Not for pay bands, job descriptions, hiring, or personnel policy (use nonprofit-hr), morale during an active restructure or merger (use nonprofit-change-management), leadership pipelines (use nonprofit-succession-planning), or volunteers (use nonprofit-volunteer-management)."
 license: MIT
 metadata:
   supervision: "review"
@@ -13,47 +13,111 @@ metadata:
 
 # Nonprofit Staff Retention
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the question is about keeping the paid people already inside the organization engaged and employed — culture, morale, workload, recognition, and turnover diagnosis — as distinct from the mechanics of hiring, pay-banding, or formal policy. Concrete triggers:
+Keeping the paid people already inside the organization engaged and employed — culture, morale,
+workload, recognition, turnover diagnosis.
 
-- Diagnosing high or rising staff turnover and identifying which departures are regrettable vs. not
-- Designing or interpreting an exit interview / stay interview process
-- Building a retention or engagement action plan under a flat or shrinking budget
-- Addressing burnout, compassion fatigue, or chronic understaffing on a program team
-- Designing non-cash total rewards (flexibility, professional development, recognition) when cash raises aren't available
-- Building career pathing or growth opportunities in a flat, small-org hierarchy where promotions are rare
-- Advising a manager or ED on team morale, psychological safety, or a "quiet quitting" pattern
-
-Do **not** use this skill for: writing job descriptions, structuring pay bands/compensation benchmarking, formal personnel policies (PTO, harassment policy, performance review forms), or the hiring process itself (`nonprofit-hr`); planning the executive director's own succession or building a leadership bench (`nonprofit-succession-planning`); unpaid volunteer engagement and recognition (`nonprofit-volunteer-management`).
+- Job descriptions, pay bands and compensation benchmarking, personnel policies (PTO, harassment,
+  performance review forms), and hiring: `nonprofit-hr`. Many clients conflate a compensation
+  problem (that skill) with a culture/workload problem (this one).
+- Morale during an active change event (restructure, merger, layoffs): `nonprofit-change-management`;
+  this skill picks up once the organization has stabilized.
+- The ED's own succession or a leadership bench: `nonprofit-succession-planning`.
+- Unpaid volunteer engagement and recognition: `nonprofit-volunteer-management`.
+- Program capacity vs. funded headcount: reopen with `nonprofit-budgeting`.
 
 ## Core Framework: The Nonprofit Burnout–Retention Loop
 
-Nonprofit turnover is driven less by pay alone than by a specific, well-documented loop: **mission-driven overcommitment → chronic understaffing → role overload → burnout → turnover → higher overload on remaining staff → repeat.** Any retention intervention that doesn't interrupt this loop (e.g., a single wellness perk) will not hold. Diagnose and act at three levels:
+Nonprofit turnover is driven less by pay alone than by a loop: **mission-driven overcommitment →
+chronic understaffing → role overload → burnout → turnover → higher overload on remaining staff →
+repeat.** An intervention that doesn't interrupt this loop (e.g., a single wellness perk) will not
+hold. Act at three levels:
 
-1. **Individual level — burnout diagnosis.** Use Maslach's three-dimension model to name what's actually happening rather than treating all "burnout" the same: (a) *emotional exhaustion* (depleted, can't face another day), (b) *depersonalization/cynicism* (detached from clients or colleagues), (c) *reduced personal accomplishment* (feeling ineffective despite effort). The intervention differs by dimension — exhaustion needs workload/staffing relief; cynicism needs role clarity and reconnecting staff to mission impact; reduced accomplishment needs better outcome data and recognition tied to specific results.
-2. **Team/manager level — the manager is the retention lever.** The single strongest predictor of nonprofit staff retention is the quality of the direct-manager relationship, not the org-wide culture. Standard tools: monthly or quarterly **stay interviews** (ask "what makes you want to stay," "what would make you leave," "what's one thing we could change this quarter" — distinct from an annual performance review), clear role scope so staff aren't silently absorbing departed colleagues' duties indefinitely, and explicit workload check-ins after any layoff, funding gap, or unfilled vacancy (the moment overload spikes and is least visible to leadership).
-3. **Organizational level — total rewards beyond cash.** When salary increases aren't available, use the **total rewards framework**: compensation (even small equity adjustments matter more than raises alone), benefits (health coverage, retirement match, even modest ones, signal long-term investment), flexibility (remote/hybrid options, compressed schedules, comp time for overtime-heavy program/event periods), growth (cross-training, conference attendance, stretch assignments, tuition/certification support), and recognition (specific, public, tied to outcomes — generic "great job" emails do not move retention). A retention plan that only proposes recognition events while ignoring workload will fail; sequence structural fixes (staffing, role clarity) before cultural fixes (events, perks).
+1. **Individual — name the Maslach dimension before designing the fix.** Exhaustion needs
+   workload/staffing relief; depersonalization/cynicism needs role clarity and reconnecting staff
+   to mission impact; reduced accomplishment needs better outcome data and recognition tied to
+   specific results.
+2. **Team — the manager is the retention lever.** The direct-manager relationship is the strongest
+   predictor of nonprofit staff retention, more than org-wide culture. Tools: stay interviews,
+   clear role scope so staff aren't silently absorbing departed colleagues' duties indefinitely,
+   and explicit workload check-ins after any layoff, funding gap, or unfilled vacancy (when
+   overload spikes and is least visible to leadership).
+3. **Organization — total rewards beyond cash.** Nonprofit levers: small equity adjustments (matter
+   more than raises alone), even modest benefits that signal long-term investment, flexibility
+   (remote/hybrid, compressed schedules, comp time for overtime-heavy program or event periods),
+   growth (cross-training, conferences, stretch assignments, certification support), and
+   recognition that is specific, public, and tied to outcomes. Sequence structural fixes (staffing,
+   role clarity, manager training) before cultural fixes (events, perks).
 
-## Instructions
+## Procedure
 
-### For hands-on practitioners (ED, HR lead, program directors)
+1. **Baseline turnover.** Pull 12–24 months of departures by role, department, and tenure; classify
+   each as regrettable (valued performer, would have stayed with a fix) or non-regrettable. A
+   regrettable-turnover rate above roughly 10–15% annually in a small nonprofit is a rule-of-thumb
+   signal to investigate root cause, not just backfill (compare against a current sector or
+   regional benchmark if one is available). If no tracking exists, building it is the first
+   deliverable.
+2. **Exit interviews.** Structured interview (or anonymous survey if trust is low), conducted by
+   someone other than the departing employee's direct manager.
+3. **Stay interviews.** Quarterly, by direct managers, prioritizing high-turnover roles.
+4. **Workload vs. headcount.** Map workload against approved headcount per team. Vacancies unfilled
+   60+ days are an explicit retention risk needing a workaround (temp support, paused non-critical
+   work, interim redistribution with a sunset date), not a silent expectation.
+5. **Diagnose burnout by dimension** and address staffing/workload first where exhaustion dominates.
+6. **Total-rewards menu** across the levers above, sized to the actual budget.
+7. **Re-measure** turnover at 6 and 12 months after any intervention so the board can see whether it
+   worked.
 
-1. Pull turnover data for the last 12–24 months: departures by role/department/tenure, and classify each as regrettable (valued performer, would have stayed with a fix) vs. non-regrettable. A regrettable-turnover rate above roughly 10–15% annually in a small nonprofit is a signal to investigate root cause, not just backfill.
-2. If no exit interview process exists, build one: a short structured interview (or anonymous survey if trust is low) covering reason for leaving, manager relationship, workload, and what would have kept them — conducted by someone other than the departing employee's direct manager to get honest answers.
-3. Layer in **stay interviews** with current staff, especially in high-turnover roles, run quarterly by direct managers using the three questions in the framework above.
-4. Map current workload against approved headcount for each team; where vacancies have gone unfilled for 60+ days, treat the resulting overload explicitly as a retention risk requiring a workaround (temp support, paused non-critical work, interim redistribution with sunset date) rather than a silent expectation.
-5. Build a total-rewards menu using the five categories above, sized to actual budget — this does not require new cash if flexibility, growth, and recognition levers are used deliberately.
-6. Set a baseline turnover rate and re-measure it at 6 and 12 months after any intervention; retention efforts without a before/after metric can't be shown to the board as having worked.
-7. Where burnout is diagnosed, name which Maslach dimension is present before designing the fix, and address staffing/workload first if exhaustion is the dominant dimension.
+## Templates
 
-### For advisors/consultants guiding a nonprofit client
+```
+Exit interview (conducted by HR or a non-manager; 20-30 min; notes coded by theme)
+1. What led you to start looking, and what made you decide to leave?
+2. How would you describe your relationship with your manager?
+3. How manageable was your workload in the last six months? What drove it?
+4. Did you have the tools, information, and authority to do the job?
+5. Did you see a path to grow here? What was missing?
+6. What one change would have kept you?
+7. Would you consider returning or recommending us? Why or why not?
+Code each answer: workload | manager | pay/benefits | growth | mission/role fit | culture | personal | other
+```
 
-1. Request turnover data and any existing exit interview notes first; if none exist, building the tracking system is itself the first deliverable — don't skip to recommendations without a baseline.
-2. Distinguish, explicitly for the client, between a compensation problem (needs `nonprofit-hr` pay-banding work) and a culture/workload problem (this skill) — many clients conflate the two and assume only a raise budget can fix retention, when workload and manager quality are frequently the larger levers.
-3. When advising on a chronically understaffed team, name the burnout–retention loop directly to leadership: point out that backfilling every departure without addressing root overload just perpetuates the cycle, and that this is a budget/staffing-model conversation as much as a culture one — this may mean recommending the client re-open `nonprofit-budgeting` conversations about program capacity vs. funded headcount.
-4. Recommend sequencing: structural fixes (staffing relief, role clarity, manager training) before cultural fixes (events, swag, wellness perks) — cultural fixes alone, proposed first, are a common and visible advisor failure mode that erodes client trust when turnover doesn't improve.
-5. Build the stay-interview and exit-interview templates as reusable tools the client's managers can run independently after the engagement ends.
+```
+Stay interview (direct manager; quarterly; 15-20 min; log themes, not quotes)
+1. What makes you want to stay here?
+2. What would make you leave?
+3. What's one thing we could change this quarter?
+4. Is anything on your plate that used to belong to someone else?
+```
+
+```
+Retention plan outline
+- Baseline: regrettable turnover rate, period, roles most affected
+- Diagnosed drivers (from exits, stays, workload map), with Maslach dimension where burnout is present
+- Structural fixes first: action — driver addressed — owner — date — cost
+- Cultural / total-rewards fixes: action — driver addressed — owner — date — cost
+- Measures: turnover re-check at 6 and 12 months; stay-interview themes
+```
+
+## Verify Before Acting
+
+Before delivering a retention plan:
+
+- [ ] Every intervention is tied to a diagnosed driver (and a Maslach dimension for burnout).
+- [ ] Structural fixes (staffing, role clarity, manager training) are sequenced before perks or events.
+- [ ] A baseline turnover number and the 6- and 12-month re-measure dates are named.
+- [ ] Any pay or benefit change is routed to `nonprofit-hr` and checked against personnel policy
+      and employment terms (see supervision note).
+- [ ] Exit-interview data is reported in themes, without identifying individuals.
+
+## For advisors
+
+- Request turnover data and exit notes first; don't make recommendations without a baseline.
+- Name the burnout–retention loop to leadership directly: backfilling every departure without
+  fixing root overload perpetuates it, which makes this a budget and staffing-model conversation.
+- Proposing cultural fixes first is a common, visible advisor failure that erodes client trust when
+  turnover doesn't improve. Leave managers with reusable stay- and exit-interview templates.
 
 ## Common Failure Modes
 
