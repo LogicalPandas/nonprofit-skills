@@ -1,6 +1,6 @@
 ---
 name: nonprofit-vendor-facilities
-description: "Handles vendor contract negotiation and management, procurement policy design (including federal procurement standards under 2 CFR 200 for grant-funded purchases), competitive bid/RFP processes, and facilities matters: lease negotiation and renewal, shared/co-located space arrangements, and build-out or maintenance planning for nonprofit offices and program space. Use when asked to negotiate or review a vendor contract, write a procurement policy, run a competitive bid process for a purchase, negotiate or renew an office/program space lease, evaluate a shared-space or co-location arrangement, or plan a facility build-out or capital repair. Does not cover fundraising venue logistics for a specific gala/event (use nonprofit-fundraising-events), internal approval-threshold controls (use nonprofit-financial-controls), or corporate sponsorship deal structuring (use nonprofit-corporate-sponsorships)."
+description: "Covers two linked operations jobs: procurement and vendor contracts (tiered purchasing policy, 2 CFR 200 procurement for federal grant funds, competitive bids, contract clause review) and facilities (lease negotiation and renewal, total occupancy cost, shared space, build-out and maintenance planning). Use when asked to 'review this vendor contract before we sign,' 'write a procurement policy for our federal grants,' 'negotiate our office lease renewal,' or 'plan a build-out budget.' Not for event venue logistics (use nonprofit-fundraising-events), approval thresholds and signing authority (use nonprofit-financial-controls), or sponsorship deals (use nonprofit-corporate-sponsorships)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -11,18 +11,11 @@ metadata:
 
 # Nonprofit Vendor & Facilities Management
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for procurement, vendor contracting, and facilities/lease matters. Trigger tasks
-include: "negotiate our office lease renewal," "write a procurement policy that satisfies our federal
-grant requirements," "run a competitive bid for a new accounting software vendor," "review this
-janitorial services contract before we sign," "should we sublease part of our space to another
-nonprofit," or "plan a build-out budget for our new program space."
-
-Boundary: venue booking and logistics for a specific fundraising event (a gala, auction) are
-`nonprofit-fundraising-events`. The internal approval-threshold/signing-authority mechanics that
-govern who can approve a vendor payment are `nonprofit-financial-controls`. Corporate sponsorship
-deal structuring (benefits packages sold to a corporate partner) is `nonprofit-corporate-sponsorships`.
+- Venue booking and logistics for a specific fundraising event: `nonprofit-fundraising-events`.
+- Approval-threshold and signing-authority mechanics for vendor payments: `nonprofit-financial-controls`.
+- Corporate sponsorship deal structuring: `nonprofit-corporate-sponsorships`.
 
 ## Procurement Policy Design
 
@@ -55,9 +48,8 @@ deal structuring (benefits packages sold to a corporate partner) is `nonprofit-c
   of insurance requirements, data ownership and data deletion on termination (critical for CRM,
   payment processor, and cloud software vendors — see `nonprofit-data-privacy` for the data-handling
   policy side), and price escalation terms (capped annual increase vs. open-ended).
-- **Negotiate nonprofit-specific terms where leverage exists**: many vendors offer nonprofit
-  discount pricing, extended payment terms, or in-kind/reduced licensing (e.g., software vendors with
-  dedicated nonprofit programs) — always ask explicitly; it's rarely offered proactively.
+- **Ask explicitly for nonprofit pricing, extended payment terms, or reduced licensing**; it's rarely
+  offered proactively.
 - **Right-size the contract to actual usage** — long multi-year commitments to lock in a price can
   become a liability if the organization's size, program mix, or software needs change; weigh
   discount-for-commitment against flexibility, especially for a growing or recently-downsized
@@ -97,6 +89,36 @@ deal structuring (benefits packages sold to a corporate partner) is `nonprofit-c
    inspection cycle, fire-safety inspection dates) — deferred maintenance is a frequent hidden cost
    that resurfaces as an emergency capital expense when ignored.
 
+## Total Occupancy Cost Template
+
+| Cost line (annual)               | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 | Source / lease clause |
+|----------------------------------|--------|--------|--------|--------|--------|-----------------------|
+| Base rent (sq ft x rate)         |        |        |        |        |        |                       |
+| Escalation (% or fixed per year) |        |        |        |        |        |                       |
+| CAM charges                      |        |        |        |        |        |                       |
+| Property tax pass-through        |        |        |        |        |        |                       |
+| Building insurance pass-through  |        |        |        |        |        |                       |
+| Utilities (if not included)      |        |        |        |        |        |                       |
+| Tenant's own insurance           |        |        |        |        |        |                       |
+| Build-out cost net of TI allowance |      |        |        |        |        |                       |
+| Total occupancy cost             |        |        |        |        |        |                       |
+| Budget occupancy line            |        |        |        |        |        |                       |
+| Variance                         |        |        |        |        |        |                       |
+
+## Verify Before Acting
+
+- [ ] For federally funded purchases, the procurement policy covers each 2 CFR 200.317-327 element:
+      full and open competition, documented cost/price analysis, written conflict-of-interest rules for
+      procurement staff, micro-purchase and simplified acquisition thresholds (verify the current
+      figures in 2 CFR 200 / OMB guidance), and retained selection documentation.
+- [ ] Purchasing tiers match the approval thresholds in `nonprofit-financial-controls`; no second,
+      conflicting table.
+- [ ] Every contract reviewed has its auto-renewal cancellation deadline and insurance certificate
+      expiration entered on the vendor contract calendar.
+- [ ] The occupancy model includes CAM and pass-throughs and is compared to the budget occupancy line.
+- [ ] Leases, binding vendor contracts, and the federal procurement policy go to qualified counsel
+      before signing or adoption.
+
 ## Common Failure Modes
 
 - Federal-grant-funded purchases made without following 2 CFR 200 procurement standards, surfacing as
@@ -118,12 +140,7 @@ deal structuring (benefits packages sold to a corporate partner) is `nonprofit-c
 - Lease total-occupancy-cost model
 - Facilities maintenance and capital repair schedule
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the ED/operations lead**, keep a live vendor contract calendar and treat lease/major vendor
-  negotiations as a total-cost exercise, not a headline-rate comparison — the CAM charges and
-  auto-renewal clauses are where nonprofits most often get surprised.
-- **As an advisor**, when a client organization receives or is pursuing federal funding, check the
-  procurement policy against 2 CFR 200 standards proactively rather than waiting for a Single Audit
-  finding to surface the gap — this is a common and preventable compliance issue advisors are
-  well-positioned to catch early.
+- When a client receives or is pursuing federal funding, check the procurement policy against 2 CFR
+  200 standards proactively rather than waiting for a Single Audit finding to surface the gap.
