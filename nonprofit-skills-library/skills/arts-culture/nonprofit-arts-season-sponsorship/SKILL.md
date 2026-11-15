@@ -50,15 +50,15 @@ Ladder logic: a season deal should price at roughly **3–5x a single production
 1. **Inventory what you actually control.** List every place a logo or credit can appear: season brochure, individual show marketing (posters, postcards, digital ads), program/playbill, website, e-newsletter, lobby and signage, curtain speech, social channels, and event-specific items (step-and-repeat, drink tickets). Then list hospitality inventory: house seats, opening-night reception space, backstage tours, meet-the-artists moments.
 2. **Write the benefits matrix.** For each tier, assign benefits across four columns: *visibility* (logo/credit placements), *hospitality* (tickets, receptions), *engagement* (employee night, volunteering, client entertainment), and *affiliation* (category exclusivity, naming the season, alignment with access/education programs). **Completion:** every benefit at every tier is deliverable by one named staff owner without a special decision.
 3. **Value both ways.** Each benefit gets two numbers: your marginal cost (a house seat costs you its box-office price only if the house sells out; a logo in an existing brochure costs design time) and the sponsor's perceived value (what a comparable media buy or entertainment spend would cost them). Sell at perceived value, discounted for the charitable halo — never at your cost.
-4. **Price the matrix, not the mission.** The pitch quantifies audience reach, exclusivity, and inventory. The mission is the halo that closes it, not the product itself.
+4. **Price the matrix, not the mission.** The pitch quantifies audience reach, exclusivity, and inventory; the mission is the halo that closes it, not the product itself.
 
 ### Benefits that are cheap for you and valuable to the sponsor
 
-- **Logo placement in existing materials** — near-zero marginal cost; the sponsor perceives a media buy. This is the backbone of every tier.
+- **Logo placement in existing materials** — near-zero marginal cost; the sponsor perceives a media buy. The backbone of every tier.
 - **House seats and opening-night tickets** — your best seats on comp; costs nothing if they weren't going to sell, worth premium-entertainment prices to the sponsor.
-- **Curtain-speech mention** — a named thank-you delivered by the artistic leader to a captive, attentive audience; enormous perceived value, zero cost. Script it, deliver it every performance of the run for production sponsors.
+- **Curtain-speech mention** — a named thank-you from the artistic leader to a captive, attentive audience; enormous perceived value, zero cost. Script it and deliver it every performance of the run for production sponsors.
 - **Intermission/opening reception** — lobby space you already have; sponsor underwrites catering and gets the hosting credit both ways.
-- **Employee engagement** — an employee night, a company volunteer usher crew, a backstage tour. This is what turns a marketing buyer into an HR/CSR buyer — often the budget line that survives marketing cuts. Many sponsors value this above visibility.
+- **Employee engagement** — an employee night, a company volunteer usher crew, a backstage tour. This turns a marketing buyer into an HR/CSR buyer, often the budget line that survives marketing cuts; many sponsors value it above visibility.
 - **Category exclusivity** — "the official bank/airline/hotel of [Org]" — costs you a promise, prices as the single biggest multiplier on any tier.
 - **Named support of an access or education program** — "Student matinees supported by [Company]" — gives the sponsor a community-investment story with photos and metrics, at program cost you were shouldering anyway.
 
@@ -66,10 +66,10 @@ Ladder logic: a season deal should price at roughly **3–5x a single production
 
 ### Pricing mechanics
 
-1. **Anchor to your scale and market.** There is no national rate card; price against the org's own budget and audience. A community theater's whole production may cost $3,000–$15,000; a producing regional's production can run six figures — a production sponsorship typically prices to cover a meaningful, sayable fraction of direct production cost, and the season deal multiples that. Research what peer orgs in your market publish (many post sponsor pages) and what sponsors in your playbills paid; the published sponsor lists of comparable orgs are your comparables.
+1. **Anchor to your scale and market.** There is no national rate card; price against the org's own budget and audience. A community theater's whole production may cost $3,000–$15,000; a producing regional's can run six figures — a production sponsorship typically covers a meaningful, sayable fraction of direct production cost, and the season deal multiples that. Research what peer orgs in your market publish and what sponsors in your playbills paid; their published sponsor pages and lists are your comparables.
 2. **Build a rate card with 4–6 tiers and hold the arithmetic.** Each tier's price must exceed the fair market value of its benefits (see the tax line below — underpricing creates tax mess and tells the sponsor the package is worth less than its parts).
 3. **Discount for term, not for weakness.** A two- or three-year commitment earns a 10–15% discount and should be the default ask — renewal economics beat acquisition. Never discount because a prospect simply asked.
-4. **Separate the cause from the property.** If a sponsor wants to give beyond the package value, take the excess as an outright contribution (acknowledged under donor rules), not as a padded sponsorship. Blended asks blur the tax treatment of both halves.
+4. **Separate the cause from the property.** Take giving beyond the package value as an outright contribution (acknowledged under donor rules), not a padded sponsorship; blended asks blur the tax treatment of both halves.
 5. **Reserve in-kind conversions.** If a vendor wants to sponsor with goods or services (printing, catering, hotel rooms, trucking, AV), accept at retail value toward at most a defined fraction of the tier price — commonly capped around 25–50% — and require cash for the rest. Pure in-kind "sponsorship" of a cash-only budget line is a discount, not a deal.
 
 ### Valuing in-kind and media trade
@@ -80,13 +80,13 @@ Ladder logic: a season deal should price at roughly **3–5x a single production
 
 ### The tax line: acknowledgment vs. advertising (§ 513(i))
 
-This is the load-bearing compliance fact for every benefits matrix. Under IRC § 513(i) and Treas. Reg. § 1.513-4, a **"qualified sponsorship payment" (QSP)** is excluded from unrelated business income tax: a payment with no arrangement or expectation of a **substantial return benefit** other than the use or acknowledgment of the payer's name, logo, or product lines. The IRS's rules:
+The load-bearing compliance fact for every benefits matrix. Under IRC § 513(i) and Treas. Reg. § 1.513-4, a **"qualified sponsorship payment" (QSP)** is excluded from unrelated business income tax: a payment with no arrangement or expectation of a **substantial return benefit** other than the use or acknowledgment of the payer's name, logo, or product lines. The IRS's rules:
 
 - **The 2% rule.** Benefits to the sponsor valued at **more than 2% of the payment** make it "substantial" — only the portion of the payment above the fair market value of those benefits is a QSP; the rest is potentially taxable UBI. When valuing benefits for this test, count the tickets, hospitality, and exclusivity — but mere name/logo acknowledgment does not itself count toward the 2%.
 - **Acknowledgment is fine; advertising is not.** A credit that includes **qualitative or comparative language, price information, savings or value claims, an endorsement, or an inducement to buy** is advertising — that portion of revenue is UBI. "Season presented by Acme Bank" is acknowledgment. "Acme Bank — the best rates in town" is advertising. Keep sponsor lockups neutral in every org-controlled placement.
 - **Contingent payments are never QSP.** A payment contingent on **attendance, ratings, or public exposure** cannot be a qualified sponsorship payment at all. Do not structure deals as "X dollars per ticket sold."
 - **Exclusive-provider arrangements.** If a sponsor gets exclusivity (sole bank, sole restaurant), only the portion of the payment **exceeding the fair market value of the exclusivity** and other benefits is a QSP. FMV of category exclusivity is genuinely hard — document your estimate.
-- **Filing mechanics.** UBI above the filing threshold triggers **Form 990-T** at a flat **21%** federal rate (post-2017 law) — and most arts sponsorship packages *do* deliver substantial return benefits, so some UBI exposure is normal and fine; it's a cost of doing business, not a scandal. The org's accounting must split each payment between QSP and benefit/UBI portions. Route the actual split to the org's CPA — this skill flags the design choices (see Verify Before Acting).
+- **Filing mechanics.** UBI above the filing threshold triggers **Form 990-T** at a flat **21%** federal rate (post-2017 law). Most arts sponsorship packages *do* deliver substantial return benefits, so some UBI exposure is normal — a cost of doing business, not a scandal. The org's accounting must split each payment between QSP and benefit/UBI portions; route the actual split to the org's CPA (see Verify Before Acting).
 - **Deduction statements.** Do not tell a sponsor the payment is "fully tax-deductible" when substantial benefits are delivered — deductibility is the sponsor's tax question (usually a marketing/business expense, not a charitable deduction). Provide the FMV of benefits in writing and let their tax advisor do the rest.
 
 ### Disclosure norms
@@ -99,13 +99,13 @@ This is the load-bearing compliance fact for every benefits matrix. Under IRC §
 
 ### Build the prospect list
 
-1. **Mine the obvious first.** Current and past playbill advertisers, vendors who already sell to you (bank, printer, insurance, law firm, beverage distributor, hotel — hotels and restaurants are natural opening-night partners), board members' employers, and the sponsor pages of peer orgs in your market (companies sponsoring them will sponsor you — or are worth a competitive pitch).
+1. **Mine the obvious first.** Current and past playbill advertisers, vendors who already sell to you (bank, printer, insurance, law firm, beverage distributor, hotel — hotels and restaurants are natural opening-night partners), board members' employers, and companies on peer orgs' sponsor pages (they will sponsor you, or are worth a competitive pitch).
 2. **Category-map the market.** List the categories your audience buys: banking, legal, healthcare, real estate, automotive, hospitality, liquor/beverage, media, grocery. One exclusivity slot per category per tier is your inventory; sell the map, not a list.
 3. **Qualify against objectives.** A sponsor buys one of four things: brand awareness to your audience, client entertainment, employee engagement/CSR, or community positioning. Identify which before writing the pitch — it determines the benefits you lead with. **Completion:** a ranked list of 15–25 prospects, each tagged with an objective and a warm path in.
 
 ### The one-pager (per property)
 
-Every pitch needs a single-page leave-behind with this structure:
+Every pitch needs a single-page leave-behind:
 
 1. **Header:** org name, the property ("2026–27 Season Presentation" or "'[Title]' Production Sponsorship"), and one line of reach ("6 productions, 200 performances, 60,000 attendees").
 2. **Audience block:** who comes — size, demographics, and the psychographic one-liner ("educated, discretionary income, arts-attending households — your customers and recruits").
@@ -130,9 +130,9 @@ Every sponsorship needs a short written agreement (even a two-page letter agreem
 3. **Benefits schedule with delivery dates** — every benefit, the deadline, and the staff owner; logo specs and the org's approval right over how the *org* is portrayed in sponsor materials, and vice versa (each party approves use of its own name/logo — never grant the sponsor a general license to your brand).
 4. **Exclusivity scope and carve-outs** — category defined precisely ("financial institutions: retail banks and credit unions, excluding insurers") with named carve-outs for existing relationships.
 5. **Credits and lockups** — exact credit language, sizes, and placements; a no-advertising clause (the org will not publish qualitative/comparative or price language on the sponsor's behalf — cite the § 513(i) reason).
-6. **No artistic control.** State that the sponsor has no approval over content, casting, or programming — content decisions are `nonprofit-arts-season-planning`, full stop. This clause protects both parties and sponsors with brand-safety teams respect it being explicit.
+6. **No artistic control.** State that the sponsor has no approval over content, casting, or programming — content decisions are `nonprofit-arts-season-planning`, full stop. The explicit clause protects both parties, and sponsors with brand-safety teams respect it.
 7. **Cancellation and substitution** — if a production is cancelled or replaced, benefits transfer to the replacement or are pro-rated; force majeure language both directions.
-8. **Morals/reputational clause, both directions** — either party can exit if the other's conduct creates reputational harm. Sponsors increasingly ask for this; orgs should want it too.
+8. **Morals/reputational clause, both directions** — either party can exit if the other's conduct creates reputational harm; sponsors increasingly ask for this, and orgs should want it too.
 9. **Reporting obligations** — what the sponsor gets at season's end (see Part 4) and when.
 10. **Renewal window** — an exclusive negotiation window (30–60 days) before the property goes to market.
 
@@ -140,14 +140,14 @@ Every sponsorship needs a short written agreement (even a two-page letter agreem
 
 ### Fulfillment and opening-night logistics
 
-1. **Log every deliverable from day one.** A shared benefits tracker with owner, deadline, and proof (program page, signage photo, curtain-speech script, e-blast screenshot). This log *is* the renewal report's raw material — orgs that skip it cannot prove delivery at renewal and renew on vibes.
+1. **Log every deliverable from day one.** A shared benefits tracker with owner, deadline, and proof (program page, signage photo, curtain-speech script, e-blast screenshot) — the renewal report's raw material; orgs that skip it cannot prove delivery and renew on vibes.
 2. **Respect materials deadlines.** Production marketing locks 6–10 weeks before first performance (playbills earlier); a sponsor logo that misses the brochure close is a broken promise even if the money cleared. Build the deadline into the agreement's benefits schedule.
 3. **Opening night run-of-show:** sponsor greeting at the door, step-and-repeat and lobby signage placement, sponsor's guests seated as a block, curtain-speech thank-you (name the company and the specific thing they made possible — "tonight's student matinee program is possible because of..."), host the sponsor's representative at the reception and introduce them to the board chair and artistic director. The sponsor's actual experience of opening night predicts renewal better than any placement.
 4. **Ticket policy:** comps are drawn from house seats with a written cap; over-comping a sponsor cannibalizes box office and devalues the benefit — route comp policy mechanics to `nonprofit-arts-box-office-subscriptions`.
 
 ### Activation
 
-Beyond delivery of placements, give the sponsor something to *do*:
+Beyond placements, give the sponsor something to *do*:
 
 - **Employee night:** a designated performance with a company block, backstage tour, and a company social. Pitch to HR, not just marketing.
 - **Volunteer ushering** by company teams (route program mechanics to `nonprofit-volunteer-management`).
@@ -179,16 +179,16 @@ For sponsor stewardship beyond the package — board cultivation, treating spons
 
 ## Common Failure Modes
 
-- **Writing ad copy in sponsor credits.** "Best seats, best rates!" in the playbill converts acknowledgment into taxable advertising and risks the whole QSP position. Fix: neutral lockups org-wide; the no-advertising clause in every agreement.
+- **Writing ad copy in sponsor credits.** "Best seats, best rates!" in the playbill converts acknowledgment into taxable advertising and risks the whole QSP position. Fix: neutral lockups; the no-advertising clause in every agreement.
 - **Selling below the FMV of benefits.** A $5,000 package delivering $6,000 of tickets and hospitality creates UBI exposure *and* reprices the property downward forever. Fix: price every tier above benefits FMV.
 - **Structuring contingent payments.** "$1 per ticket" deals are never QSP and read as commercial. Fix: flat fees.
 - **Selling the same category twice.** Two "official banks" in one season is a breach of the first deal. Fix: a live category map checked at contract time.
 - **Pitching the org's need.** Sponsors buy audiences and objectives, not deficits. Fix: open every meeting with their marketing/HR goals.
-- **No fulfillment log.** At renewal the org cannot prove delivery, the sponsor cannot justify spend internally, and the deal reverts to a favor. Fix: log from day one; report from the log.
+- **No fulfillment log.** The org cannot prove delivery, the sponsor cannot justify spend internally, and the deal reverts to a favor. Fix: log from day one; report from the log.
 - **In-kind valued at retail while booked at nothing.** GAAP requires in-kind revenue and expense; undervalued trade also lets sponsors claim generosity they didn't purchase. Fix: book it (`nonprofit-financial-statements`) and cap the in-kind fraction of tiers.
-- **Letting sponsors touch programming.** A sponsor "suggesting" a safer title, once accepted, ends artistic credibility and invites the next ask. Fix: the no-artistic-control clause, stated in writing before the question arises.
+- **Letting sponsors touch programming.** A sponsor "suggesting" a safer title, once accepted, ends artistic credibility and invites the next ask. Fix: the no-artistic-control clause, in writing before the question arises.
 - **The one-touch renewal.** Emailing the report and an invoice for next year renews maybe half. Fix: in-person report, renewal window 3–4 months out, multi-year default.
-- **"Fully tax-deductible" promises.** Telling a sponsor their benefit-laden payment is fully deductible is wrong and creates liability. Fix: provide FMV of benefits in writing; their tax advisor decides.
+- **"Fully tax-deductible" promises.** Wrong for a benefit-laden payment, and creates liability. Fix: provide FMV of benefits in writing; their tax advisor decides.
 - **Stale tax facts.** The 21% UBIT rate, the 2% rule, and Form 990-T thresholds are current law as reviewed September 2026 — rates and thresholds change. Fix: re-verify with the org's CPA each season, and date every tax statement in sponsor-facing materials.
 
 ## Verify Before Acting

@@ -23,15 +23,15 @@ Covers artist employment under union agreements (AEA, IATSE, AFM, SAG-AFTRA), gu
 - Hiring an executive or artistic director: `nonprofit-executive-search`
 - Licensing a play or musical: `nonprofit-arts-performance-licensing`; teaching-artist contracts: `nonprofit-arts-education-programs`
 
-**The two supervision rules.** First, immigration: an O or P petition is a formal filing with USCIS; this skill tells the user when to engage immigration counsel and what to gather, but counsel files the petition — no exception. Second, unions: an AEA/IATSE/AFM agreement or SAG-AFTRA signatory status binds the organization with contribution and work-rule obligations that outlast any single production. Any agreement or signatory application gets a read from the union's business office (or a labor attorney) before signature. Treat this skill as the org-side preparation layer that makes both professionals cheap and fast.
+**The two supervision rules.** First, immigration: an O or P petition is a formal USCIS filing; this skill says when to engage immigration counsel and what to gather, but counsel files the petition — no exception. Second, unions: an AEA/IATSE/AFM agreement or SAG-AFTRA signatory status binds the organization to contribution and work-rule obligations that outlast any single production, so any agreement or signatory application gets a read from the union's business office (or a labor attorney) before signature. This skill is the org-side preparation layer that makes both professionals cheap and fast.
 
 ## Part 1 — When Union Contracts Apply
 
-The threshold question is never "are we big enough to be union" — it is "who is standing on our stage, and what card do they hold." A union member generally may not work non-union work in their jurisdiction; if you want an AEA actor, an IATSE stagehand, or an AFM musician, you contract under their union's agreement. A small nonprofit can be a fully unionized employer with one Equity actor on a Guest Artist contract — and many are. There is no small-org exemption; there are only right-sized agreements.
+The threshold question is never "are we big enough to be union" but "who is standing on our stage, and what card do they hold." A union member generally may not work non-union work in their jurisdiction; to hire an AEA actor, IATSE stagehand, or AFM musician, you contract under their union's agreement. A small nonprofit can be a fully unionized employer with one Equity actor on a Guest Artist contract — and many are. There is no small-org exemption, only right-sized agreements.
 
 ### Actors' Equity Association (AEA)
 
-Equity's agreements and codes are tiered to organization size, and picking the wrong one is the most common error:
+Equity's agreements and codes are tiered to organization size; picking the wrong one is the most common error:
 
 | Contract | Use case | Key constraints |
 |---|---|---|
@@ -42,18 +42,18 @@ Equity's agreements and codes are tiered to organization size, and picking the w
 | **Single Engagement Agreement** | Community and educational-framework productions | Generally not usable in NYC, Chicago, LA, or San Francisco without Equity's written consent |
 | **LORT (League of Resident Theatres)** | The major regional nonprofit agreement — A+ through D categories by budget and box office | Only for League-member theaters; the reference point for what "full" regional AEA employment costs |
 
-Practical mechanics: the org (the "producer") applies to Equity for permission to use a code, signs the agreement, and becomes the employer of record for pension and health contributions. For a small nonprofit first engaging Equity members, the realistic paths are Guest Artist or Special Appearance for one to three actors, SPT if running a genuine professional season, and an LOA in cities where Equity has negotiated one. All of this is confirmed through Equity's business staff, not a website form — start with a call to the regional AEA office.
+Practical mechanics: the org (the "producer") applies to Equity for permission to use a code, signs the agreement, and becomes employer of record for pension and health contributions. For a small nonprofit first engaging Equity members, the realistic paths are Guest Artist or Special Appearance for one to three actors, SPT for a genuine professional season, and an LOA in cities where Equity has negotiated one. Confirm through Equity's business staff, not a website form — start with a call to the regional AEA office.
 
 ### IATSE (stagehands, technicians, wardrobe)
 
-IATSE is organized by local, and there is no single national theater agreement for small nonprofits — coverage is local-by-local and venue-by-venue. What bites small and midsize orgs:
+IATSE is organized by local, with no single national theater agreement for small nonprofits — coverage is local-by-local and venue-by-venue. What bites small and midsize orgs:
 
-- **Venue house crews.** Many unionized venues (presenting houses, civic auditoriums, university halls) operate under a local IATSE agreement that requires their house crew — load-in, board ops, rigging, wardrobe — regardless of who rents the hall. A small theater company renting a union house inherits the labor bill in its rental quote. Check the venue's tech rider before booking.
+- **Venue house crews.** Many unionized venues (presenting houses, civic auditoriums, university halls) operate under a local IATSE agreement requiring their house crew — load-in, board ops, rigging, wardrobe — regardless of who rents the hall, so a renting company inherits the labor bill in its rental quote. Check the venue's tech rider before booking.
 - **Overhire calls.** Local agreements commonly recognize full-time, part-time, and "on-call" (overhire) staff — your production's extra hands are dispatched through the local, with **minimum calls** (published local work rules commonly set a 4- or 5-hour paid floor for a load-in or load-out — e.g., IATSE Local 470's standard minimums) and advance-notice requirements (some locals require calls placed 48-120 hours ahead, per local dispatch rules). Budget the minimum call, not the hours you think you need.
 - **First contracts.** When a nonprofit's crew organizes, the first CBA is negotiated with the local (recent nonprofit examples include the Vineyard Theatre's first IATSE agreement covering backstage and overhire crew). First contracts are where minimum calls, show-rate guarantees, and department minimums get set.
-- **Department minimums and short turns.** Agreements specify minimum staffing per department (deck, electrics, audio, wardrobe) and often premium pay for short turnaround between performances, split days, and work past a cutoff hour — these work-rule premiums, not base wages, are what blow up labor budgets.
+- **Department minimums and short turns.** Agreements specify minimum staffing per department (deck, electrics, audio, wardrobe) and often premium pay for short turnaround between performances, split days, and work past a cutoff hour — these premiums, not base wages, blow up labor budgets.
 
-The move: before signing any rental or season budget, call the business agent of the relevant local (found via iatse.net) and ask for the applicable wage scale and work rules. Most locals publish scale sheets; many charge work dues on top of wages (an employer obligation to deduct and remit).
+Before signing any rental or season budget, call the business agent of the relevant local (via iatse.net) for the applicable wage scale and work rules. Most locals publish scale sheets; many charge work dues on top of wages (an employer obligation to deduct and remit).
 
 ### AFM (musicians)
 
@@ -66,28 +66,28 @@ AFM is also local-by-local for live performance:
 
 ### SAG-AFTRA (film, television, streaming)
 
-SAG-AFTRA jurisdiction attaches to recorded media, not live performance — a nonprofit's live stage work is AEA territory, not SAG-AFTRA. It becomes relevant when the org records or produces:
+SAG-AFTRA jurisdiction attaches to recorded media, not live performance (live stage work is AEA territory). It becomes relevant when the org records or produces:
 
 - **Co-productions and filmed versions.** A nonprofit co-producing a film or making a streaming version of a stage show becomes a SAG-AFTRA **signatory** producer. Signatory status is a contract with the union for the specific project, not a permanent org-wide election; the entry points are the budget-tiered agreements: **Theatrical** (budgets above $2M), **Low Budget Theatrical (LBA)** (under $2M), **Moderate Low Budget** (under $700K), **Ultra Low Budget (ULBA)** (under $300K), and the Micro-Budget Agreement below that, plus the **New Media Agreement** for streaming-original content.
 - **Signatory mechanics.** Becoming signatory is paperwork (an application per project through SAG-AFTRA's Production Center; SAGindie is the union's outreach arm for independent and nonprofit producers), and the timing trap is simple: employing SAG-AFTRA members before signatory status is executed creates back-end liability. The low-budget agreements allow Taft-Hartley employment of non-members (who must then join) — but only once you are signed. Start 4-6 weeks before principal photography, per the union's own guidance.
-- **Recording a stage production.** Filming or streaming a live show (archival, promo, or distribution) runs through both unions' media provisions — AEA's for the stage performers, SAG-AFTRA's for the recorded product — so ask both before the shoot, not after; route the underlying rights questions to `nonprofit-arts-performance-licensing`.
+- **Recording a stage production.** Filming or streaming a live show (archival, promo, or distribution) runs through both unions' media provisions — AEA's for the stage performers, SAG-AFTRA's for the recorded product — so ask both before the shoot; route underlying rights questions to `nonprofit-arts-performance-licensing`.
 
 ## Part 2 — What the Agreements Cost Beyond Wages
 
-A union contract's sticker shock is never the wage scale — it is everything stacked on it. Model all six layers:
+The sticker shock is never the wage scale — it is everything stacked on it. Model all six layers:
 
 1. **Employer benefit contributions.** AEA: weekly contributions per actor and stage manager to the **Equity-League Funds** (Pension, Health, and 401(k)) — submitted per production per week through the Funds' reporting system; the rate is set by the applicable AEA agreement (LORT and other agreements state the contribution rate; the Funds collect via ACH/wire). AFM: AFM-EPF pension percentage of scale wages, plus per-call health contributions in some locals. IATSE locals: pension/annuity and health contributions per hour worked under the local agreement. These are employer taxes, not deductions from artist pay.
 2. **Work dues.** Union members' work dues (a percentage of earnings) are typically deducted by the employer and remitted to the union — an administrative obligation with deadlines, and liability shifts to the employer if missed.
 3. **Work-rule premiums.** Overtime after an eight-hour day or past a weekly cutoff, short-turnaround penalties between performances, doubling premiums (AFM), holiday pay, and per diem on tour. These routinely add 15-40% to a labor budget that was modeled on base scale.
-4. **Minimum calls and minimum staffing.** The four-hour minimum call means a 90-minute focus session costs four hours; the department minimum means a simple show may still require two deck hands, one board op, and a wardrobe dresser. Budget the contract floor.
-5. **Rehearsal and tech protections.** Equity codes cap weekly hours (which drives the SPT category selection), require breaks, and price tech-day overages. Build the tech schedule against the contract's hour caps, not ambition.
+4. **Minimum calls and minimum staffing.** A four-hour minimum call makes a 90-minute focus session cost four hours; department minimums may require two deck hands, one board op, and a wardrobe dresser for a simple show. Budget the contract floor.
+5. **Rehearsal and tech protections.** Equity codes cap weekly hours (driving SPT category selection), require breaks, and price tech-day overages; build the tech schedule against the hour caps.
 6. **Agents' percentage.** Guest artists repped by agents commonly carry a 10% commission on the engagement fee — the org pays the artist the agreed fee; the artist pays the agent, unless the deal is structured otherwise. Clarify in the letter of agreement who bears it.
 
 **Rule of thumb for budgeting a first union season:** model total labor cost at 1.3-1.5x base wages to cover contributions, dues handling, and work-rule premiums — then verify against the actual agreement the union proposes, because every number above varies by agreement and local.
 
 ## Part 3 — Guest-Artist Engagement Terms
 
-Directors, choreographers, designers, music directors, conductors, and soloists are typically engaged as independent contractors on letter agreements (for the employment-classification question for ordinary staff, route to `nonprofit-hr` — but note union members, again, work under their union's terms: SDC-represented directors and choreographers, USA-represented designers (United Scenic Artists, IATSE Local USA 829)). The anatomy of a defensible guest-artist letter agreement:
+Directors, choreographers, designers, music directors, conductors, and soloists are typically engaged as independent contractors on letter agreements (ordinary-staff classification routes to `nonprofit-hr`; union members work under their union's terms: SDC-represented directors and choreographers, USA-represented designers (United Scenic Artists, IATSE Local USA 829)). The anatomy of a defensible guest-artist letter agreement:
 
 1. **Scope of services** — the production, the dates (first rehearsal through opening, plus tech), and deliverables (attendance at design run, previews, notes sessions). Specify rehearsal-week expectations; a director's fee assumes a fixed number of weeks.
 2. **Fee structure** — flat engagement fee (the norm for directors, choreographers, and designers at small and midsize orgs) or per-service rates (music directors, conductors, coaches: a per-rehearsal and per-performance scale). There is no published national fee standard — benchmark against the TCG (Theatre Communications Group) salary survey, comparable organizations' Form 990s (via Candid), and agent quotes before setting a number. State whether the fee is inclusive of prep time, or price prep separately.
@@ -100,7 +100,7 @@ Directors, choreographers, designers, music directors, conductors, and soloists 
 
 ## Part 4 — The Foreign-Artist Visa Track
 
-**The 90-day rule.** A typical O-1 petition takes weeks to assemble (evidence, contract, itinerary, union consultation) and regular USCIS processing takes months; premium processing buys a 15-business-day action guarantee. Start the visa process 90-120 days before first rehearsal — with immigration counsel, who files the petition (the org or a U.S. agent may be the *petitioner* on the form, but counsel runs the filing).
+**The 90-day rule.** A typical O-1 petition takes weeks to assemble (evidence, contract, itinerary, union consultation) and regular USCIS processing takes months; premium processing buys a 15-business-day action guarantee. Start 90-120 days before first rehearsal, with immigration counsel running the filing (the org or a U.S. agent may be the *petitioner* on the form).
 
 ### Category selection
 
@@ -120,10 +120,10 @@ An O petition must be filed by a **U.S. employer, a U.S. agent, or a foreign emp
 
 ### The union consultation letter
 
-O and P petitions **require a written advisory opinion from the appropriate labor organization** — a statutory requirement (8 CFR 214.2(o)) that trips up first-time filers. The mechanics, per Artists from Abroad (the performing-arts immigration practice manual maintained with the major performing-arts unions) and USCIS:
+O and P petitions **require a written advisory opinion from the appropriate labor organization** — a statutory requirement (8 CFR 214.2(o)) that trips up first-time filers. Mechanics, per Artists from Abroad (the performing-arts immigration practice manual maintained with the major performing-arts unions) and USCIS:
 
 1. **Identify the right union — at the national office.** The consultation must come from the national headquarters of the union with appropriate expertise: **AEA** for stage actors and stage managers, **SDC** (Stage Directors and Choreographers Society) for directors and choreographers, **AGMA** for opera, dance, and classical singers, **AFM** for musicians, **SAG-AFTRA** for recorded media (SAG-AFTRA charges a processing fee — $250 as of its current published schedule — and requires a complete packet: petition copy, contract, proof of awards/reviews, passport copy; submit to its O and P visa unit in Los Angeles). Contact the **national** office, not the local, and never substitute a peer-group letter when an appropriate labor organization exists. Confirm current contacts against USCIS's published consultation list — it changes.
-2. **Send the full case before filing.** Prepare everything as if filing, then courier/fax the complete package to the union; the union replies directly to the petitioner — usually with a simple **"no objection"** letter, sometimes with substantive comments, rarely with an unfavorable opinion (which must state specific facts; USCIS then decides on the record).
+2. **Send the full case before filing.** Courier/fax the complete would-be filing package to the union, which replies directly to the petitioner — usually with a simple **"no objection"** letter, sometimes with substantive comments, rarely with an unfavorable opinion (which must state specific facts; USCIS then decides on the record).
 3. **One consultation per activity, per beneficiary.** USCIS requires that different activities be covered by different unions: an artist singing in an opera (AGMA) and giving an AFM-scale recital may need consultations from two unions. O-2 and P support beneficiaries each need their own.
 4. **Timing and cost.** Turnaround runs roughly 2 days to 2+ weeks; some unions charge per consultation, others free for members; expedited service is often available for a fee. Build 2-3 weeks into the timeline and budget the fees.
 5. **Waivers exist but are narrow.** Consultation is waived for purely administrative roles (executive directors, business managers) and where no appropriate labor organization or peer group exists (rare in performing arts) — never assume a waiver; ask counsel.
@@ -131,21 +131,21 @@ O and P petitions **require a written advisory opinion from the appropriate labo
 ### Filing and processing mechanics
 
 - **Form I-129** with the O/P supplement; the petition may be filed up to **one year before** employment starts. Regular processing times vary (check current times at uscis.gov); **premium processing (Form I-907)** costs **$2,965 for I-129 classifications (effective March 1, 2026, up from $2,805)** and gets an action (approval, RFE, or denial) within 15 business days — the default for deadline-bound productions. Base I-129 filing fees vary by classification and petitioner size, with reduced fees for small employers and 501(c)(3) nonprofits under the April 2024 fee rule — verify current fees on the USCIS fee schedule before budgeting.
-- **Visa issuance and the artist's arrival** happen after petition approval (or concurrently for Canadians, who are visa-exempt but still need an approved petition). The petition validity covers the employment period (with a reasonable buffer).
-- **Every step is counsel's job.** This skill's job is to have the evidence ready: press and reviews, awards, contracts, the itinerary, the union list, and the artist's passport/credentials — counsel can only file what the org gathers.
+- **Visa issuance and arrival** happen after petition approval (or concurrently for Canadians, who are visa-exempt but still need an approved petition). Petition validity covers the employment period (with a reasonable buffer).
+- **Every step is counsel's job.** The org's job is to have the evidence ready — press and reviews, awards, contracts, the itinerary, the union list, and the artist's passport/credentials — since counsel can only file what the org gathers.
 
 ## Part 5 — The 30% Trap: Foreign-Artist Tax Withholding
 
-This is the one that ambushes even experienced presenters, because the money is due out of the *first* payment and the liability lands on the **withholding agent** (the U.S. payer — the org) if it is missed.
+This ambushes even experienced presenters: the money is due out of the *first* payment, and the liability lands on the **withholding agent** (the U.S. payer — the org) if it is missed.
 
-**The rule.** A foreign artist who is a nonresident alien for U.S. tax purposes and performs independent personal services in the U.S. is generally subject to **30% withholding on gross income** from U.S. performances — gross fee, not net, not profit. The obligation applies to *any type of payment* — payments made directly to the artist, or to their agent, manager, or representative, all trigger the same withholding duty. The org as withholding agent is personally liable for the amount it fails to withhold (plus penalties). A $20,000 engagement fee means $6,000 withheld and remitted to the IRS on Form 1042, reported to the artist on Form 1042-S — while the artist's *actual* U.S. tax on the engagement, after deducting business expenses, might be a few thousand dollars.
+**The rule.** A foreign artist who is a nonresident alien for U.S. tax purposes and performs independent personal services in the U.S. is generally subject to **30% withholding on gross income** from U.S. performances — gross fee, not net or profit. Any type of payment — directly to the artist, or to their agent, manager, or representative — triggers the same withholding duty. The org as withholding agent is personally liable for the amount it fails to withhold (plus penalties). A $20,000 engagement fee means $6,000 withheld and remitted to the IRS on Form 1042, reported to the artist on Form 1042-S — while the artist's *actual* U.S. tax on the engagement, after business expenses, might be a few thousand dollars.
 
 **The fix — the Central Withholding Agreement (CWA).** A CWA is a three-party contract among the **IRS, the artist, and a designated withholding agent**, under which withholding is computed on the artist's *estimated net income* at graduated rates instead of 30% of gross. Mechanics verified against the IRS's CWA program pages:
 
 1. **Form 13930** (Application for Central Withholding Agreement), submitted by the artist (a third party may submit the application with a Form 8821 authorizing communication with the IRS, but the cover letter must be signed by the artist under penalties of perjury), with **contracts for all engagements** and a **detailed budget** of the U.S. performances.
 2. **The deadline is hard: 45 days before the first event** covered. The IRS will not process an application received less than 45 days before the first event — the events then default to 30%-of-gross withholding. Applications go by fax (866-715-1507) or mail to the IRS CWA program (Lake Forest, CA); the IRS confirms receipt within 7 days.
 3. **The IRS estimates the actual tax on the tour/series** — allowing business-expense deductions and graduated rates — and that estimated amount is withheld instead of 30% of gross, with a true-up via the artist's timely filed U.S. return (the CWA itself conditions the reduced withholding on filing).
-4. **Who the withholding agent is:** the artist's agent/manager, the presenter, an accountant — anyone independent of the artist, acceptable to both artist and IRS. The org should decline to be the withholding agent if it is the fee payer where a better candidate exists; the agent takes on remittance and final-accounting obligations.
+4. **Who the withholding agent is:** the artist's agent/manager, the presenter, an accountant — anyone independent of the artist and acceptable to both artist and IRS. The org should decline the role if it is the fee payer and a better candidate exists; the agent takes on remittance and final-accounting obligations.
 5. **Income threshold:** the traditional CWA serves artists with U.S. gross income above **$10,000** in a calendar year; since 2019, performers earning **under $10,000** may also apply (per Artists from Abroad's program coverage — verify current thresholds on the IRS CWA page). Either way, the 45-day clock is the operative constraint.
 6. **Treaty awareness — the separate door.** If the artist resides in a country with a U.S. **income tax treaty**, the artist may claim a treaty exemption (or reduced rate) on Form **8233** instead of a CWA — but the performing-artist treaty article often requires the artist's income not come from a U.S. base, and many newer treaties specifically *exclude* performing-artist income from the independent-services exemption (an anti-artist-treaty pattern driven by U.S. reciprocity demands). Never assume a treaty applies — route the artist's country through counsel/CPA against the current treaty text (IRS Publication 515 is the withholding agent's reference). Non-performing foreign personnel (support staff) default to 30% withholding unless a treaty + Form 8233 applies.
 
@@ -155,19 +155,19 @@ This is the one that ambushes even experienced presenters, because the money is 
 
 The full checklist for engaging a foreign guest artist (the union-only version drops Parts 4-5):
 
-1. **Confirm the artist's union status and jurisdiction** — AEA/SDC/USA/AFM membership drives the contract form; a non-union guest artist still gets the Part 3 letter agreement. **Completion:** the correct agreement identified with the union's business office (or letter agreement drafted).
-2. **Negotiate the engagement letter** — Part 3 anatomy, with the immigration contingency clause for foreign artists. **Completion:** signed letter.
-3. **Engage immigration counsel** (foreign artists only) — counsel confirms the visa category against the artist's evidence and the itinerary, and identifies the required consultation unions. **Completion:** counsel engaged, evidence list received.
-4. **Run the tax analysis in parallel** — CWA vs. treaty vs. 30%-of-gross, with the 45-day CWA deadline calendared and a withholding agent chosen. **Completion:** written withholding plan before the first payment.
-5. **Obtain the union consultation letter(s)** — national office of the correct union(s), full packet, fees budgeted, 2-3 week turnaround planned. **Completion:** consultation(s) in hand.
-6. **File the petition with premium processing** — I-129 + supplement + consultation + contract + itinerary, I-907 for the 15-business-day guarantee, filed inside the one-year window. **Completion:** approval notice (or RFE — respond through counsel).
-7. **Track the artist's visa issuance and travel** — approval is not a visa; the artist consular-processes (except Canadians) and should arrive with documents matching the petition. **Completion:** artist on site, I-94 period verified by counsel.
+1. **Confirm the artist's union status and jurisdiction** — membership drives the contract form; a non-union guest artist still gets the Part 3 letter agreement. **Completion:** the correct agreement identified with the union's business office (or letter agreement drafted).
+2. **Negotiate the engagement letter** (Part 3, with the immigration contingency for foreign artists). **Completion:** signed letter.
+3. **Engage immigration counsel** (foreign artists only) to confirm the visa category against evidence and itinerary and identify the consultation unions. **Completion:** counsel engaged, evidence list received.
+4. **Run the tax analysis in parallel** (Part 5: CWA vs. treaty vs. 30%-of-gross; 45-day clock; withholding agent). **Completion:** written withholding plan before the first payment.
+5. **Obtain the union consultation letter(s)** from the correct national office(s), fees budgeted, 2-3 week turnaround planned. **Completion:** consultation(s) in hand.
+6. **File the petition with premium processing** — I-129 + supplement + consultation + contract + itinerary, plus I-907, inside the one-year window. **Completion:** approval notice (or RFE — respond through counsel).
+7. **Track visa issuance and travel** — approval is not a visa; the artist consular-processes (except Canadians) and should arrive with documents matching the petition. **Completion:** artist on site, I-94 period verified by counsel.
 8. **Pay correctly** — remit withholding per the CWA/8233/30% plan and file the annual Form 1042 with Form 1042-S for each recipient (no W-2 — these are NRA independent contractors), truing up at year end. **Completion:** all payments and filings made per plan.
 9. **Deliver the engagement and close out** — credit per contract, union reports (Equity-League weekly reports, AFM B-forms and pension remittances, work dues), and the org's own file of everything (petition, CWA, contracts) retained for the audit windows. **Completion:** union reports filed, retention file complete.
 
 ## Standard Deliverables
 
-1. **Engagement checklist** — the Part 6 sequence, with owners and completion dates, kept in the engagement file.
+1. **Engagement checklist** — the Part 6 sequence with owners and completion dates, kept in the engagement file.
 2. **Union labor budget** — base scale plus the six Part 2 layers, at 1.3-1.5x until the actual agreement is signed.
 3. **Guest-artist letter agreement** — the Part 3 anatomy.
 4. **Foreign-artist visa and withholding timeline** (template below), built at contract time with counsel.
@@ -194,16 +194,15 @@ Adjust dates to current USCIS and IRS processing; the T-minus targets are planni
 
 ## Common Failure Modes
 
-- **The handshake deal with a foreign artist.** Booking a foreign director on a verbal agreement, discovering 60 days out that an O-1 petition takes months without premium processing, and either canceling or having the artist "visit" on the wrong visa. Fix: the 90-120 day lead and counsel at contract time.
-- **Assuming a small org is exempt from union coverage.** "We're tiny, so Equity doesn't apply" — false; an Equity member's card, not the org's size, triggers coverage, and Guest Artist/Special Appearance routes exist precisely for small orgs. Fix: ask the artist's status at first conversation; call the union before budgeting.
-- **Budgeting wages, forgetting the stack.** Modeling an AEA season at scale wages and absorbing unbudgeted Equity-League contributions, work dues, and overtime premiums mid-run. Fix: budget at 1.3-1.5x scale until the actual agreement is signed.
-- **Renting a union venue without reading the labor terms.** A presenter's quote that excludes IATSE house-crew minimum calls and meal-penalty exposure turns a $4,000 rental into a $9,000 week. Fix: demand the venue's tech/labor rider with the rental quote.
-- **Wrong consultation union.** Sending the O-1B consultation for a stage director to SAG-AFTRA (or only to a local instead of the national office) and getting an RFE or a rejected filing. Fix: counsel maps activities-to-unions; the org confirms the national-office contact from the USCIS consultation list.
-- **Missing the 45-day CWA window.** Deciding in week two of rehearsals to "do something about the 30%" — the IRS will not process a late CWA and the org eats the gross-withholding difference or pays the artist's tax out of pocket. Fix: CWA analysis is a contract-time task, calendared with the visa work.
-- **Paying the foreign artist's agent abroad and thinking withholding doesn't apply.** The 30% rule follows the income to whoever collects it — payments to an agent, manager, or representative trigger the same withholding duty. Fix: all engagement payments route through the written withholding plan.
-- **Becoming SAG-AFTRA signatory after casting.** Making offers to union performers before the signatory agreement is executed creates back-end liability. Fix: start signatory paperwork 4-6 weeks before principal photography.
-- **Treating a CWA approval or petition approval as permanent precedent.** Each petition, each consultation, each CWA is per-engagement; a 2025 approval does not cover the 2027 tour. Fix: run the full Part 6 sequence every engagement.
-- **Stale numbers.** Premium processing fees, I-129 fee tiers, SAG-AFTRA consultation fees, AFM-EPF rates, and union scales all change on rule cycles and negotiation cycles. Fix: see Verify Before Acting.
+- **The handshake deal with a foreign artist.** Booking a foreign director on a verbal agreement, then discovering 60 days out that an O-1 petition takes months without premium processing — leading to cancellation or the artist "visiting" on the wrong visa. Fix: the 90-120 day lead and counsel at contract time.
+- **Assuming a small org is exempt from union coverage.** An Equity member's card, not the org's size, triggers coverage (Part 1). Fix: ask the artist's status at first conversation; call the union before budgeting.
+- **Budgeting wages, forgetting the stack.** Unbudgeted Equity-League contributions, work dues, and overtime premiums surface mid-run. Fix: budget at 1.3-1.5x scale until the actual agreement is signed.
+- **Renting a union venue without reading the labor terms.** A quote excluding IATSE house-crew minimum calls and meal-penalty exposure turns a $4,000 rental into a $9,000 week. Fix: demand the venue's tech/labor rider with the rental quote.
+- **Wrong consultation union.** Sending the O-1B consultation for a stage director to SAG-AFTRA (or only to a local instead of the national office) and getting an RFE or a rejected filing. Fix: counsel maps activities to unions; the org confirms the national-office contact from the USCIS consultation list.
+- **Missing the 45-day CWA window.** Deciding in week two of rehearsals to "do something about the 30%" is too late; the org eats the gross-withholding difference or pays the artist's tax out of pocket. Fix: CWA analysis is a contract-time task, calendared with the visa work.
+- **Paying the foreign artist's agent abroad and thinking withholding doesn't apply.** The 30% rule follows the income to whoever collects it. Fix: all engagement payments route through the written withholding plan.
+- **Becoming SAG-AFTRA signatory after casting.** Offers to union performers before the signatory agreement is executed create back-end liability. Fix: start signatory paperwork 4-6 weeks before principal photography.
+- **Treating a CWA or petition approval as permanent precedent.** Each petition, consultation, and CWA is per-engagement; a 2025 approval does not cover the 2027 tour. Fix: run the full Part 6 sequence every engagement.
 
 ## Verify Before Acting
 
