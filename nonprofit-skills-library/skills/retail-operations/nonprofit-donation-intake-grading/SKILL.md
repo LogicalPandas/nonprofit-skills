@@ -1,6 +1,6 @@
 ---
 name: nonprofit-donation-intake-grading
-description: "Runs donated-goods intake for a thrift/resale operation: drop-off and pickup scheduling and logistics, sorting and quality grading, sell/recycle/discard triage, and at-donation receipt issuance. Use for 'set up a donation drop-off process,' 'grade incoming donations,' 'reduce discard rate.' Does not cover tax valuation/Form 8283 (nonprofit-in-kind-gift-acceptance) or shelf pricing (nonprofit-retail-pricing-merchandising)."
+description: "Runs donated-goods intake for a thrift or resale operation: accepted-items list, drop-off and pickup logistics, sorting and quality grading, sell/online/salvage/discard triage, and the at-donation receipt. Use for 'set up a donation drop-off process,' 'we have a backlog of unsorted donations,' 'grade incoming donations,' or 'reduce our discard rate.' Not for tax valuation, Form 8283 or high-value gifts (use nonprofit-in-kind-gift-acceptance), shelf pricing (use nonprofit-retail-pricing-merchandising), or online listings (use nonprofit-online-resale)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,22 +11,14 @@ metadata:
 
 # Nonprofit Donation Intake & Grading
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to design or fix the physical intake pipeline for a resale operation (Goodwill-style
-retailer, Habitat ReStore, hospital/church thrift shop): donor drop-off and pickup logistics, sorting
-and grading donated goods, deciding what goes to the sales floor versus salvage/recycling versus the
-landfill, and issuing the at-donation receipt donors need for their own records. Typical triggers:
-"we have a backlog of unsorted donations," "design our drop-off shed workflow," "our discard rate is
-too high," "train new intake volunteers on grading," "set up an at-donation receipt process."
-
-**Boundary:** this skill handles the physical intake/sort/grade/triage workflow and the basic
-at-donation receipt (a dated acknowledgment of items received, no value stated). It does not handle
-donor-side tax valuation or receipting beyond that basic receipt — IRS Form 8283, the $500/$5,000
-appraisal thresholds, qualified appraisals, and gift acceptance policy for high-value or unusual
-in-kind gifts live in `nonprofit-in-kind-gift-acceptance`. Once an item is graded and released to the
-floor, its price and merchandising treatment is `nonprofit-retail-pricing-merchandising`; if it's
-routed to online sale instead of the floor, handoff to `nonprofit-online-resale`.
+- This skill covers the physical intake/sort/grade/triage workflow and the basic at-donation receipt
+  (a dated acknowledgment of items received, no value stated).
+- Donor-side tax valuation, IRS Form 8283, the $500/$5,000 appraisal thresholds, qualified appraisals,
+  and gift acceptance for high-value or unusual in-kind gifts: `nonprofit-in-kind-gift-acceptance`.
+- Price and merchandising once an item is released to the floor: `nonprofit-retail-pricing-merchandising`.
+- Items routed to online sale: `nonprofit-online-resale`.
 
 ## Core Framework: The Intake Funnel
 
@@ -49,18 +41,16 @@ weight or unit** — these two numbers are the standard health metrics for an in
 rising discard rate is the earliest signal of an acceptance-policy or donor-communication problem,
 not a grading problem.
 
-## Standard Terminology
+## Key Terms and Edge Cases
 
-- **Accepted items list**: the written, publicly posted list of what the org takes (e.g., clothing,
-  small furniture, working small appliances) and explicitly does not take (mattresses without law
-  tags, cribs pre-2011 standard, CRT TVs, upholstered furniture with rips/stains, recalled items).
-- **Grading tiers**: typically Premium/Boutique (like-new, name-brand, sets), Standard (sellable,
-  normal wear), Value/As-Is (functional but heavily worn, sold at a flat low price or by-the-pound),
-  and Reject (not sellable — routed to salvage or discard).
-- **Salvage stream / diversion rate**: goods routed to textile recyclers, scrap-metal buyers, or
-  bulk/auction liquidators instead of the sales floor or the landfill; tracking this as a % of total
-  intake demonstrates environmental-mission impact to funders and is often reportable separately from
-  retail revenue.
+- **Not-accepted items** commonly include mattresses without law tags, cribs pre-2011 standard, CRT
+  TVs, upholstered furniture with rips/stains, and recalled items.
+- **Default grading tiers**: Premium/Boutique (like-new, name-brand, sets), Standard (sellable, normal
+  wear), Value/As-Is (functional but heavily worn, flat low price or by-the-pound), and Reject (routed to
+  salvage or discard).
+- **Diversion rate**: salvage (textile recyclers, scrap-metal buyers, bulk/auction liquidators) as a %
+  of total intake; it demonstrates environmental-mission impact to funders and is often reportable
+  separately from retail revenue.
 - **Bailment period**: the short window (commonly 24-72 hours) between drop-off and formal
   acceptance during which title has not yet transferred, used in some donation agreements to allow a
   final accept/decline decision after inspection — check state law and the org's own gift acceptance
@@ -98,6 +88,35 @@ not a grading problem.
    carry a real cost (tip fees, recycler pickup fees); an intake operation that doesn't track this
    cost will understate the true cost of donation processing in the business model.
 
+## At-Donation Receipt Template
+
+```
+[Organization legal name]   EIN: [XX-XXXXXXX]
+[Store / drop-off location]   Date received: [MM/DD/YYYY]
+
+Items received (general description, no values):
+[ ] Clothing/shoes  [ ] Housewares  [ ] Furniture  [ ] Electronics
+[ ] Books/media     [ ] Other: ____________   Approx. bags/boxes/items: ____
+
+No goods or services were provided in exchange for this donation.
+[Organization] does not assign a value to donated items; the donor is responsible
+for determining fair market value for tax purposes. Items over $500 or $5,000 in
+claimed value may require additional IRS forms (ask staff for gift acceptance contact).
+
+Received by (staff/volunteer initials): ____
+```
+
+## Worked Example: Clothing Grading Rubric (one category)
+
+| Tier | Criteria | Lane |
+|------|----------|------|
+| Premium/Boutique | Like-new or with tags; name brand or designer; no stains, holes, pilling | Boutique rack or online review |
+| Standard | Clean, all buttons/zippers work, light normal wear | Sell-floor, standard price band |
+| Value/As-Is | Wearable but faded, minor pilling, out-of-season overflow | Value rack or by-the-pound |
+| Reject | Stains, odors, tears, mildew, missing parts | Textile recycler (salvage); discard only if wet or contaminated |
+
+Pair each tier with 2-3 photos on the laminated station card.
+
 ## Standard Deliverables
 
 - Written accepted/not-accepted items list (public-facing)
@@ -106,6 +125,18 @@ not a grading problem.
 - Intake triage flowchart (sell-floor / sell-online / salvage / discard)
 - At-donation receipt template
 - Monthly intake dashboard: volume, discard rate, diversion rate, sell-through by lane
+
+## Verify Before Acting
+
+- [ ] The receipt template shows the organization's name, EIN and date, describes items by category
+      only, states no value, and includes the no-goods-or-services statement.
+- [ ] Receipt wording on appraisal thresholds and Form 8283 matches `nonprofit-in-kind-gift-acceptance`;
+      verify current IRS thresholds in IRS Publication 526 and Publication 561 before printing.
+- [ ] The accepted/not-accepted list matches current recall and product-safety rules (check CPSC
+      recalls) and any state mattress or electronics rules.
+- [ ] Discard and diversion rates are computed on the same basis (weight or unit) month to month, and
+      tip/recycler fees are included in donation-processing cost.
+- [ ] Any bailment clause has been checked against state law and the gift acceptance policy.
 
 ## Common Failure Modes
 
@@ -119,13 +150,14 @@ not a grading problem.
   donation behavior.
 - **Discard cost untracked**, making the true cost of running the donation program invisible to
   leadership and the board.
+- **Relying on a bailment clause the donor never saw** (not posted at drop-off or not in the donation
+  agreement) to refuse items after the donor has left, which leaves the org holding unwanted goods
+  with no clear right to decline.
+- **Writing a value on the receipt** at the donor's request, turning a donor's own valuation into an
+  apparent organizational appraisal.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As store/intake staff or a program manager**, build the grading rubric with photos, not just
-  prose — text-only standards produce inconsistent grading between volunteers on different shifts,
-  which is the top driver of both high discard rates and pricing disputes downstream.
-- **As a consultant advising a thrift operation**, diagnose intake problems by looking at the
-  discard-rate trend line first before touching staffing or pricing — a discard-rate spike almost
-  always traces back to an acceptance-policy or donor-communication gap upstream, and fixing pricing
-  or staffing without fixing that gap won't move the number.
+- Diagnose intake problems by looking at the discard-rate trend line first, before touching staffing
+  or pricing; fixing pricing or staffing without fixing an upstream acceptance-policy gap won't move
+  the number.

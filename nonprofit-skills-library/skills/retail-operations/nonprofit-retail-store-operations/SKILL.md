@@ -1,6 +1,6 @@
 ---
 name: nonprofit-retail-store-operations
-description: "Runs resale-store floor procedures: point-of-sale/inventory systems, cash handling and reconciliation, loss prevention/shrinkage control, opening/closing procedures. Use for 'set up our POS,' 'design a daily cash reconciliation process,' 'reduce shrinkage.' Org-wide control policy lives in nonprofit-financial-controls; this implements it on the floor."
+description: "Runs resale-store floor procedures: POS and inventory setup, cash handling and daily over/short reconciliation, deposits, loss prevention and shrinkage tracking, and opening/closing checklists. Use for 'our till never balances,' 'set up our POS,' 'design a daily cash reconciliation process,' or 'reduce shrinkage.' Implements org-wide control policy on the floor; not for designing that policy (use nonprofit-financial-controls), pricing (use nonprofit-retail-pricing-merchandising), online sales (use nonprofit-online-resale), or scheduling (use nonprofit-retail-staffing)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,22 +11,14 @@ metadata:
 
 # Nonprofit Retail Store Operations
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to build or fix the day-to-day operating procedures of a resale storefront: point-of-
-sale (POS) and inventory system selection/configuration, daily cash handling and till reconciliation,
-loss prevention and shrinkage control, and opening/closing checklists. Typical triggers: "our till
-never balances," "we need a POS system for the thrift store," "shrinkage is climbing, what's our loss-
-prevention plan," "write an opening/closing checklist for store staff," "reconcile daily cash across
-multiple registers."
-
-**Boundary:** this skill is the retail-floor procedure layer — how controls are executed at the
-register and on the floor day to day. Org-wide internal control *policy design* (approval thresholds,
-segregation of duties, board-adopted financial policy, audit prep) is `nonprofit-financial-controls`;
-this skill implements those policies at store level and should reference, not redesign, the
-org's approval-threshold table. Pricing strategy and merchandising are
-`nonprofit-retail-pricing-merchandising`. Online marketplace operations are `nonprofit-online-resale`.
-Staffing/scheduling of the people running these procedures is `nonprofit-retail-staffing`.
+- This skill is the retail-floor procedure layer. Org-wide control policy design (approval thresholds,
+  segregation of duties, board-adopted financial policy, audit prep) is `nonprofit-financial-controls`;
+  reference, don't redesign, the org's approval-threshold table.
+- Pricing strategy and merchandising: `nonprofit-retail-pricing-merchandising`.
+- Online marketplace operations: `nonprofit-online-resale`.
+- Staffing and scheduling of the people running these procedures: `nonprofit-retail-staffing`.
 
 ## Core Framework: The Store Operations Triangle
 
@@ -47,20 +39,13 @@ no invoice trail to check receipts against, item-level pricing is often set at t
 than pre-ticketed with barcodes, and high volunteer-to-staff ratios raise both training and
 accountability challenges. Build procedures assuming these conditions, not a standard retail template.
 
-## Standard Terminology
+## Store-Specific Control Defaults
 
-- **Shrinkage / shrink rate**: inventory value lost to theft, damage, spoilage, or administrative
-  error, typically expressed as a % of retail sales; track it monthly and investigate any month-over-
-  month jump immediately rather than averaging it away.
-- **Till float**: the fixed starting cash amount in a register drawer at open, counted back to the
-  same amount at close before the day's sales are deposited.
-- **Over/short report**: the daily reconciliation output showing the difference between expected
-  cash (float + recorded sales) and actual counted cash per register/cashier.
-- **Dual-count verification**: two people independently counting and initialing a cash drawer at
-  open/close/deposit — the single highest-leverage cash control for a thrift store's small-team
-  reality.
-- **Sweep**: periodically removing excess cash from the register to a locked drop safe during the
-  business day, so the working till never accumulates more than a set cap exposed at the counter.
+- Track shrink rate monthly as a % of retail sales and investigate any month-over-month jump
+  immediately rather than averaging it away.
+- Dual-count verification (two people independently count and initial the drawer at open, close, and
+  deposit) is the single highest-leverage cash control for a thrift store's small-team reality.
+- Set a cap on cash in the working till and sweep the excess to a locked drop safe during the day.
 
 ## Step-by-Step: Building Store Operations Procedures
 
@@ -95,6 +80,29 @@ accountability challenges. Build procedures assuming these conditions, not a sta
    volunteers, and retrain to it whenever a POS system changes or a new loss-prevention control is
    added.
 
+## Opening/Closing Checklist and Over/Short Template
+
+```
+OPENING  Date ____  Opener ____  Second counter ____
+[ ] Alarm off / unlock sequence        [ ] Floor and exits walked for safety
+[ ] Till float counted: $____ (opener) $____ (second)   Both initials ____
+[ ] POS/terminals on, prior-day close posted   [ ] Backroom/donation area locked
+
+CLOSING  Date ____  Closer ____  Second counter ____
+[ ] Final sale cutoff at ____          [ ] POS close-of-day report printed
+[ ] Till counted out with second person; float set aside   [ ] Over/short recorded below
+[ ] Deposit bagged, logged, locked in safe   [ ] Backroom locked   [ ] Alarm set / locked
+```
+
+| Register | Cashier(s) | Float | POS cash sales | Expected cash | Counted cash | Over/(short) | Above threshold? | Explanation / reviewer |
+|----------|------------|-------|----------------|---------------|--------------|--------------|------------------|------------------------|
+| 1        |            |       |                |               |              |              |                  |                        |
+| 2        |            |       |                |               |              |              |                  |                        |
+| Total    |            |       |                |               |              |              |                  |                        |
+
+Expected cash = float + POS cash sales (less any paid-outs with receipts). Thresholds come from the
+org's `nonprofit-financial-controls` policy.
+
 ## Standard Deliverables
 
 - POS/inventory system configuration checklist
@@ -103,6 +111,15 @@ accountability challenges. Build procedures assuming these conditions, not a sta
 - Deposit reconciliation procedure
 - Loss-prevention control checklist (physical + procedural)
 - Monthly shrinkage report
+
+## Verify Before Acting
+
+- [ ] Over/short thresholds and escalation path match the board-adopted policy in
+      `nonprofit-financial-controls`; none were invented at store level.
+- [ ] The person who reconciles the deposit slip to the POS total is not the person who counted the till.
+- [ ] Each day's POS close, counted deposit, and bank deposit agree, or the variance is documented.
+- [ ] Opening and closing checklists carry two sets of initials for every cash count.
+- [ ] Shrink reports compare POS movement to physical spot counts in high-value categories.
 
 ## Common Failure Modes
 
@@ -119,13 +136,13 @@ accountability challenges. Build procedures assuming these conditions, not a sta
   happens at the register.
 - **Unsorted/unpriced backstock accessible to the sales floor**, enabling both shrinkage and
   inconsistent off-book pricing by whoever reaches it first.
+- **Prices set at the register without a published band or price code**, which makes "sweethearting"
+  (cashiers undercharging friends or regulars) invisible; require category price codes or pre-tagged
+  prices and review POS manual-price and discount overrides.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As a store manager**, treat the over/short report as a daily habit, not a monthly audit artifact
-  — same-day review of a variance is far more likely to identify a training gap or an actual loss
-  than a variance discovered weeks later with no memory of that day's specifics.
-- **As a consultant advising a resale store**, don't propose new policy thresholds from scratch —
-  first confirm the org's board-adopted approval/threshold policy from `nonprofit-financial-controls`
-  and design the store procedure to execute that policy; a floor-level fix that contradicts org policy
-  creates an audit finding even if it "solves" the immediate operational complaint.
+- Treat the over/short report as a daily habit; same-day review of a variance is far more likely to
+  identify a training gap or an actual loss than a variance found weeks later.
+- Don't propose new thresholds from scratch; a floor-level fix that contradicts board-adopted policy
+  creates an audit finding even if it solves the immediate complaint.

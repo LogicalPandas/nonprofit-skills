@@ -1,6 +1,6 @@
 ---
 name: nonprofit-retail-pricing-merchandising
-description: "Sets pricing strategy for used/donated goods, plans store floor layout, seasonal category rotation, and visual merchandising/display for a thrift or resale store. Use for 'price our donated inventory,' 'redesign the store floor plan,' 'plan a seasonal color-tag rotation.' Online marketplace listing/pricing lives in nonprofit-online-resale."
+description: "Sets in-store pricing for donated goods (category price bands, a boutique tier, color-tag markdowns) and plans floor layout, seasonal rotation and visual merchandising for a thrift or resale store. Use for 'price our donated inventory,' 'how should we price donated clothing,' 'redesign the store floor plan,' or 'plan a seasonal color-tag rotation.' Not for online marketplace listings (use nonprofit-online-resale), POS, cash handling or loss prevention (use nonprofit-retail-store-operations), or grading incoming donations (use nonprofit-donation-intake-grading)."
 license: MIT
 metadata:
   supervision: "unsupervised"
@@ -11,20 +11,13 @@ metadata:
 
 # Nonprofit Retail Pricing & Merchandising
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to set in-store pricing strategy for donated/used goods and to design the physical
-retail experience: floor layout, category adjacency, seasonal rotation, and visual merchandising.
-Typical triggers: "how should we price donated clothing," "our floor feels cluttered, redesign the
-layout," "set up a color-tag markdown rotation," "plan our seasonal changeover for back-to-school,"
-"boutique-price our name-brand section."
-
-**Boundary:** this skill covers in-store shelf/rack pricing and physical merchandising only. Listing
-and pricing high-value items sold through online marketplaces (ShopGoodwill, eBay-style auction
-listings) is `nonprofit-online-resale` — hand off any item identified as online-appropriate rather
-than pricing it for the floor. Point-of-sale system configuration, cash handling, and loss prevention
-are `nonprofit-retail-store-operations`. Grading and triage of incoming donations before they reach
-pricing is `nonprofit-donation-intake-grading`.
+- This skill covers in-store shelf/rack pricing and physical merchandising only.
+- High-value items for online marketplaces: `nonprofit-online-resale` — hand off any item identified as
+  online-appropriate rather than pricing it for the floor.
+- POS configuration, cash handling, and loss prevention: `nonprofit-retail-store-operations`.
+- Grading and triage before items reach pricing: `nonprofit-donation-intake-grading`.
 
 ## Core Framework: Pricing a Non-Fixed-Cost Inventory
 
@@ -43,22 +36,11 @@ and the need to keep inventory moving. Anchor decisions to three named levers:
    system: each week's new stock gets a color, and tags age through markdown percentages on a fixed
    calendar) that forces stale inventory to clear rather than accumulating.
 
-## Standard Terminology
+## Color-Tag Rotation
 
-- **Color-tag rotation**: a system where each intake week (or day) is assigned a rotating tag color;
-  a fixed markdown schedule (e.g., 25% off after 4 weeks, 50% after 6, clearance/bag-sale after 8)
-  applies by tag color so aging is enforced mechanically, not judged case-by-case.
-- **Sell-through rate**: % of floor inventory in a category that sells within a defined window
-  (commonly 30/60/90 days); the primary diagnostic for whether a category's pricing or space
-  allocation is right-sized.
-- **Category adjacency**: placing complementary categories near each other (e.g., housewares near
-  furniture "vignettes," children's clothing near toys) to increase basket size — a core visual
-  merchandising principle borrowed from conventional retail and directly applicable to thrift floors.
-- **Vignette/staging**: arranging furniture and housewares together as a styled room display rather
-  than a warehouse aisle, materially increasing sell-through and price realization on big-ticket
-  floor items.
-- **Boutique section**: a physically distinct, better-lit, better-fixtured area for premium graded
-  items, priced above standard category bands.
+Assign each intake week (or day) a rotating tag color; a fixed markdown schedule (e.g., 25% off after 4
+weeks, 50% after 6, clearance/bag-sale after 8) applies by tag color so aging is enforced mechanically,
+not judged case-by-case. Measure sell-through by category over a fixed window (commonly 30/60/90 days).
 
 ## Step-by-Step: Setting Pricing Strategy
 
@@ -76,17 +58,28 @@ and the need to keep inventory moving. Anchor decisions to three named levers:
 5. **Review sell-through by category monthly** and adjust price bands or space allocation: a category
    with low sell-through is overpriced, overstocked, or poorly placed — diagnose which before cutting
    price broadly.
-6. **Design the floor plan** with clear category zones, sightlines from the entrance, high-traffic
-   "impulse" placement near checkout, and a boutique section positioned to be discovered, not hidden
-   in a back corner.
+6. **Design the floor plan** with clear category zones and a boutique section positioned to be
+   discovered, not hidden in a back corner; stage furniture and housewares as room vignettes, which
+   materially increases sell-through and price realization on big-ticket floor items.
 7. **Plan seasonal rotation on a calendar** (e.g., swap in back-to-school and fall clothing 6-8 weeks
    ahead of season, rotate holiday decor/costumes ahead of the relevant weeks) and stage the
    changeover in backstock so the floor swap happens in a single push, not gradually.
 8. **Run the color-tag clearance mechanically**: enforce markdowns and end-of-cycle bag sales or
    bulk/liquidator pulls on schedule rather than letting aged stock linger and crowd the floor.
-9. **Refresh visual merchandising display points** (window, entrance table, endcaps) on a short cycle
-   (weekly to biweekly) — a static display is the fastest way for a repeat-visit thrift shopper to
-   stop returning.
+9. **Refresh display points** (window, entrance table, endcaps) weekly to biweekly — thrift shoppers
+   are repeat visitors and stop returning when displays look static.
+
+## Price-Band Matrix Template
+
+| Category / subcategory | Value tier | Standard band | Boutique tier | Boutique criteria (from grading) | Online review if over | Last reviewed |
+|------------------------|------------|---------------|---------------|----------------------------------|-----------------------|---------------|
+| Women's dresses        | $          | $__-__        | $__+ (individual) | [brand list, like-new]       | $__                   | [date]        |
+| Men's dress shirts     | $          | $__-__        | $__+          |                                  |                       |               |
+| Hardback books         | $          | $__           | n/a           |                                  |                       |               |
+| Small appliances (tested) | $       | $__-__        | $__+          |                                  |                       |               |
+| Furniture              | $          | $__-__        | individual    |                                  |                       |               |
+
+Below the matrix: color-tag calendar (color, start week, markdown at each age) and the version date.
 
 ## Standard Deliverables
 
@@ -96,6 +89,16 @@ and the need to keep inventory moving. Anchor decisions to three named levers:
 - Floor plan with category zones and boutique placement
 - Seasonal rotation calendar
 - Monthly sell-through-by-category report
+
+## Verify Before Acting
+
+- [ ] Every grading tier from intake maps to a column in the price-band matrix, and boutique criteria
+      use the same words as the grading rubric.
+- [ ] The online-review threshold matches the one set in `nonprofit-online-resale`.
+- [ ] Price bands were benchmarked against local resale competitors or sold comps within the last year.
+- [ ] The color-tag calendar has no two active colors that collide and states each markdown step.
+- [ ] Any band change is reflected in the POS item codes before the floor is retagged
+      (`nonprofit-retail-store-operations`).
 
 ## Common Failure Modes
 
@@ -111,13 +114,11 @@ and the need to keep inventory moving. Anchor decisions to three named levers:
   holiday, or costume categories.
 - **Price bands never revisited**, systematically underpricing against a rising secondhand/vintage
   market.
+- **Boutique items run through the standard color-tag markdown**, clearing premium stock at band
+  prices; give the boutique section its own, slower markdown rule or a pull-to-online step.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As a store manager**, publish the price-band matrix physically at the pricing table and retrain
-  to it whenever sell-through data shows drift — pricing consistency is a training and enforcement
-  problem more often than a strategy problem.
-- **As a consultant advising a resale operation**, start any pricing engagement with a sell-through-
-  by-category pull; it tells you in one report whether the presenting complaint ("sales are flat")
-  is really a pricing problem, a merchandising/space problem, or an intake-quality problem upstream,
-  and points you to the right lever before you touch prices.
+- Start any pricing engagement with a sell-through-by-category pull; it shows whether "sales are flat"
+  is a pricing, merchandising/space, or upstream intake-quality problem before you touch prices.
+- Pricing consistency is a training and enforcement problem more often than a strategy problem.
