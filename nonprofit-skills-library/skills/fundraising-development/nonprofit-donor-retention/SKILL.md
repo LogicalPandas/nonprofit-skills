@@ -1,6 +1,6 @@
 ---
 name: nonprofit-donor-retention
-description: "Designs thank-you/acknowledgment processes, maps the end-to-end donor journey, plans lapsed-donor win-back campaigns, and diagnoses retention-rate and donor-attrition problems using standard retention metrics. Use when a user asks to fix a low donor-retention rate, design or speed up a gift acknowledgment/thank-you process, map the donor journey from first gift onward, plan a lapsed or lybunt/sybunt win-back campaign, or calculate retention/attrition/donor-lifetime-value metrics. Does not cover moving new prospects through initial identification/cultivation/solicitation stages (use nonprofit-donor-pipeline) or the ask-string/segmentation mechanics of a regular mass appeal (use nonprofit-annual-appeals)."
+description: "Designs gift acknowledgment and thank-you processes, maps the donor journey after the first gift, plans lapsed-donor (LYBUNT/SYBUNT) win-back campaigns, and diagnoses retention and attrition problems. Use when a user says 'our donor retention rate is dropping', 'design our thank-you process', 'map our donor journey', 'plan a lapsed-donor win-back' or 'calculate our retention rate and donor lifetime value'. Not for moving prospects through identification, cultivation and solicitation (use nonprofit-donor-pipeline) or ask strings and segmentation for a regular mass appeal (use nonprofit-annual-appeals)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,36 +11,27 @@ metadata:
 
 # Donor Retention & Stewardship
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for everything that happens **after** a gift is made — not for moving new prospects
-into their first gift, which is `nonprofit-donor-pipeline`. Typical triggers:
-
-- "Our donor retention rate is dropping — diagnose why"
-- "Design our gift acknowledgment/thank-you process"
-- "Map our donor journey from first gift through year three"
-- "Plan a lapsed-donor win-back campaign"
-- "Calculate our retention rate, attrition rate, and donor lifetime value"
-- "How fast should thank-you letters go out, and what should they say?"
+- Moving new prospects into their first gift (identification, cultivation, solicitation):
+  `nonprofit-donor-pipeline`.
+- Ask strings and segmentation for regular mass appeals: `nonprofit-annual-appeals`.
 
 ## Core Metrics
 
-Define and track these consistently — sector benchmarks vary by report and year, so prioritize the
-org's own trend line over any single external number, and cite the specific source if quoting a
-sector average to a board:
+Sector benchmarks vary by report and year, so prioritize the org's own trend line over any single
+external number, and cite the specific source if quoting a sector average to a board.
 
 - **Donor retention rate** = (donors who gave this year AND last year) / (donors who gave last
-  year). The sector median has hovered in a persistently low range for years across most published
-  fundraising-effectiveness studies, which is exactly why even modest retention gains compound
-  significantly over time.
-- **New donor retention rate** — retention of only first-year donors into year two — typically
-  meaningfully lower than overall retention and the highest-leverage segment to fix, since most
-  attrition happens right after the first gift.
-- **Donor attrition rate** = 1 − retention rate.
-- **LYBUNT** (gave Last Year But Unfortunately Not This year) and **SYBUNT** (Some Year But
-  Unfortunately Not This year) — standard segment labels for lapsed-donor win-back targeting.
-- **Donor lifetime value (LTV)** — cumulative expected giving over the donor relationship; useful
-  for justifying retention/stewardship investment against acquisition spend.
+  year). The sector median has stayed persistently low across published fundraising-effectiveness
+  studies, so even modest gains compound significantly.
+- **New donor retention rate** (first-year donors into year two) — typically meaningfully lower
+  than overall retention and the highest-leverage segment to fix, since most attrition happens
+  right after the first gift. Track it separately.
+- **LYBUNT** (gave last year, not this year) vs. **SYBUNT** (gave some year, not this year) — the
+  win-back segments.
+- **Donor lifetime value (LTV)** — use it to justify stewardship investment against acquisition
+  spend.
 
 ## Donor Journey Mapping
 
@@ -58,7 +49,9 @@ specific onboarding sequence rather than silence until the next mass appeal.
    donor-perception drivers in retention research.
 2. **Required receipt elements**: organization's legal name, gift amount and date, a statement of
    whether goods/services were provided in exchange (and their value, if any) for IRS
-   substantiation compliance, and the org's EIN/tax-exempt status language.
+   substantiation compliance, and the org's EIN/tax-exempt status language. Verify current
+   substantiation and quid pro quo disclosure rules in IRS Publication 1771 before finalizing
+   templates.
 3. **Separate the receipt from the "thank you"**: a compliant tax receipt is not the same as a
    warm, personal acknowledgment — pair the formal receipt with a genuine thank-you (a call from a
    board member for larger gifts, a handwritten note, or at minimum a warm, specific letter that
@@ -94,6 +87,22 @@ specific onboarding sequence rather than silence until the next mass appeal.
 - **Acknowledgment templates** — first-gift welcome letter, standard renewal receipt, major-gift
   personal thank-you framework, year-end/tax-summary letter.
 
+### Output template: stewardship matrix and receipt skeleton
+
+| Gift tier | First gift or renewal | Receipt timing | Thank-you method | Owner | Follow-up touch and timing |
+|---|---|---|---|---|---|
+| [under $X] | [both] | Within 24-48 hours | [warm specific letter or email] | [staff] | [impact update, date] |
+| [$X-$Y] | [ ] | Within 24-48 hours | [handwritten note] | [ ] | [ ] |
+| [$Y+] | [ ] | Within 24-48 hours | [board member call] | [board member] | [site visit or video, date] |
+| First-time donor (any amount) | First gift | Within 24-48 hours | [welcome series step 1] | [ ] | [90-day onboarding sequence] |
+
+```
+[Organization legal name] | EIN [00-0000000] | [tax-exempt status language]
+Donor: [name]   Gift date: [date]   Amount: [$ or description of non-cash gift]
+Goods or services provided: [None] / [Description and good-faith estimated value]
+[Warm, specific thank-you paragraph sent with or alongside the receipt: what the gift funds]
+```
+
 ## Concrete Steps
 
 1. Calculate current overall and new-donor retention rates from the donor database; trend at least
@@ -111,6 +120,17 @@ specific onboarding sequence rather than silence until the next mass appeal.
    the board as a standing metric alongside total dollars raised, since dollars raised can mask a
    worsening retention problem if offset by new acquisition.
 
+## Verify Before Acting
+
+- [ ] Every receipt template includes the legal name, amount and date, goods-or-services statement
+  (with value if any), and EIN/tax-exempt language, checked against current IRS Publication 1771.
+- [ ] Retention, new-donor retention and LYBUNT/SYBUNT counts reconcile to the donor database for
+  the same period, with at least 3 years of trend.
+- [ ] First-time donors route to the welcome sequence, not the routine renewal receipt.
+- [ ] Win-back copy differs from the standard appeal copy, and win-back results are measured
+  separately from acquisition and renewal.
+- [ ] Any sector benchmark shown to the board names its source and year.
+
 ## Common Failure Modes
 
 - **Measuring only total $ raised**: masking a retention problem when new-donor acquisition
@@ -122,16 +142,15 @@ specific onboarding sequence rather than silence until the next mass appeal.
   former — use the stewardship matrix to differentiate deliberately.
 - **Win-back campaigns identical to standard appeals**: reusing the same appeal copy for lapsed
   donors instead of a distinct acknowledgment of the gap and a tailored offer.
+- **Adding acquisition when the leak is retention**: when "we need to raise more" is the stated
+  problem, check retention first; retained-donor revenue compounds while acquisition costs recur.
 - **No new-donor-specific tracking**: blending first-year donors into overall retention figures,
   hiding the highest-leverage segment to fix.
 
-## For Advisors
+## For advisors
 
-When a client presents "we need to raise more" as the problem, check the retention rate first — a
-sub-benchmark retention rate often means the real leverage is plugging the leak, not adding
-acquisition spend, since retained-donor revenue compounds while acquisition costs recur every
-year. Use LTV modeling to make the board-level case that stewardship investment (staff time, a
-donor-relations hire, CRM automation) pays back over the donor relationship even when it doesn't
-show immediate ROI. Recommend the stewardship matrix and journey map as the two foundational
-documents in any retention engagement — most organizations have neither written down, which is why
-practice varies by whoever happens to answer the thank-you-note task that week.
+- Use LTV modeling to make the board-level case that stewardship investment (staff time, a
+  donor-relations hire, CRM automation) pays back over the donor relationship even without
+  immediate ROI.
+- Recommend the stewardship matrix and journey map as the two foundational documents in any
+  retention engagement; most organizations have neither written down.

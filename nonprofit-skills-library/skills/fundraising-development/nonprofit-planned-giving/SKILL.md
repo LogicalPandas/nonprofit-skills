@@ -1,6 +1,6 @@
 ---
 name: nonprofit-planned-giving
-description: "Builds bequest and legacy society programs: structuring planned-gift vehicles (bequests, beneficiary designations, charitable gift annuities, charitable remainder trusts), scripting legacy-gift donor conversations, marketing a legacy society, and stewarding named/estate commitments. Use when a user asks to launch or grow a legacy/bequest society, script a planned-giving conversation, market planned gifts to a donor segment, explain a planned-gift vehicle to a donor or board, or design stewardship for documented estate commitments. Does not cover outright major gifts made today (use nonprofit-major-gifts) or general pipeline stage tracking (use nonprofit-donor-pipeline)."
+description: "Builds bequest and legacy society programs: planned-gift vehicles (bequests, beneficiary designations, charitable gift annuities, charitable remainder trusts), legacy conversation scripts, sample bequest language, legacy society marketing, and stewardship of documented estate commitments. Use when a user says 'help us launch a legacy society', 'script a bequest conversation', 'explain a charitable remainder trust to our board' or 'how do we steward donors who put us in their will?'. Not for outright major gifts made today (use nonprofit-major-gifts) or pipeline stage tracking (use nonprofit-donor-pipeline)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -11,47 +11,35 @@ metadata:
 
 # Planned & Legacy Giving
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for future/deferred gifts realized at death or via a trust/annuity structure — not
-for outright current major gifts (`nonprofit-major-gifts`), and not for general pipeline stage
-mechanics (`nonprofit-donor-pipeline`, though planned-giving prospects still move through those
-same stages before a legacy conversation). Typical triggers:
+- Outright current major gifts, including large QCD gifts: `nonprofit-major-gifts`.
+- Pipeline stage mechanics: `nonprofit-donor-pipeline`. Planned-giving prospects still move through
+  those stages before a legacy conversation.
 
-- "Help us launch a legacy society"
-- "Script a conversation for asking a donor to consider a bequest"
-- "Explain the difference between a bequest and a charitable remainder trust for our board"
-- "Write legacy-society marketing copy for our newsletter/website"
-- "How do we steward donors who've already told us we're in their will?"
-- "Build a planned-giving prospect identification checklist"
+## Planned-Gift Vehicles: Org-Side Rules
 
-## Core Planned-Gift Vehicles
+Always direct donors to their own attorney/financial advisor for execution; the org's role is to
+describe options and provide sample bequest language, not give individualized legal/tax advice.
 
-Know these well enough to explain accurately to a donor or board — but always direct donors to
-their own attorney/financial advisor for execution; the org's role is to describe options and
-provide sample bequest language, not give individualized legal/tax advice:
-
-1. **Bequest** — a gift via will or living trust; the simplest and most common planned gift, either
-   a specific amount, a specific asset, a percentage of the estate (residuary bequest — often
-   preferred since it doesn't need updating when the estate's total value changes), or contingent
-   (triggers only if named heirs predecease the donor). Provide donors exact sample bequest
-   language naming the organization's full legal name, EIN, and location.
-2. **Beneficiary designation** — naming the nonprofit as full or partial beneficiary on a
-   retirement account (401(k)/IRA), life insurance policy, or donor-advised fund succession plan.
-   Retirement-account gifts are tax-efficient because the charity, unlike an individual heir, pays
-   no income tax on the distribution — a genuinely useful talking point with donors.
-3. **Charitable Gift Annuity (CGA)** — donor transfers assets to the org in exchange for a fixed
-   lifetime income stream; requires state-specific registration/regulatory compliance and
-   actuarial rate-setting (commonly referencing American Council on Gift Annuities suggested
-   rates) — flag that most small/mid nonprofits need a specialized gift-annuity administrator or
-   reinsurance arrangement rather than running this in-house from scratch.
-4. **Charitable Remainder Trust (CRT)** — an irrevocable trust paying income to the donor/beneficiary
-   for life or a term, with the remainder to the charity; requires the donor's own estate attorney
-   to draft — the org's role is cultivation and stewardship, not drafting the trust.
-5. **IRA Qualified Charitable Distribution (QCD)** — a current (not deferred) gift vehicle
-   technically outside "planned giving" but frequently promoted alongside it since it targets the
-   same donor segment (70½+); note it explicitly if a donor conversation surfaces it, and redirect
-   the outright-gift mechanics to `nonprofit-major-gifts` if it's a large current gift.
+1. **Bequest** — via will or living trust: specific amount, specific asset, percentage/residuary
+   (often preferred since it doesn't need updating when the estate's total value changes), or
+   contingent. Provide exact sample bequest language naming the organization's full legal name,
+   EIN, and location.
+2. **Beneficiary designation** — retirement account (401(k)/IRA), life insurance, or donor-advised
+   fund succession. Retirement-account gifts are tax-efficient because the charity, unlike an
+   individual heir, pays no income tax on the distribution — a genuinely useful talking point.
+3. **Charitable Gift Annuity (CGA)** — requires state-specific registration/regulatory compliance
+   and actuarial rate-setting (commonly referencing American Council on Gift Annuities suggested
+   rates; verify the current suggested rates with ACGA and the current registration rules with each
+   relevant state insurance regulator). Most small/mid nonprofits need a specialized gift-annuity
+   administrator or reinsurance arrangement rather than running this in-house from scratch.
+4. **Charitable Remainder Trust (CRT)** — requires the donor's own estate attorney to draft; the
+   org's role is cultivation and stewardship, not drafting the trust.
+5. **IRA Qualified Charitable Distribution (QCD)** — a current (not deferred) gift, often promoted
+   alongside planned giving since it targets the same donor segment (70½+; verify the current QCD
+   age and annual limit in IRS guidance before citing them). Note it if a donor conversation
+   surfaces it, and route large current gifts to `nonprofit-major-gifts`.
 
 ## Legacy Society Design
 
@@ -80,6 +68,32 @@ provide sample bequest language, not give individualized legal/tax advice:
   known), estimated/unknown value, and a stewardship touch cadence distinct from the annual-fund
   cycle.
 
+### Output template: sample bequest language sheet
+
+Structure only. Final wording must come from the org's legal counsel; do not present this skeleton
+as approved language.
+
+```
+Our legal name: [FULL LEGAL NAME]   EIN: [00-0000000]   Address: [ADDRESS]
+
+Specific bequest:
+  "I give [dollar amount / description of property] to [FULL LEGAL NAME], [EIN], [ADDRESS],
+  for its general charitable purposes." [counsel-approved wording]
+
+Percentage bequest:
+  "I give [percentage]% of my estate to [FULL LEGAL NAME] ..." [counsel-approved wording]
+
+Residuary bequest:
+  "I give [all / percentage] of the residue of my estate to [FULL LEGAL NAME] ..." [counsel-approved wording]
+
+Contingent bequest: [counsel-approved wording for gifts that take effect only if named heirs predecease]
+
+Restricted purpose (optional): [counsel-approved wording, with a clause allowing redirection if the purpose becomes impossible]
+
+Please share your plans with us: [contact name, phone, email] | Notification of intent form: [link]
+We recommend reviewing your plans with your own attorney or financial advisor.
+```
+
 ## Concrete Steps
 
 1. Identify planned-giving prospects from existing pipeline data: long-tenured donors (typically
@@ -101,6 +115,21 @@ provide sample bequest language, not give individualized legal/tax advice:
 7. When an estate gift is actually received, route it through finance/gift-acceptance policy review
    (especially for non-cash or restricted bequests) before recognition and acknowledgment.
 
+## Verify Before Acting
+
+Before any legacy marketing material, bequest language sheet or donor script goes out:
+
+- [ ] The org's full legal name, EIN and address match its IRS determination letter and state
+  records.
+- [ ] Sample bequest language has been reviewed by the org's legal counsel.
+- [ ] No material or script gives individualized tax or legal advice, and each refers donors to
+  their own advisors.
+- [ ] Any QCD age or limit, ACGA rate, or tax statement has been checked against the current
+  official source (IRS, ACGA, state insurance regulator).
+- [ ] If CGAs are offered, state registration and administration (in-house or outsourced) are
+  confirmed for every state where annuitants live.
+- [ ] A gift acceptance policy covering vehicle types, minimums and complex assets is in place.
+
 ## Common Failure Modes
 
 - **Treating legacy giving as a numbers-only youth-to-death funnel**: legacy conversations require
@@ -113,15 +142,13 @@ provide sample bequest language, not give individualized legal/tax advice:
   to the donor's own professional advisors.
 - **Under-resourcing gift-annuity administration**: attempting to run CGAs without proper state
   registration or actuarial/reinsurance support creates real regulatory and financial risk.
+- **Marketing before a gift acceptance policy**: accepting an unanticipated complex estate asset
+  without a policy (vehicle types accepted, minimums, complex-asset handling) is a recurring
+  operational and legal headache; put the policy in place before actively marketing planned gifts.
 
-## For Advisors
+## For advisors
 
-When helping a client launch or revive a legacy program, start by segmenting the existing donor
-file for tenure and age signals — most orgs already have a viable legacy prospect pool sitting
-unused in their database. Coach the ED/board that legacy giving is a decades-long relationship
-investment with a long lag between activity and realized revenue, and set board expectations (and
-KPI design, in coordination with `nonprofit-outcomes-measurement`) around documented-intent counts
-and pipeline growth rather than realized-dollar targets in the short term. Recommend formal
-gift-acceptance policy review (vehicle types accepted, minimums, complex-asset handling) as a
-prerequisite before actively marketing planned gifts, since accepting an unanticipated complex
-estate asset without a policy in place is a recurring operational and legal headache.
+- Start a launch or revival by segmenting the existing donor file for tenure and age signals; most
+  orgs already have a viable legacy prospect pool sitting unused.
+- Set board expectations (and KPI design, with `nonprofit-outcomes-measurement`) around
+  documented-intent counts and pipeline growth rather than short-term realized-dollar targets.

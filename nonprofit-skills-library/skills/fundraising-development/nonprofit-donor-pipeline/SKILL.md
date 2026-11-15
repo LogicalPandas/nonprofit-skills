@@ -1,6 +1,6 @@
 ---
 name: nonprofit-donor-pipeline
-description: "Builds and manages donor pipeline and moves-management systems: prospect identification, qualification, cultivation move sequencing, solicitation staging, and stage-to-stage conversion tracking. Use when a user asks to build a moves-management plan, set up pipeline/gift range stages, triage a prospect list, write a portfolio's next-move plan, calculate stage conversion rates, or diagnose why prospects are stalling in a stage. Does not cover setting ask amounts or structuring major-gift proposals (use nonprofit-major-gifts), thank-you/acknowledgment mechanics and lapsed-donor win-back (use nonprofit-donor-retention), or CRM software selection/configuration (use nonprofit-donor-crm)."
+description: "Builds and manages donor pipeline and moves-management systems: prospect identification and qualification, cultivation move plans, stage tracking, portfolio assignment, and stage-to-stage conversion analysis. Use when a user says 'build a moves-management pipeline', 'write next-move plans for my portfolio', 'who in this prospect list is stalled?' or 'how many prospects do we need to hit our goal?'. Not for setting ask amounts or writing major-gift proposals (use nonprofit-major-gifts), acknowledgments and lapsed-donor win-back (use nonprofit-donor-retention), or CRM selection and setup (use nonprofit-donor-crm)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,34 +11,27 @@ metadata:
 
 # Donor Pipeline & Moves Management
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to build, run, or audit the system that moves individual donors and prospects
-through fundraising stages — not to decide what to ask them for (that's `nonprofit-major-gifts`)
-and not to design the thank-you/retention mechanics after a gift lands (that's
-`nonprofit-donor-retention`). Typical triggers:
+- Ask strategy, amount-setting and proposal structure: `nonprofit-major-gifts`.
+- Acknowledgment workflows, thank-you SLAs, the donor journey and lapsed-donor win-back:
+  `nonprofit-donor-retention`.
+- CRM software selection and configuration: `nonprofit-donor-crm`.
+- Low-touch track for downgraded prospects: `nonprofit-annual-appeals`.
 
-- "Build a moves-management pipeline for our major-donor prospects"
-- "Set up gift-range/pipeline stages for our development team"
-- "Review this prospect list and tell me who's stalled"
-- "Write next-move plans for a portfolio of 40 prospects"
-- "What's our stage-to-stage conversion rate and where's the bottleneck?"
-- "How many qualified prospects do we need to hit our fundraising goal?"
+## Stages
 
-## Core Framework: Moves Management
-
-Moves management (a term coined at Cornell's fundraising program, dating to David Dunlop) is the
-discipline of deliberately advancing a prospect's relationship with the organization through a
-sequence of stages via specific, planned actions ("moves"). Treat every prospect as sitting in
-exactly one stage at a time:
+Treat every prospect as sitting in exactly one stage at a time:
 
 1. **Identification** — Suspect enters the pipeline from a data source: wealth screening flags,
    board/staff referral, event sign-in, volunteer roster, grateful-client list, digital engagement
    score. Not yet a "prospect" until minimally qualified.
-2. **Qualification** — Confirm capacity (ability to give), affinity (connection to mission), and
-   propensity (giving history/philanthropic behavior) — the standard "linkage, ability, interest"
-   (LAI) triage used by prospect researchers. Assign a qualification rating (e.g., A/B/C or
-   $ capacity band) and a suggested portfolio owner.
+2. **Qualification** — Confirm the three qualification axes: **capacity** (ability to give),
+   **affinity** (connection to mission), and **propensity** (giving history/philanthropic
+   behavior). Prospect researchers often call this "linkage, ability, interest" (LAI): linkage =
+   affinity, ability = capacity, interest = propensity. This skill uses capacity, affinity and
+   propensity throughout; `nonprofit-major-gifts` adds readiness (timing) when setting the ask.
+   Assign a qualification rating (e.g., A/B/C or $ capacity band) and a suggested portfolio owner.
 3. **Cultivation** — A sequence of relationship-building moves (1:1 visits, tours, small
    convenings, briefings, volunteer roles) intended to deepen affinity and confirm interest area.
    Each move should have a stated purpose tied to what you still need to learn or build.
@@ -60,7 +53,8 @@ exactly one stage at a time:
 3. **Pipeline/funnel report** — count and $ value of prospects at each stage, converted to a
    funnel visual, run monthly at minimum. Pair with a **stage conversion rate** (% moving
    Identification→Qualification→Cultivation→Solicitation→Closed) to find the leaking stage.
-4. **Prospect rating scale** — document the capacity bands and LAI scoring rubric used, so ratings
+4. **Prospect rating scale** — document the capacity bands and the capacity/affinity/propensity
+   scoring rubric used, so ratings
    are consistent across gift officers.
 
 ## Concrete Steps
@@ -85,6 +79,18 @@ exactly one stage at a time:
    more top-of-funnel volume — a common failure mode is chasing more suspects while
    Cultivation→Solicitation conversion is the actual bottleneck.
 
+## Verify Before Acting
+
+Before a pipeline report or portfolio plan ships:
+
+- [ ] Every record sits in exactly one stage, and none is unassigned.
+- [ ] Every active prospect has one portfolio owner and a dated next move with a stated purpose.
+- [ ] Stalled prospects (no move in 60-90 days) are counted and each has a disposition.
+- [ ] Portfolio sizes are near or under the 100-150 cap.
+- [ ] Stage counts and $ values by stage sum to the pipeline totals, and the backward pipeline math
+  uses the org's own average gift and close rates where available.
+- [ ] Donor personal information in the report is limited to what the audience needs.
+
 ## Common Failure Modes
 
 - **Ghost pipeline**: prospects listed in the CRM with no stage movement in 6+ months and no
@@ -95,16 +101,17 @@ exactly one stage at a time:
   attention; cap portfolio size and require a reassignment trigger after a set stall period.
 - **No move specificity**: "keep in touch" logged as a move — reject vague moves; require a stated
   purpose and next action date.
+- **Training instead of diagnosis**: a client asking for "more major donor training" often has a
+  stalled-Cultivation problem that no training fixes. Open with a pipeline health audit (stage
+  counts, time-in-stage, conversion rates) before recommending new tactics.
 - **Conflating qualification with wealth alone**: capacity without affinity or propensity produces
-  wasted cultivation time; always score all three legs of LAI.
+  wasted cultivation time; always score all three axes (capacity, affinity, propensity).
 
-## For Advisors
+## For advisors
 
-When engaging as a consultant, open with a **pipeline health audit** before recommending new
-tactics: pull stage counts, time-in-stage, and conversion rates first — a client asking for "more
-major donor training" often actually has a stalled-Cultivation problem that no amount of training
-fixes. Present findings to the board/ED as a funnel diagram with the weakest transition
-highlighted, and frame recommendations as capacity questions ("you have enough suspects; you lack
-qualification bandwidth") rather than generic best-practice lists. Recommend the client formalize
-the stage matrix and portfolio caps in a written gift officer job aid — the unwritten pipeline is
-the single most common root cause of inconsistent major-gift performance in small-to-mid shops.
+- Present findings to the board/ED as a funnel diagram with the weakest transition highlighted, and
+  frame recommendations as capacity questions ("you have enough suspects; you lack qualification
+  bandwidth") rather than generic best-practice lists.
+- Recommend formalizing the stage matrix and portfolio caps in a written gift officer job aid — the
+  unwritten pipeline is the single most common root cause of inconsistent major-gift performance in
+  small-to-mid shops.

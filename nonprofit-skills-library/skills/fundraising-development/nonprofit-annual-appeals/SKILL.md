@@ -1,6 +1,6 @@
 ---
 name: nonprofit-annual-appeals
-description: "Plans and writes annual fund direct-mail and email appeal campaigns: donor segmentation for appeals, ask-string/amount ladders, appeal letter and reply-device copy, year-end and giving-season campaign calendars, and appeal performance benchmarks (response rate, average gift). Use when a user asks to plan a year-end or giving-season appeal, segment a donor file for a mail/email drop, write or edit an appeal letter or reply card, build an ask-string ladder, or analyze appeal response rates. Does not cover donor database/segmentation tooling setup (use nonprofit-donor-crm), social/team fundraising campaigns (use nonprofit-peer-to-peer-fundraising), or general e-newsletter content unrelated to a fundraising ask (use nonprofit-email-newsletter)."
+description: "Plans and writes annual fund direct-mail and email appeals: donor segmentation for a drop, ask-string ladders, appeal letter and reply-device copy, year-end and giving-season calendars, and response-rate and average-gift analysis. Use when a user says 'plan our year-end appeal', 'write the appeal letter and reply card', 'build an ask string for this segment' or 'why did this appeal underperform?'. Not for CRM or segmentation tooling setup (use nonprofit-donor-crm), lapsed-donor win-back campaigns (use nonprofit-donor-retention), team or walk campaigns (use nonprofit-peer-to-peer-fundraising), or non-ask newsletters (use nonprofit-email-newsletter)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,59 +11,62 @@ metadata:
 
 # Annual Fund Appeals
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for the strategy and copy of a mass-channel fundraising ask (mail or email) sent to
-the broad annual-fund donor file — not for configuring the CRM/segmentation software itself
-(`nonprofit-donor-crm`), not for team/peer fundraising campaigns like walks or runs
-(`nonprofit-peer-to-peer-fundraising`), and not for non-ask newsletter content
-(`nonprofit-email-newsletter`). Typical triggers:
+- CRM and segmentation tooling setup: `nonprofit-donor-crm`. This skill uses those segments to drive
+  messaging and ask amounts.
+- Lapsed-donor win-back campaign design: `nonprofit-donor-retention`. This skill covers what to send
+  an active or recently lapsed segment as part of the regular appeal calendar.
+- Team, walk and run campaigns: `nonprofit-peer-to-peer-fundraising`.
+- Non-ask newsletter content: `nonprofit-email-newsletter`.
+- Online donation page conversion copy: `nonprofit-donation-page-copy` (keep its ask amounts and
+  framing consistent with the appeal).
 
-- "Plan our year-end appeal calendar"
-- "Segment our donor file for the fall mail appeal"
-- "Write the appeal letter and reply card for giving season"
-- "Build an ask-string ladder for this segment"
-- "What should our response rate benchmark be, and why did this appeal underperform?"
-- "Plan a #GivingTuesday email sequence"
+## Core Rules
 
-## Core Concepts
-
-- **Annual fund** — the recurring, unrestricted (or lightly restricted) mass-donor giving program,
-  distinct from major/planned/capital gifts; typically the base of the donor pyramid by count, not
-  by dollar total.
-- **Ask string** — the set of suggested gift amounts presented to a donor (e.g., "$50 / $100 /
-  $250 / $500 / Other"). Anchor ask strings to the donor's own giving history, not a generic ladder:
-  a common formula is to center the ask string around 1.1x-1.5x the donor's last or highest gift,
-  with the top option meaningfully higher to invite an upgrade.
-- **Segmentation** — splitting the donor file into groups that receive different messaging/ask
-  levels: new donors (first-year), renewing donors, lapsed donors (see boundary note below),
-  mid-level donors, and non-donor prospects/lapsed inquirers. Segmentation logic can live in the
-  CRM (`nonprofit-donor-crm` sets up the tooling); this skill uses those segments to drive
-  messaging and ask amounts. Lapsed-donor *win-back* campaign design belongs to
-  `nonprofit-donor-retention`; this skill covers what to send an active/recently-lapsed segment as
-  part of the regular appeal calendar.
-- **Appeal calendar** — the annual sequence of mass appeals, typically: spring/mid-year appeal,
-  summer sustainer push, fall/pre-year-end appeal, December year-end appeal (often 30-40%+ of
-  annual-fund dollars for many orgs), and a January thank-you/tax-receipt touch.
+- **Ask string** — anchor suggested amounts to the donor's own giving history, not a generic
+  ladder: center the ask string around 1.1x-1.5x the donor's last or highest gift, with the top
+  option meaningfully higher to invite an upgrade.
+- **Segments** — new donors (first-year), renewing donors, lapsing donors, mid-level donors, and
+  non-donor prospects or lapsed inquirers each get a distinct messaging angle and ask level.
+- **Appeal calendar** — typically: spring/mid-year appeal, summer sustainer push, fall/pre-year-end
+  appeal, December year-end appeal (often 30-40%+ of annual-fund dollars for many orgs), and a
+  January thank-you/tax-receipt touch. Avoid stacking two full-file asks within 2-3 weeks of each
+  other.
 
 ## Standard Deliverables
 
-1. **Segmentation plan** — list of segments with distinct messaging angle and ask-string logic per
-   segment.
-2. **Appeal letter** — direct-mail or email copy following direct-response structure: a
-   compelling opening (specific person/moment, not a mission-statement restate), the problem, the
-   specific ask amount(s), what the gift accomplishes in concrete terms ("$75 provides X"), a
-   deadline or urgency device, a clear single call to action, and a P.S. (direct-mail P.S. lines are
-   read almost as often as the opening and should restate the ask/urgency).
-3. **Reply device / donation page** — matches the letter's ask string exactly; for the online
-   donation page's conversion-copy mechanics specifically, defer to
-   `nonprofit-donation-page-copy`, but ensure the appeal's messaging and ask amounts are consistent
-   across mail, email, and the landing page.
-4. **Appeal calendar** — dated plan across the fiscal year with channel, segment, and theme per
-   drop, spaced to avoid fatigue (avoid stacking two full-file asks within 2-3 weeks of each
-   other).
+1. **Segmentation plan** — segments with distinct messaging angle and ask-string logic per segment.
+2. **Appeal letter** — direct-response structure: a compelling opening (specific person/moment, not
+   a mission-statement restate), the problem, the specific ask amount(s), what the gift accomplishes
+   in concrete terms ("$75 provides X"), a deadline or urgency device, a single call to action, and
+   a P.S. (direct-mail P.S. lines are read almost as often as the opening and should restate the
+   ask/urgency).
+3. **Reply device / donation page** — matches the letter's ask string exactly across mail, email,
+   and the landing page.
+4. **Appeal calendar** — dated plan across the fiscal year with channel, segment, and theme per drop.
 5. **Performance scorecard** — per appeal: response rate (gifts / pieces sent), average gift,
    cost-to-raise-a-dollar, and year-over-year comparison by segment.
+
+### Output template: segment plan and letter skeleton
+
+| Segment | Definition | Count | Messaging angle | Ask string | Channel | Drop date |
+|---|---|---|---|---|---|---|
+| New | First gift in last 12 months | [n] | [angle] | [1.1x-1.5x last gift ladder] | [mail/email] | [date] |
+| Renewing | [definition] | [n] | [angle] | [ladder] | [channel] | [date] |
+| Lapsing | 1-2 years since last gift | [n] | [angle] | [ladder] | [channel] | [date] |
+| Mid-level | [org threshold] | [n] | [angle] | [ladder] | [channel] | [date] |
+
+```
+Opening: [specific person or moment]
+Problem: [what is at stake, in one short paragraph]
+Ask: [ask amount from this segment's string] by [deadline]
+Impact: [$X provides Y — finance-verified]
+Urgency: [deadline / match / challenge, if real]
+Call to action: [one action: reply card, URL, phone]
+Signature: [name, title]
+P.S. [restate ask amount and deadline]
+```
 
 ## Concrete Steps
 
@@ -88,6 +91,16 @@ the broad annual-fund donor file — not for configuring the CRM/segmentation so
 8. Feed underperforming segments back into the segmentation plan for the next cycle rather than
    repeating the same ask unchanged.
 
+## Verify Before Acting
+
+- [ ] Ask amounts are identical across the letter, reply device, email and landing page for each segment.
+- [ ] Every segment maps to exactly one ask string, and the string is based on that donor's giving history.
+- [ ] Deadline, match or challenge language is real, consistent across channels, and approved by whoever holds the match.
+- [ ] Impact statements ("$75 provides X") are confirmed with finance or program staff.
+- [ ] Merge fields, salutations and suppressions (recent donors, do-not-solicit, deceased) are tested on a seed list.
+- [ ] No other full-file ask lands within 2-3 weeks of this drop.
+- [ ] Copy has been reviewed by a second person before it goes to the whole file.
+
 ## Common Failure Modes
 
 - **One ask string for everyone**: ignoring giving history produces both under-asks (frustrating
@@ -101,14 +114,15 @@ the broad annual-fund donor file — not for configuring the CRM/segmentation so
 - **No P.S. or weak P.S.**: skipping the highest-read line of a direct-mail letter.
 - **Ignoring cost-to-raise-a-dollar**: chasing response rate alone without factoring mail/print
   costs against a lower-cost email-only push for marginal segments.
+- **Rewriting creative to fix a data problem**: a declining-response problem is often a
+  segmentation or list-hygiene issue (routed partly to `nonprofit-donor-crm`), not a copywriting
+  one. Request the last 2-3 years of appeal-level response rate and average gift by donor type
+  before recommending new creative.
 
-## For Advisors
+## For advisors
 
-When reviewing a client's annual fund program, request the last 2-3 years of appeal-level response
-rate and average-gift data segmented by donor type before recommending new creative — a
-declining-response problem is often a segmentation or list-hygiene issue (routed partly to
-`nonprofit-donor-crm`), not a copywriting one. Push clients toward a documented appeal calendar
-with explicit spacing rules; ad hoc appeal scheduling driven by whoever has bandwidth that month is
-the most common root cause of donor fatigue and inconsistent year-over-year comparisons. Frame the
-December appeal's outsized share of annual results to the board explicitly so cash-flow and staffing
-decisions account for that concentration.
+- Push clients toward a documented appeal calendar with explicit spacing rules; ad hoc scheduling
+  driven by whoever has bandwidth that month is the most common root cause of donor fatigue and
+  inconsistent year-over-year comparisons.
+- Frame the December appeal's outsized share of annual results to the board explicitly so cash-flow
+  and staffing decisions account for that concentration.

@@ -1,6 +1,6 @@
 ---
 name: nonprofit-grant-writing
-description: "Drafts letters of inquiry (LOIs) and full grant proposals for foundation, government, and corporate funders: needs statements, program narratives, budget narratives, evaluation/logic-model summaries written for a specific funder's guidelines, and grant reports. Use when a user asks to write or edit an LOI, draft a proposal narrative or budget narrative, respond to a specific RFP/NOFO's required sections, or write a grant report to a funder. Does not cover finding or vetting funders, tracking RFP deadlines, or scoring funder fit (use nonprofit-grant-research), and does not cover building the underlying logic model or theory of change from scratch (use nonprofit-program-design) — this skill packages an existing program design into funder-ready language."
+description: "Drafts letters of inquiry (LOIs), full grant proposals and grant reports for foundation, government and corporate funders: needs statements, program narratives, outcomes and evaluation sections, and budget narratives written to a specific funder's guidelines. Use when a user says 'write an LOI for this funder', 'draft the program narrative for this RFP', 'write a budget narrative' or 'write our year-end grant report'. Not for finding, vetting or scoring funders or tracking deadlines (use nonprofit-grant-research), building a logic model from scratch (use nonprofit-program-design), or calculating indirect cost rates (use nonprofit-cost-allocation)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,20 +11,16 @@ metadata:
 
 # Grant Writing: LOIs, Proposals & Reports
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill once a funder has been identified and you are producing the written application or
-report itself. For finding/vetting the funder, tracking deadlines, or scoring fit, use
-`nonprofit-grant-research` first. For building the logic model or theory of change this proposal
-will describe, use `nonprofit-program-design` first — this skill assumes that design work exists
-and focuses on translating it into funder-ready narrative and budget language. Typical triggers:
-
-- "Write a letter of inquiry for [funder]"
-- "Draft the program narrative for this RFP"
-- "Write a budget narrative justifying these line items"
-- "Turn our logic model into a proposal's outcomes section"
-- "Write our year-end grant report to [funder]"
-- "Edit this proposal down to the funder's word/page limit"
+- Finding and vetting the funder, tracking deadlines, scoring fit: `nonprofit-grant-research`
+  first.
+- Building the logic model or theory of change: `nonprofit-program-design` first. This skill
+  assumes that design work exists and translates it into funder-ready narrative and budget
+  language.
+- Indirect cost rate selection, MTDC calculations and Federal rate questions:
+  `nonprofit-cost-allocation`.
+- Measurement approach behind the evaluation plan: `nonprofit-outcomes-measurement`.
 
 ## Standard Proposal Structure
 
@@ -39,9 +35,8 @@ default skeleton and then re-map to the funder's exact required headers:
 3. **Program description / methodology** — what you will do, drawn directly from the program's
    logic model (activities and outputs); name the model type if funders expect it (e.g.,
    evidence-based, evidence-informed, promising practice).
-4. **Goals, objectives, and outcomes** — objectives should be SMART (Specific, Measurable,
-   Achievable, Relevant, Time-bound); outcomes map to the logic model's outcome tier, not just
-   activities. Distinguish outputs (units of service delivered) from outcomes (change achieved).
+4. **Goals, objectives, and outcomes** — SMART objectives; outcomes map to the logic model's
+   outcome tier, not activities (see the outputs-vs-outcomes failure mode below).
 5. **Evaluation plan** — how outcomes will be measured, what data collection tools, and reporting
    timeline; keep this consistent with whatever the org actually tracks (coordinate with
    `nonprofit-outcomes-measurement` rather than promising a measurement approach the org can't
@@ -71,18 +66,14 @@ program description:
   State the finance-approved rate, base, effective period, and authority. For Federal funding,
   distinguish a Federal negotiated rate, a pass-through-negotiated rate, and an eligible de minimis
   election of **up to 15% of MTDC**, not an automatic 15% or a universal 10%. Eligibility requires
-  no current Federal negotiated rate, including a provisional rate. Route rate selection and
-  calculations to `nonprofit-cost-allocation`; do not invent missing approval or eligibility.
-  See [2 CFR 200.414](https://www.law.cornell.edu/cfr/text/2/200.414) and
+  no current Federal negotiated rate, including a provisional rate. Do not invent missing approval
+  or eligibility. See [2 CFR 200.414](https://www.law.cornell.edu/cfr/text/2/200.414) and
   [200.332(b)(4)](https://www.law.cornell.edu/cfr/text/2/200.332).
-- Name the applicable MTDC exclusions and show the arithmetic, not just a percentage of the entire
-  project budget. Under the revised definition, only the first $50,000 of each subaward enters MTDC;
-  other exclusions include equipment, rental costs, and participant support. See
+- Show the MTDC arithmetic and exclusions, not a percentage of the entire project budget. Route
+  rate selection, MTDC exclusions (including the revised subaward limit), which award terms govern
+  (revised rules are not retroactive; an existing NICRA's approved base is not silently changed),
+  and Federal cap authority to `nonprofit-cost-allocation`, and use its calculation. See
   [200.1](https://www.law.cornell.edu/cfr/text/2/200.1).
-  Confirm the governing Federal award and amendments before using revised rules: a recent subaward
-  date alone does not update an older Federal award, the increased de minimis rate is not retroactive,
-  and an existing NICRA's approved base must not be silently changed. See
-  [COFFA implementation guidance](https://www.energy.gov/sites/default/files/2025-08/COFFA-FY%202024%20Revisions%20to%202%20CFR-%20Federal%20Agency%20Implementation.pdf).
 - Flag restricted expense categories and distinguish private-funder caps from Federal requirements.
   For Federal funds, ask finance to verify the legal authority for a conflicting cap; a pass-through's
   preference alone does not override the protections for negotiated or elected rates in
@@ -110,8 +101,8 @@ program description:
    the budget, ED or board chair signs off on institutional commitments before submission.
    Escalate unresolved Federal rate, base, or applicability questions to the qualified reviewer
    required by `nonprofit-cost-allocation`; ordinary proposal drafting remains staff-reviewed.
-9. Submit ahead of the deadline accounting for portal upload time and required attachments
-   (W-9, 501(c)(3) determination letter, board list, audited financials, org chart).
+9. Submit ahead of the deadline accounting for portal upload time, after ticking the checklist in
+   Verify Before Acting.
 10. On award, calendar the reporting schedule and build the report from the same
     outcomes/evaluation language promised in the proposal — do not let the report drift from what
     was funded.
@@ -122,6 +113,22 @@ Structure interim/final reports around the original proposal's stated objectives
 against each SMART objective, actual spend against the approved budget (flag and explain material
 variances), a challenges/lessons-learned section (funders read this for candor, not just success
 stories), and specific plans for the next period if renewal is possible.
+
+## Verify Before Acting
+
+Before submission:
+
+- [ ] Every required section header, in the funder's order and wording, is present and within its
+  word/page/character limit.
+- [ ] Narrative figures foot to the budget spreadsheet; the requested amount reconciles to the total
+  project budget and other sources.
+- [ ] The indirect rate, base and period match finance's approved calculation; unresolved rate
+  assumptions are visibly marked, and Federal rate questions went through `nonprofit-cost-allocation`.
+- [ ] Objectives are outcomes, not outputs, and the evaluation plan matches what the org actually
+  tracks.
+- [ ] Required attachments are in hand (commonly W-9, 501(c)(3) determination letter, board list,
+  audited financials, org chart, plus any funder-specific items).
+- [ ] Program staff, finance, and the ED or board chair have signed off as described in step 8.
 
 ## Common Failure Modes
 
@@ -136,17 +143,17 @@ stories), and specific plans for the next period if renewal is possible.
   Federal indirect-cost cap without checking its authority; resolve with finance before submission.
 - **Missing attachments**: technically compliant narrative but incomplete required-attachments
   checklist, causing an administrative rejection regardless of narrative quality.
+- **Rewriting prose on instinct**: to raise a win rate, first audit 3-5 recent declined proposals
+  for the pattern (funder-fit misses go to `nonprofit-grant-research`; narrative or outcomes
+  clarity stays here).
+- **Program description and evaluation conflated**: keep what you will do separate from how you
+  will measure it.
 
-## For Advisors
+## For advisors
 
-When brought in to strengthen a client's win rate, first audit 3-5 recent declined proposals for
-pattern failures (funder-fit misses vs. narrative weakness vs. missing evaluation rigor) rather
-than rewriting prose on instinct — that diagnostic belongs partly to `nonprofit-grant-research` if
-the pattern is fit, and to this skill if the pattern is narrative/outcomes clarity. Coach staff to
-separate program description from evaluation language, since conflating the two is the most common
-weakness advisors see in client-drafted narratives. Recommend a standing "boilerplate library"
-(mission, org history, capacity statements) maintained centrally so writers spend their drafting
-time on the funder-specific need/outcomes sections that actually move scores.
+- Recommend a centrally maintained boilerplate library (mission, org history, capacity statements)
+  so writers spend drafting time on the funder-specific need and outcomes sections that move
+  scores.
 
 Targeted federal indirect-cost check: September 16, 2026. Verify current agency and award terms
 at use; this check does not certify the rest of the proposal or authorize submission.
