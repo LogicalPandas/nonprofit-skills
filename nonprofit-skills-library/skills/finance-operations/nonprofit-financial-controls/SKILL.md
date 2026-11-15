@@ -7,6 +7,7 @@ metadata:
   supervision_note: "Audit preparation and control design are reviewed by a licensed auditor."
   date_added: "2026-09-07"
   date_added_source: "git:1860ed47a83901ff5e6d45abc4a2ef05be8fd4cd"
+  last_reviewed: "2026-11-11"
 ---
 
 # Nonprofit Financial Controls
@@ -27,7 +28,7 @@ public-disclosure filing itself is `nonprofit-form-990`.
 ## Core Framework: Segregation of Duties (SoD)
 
 The classic internal control model splits every financial transaction cycle across at least three
-incompatible functions so no single person can both execute and conceal a error or fraud:
+incompatible functions so no single person can both execute and conceal an error or fraud:
 
 1. **Authorization** — approving that a transaction should happen (e.g., approving a purchase, an
    expense report, a new vendor).
@@ -93,9 +94,11 @@ Write a specific, named threshold table — do not leave this as "use judgment":
 ## Step-by-Step: Audit Preparation and Auditor Liaison
 
 1. **Confirm audit trigger and scope early** — many states require an audit above a revenue threshold
-   for charitable organizations, and many federal/pass-through grants require a **Single Audit**
-   under 2 CFR 200 Subpart F when an organization expends $1,000,000+ in federal awards in a fiscal
-   year (threshold periodically updated by OMB — verify current figure before relying on it).
+   for charitable organizations, and 2 CFR 200 Subpart F requires a **Single Audit** (or, in
+   limited cases, a program-specific audit) when an organization expends $1,000,000+ in federal
+   awards in a fiscal year, counting awards received directly and as a subrecipient through a
+   pass-through entity (raised from $750,000 by the 2024 Uniform Guidance revisions; OMB may adjust
+   it again — verify current figure before relying on it).
    Confirm which applies before scoping the engagement.
 2. **Select or re-engage the auditor** with enough lead time (ideally 3-6 months before fieldwork) —
    RFP if it's been 5+ years with the same firm, per good governance practice.
@@ -107,8 +110,9 @@ Write a specific, named threshold table — do not leave this as "use judgment":
    a schedule of related-party transactions. Assign a named owner and due date to each PBC item; a
    late or incomplete PBC list is the single most common cause of audit fee overruns and delays.
 5. **Hold an entrance conference** with the auditor to confirm scope, timeline, and any new
-   accounting standards effective this year (e.g., changes to lease accounting, gift-in-kind
-   valuation rules).
+   accounting standards effective this year (e.g., crypto asset accounting under ASU 2023-08,
+   effective for fiscal years beginning after December 15, 2024, for organizations that hold donated
+   crypto).
 6. **Support fieldwork**: designate one internal point of contact to field auditor questions so
    requests don't scatter across staff.
 7. **Review the draft management letter and financial statements** before finalization — check every
