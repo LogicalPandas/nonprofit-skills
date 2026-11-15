@@ -41,10 +41,10 @@ Know which regulator owns which risk; every deliverable here maps to one of thes
 | HCV / PBV | 24 CFR Parts 982–983 | Local PHA | Reexaminations, HQS/NSPIRE inspections, HAP contracts | Abatement of HAP, contract termination |
 | HUD multifamily (PBRA/RAD) | 24 CFR and handbooks | HUD / contract administrator | TRACS certifications (50059s), MOR responses, NSPIRE inspections | Findings, HAP adjustments, subsidy repayment |
 
-Layered deals are the norm: a typical nonprofit deal carries LIHTC + HOME + a state soft loan, and
-possibly a PBV or rental-assistance contract. When programs overlap on one unit, apply the strictest
-applicable rule for each dimension (income limit, rent limit, recert frequency, file documentation).
-Never assume one program's certification satisfies another's.
+Layered deals are the norm (typically LIHTC + HOME + a state soft loan, possibly a PBV or
+rental-assistance contract). When programs overlap on one unit, apply the strictest applicable
+rule per dimension (income limit, rent limit, recert frequency, file documentation); never assume
+one program's certification satisfies another's.
 
 ## Section 42 Essentials
 
@@ -90,8 +90,8 @@ Gross rent = rent charged (including mandatory charges) plus the utility allowan
   over the limit; it is one of the most common findings.
 - **Gross rent floor.** In low-income areas the statutory floor can exceed the
   30%-of-imputed-income calculation. The HFA's tables bake this in — use them.
-- Test gross rent at move-in and every certification. Charging even a few dollars over the limit
-  makes the unit noncompliant for the whole period — the test is pass/fail, not materiality-based.
+- Test gross rent at move-in and every certification. Even a few dollars over the limit makes the
+  unit noncompliant for the whole period.
 
 ### Tenant certifications
 
@@ -107,9 +107,9 @@ Gross rent = rent charged (including mandatory charges) plus the utility allowan
 - **Verification hierarchy:** third-party written verification first; then source documents (pay
   stubs, award letters, bank statements); oral third-party verification with a dated note;
   self-certification last and only where rules permit. Document the method used for each source.
-- Certifications must be signed and dated by tenant and owner/agent, dated in logical order
-  (verifications obtained before the cert is signed), and internally consistent. Auditors read files
-  for contradictions before anything else.
+- Certifications must be signed and dated by tenant and owner/agent, in logical order
+  (verifications before the cert is signed), and internally consistent — auditors look for
+  contradictions first.
 
 ### Student eligibility
 
@@ -155,8 +155,7 @@ by a qualified household — but unreasonably long vacancies will be flagged.
 - File Form 8609 (with Schedule A) for each building with the owner's tax return by the due date,
   including extensions, for the first year of the credit period; the state HFA must have issued the
   8609 with Part I completed. Sign Part II, and complete Schedule A unit designations.
-- The minimum set-aside must be met by the end of the first credit year. If lease-up is behind,
-  check the current-year IRS guidance on grace periods and cure windows, and call the HFA before the
+- If lease-up is behind on the first-year set-aside, check the current-year IRS guidance on grace periods and cure windows, and call the HFA before the
   year closes — agencies can often help but only if told early.
 - The 10-year credit period runs after the building is placed in service; the 15-year compliance
   period runs from the first credit year. The extended-use agreement (typically 30 years or more,
@@ -228,7 +227,7 @@ within the stated correction period, cure, and confirm the agency files the clos
   VAWA paperwork, and management procedures. Respond to findings with a written corrective action
   plan by the stated deadline.
 - Monthly certification data (50059s) submitted to **TRACS** must reconcile with voucher billings;
-  fatal errors and unreported changes surface as MOR findings and subsidy adjustments. Run the
+  fatal errors and unreported changes become MOR findings and subsidy adjustments. Run the
   Enterprise Income Verification (EIV) reports monthly (income discrepancy, no-income, failed
   validation) — unresolved EIV discrepancies are a guaranteed finding.
 - Physical inspections run under **NSPIRE** standards (which replaced UPCS for HUD multifamily);
@@ -302,8 +301,8 @@ Sequence for an on-site review by a state HFA, PJ, PHA, or HUD contract administ
 6. **T-2 weeks:** Assemble the binder: entity documents, carrying-charge schedule, utility allowances
    with effective dates, insurance, management plan, tenant selection plan, marketing/AFHMP file,
    prior findings and closures.
-7. **T-1 week:** Brief site staff — where files live, how recerts are scheduled, who signs certs.
-   Staff who cannot explain the process are read as process failure.
+7. **T-1 week:** Brief site staff — where files live, how recerts are scheduled, who signs certs;
+   staff who cannot explain the process read as process failure.
 8. **Day of:** A compliance lead shadows the reviewer, notes every document pulled, and answers
    factually — never speculate; commit to follow-up instead.
 9. **Within 5 days:** Send any documents the reviewer requested.
@@ -355,18 +354,18 @@ Completion condition: every recurring deadline above has a named owner and a lea
 ## Common Failure Modes
 
 - **Treating LIHTC as materiality-based.** It is pass/fail: one dollar over the gross-rent limit or
-  one late recert is reportable noncompliance that goes on Form 8823.
+  one late recert goes on Form 8823.
 - **Applying Section 8 income rules to Section 42 (or vice versa).** Definitions and exclusions
   differ; layered units need parallel calculations.
-- **Self-certifying where third-party verification is required.** If the file shows only tenant
-  statements for wages, the certification is unsupported.
+- **Self-certifying where third-party verification is required.** Tenant statements alone for wages
+  leave the certification unsupported.
 - **Adding a foster-care recency cutoff to the student exception.** Verify former State care
   and placement responsibility and retain the supporting evidence; do not impose a six-month
   limit absent from §42(i)(3)(D)(i)(II).
-- **Ignoring over-income flags.** The 140% rule is quiet until the next available unit is rented
-  wrong — then the qualified unit is lost for good.
-- **Filing 8823 responses late or informally.** Cure within the stated period, in writing, with
-  evidence, and confirm the closure filing.
+- **Ignoring over-income flags.** Rent the next available unit wrong and the qualified unit is lost
+  for good.
+- **Filing 8823 responses late or informally.** Cure in writing, with evidence, within the stated
+  period; confirm the closure filing.
 - **No unit-level program matrix on layered deals.** A HOME-designated unit rented above the high
   HOME rent triggers HOME repayment even when LIHTC compliance is clean.
 - **Doing compliance in a spreadsheet only the compliance officer can read.** Staff turnover is the
@@ -376,6 +375,6 @@ Completion condition: every recurring deadline above has a named owner and a lea
 
 Every certification, Form 8609, Form 8823 response, and annual owner certification produced with
 this skill must be reviewed by a qualified attorney or CPA familiar with Section 42 before filing
-with the state HFA or IRS. The checklists above prepare the file; they do not substitute for
-professional review, and agency rules and IRS guidance change — verify current requirements with
-your agency before submitting.
+with the state HFA or IRS. The checklists prepare the file, not replace professional review;
+agency rules and IRS guidance change — verify current requirements with your agency before
+submitting.

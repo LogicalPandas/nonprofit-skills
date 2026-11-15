@@ -29,9 +29,9 @@ by fair-housing counsel before adoption, filing, or denial.
 
 ## Current Federal Landscape (read first — changed materially 2025–2026)
 
-Author guidance against the statute and case law, not against rescinded HUD guidance. As of
-this skill's review date (re-verify every dated item below in the Federal Register, on HUD.gov,
-and with fair-housing counsel before relying on it; this section goes stale fastest):
+Anchor guidance to the statute and case law, not rescinded HUD guidance. As of this skill's
+review date (re-verify every dated item below in the Federal Register, on HUD.gov, and with
+fair-housing counsel before relying on it; this section goes stale fastest):
 
 - **Statute unchanged.** The Fair Housing Act (42 U.S.C. § 3604) still prohibits
   discrimination on seven protected classes — race, color, national origin, religion, sex
@@ -42,9 +42,9 @@ and with fair-housing counsel before relying on it; this section goes stale fast
 - **HUD guidance rescissions (Sept. 17, 2025, confirmed in the Federal Register April 2026).**
   HUD withdrew FHEO 2020-01 and FHEO 2013-01 (assistance animals), the 2007 LEP guidance, the
   digital-platform advertising guidance (2024), the special-purpose credit program statement,
-  and the source-of-income testing memorandum, among others. These documents are no longer
-  authoritative and were removed from HUD.gov. Rescission changed enforcement posture, not
-  the statute: obligations under the FHA, Section 504, Title VI, and the ADA remain.
+  and the source-of-income testing memorandum, among others; all are no longer authoritative
+  and were removed from HUD.gov. Rescission changed enforcement posture, not the statute:
+  obligations under the FHA, Section 504, Title VI, and the ADA remain.
 - **Criminal-history screening.** HUD's 2016 OGC guidance and 2015 arrest-records notice were
   rescinded (Nov. 2025). Blanket criminal-history bans are still actionable: *Texas Dept. of
   Housing v. Inclusive Communities* (2015) recognized disparate-impact liability, private
@@ -60,8 +60,7 @@ and with fair-housing counsel before relying on it; this section goes stale fast
 - **AFFH.** The 2021 AFFH rule was terminated in early 2025 and replaced with a stripped-down
   interim final rule (March 2025) that removed the assessment-tool/equity-planning framework
   but retained the statutory AFFH obligation on HUD itself. Localities and program
-  participants: the certification requirement's substance shifted — verify current program
-  requirements with counsel before relying on either the old or new framework.
+  participants: the certification requirement's substance shifted (see AFFH section).
 - **Assistance animals.** A May 2026 FHEO enforcement memo narrows HUD's own complaint
   processing to trained service animals, and HUD rescinded its 2020-01 guidance — but the FHA
   reasonable-accommodation obligation for assistance animals (including emotional-support
@@ -69,8 +68,7 @@ and with fair-housing counsel before relying on it; this section goes stale fast
   suits remain. Advise the compliant, not the enforcement-minimum, position — and flag the
   unsettled state for counsel.
 
-Practical consequence: guidance documents many practitioners still cite are gone. Never anchor
-advice to a rescinded notice; anchor to the statute, *Inclusive Communities* and circuit
+Never anchor advice to a rescinded notice many practitioners still cite; anchor to the statute, *Inclusive Communities* and circuit
 precedent, Section 504/Title VI/ADA regulations, program statutes, and state/local law.
 
 ## FHA Protected Classes and Prohibited Practices
@@ -127,8 +125,8 @@ Deliverable: a screening-policy review checklist with findings per criterion.
    behavior-relevant history (evictions for cause, lease violations), not on landlord
    references that vary with enforcement bias.
 5. **Criminal history — the high-risk area.** Blanket bans ("no felonies," "no criminal
-   record") and arrest-based denials remain the classic disparate-impact exposure even though
-   HUD's guidance was rescinded. Compliant architecture:
+   record") and arrest-based denials remain the classic disparate-impact exposure. Compliant
+   architecture:
    - Exclude arrest records that did not lead to conviction from consideration.
    - Limit screening to convictions relevant to the safety of residents or property
      (violence, drug manufacture/distribution on premises, sex offenses requiring
@@ -147,9 +145,8 @@ Deliverable: a screening-policy review checklist with findings per criterion.
    continue; route the file-compliance side to
    `nonprofit-housing-lihtc-hud-compliance`.
 7. **Steering**: staff must not "help" applicants toward different buildings, floors, or
-   neighborhoods based on protected class — or "helpfully" discourage applications. Script
-   unit offers by written policy (e.g., next-available-unit rule) so no staff judgment call
-   sorts residents by class.
+   neighborhoods by protected class, or "helpfully" discourage applications; script unit offers
+   by written policy (see Steering and Testing Risk).
 8. Record the completion condition: every criterion annotated compliant / revise / attorney
    flag, with citations to the specific policy paragraph.
 
@@ -178,12 +175,11 @@ Deliverable: a reasonable-accommodation/modification procedure. Required element
    a 504 recipient or the program requires accessibility. In LIHTC/HUD-assisted properties,
    accessibility features are usually the owner's obligation.
 6. **Assistance animals** — not pets: no pet fees, pet rules, or breed/weight limits apply to
-   a legitimate assistance animal. Evaluate with case-law standards even though HUD's
-   2020-01 framework was rescinded (see Current Federal Landscape): reliable documentation
+   a legitimate assistance animal. Evaluate with case-law standards (see Current Federal
+   Landscape on the 2020-01 rescission): reliable documentation
    of disability and disability-related need where not apparent; direct-threat analysis
-   must be individualized (specific animal's actual conduct), never breed-based. Flag the
-   unsettled federal posture to counsel — state law may be more protective of
-   emotional-support animals than current HUD enforcement.
+   must be individualized (specific animal's actual conduct), never breed-based. State law
+   may be more protective of emotional-support animals than current HUD enforcement.
 7. **Common requests to pre-plan**: live-in aide, unit transfer to accessible unit, caregiver
    overnight exception to guest limits, reserved parking, rent-payment-date changes tied to
    benefit cycles, medication-related rent reminders (proceed carefully — competence issues
@@ -247,9 +243,9 @@ Deliverable: a 504/ADA compliance self-assessment.
    compare to building/unit size), credit/income cutoffs, criminal-history screens, "no
    student ID" or "must be employed" rules, advertising channel selection, unit-offer
    algorithms.
-3. Keep a data file: run periodic applicant-flow analysis by protected class (aggregate and
-   de-identified for retention) so you discover a disparity before a tester or a plaintiff
-   does — and can show your less-discriminatory alternatives analysis.
+3. Keep a data file: run periodic applicant-flow analysis by protected class (aggregate,
+   de-identified for retention) to find disparities before a tester or plaintiff does and
+   document your less-discriminatory alternatives analysis.
 4. Even under narrowed federal enforcement, private plaintiffs and state agencies remain
    active; write policies as if the 2013-rule framework still governs your risk.
 
@@ -275,9 +271,9 @@ Deliverable: a 504/ADA compliance self-assessment.
 1. The statutory duty (42 U.S.C. § 3608(d)) — administer programs and activities
    affirmatively to further fair housing — applies to HUD and, through certifications, to
    jurisdictions and program participants. The 2021 rule's assessment/planning machinery was
-   terminated and replaced with a minimal 2025 interim rule; do not rely on either being the
-   last word — verify current certification requirements with counsel and the latest HUD
-   program notices before drafting any AFFH certification.
+   replaced with a minimal 2025 interim rule; rely on neither as the last word — verify current
+   certification requirements with counsel and the latest HUD program notices before drafting
+   any AFFH certification.
 2. For a nonprofit program participant (e.g., a locality's subrecipient, a PHA partner, a
    CoC grantee): the practical duties that survive every rule change are (a) don't site or
    concentrate programs in ways that perpetuate segregation, (b) don't site projects
@@ -298,9 +294,9 @@ Deliverable: a 504/ADA compliance self-assessment.
    class) to call, email, and visit. Assume every inquiry is a test: identical information,
    identical warmth, identical follow-up, identical documentation for every caller. Audit
    phone/email response logs for differential treatment (response time, units mentioned,
-   specials offered). Test yourself: commission paired-testing self-audits of your own
-   properties — evidence of self-audit and prompt remediation both reduces liability and
-   demonstrates the substantial-interest defense's good faith.
+   specials offered). Commission paired-testing self-audits of your own properties;
+   evidence of self-audit and prompt remediation both reduces liability and demonstrates
+   the substantial-interest defense's good faith.
 
 ## Complaint-Response Protocol
 
@@ -328,7 +324,7 @@ Deliverable: an internal complaint-response protocol. Required elements:
    file re-review for similarly affected applicants (a systemic problem means other
    affected applicants may still be able to sue).
 7. **Attorney gate**: all written responses, conciliation positions, and denials are drafted
-   here and signed off by fair-housing counsel — the expert-required step is not optional.
+   here and signed off by fair-housing counsel.
 
 ## Staff Training Outline
 
@@ -357,15 +353,12 @@ Deliverable: a training outline with schedule and roster plan. Minimum curriculu
 
 ## Common Failure Modes
 
-- **"The guidance is gone so we can screen freely."** Rescission changed HUD's enforcement
-  posture, not the statute or *Inclusive Communities* — a blanket criminal-history or
+- **"The guidance is gone so we can screen freely."** A blanket criminal-history or
   arrest-based policy is still plaintiff's-exhibit A. Remedy: build screening on case-law
   standards and state law.
-- **Anchoring to FHEO 2020-01 for assistance animals.** It was rescinded (Sept. 2025) and
-  narrowed by the May 2026 enforcement memo — but emotional-support-animal accommodation
-  obligations persist in case law and state law. Remedy: evaluate on case-law standards,
-  flag the unsettled posture to counsel, never adopt breed bans or fee structures for
-  assistance animals.
+- **Anchoring to FHEO 2020-01 for assistance animals.** Rescinded (Sept. 2025) and narrowed by
+  the May 2026 enforcement memo; ESA obligations persist in case law and state law. Remedy:
+  case-law standards, flag to counsel, no breed bans or fees for assistance animals.
 - **"Nonprofits are exempt."** They are not: no Mrs. Murphy or religious-organization
   shelter covers a community developer; federal-funding receipt adds 504/Title VI/LEP
   duties on top of the FHA.
@@ -374,11 +367,10 @@ Deliverable: a training outline with schedule and roster plan. Minimum curriculu
   discrimination — steering is guiding individuals by class. Keep both in the policy.
 - **A screening policy nobody follows.** The gap between written policy and practice is what
   testers find — audit application files quarterly for criteria actually applied.
-- **Retaliating while defending.** Evicting, non-renewing, or "losing" a complaint's
-  maintenance requests creates an independent claim. Brief staff; log every interaction.
+- **Retaliating while defending.** Evicting, non-renewing, or "losing" a complainant's
+  maintenance requests creates an independent claim; log every interaction.
 - **Relying on the 2015/2021 AFFH framework.** Both are dead; the statutory duty and
-  certification obligations remain in flux. Verify current rule status with counsel before
-  drafting any certification.
+  certification obligations remain in flux.
 - **Editing records after a complaint.** Immediate litigation hold; single custodian;
   attorney gate on everything that leaves the building.
 
