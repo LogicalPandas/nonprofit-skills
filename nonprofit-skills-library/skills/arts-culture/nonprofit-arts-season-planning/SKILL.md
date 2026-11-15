@@ -1,6 +1,6 @@
 ---
 name: nonprofit-arts-season-planning
-description: "The annual artistic planning cycle for performing arts organizations and galleries: season and exhibition selection (artistic balance, audience, budget); planning calendars and real lead times (rights 12-18 months out for hot titles, loan exhibitions 2-3 years out); per-title cost estimating; premiere vs licensed economics; holdover and extension math; and the subscription vs single-ticket mix as a planning input. Use when a user says 'help us pick next season,' 'when do we lock rights for 2027-28,' 'what will this title cost us,' 'should we extend the run,' or 'how far out do we plan exhibitions.' Not for commissioning agreements (use nonprofit-arts-commissioning-new-work), rights clearance (use nonprofit-arts-performance-licensing), ticket pricing and subscription packaging (use nonprofit-arts-box-office-subscriptions), season underwriting (use nonprofit-arts-season-sponsorship), org-wide strategy (use nonprofit-strategic-planning), or budget mechanics (use nonprofit-budgeting)."
+description: "Runs the annual artistic planning cycle for performing arts organizations and galleries: season and exhibition selection (artistic balance, audience, budget), planning calendars and real lead times for rights and loans, per-title cost estimates, premiere vs. licensed economics, extension math, and the subscription vs. single-ticket mix as a planning input. Use when a user says 'help us pick next season,' 'when do we need to lock rights,' 'what will this title cost us,' or 'should we extend the run.' Not for commissioning agreements (use nonprofit-arts-commissioning-new-work), rights clearance (use nonprofit-arts-performance-licensing), ticket pricing and packages (use nonprofit-arts-box-office-subscriptions), or org-wide strategy (use nonprofit-strategic-planning)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,13 +12,19 @@ metadata:
 
 # Season and Exhibition Planning
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit performing arts organization (theater, dance, opera, orchestra, presenting/road house) or gallery/exhibition space is doing its **annual artistic planning cycle**: choosing next season's titles or the exhibition calendar, sequencing the planning work, estimating what each title or show will cost, deciding between premieres and licensed work, making mid-season extension or holdover calls, or setting the subscription vs single-ticket mix as an input into what gets programmed. Trigger tasks include: "help us pick next season," "when do we need to lock rights for 2027-28," "what will this title actually cost us," "should we extend the run," "how far out do we plan exhibitions," "our subscribers only renew for the musicals — how do we program around that," or "the board wants a season that balances the budget."
+Covers the planning cycle itself — selection criteria, calendars, per-title budgeting, and in-season extension decisions — for artistic directors, managing/executive and producing directors, curators, and programming committees. Hand off:
 
-This skill serves artistic directors, managing/executive directors, producing directors, curators, and programming committees — the organization, not the individual artist. It is the discipline of choosing a year of programming that is artistically coherent, audience-servable, and financially survivable, on a calendar that respects real lead times.
-
-**Boundary:** This skill covers the planning cycle itself: selection criteria, calendars, per-title budgeting, and in-season extension decisions. Commissioning agreements, IP terms, and new-work development pipelines (readings, workshops, co-commissions) are `nonprofit-arts-commissioning-new-work` — route any conversation about contracts with living writers there. Rights clearance — which licensor holds a title, quote requests, grand vs small rights for music, streaming and archival captures — is `nonprofit-arts-performance-licensing`; this skill tells you *when* to clear, that one tells you *how*. Ticket pricing tiers, subscription package design, renewal campaigns, and box office mechanics are `nonprofit-arts-box-office-subscriptions`. Season, production, and exhibition underwriting packages and sponsor benefits are `nonprofit-arts-season-sponsorship`. Org-wide strategy, mission review, and multi-year direction are `nonprofit-strategic-planning` (the season executes the strategy; it is not the strategy). Budget mechanics — chart of accounts, scenario budgets, cash flow, reserves — are `nonprofit-budgeting`. Union scale and artist contracts encountered while estimating are `nonprofit-arts-union-agreements-visas`. Marketing launch mechanics route to Core: `nonprofit-media-relations`, `nonprofit-email-newsletter`, `nonprofit-social-media`, `nonprofit-storytelling`. Grants to fund specific productions route to `nonprofit-arts-grant-writing`. School matinee programming routes to `nonprofit-arts-education-programs`, and disputes over artistic authority between the AD and ED/MD route to `nonprofit-arts-ad-ed-partnership`.
+- Commissioning agreements, IP terms, new-work development (readings, workshops, co-commissions); any contract with a living writer: `nonprofit-arts-commissioning-new-work`
+- Rights clearance (licensor, quotes, grand vs. small rights, streaming captures): `nonprofit-arts-performance-licensing` — this skill says when to clear, that one says how
+- Pricing tiers, subscription packages, renewal campaigns, box office: `nonprofit-arts-box-office-subscriptions`
+- Season, production, and exhibition underwriting: `nonprofit-arts-season-sponsorship`
+- Org-wide strategy and mission review: `nonprofit-strategic-planning` (the season executes the strategy)
+- Chart of accounts, scenario budgets, cash flow, reserves: `nonprofit-budgeting`
+- Union scale and artist contracts: `nonprofit-arts-union-agreements-visas`
+- Marketing launch: `nonprofit-media-relations`, `nonprofit-email-newsletter`, `nonprofit-social-media`, `nonprofit-storytelling`
+- Production grants: `nonprofit-arts-grant-writing`; school matinees: `nonprofit-arts-education-programs`; AD vs. ED/MD authority disputes: `nonprofit-arts-ad-ed-partnership`
 
 ## Part 1 — The Planning Calendar: Work Backward from the Announcement
 
@@ -82,12 +88,8 @@ Both paths produce art; they produce very different spreadsheets. The choice of 
 A balanced season typically carries one new-work slot (premiere, second production, or co-commission) and fills the rest with licensed titles — the new-work slot is where mission, funders, and artistic reputation concentrate, and it is the slot most protected by the balance matrix above.
 
 **New-work rights check:** a commission or option alone is not permission to perform the
-premiere. Require an executed production license or an explicit premiere performance grant
-within the signed commissioning agreement, covering the planned production and its payment
-terms. Budget the commission fee, development costs, and applicable production royalties
-separately; do not infer a royalty waiver or offset from payment of the commission fee.
-Follow `nonprofit-arts-commissioning-new-work` for the grant and contract terms.
-Last checked September 16, 2026; actual rights and
+premiere — apply the contract gate in the launch checklist (Part 4, item 1), and follow
+`nonprofit-arts-commissioning-new-work` for the grant and contract terms. Actual rights and
 royalties remain agreement-specific.
 
 ## Part 3 — Budgeting the Season: Per-Title Cost Estimating
@@ -140,11 +142,29 @@ The extension decision is a marginal analysis: extend when **incremental revenue
 
 Your job at announcement is **coordination, not restatement** — marketing mechanics belong to Core skills; the season planner owns the dependencies that make the launch safe:
 
-1. **Confirm every title is contracted.** Require an executed production license or an explicit premiere performance grant in the signed commissioning agreement for each announced copyrighted title. Confirm the planned dates, venue, performance scope, and announcement conditions; a commission or option alone is insufficient. Record applicable royalties separately from the commission fee in the approved budget. An announced title that later loses rights is a refund crisis and a credibility hit.
+1. **Confirm every title is contracted.** Require an executed production license or an explicit premiere performance grant in the signed commissioning agreement for each announced copyrighted title. Confirm the planned dates, venue, performance scope, and announcement conditions; a commission or option alone is insufficient. Record applicable royalties separately from the commission fee in the approved budget; do not infer a royalty waiver or offset from payment of the commission fee. An announced title that later loses rights is a refund crisis and a credibility hit.
 2. **Lock the calendar.** Dates, venue, run lengths final — subscription packages are built on them (`nonprofit-arts-box-office-subscriptions`).
 3. **Confirm sponsor credits before the announcement lists them.** Sponsors expect named placement in the announcement; benefits must match signed agreements (`nonprofit-arts-season-sponsorship`).
 4. **Sequence the audience.** Renewing subscribers first (with their deadline), then new-subscriber and member presales (`nonprofit-arts-membership-program`), then single tickets and the public on-sale, then press. A same-day public on-sale cannibalizes the renewal window.
 5. **Brief Core marketing with the story, not just the list.** Give `nonprofit-media-relations` the season's through-line, the premiere/premiere-adjacent news hook, and embargo times; give `nonprofit-email-newsletter` and `nonprofit-social-media` the segmented send calendar. **Completion:** a launch run-of-show with owners and dates for every step, agreed by marketing, development, and box office.
+
+## Standard Deliverables
+
+1. **Season grid** (template below) with each title's rights status, budget, and revenue range.
+2. **Per-title budget model** — fixed and variable lines (Part 3), target and stretch versions.
+3. **Balance scorecard** — the Part 2 matrix scored per title and read for the season.
+4. **Extension decision memo** — the Part 4 one-pager.
+5. **Announcement launch run-of-show** — owners and dates for each checklist step.
+
+```
+[Season] Season Grid — draft [date]; board approval [date]; announcement [date]
+| Slot | Title | Type (licensed/premiere/co-pro) | Dates & perfs | Rights holder & status | Est. cost (target/stretch) | Earned revenue (sub-weighted / single-only) | Net | Balance notes (genre, scale, risk, segment, mission) |
+|---|---|---|---|---|---|---|---|---|
+| 1 | | | | quote requested / offer / signed | | | | |
+Season totals: cost [ ] | earned revenue range [ ] | contributed needed [ ]
+Anchor title(s) for the subscription campaign: [ ]
+Open items before announcement: unsigned licenses [ ]; unsigned sponsors [ ]; unquoted lines [ ]
+```
 
 ## Common Failure Modes
 

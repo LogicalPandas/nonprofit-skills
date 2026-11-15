@@ -1,6 +1,6 @@
 ---
 name: nonprofit-arts-ad-ed-partnership
-description: "Arts dual leadership: the AD/ED partnership (also AD/MD, music director/executive director, opera general director), decision rights over season approval, artistic hires, budget lines, and fundraising; the board's artistic mandate (ratify vs advise); tension patterns and repairs; combining or splitting the roles; succession when one partner leaves. Use when a user says 'who decides the season, the AD or the board,' 'our AD and MD fight over the budget,' 'should we combine the AD and ED jobs,' or 'our ED is leaving, what happens to the partnership.' Not for general CEO-board partnership work (use nonprofit-ceo-board-partnership), board governance mechanics (use nonprofit-board-governance), transition or search process (use nonprofit-executive-transitions, nonprofit-executive-search), season content selection (use nonprofit-arts-season-planning), or the budget build (use nonprofit-budgeting)."
+description: "Designs and repairs the arts dual-leadership partnership (AD/ED, AD/MD, music director/executive director, opera general director): decision rights, the board's artistic mandate (ratify vs. advise), tension repair, combining or splitting the roles, and succession when one partner leaves. Use when a user says 'who decides the season, the AD or the board,' 'our AD and MD fight over the budget,' 'should we combine the AD and ED jobs,' or 'our ED is leaving, what happens to the partnership.' Not for general CEO-board work (use nonprofit-ceo-board-partnership), board mechanics (use nonprofit-board-governance), search or transition process (use nonprofit-executive-search, nonprofit-executive-transitions), or season content (use nonprofit-arts-season-planning)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,15 +12,20 @@ metadata:
 
 # The Artistic and Executive Directorship Partnership
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit arts or culture organization is designing, diagnosing, or repairing its **dual-leadership structure** — the partnership between an Artistic Director (AD) and an Executive or Managing Director (ED/MD) that governs most theaters, orchestras, dance companies, and opera companies. The user is typically an AD, ED/MD, board chair, governance committee member, or a consultant advising them. Trigger tasks: "who decides the season — the AD or the board," "our AD and managing director are fighting over the budget," "should we combine the AD and ED jobs," "the board wants to veto our season," "the ED is making commitments to donors the AD won't honor," "our ED is leaving — what happens to the partnership," "the board is talking about hiring a businessperson over the AD," or "we're a small theater — can one person do both jobs?"
+Covers the dual-leadership partnership itself: models, decision rights, the board's artistic mandate, tension and repair, combine/split decisions, and dual-model succession. Users are typically an AD, ED/MD, board chair, governance committee member, or consultant. Hand off:
 
-**Boundary:** This skill covers the leadership partnership itself — models, decision rights, board artistic mandate, tension and repair, combine/split decisions, and succession dynamics specific to the dual model. General CEO-board relationship work (the partnership meeting cadence, board chairs as thought partners, managing up) is `nonprofit-ceo-board-partnership`. Board governance mechanics — committee design, bylaws, fiduciary duties, board self-assessment — are `nonprofit-board-governance` (and bylaw amendments are `nonprofit-bylaws-policy`). Running an executive transition process (interim leadership, transition committees, knowledge transfer) is `nonprofit-executive-transitions`; recruiting and hiring the successor is `nonprofit-executive-search`. Selecting the season's content and balancing it artistically is `nonprofit-arts-season-planning`; building the annual operating budget is `nonprofit-budgeting`. Artist employment mechanics — AEA/IATSE/AFM agreements, guest-artist contracts, O-1/P visas — are `nonprofit-arts-union-agreements-visas`. Commissioning agreements are `nonprofit-arts-commissioning-new-work`. Staff-wide HR process is `nonprofit-hr`.
+- General CEO-board relationship work (meeting cadence, managing up): `nonprofit-ceo-board-partnership`
+- Committee design, fiduciary duties, board self-assessment: `nonprofit-board-governance`; bylaw amendments: `nonprofit-bylaws-policy`
+- Running the transition (interims, knowledge transfer): `nonprofit-executive-transitions`; hiring the successor: `nonprofit-executive-search`
+- Season content and artistic balance: `nonprofit-arts-season-planning`; the annual operating budget: `nonprofit-budgeting`
+- AEA/IATSE/AFM agreements, guest-artist contracts, O-1/P visas: `nonprofit-arts-union-agreements-visas`
+- Commissioning agreements: `nonprofit-arts-commissioning-new-work`; staff-wide HR process: `nonprofit-hr`
 
 ## The Leadership Models in Brief
 
-Nonprofit performing arts organizations are the one nonprofit subsector where **shared leadership is the norm, not the exception**: research across theaters and orchestras consistently finds that a leadership duo — an artistic director and an administrator (managing director, executive director, or general manager) — is the most common top-management structure (Reid & Karambayya; de Voogt; Bhansing, Leenders & Wijnberg; Järvinen, Ansio & Houni — surveyed in Labaronne-Müller's 2023 ZHAW study of top-management roles). In the typical U.S. regional theater, the AD decides what happens onstage and the ED/MD runs administration — and, implicitly or explicitly, the AD is treated as the organization's true leader (American Theatre, November 2021). The structure exists because arts orgs carry a **dual bottom line** — artistic quality and financial sustainability — that no single role credibly owns.
+In performing arts, **shared leadership is the norm**: an artistic director paired with an administrator (managing director, executive director, or general manager) is the most common top-management structure (surveyed in Labaronne-Müller's 2023 ZHAW study). In the typical U.S. regional theater the AD is implicitly treated as the true leader (American Theatre, November 2021). The structure exists because arts orgs carry a **dual bottom line** — artistic quality and financial sustainability — that no single role credibly owns.
 
 The models the user may be operating under:
 
@@ -155,11 +160,30 @@ Succession in dual structures has a failure mode single-CEO orgs do not have: **
 
 ## Standard Deliverables
 
-1. **Partnership charter** — the one-page decision-rights matrix (Decides/Consulted/Informed/Board per row), no-surprises thresholds, escalation path, meeting rhythm, credit protocol; signed by both leaders, seen by the board chair; checked against bylaws.
+1. **Partnership charter** — skeleton below; signed by both leaders, seen by the board chair, checked against bylaws.
 2. **Partnership diagnostic memo** — which model the org actually runs (vs. the org chart), which of the named tension patterns are present, and the specific repair mechanisms sequenced with owners and dates.
 3. **Combine-or-split recommendation** — current-structure analysis against Part 4 factors, the recommended model, the controls required if combined, the funding plan if split; no invented budget thresholds, factors stated as factors.
 4. **Dual-model transition readiness checklist** — re-charter schedule, interim structure, survivor-role boundaries, founder-compensation considerations, overlap funding, and routing to `nonprofit-executive-transitions` and `nonprofit-executive-search` for process.
 5. **Board artistic-mandate ladder** — written assignment of the board's approve/ratify/advise tiers and the artistic advisory committee's advisory-only charter.
+
+### Partnership charter skeleton
+
+```
+[Organization] AD/ED Partnership Charter — adopted [date], next review [date]
+Model: [co-equal CEOs | AD-as-CEO | ED-as-CEO | combined]  Bylaws checked: [section refs]
+
+Decision rights (one row per decision class)
+| Decision | Decides | Consulted | Informed | Board role | Tiebreaker |
+|---|---|---|---|---|---|
+
+No-surprises thresholds: [dollar amount / decision classes needing both signatures]
+Production overage rule: [threshold] -> [who approves transfers]
+Donor portfolio: [threshold] and above has one named lead + one backup
+Meeting rhythm: weekly 1:1 [day/time]; annual partnership retreat [month]
+Escalation path: 1:1 (twice) -> board chair -> [governance committee]
+Credit protocol: [opening remarks, press quotes, board report co-signature]
+Signed: AD ______  ED/MD ______   Seen by board chair: ______ [date]
+```
 
 ## Common Failure Modes
 
@@ -172,7 +196,6 @@ Succession in dual structures has a failure mode single-CEO orgs do not have: **
 - **Combining roles to save money without controls.** One salary, zero checks, burnout, and a succession cliff. Fix: finance committee, business manager, explicit board oversight (Part 4).
 - **The survivor shapes the succession.** The remaining leader quietly becomes sole CEO and hires a subordinate. Fix: re-charter before the search; name the survivor's boundaries (Part 5).
 - **Citing experiments as templates.** Named co-AD and distributed-leadership structures from 2020-2024 are young, contested, and some have been reorganized. Fix: verify current status before citing any specific theater's structure.
-- **Stale structure facts.** Titles, thresholds, and the prevalence of the dual model shift with the sector's consolidation. Fix: verify before acting (below).
 
 ## Verify Before Acting
 
