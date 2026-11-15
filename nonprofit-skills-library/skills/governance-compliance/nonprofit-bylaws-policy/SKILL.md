@@ -1,6 +1,6 @@
 ---
 name: nonprofit-bylaws-policy
-description: "Drafts and reviews nonprofit bylaws (membership structure, board size/terms, quorum, amendment procedure) and core governance policies: conflict-of-interest policy, whistleblower/non-retaliation policy, document retention and destruction policy, and related policy text (gift acceptance, joint venture, compensation-setting process). Use when asked to write or revise bylaws, draft a conflict-of-interest disclosure form and policy, write a whistleblower policy, create a document retention and destruction schedule, or run a bylaws compliance check against actual practice. Does not cover running board meetings or committees under existing bylaws (use nonprofit-board-governance), Form 990 filing itself (use nonprofit-form-990), or state charitable solicitation registration bylaws-adjacent requirements (use nonprofit-charitable-registration)."
+description: "Drafts and reviews nonprofit bylaws (membership, board size and terms, quorum, voting, amendment) and core governance policies: conflict-of-interest, whistleblower/non-retaliation, and document retention and destruction. Use when asked 'draft bylaws for a new 501(c)(3),' 'our bylaws say 15 seats but we have 7,' 'write a conflict-of-interest policy and disclosure form,' or 'create a document retention schedule.' Not for running meetings or committees under existing bylaws (use nonprofit-board-governance), Form 990 filing (use nonprofit-form-990), or state charitable solicitation registration (use nonprofit-charitable-registration)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -12,19 +12,13 @@ metadata:
 
 # Nonprofit Bylaws & Core Policy Drafting
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to draft or revise the foundational legal/governance documents: bylaws and the
-policies IRS Form 990 explicitly asks whether an organization has adopted. Trigger tasks include:
-"draft bylaws for a new 501(c)(3)," "our bylaws say the board has 15 seats but we only have 7 — fix
-the conflict," "write a conflict-of-interest policy and annual disclosure form," "we need a
-whistleblower policy before our audit," "create a document retention and destruction schedule," or
-"review these bylaws for compliance gaps."
+This skill produces the documents, including the policies IRS Form 990 asks whether an organization has adopted.
 
-Boundary: this skill produces the *documents*; operating within them day-to-day (running meetings,
-committees, the ED relationship) is `nonprofit-board-governance`. Annual filing mechanics and public
-disclosure of the 990 itself are `nonprofit-form-990`. State-by-state charitable solicitation
-registration filings are `nonprofit-charitable-registration`.
+- Operating within them day-to-day (meetings, committees, the ED relationship): `nonprofit-board-governance`.
+- Annual filing mechanics and public disclosure of the 990: `nonprofit-form-990`.
+- State-by-state charitable solicitation registration filings: `nonprofit-charitable-registration`.
 
 ## Bylaws: Required and Recommended Provisions
 
@@ -47,8 +41,7 @@ formally amended. Core sections to include:
    (commonly 2-3 terms before a mandatory one-year gap), and staggered terms so the whole board
    doesn't turn over in the same year.
 5. **Officer roles** — Chair/President, Vice Chair, Secretary, Treasurer at minimum, with duties
-   defined (e.g., Secretary certifies minutes and corporate records; Treasurer oversees financial
-   oversight, works with staff on statements per `nonprofit-financial-statements`).
+   defined (the Treasurer works with staff on statements per `nonprofit-financial-statements`).
 6. **Meetings** — frequency of required board meetings (many states set a statutory minimum, often
    annual at minimum), notice requirements, quorum (commonly a majority of seated directors, not
    "authorized" seats if there are vacancies — specify which), and whether virtual/electronic
@@ -100,13 +93,26 @@ itself.
    section for that specific application).
 5. **Annual disclosure form** — a standard one-page form every board/staff member covered signs
    yearly listing known financial interests, board/employment affiliations, and family relationships
-   with vendors or grantees.
+   with vendors or grantees. Skeleton:
+
+```
+[Organization] Annual Conflict-of-Interest Disclosure — [year]
+Name / role (director, officer, key employee): ______
+I have received and read the COI policy adopted [date].   [ ] Yes
+1. Financial interests in any vendor, grantee or partner of [Org]: [none | list entity, nature of interest]
+2. Board, officer or employment roles with other organizations: [list]
+3. Family members employed by, or doing business with, [Org]: [none | list]
+4. Transactions with [Org] in the past 12 months in which I or a family member had an interest: [none | list]
+I will disclose any new conflict promptly, before the related discussion or vote.
+Signature / date: ______    Reviewed by (secretary or governance chair): ______
+```
 
 ## Whistleblower / Non-Retaliation Policy
 
 Not universally state-mandated for nonprofits, but required in some states (e.g., New York for
-nonprofits with 20 or more employees and more than $1 million in prior-year annual revenue) and treated as a Form 990 governance-disclosure question elsewhere —
-adopt regardless of jurisdiction as standard practice.
+nonprofits with 20 or more employees and more than $1 million in prior-year annual revenue; verify the
+current threshold in the state's nonprofit corporation law or attorney general guidance) and treated as a
+Form 990 governance-disclosure question elsewhere — adopt regardless of jurisdiction as standard practice.
 
 1. State the organization's commitment to legal/ethical conduct and prohibits retaliation against
    anyone reporting suspected fraud, financial impropriety, or legal/policy violations in good
@@ -136,7 +142,9 @@ good-faith routine practice rather than post-hoc destruction.
    agreements; federal awards under 2 CFR 200.334 generally require 3 years from submission of the
    final financial report); donor records and gift agreements
    (permanent for named/restricted gifts, per `nonprofit-planned-giving` for legacy commitments);
-   insurance policies (permanent while any related claim is possible).
+   insurance policies (permanent while any related claim is possible). Verify the current federal
+   minimums at the source (USCIS for I-9s, IRS for employment tax records, 2 CFR 200.334 on eCFR) and
+   check state law, which may be longer.
 2. Include an explicit **litigation/investigation hold** clause: normal destruction schedules are
    immediately suspended for any document relevant to pending or reasonably anticipated litigation,
    audit, or investigation — this clause is what makes the routine-destruction defense credible.
@@ -151,14 +159,27 @@ good-faith routine practice rather than post-hoc destruction.
 - Whistleblower/non-retaliation policy with named reporting channel
 - Document retention and destruction schedule (table by document category)
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the ED or board secretary**, run a practice-vs-bylaws reconciliation pass first (actual board
-  size, actual quorum practice, actual committee structure) before drafting amendments, since the
-  most common project is fixing drift, not writing from scratch; get every COI disclosure form
-  signed annually with a hard deadline, not "as time allows."
-- **As an advisor**, treat missing COI, whistleblower, and document retention policies as the fastest,
-  lowest-cost governance wins to recommend to a client — they are heavily weighted in funder due
-  diligence and 990 Part VI questions relative to the effort required to adopt them, and should
-  usually be proposed before a full bylaws rewrite unless a specific defect (quorum ambiguity, term
-  limit drift) is blocking a live decision.
+- Run a practice-vs-bylaws reconciliation pass first (actual board size, actual quorum practice, actual
+  committee structure) before drafting amendments; the most common project is fixing drift, not writing
+  from scratch.
+- Get every COI disclosure form signed annually with a hard deadline, not "as time allows."
+- Treat missing COI, whistleblower and document retention policies as the fastest, lowest-cost governance
+  wins: they weigh heavily in funder due diligence and 990 Part VI relative to the effort, and should
+  usually come before a full bylaws rewrite unless a specific defect (quorum ambiguity, term limit drift)
+  is blocking a live decision.
+
+## Verify Before Acting
+
+- [ ] Purpose and dissolution language matches the Articles of Incorporation; the Articles carry the
+      501(c)(3) dedication-of-assets clause.
+- [ ] Board size, terms, quorum, notice and supermajority thresholds are checked against the current state
+      nonprofit corporation statute and against actual practice.
+- [ ] Bylaws, COI policy and indemnification clause cross-reference each other consistently.
+- [ ] Whistleblower thresholds and retention periods are confirmed at the current official source for the
+      organization's state and funders.
+- [ ] The amendment procedure in the existing bylaws is followed for adoption (notice, vote threshold),
+      and the vote is minuted.
+- [ ] The draft is marked for review by the organization's legal counsel before adoption; bylaws are
+      legally binding and controlled by state law.

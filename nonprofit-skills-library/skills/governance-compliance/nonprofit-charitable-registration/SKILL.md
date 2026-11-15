@@ -1,6 +1,6 @@
 ---
 name: nonprofit-charitable-registration
-description: "Manages state charitable solicitation registration: determining which states require registration given the organization's fundraising footprint, initial registration filings, the Unified Registration Statement (URS), registered agent requirements, annual renewal tracking, exemption eligibility, and professional fundraiser/fundraising counsel registration triggers. Use when asked to determine which states an organization must register in before soliciting donations there, file or renew a state charitable solicitation registration, set up a registered agent, build a multi-state renewal tracking calendar, or assess whether online/nationwide fundraising creates new state registration obligations. Does not cover the federal Form 990 filing (use nonprofit-form-990) or nonprofit incorporation/foreign qualification to do business in a state (a related but distinct filing this skill references but does not itself execute)."
+description: "Manages state charitable solicitation registration: which states require registration given the fundraising footprint, initial filings, the Unified Registration Statement (URS), registered agents, exemptions, renewal tracking, and paid-solicitor and fundraising-counsel triggers. Use when asked 'we're doing a national online campaign, which states do we register in,' 'file our charitable registration in New York,' 'build a renewal calendar across our states,' or 'are we exempt because we're small.' Not for the federal Form 990 (use nonprofit-form-990) or corporate foreign qualification to do business in a state."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -12,20 +12,11 @@ metadata:
 
 # Nonprofit Charitable Solicitation Registration
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for state-level fundraising compliance — the patchwork of state laws requiring
-nonprofits to register before asking residents of that state for donations. Trigger tasks include:
-"we're doing a national online giving campaign — which states do we need to register in," "file our
-initial charitable solicitation registration in California/New York/Florida," "set up a registered
-agent for multi-state registration," "build a renewal tracking calendar across all registered
-states," "are we exempt from registration because we're small/religious/all-volunteer," or "does
-hiring a fundraising consultant trigger additional state filings."
-
-Boundary: this is a state-law compliance regime distinct from the federal Form 990
-(`nonprofit-form-990`), though most states require attaching a copy of the 990 to the state
-registration. It is also distinct from (though often bundled with) foreign qualification to
-transact business in a state, which is a corporate-law filing this skill flags but does not execute.
+- Federal Form 990: `nonprofit-form-990` (most states require attaching a copy to the state registration).
+- Foreign qualification to transact business in a state is a corporate-law filing, often bundled with
+  registration; this skill flags it but does not execute it.
 
 ## Core Concept: Solicitation-Based, Not Incorporation-Based Trigger
 
@@ -104,6 +95,29 @@ whether the contract must be filed with the state (common in several states for 
 contracts specifically). This is a common miss when hiring outside fundraising help for a capital
 campaign (`nonprofit-capital-campaigns`) or fundraising event (`nonprofit-fundraising-events`).
 
+## Registration Tracker
+
+| State | Trigger (channel) | Status | Form (state / URS + supplement) | Fee (confirmed on regulator site, date) | Renewal basis (calendar / FYE-relative) | Next due | 990 version attached | Owner |
+|---|---|---|---|---|---|---|---|---|
+| [State] | [email, events, P2P, mail] | [registered / exempt-filed / not yet needed] | [form name] | [$, date checked] | [rule] | [date] | [tax year] | [name] |
+
+## Verify Before Acting
+
+Run this per state before each filing or renewal:
+
+- [ ] Registration requirement, exemption and threshold confirmed on the state regulator's current site
+      (or the NASCO survey map), not a memorized list.
+- [ ] Current form, filing method (online or paper) and fee confirmed on the regulator's site; any
+      state-specific supplement to the URS is attached.
+- [ ] The Form 990 attached is the same version filed federally; audited financials attached where the
+      state's revenue threshold requires them.
+- [ ] Renewal date is set from that state's rule (calendar date or fiscal-year-relative), not a single
+      annual reminder.
+- [ ] Any paid solicitor or fundraising counsel is registered in-state and any required contract filing
+      is done before the vendor starts work.
+- [ ] Filings are reviewed by the compliance owner or counsel before submission; deadlines and fees are
+      statutory and vary by state.
+
 ## Common Failure Modes
 
 - Registering only in the home state and assuming a nationwide email list or online giving page
@@ -121,18 +135,13 @@ campaign (`nonprofit-capital-campaigns`) or fundraising event (`nonprofit-fundra
 ## Standard Deliverables
 
 - Solicitation footprint map (states with active solicitation activity, by channel)
-- State-by-state registration status tracker (registered / exempt-filed / not yet needed) with
-  renewal due dates keyed to each state's actual cycle (calendar or fiscal-year-relative)
+- State-by-state registration tracker (see the table above)
 - Registered agent decision memo
 - Paid-solicitor/fundraising-counsel vendor compliance checklist
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the ED or development operations lead**, build the footprint map before touching any
-  application form — most registration gaps come from underestimating footprint, not from filing
-  errors — and set renewal reminders keyed to each state's actual renewal trigger date, not a single
-  annual calendar reminder.
-- **As an advisor**, treat multi-state registration as a standing compliance program requiring an
-  owner and a tracked calendar, not a one-time project — recommend a commercial multi-state filing
-  service once an organization solicits in roughly 10+ states, since the per-state complexity and
-  renewal-cycle variance makes manual tracking error-prone past that scale.
+- Build the footprint map before touching any application form; most registration gaps come from
+  underestimating footprint, not from filing errors.
+- Treat multi-state registration as a standing compliance program with an owner and a tracked calendar;
+  recommend a commercial multi-state filing service once an organization solicits in roughly 10+ states.
