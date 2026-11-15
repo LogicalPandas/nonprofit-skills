@@ -39,7 +39,8 @@ produce. Concrete triggers:
 
 ### 1. Logic Model (linear, single-program)
 
-The standard five/six-column logic model, in the sequence funders (United Way, W.K. Kellogg
+The standard logic model: Kellogg's five components (inputs, activities, outputs, outcomes,
+impact), with outcomes split by time horizon, in the sequence funders (United Way, W.K. Kellogg
 Foundation, CDC) expect:
 
 | Inputs | Activities | Outputs | Short-Term Outcomes | Mid-Term Outcomes | Long-Term Outcomes / Impact |
@@ -89,7 +90,8 @@ asks "what is your theory of change."
   logic model should show the program's contribution to a shared community-level outcome, not claim
   sole attribution.
 - **Kellogg Foundation Logic Model Development Guide** — the most widely cited public template;
-  default to its 5-column structure unless the funder specifies its own.
+  default to its five components, laid out as in the table above, unless the
+  funder specifies its own.
 
 ## Instructions
 
@@ -158,7 +160,7 @@ When facilitating this for a client:
 
 ## Standard Deliverables
 
-- One-page logic model (table format, Kellogg-style 5-column)
+- One-page logic model (table format, Kellogg-style, as in the table above)
 - Theory-of-change narrative (1–2 pages) with assumptions, pathways, and evidence base
 - Assumptions/risk register (bulleted list, owner-assigned)
 - Handoff notes flagging which outcomes need indicators (for `nonprofit-outcomes-measurement`) and

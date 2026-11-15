@@ -18,7 +18,7 @@ Use this skill when a nonprofit arts organization needs the legal right to perfo
 
 **Boundary:** This skill covers rights clearance for performance, venue music, streaming/archival/video, and film screening. Commissioning a new work — playwright agreements, IP ownership, approvals, co-commissions — is `nonprofit-arts-commissioning-new-work`. Do not infer copyright ownership or premiere permission from a commission: verify an executed production license or an explicit premiere performance grant in the signed commissioning agreement, including applicable royalty terms. The org's own obligations as the *rented venue* — insurance, house rules, whether the org's PRO licenses flow down to renters — is `nonprofit-arts-venue-rental-earned-income`. Union terms triggered by recording or streaming (Actors' Equity, SAG-AFTRA media contracts, AFM) and artist visas or foreign-artist tax withholding are `nonprofit-arts-union-agreements-visas`. General contract risk review, insurance, and indemnification strategy is `nonprofit-risk-management`. Building the royalty line into the annual or production budget — and season selection tradeoffs when quotes come in too high — is `nonprofit-budgeting` (and `nonprofit-arts-season-planning` for title selection). School partnerships and teaching-artist logistics are `nonprofit-arts-education-programs`; the *rights* for a student matinee of a licensed play are handled here.
 
-Targeted commissioning-boundary correction checked September 16, 2026; this does not
+Last checked September 16, 2026; this does not
 determine ownership or authorize performance under any particular agreement.
 
 ## The One Distinction That Drives Everything: Grand Rights vs. Small Rights

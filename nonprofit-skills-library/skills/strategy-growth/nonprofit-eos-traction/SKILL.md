@@ -57,7 +57,7 @@ nonprofit adopting EOS, translate/adapt these named tools:
    that the "Visionary" seat — many nonprofit EDs are actually Visionary-Integrator hybrids, which
    this system flags as a common capacity strain worth addressing with a COO/Director of Operations
    hire once budget allows.
-4. **Rocks** — The 3-7 most important priorities each person/leadership team commits to finishing in
+4. **Rocks** — The 3-5 most important priorities (EOS allows up to 7; start at 3-5) each person/leadership team commits to finishing in
    the current 90-day quarter, each with a single owner and a measurable "done" definition. Company
    Rocks roll up from the V/TO's annual plan; each leader also sets individual Rocks. A Rock without
    a named owner and a binary done/not-done definition is not a real Rock.

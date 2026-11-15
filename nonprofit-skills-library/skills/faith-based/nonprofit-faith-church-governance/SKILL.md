@@ -99,7 +99,7 @@ and episcopal polity.
   still apply **deference** to the highest church court's determination on questions the court
   characterizes as ecclesiastical.
 - **First Amendment ministerial exception** (Hosanna-Tabor v. EEOC, 565 U.S. 171 (2012); Our
-  Lady of Guadalupe v. Morrissey-Berru, 591 U.S. ___ (2020)): named here because it shapes what
+  Lady of Guadalupe v. Morrissey-Berru, 591 U.S. 732 (2020)): named here because it shapes what
   the bylaws can and should say about clergy separation, but the detailed workflow lives in
   `nonprofit-faith-employment-ministerial-exception`.
 

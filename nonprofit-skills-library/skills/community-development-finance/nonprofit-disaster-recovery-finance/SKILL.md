@@ -24,7 +24,7 @@ us a loan at 3.625% — take it or wait for grants," "how do we avoid duplicatio
 us a timeline from registration to closeout."
 
 **Boundary:** This skill covers the US federal disaster-recovery funding stack for nonprofits.
-International humanitarian and disaster response is the separate intl-aid pack. CDFI lending programs,
+International humanitarian and disaster response is outside this US-focused library. CDFI lending programs,
 certification, and deal structures outside a disaster context are `nonprofit-cdfi-finance`. Financing
 community facilities (health centers, child care, charter schools, food retail) with no declared disaster
 in play is `nonprofit-community-facilities-finance`. Org-wide risk registers, insurance reviews, and

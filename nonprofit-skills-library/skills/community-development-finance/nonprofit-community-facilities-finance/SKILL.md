@@ -72,7 +72,7 @@ Consider placement method and bank-qualified eligibility separately:
 2025 federal tax law (the One Big Beautiful Bill Act, enacted July 4, 2025) **preserved the tax exemption for municipal bonds including qualified 501(c)(3) and private activity bonds and made no changes to the bank-qualified rules** — but it did make the New Markets Tax Credit permanent at $5 billion in annual allocation (relevant to layering, below), permanently lowered the private-activity-bond threshold for 4% LIHTC deals to 25% of basis, and raised LIHTC allocations 12% starting 2026 (housing implications route to `nonprofit-housing-development-finance`). Re-verify all of this if asked after September 2026.
 
 Bank-qualified screening reference: [26 USC 265(b)(3)(C)–(G)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section265&num=0&edition=prelim).
-Targeted issuer-test correction checked September 15, 2026; this is not bond-counsel sign-off.
+Last checked September 15, 2026; this is not bond-counsel sign-off.
 
 ## Layering One Capital Stack
 

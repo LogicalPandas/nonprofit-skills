@@ -201,7 +201,7 @@ underwriter runs per family, in order:
 **Completion condition:** the worksheet states the monthly payment, note rate, number of
 payments, supported balance, proposed purchase price, and every funding source. Recalculate
 the payment from the proposed balance and reconcile purchase sources to uses before approval.
-Targeted calculation correction checked September 15, 2026; this is not a lending-law review.
+Last checked September 15, 2026; this is not a lending-law review.
 
 **Structures to choose among** (often stacked):
 

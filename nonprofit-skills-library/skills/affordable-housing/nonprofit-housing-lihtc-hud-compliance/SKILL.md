@@ -138,7 +138,7 @@ Document student status, including mid-year changes
 — tenants turning full-time mid-tenancy is a recurring hidden finding.
 
 Former-state-care reference: [26 USC §42(i)(3)(D)(i)(II)](https://www.law.cornell.edu/uscode/text/26/42).
-Targeted exception correction checked September 15, 2026; assess other household and
+Last checked September 15, 2026; assess other household and
 layered-program requirements separately before making the eligibility decision.
 
 ### The 140% / next available unit rule

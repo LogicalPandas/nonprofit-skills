@@ -96,7 +96,7 @@ asset production (photos, video, graphics) isn't rushed.
 
 ## Common Failure Modes
 
-- **Ask fatigue:** posting donation asks more than ~10-15% of the time, causing follower drop-off and
+- **Ask fatigue:** posting donation asks more than ~10% of the time (the content mix above), causing follower drop-off and
   desensitization right when a real campaign needs attention.
 - **Inconsistent voice** because copy is written ad hoc without referencing the messaging house.
 - **Posting without consent** for identifiable clients/beneficiaries — the fastest way to create a

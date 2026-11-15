@@ -25,8 +25,8 @@ is online-worthy happens partly during grading (`nonprofit-donation-intake-gradi
 during triage as high-value get routed here) and the floor-facing pricing/display of everything else
 stays in `nonprofit-retail-pricing-merchandising`. Register/POS operations and cash handling for
 in-store sales are `nonprofit-retail-store-operations`. If an item needs formal tax-valuation
-documentation for the donor (Form 8283, qualified appraisal), that's `nonprofit-in-kind-gift-
-acceptance` — handle that in parallel with, not instead of, the listing decision.
+documentation for the donor (Form 8283, qualified appraisal), that's
+`nonprofit-in-kind-gift-acceptance` — handle that in parallel with, not instead of, the listing decision.
 
 ## Core Framework: The Online Resale Pipeline
 

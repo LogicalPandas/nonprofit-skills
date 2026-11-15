@@ -159,7 +159,7 @@ Decision drivers — walk them in order for a given context:
 
 - **Model-comparison memo** for a specific jurisdiction: the three (or blended) models scored against the decision drivers above, with financing feasibility and a recommendation.
 - **Resale formula design memo** with worked examples (like the one above) for each candidate formula, next-buyer affordability math, and a recommendation with exhibits.
-- **Ground lease key-terms outline** per the eleven-section list above, for attorney drafting.
+- **Ground lease key-terms outline** per the twelve-section list above, for attorney drafting.
 - **Stewardship policy** per the outline above: monitoring, enforcement ladder, renewal calendar, and reserve funding.
 - (For advisors) a facilitation agenda for the board/membership decision meeting on model choice.
 

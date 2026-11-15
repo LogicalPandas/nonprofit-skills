@@ -195,7 +195,7 @@ Layer these in the order investors and agencies expect:
 
 Bond-test references: [26 USC §42(h)(4)(A)–(B)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section42&num=0&edition=prelim)
 and [Public Law 119-21, §70422(b)(2), effective date and rehabilitation rule](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
-Targeted threshold correction checked September 15, 2026; this is not bond/tax-counsel sign-off.
+Last checked September 15, 2026; this is not bond/tax-counsel sign-off.
 
 **Practice difference:** hands-on staff track each funder's application cycle, threshold
 requirements, and award timing (a stack with a 9% award, an invited HOME allocation, and a bond
