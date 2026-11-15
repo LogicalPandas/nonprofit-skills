@@ -54,8 +54,8 @@ structurally different things. Describe practice, do not endorse theology.
 - **The lay-leader / volunteer distinction.** A **lay leader** holds delegated authority over a
   piece of the community's life — a ministry area, small group, committee, or role with public
   accountability — usually via formal installation or election, with a term, and with formation
-  expectations. A **volunteer** offers time to a specific task without that authority. Both
-  matter; the pipelines are different. A greeter is a volunteer; a hospitality-team lead who
+  expectations. A **volunteer** offers time to a specific task without that authority. The
+  pipelines differ. A greeter is a volunteer; a hospitality-team lead who
   trains and schedules greeters is a lay leader. Confusing the two produces exhausted volunteers
   pushed into authority they never accepted, or lay leaders treated as replaceable labor.
 - **Spiritual-gifts and strengths inventories for placement.** Name the instrument and its
@@ -93,7 +93,7 @@ structurally different things. Describe practice, do not endorse theology.
 
 ## Standard Deliverables
 
-Requests in scope resolve into one of these. Name the artifact before drafting:
+Name the artifact before drafting:
 
 - **Lay-leader role description** — one page per office (skeleton below).
 - **Nomination / discernment / election process document** — the procedure this cycle, tied to
@@ -162,10 +162,9 @@ installation and drafting the same overloaded people again.
    clergy call-and-confirm, or denominational appointment. Document the confirmation in the
    confirming body's minutes. Without it, the person is a very committed volunteer, not a lay
    leader.
-8. **Install publicly.** A public installation, ordination, commissioning, or induction is not
-   decoration — it changes accountability. It tells the community "these people now speak for
-   this ministry area" and tells the leaders "you are answerable, not merely helpful." See
-   `nonprofit-faith-church-governance` for governance implications; here the point is that the
+8. **Install publicly.** A public installation, ordination, commissioning, or induction changes
+   accountability: "these people now speak for this ministry area" and "you are answerable, not
+   merely helpful." Governance implications sit in `nonprofit-faith-church-governance`; here the
    ritual is a formation event.
 
 ## Elder / Deacon / Council-Member Selection Deep Dive
@@ -176,8 +175,7 @@ recruitment. Details that consistently matter:
 - **Term limits with mandatory sabbatical.** Standard shape is a **three-year term, renewable
   once, followed by a one-year mandatory sabbatical** off the office before eligibility resets.
   This prevents indefinite incumbency, forces the pipeline, and gives the office-holder
-  permission to rest. Term limits on paper but routinely waived produce the same-twelve-people
-  problem.
+  permission to rest.
 - **Class / rotation structure.** Rotate roughly one-third of the body each year so
   institutional memory is preserved and no year is a full refresh.
 - **Nomination discipline against same-network selection.** Require the nominating body to
@@ -230,8 +228,7 @@ pipeline before you need it.
 Publish the annual formation calendar at the start of the leadership year and hold to it.
 Typical shape:
 
-- **Installation service** — public commissioning at the start of the term. Small ritual, big
-  effect on role clarity.
+- **Installation service** — public commissioning at the start of the term.
 - **Onboarding retreat (half- to full-day)** — role, code of conduct, safeguarding, meet clergy
   and existing leaders, review governing document. New leaders' worst mistakes usually come from
   lack of onboarding, not lack of character.
@@ -265,8 +262,8 @@ Ministry-adjacent volunteer roles routinely brush against employment law. Watch 
 
 ## Clergy Sustainability and Burnout
 
-The single most under-addressed sustainability issue in worship communities. Name the drivers,
-then design the practice.
+The most under-addressed sustainability issue in worship communities. Name the drivers, then
+design the practice.
 
 - **Drivers specific to clergy.** Emotional-labor-heavy pastoral care that stacks without
   reset; always-on availability (crises do not respect Sabbath); single-role-in-a-small-town
@@ -285,7 +282,7 @@ then design the practice.
   recruited to.
 - **Sabbath as a leadership discipline.** Weekly day off (phone off, calendar blocked, not the
   travel day). Monthly retreat day. Annual multi-day retreat out of town, not a conference.
-  Structural features, not indulgences, and the earliest intervention on the burnout curve.
+  The earliest intervention on the burnout curve.
 - **The Sabbath covenant.** One-page mutual covenant between clergyperson and governing body:
   day off, non-response window, holy-days off, vacation weeks, continuing-education weeks,
   sabbatical schedule. Both sides sign. Review annually. Verbal agreements are not durable —
@@ -324,8 +321,8 @@ long-term ministry to happen. Plan it as a governance project.
    the line on both sides.
 6. **Re-entry plan.** The last two weeks are re-entry, not full return: debrief with the
    governing body, a sermon or teaching that names what the sabbatical was for, and a 60-day
-   light-load window before scheduling any major new initiative. The most common sabbatical
-   failure is returning to a full inbox on day one and losing the entire benefit in a month.
+   light-load window before scheduling any major new initiative. The most common failure is
+   returning to a full inbox on day one and losing the entire benefit in a month.
 
 ## Safeguarding for Lay Leaders
 
@@ -411,45 +408,40 @@ Before installing anyone in an office:
 
 ## Common Failure Modes
 
-- **Recruiting by phone call two months before installation.** The nominating body scrambles,
-  the same twelve people say yes again, discernment collapses into arm-twisting. Fix by
-  publishing role descriptions and the discernment invitation 60–90 days early, and by running
-  multi-channel nomination every cycle.
-- **Confusing volunteers with lay leaders.** Ushers and one-time helpers are treated as if
-  they hold authority they never accepted, while ministry-area leaders are scheduled as if
-  interchangeable. Fix by writing role descriptions and installing authority-bearing roles
-  publicly; keep volunteer-management practices (`nonprofit-volunteer-management`) for episodic
-  help.
-- **Term limits on paper, not in practice.** The bylaws say three-year terms renewable once
-  with mandatory sabbatical; the same warden has served 11 years because "no one else will do
-  it." Fix by treating the override as a red flag that triggers a pipeline intervention, not a
+Final scan; fixes are detailed in the sections named.
+
+- **Recruiting by phone call two months before installation** — the same twelve people say yes
+  again and discernment collapses into arm-twisting. Publish role descriptions and the
+  discernment invitation 60–90 days early; run multi-channel nomination every cycle.
+- **Confusing volunteers with lay leaders** — write role descriptions, install authority-bearing
+  roles publicly, and keep `nonprofit-volunteer-management` practices for episodic help.
+- **Term limits on paper, not in practice** — the same warden has served 11 years because "no one
+  else will do it." Treat the override as a red flag that triggers a pipeline intervention, not a
   routine waiver.
-- **Spiritual-gifts inventory used as placement algorithm.** A member's SHAPE or
-  CliftonStrengths result is treated as an assignment rather than an input to discernment; the
-  person is dropped into a role that fits the inventory but not the moment in their life. Fix
-  by using the inventory to open the conversation, not to end it; pair every assessment with a
-  discernment interview.
-- **Small-group pipeline with no apprentices.** Every group has a leader; none has a named
+- **Spiritual-gifts inventory used as placement algorithm** — a SHAPE or CliftonStrengths result
+  treated as an assignment drops the person into a role that fits the inventory but not the moment
+  in their life. Use it to open the conversation, and pair every assessment with a discernment
+  interview.
+- **Small-group pipeline with no apprentices**: every group has a leader; none has a named
   apprentice; the coach roster is out of date; when a leader steps down, the group dissolves.
-  Fix by making apprentice-naming a condition of coaching support and by publishing the coach /
+  Make apprentice-naming a condition of coaching support and publish the coach /
   coach-of-coaches roster.
-- **Clergy Sabbath and sabbatical treated as perks.** The day off is first to move when a
-  funeral lands; the sabbatical is postponed year after year "because it isn't a good time";
-  the clergyperson leaves the vocation in year eleven. Fix by adopting a written Sabbath
-  covenant and sabbatical policy at governing-body level, and by planning the sabbatical 12
-  months out with external funding pursued early.
-- **Sabbatical re-entry ignored.** The clergyperson returns to a full inbox on day one, is
-  asked to preach the coming Sunday, and burns the sabbatical benefit in three weeks. Fix by
-  building a two-week re-entry window and a 60-day light-load period into the plan before the
-  sabbatical begins, not after.
-- **Recognition that turns service into competition.** A "volunteer of the year" award, or
-  recognition tied to giving level, erodes the theology of service the community teaches on
-  Sunday and offends the leaders most rooted in that theology. Fix by shifting to specific
-  private notes, cohort-level annual recognition, and tradition-native ritual.
-- **Removal-for-cause with no due process.** A trustee or shura member is asked to step down
-  in a hallway conversation; the community fractures because there is no written procedure and
-  no right to be heard. Fix by adopting a written removal procedure at governing-body level and
-  routing misconduct through `nonprofit-faith-employment-ministerial-exception`.
+- **Clergy Sabbath and sabbatical treated as perks**: the day off is first to move when a
+  funeral lands; the
+  sabbatical is postponed year after year, and the clergyperson leaves the vocation in year
+  eleven. Adopt a written Sabbath covenant and sabbatical policy at governing-body level; plan 12
+  months out and pursue external funding early.
+- **Sabbatical re-entry ignored** — preaching the first Sunday back burns the benefit in three
+  weeks. Build the two-week re-entry window and 60-day light-load period into the plan before the
+  sabbatical begins.
+- **Recognition that turns service into competition**: "volunteer of the year" or giving-tied
+  honors erode the theology of service the community teaches on Sunday and offend the leaders
+  most rooted in that theology; shift to specific private
+  notes, cohort-level recognition, and tradition-native ritual.
+- **Removal-for-cause with no due process** — a trustee or shura member asked to step down in a
+  hallway fractures the community. Adopt a written removal procedure at governing-body level
+  with a right to be heard;
+  route misconduct through `nonprofit-faith-employment-ministerial-exception`.
 
 ## For advisors
 

@@ -35,10 +35,9 @@ that counsel signs off on; it does not deliver a legal opinion.
 
 ## Core Frameworks
 
-Name the operative statute and standard of review before drafting anything. The same fact
-pattern — a zoning denial on a proposed food pantry — produces very different work product
-depending on whether you are teeing up a Free Exercise claim, a RLUIPA equal-terms claim, or a
-state-law claim.
+Name the operative statute and standard of review before drafting. A zoning denial on a proposed
+food pantry produces very different work product as a Free Exercise claim, a RLUIPA equal-terms
+claim, or a state-law claim.
 
 - **Free Exercise Clause** — under **Employment Division v. Smith, 494 US 872 (1990)**, a neutral,
   generally applicable law needs no religious exemption. Strict scrutiny returns when a law is not
@@ -91,8 +90,6 @@ state-law claim.
   immigration work is out of scope.
 
 ## Standard Deliverables
-
-Every request in scope resolves into one of these artifacts:
 
 - **Accept-federal-funds decision memo** — go/no-go analysis before signing a federal grant,
   cooperative agreement, contract, voucher, or Medicaid participation agreement.
@@ -446,36 +443,30 @@ Self-check before the file goes to counsel:
 
 ## Common Failure Modes
 
-- **Assuming state RFRA coverage** — treating a state without a RFRA and without a Sherbert-
-  style state constitutional doctrine as if the federal RFRA test applied. Fix by verifying
-  the specific state regime and keeping the one-page state-law summary in the file.
-- **Missing the direct-vs-indirect classification** — designing a separation regime for a
-  program the agency in fact treats as indirect, or missing separation obligations on a
-  program that is direct. Fix by getting the classification in writing before program design.
-- **Botching the beneficiary notice** — missing alternative-provider language, not translated,
-  not posted at the service space, or lacking the intake acknowledgment. Fix by using the
-  operative agency's current model notice and building intake workflow around signed receipt.
-- **Collapsing worship and funded service** — the food-pantry line requires a prayer;
-  the shelter mandates chapel for a bed; the recovery program requires Step Four confession as
-  intake. Under direct funding, each is a Charitable Choice / Equal Treatment (and potentially
-  Establishment Clause) violation. Fix by rebuilding with time or location separation and
-  voluntary participation.
-- **Not preserving the RLUIPA record** — negotiating through a zoning denial without a
-  litigation hold, losing months of drafts and emails, and showing up to litigation without
-  the comparator record or sincerity declarations. Fix by issuing the litigation hold and
-  open-records requests the day the denial arrives.
-- **Overreading Masterpiece and 303 Creative** — declining to serve a class under state
-  public-accommodation law on the theory that either case is a general religious-liberty
-  defense. Fix by naming the actual narrow holdings, checking federal and state/local
-  coverage and applicable exceptions separately, and obtaining counsel review before a denial.
-- **Losing church-audit protection while chasing federal money** — forgetting that IRC §7611
-  church-audit protection (owned by `nonprofit-faith-990-exemption`) does not stop a federal-
-  grants audit under 2 CFR Part 200. Fix by modeling grants-audit exposure separately and
-  building the files to Uniform Guidance standards from the outset.
-- **Treating accept-federal-funds as a staff-level decision** — the executive director signs
-  without board authorization or trade-off analysis; the first funder direction to modify
-  religious character then produces a governance crisis. Fix by putting every federal-funds
-  acceptance on the board agenda with the decision memo and named trip-wires.
+Final scan; each fix is detailed in the section named.
+
+- **Assuming state RFRA coverage** in a state with neither a RFRA nor a Sherbert-style
+  constitutional doctrine — verify the state regime; keep the one-page summary in the file
+  (State-Law Coverage).
+- **Missing the direct-vs-indirect classification** — get it in writing before program design.
+- **Botching the beneficiary notice** — no alternative-provider language, untranslated, not
+  posted at the service space, or no signed intake acknowledgment (Beneficiary Notice).
+- **Collapsing worship and funded service** — the pantry line requires a prayer; the shelter
+  mandates chapel for a bed; the recovery program requires Step Four confession as intake. Under
+  direct funding each is a Charitable Choice / Equal Treatment (and potentially Establishment
+  Clause) violation; rebuild with time or location separation and voluntary participation.
+- **Not preserving the RLUIPA record** — no litigation hold, lost drafts and emails, no comparator
+  record or sincerity declarations; issue the hold and open-records requests the day the denial
+  arrives.
+- **Overreading Masterpiece and 303 Creative** as general defenses — name the narrow holdings,
+  check federal and state/local coverage and exceptions separately, get counsel review before a
+  denial.
+- **Losing church-audit protection while chasing federal money** — IRC §7611 (owned by
+  `nonprofit-faith-990-exemption`) does not stop a federal-grants audit under 2 CFR Part 200;
+  build files to Uniform Guidance standards from the outset.
+- **Treating accept-federal-funds as a staff-level decision** — put every acceptance on the board
+  agenda with the decision memo and named trip-wires, or the first funder direction to modify
+  religious character produces a governance crisis.
 
 ## For advisors
 

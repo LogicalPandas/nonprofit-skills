@@ -43,8 +43,6 @@ Name the framework the community is operating under before drafting — a Christ
 
 ## Standard Deliverables
 
-Every request in scope resolves into one of these artifacts:
-
 - **Annual stewardship campaign plan** — theme, calendar, preaching/teaching arc, materials, Commitment Sunday flow, follow-up sequence.
 - **Pledge card / estimate-of-giving form and cover letter** — with recurring-giving opt-in and required disclosure language.
 - **Capital campaign feasibility-study brief and firm shortlist**; **case statement and phase plan** (silent/leadership/congregational, celebration Sunday, three-year pledge instrument).
@@ -59,7 +57,7 @@ Every request in scope resolves into one of these artifacts:
 
 ## Running the Annual Stewardship Campaign — Numbered Checklist
 
-Run this every stewardship season. The primary failure mode is treating stewardship as a fundraising appeal instead of a formation practice; the secondary is treating it as pure formation and forgetting the pledge card is what builds the operating budget.
+Run every stewardship season. The primary failure mode is treating stewardship as a fundraising appeal instead of a formation practice; the secondary is treating it as pure formation and forgetting the pledge card is what builds the operating budget.
 
 1. **Set the calendar backward from Commitment Sunday.** Pick Commitment Sunday (typically October or early November for calendar-year budgets; adjust for fiscal-year, high-holiday-adjacent Jewish, and Ramadan-adjacent Muslim cycles). Work back: 4–6 weeks of preaching/teaching, 3 weeks of mailed and digital touches, small-group curriculum overlapping the preaching arc, follow-up sequence 6–8 weeks past Commitment Sunday.
 2. **Choose the theological frame explicitly.** Name whether the campaign teaches the tithe, proportional/percentage giving, sacrificial giving, tzedakah as obligation, zakat calculation, or dana as spiritual practice — and stay consistent across sermons, small-group material, letters, and cards. Mixed frames confuse the congregation.
@@ -106,13 +104,13 @@ Worship-building campaigns follow the general shape in `nonprofit-capital-campai
 
 Faith-community planned giving uses the mechanics in `nonprofit-planned-giving` (bequests, CGAs, CRTs/CRUTs, retirement-plan beneficiary designations, life insurance, retained life estates) with three overlays:
 
-- **Frame as legacy of faith, not tax strategy.** Bequests to a congregation are almost always motivated by a lifelong relationship with the community. Marketing that leads with tax deduction underperforms marketing that leads with continuity of witness, formation of the next generation, or gratitude for the community's role across a life.
+- **Frame as legacy of faith, not tax strategy.** Congregational bequests almost always stem from a lifelong relationship; marketing that leads with tax deduction underperforms marketing that leads with continuity of witness, formation of the next generation, or gratitude for the community's role across a life.
 - **Endowment mistrust is common.** Many congregations reflexively read endowment as **hoarding** ("we should give it away, not build it up") or as **institutional risk** ("an endowed congregation will stop asking members to give"). Address this in the endowment case: a written **spending policy** (typically 4–5% of a rolling 3-year average); a **designated vs. undesignated** split (endowment for mission, capital repair, scholarships, music, and a smaller general-support pool); explicit statement that endowment income supplements — not replaces — annual pledged giving.
 - **Denominational vehicles.** Many communities are better served routing planned gifts through a denominational foundation (see Core Frameworks) than administering their own endowment. These provide investment management, planned-giving marketing, and estate-administration support most single congregations cannot match. Congregations running their own endowment need a written investment policy, an investment committee separate from operating finance, and usually an outside advisor.
 
 ## IRS Documentation Rules for Religious Contributions
 
-Compliance backbone of the skill. Get this wrong and donors lose deductions; over-disclose and donors get confused notices they do not need. The dollar thresholds below ($250, $75, $500, $5,000 and others) are statutory or set by IRS forms; verify current figures in IRS Publication 1771, Publication 526 and the current Form 8283/8282 instructions before drafting.
+Get this wrong and donors lose deductions; over-disclose and donors get confused notices they do not need. The dollar thresholds below ($250, $75, $500, $5,000 and others) are statutory or set by IRS forms; verify current figures in IRS Publication 1771, Publication 526 and the current Form 8283/8282 instructions before drafting.
 
 ### Contemporaneous Written Acknowledgment (§170(f)(8))
 
@@ -144,7 +142,7 @@ Under §6115, when a donor makes a payment **greater than $75** and receives goo
 - **Bookstore, gift shop, café, and merchandise** sales — not deductible; do not include in giving statements even if paid via the offering.
 - **Music-and-arts performances** where a ticket is required — deductible portion is payment minus fair-market ticket value.
 
-Draft the community's fee schedule and disclosure practice once, publish it, and apply it consistently. Inconsistent application (some weddings receipted as gifts, others as fee-for-service) is the audit signal.
+Publish the fee schedule and disclosure practice and apply it consistently. Inconsistent application (some weddings receipted as gifts, others as fee-for-service) is the audit signal.
 
 ### Donor-Designated Gifts to Individuals — Control and Discretion
 
@@ -223,16 +221,18 @@ Cash offerings are the highest-fraud-risk transaction in a worship community. No
 
 ## Common Failure Modes
 
-- **Treating stewardship as a fundraising appeal.** The pledge campaign becomes a mailer with a card, no preaching arc, no teaching, no testimony — and participation stalls. Fix by anchoring the campaign in a formation cycle and treating the pledge card as the response to formation, not the campaign itself.
-- **Misapplying quid pro quo to purely-religious benefits.** Community attaches a quid-pro-quo disclosure to the tithe saying donors received "worship services valued at $X"; donors read it as a joke or a shakedown. Fix by using the intangible-religious-benefit safe-harbor where the only return is worship, sacraments, or religious instruction.
-- **Missing quid pro quo where it does apply.** Community receipts full amounts of wedding fees, retreat registrations, banquet tickets, and gala tables as deductible; donors take deductions they are not entitled to. Fix by publishing a fee schedule with explicit fair-market values and disclosing correctly.
-- **Earmarked gifts to individuals receipted without discretion evidence.** Mission-trip and missionary-support programs receipt hundreds of gifts naming individuals, with no written control-and-discretion policy and no pattern of ever redirecting funds. Fix by adopting the discretion policy, adding safe-harbor language to pledge forms, receipting to the fund, and demonstrating discretion in a documented handful of cases.
-- **No feasibility study before a capital campaign.** Leadership sets a goal from wishful thinking, launches, misses badly, stalls the operating budget. Fix by commissioning a real feasibility study and abiding by the pledge-capacity number even when it disappoints.
-- **Capital campaign cannibalizes annual giving.** Households divert their annual pledge to the capital pledge; operating budget craters mid-campaign. Fix by re-stating "above and beyond," tracking annual pledge fulfillment weekly, and pausing the campaign if annual giving drops materially.
-- **Endowment framed as institutional preservation.** Congregation resists endowment as hoarding; clergy doubles down on institutional-strength argument, entrenching the resistance. Fix by leading with a spending-policy commitment, a mission-tied designated-fund menu, and explicit commitment that endowment income does not replace annual giving.
-- **Casual cash handling.** One trusted long-tenured usher counts the offering alone; no chain of custody. Fix by adopting the two-unrelated-counter protocol before an incident forces it.
-- **Pastoral silence on unusually large gifts.** Estate-scale gift acknowledged only by auto-receipt; donor concludes their gift did not matter. Fix by routing every outsized and first gift to clergy for personal acknowledgment within a week.
-- **Confidentiality left implicit.** Nobody has decided whether clergy see individual giving; someone in the office lets it slip and trust breaks. Fix by writing the pastor-blind / pastor-sighted / hybrid policy explicitly and following it consistently.
+Final scan; fixes are detailed in the sections named.
+
+- **Treating stewardship as a fundraising appeal** — a mailer with a card, no preaching arc, teaching or testimony; participation stalls. Anchor the campaign in a formation cycle; the pledge card is the response to formation, not the campaign (Annual Campaign checklist).
+- **Misapplying quid pro quo to purely-religious benefits** — a tithe disclosure saying donors received "worship services valued at $X" reads as a joke or a shakedown; use the intangible-religious-benefit safe-harbor.
+- **Missing quid pro quo where it does apply** — wedding fees, retreat registrations, banquet tickets and gala tables receipted in full as deductible; publish a fee schedule with fair-market values (§6115).
+- **Earmarked gifts to individuals receipted without discretion evidence** — adopt the discretion policy, add safe-harbor language to pledge forms, receipt to the fund, and demonstrate discretion in a documented handful of cases (Control and Discretion).
+- **No feasibility study before a capital campaign**: leadership sets a goal from wishful thinking, launches, misses badly, and stalls the operating budget. Commission a real feasibility study and abide by its pledge-capacity number even when it disappoints.
+- **Capital campaign cannibalizes annual giving** — restate "above and beyond," track annual pledge fulfillment weekly, and pause the campaign if annual giving drops materially.
+- **Endowment framed as institutional preservation** — doubling down on institutional strength entrenches the hoarding objection; lead with a spending policy, a mission-tied designated-fund menu, and a commitment that endowment income does not replace annual giving.
+- **Casual cash handling** — one trusted long-tenured usher counting alone; adopt the two-unrelated-counter protocol before an incident forces it.
+- **Pastoral silence on unusually large gifts** — an estate-scale gift acknowledged only by auto-receipt leaves the donor concluding their gift did not matter; route every outsized and first gift to clergy for personal acknowledgment within a week.
+- **Confidentiality left implicit** — someone lets giving slip and trust breaks; write the pastor-blind / pastor-sighted / hybrid policy and follow it.
 
 ## For advisors
 
