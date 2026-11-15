@@ -1,6 +1,6 @@
 ---
 name: nonprofit-opportunity-zones
-description: "Opportunity Zones for nonprofits and mission-driven deals: current-law QOF/QOZB mechanics (rolling five-year deferral, 10% and rural 30% basis step-ups, 10-year appreciation exclusion, 90% asset tests, sin-business exclusions), 2027 OZ 2.0 tract redesignations, rural QROF enhancements, nonprofit roles (QOZB sponsor, JV partner, fund investor), deal selection against community benefit, community-benefit covenants, and 6039K/6039L reporting. Use when a user says 'an investor wants to put opportunity zone money into our project,' 'should our nonprofit be the QOZB or a limited partner,' 'what changed in opportunity zones law in 2025-2026,' 'can our foundation invest in a qualified opportunity fund,' or 'draft a community benefits covenant for this OZ deal.' Not for New Markets Tax Credit structuring (use nonprofit-nmtc-deals), CDFI lending (use nonprofit-cdfi-finance), housing capital stacks (use nonprofit-housing-development-finance), or endowment investment policy (use org investment policy and counsel)."
+description: "Guides nonprofits and mission-driven sponsors through Opportunity Zone deals: QOF/QOZB mechanics (deferral, basis step-ups, 10-year exclusion, 90% asset tests, sin-business exclusions), tract designations, rural QROF rules, nonprofit roles (QOZB sponsor, JV partner, fund investor), deal selection for community benefit, community-benefit covenants, and 6039K/6039L reporting. Use when a user says 'an investor wants to put opportunity zone money into our project', 'should our nonprofit be the QOZB or a limited partner', 'can our foundation invest in a qualified opportunity fund', or 'draft a community benefits covenant for this OZ deal'. Not for NMTC structuring (use nonprofit-nmtc-deals), CDFI lending (use nonprofit-cdfi-finance), or housing capital stacks (use nonprofit-housing-development-finance)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -12,26 +12,22 @@ metadata:
 
 # Nonprofit Opportunity Zones
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit, foundation, or mission-driven sponsor is evaluating Opportunity Zones
-(OZ) capital: serving as the operating business (QOZB) under a fund, joining or forming a
-mission-driven Qualified Opportunity Fund (QOF), responding to an investor who wants to route
-capital gains into a community project, selecting deals for community benefit, or building
-compliance and transparency around a live OZ investment. Trigger tasks include: "an investor
-approached us about putting OZ money into our building," "should our nonprofit be the QOZB or
-just a limited partner," "what did the 2025 tax law change about opportunity zones," "can our
-foundation defer gains by investing in a QOF," "we want to sponsor a mission-driven opportunity
-fund — where do we start," or "draft a community benefits covenant for this OZ deal."
+This skill covers the OZ incentive and nonprofit roles within it: serving as the QOZB under a fund,
+joining or forming a mission-driven QOF, responding to an investor who wants to route capital gains
+into a community project, selecting deals for community benefit, and compliance around a live OZ
+investment. Route these out:
 
-**Boundary:** This skill covers the OZ incentive and nonprofit roles within it. New Markets Tax
-Credit deals — CDE allocations, QEI structuring, leverage loans, seven-year recapture — are
-`nonprofit-nmtc-deals`. CDFI certification, Treasury CDFI Fund awards, and CDFI lending programs are
-`nonprofit-cdfi-finance`. Building the capital stack for an affordable-housing deal (LIHTC, HOME,
-NHTF, housing bonds) is `nonprofit-housing-development-finance`. Deciding whether an endowment
-should allocate to OZ funds at all is a fiduciary investment-policy question — flag it and route to
-the organization's investment policy and counsel; this skill covers only what OZ participation
-means technically. Post-disaster rebuilding capital is `nonprofit-disaster-recovery-finance`.
+- New Markets Tax Credit deals (CDE allocations, QEI structuring, leverage loans, seven-year
+  recapture) → `nonprofit-nmtc-deals`.
+- CDFI certification, Treasury CDFI Fund awards, and CDFI lending programs → `nonprofit-cdfi-finance`.
+- Affordable-housing capital stacks (LIHTC, HOME, NHTF, housing bonds) →
+  `nonprofit-housing-development-finance`.
+- Whether an endowment should allocate to OZ funds at all is a fiduciary investment-policy question —
+  flag it and route to the organization's investment policy and counsel; this skill covers only what
+  OZ participation means technically.
+- Post-disaster rebuilding capital → `nonprofit-disaster-recovery-finance`.
 
 ## The Current Law — Verified Landscape (as of September 2026)
 
@@ -123,8 +119,8 @@ Two layers, both flow-through entities (partnership or corporation; trusts canno
    QOZBs invoking it to attest to that fact and identify the month qualification was lost.
 
 Testing reference: [IRS final regulations, 90% standard, first-year rules, and intangible-property use](https://www.irs.gov/pub/irs-drop/td-9889.pdf),
-pp. 362, 454–456, and 472. Last checked September 15, 2026;
-verify the rules applicable to the transaction before reliance. This is not expert sign-off.
+pp. 362, 454–456, and 472. Verify the rules applicable to the transaction before reliance.
+This is not expert sign-off.
 
 **Nonprofit-specific structural facts:**
 - A QOF must be a partnership or corporation. A 501(c)(3) cannot *itself* certify as a QOF, but a
@@ -251,15 +247,29 @@ commitments:
 5. Working-capital safe harbor: adopt the written plan and schedule when cash is received; track
    the 31-month clock (62 for phased projects) against actual deployment.
 
+## Verify Before Acting
+
+- [ ] Tract designation status confirmed on the current official OZ map and, for multi-year plans,
+      the state's nomination list for the next designation round.
+- [ ] Operative Treasury and IRS guidance (notices, proposed or final regulations) for the
+      investment date identified; OZ 1.0 vs. OZ 2.0 rules applied by date of gain and investment.
+- [ ] 6039K/6039L reporting requirements and penalty amounts checked against current final rules
+      and form instructions.
+- [ ] 90% asset test, working-capital safe harbor, and substantial-improvement math reviewed on the
+      actual closing timeline.
+- [ ] Community-benefit covenant terms numbered, dated, recorded, and paired with remedies.
+- [ ] Tax counsel and CPA sign-off obtained before any filing or binding election.
+
 ## Common Failure Modes
 
 - Treating OZ equity as "free mission money" — it is a tax-motivated equity product that expects
   market-rate returns; if the project can't carry those returns without gutting the mission, the
   answer is a covenant-heavy structure or no deal.
 - Forgetting the December 31, 2026 inclusion date — legacy deferred gain not already recognized
-  comes back into income on that date and is reported for the 2026 tax year; verify the org's
-  investors (if any) have planned for it, and
-  never re-pitch the old fixed-date deferral to a 2027 investor.
+  comes back into income on that date and is reported for the 2026 tax year. Before that date,
+  verify the org's investors (if any) have planned for it; after it, confirm the gain was
+  recognized and reported. Never pitch the old fixed-date deferral to an investor investing on or
+  after January 1, 2027.
 - Nonprofit takes a QOF LP interest expecting deferral — a (c)(3) has no capital-gain tax to defer;
   UBIT can flow through instead. Fix: PRI analysis or the sponsor role.
 - Buying an existing completed building inside the zone and calling it OZ property — fails the
@@ -280,16 +290,14 @@ commitments:
   mixed-use QOZB breaks qualification for the whole structure. Fix: deed restrictions on tenant
   uses matching § 144(c)(6)(B).
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the nonprofit sponsor**, own the readiness package: tract verification, site control,
-  closing timeline that fits a 180-day investor window, the working-capital plan, and covenant
-  drafting leverage at term-sheet stage (never after). Track the QOZB statement calendar and the
-  70/50/5/40 tests with the same discipline as a grant report.
-- **As an advisor/consultant**, run the suitability screen before the client falls in love with
-  the structure: does the deal need OZ money, does the tract survive 2027, does the nonprofit
-  understand it is the compliance engine for someone else's tax benefit? Then pressure-test the
-  role choice (sponsor vs. JV vs. LP), the covenant enforceability, and the UBIT/PRI analysis —
-  and route every binding position (QOF certification, cure elections, 6039K/6039L filings) through
-  tax counsel and CPA before filing. This skill's outputs support those reviews; they do not
-  replace them.
+- Run the suitability screen before the client falls in love with the structure: does the deal
+  need OZ money, does the tract survive the redesignation, does the nonprofit understand it is the
+  compliance engine for someone else's tax benefit?
+- Pressure-test the role choice (sponsor vs. JV vs. LP), covenant enforceability, and the UBIT/PRI
+  analysis; a nonprofit sponsor owns the readiness package (tract verification, site control, a
+  closing timeline that fits the 180-day investor window, working-capital plan, covenant leverage
+  at term-sheet stage) and tracks the QOZB statement calendar and 70/50/5/40 tests like a grant report.
+- Route every binding position (QOF certification, cure elections, 6039K/6039L filings) through tax
+  counsel and CPA before filing. This skill's outputs support those reviews; they do not replace them.

@@ -1,6 +1,6 @@
 ---
 name: nonprofit-nmtc-deals
-description: "New Markets Tax Credit deal work for nonprofits: how NMTC works (investors, CDEs, Qualified Equity Investments, the 39% credit over 7 years), the CDFI Fund allocation process and what CDEs look for, deal structuring (leverage loans, sub-CDEs, exits), eligible-use rules, rural/non-metro targets, 7-year compliance and recapture triggers, and layering NMTC with LIHTC/HOME and CDFI lending. Use when a user says 'can we use New Markets Tax Credits for our building,' 'pitch our project to a CDE,' 'structure an NMTC deal for our nonprofit,' 'what can NMTC proceeds pay for,' or 'explain the 7-year compliance period.' Not for LIHTC/HOME/CDBG housing capital stacks (use nonprofit-housing-development-finance), CDFI Fund certification and awards (use nonprofit-cdfi-finance), community facilities funding landscape (use nonprofit-community-facilities-finance), Qualified Opportunity Funds (use nonprofit-opportunity-zones), or donor-side fundraising for the building (use nonprofit-capital-campaigns)."
+description: "Guides nonprofit New Markets Tax Credit deals: how NMTC works (investors, CDEs, Qualified Equity Investments, the 39% credit over 7 years), the allocation process and what CDEs look for, structuring (leverage loans, sub-CDEs, exits), eligible uses, 7-year compliance and recapture, and layering with LIHTC and CDFI debt. Use when a user says 'can we use New Markets Tax Credits for our building', 'pitch our project to a CDE', 'what can NMTC proceeds pay for', or 'explain the 7-year compliance period'. Not for housing capital stacks (use nonprofit-housing-development-finance), CDFI certification and awards (use nonprofit-cdfi-finance), the facilities funding landscape (use nonprofit-community-facilities-finance), or Opportunity Zone funds (use nonprofit-opportunity-zones)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -12,28 +12,23 @@ metadata:
 
 # Nonprofit NMTC Deals (New Markets Tax Credit)
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit wants to use New Markets Tax Credits to finance a facility or
-business project — or a CDE, CDFI, lender, or consultant is shaping a deal with a nonprofit
-sponsor. Trigger tasks include: "can we use New Markets Tax Credits for our new health center /
-child care center / charter school," "how do we pitch our project to a CDE," "what can NMTC
-proceeds actually pay for," "a CDE offered us NMTC — what does the 7-year compliance period
-require," "we're doing a mixed-use building with apartments upstairs — can LIHTC and NMTC
-stack," or "our nonprofit doesn't pay taxes — how does the credit even help us?"
+This skill covers the NMTC deal for a nonprofit sponsor — or a CDE, CDFI, lender, or consultant
+shaping one: credit mechanics, allocation, structuring, eligible use, compliance, and layering.
+Route these out:
 
-**Boundary:** This skill covers the NMTC deal: credit mechanics, allocation, structuring,
-eligible use, compliance, and layering with other community development capital. Full housing
-capital stacks — LIHTC equity pricing, HOME/CDBG/NHTF layering, developer fees — are
-`nonprofit-housing-development-finance`; NMTC appears there only for the commercial portion of a
-mixed-use deal. CDFI Fund certification, FA/TA awards, and borrowing from a CDFI lender are
-`nonprofit-cdfi-finance` (this skill uses CDEs, a distinct Treasury certification). The
-community-facilities funding landscape — USDA Community Facilities loans, conduit bonds, PRIs,
-choosing among facility funders — is `nonprofit-community-facilities-finance`; come here only
-for the NMTC slice of a facilities stack. Qualified Opportunity Funds, QOZBs, and OZ investment
-are `nonprofit-opportunity-zones`. Raising charitable gifts and campaign quiet phases are
-`nonprofit-capital-campaigns` — the campaign is usually the gap funder beside the NMTC structure
-this skill builds.
+- Full housing capital stacks (LIHTC equity pricing, HOME/CDBG/NHTF layering, developer fees) →
+  `nonprofit-housing-development-finance`; NMTC appears there only for the commercial portion of
+  a mixed-use deal.
+- CDFI Fund certification, FA/TA awards, and borrowing from a CDFI lender → `nonprofit-cdfi-finance`
+  (this skill uses CDEs, a distinct Treasury certification).
+- The community-facilities funding landscape (USDA Community Facilities, conduit bonds, PRIs,
+  choosing among facility funders) → `nonprofit-community-facilities-finance`; come here only for
+  the NMTC slice of a facilities stack.
+- Qualified Opportunity Funds, QOZBs, and OZ investment → `nonprofit-opportunity-zones`.
+- Charitable gifts and campaign quiet phases → `nonprofit-capital-campaigns`; the campaign is
+  usually the gap funder beside the NMTC structure.
 
 ## How NMTC Works (the Five-Minute Version)
 
@@ -194,7 +189,8 @@ borrower and repayment source through year 7 and exit. Tax counsel and a CPA rev
 structure and calculations before reliance, and the board reviews the financing decision.
 
 Structure reference: [CDFI Fund NMTC guide, leverage structure and glossary](https://www.cdfifund.gov/system/files/2023-10/CDFI_NMTC_NI_Self-Assessment_Guide_Final.pdf).
-Last checked September 15, 2026; this is not independent expert sign-off.
+Verify current structure guidance with the CDFI Fund before relying on it; this reference is not
+independent expert sign-off.
 
 ## Step 4 — Apply the Eligible Use Rules
 
@@ -333,16 +329,14 @@ This skill produces four standard deliverables:
   Fund guidance before each deal — the CY 2026 round materials are the operative reference as
   of September 2026.
 
-## Notes for Advisors and Consultants
+## For advisors
 
-- When advising a nonprofit that already has a CDE term sheet, run the recapture-indemnity
-  review first — the highest-leverage negotiating item for the sponsor, cheapest to fix
-  before signing.
-- When advising the CDE or investor side, the flip applies: distress metrics, deployment
-  deadlines, and allocation-agreement covenants (including the post-2025 permitted-use and
-  anti-discrimination enforcement emphasis) are the diligence spine.
-- For mixed-use deals, volunteer to write the cost-allocation matrix between the housing
-  entity and the QALICB — it prevents the most common cross-credit dispute.
-- Keep deal-team roles explicit: tax counsel (structure and IRS), transaction counsel
+- Sponsor side with a CDE term sheet in hand: run the recapture-indemnity review first — the
+  highest-leverage negotiating item, cheapest to fix before signing.
+- CDE or investor side: distress metrics, deployment deadlines, and allocation-agreement
+  covenants (including the post-2025 permitted-use and anti-discrimination enforcement emphasis)
+  are the diligence spine.
+- Mixed-use deals: write the cost-allocation matrix between the housing entity and the QALICB,
+  and keep deal-team roles explicit — tax counsel (structure and IRS), transaction counsel
   (documents), an NMTC consultant (pricing and CDE relations), and the nonprofit's CFO as
   compliance owner.

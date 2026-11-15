@@ -1,6 +1,6 @@
 ---
 name: nonprofit-community-facilities-finance
-description: "Designs capital stacks for nonprofit community facilities — health centers (FQHCs), child care centers, charter schools, grocery and healthy-food retail, community centers, workforce training space — layering USDA Community Facilities loans and grants, tax-exempt 501(c)(3) conduit bonds (bank-qualified or public), NMTC equity, CDFI debt, government grants, and philanthropic gap capital. Use when a user says 'how do we finance our new health center / child care building / charter school facility,' 'are we eligible for USDA Community Facilities,' 'should we do a bank-qualified bond,' 'help us put together the capital stack,' or 'what funders pay for this kind of facility.' Not for NMTC deal structuring (use nonprofit-nmtc-deals), CDFI lending and awards (use nonprofit-cdfi-finance), housing projects (use nonprofit-housing-development-finance), donor-side capital campaigns (use nonprofit-capital-campaigns), or disaster-rebuild financing (use nonprofit-disaster-recovery-finance)."
+description: "Designs capital stacks for nonprofit community facilities (health centers, child care centers, charter schools, grocery and healthy-food retail, community centers, workforce space) by layering USDA Community Facilities loans and grants, tax-exempt 501(c)(3) conduit bonds, NMTC equity, CDFI debt, government grants, and philanthropic gap capital. Use when a user says 'how do we finance our new health center', 'are we eligible for USDA Community Facilities', 'should we do a bank-qualified bond', or 'help us put together the capital stack'. Not for NMTC deal structuring (use nonprofit-nmtc-deals), CDFI lending and awards (use nonprofit-cdfi-finance), housing projects (use nonprofit-housing-development-finance), or donor-side campaigns (use nonprofit-capital-campaigns)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -12,11 +12,16 @@ metadata:
 
 # Nonprofit Community Facilities Finance
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to plan, structure, or troubleshoot the financing of a brick-and-mortar community facility a nonprofit will own, lease, or develop: FQHC health centers and clinics, child care centers, charter schools, food retail and grocery, community centers, and workforce training space. Trigger tasks include: "how do we finance a new health center building," "our child care center needs a bigger building — who funds that," "are we eligible for USDA Community Facilities money," "should we issue a bond or get a bank loan," "help us put together the capital stack for our project," or "the bank will only lend 60% of cost — how do we fill the gap."
+This skill covers the *facility-side* capital stack for a brick-and-mortar community facility a nonprofit will own, lease, or develop (FQHCs and clinics, child care centers, charter schools, food retail and grocery, community centers, workforce training space). Route these out:
 
-**Boundary:** this skill covers the *facility-side* capital stack. It does not cover NMTC deal mechanics (QEIs, leverage loans, allocation applications, 7-year compliance — use `nonprofit-nmtc-deals`), CDFI certification, award programs, and lending products (use `nonprofit-cdfi-finance`), housing projects and LIHTC/HOME stacks (use `nonprofit-housing-development-finance`), donor-side campaign strategy and gift solicitations (use `nonprofit-capital-campaigns`), or post-disaster rebuilding funds like CDBG-DR and FEMA Public Assistance (use `nonprofit-disaster-recovery-finance`). Operating lines of credit for cash-timing gaps route to `nonprofit-reserves-cash-flow`.
+- NMTC deal mechanics (QEIs, leverage loans, allocation applications, 7-year compliance) → `nonprofit-nmtc-deals`.
+- CDFI certification, award programs, and lending products → `nonprofit-cdfi-finance`.
+- Housing projects and LIHTC/HOME stacks → `nonprofit-housing-development-finance`.
+- Donor-side campaign strategy and gift solicitation → `nonprofit-capital-campaigns`.
+- Post-disaster rebuilding funds (CDBG-DR, FEMA Public Assistance) → `nonprofit-disaster-recovery-finance`.
+- Operating lines of credit for cash-timing gaps → `nonprofit-reserves-cash-flow`.
 
 ## The Facility Landscape: How Funder Mix Differs by Type
 
@@ -72,7 +77,7 @@ Consider placement method and bank-qualified eligibility separately:
 2025 federal tax law (the One Big Beautiful Bill Act, enacted July 4, 2025) **preserved the tax exemption for municipal bonds including qualified 501(c)(3) and private activity bonds and made no changes to the bank-qualified rules** — but it did make the New Markets Tax Credit permanent at $5 billion in annual allocation (relevant to layering, below), permanently lowered the private-activity-bond threshold for 4% LIHTC deals to 25% of basis, and raised LIHTC allocations 12% starting 2026 (housing implications route to `nonprofit-housing-development-finance`). Re-verify all of this if asked after September 2026.
 
 Bank-qualified screening reference: [26 USC 265(b)(3)(C)–(G)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section265&num=0&edition=prelim).
-Last checked September 15, 2026; this is not bond-counsel sign-off.
+This screening reference is not bond-counsel sign-off.
 
 ## Layering One Capital Stack
 
@@ -110,6 +115,15 @@ Fundable projects are ready projects. Sequence the readiness checklist in this o
 2. **USDA CF decision framework** — the six-step instrument-selection memo above, ending in one of: direct loan+grant application, guaranteed-loan application with named lender, or a documented ineligible/redirect decision.
 3. **Funder-mix comparison** — the facility-type table populated for the client's specific type, geography (rural/urban drives USDA eligibility and NMTC tract eligibility), and revenue base, with named anchor funders.
 4. **Project-readiness checklist** — the six readiness items with owner, status, and the completion condition for each.
+
+## Verify Before Acting
+
+- [ ] USDA CF direct loan rates checked for the current quarter at rd.usda.gov.
+- [ ] Guaranteed-loan percentage and fees for the current fiscal year confirmed in the Federal Register notice.
+- [ ] Population and MHI eligibility confirmed on USDA's eligibility map for the actual service area.
+- [ ] HFFI and other grant cycle dates confirmed on the program site (e.g., investinginfood.com) before planning around them.
+- [ ] Bank-qualified, TEFRA, rebate, and 501(c)(3)-bond rules confirmed by bond counsel in writing; any federal tax-law changes re-verified.
+- [ ] Sources equal uses, with each layer's status (committed / term sheet / applied / identified) and funding timing shown.
 
 ## Common Failure Modes
 

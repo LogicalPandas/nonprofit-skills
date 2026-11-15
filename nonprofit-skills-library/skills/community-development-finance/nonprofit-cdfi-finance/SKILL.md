@@ -1,6 +1,6 @@
 ---
 name: nonprofit-cdfi-finance
-description: "CDFI ecosystem for nonprofits: CDFI types (banks, credit unions, loan funds) and their loan and participation products; finding and working with a CDFI as borrower or deal partner (underwriting culture, technical assistance, subordination); Treasury CDFI Fund award programs with verified 2025-26 status; and CDFI certification strategy and readiness. Use when a user says 'find a CDFI to lend on our project,' 'a CDFI offered to subordinate to the bank,' 'should our nonprofit become a certified CDFI,' 'how do CDFI Fund awards work,' or 'help us apply for an FA grant.' Not for NMTC deal structuring (use nonprofit-nmtc-deals), Opportunity Zone funds (use nonprofit-opportunity-zones), community facilities financing (use nonprofit-community-facilities-finance), disaster recovery funding (use nonprofit-disaster-recovery-finance), the org's line of credit (use nonprofit-reserves-cash-flow), housing capital stacks (use nonprofit-housing-development-finance), or donor-side fundraising (use nonprofit-capital-campaigns)."
+description: "Guides nonprofits through the CDFI ecosystem: CDFI types and loan, participation, and subordinate products; finding and working with a CDFI as borrower or deal partner; preparing the loan request package; Treasury CDFI Fund award programs; and CDFI certification strategy and readiness. Use when a user says 'find a CDFI to lend on our project', 'a CDFI offered to subordinate to the bank', 'should our nonprofit become a certified CDFI', or 'help us apply for an FA grant'. Not for NMTC structuring (use nonprofit-nmtc-deals), Opportunity Zone funds (use nonprofit-opportunity-zones), community facilities financing (use nonprofit-community-facilities-finance), or housing capital stacks (use nonprofit-housing-development-finance)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,29 +12,24 @@ metadata:
 
 # Nonprofit CDFI Finance
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit is engaging the Community Development Financial Institution (CDFI)
-ecosystem from either side: as a **borrower or deal partner** seeking a CDFI loan, participation, or
-subordination for a community development project; or as a **candidate financial institution**
-considering Treasury CDFI certification and CDFI Fund awards. Trigger tasks include: "find a CDFI
-to lend on our charter school project," "a CDFI offered to take a subordinate position — what does
-that mean for our stack," "CDFIs keep rejecting our loan package — what do they want,"
-"should our loan fund become a certified CDFI," "the CDFI Fund FA round is opening — are we
-competitive," or "our TA grant is late — what's happening with FY 2025 awards."
+This skill covers the CDFI ecosystem from either side: a nonprofit as **borrower or deal partner**
+seeking a CDFI loan, participation, or subordination, or as a **candidate financial institution**
+weighing Treasury CDFI certification and CDFI Fund awards. Route these out:
 
-**Boundary:** This skill covers the CDFI ecosystem: CDFIs as lenders and partners, CDFI Fund
-programs, and certification. Structuring New Markets Tax Credit deals (CDE allocations, QEIs,
-leverage loans, recapture) is `nonprofit-nmtc-deals` — CDEs are related but distinct from CDFIs,
-and NMTC structuring is a different craft. Qualified Opportunity Funds and QOZBs are
-`nonprofit-opportunity-zones`. Financing community facilities — USDA Community Facilities,
-facility bonds, layering philanthropic capital into a health center or child care project — is
-`nonprofit-community-facilities-finance`. CDBG-DR and FEMA rebuilding money is
-`nonprofit-disaster-recovery-finance`. The organization's own operating line of credit or
-grant-bridge borrowing (not a project loan) is `nonprofit-reserves-cash-flow`. Affordable housing
-capital stacks — LIHTC equity, HOME, housing bonds — are `nonprofit-housing-development-finance`
-(a CDFI may be one lender in that stack; this skill covers the CDFI, that one the stack). Donor-side
-fundraising for a building is `nonprofit-capital-campaigns`.
+- New Markets Tax Credit structuring (CDE allocations, QEIs, leverage loans, recapture) →
+  `nonprofit-nmtc-deals`; CDEs are related to but distinct from CDFIs.
+- Qualified Opportunity Funds and QOZBs → `nonprofit-opportunity-zones`.
+- USDA Community Facilities, facility bonds, and layering philanthropic capital into a health
+  center or child care project → `nonprofit-community-facilities-finance`.
+- CDBG-DR and FEMA rebuilding money → `nonprofit-disaster-recovery-finance`.
+- The organization's own operating line of credit or grant-bridge borrowing →
+  `nonprofit-reserves-cash-flow`.
+- Affordable housing capital stacks (LIHTC equity, HOME, housing bonds) →
+  `nonprofit-housing-development-finance`; a CDFI may be one lender there — this skill covers
+  the CDFI, that one the stack.
+- Donor-side fundraising for a building → `nonprofit-capital-campaigns`.
 
 ## The CDFI Landscape in Brief
 
@@ -349,6 +344,19 @@ Assess against the seven criteria above; the standard readiness deliverable has 
    positioned, global cash-flow view, DSCR at policy and stress levels, impact documentation
    plan, and the term sheet asks (amount, rate, position, term/amort, reserves, covenants,
    reporting).
+   Outline skeleton:
+
+   ```
+   Loan request: [amount] | [senior/sub/participation] | [term/amort] | [purpose]
+   Sources and uses: [source] [amount] [position] [status: committed/pending]
+   CDFI tranche: [position in stack] [collateral] [requested rate range]
+   Global cash flow (org + project entity): [3 yrs actual] [budget year] [stress case]
+   DSCR: [stabilized] vs. lender minimum [x.xx]; stress case [x.xx]
+   Impact: [Target Market fit] [Investment Area / Targeted Population evidence] [outputs]
+   Team and controls: [board/staff roster] [policies] [lender references]
+   Term sheet asks: [rate] [reserves] [covenants] [reporting] [development services]
+   Open gaps before credit committee: [item] [owner] [date]
+   ```
 4. **Award application decision memo** — eligibility gate, match capacity, deployment plan,
    compliance cost, cycle-timing risk, and apply/don't-apply/TA-first recommendation.
 
@@ -390,7 +398,13 @@ Assess against the seven criteria above; the standard readiness deliverable has 
 ## Verify Before Acting
 
 Program status in this skill is anchored to sources verified **as of September 2026**. Before
-advising a borrower or applicant: check cdfifund.gov program pages and News for current round
-dates; check the Federal Register for the operative NOFA/NOGA; verify certification status via
-the Fund's current certified-CDFI list; and route any certification or award application through
-an experienced practitioner before filing with Treasury.
+advising a borrower or applicant:
+
+- [ ] Current round dates and program existence checked on cdfifund.gov program pages and News.
+- [ ] Operative NOFA/NOGA located in the Federal Register; award sizes and match rules taken
+      from it, not from this skill.
+- [ ] Certification status of every named CDFI checked against the Fund's current certified list.
+- [ ] Every program-status line in the deliverable dated ("as of ...").
+- [ ] No closing, payroll, or bridge made contingent on a CDFI Fund award.
+- [ ] Any certification or award application routed through an experienced practitioner before
+      filing with Treasury.
