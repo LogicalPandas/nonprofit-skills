@@ -1,6 +1,6 @@
 ---
 name: nonprofit-email-newsletter
-description: "Plans nonprofit e-newsletter strategy: send cadence, list segmentation for supporter (non-ask) updates, template/section structure, and subject-line and deliverability practices for the recurring newsletter — as distinct from fundraising appeal emails. Use for tasks like \"design our monthly e-newsletter template,\" \"segment our newsletter list by donor vs. volunteer vs. general subscriber,\" \"improve our newsletter open rates,\" \"plan our newsletter content calendar,\" or \"should this go in the newsletter or the appeal email.\" Does not cover fundraising ask emails/appeal campaigns (nonprofit-annual-appeals), donor database/segmentation tooling setup (nonprofit-donor-crm), social content (nonprofit-social-media), or donation page copy (nonprofit-donation-page-copy)."
+description: "Plans a nonprofit's recurring e-newsletter (non-ask supporter updates): cadence, segment content strategy, template sections, content calendar, subject lines, and deliverability. Use when asked to \"design our monthly e-newsletter template,\" \"segment our newsletter list,\" \"improve our newsletter open rates,\" or \"should this go in the newsletter or the appeal email.\" Not for fundraising appeal emails (use nonprofit-annual-appeals), CRM or list tooling setup (use nonprofit-donor-crm), social content (use nonprofit-social-media), or donation page copy (use nonprofit-donation-page-copy)."
 license: MIT
 metadata:
   supervision: "unsupervised"
@@ -11,21 +11,14 @@ metadata:
 
 # Nonprofit Email Newsletter
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for the recurring, relationship-oriented e-newsletter — the update-focused email that
-keeps supporters informed between fundraising asks. Typical triggers: designing or refreshing a
-newsletter template, setting cadence (monthly vs. quarterly), segmenting the list by audience type,
-planning a rolling content calendar, or diagnosing poor open/click rates.
-
-**Boundary — the critical distinction to make explicit every time:** A newsletter's job is
-relationship maintenance and information sharing; an appeal email's job is to generate a gift. If the
-email's primary CTA is "donate now," it belongs to `nonprofit-annual-appeals`, not this skill, even if
-it's sent through the same list. This skill may include a *soft, secondary* giving mention (e.g., a
-small "support this work" link in the footer) but should not be structured around an ask. Segmentation
-*tooling and CRM setup* is `nonprofit-donor-crm`; this skill defines segmentation *strategy* for
-newsletter content only. Social content is `nonprofit-social-media`. Donation page copy itself is
-`nonprofit-donation-page-copy`.
+- **Newsletter vs. appeal test (apply every time):** if the email's primary CTA is "donate now," it
+  belongs to `nonprofit-annual-appeals`, even when sent to the same list. A newsletter may carry only
+  a soft, secondary giving mention (e.g., a small "support this work" link).
+- Segmentation tooling and CRM/ESP setup: `nonprofit-donor-crm` (this skill defines what each
+  segment should see).
+- Social content: `nonprofit-social-media`. Donation page copy: `nonprofit-donation-page-copy`.
 
 ## Standard Deliverable: Newsletter Template Structure
 
@@ -45,6 +38,19 @@ A reliable recurring structure (readers learn to expect and scan it, improving e
 7. **Footer** — standard boilerplate (from `nonprofit-brand-messaging`), social links, unsubscribe/
    preference-center link (required for CAN-SPAM compliance).
 
+Worked issue outline (illustrative; replace with real program content):
+
+```
+Subject:   3 kids, 1 summer, 1 big win
+Preview:   What happened when our reading camp doubled in size
+Opening:   ED note (3 sentences) — theme: summer learning
+Lead:      Camp recap + photo + one consented participant quote
+Quick hits: • Fall volunteer orientation 9/12  • New program director  • Local radio mention
+Spotlight: Volunteer — a tutor's first season (rotate to donor next issue)
+Dates/CTA: Register for the open house (primary)  ·  Ways to give (small text link)
+Footer:    Boilerplate · social links · unsubscribe / preferences
+```
+
 ## Segmentation Strategy (Content Logic, Not Tooling)
 
 Decide *what each segment should see*, then hand the technical list-building to `nonprofit-donor-crm`:
@@ -62,12 +68,11 @@ Decide *what each segment should see*, then hand the technical list-building to 
 
 ## Subject Line and Deliverability Practices
 
-- Keep subject lines under ~50 characters and specific ("3 kids, 1 summer, 1 big win" beats "Our
+- Default: keep subject lines under ~50 characters and specific ("3 kids, 1 summer, 1 big win" beats "Our
   July Newsletter") — specificity consistently outperforms generic labels on open rate.
-- Avoid spam-trigger patterns: excessive punctuation/caps, "free," multiple dollar signs — these hurt
-  inbox placement even for legitimate nonprofit senders.
+- Avoid spam-trigger patterns (excessive punctuation/caps, "free," multiple dollar signs).
 - Maintain list hygiene: remove or suppress hard bounces and long-term non-openers (e.g., no opens in
-  12+ months) periodically — a bloated, unengaged list drags down sender reputation and can push
+  12+ months as a default; adjust against the org's own ESP engagement data) periodically — a bloated, unengaged list drags down sender reputation and can push
   future sends (including appeal emails) into spam folders for everyone.
 - Send consistently on the same day/time pattern (e.g., first Thursday monthly) — consistency builds
   subscriber expectation and modestly improves open rates over erratic scheduling.
@@ -107,12 +112,8 @@ Decide *what each segment should see*, then hand the technical list-building to 
 - **Overloading each issue** with too many CTAs (donate, volunteer, register, follow us, read this) —
   newsletters with a single primary CTA per issue outperform multi-ask emails on click-through.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the practitioner** (communications staff): use the template structure as a locked format and
-  the segmentation strategy to brief whoever manages the CRM/ESP; track unsubscribe rate as an early
-  warning metric for ask creep.
-- **As an advisor/consultant**: when a client says "our newsletter isn't working," first check
-  whether it has quietly become an appeal channel (a strategy misdiagnosis) before recommending
-  template or subject-line fixes (tactical fixes) — the two problems require different
-  recommendations and conflating them wastes an engagement's early diagnostic phase.
+- When a client says "our newsletter isn't working," first check whether it has quietly become an
+  appeal channel (a strategy problem) before recommending template or subject-line fixes (tactical
+  problems); the two need different recommendations.

@@ -1,6 +1,6 @@
 ---
 name: nonprofit-social-media
-description: "Builds nonprofit social media strategy and execution: platform selection, content calendars, post-format mix (volunteer spotlights, donor shoutouts, program updates, behind-the-scenes), posting cadence, and engagement/growth tactics. Use for tasks like \"build our social media content calendar,\" \"what should we post this month on Instagram,\" \"write a volunteer spotlight post,\" \"plan our #GivingTuesday social push,\" or \"our engagement is dropping, diagnose our social strategy.\" Does not cover the org's core brand voice/messaging house (nonprofit-brand-messaging), e-newsletter content (nonprofit-email-newsletter), press/media pitching (nonprofit-media-relations), peer-to-peer fundraising participant tools (nonprofit-peer-to-peer-fundraising), or paid ad campaign strategy/budgets (general marketing, not covered here)."
+description: "Builds nonprofit social media strategy and execution: platform selection, content calendars, pillar mix (impact, spotlights, behind-the-scenes, asks), cadence, post copy, and engagement diagnosis. Use when asked to \"build our social media content calendar,\" \"write a volunteer spotlight post,\" \"plan our #GivingTuesday social push,\" or \"our engagement is dropping.\" Not for brand voice or the messaging house (use nonprofit-brand-messaging), newsletters (use nonprofit-email-newsletter), press pitching (use nonprofit-media-relations), peer-to-peer participant tools (use nonprofit-peer-to-peer-fundraising), or paid ad strategy."
 license: MIT
 metadata:
   supervision: "unsupervised"
@@ -11,37 +11,31 @@ metadata:
 
 # Nonprofit Social Media
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for nonprofit social media planning and content production: choosing platforms,
-building a content calendar, writing individual post copy, and diagnosing engagement problems.
-Typical triggers: building a monthly/quarterly content calendar, planning platform-specific content
-for a campaign moment (#GivingTuesday, an awareness day, an event), writing a volunteer or donor
-spotlight post, or troubleshooting declining reach/engagement.
-
-**Boundary:** This skill executes on social channels using voice/positioning defined elsewhere —
-it does not define brand voice or key messages (`nonprofit-brand-messaging` owns that; pull from it,
-don't redefine it here), does not write e-newsletter content (`nonprofit-email-newsletter`), does not
-pitch journalists (`nonprofit-media-relations`), and does not build participant fundraising page
-tools for walk/run/ride campaigns (`nonprofit-peer-to-peer-fundraising`, though this skill can
-promote such a campaign on social).
+- Voice, key messages, and terminology come from `nonprofit-brand-messaging`; pull from it, don't
+  redefine it here.
+- E-newsletter content: `nonprofit-email-newsletter`. Journalist pitching: `nonprofit-media-relations`.
+- Participant pages for walk/run/ride campaigns: `nonprofit-peer-to-peer-fundraising` (this skill can
+  promote such a campaign on social).
+- Paid ad campaign strategy and budgets are general marketing, not covered here.
 
 ## Platform Selection Framework
 
-Don't default to "be everywhere." Choose platforms by matching audience and content type:
+Don't default to "be everywhere." Choose platforms by matching audience and content type. Working
+defaults (platform audiences shift; verify current audience demographics, e.g., from Pew Research
+Center platform-use data and the org's own analytics, before recommending):
 
-- **Instagram:** Best for visual storytelling, program photos, Reels/short video, and
-  younger/millennial donor and volunteer audiences. Strongest for volunteer/beneficiary spotlights
-  (with consent per `nonprofit-storytelling` rules).
-- **Facebook:** Still the strongest for reaching older donor demographics and for event promotion,
-  Facebook Fundraisers, and community-group engagement; often the platform with the most
-  engaged existing donor base for established nonprofits.
-- **LinkedIn:** Best for board recruitment signals, corporate sponsor visibility, thought leadership
-  from the ED, and reaching corporate/foundation partners rather than individual donors.
-- **TikTok/YouTube Shorts:** Best for volunteer recruitment and awareness/reach among Gen Z; requires
-  more casual, native-format video (not repurposed polished donor-video content) to perform.
-- **X/Threads:** Useful mainly for real-time advocacy moments, media/press engagement, and
-  policy-adjacent nonprofits; lower priority for direct fundraising.
+- **Instagram:** visual storytelling, Reels, younger donor/volunteer audiences; spotlights (with
+  consent per `nonprofit-storytelling`).
+- **Facebook:** older donor demographics, events, Facebook Fundraisers, community groups; often the
+  most engaged existing donor base for established nonprofits.
+- **LinkedIn:** board recruitment, corporate sponsor visibility, ED thought leadership, foundation and
+  corporate partners.
+- **TikTok/YouTube Shorts:** volunteer recruitment and Gen Z awareness; needs casual, native-format
+  video.
+- **X/Threads:** real-time advocacy, press engagement, policy-adjacent orgs; low priority for direct
+  fundraising.
 
 Rule of thumb: pick 2-3 platforms matched to actual staff capacity rather than spreading thin across
 5+ channels with inconsistent posting — inconsistent cadence hurts algorithmic reach more than being
@@ -108,12 +102,9 @@ asset production (photos, video, graphics) isn't rushed.
 - **Being on a platform the audience isn't on** — e.g., heavy LinkedIn investment for a
   direct-service nonprofit whose actual donor base skews older and lives on Facebook.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the practitioner** (comms/marketing staff or volunteer running the accounts): use the pillar
-  mix as a weekly planning checklist and the platform framework to justify saying no to platforms
-  that don't fit current staff capacity.
-- **As an advisor/consultant**: use the 90-day pillar-mix audit as a fast, evidence-based diagnostic
-  deliverable early in an engagement — it quickly reveals whether a client's "social media isn't
-  working" complaint is actually a strategy problem (wrong platform, ask fatigue) versus a capacity
-  problem (inconsistent posting), which point to very different recommendations.
+- Use the 90-day pillar-mix audit (step 2) as an early diagnostic deliverable: it shows whether "social
+  media isn't working" is a strategy problem (wrong platform, ask fatigue) or a capacity problem
+  (inconsistent posting).
+- Use the platform framework to justify saying no to platforms that don't fit current staff capacity.

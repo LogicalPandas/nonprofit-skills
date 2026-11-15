@@ -1,6 +1,6 @@
 ---
 name: nonprofit-annual-report
-description: "Plans and structures a nonprofit annual report: section architecture, impact-highlight selection, financial-summary framing for lay readers, donor/volunteer recognition sections, and print-vs-digital/interactive format decisions. Use for tasks like \"outline our annual report,\" \"decide what goes on the annual report cover,\" \"write the ED/board chair letter,\" \"structure our donor honor roll,\" or \"turn our 990 numbers into a one-page financial summary graphic.\" Does not cover writing the underlying beneficiary narratives (nonprofit-storytelling), the org's ongoing brand voice/messaging house (nonprofit-brand-messaging), preparing the actual audited financial statements (nonprofit-financial-statements), or Form 990 filing itself (nonprofit-form-990)."
+description: "Plans and structures a nonprofit annual report: section architecture, impact highlights, a lay-reader financial summary, donor recognition, and print vs. digital format. Use when asked to \"outline our annual report,\" \"write the ED/board chair letter,\" \"structure our donor honor roll,\" or \"turn our 990 numbers into a one-page financial summary.\" Not for writing beneficiary narratives (use nonprofit-storytelling), brand voice or the messaging house (use nonprofit-brand-messaging), preparing audited financial statements (use nonprofit-financial-statements), or filing Form 990 (use nonprofit-form-990)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,21 +11,14 @@ metadata:
 
 # Nonprofit Annual Report
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to plan, structure, and content-edit a nonprofit's annual report (print, PDF, or
-interactive web "annual report" microsite) — the single yearly document that recaps mission progress,
-finances, and recognition for a broad audience of donors, board, funders, and the public. Typical
-triggers: outlining report sections, deciding what data/stories to feature, drafting the leadership
-letter, building the donor recognition/honor roll, or choosing between a traditional PDF and a
-web-based interactive report.
-
-**Boundary:** This skill decides *structure, content selection, and framing*. It does not write full
-beneficiary narratives from scratch (`nonprofit-storytelling` produces those; this skill selects and
-places them), does not set brand voice/visual identity rules (`nonprofit-brand-messaging`), does not
-produce the audited statement of activities/financial position (`nonprofit-financial-statements`),
-and does not handle the Form 990 filing itself (`nonprofit-form-990`) — though it translates 990/
-audit numbers into lay-friendly summary graphics.
+- This skill decides structure, content selection, and framing; it selects and places finished
+  beneficiary narratives from `nonprofit-storytelling` rather than writing them.
+- Brand voice and visual identity rules: `nonprofit-brand-messaging`.
+- The audited statement of activities/financial position: `nonprofit-financial-statements`.
+- The Form 990 filing itself: `nonprofit-form-990` (this skill only translates 990/audit numbers
+  into lay-friendly summary graphics).
 
 ## Standard Deliverable: Annual Report Section Architecture
 
@@ -67,6 +60,25 @@ duplication:
   same fiscal year; a mismatch (even from good-faith rounding or a different reporting period) is the
   most common credibility failure reviewers catch.
 
+One-page financial summary skeleton (fill only with figures from the audit/990; leave blanks blank):
+
+```
+FINANCIAL SUMMARY — Fiscal year ending [date]          Source: [audited statements / Form 990, FY]
+Revenue by source            This year    Prior year    Two years ago
+  Contributions & grants     $[  ]        $[  ]         $[  ]
+  Government grants          $[  ]        $[  ]         $[  ]
+  Earned / program revenue   $[  ]        $[  ]         $[  ]
+  Other (incl. one-time gifts, noted)  $[  ]  $[  ]     $[  ]
+  Total revenue              $[  ]        $[  ]         $[  ]
+Expenses by function         $            % of total
+  Program services           $[  ]        [  ]%
+  Management & general       $[  ]        [  ]%
+  Fundraising                $[  ]        [  ]%
+Methodology note: [how shared costs were allocated, e.g., by staff time]
+Context line: [plain-language caveat on what the ratio does and does not mean]
+Tie-out: totals match [audit / 990 line references] for the same fiscal year — checked by [name]
+```
+
 ## Step-by-Step: Producing the Report
 
 1. Set the fiscal year scope and confirm audited financials/990 data are finalized before drafting
@@ -83,7 +95,8 @@ duplication:
    anonymously" flags.
 8. Decide print vs. digital/interactive format based on audience: major donors and board often expect
    a printed piece for stewardship value; general/younger audiences engage more with a scrollable web
-   version — many orgs now do both from one content set.
+   version. Default to one content set; produce both formats only when the donor mix and budget
+   justify the added cost.
 9. Route to leadership (ED + Board Chair) and at least one non-marketing board member for review
    before final design lock — catches factual and tone issues fresh eyes miss.
 
@@ -103,12 +116,8 @@ duplication:
   undercuts trust — sequence audit completion before annual report finalization in the planning
   calendar.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the practitioner** (communications/development staff): use the section architecture as your
-  working outline and the financial framing rules as a hard gate before publication — nothing ships
-  until it reconciles to the audit.
-- **As an advisor/consultant**: frame the annual report as an accountability and stewardship
-  instrument for the board, not just a marketing artifact — use the "does this reconcile" and
-  "overhead myth" checks as part of a governance-quality review, and recommend combined print+digital
-  production only when the org's donor mix and budget justify the added cost.
+- Frame the annual report as an accountability and stewardship instrument for the board, not just a
+  marketing artifact; run the "does this reconcile" and "overhead myth" checks as part of a
+  governance-quality review.

@@ -1,6 +1,6 @@
 ---
 name: nonprofit-donation-page-copy
-description: "Writes and structures nonprofit website donation/giving pages to maximize completed gifts: headline and form-flow copy, ask-string/suggested-amount design, impact framing per gift amount, trust signals, and friction-reduction fixes for checkout abandonment. Use for tasks like \"rewrite our donate page to convert better,\" \"what suggested donation amounts should we use,\" \"our donation form has high abandonment, diagnose it,\" \"write the thank-you/confirmation page copy,\" or \"add impact statements next to each gift amount.\" Does not cover paid ad copy, general website copy outside the giving flow, annual appeal email/letter copy (nonprofit-annual-appeals), peer-to-peer participant fundraising pages (nonprofit-peer-to-peer-fundraising), or payment processor/platform selection (nonprofit-digital-fundraising-tools)."
+description: "Writes and structures nonprofit donation pages and checkout flows to lift completed gifts: impact headlines, ask strings, impact-per-amount statements, recurring-gift framing, trust signals, form friction, and confirmation-page copy. Use when asked to \"rewrite our donate page to convert better,\" \"what suggested amounts should we use,\" or \"our donation form has high abandonment.\" Not for paid ads or general site copy, appeal emails and letters (use nonprofit-annual-appeals), peer-to-peer participant pages (use nonprofit-peer-to-peer-fundraising), or payment platform selection (use nonprofit-digital-fundraising-tools)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,20 +11,14 @@ metadata:
 
 # Nonprofit Donation Page Copy
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill specifically for the on-site giving/donation page and its checkout flow — the page a
-donor lands on to actually complete a gift, whether from an appeal, social post, or direct navigation.
-Typical triggers: rewriting donate page copy for conversion, designing suggested-gift amounts and
-impact statements, diagnosing high cart/form abandonment, or writing the post-gift thank-you/
-confirmation screen.
-
-**Boundary:** This is conversion copywriting and page structure for the giving transaction itself —
-not the appeal that drives someone to the page (`nonprofit-annual-appeals` owns the email/letter
-copy that generates the click), not participant fundraising pages for walk/run/ride campaigns
-(`nonprofit-peer-to-peer-fundraising`), and not the choice of payment processor/platform technology
-(`nonprofit-digital-fundraising-tools` — this skill assumes a platform is already in place and
-optimizes the copy/UX layered on it).
+- The appeal that drives donors to the page (email/letter copy): `nonprofit-annual-appeals`.
+- Participant pages for walk/run/ride campaigns: `nonprofit-peer-to-peer-fundraising`.
+- Payment processor/platform choice and reliability: `nonprofit-digital-fundraising-tools`. This
+  skill assumes a platform is in place and optimizes the copy/UX layered on it; a copy fix won't
+  solve a platform problem, and vice versa.
+- Stewardship of new recurring donors: `nonprofit-donor-retention`.
 
 ## Core Framework: Donation Page Conversion Elements
 
@@ -36,7 +30,7 @@ A high-converting donation page has these elements, each doing a specific persua
 2. **Ask string calibrated to actual donor data**, not round guesses. Standard technique: set 3-5
    suggested amounts anchored around the median or mode of recent gifts at that entry point (e.g., a
    social-driven page skews lower than an event-driven page) — include one amount noticeably above
-   typical giving to anchor upward, per anchoring-effect research on suggested giving amounts.
+   typical giving to anchor upward.
 3. **Impact statement per amount** ("$50 provides one week of after-school tutoring for a student") —
    concrete, verifiable translations of dollars to outcomes measurably increase perceived value of
    giving at that tier. Never invent a ratio that finance/programs can't defend if a donor asks.
@@ -47,15 +41,34 @@ A high-converting donation page has these elements, each doing a specific persua
 5. **Trust signals near the form**, not just elsewhere on the site: a security/SSL indicator,
    nonprofit status (EIN/501(c)(3) confirmation for tax-deductibility), a charity-rating badge if
    held (Charity Navigator, Candid/GuideStar Seal), and a one-line financial transparency statement.
-6. **Minimal required fields.** Every additional required form field is a documented drop-off point;
+6. **Minimal required fields.** Every additional required form field is a potential drop-off point;
    ask only for what's operationally necessary (name, email, payment, and address only if required for
    receipting/compliance) and defer optional fields (phone, "how did you hear about us") to
    post-gift follow-up rather than the transaction itself.
 7. **Progress/clarity in multi-step forms.** If the flow spans multiple steps (amount → info →
    payment → confirm), show step progress; unclear length is a common abandonment driver.
 8. **Mobile-first layout.** A large share of nonprofit donation traffic, especially from social and
-   email, arrives on mobile — a form requiring pinch-zooming or awkward payment-field taps loses
-   completions that a desktop-only QA pass would never catch.
+   email, arrives on mobile; QA the form on a phone, not only on desktop.
+
+Page-copy skeleton (bracketed amounts and outcomes must come from your gift data and from
+program/finance; do not publish placeholders):
+
+```
+HEADLINE:      [Impact + why now, e.g., "Give a child a safe place to learn this summer"]
+SUBHEAD:       [One sentence linking to the campaign or appeal the donor arrived from]
+GIFT TYPE:     ( ) Monthly   ( ) One-time      <- equal visual weight; monthly default if chosen
+ASK STRING:    $[low]   — [verified outcome this amount funds]
+               $[mid]   — [verified outcome]   <- near median/mode gift for this traffic source
+               $[high]  — [verified outcome]
+               $[anchor]— [verified outcome]   <- noticeably above typical giving
+               Other: $[    ]
+REQUIRED:      Name · Email · Payment · [Address only if needed for receipting]
+TRUST BLOCK:   [Org] is a 501(c)(3), EIN [  ]. Secure checkout. [Rating seal if held]
+               [One-line financial transparency statement]
+BUTTON:        [Give $X monthly / Give $X now]
+CONFIRMATION:  Thank you, [Name]. Your $[X] [monthly] gift will fund [same outcome as ask].
+               Receipt: [sent to email / EIN shown]. One next step: [share OR newsletter]
+```
 
 ## Thank-You/Confirmation Page
 
@@ -89,6 +102,8 @@ Treat the confirmation page as a stewardship touchpoint, not an afterthought:
 9. Rewrite the confirmation page and check it against the automated thank-you email for consistency.
 10. Re-test conversion rate after changes; isolate one major change at a time (e.g., ask string vs.
     headline) if running a true A/B test, since bundling multiple changes obscures which one worked.
+    Recheck ask strings and impact statements at least annually as program costs and typical gift
+    sizes shift.
 
 ## Common Failure Modes
 
@@ -106,13 +121,8 @@ Treat the confirmation page as a stewardship touchpoint, not an afterthought:
 - **Copy/finance mismatch** — impact-per-dollar claims that programs or finance can't actually
   substantiate if questioned, creating a credibility and compliance risk.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the practitioner** (development/digital staff): treat this as an ongoing optimization
-  practice, not a one-time rewrite — recheck ask strings and impact statements at least annually as
-  program costs and typical gift sizes shift.
-- **As an advisor/consultant**: use the conversion-funnel diagnostic (page views → form starts →
-  completions) as the entry analysis for any "our online giving underperforms" engagement, and be
-  explicit with the client about which layer a given fix belongs to — a copy fix (this skill) won't
-  solve a payment-platform reliability problem (`nonprofit-digital-fundraising-tools`), and vice
-  versa.
+- Use the conversion-funnel diagnostic (page views → form starts → completions) as the entry
+  analysis for any "our online giving underperforms" engagement, and name which layer each fix
+  belongs to (copy vs. platform).
