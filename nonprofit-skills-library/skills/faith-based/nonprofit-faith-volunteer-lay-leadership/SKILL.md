@@ -1,6 +1,6 @@
 ---
 name: nonprofit-faith-volunteer-lay-leadership
-description: "Lay leadership inside a worship community: recruiting, discerning, forming, and sustaining deacons, elders, wardens, trustees, gabbaim, shura members, temple committees, small-group leaders, and volunteer teachers — plus clergy and lay-leader burnout, Sabbath practice, and clergy sabbatical planning (Lilly Clergy Renewal, Louisville Institute, CREDO). Use for 'nominate elders,' 'small-group pipeline,' 'same twelve people run everything,' 'pastor is burning out,' 'plan a clergy sabbatical,' 'SHAPE assessment,' 'gabbai or shura training.' Not for episodic volunteers (nonprofit-volunteer-management), secular board recruitment (nonprofit-board-recruitment), non-clergy staff retention (nonprofit-staff-retention), polity/bylaws (nonprofit-faith-church-governance), congregation-into-program delivery (nonprofit-faith-programs-social-services), safe-sanctuary/misconduct (nonprofit-faith-employment-ministerial-exception), or paying a lay leader who becomes staff (nonprofit-faith-finance-clergy-comp)."
+description: "Recruits, discerns, forms and sustains lay leaders in a worship community (deacons, elders, wardens, trustees, gabbaim, shura members, small-group leaders, teachers) and plans clergy Sabbath practice and sabbaticals. Use when clergy or lay leaders say 'nominate elders', 'the same twelve people run everything', 'our pastor is burning out' or 'plan a clergy sabbatical'. Not for episodic volunteers (use nonprofit-volunteer-management), polity and bylaws (use nonprofit-faith-church-governance), safe-sanctuary policy or misconduct (use nonprofit-faith-employment-ministerial-exception) or paying a lay leader who becomes staff (use nonprofit-faith-finance-clergy-comp)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,41 +12,25 @@ metadata:
 
 # Faith-Community Lay Leadership and Clergy Sustainability
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the user is working inside a **worship community** — church, synagogue,
-mosque, temple, gurdwara, sangha, meetinghouse — on the people who **carry ministry alongside
-clergy**: elected officers (deacons, elders, wardens, stewards, trustees, gabbaim, shura/majlis
-members, temple-committee members), ministry-area leaders (small-group leaders, Sunday-school
-teachers, worship-team leads, prayer-team coordinators, seva/langar/dana coordinators, chevra
-kadisha members, minyan captains, halaqa leaders, youth advisors), and the clergy and
-high-commitment lay leaders whose sustainability the community depends on. Trigger phrases:
-"nominate elders/deacons/trustees this fall," "our shura is stuck," "the gabbai aged out and no
-one is trained," "discernment for the vestry," "small-group leader pipeline," "apprentice
-model," "spiritual-gifts assessment," "SHAPE inventory," "CliftonStrengths for ministry," "same
-twelve people on every committee," "our pastor hasn't taken a real Sabbath in a year," "plan a
-Lilly sabbatical," "clergy renewal grant," "our imam is burning out," "safe-sanctuary training
-for lay leaders," "thank volunteers without turning service into performance."
+This skill covers lay leadership offices inside a worship community — including elected trustees
+where they function as the corporate board — and the sustainability of clergy and high-commitment
+lay leaders: who these people are, how you find, form and install them, and how you keep them
+whole. Link out to siblings; do not spill in.
 
-**Boundary.** This skill covers **lay leadership offices inside a worship community**, including
-elected trustees where they function as the corporate board. Adjacent territory belongs to
-siblings — link out, do not spill in:
-
-- Episodic external volunteers at a food bank, tutoring site, or service day, and generic
-  volunteer funnels → `nonprofit-volunteer-management`.
-- Board recruitment and onboarding for a secular 501(c)(3) → `nonprofit-board-recruitment`.
-- Non-clergy staff retention, engagement, and compensation bands → `nonprofit-staff-retention`.
-- Which body decides what (polity, member meetings, bylaws, denominational relationship,
-  calling a new senior pastor/rabbi/imam) → `nonprofit-faith-church-governance`.
-- Deploying congregational volunteers **into** a program the org runs (pantry, recovery, refugee
-  resettlement, shelter, ESL) → `nonprofit-faith-programs-social-services`.
-- Safe-sanctuary policy design, mandatory-reporter workflow, clergy misconduct response, and
-  Title VII ministerial-exception questions → `nonprofit-faith-employment-ministerial-exception`.
-- When a lay volunteer becomes a paid staffer — housing allowance, SECA, W-2 vs 1099 →
+- Episodic external volunteers and generic volunteer funnels → `nonprofit-volunteer-management`.
+- Board recruitment for a secular 501(c)(3) → `nonprofit-board-recruitment`.
+- Non-clergy staff retention and compensation bands → `nonprofit-staff-retention`.
+- Polity, member meetings, bylaws, denominational relationship and calling clergy →
+  `nonprofit-faith-church-governance`.
+- Deploying congregational volunteers into a program the org runs →
+  `nonprofit-faith-programs-social-services`.
+- Safe-sanctuary policy design, mandatory-reporter workflow, clergy misconduct and Title VII
+  ministerial-exception questions → `nonprofit-faith-employment-ministerial-exception` (this skill
+  only makes safeguarding a gate in the pipeline).
+- A lay volunteer becoming paid staff (housing allowance, SECA, W-2 vs 1099) →
   `nonprofit-faith-finance-clergy-comp`.
-
-Fire this skill when the request is about **who these people are, how you find them, how you
-form them, how you deploy them into offices, and how you keep them (and the clergy) whole**.
 
 ## Core Frameworks
 
@@ -55,25 +39,18 @@ vestry, a synagogue board of trustees, and a mosque shura all use "leadership" t
 structurally different things. Describe practice, do not endorse theology.
 
 - **Lay leadership offices by tradition (descriptive typology).**
-  - **Christian.** Deacons (service and care), elders (governance and/or teaching — Presbyterian
-    ruling/teaching elders, non-denominational elder boards, Anglican vestry, Methodist
-    administrative council), wardens (Episcopal/Anglican senior and junior warden partnering
-    with the rector), stewards (Methodist), trustees (property/finance), council members,
-    ushers/greeters, small-group leaders (life groups, cell groups, house churches), Sunday-
-    school and confirmation teachers, worship team, prayer team, hospitality team, altar guild,
-    lay Eucharistic ministers, lectors.
-  - **Jewish.** Gabbai/gabbaim (Torah-service coordinators, honors assignment, ritual coaching),
-    board of trustees (corporate governance in most US congregations), sisterhood/brotherhood,
+  - **Christian.** Deacons, elders (Presbyterian ruling/teaching elders, elder boards), Episcopal
+    vestry and senior/junior wardens, Methodist stewards and administrative council, trustees,
+    small-group leaders, Sunday-school teachers, worship, prayer and hospitality teams, altar
+    guild, lay Eucharistic ministers, lectors.
+  - **Jewish.** Gabbaim (Torah-service coordination, honors, ritual coaching), board of trustees,
     chevra kadisha (burial society — one of the most demanding lay ministries in any tradition),
-    religious-school teachers and madrichim, youth advisors, minyan captains, tikkun olam
-    chairs, ritual committee.
-  - **Muslim.** Shura or majlis al-shura (consultative council governing most US mosques),
-    imam-assisting roles (khatib rotation, mu'adhdhin, teachers), Sunday-school teachers, MSA
-    advisors, halaqa (study-circle) leaders, zakat committee, youth committee.
-  - **Buddhist / Hindu / Sikh / others.** Temple committees and boards, priest committees, seva
-    coordinators, dana or langar teams (often the largest volunteer workforce in a Sikh
-    gurdwara), youth wings, teachers in dharma schools, sangha caretakers, meditation-group
-    leaders.
+    religious-school teachers and madrichim, minyan captains, ritual committee.
+  - **Muslim.** Shura or majlis al-shura (the consultative council governing most US mosques),
+    khatib rotation, mu'adhdhin, teachers, halaqa leaders, zakat and youth committees.
+  - **Buddhist / Hindu / Sikh / others.** Temple committees and boards, seva coordinators, dana
+    or langar teams (often the largest volunteer workforce in a Sikh gurdwara), dharma-school
+    teachers, sangha caretakers.
 - **The lay-leader / volunteer distinction.** A **lay leader** holds delegated authority over a
   piece of the community's life — a ministry area, small group, committee, or role with public
   accountability — usually via formal installation or election, with a term, and with formation
@@ -83,17 +60,13 @@ structurally different things. Describe practice, do not endorse theology.
   pushed into authority they never accepted, or lay leaders treated as replaceable labor.
 - **Spiritual-gifts and strengths inventories for placement.** Name the instrument and its
   stance.
-  - **SHAPE (Rick Warren / Saddleback)** — Spiritual gifts, Heart, Abilities, Personality,
-    Experiences. Widely used in evangelical Protestant contexts; framework-neutral enough to
-    adapt.
-  - **CliftonStrengths (formerly StrengthsFinder)** — secular strengths inventory;
-    "StrengthsFinder for Ministry" and Gallup-affiliated adaptations exist. Useful when a
-    community wants a non-doctrinal instrument all members can take.
-  - **1 Corinthians 12 / Romans 12 / Ephesians 4 gift inventories** — LifeWay Spiritual Gifts
-    Survey, C. Peter Wagner's Modified Houts, Lutheran/Methodist denominational inventories,
-    Fuller Institute instruments.
-  - **Discovering Your Ministry (Alban Institute) and related work** — vocation-oriented; pairs
-    with elder/deacon discernment rather than committee placement.
+  - **SHAPE (Saddleback)** — Spiritual gifts, Heart, Abilities, Personality, Experiences; widely
+    used in evangelical contexts and adaptable.
+  - **CliftonStrengths** — secular strengths inventory; useful when a community wants a
+    non-doctrinal instrument all members can take.
+  - **Scriptural gift inventories** (1 Corinthians 12 / Romans 12 / Ephesians 4; LifeWay, Modified
+    Houts, denominational instruments) and vocation-oriented work such as Alban's Discovering
+    Your Ministry, which pairs with elder/deacon discernment.
   - **Enneagram, MBTI, DISC** — personality tools, not gift inventories. Flag when a community
     uses a personality tool to decide who is "gifted" for an office; that is a category mistake.
   - **Multi-faith parallels.** Frame service-orientation as **avodah** (Hebrew: work/service/
@@ -101,26 +74,12 @@ structurally different things. Describe practice, do not endorse theology.
     interchangeable with "spiritual gifts," but they name the same underlying reality: the
     community locates roles by discerning where a person's capacity meets its need. Do not
     import a Christian gifts inventory into a shura discernment without translating the frame.
-- **Small-group leader pipeline models.**
-  - **Willow Creek / Saddleback apprentice model** — every small-group leader recruits an
-    **apprentice** from day one; when the group multiplies (typically 12–15 people), the
-    apprentice launches the new group and recruits their own apprentice. This is addition vs.
-    multiplication: addition grows one group; multiplication grows the pipeline.
-  - **Coach / coach-of-coaches ratios** — each group leader is coached by a **coach**; coaches
-    report to a **coach of coaches** (staff or high-capacity lay leader). Sustainable ratios:
-    **1 coach : 5 leaders**, **1 coach-of-coaches : 5 coaches**. Beyond 1:8 the relationship
-    becomes administrative.
-  - **Group models.** **Curriculum-driven** (assigned study, teacher-style leader — lowest
-    training bar, tightest content control), **discussion-driven** (facilitator with shared
-    material — moderate bar, uneven quality), **relational / life-on-life** (highest bar,
-    deepest formation, hardest cold-start). Match model to formation goals and leader SHAPE.
+- **Small-group leader pipeline models** — apprentice multiplication (Willow Creek / Saddleback),
+  coach and coach-of-coaches ratios, and curriculum / discussion / relational group models;
+  applied under "Small-Group and Ministry-Team Leader Pipeline".
 - **Denominational leadership-development and clergy-renewal programs.**
-  - **Lilly Endowment Clergy Renewal Program** — competitive grants (typically up to ~$50k) for
-    a 3–5-month clergy sabbatical with a portion for congregational engagement; the gold-
-    standard American clergy-sabbatical funder. Congregation-led applications.
-  - **Louisville Institute** — Pastoral Study Project and sabbatical grants.
-  - **CREDO (Episcopal Church Foundation / Church Pension Group)** — 8-day residential wellness
-    conference for Episcopal clergy; adapted programs exist elsewhere.
+  - **Clergy-renewal funders** — Lilly Endowment Clergy Renewal Program, Louisville Institute,
+    CREDO; details under "Clergy Sabbatical Planning".
   - **ELCA Colleague Groups** — Lutheran peer-cohort formation.
   - **Alban Institute (legacy) / Congregational Consulting Group / Faith+Lead (Luther Seminary)
     / Duke Leadership Education for Congregations** — congregational-consulting and
@@ -128,18 +87,15 @@ structurally different things. Describe practice, do not endorse theology.
   - **Denominational schools** — Presbyterian Leader Formation, UMC Lay Servant Ministries,
     Anglican EFM (Education for Ministry), URJ Scheidt Seminar for lay board leaders, ISNA
     leadership-development tracks, JOFA and Sikh Coalition governance training.
-- **Sabbath and sabbatical as leadership disciplines, not perks.** Weekly Sabbath (day off
-  protected, phone off, not-on-call), monthly retreat day, annual multi-day retreat, and
-  **sabbatical every 5–7 years** are structural features of a sustainable clergy career. The
-  same logic applies, scaled, to high-commitment lay leaders (annual retreat, mandatory
-  off-year after a term).
+- **Sabbath and sabbatical as leadership disciplines, not perks** — weekly Sabbath, monthly
+  retreat day, annual retreat and sabbatical every 5–7 years; scaled for high-commitment lay
+  leaders (annual retreat, mandatory off-year after a term). See "Clergy Sustainability".
 
 ## Standard Deliverables
 
 Requests in scope resolve into one of these. Name the artifact before drafting:
 
-- **Lay-leader role description** — one page per office. Purpose, term length and renewal, time
-  commitment, formation expectations, safeguarding requirements, disqualifications.
+- **Lay-leader role description** — one page per office (skeleton below).
 - **Nomination / discernment / election process document** — the procedure this cycle, tied to
   the polity in `nonprofit-faith-church-governance` where applicable.
 - **Small-group leader pipeline plan** — apprentice / leader / coach / coach-of-coaches
@@ -156,6 +112,23 @@ Requests in scope resolve into one of these. Name the artifact before drafting:
   prep, pulpit-supply and pastoral-care coverage, no-contact discipline, re-entry plan.
 - **Same-twelve-people diagnostic and pipeline plan** — audit of who is on how many committees,
   and the two- to three-year plan to widen the bench.
+
+Role-description skeleton:
+
+```
+OFFICE: [deacon | elder | warden | trustee | gabbai | shura member | group leader]
+Purpose (one sentence, in the tradition's own language):
+Authority: [what this office decides or speaks for; to whom it answers]
+Selected by: [polity-appropriate act; governing document citation]
+Term: [length], renewable [once]; off-year after [n] terms
+Time commitment: [hours per month; standing meetings]
+Formation expectations: [onboarding retreat, quarterly sessions, annual retreat]
+Safeguarding gates: [background check | training | code of conduct | none]
+Concurrent-role cap: [max named roles]
+Disqualifications and removal: [grounds; removal procedure reference]
+Coach / supervisor:
+Signed: ____________ (office-holder)   ____________ (confirming body)  Date: ____
+```
 
 ## Recruiting a Lay Leadership Cohort — Numbered Checklist
 
@@ -184,11 +157,7 @@ installation and drafting the same overloaded people again.
    office, current commitments (community and family/work — over-commitment is disqualifying),
    readiness for formation expectations, agreement with the role's spiritual and behavioral
    expectations, and any conflicts of interest.
-6. **Complete safeguarding pre-requisites before installation.** Background check (MinistrySafe,
-   Protect My Ministry, Sterling Volunteers) for any role with access to minors, vulnerable
-   adults, funds, or keys; safe-sanctuary training completion; signed code of conduct. Applies
-   regardless of paid status — see `nonprofit-faith-employment-ministerial-exception` for the
-   standard and mandatory-reporter overlay.
+6. **Clear the safeguarding gates before installation** (see "Safeguarding for Lay Leaders").
 7. **Confirm through the polity-appropriate act.** Membership vote, governing-body vote,
    clergy call-and-confirm, or denominational appointment. Document the confirmation in the
    confirming body's minutes. Without it, the person is a very committed volunteer, not a lay
@@ -292,15 +261,7 @@ Ministry-adjacent volunteer roles routinely brush against employment law. Watch 
   hiring standards, discipline, and removal. Escalate to
   `nonprofit-faith-employment-ministerial-exception` before writing a removal letter for a
   volunteer teacher, worship leader, or lay preacher.
-- **Background checks and safe-sanctuary training regardless of pay status.** Any role with
-  access to minors, vulnerable adults, cash, keys, or transportation of members must complete a
-  background check and safe-sanctuary training before starting. This is a floor, not a ceiling,
-  and it is not optional because the person is unpaid. Insurers (Church Mutual, GuideOne,
-  Brotherhood Mutual, ISM) increasingly require it in the policy.
-- **Two-adult rule, transportation, reporting.** No adult alone with a minor in a non-observable
-  space; two unrelated adults on every trip and every one-on-one meeting with a minor; written
-  transportation policy; mandatory-reporter escalation script. Details and jurisdiction-specific
-  reporting are `nonprofit-faith-employment-ministerial-exception`.
+- **Safeguarding applies regardless of pay status** — see "Safeguarding for Lay Leaders".
 
 ## Clergy Sustainability and Burnout
 
@@ -345,7 +306,7 @@ long-term ministry to happen. Plan it as a governance project.
    gold standard for congregation-partnered sabbaticals — grants up to roughly $50,000 for
    about 3–5 months, with a set-aside for congregational engagement. The application is
    congregation-led, not clergy-led, and is due in a defined annual window; check Lilly's
-   current cycle at application time. **Louisville Institute** offers sabbatical grants;
+   current cycle, award ceiling and eligibility at application time. **Louisville Institute** offers sabbatical grants;
    **CREDO** provides the 8-day Episcopal wellness experience; several denominations have their
    own sabbatical funds. Denominational endorsement often matters for eligibility.
 3. **Congregation preparation, 12 months out.** Announce with theological framing (why
@@ -370,18 +331,22 @@ long-term ministry to happen. Plan it as a governance project.
 
 Lay leaders with authority over vulnerable populations — minors, elders, recovery participants,
 refugees, congregants in pastoral crisis — carry the same safeguarding obligations as clergy,
-regardless of pay status. This skill's role is to make sure safeguarding is a **gate** in the
-lay-leader pipeline; the design of the policy belongs to
+regardless of pay status. This skill makes safeguarding a **gate** in the lay-leader pipeline; the
+policy itself, jurisdiction-specific reporting and the misconduct workflow belong to
 `nonprofit-faith-employment-ministerial-exception`.
 
-- Background check before role start. No exceptions for "we've known him forever."
-- Safe-sanctuary training completion before role start, refresh every 2–3 years. Track
-  completion on the leader roster.
-- Two-adult rule and observable-space rule built into every children's and youth ministry role.
-- Transportation policy signed by every driver.
-- Mandatory-reporter workflow — every lay leader knows the reporting number and knows they are
+- **Background check before role start** for any role with access to minors, vulnerable adults,
+  cash, keys, or transportation of members (vendors such as MinistrySafe, Protect My Ministry,
+  Sterling Volunteers). No exceptions for "we've known him forever." Insurers (Church Mutual,
+  GuideOne, Brotherhood Mutual, ISM) increasingly require it; confirm the current policy terms.
+- **Safe-sanctuary training** before role start, refreshed every 2–3 years; track completion on the
+  leader roster. Signed code of conduct.
+- **Two-adult and observable-space rules** in every children's and youth role: no adult alone with
+  a minor in a non-observable space; two unrelated adults on every trip and one-on-one meeting.
+- **Transportation policy** signed by every driver.
+- **Mandatory-reporter workflow** — every lay leader knows the reporting number and that they are
   not the investigator.
-- Removal for cause follows the removal procedure in Elder/Deacon Selection above, plus the
+- **Removal for cause** follows the removal procedure under Elder/Deacon Selection, plus the
   misconduct workflow in `nonprofit-faith-employment-ministerial-exception`.
 
 ## Recognition That Fits the Theology
@@ -432,6 +397,18 @@ fix is structural.
    on a committee will lead a small group, teach a class, coordinate seva, or run a ministry
    area. The pipeline problem is often a mis-defined leadership problem.
 
+## Verify Before Acting
+
+Before installing anyone in an office:
+
+- [ ] The selection method matches the governing document, and the confirming act is in that
+      body's minutes.
+- [ ] A written role description exists and is signed by the office-holder.
+- [ ] Every safeguarding gate the role requires is cleared and logged on the roster.
+- [ ] Term start, renewal and off-year dates are recorded.
+- [ ] The person's concurrent roles are within the written cap, or a waiver is minuted.
+- [ ] COI disclosure is on file for governance offices.
+
 ## Common Failure Modes
 
 - **Recruiting by phone call two months before installation.** The nominating body scrambles,
@@ -474,25 +451,14 @@ fix is structural.
   no right to be heard. Fix by adopting a written removal procedure at governing-body level and
   routing misconduct through `nonprofit-faith-employment-ministerial-exception`.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the clergyperson or executive director.** Rebuild the pipeline before you rebuild the
-  program. Most "we can't find leaders" complaints are recruitment-cadence and formation
-  problems: recruitment starts too late, discernment is skipped, apprentices are not named, and
-  the same twelve people cover everything. In one leadership year, fix these: publish role
-  descriptions and open the discernment invitation 90 days early; run one cross-role
-  safeguarding refresh; publish the coach / coach-of-coaches roster; adopt or refresh the
-  Sabbath covenant; put the sabbatical on the calendar 12–24 months out and start the Lilly or
-  denominational application in the right cycle. Do not attempt a governance restructure or a
-  bylaws revision (`nonprofit-faith-church-governance`) until these run for a year.
-- **As an advisor to clergy, an ED, or a denominational judicatory.** Name the tradition and
-  the polity first — a Presbyterian session, a Baptist deacon body, a synagogue board of
-  trustees, and a mosque shura are structurally different systems, and advice that fits one
-  will damage another. Diagnose in this order: pipeline (apprentice ratios, nomination cadence,
-  same-twelve audit), formation (calendar, retreat, denominational programs), safeguarding
-  (background check and training completion), and sustainability (Sabbath covenant, sabbatical
-  runway). Push the clergyperson to protect the Sabbath and put the sabbatical on the calendar
-  before anything else; a career ended by burnout closes the pipeline for a generation. When a
-  lay volunteer moves toward staff, or misconduct is disclosed, hand off cleanly to
-  `nonprofit-faith-finance-clergy-comp` or `nonprofit-faith-employment-ministerial-exception` —
-  do not try to resolve those cases inside a formation conversation.
+- Name the tradition and polity first — a Presbyterian session, a Baptist deacon body, a synagogue
+  board and a mosque shura are structurally different, and advice that fits one damages another.
+- Diagnose in order: pipeline (apprentice ratios, nomination cadence, same-twelve audit),
+  formation, safeguarding completion, then sustainability (Sabbath covenant, sabbatical runway);
+  hold any governance or bylaws restructure (`nonprofit-faith-church-governance`) until the
+  pipeline fixes have run for a year.
+- When a volunteer moves toward staff or misconduct is disclosed, hand off cleanly to
+  `nonprofit-faith-finance-clergy-comp` or `nonprofit-faith-employment-ministerial-exception`; do
+  not resolve those inside a formation conversation.

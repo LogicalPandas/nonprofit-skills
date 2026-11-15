@@ -1,6 +1,6 @@
 ---
 name: nonprofit-faith-employment-ministerial-exception
-description: "US faith-based-nonprofit employment law: ministerial exception (Hosanna-Tabor, Our Lady of Guadalupe), Title VII §702 religious-hiring exemption, Groff accommodation, Bostock interactions, clergy misconduct and safe-sanctuary policy (USCCB/VIRTUS, MinistrySafe, GRACE), background checks, denominational discipline, and pastor termination or administrative-leave workflows. Use when a church, synagogue, mosque, denominational body, or advisor asks about firing clergy, a misconduct allegation, a religious-hiring question, safe-church policy, or the ministerial exception. Not for clergy pay/housing/SECA (use nonprofit-faith-finance-clergy-comp), generic non-clergy HR (use nonprofit-hr), congregational-vote or property disputes (use nonprofit-faith-church-governance), or RFRA/RLUIPA and federally funded programs (use nonprofit-faith-religious-liberty-compliance)."
+description: "Handles US employment and safeguarding questions with a religious dimension: ministerial-exception scope, Title VII §702 religious hiring, Groff accommodation, Bostock, clergy misconduct and safe-sanctuary policies, background checks, allegation response, and pastor leave or termination. Use when a church, synagogue, mosque or ministry asks 'we need to let our pastor go', 'can we require staff to share our faith', 'someone made an allegation against a staff member' or 'write our child-protection policy'. Not for clergy pay (use nonprofit-faith-finance-clergy-comp), lay-staff HR (use nonprofit-hr), congregational votes (use nonprofit-faith-church-governance) or RFRA and federal funds (use nonprofit-faith-religious-liberty-compliance)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,31 +12,21 @@ metadata:
 
 # Faith-Based Nonprofit Employment & Ministerial Exception (US)
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a faith-based nonprofit — a church, synagogue, mosque, temple, parachurch
-ministry, denominational judicatory, religious school, seminary, or religious social-service
-agency — is dealing with an **employment, misconduct, or safeguarding question with an inherently
-religious dimension**. Trigger phrases include: "we need to let our pastor / rabbi / imam go,"
-"can we require our youth director to be a member of our faith," "the ministerial exception,"
-"someone made an allegation against a staff member," "safe sanctuary / safe church / child
-protection policy," "background checks for volunteers with minors," "our worship leader wants a
-religious accommodation," "our teacher is in a same-sex marriage, what can we do," "the
-denomination is investigating our pastor," "put the pastor on administrative leave," "Hosanna-
-Tabor," "Our Lady of Guadalupe," or "Title VII religious exemption."
+This skill is the employment-law and safeguarding layer, and the owner of the safe-sanctuary /
+child-protection policy for the faith-based family. Route the rest:
 
-Boundary: this skill is the **employment-law and safeguarding layer**. Clergy pay design, IRC
-§107 housing allowance, SECA/dual tax status, W-2 vs. 1099 clergy classification, love offerings,
-and benevolence-fund controls live in `nonprofit-faith-finance-clergy-comp`; use it, do not
-restate it here. Non-clergy staff handbook, PTO, benefits, and general HR policy for lay
-employees are `nonprofit-hr` and `nonprofit-staff-retention`. The congregational or elder-board
-side of removing a pastor (calling a special meeting, quorum, majority thresholds, denominational
-concurrence), plus denomination-vs-local-church property disputes, is
-`nonprofit-faith-church-governance` (with `nonprofit-faith-facilities-sanctuary` for property
-mechanics). Generic D&O / EPLI / general-liability insurance selection is `nonprofit-risk-
-management` — this skill covers the sexual-misconduct rider and the safe-sanctuary policy
-content the insurer will require. RFRA, RLUIPA, Charitable Choice, and the ACA contraceptive
-accommodation are `nonprofit-faith-religious-liberty-compliance`.
+- Clergy pay design, §107 housing allowance, SECA, W-2 vs. 1099 clergy classification, love
+  offerings, benevolence funds → `nonprofit-faith-finance-clergy-comp` (use it; do not restate it).
+- Lay-staff handbook, PTO, benefits, general HR → `nonprofit-hr` and `nonprofit-staff-retention`.
+- The congregational or elder-board side of removing a pastor (special meeting, quorum, thresholds,
+  denominational concurrence) and denomination-vs-local property disputes →
+  `nonprofit-faith-church-governance` (property mechanics: `nonprofit-faith-facilities-sanctuary`).
+- Generic D&O / EPLI / general-liability selection → `nonprofit-risk-management`; this skill covers
+  the sexual-misconduct rider and the policy content the insurer will require.
+- RFRA, RLUIPA, Charitable Choice, ACA contraceptive accommodation → `nonprofit-faith-religious-liberty-compliance`.
+- Lay-leader recruitment and terms → `nonprofit-faith-volunteer-lay-leadership`.
 
 ## Core Frameworks
 
@@ -46,16 +36,12 @@ Title VII §702, and Bostock look similar from a distance and produce opposite a
 - **First Amendment ministerial exception (Religion Clauses)**: a constitutional immunity that
   bars most employment-discrimination suits brought by a "minister" against a religious
   employer. Anchored by two unanimous Supreme Court cases:
-  - **Hosanna-Tabor Evangelical Lutheran Church & School v. EEOC (2012)**: first Supreme Court
-    recognition of the exception; barred an ADA retaliation claim by a "called" Lutheran teacher
-    whose duties included leading chapel, teaching religion, and being formally commissioned.
-  - **Our Lady of Guadalupe School v. Morrissey-Berru (2020)**: rejected a rigid multi-factor
-    test. The inquiry is **functional**: what did the employee actually do for the religious
-    mission (teach the faith, lead worship, prepare students for sacraments, transmit religious
-    tradition)? Title, ordination, formal commissioning, and "held out as a minister" are
-    evidence but none is required. Two lay Catholic-school teachers who taught religion, prayed
-    with students, and prepared them for Mass qualified as ministers even without ordination or
-    a religious title.
+  - **Hosanna-Tabor Evangelical Lutheran Church & School v. EEOC (2012)**: first recognition;
+    barred an ADA retaliation claim by a commissioned, "called" Lutheran teacher.
+  - **Our Lady of Guadalupe School v. Morrissey-Berru (2020)**: the inquiry is **functional** —
+    what the employee actually did for the religious mission. Title, ordination, commissioning
+    and "held out as a minister" are evidence but none is required; lay religion teachers who
+    prayed with students and prepared them for Mass qualified.
 - **Title VII §702 religious-organization exemption (42 U.S.C. §2000e-1(a))**: permits a
   religious corporation, association, educational institution, or society to prefer members of
   its own religion **for any position, not just clergy**. Upheld unanimously in **Corporation of
@@ -66,74 +52,66 @@ Title VII §702, and Bostock look similar from a distance and produce opposite a
   religious-employer carve-outs than federal law.
 - **Groff v. DeJoy (2023)**: raised the Title VII "undue hardship" bar for accommodating an
   employee's religious practice from the old **de minimis** reading of *TWA v. Hardison* to a
-  **substantial-cost-in-context** standard. Applies to secular and religious employers alike —
-  matters most when a faith-based org has employees of other faiths (a Muslim IT contractor at
-  a Christian ministry, a Jewish counselor at a Catholic hospital) requesting sabbath, prayer
-  time, or dress accommodations.
+  **substantial-cost-in-context** standard. Applies to religious employers too — it matters most
+  when staff of other faiths request sabbath, prayer-time or dress accommodations.
 - **Bostock v. Clayton County (2020)**: Title VII "because of sex" now includes sexual
   orientation and gender identity. For religious employers this interacts with §702 and the
   ministerial exception in unsettled ways: the ministerial exception still bars any Title VII
   claim by a minister; §702 still permits co-religionist preference; a same-sex-marriage or
   gender-transition decision framed and documented as a **religious** decision under the org's
-  doctrinal standards is different from a decision framed as a sex/orientation decision. Live
-  litigation (Bear Creek Bible Church v. EEOC, Braidwood Management v. EEOC) is producing a
-  circuit split; do not promise the user a settled answer.
-- **Denominational polity and church-court process**: the process by which a denomination
-  investigates, disciplines, or removes clergy is defined in the denomination's own governing
-  document — Book of Discipline (UMC), Book of Order (PCUSA), Constitution and Canons
-  (Episcopal, Anglican), 1983 Code of Canon Law (Roman Catholic), Book of Church Order (PCA),
-  Baptist Faith and Message plus local bylaws (SBC, congregational Baptists), denominational
-  bylaws (nondenominational networks), Halakhic beit din process (Jewish traditions), and
-  varies widely for independent congregations. Civil courts generally will not review these
-  internal ecclesiastical determinations (church-autonomy doctrine, **Serbian Orthodox Diocese
-  v. Milivojevich, 1976**).
+  doctrinal standards is different from a decision framed as a sex/orientation decision.
+  Litigation (Bear Creek Bible Church v. EEOC, Braidwood Management v. EEOC) was producing a
+  circuit split as of this skill's last review; verify the current status of these cases and any
+  later appellate or Supreme Court ruling, and do not promise the user a settled answer.
+- **Denominational polity and church-court process**: clergy discipline is defined by the
+  denomination's own governing document (see "Denominational Discipline and Its Employment
+  Consequences"); civil courts generally will not review those determinations (church-autonomy
+  doctrine, **Serbian Orthodox Diocese v. Milivojevich, 1976**).
 - **Safe-sanctuary / safe-church programs**: named training and policy systems the org will be
-  measured against by insurers, denominations, and state licensors. Main ones in US practice:
-  **USCCB Charter for the Protection of Children and Young People** (Roman Catholic; "Dallas
-  Charter," 2002) — mandates diocesan safe-environment offices, review boards, background
-  checks, training, and zero-tolerance for substantiated abuse of a minor; **VIRTUS "Protecting
-  God's Children"** — the most common training program implementing the Charter;
-  **MinistrySafe** — training + background-check + policy platform widely used by evangelical
-  and nondenominational churches and camps; **GRACE (Godly Response to Abuse in the Christian
-  Environment)** — independent-investigation and institutional-culture assessment;
-  **Reducing the Risk** (Church Law & Tax), **Praesidium Academy**, denominational curricula
-  (Episcopal "Safeguarding God's Children/People," UMC Safe Sanctuaries, PCUSA/ELCA
-  equivalents, Jewish federation and USCJ trainings, ISNA/MCC resources for mosques).
+  measured against by insurers, denominations, and state licensors: **USCCB Charter for the
+  Protection of Children and Young People** (Catholic "Dallas Charter," 2002: safe-environment
+  offices, review boards, checks, training, zero tolerance for substantiated abuse of a minor)
+  and **VIRTUS** training; **MinistrySafe** (evangelical and nondenominational churches, camps);
+  **GRACE** (independent investigation, culture assessment); **Reducing the Risk**, **Praesidium**,
+  and denominational curricula (Episcopal Safeguarding God's Children/People, UMC Safe
+  Sanctuaries, PCUSA/ELCA, Jewish federation and USCJ, ISNA/MCC). Confirm which program the
+  insurer and denomination currently require.
 - **Mandatory-reporter statutes**: every US state has a child-abuse reporting law. Clergy are
   named mandatory reporters in most states; a minority still exempt "penitential communications"
   but the penitent-privilege carve-out has been narrowed or abolished for child-abuse reports in
   several states. Statute is state-by-state — always confirm the specific state before advising
   a "you don't have to report" conclusion.
 - **Fair Credit Reporting Act (FCRA) and EEOC criminal-history guidance**: background-check
-  vendors are consumer-reporting agencies under FCRA; the org must give written disclosure,
-  obtain written authorization, and follow adverse-action procedure (pre-adverse notice, copy
-  of the report, summary of rights, wait period, final adverse notice) before disqualifying a
-  candidate based on a report. EEOC guidance disfavors blanket criminal-history exclusions and
-  expects individualized assessment (nature of offense, time elapsed, nature of the role).
+  vendors are consumer-reporting agencies, so the FCRA disclosure, authorization and
+  adverse-action sequence applies (see "Background-Check Program"); EEOC guidance disfavors
+  blanket exclusions and expects individualized assessment (offense, time elapsed, role).
 
 ## Standard Deliverables
 
-Every request in scope resolves into one of these artifacts:
+- **Ministerial-exception scope memo** — functional test applied to real duties (skeleton below).
+- **Religious-hiring policy language** — religious qualification, statement-of-faith subscription,
+  conduct expectations, and the documentation trail that keeps a §702 decision defensible.
+- **Safe-sanctuary / child-protection policy** and **clergy misconduct policy and response plan**.
+- **Allegation-response runbook** — the first-72-hours workflow.
+- **Administrative-leave / termination letter for clergy** — drafted with counsel.
+- **Background-check program design** — screening matrix, vendor, FCRA workflow, renewal cadence,
+  disqualifying-offense schedule.
+- **Coordination memo with the judicatory** — who acts, in what sequence, under concurrent jurisdiction.
 
-- **Ministerial-exception scope memo** — a short written analysis of whether a specific role
-  (or a specific claim) is inside or outside the exception, applying the Our Lady of Guadalupe
-  functional test to real job duties.
-- **Religious-hiring policy language** — bona fide religious qualification, statement of faith
-  subscription, lifestyle/conduct expectations, and the documentation trail that keeps a §702
-  decision defensible.
-- **Safe-sanctuary / child-protection policy** — supervision rules (two-adult, line-of-sight,
-  bathroom/transportation), background-check cadence, training requirements, reporting
-  protocol, and allegation-response workflow.
-- **Clergy misconduct policy and response plan** — definitions of misconduct, reporting
-  channels, interim measures, investigation ownership, denominational-notification obligations,
-  pastoral care for reporter and community.
-- **Allegation-response runbook** — the first-72-hours workflow when an allegation comes in.
-- **Administrative-leave / termination letter for clergy** — the actual written instrument,
-  drafted with counsel, that puts a pastor on leave or ends the call/employment.
-- **Background-check program design** — role-by-role screening matrix, vendor selection, FCRA
-  workflow, renewal cadence, disqualifying-offense schedule.
-- **Coordination memo with the judicatory** — when a denomination has concurrent jurisdiction,
-  who does what and in what sequence (local employer action vs. ecclesiastical process).
+Ministerial-exception scope memo skeleton (write it before any personnel action):
+
+```
+Privileged & confidential [if prepared at counsel's request] — Role: ___  Entity: ___  Date: ___
+1. Employer: religious institution? basis (governing documents, mission, operations)
+2. Sources reviewed: job description, posting, offer letter, actual-duties account
+   (who provided it, date), training/commissioning records
+3. Religious-mission functions (checklist step 3): (a)-(e), each with evidence
+4. Corroborating factors (step 4): title, ordination/commissioning, training, holding out
+5. Claim(s) at issue and whether the exception reaches them (step 6)
+6. Conclusion: inside / outside / fact-dependent, with residual risks
+7. Other frameworks still in play: §702, state law, contract, tort, FLSA
+8. Counsel review: name / date
+```
 
 ## Scoping the Ministerial Exception — Numbered Checklist
 
@@ -372,7 +350,7 @@ and documentation; it does not substitute for the responsible person's reporting
     civil authorities and denomination, and conduct an after-action review to fix the system
     conditions that allowed the incident.
 
-Last checked September 16, 2026. This is not a determination of any particular state's reporting law.
+This is not a determination of any particular state's reporting law.
 
 ## Terminating or Placing a Pastor on Leave — Workflow
 
@@ -440,12 +418,11 @@ employment law.
   bylaws and (for some Jewish congregations) a beit din process the congregation opts into.
 - **Baptist associations / conventions**: the local church is autonomous; associations and
   conventions can withdraw fellowship or remove credentials but do not employ the pastor
-  (recent SBC "credentials committee" abuse-response activity is a live example).
-- **Civil-court restraint**: US courts generally will not adjudicate ecclesiastical
-  determinations (Serbian Orthodox Diocese v. Milivojevich; church-autonomy doctrine). Courts
-  will adjudicate neutral-principles disputes about property, contracts, and torts. A defrocked
-  pastor's Title VII claim is usually barred; the same pastor's contract or tort claim may not
-  be.
+  (SBC credentials-committee abuse-response activity has been one example; check its current
+  status before citing it).
+- **Civil-court restraint**: courts will not review the ecclesiastical determination but will
+  hear neutral-principles property, contract and tort disputes — a defrocked pastor's Title VII
+  claim is usually barred; the same pastor's contract or tort claim may not be.
 
 ## Volunteer vs. Employee Lines for Ministry Roles
 
@@ -510,28 +487,16 @@ the org calls them.
   points out that the local church does not have that authority. Fix by mapping authority
   under the polity **before** the decision and by coordinating with the judicatory in parallel.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the executive director, senior clergy, or church/school administrator**: your job is
-  to have the policies, records, and workflows in place **before** an incident, because every
-  one of these questions gets much harder to answer well in crisis. Concretely, this year:
-  adopt or refresh the safe-sanctuary and clergy-misconduct policies with board approval;
-  align the background-check program to the tiered matrix and set a renewal calendar; write
-  or refresh religious-formation duties into every job description for any role the org may
-  later treat as ministerial; hold safe-church training on a documented cycle and keep the
-  attendance records; pre-name the allegation-response team and rehearse the first-72-hours
-  runbook. When an allegation arrives, do not "look into it" first — run the runbook and call
-  counsel and the insurer inside 24 hours, without delaying urgent protection or legally required
-  reporting for those contacts. When a termination is coming, have counsel draft the
-  letter and a ministerial-exception memo before the action, not after.
-- **As an advisor** (attorney, denominational staff, consultant, board chair coaching an ED):
-  name the framework each question lives under before answering — ministerial exception, §702,
-  Groff accommodation, Bostock, safe-sanctuary program, denominational polity, or plain
-  employment law — because the same facts produce different answers under each. Push back on
-  two recurring instincts: answering misconduct questions as HR questions (they are also
-  mandatory-reporter, insurance-coverage, and pastoral-care questions), and answering
-  ministerial-exception questions from titles (they turn on function). For any real employment
-  action against clergy, insist on: current written job description, contemporaneous
-  ministerial-exception memo, counsel-drafted letter, denominational coordination, insurer
-  notice, and community communication plan before the planned employment action. This review
-  sequence must not delay emergency protection or legally required reporting.
+- Get the system in place before an incident: board-adopted safe-sanctuary and misconduct
+  policies, the tiered background-check matrix with a renewal calendar, religious-formation
+  duties written into job descriptions for any role the org may later treat as ministerial,
+  documented training, and a pre-named, rehearsed allegation-response team.
+- Name the framework each question lives under before answering, and push back on two instincts:
+  treating misconduct as only an HR question (it is also mandatory-reporter, insurance-coverage
+  and pastoral-care work) and answering ministerial-exception questions from titles.
+- Before any employment action against clergy, require the current written job description, a
+  contemporaneous ministerial-exception memo, a counsel-drafted letter, denominational
+  coordination, insurer notice and a community communication plan. This review sequence must
+  not delay emergency protection or legally required reporting.

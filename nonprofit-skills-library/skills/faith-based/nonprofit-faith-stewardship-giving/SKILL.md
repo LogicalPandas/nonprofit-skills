@@ -1,6 +1,6 @@
 ---
 name: nonprofit-faith-stewardship-giving
-description: "Stewardship and giving in US worship communities: annual pledge campaigns, tithe/tzedakah/zakat/dana messaging, capital campaigns for houses of worship, named and memorial gifts, faith-community planned giving, and IRS rules specific to religious contributions — §170(f)(8) acknowledgment, the intangible-religious-benefit carveout to §6115 quid-pro-quo, control-and-discretion for donor-designated gifts (mission trips, missionaries, benevolence), Form 8283/8282, offering-counting and digital-giving. Use when a pastor, rabbi, imam, or stewardship chair says 'plan our pledge campaign,' 'run a building campaign,' 'write our giving statements,' or 'quid pro quo for a wedding fee.' Does not cover generic appeals, major gifts, capital, or planned giving (see nonprofit-annual-appeals, nonprofit-major-gifts, nonprofit-capital-campaigns, nonprofit-planned-giving), clergy love offerings (nonprofit-faith-finance-clergy-comp), or pastoral voice of giving letters (nonprofit-faith-communications-pastoral)."
+description: "Plans stewardship and giving in US worship communities: pledge campaigns, tithe, tzedakah, zakat and dana messaging, worship-building capital campaigns, named and memorial gifts, faith-framed planned giving, offering counting, digital giving, and IRS rules for religious contributions. Use when a pastor, rabbi, imam or stewardship chair says 'plan our pledge campaign', 'run a building campaign', 'write our giving statements' or 'do we owe a quid pro quo disclosure'. Not for secular appeals or campaigns (use nonprofit-annual-appeals or nonprofit-capital-campaigns), clergy love offerings (use nonprofit-faith-finance-clergy-comp) or the pastoral voice of letters (use nonprofit-faith-communications-pastoral)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,11 +12,22 @@ metadata:
 
 # Faith-Community Stewardship and Giving
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the user is running or advising the money-raising work of a **worship community** — church, synagogue, mosque, temple, gurdwara, or comparable congregation — and the request touches the **annual stewardship rhythm**, **giving theology or messaging**, a **capital campaign for a worship building**, **named or memorial gifts**, **planned giving in a faith frame**, or the **IRS documentation rules that apply to religious contributions**. Trigger phrases: "plan our fall stewardship campaign," "draft a pledge card," "preach a stewardship series," "we're building a new sanctuary," "run a feasibility study," "donor wants to designate this for a specific missionary," "do we owe a quid-pro-quo disclosure for the wedding fee," "giving statements go out next week," "someone left us in their will," "move people off the offering plate to digital," "frame an endowment to a congregation that thinks endowments are hoarding."
+This is the worship-community overlay on the generic fundraising library, and the owner of the
+offering-counting protocol for the faith-based family.
 
-Boundary: this is the **worship-community overlay** on the generic fundraising library. A secular year-end direct-mail appeal to a lapsed-donor file is `nonprofit-annual-appeals`. A generic major-donor moves-management pipeline is `nonprofit-major-gifts` and `nonprofit-donor-pipeline`. A capital campaign to build a museum wing is `nonprofit-capital-campaigns` — this skill adds the worship-building overlay (three-year pledge, above-and-beyond framing, celebration Sunday, denominational stewardship firms). A generic bequest program is `nonprofit-planned-giving` — this skill adds the faith-community overlay (bequest as legacy of faith, endowment-mistrust framing, denominational foundation vehicles). Pastoral love offerings, benevolence-fund tax treatment, and clergy housing allowance sit in `nonprofit-faith-finance-clergy-comp`. Wedding, funeral, and facility-use fee policy and their UBIT treatment sit in `nonprofit-faith-facilities-sanctuary`. The pastoral **voice** of the giving letter, thank-you note, or crisis-appeal sits in `nonprofit-faith-communications-pastoral` — this skill produces the compliance shape and campaign structure, not the pastoral prose.
+- Secular year-end direct-response appeals → `nonprofit-annual-appeals`. Direct-response tactics
+  feel foreign in the pulpit; keep them for supplementary appeals, not the primary pledge campaign.
+- Major-donor pipeline → `nonprofit-major-gifts` and `nonprofit-donor-pipeline`.
+- Secular capital campaigns → `nonprofit-capital-campaigns`; generic bequest programs →
+  `nonprofit-planned-giving` (this skill adds the worship overlays).
+- Love offerings, benevolence-fund tax treatment, housing allowance, and finance-committee controls
+  beyond the count → `nonprofit-faith-finance-clergy-comp`.
+- Wedding, funeral and facility-use fee policy → `nonprofit-faith-facilities-sanctuary`; their
+  UBIT treatment → `nonprofit-faith-990-exemption`.
+- The pastoral voice of giving letters and thank-yous → `nonprofit-faith-communications-pastoral`
+  (this skill produces the compliance shape and campaign structure).
 
 ## Core Frameworks
 
@@ -26,14 +37,9 @@ Name the framework the community is operating under before drafting — a Christ
 - **Synagogue dues + High Holiday appeal (Jewish default, though shifting)**: annual membership dues (increasingly replaced by voluntary-commitment or "pay what you can" models) plus a **Kol Nidre appeal** on the eve of Yom Kippur — often the single largest ask of the year — supplemented by Purim/Passover mailings and building-fund solicitations.
 - **Zakat and sadaqah cycle (Islamic default)**: **zakat** as an obligation on qualifying wealth (2.5% on assets above the **nisab** threshold, calculated annually on a lunar cycle, distributed to specifically-eligible categories under Quran 9:60), often concentrated in Ramadan; **sadaqah** as voluntary giving throughout the year; **zakat al-fitr** at end of Ramadan; building-fund or **waqf** (endowment) campaigns in parallel.
 - **Dana cycle (Hindu, Buddhist, Sikh)**: **dana** (generosity) as ongoing rather than pledged; festival-linked giving (Diwali, Vesak, Vaisakhi); **seva** (service) and food-offering (langar in gurdwaras, prasadam in Hindu temples) intertwined with cash giving; often no pledge card at all.
-- **Christian tithe theology (describe, do not endorse)**: the 10% tithe drawn from Malachi 3, Genesis 14, and Leviticus 27, debated across traditions on **gross vs. net**, **first-fruits** ordering, and the **storehouse** question (local-congregation-only vs. distributable); **proportional** and **sacrificial** giving as alternative frames many congregations teach alongside or instead of a strict tithe.
-- **Maimonides' Eight Levels of Tzedakah**: the classical Jewish ordering (from reluctant giving up to enabling the recipient to become self-sufficient), used to reframe giving as **obligation and justice**, not charity.
-- **Zakat eligibility categories (Quran 9:60)**: the eight categories — the poor, the needy, zakat administrators, those whose hearts are to be reconciled, those in bondage, those in debt, in the cause of God, and travelers — which constrain what a mosque may fund from designated zakat receipts vs. sadaqah or general funds.
-- **IRC §170(f)(8) — contemporaneous written acknowledgment**: no charitable deduction for any single gift of $250 or more without a written acknowledgment received by the donor before they file. Applies to worship communities identically to secular charities — but many congregations are the most casual about it.
-- **IRC §6115 — quid pro quo disclosure**, and the **§170(f)(8)(B) / §6115(b) intangible-religious-benefit carveout**: gifts over $75 where the donor receives goods or services in return require fair-market-value disclosure — **except** that "solely intangible religious benefits" (worship, sacraments, religious instruction) do not trigger it. The single most-misapplied provision in faith stewardship.
-- **Control-and-discretion rule for earmarked gifts**: a gift earmarked for a specific individual is treated as a gift to that individual and is not deductible — unless the organization retains full **control and discretion** and the recipient is a legitimate object of exempt purposes. Rev. Rul. 62-113 and a long line of mission-trip and missionary-support cases are the operative authority.
-- **Form 8283 / Form 8282 regime under §170(f)(11) and (f)(12)**: donor files 8283 for non-cash gifts over $500; qualified appraisal and donee signature on Section B for property over $5,000; organization files 8282 if it disposes within 3 years; special rules under §170(f)(12) for cars, boats, and planes.
-- **Denominational stewardship firms and foundations**: the specialty vendor set serving worship-community campaigns — **Kirby Smith Associates**, **RSI Stewardship**, **Cargill Associates**, **Generis**, **Horizons Stewardship**, **The Timothy Group**, plus denominational offices such as the **Episcopal Church Foundation**, **ELCA Foundation**, state **United Methodist Foundation**s, **Presbyterian Foundation**, **Baptist Foundation**s, **Jewish Federation** endowment programs, and **Islamic Relief USA** endowment. Naming the right firm shape (evangelical, mainline, denominational, independent) shapes the proposal.
+- **Zakat eligibility (Quran 9:60)**: the eight categories — the poor, the needy, zakat administrators, those whose hearts are to be reconciled, those in bondage, those in debt, in the cause of God, and travelers — constrain what a mosque may fund from designated zakat receipts vs. sadaqah or general funds. Tithe, tzedakah and dana messaging notes are under "Multi-Tradition Giving Theology".
+- **IRS rules for religious contributions**: §170(f)(8) acknowledgment, §6115 quid pro quo and its intangible-religious-benefit carveout (the single most-misapplied provision in faith stewardship), the control-and-discretion rule for earmarked gifts (Rev. Rul. 62-113), and Forms 8283/8282 — all detailed under "IRS Documentation Rules for Religious Contributions".
+- **Denominational stewardship firms and foundations**: the specialty vendor set serving worship-community campaigns — **Kirby Smith Associates**, **RSI Stewardship**, **Cargill Associates**, **Generis**, **Horizons Stewardship**, **The Timothy Group**, plus denominational offices such as the **Episcopal Church Foundation**, **ELCA Foundation**, state **United Methodist Foundation**s, **Presbyterian Foundation**, **Baptist Foundation**s, **Jewish Federation** endowment programs, and **Islamic Relief USA** endowment. Naming the right firm shape (evangelical, mainline, denominational, independent) shapes the proposal. Firm and foundation offerings change; confirm current services and fit before recommending.
 
 ## Standard Deliverables
 
@@ -65,16 +71,12 @@ Run this every stewardship season. The primary failure mode is treating stewards
 8. **Close the loop with results.** Publish total pledged, participation rate, average and median pledge, and the operating budget the pledged income supports. Thank the community as a whole; do not publish individual amounts. Report progress vs. pledged monthly or quarterly.
 9. **Model the cash-flow curve.** Pledges do not arrive evenly. Expect a **December surge** (year-end tax giving, catch-up on annual pledges), a **summer dip** (July–August, travel and lower attendance), and a **post-Easter or post-High-Holiday bump**. Build the reserve and cash-flow plan against the curve, not against 1/12 per month. Load `nonprofit-reserves-cash-flow` in tandem.
 
-## Contrast With a Secular Annual Appeal
-
-A secular year-end appeal runs a mailed and digital direct-response cycle in November–December against a lapsed-and-current donor file, optimized on response rate, average gift, and cost-to-raise-a-dollar. A worship-community stewardship campaign runs a **formation** cycle in the fall to produce a **pledged budget** for the next year, optimized on **household participation rate**, **average pledge growth**, and **year-over-year retention of pledging households**. Direct-response tactics from `nonprofit-annual-appeals` feel foreign in the pulpit — save them for supplementary appeals (year-end mailer, spring capital push), not the primary pledge campaign.
-
 ## Multi-Tradition Giving Theology — Messaging Notes
 
 Describe the practice; do not preach it. Let the clergy voice make the theological claim; produce the structural shape.
 
-- **Christian tithe / proportional / sacrificial**: teach the tithe as a starting point where that is the community's frame; teach **percentage giving** with a step chart (start at 2%, grow 1%/year toward the tithe) in traditions that resist the tithe as legalism. **Gross vs. net** and **first-fruits** are congregation-specific debates — name them, do not resolve them.
-- **Jewish tzedakah**: frame giving as **obligation and justice**, not charity; use **Maimonides' eight levels** to lift the discussion off "how much" and onto "how"; distinguish synagogue dues/commitment from tzedakah to external causes (federation, Israel, local social service). The **Kol Nidre appeal** has its own protocol — pledge cards distributed at Erev Yom Kippur, no cash handled on the holy day, follow-up in the week after.
+- **Christian tithe / proportional / sacrificial** (describe, do not endorse; the tithe draws on Malachi 3, Genesis 14 and Leviticus 27, and the **storehouse** question — local congregation only vs. distributable — is debated): teach the tithe as a starting point where that is the community's frame; teach **percentage giving** with a step chart (start at 2%, grow 1%/year toward the tithe) in traditions that resist the tithe as legalism. **Gross vs. net** and **first-fruits** are congregation-specific debates — name them, do not resolve them.
+- **Jewish tzedakah**: frame giving as **obligation and justice**, not charity; use **Maimonides' eight levels** (from reluctant giving up to enabling self-sufficiency) to lift the discussion off "how much" and onto "how"; distinguish synagogue dues/commitment from tzedakah to external causes (federation, Israel, local social service). The **Kol Nidre appeal** has its own protocol — pledge cards distributed at Erev Yom Kippur, no cash handled on the holy day, follow-up in the week after.
 - **Islamic zakat and sadaqah**: publish the mosque's **nisab threshold** and **zakat calculation guide** annually; make explicit which programs are **zakat-eligible** under the eight Quranic categories vs. funded from sadaqah or building fund; provide zakat calculators and Ramadan giving guides; enable **zakat al-fitr** collection in the last days of Ramadan.
 - **Hindu / Buddhist / Sikh dana**: pledge instruments often do not fit; substitute **recurring giving enrollment** at festivals, temple-membership dana levels, and event-linked giving (Diwali, Vesak, Vaisakhi, langar sponsorship). Frame around **seva** (service) and community sustainability, not obligation.
 
@@ -82,7 +84,7 @@ Describe the practice; do not preach it. Let the clergy voice make the theologic
 
 Worship-building campaigns follow the general shape in `nonprofit-capital-campaigns` — case, feasibility study, phased campaign, three-year pledges — with overlays specific to worship communities.
 
-1. **Feasibility study before the case.** Engage a stewardship firm (Kirby Smith, RSI, Cargill, Generis, Horizons, The Timothy Group, or a denominational foundation office) for 30–60 confidential household interviews plus a broader survey. Deliverable: realistic three-year pledge capacity (common benchmark: 1.5–3x annual giving over three years for a healthy congregation, less for a stressed one), leadership-gift readiness, scope palatability, named risks. Skipping the study to save the fee is the most reliable way to overshoot and stall.
+1. **Feasibility study before the case.** Engage a stewardship firm or denominational foundation office (see Core Frameworks) for 30–60 confidential household interviews plus a broader survey. Deliverable: realistic three-year pledge capacity (common benchmark: 1.5–3x annual giving over three years for a healthy congregation, less for a stressed one), leadership-gift readiness, scope palatability, named risks. Skipping the study to save the fee is the most reliable way to overshoot and stall.
 2. **Frame the project: retire-debt vs. new-build vs. renovation.** **Debt retirement** is the easiest to raise for and the hardest to make people excited about — frame around freeing the mission budget. **New-build** is highest-ceiling and highest-risk — requires the strongest lay-leader alignment. **Renovation and deferred-maintenance** is the least emotionally compelling — pair with a mission element (a **capital-plus-mission** split, e.g., 80% building, 20% outreach) to give the campaign a soul.
 3. **Above-and-beyond principle.** State repeatedly that capital pledges are **above and beyond** regular annual pledges, not in place of them. Loss of annual giving during a capital campaign is the classic self-inflicted wound.
 4. **Three-year pledge instrument.** Standard capital pledges run 3 years (36 months), payable monthly, quarterly, annually, or lump-sum, with donor-selected schedule and start date. Include an "increase later if able" line. Expect 85–95% fulfillment in healthy campaigns; track quarterly.
@@ -106,11 +108,11 @@ Faith-community planned giving uses the mechanics in `nonprofit-planned-giving` 
 
 - **Frame as legacy of faith, not tax strategy.** Bequests to a congregation are almost always motivated by a lifelong relationship with the community. Marketing that leads with tax deduction underperforms marketing that leads with continuity of witness, formation of the next generation, or gratitude for the community's role across a life.
 - **Endowment mistrust is common.** Many congregations reflexively read endowment as **hoarding** ("we should give it away, not build it up") or as **institutional risk** ("an endowed congregation will stop asking members to give"). Address this in the endowment case: a written **spending policy** (typically 4–5% of a rolling 3-year average); a **designated vs. undesignated** split (endowment for mission, capital repair, scholarships, music, and a smaller general-support pool); explicit statement that endowment income supplements — not replaces — annual pledged giving.
-- **Denominational vehicles.** Many communities are better served routing planned gifts through a denominational foundation than administering their own endowment: **Episcopal Church Foundation**, **ELCA Foundation**, state or regional **United Methodist Foundation**, **Presbyterian Foundation**, **Baptist Foundation**s, **Jewish Federation** endowment services, **Islamic Relief USA** endowment, and comparable bodies. These provide investment management, planned-giving marketing, and estate-administration support most single congregations cannot match. Congregations running their own endowment need a written investment policy, an investment committee separate from operating finance, and usually an outside advisor.
+- **Denominational vehicles.** Many communities are better served routing planned gifts through a denominational foundation (see Core Frameworks) than administering their own endowment. These provide investment management, planned-giving marketing, and estate-administration support most single congregations cannot match. Congregations running their own endowment need a written investment policy, an investment committee separate from operating finance, and usually an outside advisor.
 
 ## IRS Documentation Rules for Religious Contributions
 
-Compliance backbone of the skill. Get this wrong and donors lose deductions; over-disclose and donors get confused notices they do not need.
+Compliance backbone of the skill. Get this wrong and donors lose deductions; over-disclose and donors get confused notices they do not need. The dollar thresholds below ($250, $75, $500, $5,000 and others) are statutory or set by IRS forms; verify current figures in IRS Publication 1771, Publication 526 and the current Form 8283/8282 instructions before drafting.
 
 ### Contemporaneous Written Acknowledgment (§170(f)(8))
 
@@ -183,7 +185,7 @@ Establish a **gift-acceptance policy** (overlaps `nonprofit-in-kind-gift-accepta
 
 Cash offerings are the highest-fraud-risk transaction in a worship community. Non-optional protocol:
 
-1. **Two unrelated counters** (not spouses, household members, parent-child, or employee-employee where avoidable) present for every count.
+1. **Two unrelated counters** (not spouses, household members, parent-child, or employee-employee where avoidable) present for every count; three is better. Counters are never the senior clergyperson, the treasurer, or their family. Counters sign a count sheet (loose cash, checks by donor, envelope totals), and a separate person posts to the giving database.
 2. **Sealed bag or locked container from pulpit to counting room.** Ushers hand off in view of a third person; the offering never rests unsecured.
 3. **Count in a dedicated room**, door closed but not locked from outside; finance-committee or business-administrator backup on call.
 4. **Two-person independent tally** of cash and checks; reconcile before writing the deposit slip.
@@ -193,7 +195,7 @@ Cash offerings are the highest-fraud-risk transaction in a worship community. No
 
 ## Digital and Recurring Giving
 
-- **Platform selection.** Common vendors: **Tithe.ly**, **Pushpay**, **Givelify**, **Kindrid** (now Pushpay), **Vanco**, **Subsplash Giving**, **Overflow** (stock and crypto), plus ChMS-integrated giving (**Planning Center Giving**, **Breeze**, **Aplos**, **Realm**). Selection criteria: fees (percentage plus per-transaction; donor-covered-fee option), ACH-vs-card mix (ACH is much cheaper — push for it), CRM integration, mobile experience, text-to-give, kiosk hardware, denominational discounts, and support for **zakat calculators** and **designated funds** where used.
+- **Platform selection.** Common vendors (ownership, products and fees change often; verify current status and pricing before recommending): **Tithe.ly**, **Pushpay**, **Givelify**, **Kindrid** (now Pushpay), **Vanco**, **Subsplash Giving**, **Overflow** (stock and crypto), plus ChMS-integrated giving (**Planning Center Giving**, **Breeze**, **Aplos**, **Realm**). Selection criteria: fees (percentage plus per-transaction; donor-covered-fee option), ACH-vs-card mix (ACH is much cheaper — push for it), CRM integration, mobile experience, text-to-give, kiosk hardware, denominational discounts, and support for **zakat calculators** and **designated funds** where used.
 - **Adoption targets.** Communities running digital-giving 2–3 years commonly reach 50–70% of contribution dollars through recurring ACH/card. Push for **recurring** enrollment, not one-time digital gifts; recurring giving smooths the December-heavy / summer-dip curve and correlates with pledge fulfillment.
 - **Onboarding at the membership class.** Highest-leverage intervention: build recurring-giving enrollment into the front door. Households that set up recurring giving in their first 90 days retain at 2–3x the rate of households that never do.
 - **Pastoral care of the transition from the offering plate.** For many long-tenured members, placing a check in the plate is part of worship. Do not shame the plate. Options: continue passing the plate with a "we give in many ways" card digital givers can drop in; a **giving moment** where digital givers tap a phone or take a moment of intention; a lobby kiosk. Frame as **expanding** how the community gives, not replacing the plate.
@@ -206,6 +208,18 @@ Cash offerings are the highest-fraud-risk transaction in a worship community. No
 - **Outsized-gift acknowledgment**: personal note from clergy for any gift materially above the household's pattern or above a set threshold. Highest-satisfaction communication in the entire giving cycle.
 - **Quarterly progress**: pledged-to-date and received-to-date vs. budget with the year-end curve overlaid; total gifts received in the quarter; participation update. Publish to the congregation, not just the board.
 - **Frame gratitude, not guilt.** Every communication invites and thanks; none shames. "We are behind budget and need you to give more" erodes trust fastest. "Here is what your giving has funded this quarter; here is what is ahead" sustains it.
+
+## Verify Before Acting
+
+- [ ] Giving statements list every single gift of $250 or more on its own line, with the correct
+      safe-harbor sentence (none provided, or intangible religious benefits only).
+- [ ] Quid-pro-quo items (fees, tickets, tuition, retreat meals) are separated with a good-faith
+      value; bookstore and merchandise sales are excluded.
+- [ ] Designated gifts are receipted to the fund, never to a named individual, and the
+      control-and-discretion language appears on the form.
+- [ ] Thresholds and form rules were checked against current IRS publications and instructions.
+- [ ] Individual giving amounts are not published and access follows the written confidentiality policy.
+- [ ] Capital-campaign goals trace to the feasibility study's pledge-capacity number.
 
 ## Common Failure Modes
 
@@ -220,8 +234,14 @@ Cash offerings are the highest-fraud-risk transaction in a worship community. No
 - **Pastoral silence on unusually large gifts.** Estate-scale gift acknowledged only by auto-receipt; donor concludes their gift did not matter. Fix by routing every outsized and first gift to clergy for personal acknowledgment within a week.
 - **Confidentiality left implicit.** Nobody has decided whether clergy see individual giving; someone in the office lets it slip and trust breaks. Fix by writing the pastor-blind / pastor-sighted / hybrid policy explicitly and following it consistently.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the clergy leader or business administrator running the campaign**: separate formation work from compliance work — and staff each. Own the theological framing, preaching arc, pastoral care of major donors, and the transition off the plate; delegate pledge-card design, the acknowledgment engine, counting-team protocol, 8283/8282 tracking, and quid-pro-quo/discretion policy to the business administrator, finance committee, or an outside advisor. Both roles fail when collapsed into one person. Read the intangible-religious-benefit carveout personally at least once; it is the compliance question you will most often be asked and the one your peers most often get wrong.
-
-- **As an advisor (stewardship consultant, denominational staff, CPA, planned-giving officer)**: name the tradition-specific rhythm the community is operating on (fall pledge campaign, dues + Kol Nidre, Ramadan zakat + building fund, festival dana) before proposing a calendar — the same "annual stewardship plan" ask means different things in each. Do not import secular direct-response tactics into the primary stewardship cycle; save them for supplementary appeals. Diagnose the three highest-value compliance fixes first (§170(f)(8) acknowledgment language, intangible-religious-benefit application, control-and-discretion policy) before designing new giving instruments; sound compliance with modest instruments beats sophisticated instruments with audit-triggering acknowledgment practices. Where the community is stuck on endowment, do not argue theology — offer a spending policy and a designated-fund menu, and let the numbers do the work.
+- Separate formation work (theological frame, preaching arc, pastoral care of donors) from
+  compliance work (pledge cards, acknowledgments, counting, 8283/8282, quid-pro-quo and discretion
+  policies) and staff each; both fail when collapsed into one person.
+- Name the community's rhythm (fall pledge, dues plus Kol Nidre, Ramadan zakat plus building fund,
+  festival dana) before proposing a calendar.
+- Fix the three highest-value compliance items first — acknowledgment language, the
+  intangible-religious-benefit carveout and the control-and-discretion policy — before designing
+  new giving instruments; where a community is stuck on endowment, offer a spending policy and a
+  designated-fund menu rather than arguing theology.

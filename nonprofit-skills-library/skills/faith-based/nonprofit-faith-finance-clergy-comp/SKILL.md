@@ -1,6 +1,6 @@
 ---
 name: nonprofit-faith-finance-clergy-comp
-description: "US clergy pay and church finance mechanics: IRC §107 housing allowance, SECA dual tax status, W-2 vs. 1099 for clergy, love offerings and §102 gifts, accountable reimbursement plans, benevolence funds, IRC §4958 reasonable-comp process, 403(b)(9) plans, QSEHRA/ICHRA, and church cash-handling. Use when a church/synagogue/mosque administrator, treasurer, pastor, rabbi, imam, or advisor asks about housing allowance, parsonage, clergy W-2, SECA, love offering, benevolence, or a pastor's comp package. Not for 990 exemption (nonprofit-faith-990-exemption), giving statements (nonprofit-faith-stewardship-giving), firing clergy (nonprofit-faith-employment-ministerial-exception), or non-clergy HR (nonprofit-hr)."
+description: "Structures US clergy pay and the church finance mechanics that touch it: IRC §107 housing allowance, SECA dual tax status, W-2 vs. 1099 for clergy, love offerings and §102 gifts, accountable plans, benevolence funds, the §4958 reasonable-comp process, 403(b)(9) plans and QSEHRA/ICHRA. Use when a treasurer, board or clergyperson says 'designate the housing allowance', 'should our imam be on a 1099', 'can benevolence pay a member's rent' or 'set the pastor's pay defensibly'. Not for giving statements or offering counts (use nonprofit-faith-stewardship-giving), church Form 990 exemption (use nonprofit-faith-990-exemption) or firing a minister (use nonprofit-faith-employment-ministerial-exception)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,31 +12,21 @@ metadata:
 
 # Faith-Based Finance and Clergy Compensation (US Tax Mechanics)
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the user is running or advising a US congregation (church, synagogue, mosque,
-temple, meetinghouse) or denominational body and needs to structure or fix a **clergyperson's pay
-package** or the **congregational finance mechanics that touch clergy compensation**. Trigger
-phrases: "designate my pastor's housing allowance," "we forgot to set the housing allowance,"
-"our rabbi lives in the parsonage — what goes on the W-2," "the imam gets a monthly stipend,
-should he be 1099," "the congregation took up a Christmas love offering," "retirement gift to
-Pastor X," "can our benevolence fund pay a member's rent," "we've never had an accountable
-reimbursement plan," "set the senior minister's compensation defensibly," "what's a 403(b)(9),"
-"the church has been withholding FICA on the pastor," or "do we need an audit."
+This skill is the clergy-tax and clergy-comp mechanics layer plus the narrow slice of
+congregational finance that touches it (benevolence, accountable reimbursement, finance oversight).
 
-Boundary: this skill is the **clergy-tax and clergy-comp mechanics layer** plus the narrow slice
-of congregational finance that touches those mechanics (offering handling, benevolence,
-accountable reimbursement). **Form 990 filing exemption**, integrated auxiliaries, group exemption
-rulings, church UBIT, and IRC §7611 audit protections are `nonprofit-faith-990-exemption`.
-**Contributor giving statements**, quid-pro-quo disclosures, capital-campaign pledge accounting,
-and religious-context planned giving are `nonprofit-faith-stewardship-giving`. **Firing a
-minister**, ministerial-exception defenses, Title VII religious hiring exemption, clergy
-misconduct response, and safe-sanctuary policies are
-`nonprofit-faith-employment-ministerial-exception`. **Non-clergy staff HR** (handbook, FLSA for
-the office administrator, PTO) is `nonprofit-hr`. Generic **budgeting, financial statements,
-reserves and cash-flow** are `nonprofit-budgeting`, `nonprofit-financial-statements`, and
-`nonprofit-reserves-cash-flow`. Generic **internal controls** are `nonprofit-financial-controls`;
-this skill only handles the congregation-specific offering and benevolence pieces.
+- Form 990 filing exemption, integrated auxiliaries, group rulings, church UBIT and IRC §7611
+  audit protections → `nonprofit-faith-990-exemption`.
+- Contributor giving statements, quid-pro-quo disclosures, pledge accounting, religious planned
+  giving and the offering-counting protocol → `nonprofit-faith-stewardship-giving`.
+- Firing a minister, ministerial-exception defenses, Title VII religious hiring, clergy misconduct
+  and safe-sanctuary policies → `nonprofit-faith-employment-ministerial-exception`.
+- Non-clergy staff HR (handbook, FLSA for the office administrator, PTO) → `nonprofit-hr`.
+- Generic budgeting, financial statements, reserves and cash flow → `nonprofit-budgeting`,
+  `nonprofit-financial-statements`, `nonprofit-reserves-cash-flow`; generic internal controls →
+  `nonprofit-financial-controls`.
 
 Multi-tradition note: "minister of the gospel" is IRS statutory language and applies functionally
 to rabbis, cantors, imams, priests, deacons, ministers, and pastors who perform sacerdotal
@@ -57,18 +47,9 @@ of specific authorities that a finance committee will not know by name.
   test. Factors: (1) administers sacraments/ordinances, (2) conducts religious worship, (3)
   performs management/leadership in the religious body or an integral agency, (4) is ordained,
   commissioned, or licensed, and (5) is considered a religious leader by the body.
-- **IRC §1402(a)(8) and §1402(c) — SECA on ministerial services**: ministers are treated as
-  self-employed for Social Security and Medicare on both salary and housing allowance. The
-  church **cannot withhold FICA** and does **not** pay the employer match. The clergyperson owes
-  15.3% SECA on the combined base.
-- **IRC §3121(b)(8)(A)** excludes ministerial wages from FICA; **IRC §3401(a)(9)** excludes them
-  from mandatory income-tax withholding, but the clergyperson may **voluntarily** elect
-  withholding on Form W-4 line 4(c) large enough to cover both income tax and SECA (standard
-  pastoral practice, avoids quarterly 1040-ES).
-- **Form 4361 — SECA exemption**: a narrow, **irrevocable** exemption available only to a
-  minister conscientiously opposed on religious (not economic) grounds to accepting public
-  insurance for ministerial services. Filed by the due date of the return for the second taxable
-  year with $400+ of net ministerial earnings. Most clergy do not qualify.
+- **Dual tax status authorities**: IRC §1402(a)(8) and §1402(c) (SECA on ministerial services),
+  §3121(b)(8)(A) (no FICA), §3401(a)(9) (no mandatory income-tax withholding) and Form 4361 (the
+  narrow, irrevocable SECA exemption). Mechanics are under "Dual Tax Status" below.
 - **Treas. Reg. §1.62-2 — Accountable plans**: reimbursements are excluded from wages only if
   the plan meets three tests: (1) business connection, (2) substantiation within a reasonable
   time, (3) return of excess. Fail any test and the entire arrangement is non-accountable and
@@ -86,7 +67,9 @@ of specific authorities that a finance committee will not know by name.
   allowance** by the plan sponsor, extending §107 into retirement — 401(k) and IRA distributions
   cannot; (b) church-plan status exempts the plan from most of ERISA.
 - **IRS Publication 517** (clergy-facing) and **IRS Publication 1828** (church-facing, Tax Guide
-  for Churches and Religious Organizations) are the working reference documents.
+  for Churches and Religious Organizations) are the working reference documents. Rates, dollar
+  thresholds and form line numbers in this skill change; verify current figures in the latest
+  Pub. 517, Pub. 1828 and form instructions before drafting.
 
 ## Standard Deliverables
 
@@ -107,8 +90,9 @@ Every in-scope request resolves into one of these artifacts:
   contemporaneous minutes building the §4958 rebuttable presumption.
 - **W-2 for clergy** — wages in box 1, **no** Social Security or Medicare wages/tax in boxes 3–6,
   housing allowance informationally in box 14 (e.g., "Housing $28,000").
-- **Church finance-committee charter and cash-handling procedure** — counting-team rules,
-  dual-signature threshold, monthly reconciliation review, annual review scope.
+- **Church finance-committee charter and cash-handling procedure** — dual-signature threshold,
+  monthly reconciliation review, annual review scope; counting-team rules come from
+  `nonprofit-faith-stewardship-giving`.
 
 ## Designating the Housing Allowance — Numbered Checklist
 
@@ -167,7 +151,8 @@ payroll services. State it flatly:
   or associate clergyperson.
 - **For Social Security and Medicare on ministerial income**, the same clergyperson is **treated
   as self-employed** and owes **SECA** (15.3%: 12.4% Social Security up to the wage base, 2.9%
-  Medicare, plus 0.9% Additional Medicare above threshold) on **cash salary, designated housing
+  Medicare, plus 0.9% Additional Medicare above threshold; verify current rates and wage base in
+  Pub. 517) on **cash salary, designated housing
   allowance, and the FRV of any parsonage/utilities provided in kind**.
 - **The church cannot withhold FICA** (§3121(b)(8)(A)) and does **not** pay the 7.65% employer
   match. A church that has been withholding FICA is doing it wrong: stop immediately, correct via
@@ -185,7 +170,8 @@ payroll services. State it flatly:
   not "I have my own plan." File by the due date of the return for the second taxable year with
   $400+ net ministerial earnings. **Irrevocable**. Certain Anabaptist, some Pentecostal, and a
   small number of other traditions qualify; most do not. Do not draft one without confirming the
-  minister genuinely holds the required religious opposition.
+  minister genuinely holds the required religious opposition. Verify the current filing rule in
+  the Form 4361 instructions.
 - **Non-ministerial income** (secular professor salary, general-market book royalties, wedding-
   officiant work at a secular venue) is treated normally — regular FICA if W-2, regular
   self-employment if 1099.
@@ -205,7 +191,8 @@ payroll services. State it flatly:
   designation.
 - **Legitimate 1099 cases** are narrow: **guest/supply preacher** paid a one-time honorarium, a
   **visiting scholar**, a **wedding officiant** not on staff, an **itinerant evangelist**, or a
-  **musician** hired for a single service. Issue a 1099-NEC if $600+ in a calendar year.
+  **musician** hired for a single service. Issue a 1099-NEC if $600+ in a calendar year (verify the
+  current reporting threshold in the Form 1099-NEC instructions).
 - **Denominational assignment vs. local call**. In appointive systems (United Methodist, Roman
   Catholic, LDS, some Episcopal functions), the denomination/bishop appoints, but the local
   church is usually the employer of record for payroll unless the denominational structure
@@ -314,7 +301,8 @@ prone activities a congregation does.
 ## Setting Reasonable Clergy Compensation — Building the §4958 Rebuttable Presumption
 
 Senior clergy are "disqualified persons" under IRC §4958 in most churches. Excess benefit
-triggers a 25% excise tax on the clergyperson and 10% on board members who knowingly approved.
+triggers a 25% excise tax on the clergyperson and 10% on board members who knowingly approved
+(verify current rates and caps in the Form 4720 instructions).
 The **rebuttable presumption of reasonableness** shifts the burden to the IRS if built properly.
 Run this whenever senior clergy comp is set or materially changed.
 
@@ -382,7 +370,7 @@ Run this whenever senior clergy comp is set or materially changed.
   - **ICHRA (Individual Coverage HRA)** — no size limit, no dollar cap; employees must be
     enrolled in individual-market coverage; can be varied by defined employee classes.
 - **Minister-only HRA**: informal premium reimbursement outside QSEHRA/ICHRA risks ACA market-
-  reform violations and $100/day/employee penalties. Structure single-clergyperson arrangements
+  reform violations and $100/day/employee penalties (verify the current penalty rule with the IRS). Structure single-clergyperson arrangements
   as a compliant QSEHRA or ICHRA; do not "just reimburse" off-book.
 - **Clergy tax-parity history**: informal reimbursement was penalized during the ACA transition;
   the QSEHRA statute (2016) and ICHRA regulations (2019) restored a compliant path. Confirm
@@ -395,11 +383,10 @@ Run this whenever senior clergy comp is set or materially changed.
 Full internal-controls design is `nonprofit-financial-controls`. This skill covers only the
 church-specific pieces:
 
-1. **Three-person offering-count rule**. Offerings counted by a rotating team of at least two
-   unrelated counters (three is better), none of whom are the senior clergyperson, treasurer, or
-   their family. Counters sign a count sheet listing loose cash, checks by donor, and envelope
-   totals; a separate person posts to the giving database. Most-recommended and most-violated
-   congregational control.
+1. **Offering count**. Use the counting-team protocol in `nonprofit-faith-stewardship-giving`
+   ("Cash Offerings and Counting-Team Protocols"). The finance-specific rule here: the senior
+   clergyperson, treasurer and their families are never counters, and a separate person posts to
+   the giving database.
 2. **Dual signatures on checks over threshold**. Set a written threshold ($1,000 or $2,500
    common) above which two authorized signers are required. Banks typically honor a single
    signature even on two-signature accounts, so the control lives in policy plus monthly
@@ -417,7 +404,7 @@ church-specific pieces:
    (CPA opinion). Graduated options, cheapest to most expensive: **compilation** (no assurance),
    **review** (limited analytical, negative assurance), **audit** (full opinion). Many
    denominations require a review over a budget threshold (~$500K) and an audit over another
-   (~$2M); confirm the denominational rule. State charitable-solicitation registration also
+   (~$2M); confirm the denominational rule and current thresholds. State charitable-solicitation registration also
    imposes audit thresholds in NY, CA, FL and others, though churches are often exempt — see
    `nonprofit-faith-990-exemption`.
 7. **Pastor and treasurer roles do not merge**. The senior clergyperson should not be a check
@@ -426,6 +413,18 @@ church-specific pieces:
 
 Cite **IRS Publication 1828** as the church-facing reference and **IRS Publication 517** as the
 clergy-facing reference. Both are periodically updated; check version before drafting.
+
+## Verify Before Acting
+
+- [ ] The person meets the Rev. Rul. 70-549 functional test, not just the title.
+- [ ] The housing-allowance resolution was adopted and minuted before the first affected payroll
+      date, and the amount used is capped at fair rental value plus utilities.
+- [ ] The W-2 shows wages in box 1, nothing in boxes 3–6, and the housing allowance in box 14.
+- [ ] Love offerings and church-aggregated gifts are in W-2 wages and the SECA base.
+- [ ] State treatment of the housing allowance was checked (some states do not conform).
+- [ ] Any senior-clergy pay change has a §4958 record: independent approval, comparability data,
+      contemporaneous minutes.
+- [ ] Rates, thresholds and form lines were checked against current IRS publications.
 
 ## Common Failure Modes
 
@@ -461,27 +460,13 @@ clergy-facing reference. Both are periodically updated; check version before dra
   trigger $100/day/employee penalties. Fix by adopting a QSEHRA or ICHRA in writing with the
   required participant notice.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the practitioner (church business administrator, treasurer, senior clergy, denominational
-  staffer)**: default conservative because the exposure lands on real people. Adopt the standing
-  housing-allowance resolution with a carry-forward clause. Put the clergyperson on W-2 with
-  voluntary income-tax withholding sized to cover SECA. Adopt a written accountable reimbursement
-  plan and benevolence policy before you need them. Build the §4958 rebuttable presumption every
-  year clergy pay changes. Run housing-allowance / love-offering / benevolence / accountable-
-  plan checks on an annual cycle, not one-offs. If the same person counts the offering, writes
-  checks, and reconciles the bank statement, name that as an unresolved risk and get a finance-
-  committee volunteer to break the loop, even imperfectly.
-- **As the advisor (CPA, attorney, denominational consultant, coach to clergy)**: name the
-  specific authority you are applying — the treasurer will not know §107, Rev. Rul. 70-549,
-  §1.62-2, §4958, Goodwin, Form 4361, or 403(b)(9) by name, and naming them builds trust and
-  protects the advice. Ask three diagnostic questions early: (1) is the person actually a
-  "minister" under the Rev. Rul. 70-549 functional test, or a lay staff member the church is
-  calling one? (2) is the church withholding FICA (a red-flag misconfiguration)? (3) is a written
-  housing-allowance resolution on file, adopted before the first affected payroll date? Work
-  outward from there to accountable reimbursement, benevolence, love-offering handling,
-  retirement structure, and the §4958 cycle. Refuse to draft a Form 4361 without a substantive
-  conversation about religious grounds. Route ministerial-exception, misconduct, and firing
-  questions to `nonprofit-faith-employment-ministerial-exception`; 990-exemption, group-ruling,
-  and church-audit-procedure questions to `nonprofit-faith-990-exemption`; contributor giving
-  statements and quid-pro-quo treatment to `nonprofit-faith-stewardship-giving`.
+- Ask three diagnostic questions early: is the person a "minister" under the Rev. Rul. 70-549
+  functional test, is the church withholding FICA (a red-flag misconfiguration), and is a written
+  housing-allowance resolution on file, adopted before the first affected payroll date?
+- Name the authority you are applying (§107, Rev. Rul. 70-549, §1.62-2, §4958, Goodwin, Form 4361,
+  403(b)(9)); naming them builds trust and protects the advice.
+- Refuse to draft a Form 4361 without a substantive conversation about religious grounds. If one
+  person counts, writes checks and reconciles, name it as an unresolved risk and get a
+  finance-committee volunteer to break the loop.

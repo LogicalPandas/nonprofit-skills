@@ -1,6 +1,6 @@
 ---
 name: nonprofit-faith-religious-liberty-compliance
-description: "US religious-liberty statutory and regulatory framework for faith-based nonprofits (churches, synagogues, mosques, denominational agencies, religiously-affiliated providers): Free Exercise after Smith and Fulton, federal RFRA, RLUIPA land-use and institutionalized-persons claims, Charitable Choice / Equal Treatment Regulations (45 CFR Part 87, 13 CFR Part 113) for federally funded services, ACA contraceptive-mandate accommodations, Section 1557 religious exemptions, Fair Housing Act §3607(a). Use when deciding whether to accept federal funds, responding to a zoning or historic-preservation denial, drafting the beneficiary notice, or evaluating an RFRA/RLUIPA claim. Does not cover faith-based service-delivery mechanics — use nonprofit-faith-programs-social-services; ministerial-exception firings and Title VII religious hiring — use nonprofit-faith-employment-ministerial-exception; physical facility management — use nonprofit-faith-facilities-sanctuary."
+description: "Applies the US religious-liberty framework for faith-based nonprofits: Free Exercise after Smith and Fulton, federal and state RFRA, RLUIPA land-use and institutionalized-persons claims, Charitable Choice / Equal Treatment rules and the beneficiary notice, ACA mandate exemptions, Section 1557 and Fair Housing Act §3607(a). Use when a leader or counsel asks 'should we accept this federal grant', 'the city denied our permit', 'draft the beneficiary notice' or 'does RFRA cover us'. Not for running funded programs (use nonprofit-faith-programs-social-services), ministerial-exception firings (use nonprofit-faith-employment-ministerial-exception) or day-to-day facility use (use nonprofit-faith-facilities-sanctuary)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,44 +12,26 @@ metadata:
 
 # Faith-Based Nonprofit Religious Liberty & Federal-Funding Compliance
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a faith-based nonprofit — a congregation, denominational body, religious
-order, integrated auxiliary, or a religiously-affiliated service provider (rescue mission,
-Catholic Charities-style agency, Jewish federation, Islamic relief group, faith-based recovery
-program, religious school with a nonprofit sponsor) — hits a **statutory or regulatory
-religious-liberty question grounded in US federal law**. Trigger phrases include: "the city
-denied our conditional-use permit," "can we still hire only co-religionists if we take this HHS
-grant," "we got a letter from HHS OCR about Section 1557," "what's the ACA accommodation now,"
-"the historic-preservation commission won't let us expand the sanctuary," "our chaplain can't
-get into the state prison," "the county says we can't run the shelter out of the church," "does
-RFRA cover us," "do we have to give beneficiaries a written notice," "the state RFRA — do we
-even have one," or "the zoning board treats the yoga studio better than our worship space."
+This skill is the legal-compliance frame — statutes, cases, regulations, the beneficiary notice,
+demand letters and the accept-federal-funds decision — for congregations, denominational bodies,
+religious orders and religiously affiliated providers. US-only. It prepares the record and framing
+that counsel signs off on; it does not deliver a legal opinion.
 
-Boundary: this skill handles the **legal-compliance frame** — statutes, cases, regulations,
-notices, demand letters, and the accept-federal-funds decision. Adjacent territory:
-
-- **Program design and service-delivery mechanics** for the food pantry, refugee-resettlement
-  office, recovery program, shelter, or prison-ministry program — case-management flow,
-  referral partners, discipleship-in-service model — is
-  `nonprofit-faith-programs-social-services`. That skill uses the compliance boundaries this
-  skill sets.
-- **Firing a minister, applying Title VII §702 co-religionist hiring to a specific employee**
-  (Hosanna-Tabor, Our Lady of Guadalupe, clergy misconduct) is
-  `nonprofit-faith-employment-ministerial-exception`. This skill handles only the federal-
-  funding overlay on hiring.
-- **Physical facility management of the worship building** — shared-use agreements, wedding
-  and funeral pricing, sexual-misconduct insurance riders, IRC §512(b) rental-income UBIT,
-  property-tax exemption, aging-building capital planning — is
-  `nonprofit-faith-facilities-sanctuary`. This skill owns the RLUIPA legal claim on zoning
-  and historic preservation; facilities-sanctuary owns what the building does day-to-day.
-- **Generic public-policy analysis, legislative advocacy, or 501(h) lobbying-limit bookkeeping**
-  is `nonprofit-policy-analysis` and `nonprofit-legislative-advocacy`.
-- **Generic enterprise risk management, insurance, and incident response** not tied to a
-  religious-liberty statute is `nonprofit-risk-management`.
-
-US-only. Prepares the record and the framing that counsel signs off on; does not deliver a
-legal opinion.
+- Program design and service delivery (pantry, resettlement office, recovery program, shelter,
+  prison ministry) → `nonprofit-faith-programs-social-services`, which applies the boundaries and
+  the notice rule set here.
+- Firing a minister or applying Title VII §702 to a specific employee (Hosanna-Tabor, Our Lady of
+  Guadalupe, clergy misconduct) → `nonprofit-faith-employment-ministerial-exception`; this skill
+  handles only the federal-funding overlay on hiring.
+- Day-to-day facility management, shared use, rental UBIT and property tax →
+  `nonprofit-faith-facilities-sanctuary` (and `nonprofit-faith-990-exemption` for UBIT); this skill
+  owns the RLUIPA legal claim on zoning and historic preservation.
+- Generic policy analysis, legislative advocacy and 501(h) lobbying limits →
+  `nonprofit-policy-analysis`, `nonprofit-legislative-advocacy`.
+- Generic risk management and insurance not tied to a religious-liberty statute →
+  `nonprofit-risk-management`.
 
 ## Core Frameworks
 
@@ -58,19 +40,15 @@ pattern — a zoning denial on a proposed food pantry — produces very differen
 depending on whether you are teeing up a Free Exercise claim, a RLUIPA equal-terms claim, or a
 state-law claim.
 
-- **Free Exercise Clause of the First Amendment** — the constitutional baseline. Under
-  **Employment Division v. Smith, 494 US 872 (1990)**, a neutral, generally applicable law does
-  not require a religious exemption. Under **Fulton v. City of Philadelphia, 593 US 522 (2021)**
-  and **Tandon v. Newsom, 593 US 61 (2021)**, a law is not generally applicable if it contains
-  a mechanism for individualized exceptions or secular carve-outs — reopening strict scrutiny
-  even under Smith. **Kennedy v. Bremerton School District, 597 US 507 (2022)** signaled
-  continued judicial discomfort with Smith without overruling it. Treat Smith as unstable but
-  still controlling until the Court says otherwise.
-- **Triggers for strict scrutiny under Smith**: (1) not neutral (targets religion —
-  **Church of the Lukumi Babalu Aye v. City of Hialeah, 508 US 520 (1993)**); (2) not generally
-  applicable because of secular exceptions or individualized assessments (Fulton, Tandon);
-  (3) hybrid-rights (Smith dicta, Wisconsin v. Yoder); (4) regulation of internal church
-  governance (Hosanna-Tabor — belongs to `nonprofit-faith-employment-ministerial-exception`).
+- **Free Exercise Clause** — under **Employment Division v. Smith, 494 US 872 (1990)**, a neutral,
+  generally applicable law needs no religious exemption. Strict scrutiny returns when a law is not
+  neutral (**Church of the Lukumi Babalu Aye v. City of Hialeah, 508 US 520 (1993)**), is not
+  generally applicable because of individualized or secular exceptions (**Fulton v. City of
+  Philadelphia, 593 US 522 (2021)**; **Tandon v. Newsom, 593 US 61 (2021)**), raises hybrid rights
+  (Smith dicta, Wisconsin v. Yoder), or regulates internal church governance (Hosanna-Tabor —
+  `nonprofit-faith-employment-ministerial-exception`). **Kennedy v. Bremerton School District, 597
+  US 507 (2022)** signaled discomfort with Smith without overruling it; treat Smith as unstable
+  but controlling.
 - **Religious Freedom Restoration Act (RFRA), 42 USC §§2000bb–bb-4** — a statutory strict-
   scrutiny test that Congress restored after Smith. Applies to **federal government action
   only**: **City of Boerne v. Flores, 521 US 507 (1997)** struck RFRA as applied to states.
@@ -79,33 +57,17 @@ state-law claim.
   governmental interest** and (3) is the **least restrictive means** of furthering that
   interest. **Burwell v. Hobby Lobby Stores, 573 US 682 (2014)** confirmed that closely-held
   for-profits can invoke RFRA — a fortiori, religious nonprofits can.
-- **RFRA in the accommodation-mandate line**: **Zubik v. Burwell, 578 US 403 (2016)** vacated
-  and remanded the religious-nonprofit contraceptive-mandate cases; **Little Sisters of the
-  Poor v. Pennsylvania, 591 US 657 (2020)** upheld the expanded HRSA religious and moral
-  exemptions. Doctrinal frame: a self-certification requirement the plaintiff religiously
-  opposes can itself be the substantial burden.
-- **State RFRAs and state constitutional protections** — highly variable. Roughly two dozen
-  states have a RFRA (Indiana, Texas, Illinois, Florida, Alabama, others); several state
-  supreme courts have read their free-exercise clauses to require strict scrutiny of neutral
-  laws (Alaska, Massachusetts, Minnesota, Washington, others); the rest have neither. Never
-  assume; check.
+- **RFRA in the mandate line**: **Zubik v. Burwell, 578 US 403 (2016)** and **Little Sisters of
+  the Poor v. Pennsylvania, 591 US 657 (2020)** — see the ACA deep dive.
+- **State RFRAs and state constitutional protections** — highly variable; see "Deep Dive:
+  State-Law Coverage". Never assume; check.
 - **Religious Land Use and Institutionalized Persons Act (RLUIPA), 42 USC §§2000cc et seq.** —
-  Congress's post-Boerne re-entry into state-and-local territory via the Spending and Commerce
-  Clauses.
-  - **§2(a) substantial-burden**: a land-use regulation substantially burdening religious
-    exercise triggers strict scrutiny when it involves individualized assessments, unequal-
-    terms treatment, or federal funding.
-  - **§2(b)(1) equal-terms**: no less-than-equal treatment of a religious assembly relative to
-    a nonreligious comparator; no substantial-burden showing required (circuit split on
-    comparator selection — Third Circuit "regulatory purpose" vs. Eleventh Circuit "natural
-    perimeter").
-  - **§2(b)(2) nondiscrimination** and **§2(b)(3) unreasonable-limits**: no discrimination by
-    religion or denomination; no total or unreasonable restriction on religious assemblies.
-  - **§3 institutionalized persons**: RFRA-style strict scrutiny for prisoners, state mental-
-    hospital patients, and state-funded halfway-house residents. **Cutter v. Wilkinson, 544 US
-    709 (2005)**; **Holt v. Hobbs, 574 US 352 (2015)**.
-  - Enforcement: **DOJ Civil Rights Division** — Housing and Civil Enforcement Section (Place
-    to Worship Initiative) for land-use; Special Litigation Section for §3.
+  Congress's post-Boerne re-entry into state and local territory. Land-use claims: §2(a)
+  substantial burden, §2(b)(1) equal terms, §2(b)(2) nondiscrimination, §2(b)(3) unreasonable
+  limits (applied in the land-use checklist). §3 institutionalized persons: **Cutter v.
+  Wilkinson, 544 US 709 (2005)**; **Holt v. Hobbs, 574 US 352 (2015)**. Enforcement: DOJ Civil
+  Rights Division — Housing and Civil Enforcement Section (Place to Worship Initiative) for land
+  use; Special Litigation Section for §3.
 - **Charitable Choice / Equal Treatment Regulations** — the federal framework for religious
   providers of federally funded services. Statutory root: 1996 welfare reform Charitable Choice
   (42 USC §604a). Operational framework: parallel agency "Equal Treatment" regulations at
@@ -113,23 +75,17 @@ state-law claim.
   76.52 (Education), 7 CFR Part 16 (USDA), 28 CFR Part 38 (DOJ), 29 CFR Part 2 Subpart D (DOL),
   6 CFR Part 19 (DHS), 22 CFR Part 205 (USAID), 38 CFR Part 50 (VA)**. Beneficiary-notice and
   referral requirements have moved across the Bush, Obama, Trump, and Biden administrations;
-  verify the operative executive order before drafting.
+  verify the operative executive order and agency rule in the Federal Register before drafting.
+  This skill owns the beneficiary-notice rule for the faith-based family.
 - **ACA §1557 nondiscrimination**, 42 USC §18116 and **45 CFR Part 92** — prohibits
   discrimination in health programs receiving federal financial assistance on race, color,
   national origin, sex, age, or disability. The rule's RFRA interaction on gender-identity and
   pregnancy-termination provisions is ongoing litigation (Franciscan Alliance v. Becerra line);
   verify current injunctions in the plaintiff's circuit.
-- **Fair Housing Act §3607(a), 42 USC §3607(a)** — exempts religious organizations from FHA's
-  religion-based discrimination provisions when providing housing to co-religionists, provided
-  the housing is not operated commercially and membership is not restricted on race, color, or
-  national origin.
-- **Title II of the Civil Rights Act (public accommodations), 42 USC §2000a** — prohibits
-  discrimination on race, color, religion, or national origin at covered establishments.
-  Test the facility/activity categories, commerce or State-action connection, and any
-  §2000a(e) private-club/not-open-to-public exception; religious ownership alone does not
-  establish an exemption. Assess state-law coverage separately. **Masterpiece Cakeshop**
-  and **303 Creative** supply narrow, fact-dependent constitutional doctrines, not blanket
-  religious-organization defenses; see the public-accommodation workflow below.
+- **Fair Housing Act §3607(a)** and **Title II of the Civil Rights Act, 42 USC §2000a** — see the
+  Fair Housing and Public-Accommodation deep dives. Religious ownership alone does not establish a
+  Title II exemption; **Masterpiece Cakeshop** and **303 Creative** are narrow, fact-dependent
+  doctrines, not blanket defenses.
 - **Religious-worker immigration** — R-1 nonimmigrant and EB-4 special immigrant religious
   worker (8 USC §1101(a)(15)(R) and §1101(a)(27)(C)). Compliance touchpoint only; deep
   immigration work is out of scope.
@@ -211,7 +167,7 @@ discovering the religious-character trade-offs at the first audit.
    subject) or providing an isolated service? Verify current HHS OCR guidance and the status
    of Franciscan Alliance-line injunctions in the circuit. Model financial-audit exposure
    under 2 CFR Part 200 (Uniform Guidance) and Single Audit Act thresholds ($750,000 in
-   federal funds triggers a Single Audit — verify current FY threshold).
+   federal funds triggers a Single Audit — verify current FY threshold in 2 CFR 200.501).
 10. **Board decision with a mission-drift trip-wire**: the decision memo goes to the board
     with three columns — what we gain (revenue, reach, credibility), what we give up
     (separation costs, notice-and-referral obligation, audit exposure, hiring uncertainty),
@@ -244,7 +200,9 @@ starting negotiations without preserving the record for a §2(a), §2(b)(1), or 
 3. **Build the comparator record for §2(b)(1)**: identify every nonreligious assembly permitted
    in the same zone in the last 5–10 years — approvals, denials, conditions, parking waivers,
    hours restrictions, occupancy limits. Public-records requests to the planning department and
-   zoning board. The comparator record often does the work of the case.
+   zoning board. The comparator record often does the work of the case. Comparator selection is
+   subject to a circuit split (Third Circuit "regulatory purpose" vs. Eleventh Circuit "natural
+   perimeter"); check the circuit's current test.
 4. **Document the substantial burden** (if pursuing §2(a)): what religious exercise is
    burdened, why the burden exceeds inconvenience, why no reasonable alternative site or
    configuration exists, accommodations sought and denied, and ripple effects on the community
@@ -348,6 +306,22 @@ current model notice — the Biden-era HHS rule (89 FR 15671, March 4, 2024) res
 alternative-provider referral requirement that Trump-era EO 13831 had rolled back for HHS
 programs; agencies vary and the operative rule can move.
 
+Notice skeleton — adapt to the operative agency's current model language; counsel reviews before use:
+
+```
+[Organization name] is a religious organization. Because this program receives
+[agency] funds:
+- We may not discriminate against you on the basis of religion, a religious
+  belief, or refusal to hold a religious belief or attend a religious practice.
+- We may not require you to attend or participate in any religious activity.
+  Any religious activity we offer is voluntary and separate from this program.
+- [If the operative rule requires it] You may ask to be referred to another
+  provider of this service. To request a referral, contact [name, phone, email].
+  We will make the referral within [timeframe required by the rule].
+- To report a concern, contact [agency civil-rights office and contact details].
+Received by: ______________  Date: ________  Language provided: ________
+```
+
 ## Deep Dive: ACA Contraceptive-Mandate Accommodation
 
 A moving target across three regulatory layers:
@@ -431,8 +405,7 @@ any applicable exceptions or defenses with counsel. Treat expressive-speech and 
 defenses as narrow and fact-dependent; retain the counsel-review gate before use.
 
 Title II reference: [DOJ statutory text, 42 USC §2000a](https://www.justice.gov/crt/title-ii-civil-rights-act-public-accommodations).
-Last checked September 16, 2026; this is not a determination that
-any particular faith-based venue is covered or exempt.
+This is not a determination that any particular faith-based venue is covered or exempt.
 
 ## Deep Dive: Fair Housing Act §3607(a)
 
@@ -457,6 +430,19 @@ placements run by faith-based organizations face the direct-vs-indirect funding 
 the contracting side and RLUIPA §3 on the resident-rights side simultaneously. **DOJ Civil
 Rights Division, Special Litigation Section** enforces §3 claims; complaints trigger
 investigations.
+
+## Verify Before Acting
+
+Self-check before the file goes to counsel:
+
+- [ ] The acting sovereign (federal, state, local, institution) and the matching statute are named.
+- [ ] The operative CFR part, executive order and agency model notice were checked against the
+      current Federal Register, not this skill's summary.
+- [ ] Direct vs. indirect classification is in writing from the awarding agency.
+- [ ] The state RFRA and state constitutional doctrine were verified for this state.
+- [ ] For land use: litigation hold sent, open-records requests filed, comparator record started.
+- [ ] Every case cite and dollar threshold was checked for current status.
+- [ ] Nothing is sent, signed or filed before counsel review, per the supervision note.
 
 ## Common Failure Modes
 
@@ -491,30 +477,16 @@ investigations.
   religious character then produces a governance crisis. Fix by putting every federal-funds
   acceptance on the board agenda with the decision memo and named trip-wires.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the executive director, senior pastor/rabbi/imam, or church administrator**: verify
-  three things before you say yes to federal money — (1) the operative CFR part and current
-  executive order for the awarding agency, (2) direct vs. indirect classification in writing
-  from the agency, and (3) the state RFRA / state constitutional coverage your state actually
-  provides. Bring the accept-federal-funds decision to the board with the three-column memo
-  (gain, give up, trip-wires), and adopt the religious-character preservation policy and the
-  separation plan at the same meeting you accept the funds — not after. When the zoning,
-  historic-preservation, or corrections letter arrives, do not negotiate before the
-  litigation hold and open-records request go out; the record you preserve in the first two
-  weeks decides the case. Never rely on Masterpiece or 303 Creative as a general public-
-  accommodation defense; check federal and state/local coverage and applicable exceptions
-  separately, and get counsel signoff before you decline any service on a religious-liberty theory.
-- **As counsel or an advisor to a faith-based nonprofit**: your first move is always to name
-  the operative statute and the operative sovereign — federal action gets RFRA and Free
-  Exercise; state or local land use gets RLUIPA §2; institutional custody gets RLUIPA §3;
-  state action outside land use and custody gets the state RFRA if there is one, the state
-  constitutional doctrine if the state supreme court has articulated one, and Fulton-based
-  Free Exercise if the challenged law has individualized-assessment or secular-exception
-  provisions. Do not lead with the strongest-sounding theory; lead with the theory that
-  survives the actor and standard-of-review analysis. Push clients to preserve the record
-  before they negotiate, to get direct-vs-indirect classification in writing before they
-  design the program, and to bring the accept-federal-funds decision to the board with the
-  trip-wires named — because the mission-drift risk is not the first year of federal money,
-  it is year three when the funder's technical-assistance office suggests removing the cross,
-  the mezuzah, or the Qur'an from the intake room "for compliance."
+- Name the operative statute and sovereign first: federal action gets RFRA and Free Exercise;
+  state or local land use gets RLUIPA §2; institutional custody gets RLUIPA §3; other state action
+  gets the state RFRA, state constitutional doctrine, or Fulton-based Free Exercise. Lead with the
+  theory that survives the actor and standard-of-review analysis, not the strongest-sounding one.
+- Push clients to preserve the record before they negotiate and to get direct-vs-indirect
+  classification in writing before they design the program.
+- Bring every accept-federal-funds decision to the board with the three-column memo (gain, give
+  up, trip-wires) and adopt the religious-character policy and separation plan at the same
+  meeting; the mission-drift risk is year three, when the funder suggests removing the cross, the
+  mezuzah or the Qur'an from the intake room "for compliance." Never rely on Masterpiece or 303
+  Creative as a general defense; get counsel signoff before declining any service.
