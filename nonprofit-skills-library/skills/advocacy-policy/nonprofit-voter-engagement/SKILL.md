@@ -1,6 +1,6 @@
 ---
 name: nonprofit-voter-engagement
-description: "Designs and runs nonpartisan voter registration, voter education, and get-out-the-vote (GOTV) activities that stay compliant with 501(c)(3) rules against candidate/party endorsement. Use when a user asks to plan a voter registration drive, build a nonpartisan candidate forum or voter guide, design a GOTV or 'vote early' reminder campaign, train staff/volunteers on what a 501(c)(3) can and can't say about elections, or review event/social content for partisan-neutrality risk before publishing. Covers nonpartisan electoral participation activity specifically; issue-based lobbying on bills/regulations is not electoral activity and belongs to nonprofit-legislative-advocacy or nonprofit-policy-analysis, and general non-election supporter action campaigns belong to nonprofit-grassroots-mobilization."
+description: "Designs nonpartisan voter registration, voter education, candidate forums and get-out-the-vote (GOTV) activities that stay within the 501(c)(3) ban on candidate and party intervention. Use when asked 'plan a voter registration drive at our center,' 'can we host a mayoral candidate forum,' 'build a nonpartisan voter guide,' or 'what can staff say about the election.' Not for bill or regulation advocacy (use nonprofit-legislative-advocacy or nonprofit-policy-analysis), non-election action alerts (use nonprofit-grassroots-mobilization), or a c4 entity for candidate work (use nonprofit-c3-c4-structure)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -11,23 +11,11 @@ metadata:
 
 # Nonprofit Voter Engagement
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for any nonprofit activity that touches elections or voting, always through a
-strict nonpartisan lens:
+Every activity that touches elections or voting runs through a strict nonpartisan lens, including
+pre-publication review of social posts, newsletters and event descriptions.
 
-- Planning and running a voter registration drive (in-person, online, or via program participants)
-- Building nonpartisan voter education materials: side-by-side candidate questionnaires, ballot
-  measure explainers, "where to vote" / "how to register" guides
-- Hosting a candidate forum or debate where all qualified candidates are invited on equal terms
-- Designing a GOTV (get-out-the-vote) reminder campaign: registration deadline alerts, early-voting
-  reminders, polling place information
-- Training staff, board, or volunteers on the 501(c)(3) bright lines around election activity before
-  an election cycle
-- Reviewing planned content (social posts, newsletters, event descriptions) for partisan-neutrality
-  risk before it publishes
-
-**Boundary — hand off when the ask is:**
 - Advocacy on a specific bill or regulation (not tied to a candidate election) → `nonprofit-legislative-advocacy`
   for direct engagement or `nonprofit-policy-analysis` for the underlying research
 - A general (non-election) action alert or petition campaign → `nonprofit-grassroots-mobilization`
@@ -63,7 +51,16 @@ from the facts-and-circumstances test the IRS actually uses):
 
 Any single activity can pass or fail this test on its own facts — there is no safe harbor from
 volume or good intentions; document the even-handedness of each activity (invitation lists, materials
-used) in case of audit.
+used) in case of audit. Record the check per activity before launch:
+
+| Activity: [name, date] | Pass? | Evidence kept (file/location) |
+|---|---|---|
+| 1. Even-handed across all qualified candidates/parties | [ ] | [invitation list, dated sends] |
+| 2. No approval/disapproval of any candidate | [ ] | [scripts, content reviewed] |
+| 3. Timing and scope match prior cycles, not one race | [ ] | [prior-cycle calendar] |
+| 4. Broad audience, not partisan-targeted | [ ] | [targeting criteria] |
+| 5. Neutral, factual content; disclaimer present | [ ] | [final materials] |
+| Pre-clearance by designated reviewer or counsel | [ ] | [name, date] |
 
 ## Standard Activity Designs
 
@@ -121,18 +118,14 @@ used) in case of audit.
   untrained staffer's offhand social post, not a deliberate governance decision — refresh training
   every cycle, not just once.
 
-## Practitioner vs. Advisor Application
+## For advisors
 
-- **As the practitioner (ED, program, or comms staff):** Run every planned election-cycle activity
-  through the five-factor nonpartisanship test before launch, document even-handedness (invite lists,
-  identical scripts/questions), and hold a refresher training for all staff/board every election
-  cycle, not just new hires.
-- **As an advisor/consultant:** When a client wants to "do more" during an election cycle, first
-  separate what's an absolute bar (candidate intervention) from what's merely capped (issue/ballot
-  measure lobbying under 501(h)) — many clients self-censor legitimate ballot-measure advocacy out of
-  confusion with the candidate rule, while others under-appreciate that there's no safe dollar amount
-  for candidate intervention. Recommend a documented pre-clearance review step for any content
-  mentioning a candidate by name during an active election cycle.
+- When a client wants to "do more" during an election cycle, first separate what's an absolute bar
+  (candidate intervention) from what's merely capped (issue/ballot measure lobbying under 501(h)) — many
+  clients self-censor legitimate ballot-measure advocacy, while others under-appreciate that there's no
+  safe dollar amount for candidate intervention.
+- Recommend a documented pre-clearance review step for any content mentioning a candidate by name during
+  an active election cycle.
 
 ## Example
 
