@@ -1,6 +1,6 @@
 ---
 name: nonprofit-program-scaling
-description: "Provides frameworks for scaling, replicating, or expanding a proven nonprofit program to new sites, geographies, or populations, including readiness-to-scale assessment, fidelity-vs-adaptation tradeoffs, replication models (direct site expansion, licensing/affiliate, open-source toolkit), and the operational/staffing/funding infrastructure scaling requires. Use when a user asks whether a program is ready to scale or replicate, how to expand a program to a new city or population, how to adapt a program for a new context without losing what made it work, how to build a replication toolkit or affiliate model, or how to plan the staffing/systems needed to grow program capacity. Covers growth of an already-proven program specifically, not initial program design (nonprofit-program-design), not evaluation methodology used to prove the program works in the first place (nonprofit-outcomes-measurement), and not organization-wide revenue or business-model diversification (nonprofit-revenue-diversification)."
+description: "Plans scaling, replication, or expansion of a proven nonprofit program to new sites or populations: readiness-to-scale assessment, fidelity vs. adaptation, choice of replication model, program-in-a-box, and the staffing, systems, and growth capital scale requires. Use when asked \"is this program ready to scale,\" \"expand to three new cities without diluting it,\" \"should we license this to affiliates,\" or \"adapt it for a new population.\" Not for initial program design (use nonprofit-program-design), evaluation methodology (use nonprofit-outcomes-measurement), revenue-model diversification (use nonprofit-revenue-diversification), or mergers (use nonprofit-mergers-fiscal-sponsorship)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,31 +11,16 @@ metadata:
 
 # Nonprofit Program Scaling
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a program has already shown evidence it works and the question is how to grow
-its reach — to more people, more sites, or new geographies — without losing what makes it effective.
-Concrete triggers:
-
-- "Is this program ready to scale?"
-- "We want to expand this program to three new cities — how do we do that without diluting it?"
-- "Should we franchise/license this program to other organizations, or run it ourselves at new sites?"
-- "How do we adapt this program for a different population/cultural context?"
-- "Build a replication toolkit / program-in-a-box for affiliate sites."
-- "What staffing and systems do we need to support this growth?"
-
-**Boundary — read before starting:**
-- Designing the original program's logic model/theory of change is `nonprofit-program-design` — this
-  skill assumes a working model already exists and is being extended, not created.
-- The evaluation methodology used to establish that the program works in the first place is
-  `nonprofit-outcomes-measurement` — this skill uses evaluation *results* as a scaling-readiness input
-  but doesn't design the evaluation itself.
-- Broader organizational revenue-model diversification (earned income, social enterprise) is
-  `nonprofit-revenue-diversification` — this skill is about programmatic reach, not revenue mix,
-  even though scaling usually requires new funding.
-- Formal merger, consolidation, or fiscal sponsorship structures with another organization are
-  `nonprofit-mergers-fiscal-sponsorship`; use this skill for scaling your own program, not combining
-  organizations.
+- Designing the original logic model/theory of change: `nonprofit-program-design`. This skill assumes
+  a working model exists and is being extended.
+- Designing the evaluation that proves the program works: `nonprofit-outcomes-measurement`. This
+  skill uses evaluation results as a readiness input.
+- Organizational revenue-model diversification (earned income, social enterprise):
+  `nonprofit-revenue-diversification`. This skill is about programmatic reach, not revenue mix.
+- Merger, consolidation, or fiscal sponsorship with another organization:
+  `nonprofit-mergers-fiscal-sponsorship`.
 
 ## Core Frameworks
 
@@ -63,18 +48,21 @@ Entrepreneurship):
 
 ### 2. Fidelity vs. Adaptation Framework
 
-The central tension in all program replication:
-- **Fidelity** = replicating the program faithfully to preserve the elements that produced the
-  proven outcome.
-- **Adaptation** = adjusting the program to fit a new context's culture, resources, population, or
-  regulatory environment.
+The central tension in all program replication is fidelity (preserving what produced the proven
+outcome) vs. adaptation (fitting a new context's culture, resources, population, or regulations).
 - **The core task is distinguishing "core components" (must stay fixed) from "adaptable
   periphery" (can and should flex).** Common core components: dosage/intensity (how much service,
   how often), staff qualifications/training model, curriculum sequencing, target population
   eligibility criteria. Common adaptable periphery: language, specific examples/materials, delivery
   location, partnership structure, minor scheduling.
-- Document this explicitly as a **fidelity matrix**: component | core or adaptable | rationale |
-  acceptable range of variation | how fidelity will be monitored at the new site.
+- Document this explicitly as a **fidelity matrix** (main deliverable):
+
+| Component | Core or adaptable | Rationale | Acceptable variation | Fidelity monitoring at new site |
+|---|---|---|---|---|
+| Example (illustrative): weekly 1:1 coaching, 12 sessions | Core | Dosage is the active ingredient in the original outcome data | 10–14 sessions; no group substitution | Session logs reviewed quarterly |
+| Example (illustrative): workshop examples and materials | Adaptable | Local relevance drives uptake | Swap examples, translate; keep learning objectives | Annual curriculum review |
+| [Component] | [ ] | [ ] | [ ] | [ ] |
+
 - Failure to distinguish these leads to two opposite failure modes: **rigid over-fidelity** (forcing
   an urban curriculum unchanged onto a rural site where it doesn't fit, causing poor uptake) or
   **fidelity drift** (so much local adaptation that the new site no longer delivers the elements that
@@ -159,21 +147,17 @@ direct expansion or a tightly managed affiliate model.
   disappointing, deliverable — clients often arrive already committed to a specific expansion
   (a new city, a board member's pet site) and need an honest capacity/evidence gap-check before the
   advisor helps them build the expansion plan itself.
-- Facilitate the core-vs-adaptable-periphery exercise (fidelity matrix) directly with frontline
-  delivery staff, not only executive leadership — this is where advisors most often catch a model
-  leadership believes is "the curriculum" but staff know is actually "the relationship the coordinator
-  builds," which changes the whole scaling strategy.
+- In the fidelity-matrix exercise with frontline staff, watch for a model leadership believes is
+  "the curriculum" but staff know is actually "the relationship the coordinator builds"; that
+  changes the whole scaling strategy.
 - When a client wants to move fast via open-source/toolkit dissemination for reach or visibility,
   make the fidelity/attribution tradeoff explicit in writing — funders sometimes want the aggregate
   outcome story a franchise/affiliate model can deliver, which open dissemination cannot.
-- Standard advisory deliverable: a scaling readiness memo (with a go/no-go or "not yet" recommendation
-  and what would need to be true to proceed), a fidelity matrix, a replication model recommendation
-  with rationale, and — if proceeding — a program-in-a-box outline and growth-capital funding ask
-  separate from the core program budget.
 
 ## Standard Deliverables
 
-- Readiness-to-scale assessment memo (evidence, model clarity, capacity, funding runway, demand)
+- Readiness-to-scale assessment memo (evidence, model clarity, capacity, funding runway, demand), with
+  a go / no-go / "not yet" recommendation and what would need to be true to proceed
 - Fidelity matrix (core components vs. adaptable periphery, with rationale and monitoring plan)
 - Replication model recommendation (direct expansion / affiliate-licensing / open-source /
   systems adoption) with rationale
