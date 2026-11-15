@@ -1,6 +1,6 @@
 ---
 name: nonprofit-digital-fundraising-tools
-description: "Evaluates and sets up online giving platforms (e.g., Classy, Donorbox, GiveButter, Qgiv, Network for Good), peer-to-peer/crowdfunding fundraising technology, payment processors and gateways (Stripe, PayPal, Authorize.Net), recurring-gift/subscription billing setup, and transaction fee modeling. Use for online giving platform selection, payment processor comparison, recurring donation setup, peer-to-peer platform configuration, and donation form technical setup (fields, redirects, receipts, Apple/Google Pay). Does not cover CRM/database selection or data hygiene (nonprofit-donor-crm), PCI compliance policy or data privacy (nonprofit-data-privacy), or donation page persuasive copywriting (nonprofit-donation-page-copy)."
+description: "Evaluates and sets up the tools that process online gifts: giving platforms, peer-to-peer and crowdfunding platforms, payment processors and gateways, recurring-gift billing with card updater and dunning, donation form technical setup, and fee and total-cost modeling. Use for 'which online giving platform should we use,' 'compare payment processor fees,' 'set up monthly giving with failed-card retries,' or 'should we cover fees or pass them to donors.' Not for CRM selection or data hygiene (use nonprofit-donor-crm), PCI scope or privacy (use nonprofit-data-privacy), donation page copy (use nonprofit-donation-page-copy), or peer-to-peer campaign strategy (use nonprofit-peer-to-peer-fundraising)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,23 +11,11 @@ metadata:
 
 # Nonprofit Digital Fundraising Tools
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the request is about the *technology stack* that processes and moves online
-gifts, not the database that stores donor history or the words on the page. Concrete triggers:
+This skill covers the technology stack that processes and moves online gifts, not the database that
+stores donor history or the words on the page. Hand off instead of answering here:
 
-- "Compare Classy vs. Donorbox vs. GiveButter vs. Qgiv vs. Network for Good for our online
-  giving."
-- "Which payment processor should we use — Stripe, PayPal, Authorize.Net — and what are the fee
-  structures?"
-- "Set up recurring/monthly giving with automatic retry on failed cards."
-- "We're launching a peer-to-peer walk/run — what platform handles team fundraising pages?"
-- "Should we cover processing fees or pass them to the donor, and how do we build that into the
-  form?"
-- "Add Apple Pay/Google Pay and a mobile-optimized checkout to our donation form."
-- "Our recurring donors' cards are expiring — set up dunning/card-updater."
-
-**Boundary — hand off instead of answering here:**
 - Which CRM stores the donor record, dedup, and segmentation → `nonprofit-donor-crm` (most giving
   platforms integrate with a CRM; this skill covers the giving/payment tool, the CRM skill covers
   the system of record).
@@ -42,7 +30,8 @@ gifts, not the database that stores donor history or the words on the page. Conc
 ### 1. Separate three decisions that get conflated
 
 1. **Giving platform** (the donation page/checkout experience and campaign tools): Classy,
-   Donorbox, GiveButter, Qgiv, Network for Good, Bloomerang Giving Tools, Kindful.
+   Donorbox, GiveButter, Qgiv, Network for Good, Bloomerang Giving Tools, Kindful. Product names and
+   ownership change often; verify the current lineup on vendor sites before naming options.
 2. **Payment processor/gateway** (who actually moves the money): Stripe, PayPal, Authorize.Net,
    often bundled inside the giving platform's contract but sometimes a separate merchant account.
 3. **CRM/system of record** (`nonprofit-donor-crm`): where the gift and constituent history live
@@ -50,6 +39,16 @@ gifts, not the database that stores donor history or the words on the page. Conc
 
 Many platforms bundle #1 and #2; almost none replace #3. Confirm what syncs automatically to the
 CRM (real-time API, nightly batch, or manual CSV export) before assuming integration exists.
+
+**Default shortlist heuristic** (instead of a flat vendor list):
+- Start with the giving tools native to, or natively integrated with, the org's current CRM; a
+  platform without a native sync must justify the reconciliation work it adds.
+- Low or irregular online volume: favor no-monthly-fee platforms (percentage or donor-tip models).
+- Steady, higher volume: compare flat SaaS fees against percentage fees at the org's actual volume;
+  a flat fee wins once annual online volume x the percentage platform fee exceeds the flat fee.
+- Large recurring share: weight card updater, dunning, and processor token portability above
+  campaign features.
+- Peer-to-peer or event-heavy: shortlist platforms with combined registration-plus-donation checkout.
 
 ### 2. Compare platforms on fee structure, not just sticker price
 
@@ -59,7 +58,8 @@ Standard deliverable: a **fee and feature comparison table** covering:
   monetized through an optional donor-paid tip/cover-fee prompt (Classy, GiveButter, and Donorbox
   all use variants of this "donor covers fees" model).
 - **Payment processing fee**: typically 2.2%-2.9% + $0.30/transaction for card payments; ACH/bank
-  transfer is usually cheaper (often under 1%) and worth offering for larger gifts.
+  transfer is usually cheaper (often under 1%) and worth offering for larger gifts. Verify current
+  published pricing on each vendor's nonprofit pricing page before quoting any fee.
 - **Peer-to-peer/event fees**: often a separate, higher fee tier layered on top of standard giving
   fees.
 - **Nonprofit discount rates**: PayPal, Stripe, and several platforms offer reduced nonprofit
@@ -68,10 +68,24 @@ Standard deliverable: a **fee and feature comparison table** covering:
   the advertised headline rate — a platform with a higher percentage but donor-covered fees can
   net the org more than a "cheaper" one where the org absorbs all fees.
 
+**Comparison table skeleton** (worked numbers are illustrative only; replace with the org's gift data
+and each vendor's current published rates):
+
+| Line | Platform A | Platform B |
+|------|------------|------------|
+| Annual online volume / gift count | $100,000 / 1,000 | $100,000 / 1,000 |
+| Platform fee | $0 (donor tip model) | $1,200/yr flat |
+| Card processing (illustrative 2.9% + $0.30) | $3,200 | $3,200 |
+| Donor-covered fee opt-in (org's assumption) | 60% | 0% (org absorbs) |
+| Fees absorbed by org | $1,280 | $4,400 |
+| Net to mission | $98,720 | $95,600 |
+| CRM sync (native / middleware / CSV) | | |
+| Recurring: card updater, dunning, token export | | |
+| Peer-to-peer / event fee tier | | |
+
 ### 3. Recurring giving setup
 
-Recurring/monthly giving is the highest-retention revenue stream nonprofits have; configure it
-deliberately:
+Configure recurring giving deliberately:
 
 1. Set the default recurring cadence prominently (monthly) with one-time as the secondary option,
    not the reverse — form design measurably shifts donors toward whichever option is emphasized.
@@ -97,15 +111,14 @@ deliberately:
 
 ### 5. Technical form setup checklist
 
-1. Mobile-responsive checkout with Apple Pay/Google Pay enabled — mobile now represents the
-   majority of nonprofit web traffic for many organizations, and one-click wallet payment options
-   measurably reduce checkout abandonment.
+1. Mobile-responsive checkout with Apple Pay/Google Pay enabled; wallet payment options reduce
+   checkout abandonment.
 2. Automatic tax-receipt email on completion, correctly formatted per IRS substantiation rules for
    gifts (statement that no goods/services were provided, or fair market value of any provided).
 3. Redirect/thank-you page and confirmation email configured — don't leave donors on a generic
    processor confirmation screen.
-4. UTM/source tracking on campaign links so results tie back to the specific appeal or campaign
-   driving traffic (coordinate with whatever email/social tools generate the links).
+4. Source tracking on campaign links so gifts tie back to the specific appeal, and confirm the source
+   field carries through to the CRM gift record.
 5. Test the full donor path (new card, recurring setup, Apple Pay, failed-card scenario) before
    launch — a broken checkout on a high-traffic day (year-end, Giving Tuesday) is the most common
    and costly technical failure mode.

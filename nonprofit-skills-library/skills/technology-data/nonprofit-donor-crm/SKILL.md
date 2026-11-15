@@ -1,6 +1,6 @@
 ---
 name: nonprofit-donor-crm
-description: "Selects and configures a donor CRM/database (e.g., Salesforce Nonprofit Cloud, Bloomerang, Little Green Light, Neon CRM, DonorPerfect, Virtuous), designs data hygiene routines (deduplication, standardized constituent records, data entry policy), and builds list segmentation for mailings and reporting. Use for CRM RFPs/vendor comparison, field mapping and data migration planning, dedup and merge rules, household/soft-credit setup, and saved-segment or query-tag design. Does not cover writing appeal copy or ask strings (nonprofit-annual-appeals), online giving/payment processor setup (nonprofit-digital-fundraising-tools), or donor data privacy/PCI policy (nonprofit-data-privacy)."
+description: "Selects and configures a donor CRM: tier fit, weighted vendor comparison and 3-year cost, data model and migration field map, households and soft credits, dedup and data entry policy, and saved segments and dashboards. Use for 'help us pick a donor database,' 'our CRM has duplicate records,' 'plan our migration from spreadsheets,' or 'set up households and soft credits.' Not for appeal copy or ask strings (use nonprofit-annual-appeals), online giving or payment setup (use nonprofit-digital-fundraising-tools), privacy or PCI policy (use nonprofit-data-privacy), or moves-management strategy (use nonprofit-donor-pipeline)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,22 +11,10 @@ metadata:
 
 # Nonprofit Donor CRM
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the request involves the donor database itself as a system: choosing a CRM,
-migrating data into one, keeping records clean, or building segments/queries the database will
-run. Concrete triggers:
+This skill covers the donor database as a system. Hand off instead of answering here:
 
-- "Help us pick between Bloomerang, Little Green Light, Neon CRM, DonorPerfect, Virtuous, and
-  Salesforce Nonprofit Cloud."
-- "Our database has duplicate donor records — how do we de-dupe and prevent it going forward?"
-- "We're migrating from spreadsheets/[old CRM] to [new CRM] — what's the field map and cleanup plan?"
-- "Build a segment of lapsed donors who gave $250+ in the last 3 years but nothing in the last 12
-  months" (the segmentation logic and field design, not the appeal copy sent to that segment).
-- "Set up households and soft credit so a couple's joint gifts roll up correctly."
-- "Write a data entry policy so every staff member enters gifts the same way."
-
-**Boundary — hand off instead of answering here:**
 - Ask strings, segmentation *content*, and appeal calendars → `nonprofit-annual-appeals`.
 - Setting up the online donation form, payment gateway, or peer-to-peer platform →
   `nonprofit-digital-fundraising-tools`.
@@ -39,7 +27,9 @@ run. Concrete triggers:
 
 ### 1. Frame the decision as fit, not features
 
-Nonprofit CRMs cluster into tiers. Match the org to the tier before comparing feature checklists:
+Nonprofit CRMs cluster into tiers. Match the org to the tier before comparing feature checklists.
+Budget bands, product names, and vendor ownership below change often; verify the current product
+lineup, pricing, and ownership on vendor sites before recommending.
 
 - **Entry tier** (under ~$1.5M budget, 1-3 fundraising staff): Little Green Light, Bloomerang,
   DonorPerfect Online. Optimized for low administrative overhead and fast time-to-value.
@@ -70,6 +60,25 @@ Standard deliverable: a **CRM comparison matrix** scoring each candidate on:
 As an advisor, this matrix — with weighted scoring the client's staff fill in themselves — is the
 standard deliverable for a CRM selection engagement; do not just hand over a vendor list.
 
+```
+CRM Comparison Matrix — [Organization], [date]
+Scores 1-5; weighted score = weight x score. Weights sum to 100.
+
+| Criterion                                   | Weight | Vendor A | Vendor B | Vendor C |
+|---------------------------------------------|--------|----------|----------|----------|
+| Data model (households, soft credit, pledges, recurring, matching) |  |  |  |  |
+| Integrations (email, online giving, accounting, wealth screening)  |  |  |  |  |
+| Reporting/query without a consultant        |        |          |          |          |
+| Data ownership and full export rights       |        |          |          |          |
+| Support model and implementation timeline   |        |          |          |          |
+| Staff usability (from scripted demo tasks)  |        |          |          |          |
+| Weighted total                              | 100    |          |          |          |
+| 3-year TCO: license + implementation + migration + training |  | $ | $ | $ |
+| Must-haves missing (disqualifies)           |        |          |          |          |
+
+Recommendation: [vendor], because [top 2-3 reasons tied to requirements].
+```
+
 ### 3. Design the data model before migrating
 
 Common failure mode: migrating bad data into a new system just reproduces the mess. Before
@@ -95,7 +104,7 @@ migration:
 - **Data entry policy** (standard deliverable, usually 1-2 pages): required fields for every new
   constituent, naming conventions ("Jane Smith" not "jane smith" / "J. Smith"), how to record
   anonymous or in-honor-of gifts, and who has edit vs. view-only permissions.
-- **National Change of Address (NCOS)** or mail-service address updates run before every major
+- **National Change of Address (NCOA)** or mail-service address updates run before every major
   mailing to cut bounce-back costs.
 - **Common failure mode**: no designated database owner. Assign one staff member as the CRM
   steward responsible for hygiene standards, even in a one-person development shop.
@@ -105,11 +114,9 @@ migration:
 - Build **saved segments/smart lists** for recurring uses: current-year donors, lapsed (12/24/36
   month lookback), major gift prospects by giving tier, board members, in-kind donors, grant
   funders (if tracked in the same system).
-- Use **tags or custom fields**, not free-text notes, for anything you'll need to query later
-  (interest area, event attended, volunteer status).
-- Set up a **dashboard** covering: total raised YTD vs. goal, gift count, average gift, donor
-  retention rate, new vs. returning donor mix — pull these metrics from the CRM rather than
-  rebuilding them in a spreadsheet each month.
+- Use tags or custom fields, not free-text notes, for anything you'll need to query later.
+- Pull dashboard metrics (YTD vs. goal, gift count, average gift, retention, new vs. returning) from
+  the CRM rather than rebuilding them in a spreadsheet each month.
 
 ## For Advisors: Running a CRM Engagement
 
