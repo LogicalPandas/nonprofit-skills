@@ -350,7 +350,7 @@ and documentation; it does not substitute for the responsible person's reporting
     civil authorities and denomination, and conduct an after-action review to fix the system
     conditions that allowed the incident.
 
-This is not a determination of any particular state's reporting law.
+Last checked September 16, 2026. This is not a determination of any particular state's reporting law.
 
 ## Terminating or Placing a Pastor on Leave — Workflow
 

@@ -212,7 +212,7 @@ affiliation alone nor a majority-fee calculation settles the result.
 
 Classification references: [Treas. Reg. §1.6033-2(g)(1)(vii), (h)(1)–(5)](https://www.irs.gov/pub/irs-regs/td8640.txt)
 and [IRS Publication 557, annual-return exceptions](https://www.irs.gov/pub/irs-pdf/p557.pdf).
-These references are not tax-counsel sign-off.
+Last checked September 16, 2026; these references are not tax-counsel sign-off.
 
 ## Group Exemption Rulings for Denominations
 
