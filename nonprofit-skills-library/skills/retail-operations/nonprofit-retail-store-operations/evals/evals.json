@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-retail-store-operations",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the finance manager for Open Door Ministries in Lexington, KY. Our thrift store does about $15K a week, mostly cash, and our tills have been off by $40-$120 several days a month for the past quarter. One cashier counts out alone at close and drops the bag in the safe; deposits go to the bank 'when someone has time,' usually once a week. Can you build us a daily cash-handling and reconciliation process?",
+      "expected_output": "Opening/closing procedures with dual-count verification, a daily over/short report tied to thresholds from the org's financial controls policy, prompt deposits with deposit-to-POS reconciliation by someone other than the counter, and related loss-prevention controls such as a till cap and mandatory receipts.",
+      "assertions": [
+        "Requires dual-count verification with two sets of initials at open, close and deposit, replacing the single-person count",
+        "Provides a daily over/short template where expected cash equals float plus POS cash sales less receipted paid-outs",
+        "Says over/short thresholds and the escalation path should come from the organization's board-adopted financial controls policy rather than being invented at store level",
+        "Recommends banking deposits the same or next business day instead of weekly batching",
+        "Requires that the person reconciling the deposit slip to the POS close is not the person who counted the till",
+        "Recommends related controls such as a working-till cash cap with drop-safe sweeps, a receipt for every sale, or rotating dual-count pairings and unannounced till audits"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "we keep losing stuff from the electronics shelf and the boutique rack at our thrift store, maybe $1k/month we think, but honestly we don't know. how do we even measure shrink and cut it down?",
+      "expected_output": "A shrinkage measurement approach (monthly shrink rate as % of retail sales, POS movement compared with physical spot counts in high-value categories) plus physical and procedural loss-prevention controls tailored to a resale store.",
+      "assertions": [
+        "Recommends tracking shrink rate monthly as a percentage of retail sales and investigating month-over-month jumps right away",
+        "Recommends comparing POS-recorded movement against physical spot counts in high-value categories like electronics and boutique",
+        "Notes that measurement needs a POS that tracks sales by category (not necessarily full SKU-level), since donated goods have no invoice trail",
+        "Suggests physical/procedural controls such as fitting-room item tags, monitoring blind spots, a locked backroom for unsorted stock, and mandatory receipts",
+        "Flags register-set pricing as a sweethearting risk and recommends category price codes or pre-tagged prices plus review of manual-price and discount overrides"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our thrift store manager at Lakeside Family Services (Wisconsin) wants to set her own rule: any till variance under $50 just gets written off, no report needed, because chasing small amounts wastes time. Our org has a board-approved financial controls policy but she says it 'doesn't really fit retail.' Can you write up her $50 rule as a store procedure?",
+      "expected_output": "Declines to write a store-level threshold that contradicts the board-adopted policy, explains this creates an audit finding and a control gap, and recommends documenting every variance daily while asking whoever owns org-wide financial controls to formally adopt any retail-specific threshold.",
+      "assertions": [
+        "Does not simply draft the $50 write-off rule as store procedure; explains store procedures must carry out the board-adopted policy rather than replace it",
+        "Notes that a floor-level rule contradicting board policy can create an audit finding even if it solves the immediate complaint",
+        "Recommends sending any request for a retail-specific threshold to whoever owns org-wide financial controls (or the nonprofit-financial-controls process) for formal adoption",
+        "Recommends documenting every over/short daily with an explanation and reviewer, and reviewing variances the same day, rather than letting small amounts go unrecorded",
+        "Recommends that the finance/controls owner or board review the procedure before it's adopted"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Our board wants to set approval thresholds and segregation-of-duties rules for the whole organization before our first audit.",
+      "better_skill": "nonprofit-financial-controls"
+    },
+    {
+      "query": "Saturday shifts at our thrift store keep ending up with no keyholder. How should we schedule paid staff and volunteers?",
+      "better_skill": "nonprofit-retail-staffing"
+    }
+  ]
+}

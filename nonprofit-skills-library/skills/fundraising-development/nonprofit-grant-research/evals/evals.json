@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-grant-research",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the only grants person at Valley Roots Farmworker Health, a 501(c)(3) in Yakima County, Washington (budget about $2.3M, founded 2011). We need to fund a new mobile clinic program, roughly $180K/year starting July 2027, and we'd like 3-4 grants of $25K-$75K each. Can you lay out how to find and vet foundation and government prospects, and give me a fit-scoring rubric and prospect list format I can use? We currently have renewals with two local funders and don't know when they're eligible again.",
+      "expected_output": "A search brief and source plan (Candid/FDO, 990-PFs, grants.gov and the state portal, peer funders), plus a weighted fit rubric that screens geography first with a minimum threshold and a prospect-list format. It also covers a 12-18 month grant calendar and a renewal tracker, notes the heavier compliance of government grants, and ends with a hand-off to grant writing.",
+      "assertions": [
+        "Starts with a search brief (program area, ask range, geography, eligibility constraints) and names sources including Candid/Foundation Directory, 990-PF filings, grants.gov or the state grants portal, and peer organizations' listed funders",
+        "Provides a fit rubric covering mission alignment, geographic eligibility, grant size fit, applicant eligibility, cycle timing and relationship strength, scored with a minimum threshold, and says to check geography first",
+        "Tells the user to verify stated priorities and typical grant size against the funder's actual 990-PF grant history, not website language",
+        "Includes a rolling 12-18 month grant calendar (LOI, proposal, decision and report dates) and a renewal tracker, and advises reviewing the two existing renewals before cold prospecting",
+        "Notes that government grants carry heavier compliance (e.g., 2 CFR 200 Uniform Guidance, indirect rate rules) and says to confirm current rules at the source",
+        "Ends at the 'apply to this funder by this date' point and hands off drafting to nonprofit-grant-writing with a funder profile brief"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "is the Hollis Family Foundation worth applying to? their site says they fund 'youth development nationally.' we're a $400k after-school robotics program in Dayton OH and want $50k. how do I tell quickly if it's a good fit",
+      "expected_output": "A quick fit check: pull the 990-PF to see actual grants (size, geography, recipients), run the scoring rubric, and decide against a threshold, with specific warnings about website language and median grant size.",
+      "assertions": [
+        "Recommends pulling the foundation's 990-PF (e.g., via ProPublica Nonprofit Explorer or Candid) to see actual grants made, recipient geography and typical grant size",
+        "Warns that 'youth development nationally' website language may not match actual giving, which is often narrower in practice",
+        "Compares the foundation's median or typical grant to the $50K ask and suggests a smaller first request if the median is much lower",
+        "Applies the fit rubric (mission, geography, size, eligibility, timing, relationship) with a go/no-go threshold, and checks for invitation-only or LOI-gated processes",
+        "Asks about or credits any board or staff connection to a trustee or program officer as raising win probability"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our ED at Hilltop Senior Center wants me to go after the Gates Foundation and the Robert Wood Johnson Foundation this year because 'big names = big money.' I've also got 3 proposals all due the week of March 9 and I'm one person. We're a $750K org serving one rural county in Kentucky. Help me make the case for a better plan.",
+      "expected_output": "The response pushes back on chasing prestige over fit, using the rubric's geography and size gates and pointing to renewals or strong-fit regional funders first. It flags the clustered March 9 deadlines as a capacity conflict to escalate and sequence, and suggests a writing-capacity plan.",
+      "assertions": [
+        "Names 'chasing prestige over fit' as a failure mode and recommends scoring the big foundations on the fit rubric (geography, size fit, eligibility, invitation-only processes) before investing time",
+        "Recommends reviewing renewals and lapsed good-fit funders and lower-profile regional or community funders before cold prospecting national names",
+        "Flags three proposals in the same week as a capacity conflict to escalate to the development lead or ED to sequence or reassign drafting",
+        "Recommends a shared grant calendar and a writing-capacity plan (how many LOIs or proposals per month staff time supports)",
+        "Does not assert specific current priorities or eligibility rules for Gates or RWJF as fact; frames them as things to verify"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Write a two-page letter of inquiry to the Meyer Memorial Trust for our housing navigation program.", "better_skill": "nonprofit-grant-writing"},
+    {"query": "A local bank wants to be the presenting sponsor of our fun run in exchange for logo placement — how should we price that?", "better_skill": "nonprofit-corporate-sponsorships"}
+  ]
+}

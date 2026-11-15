@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-planned-giving",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Our board at Prairie Public Library Foundation (Sioux Falls, SD, $900K budget, founded 1978) wants to launch a legacy society next year. We've received two surprise bequests in the past five years but have never marketed planned giving. Board member Carol Jensen suggested a $25,000 minimum to join so it feels exclusive. Can you design the society and tell us what we need before we start promoting it?",
+      "expected_output": "A legacy society design with simple any-documented-gift qualification (rejecting the $25K minimum), benefits, a voluntary notification-of-intent form, prospect identification from tenure and age, marketing deliverables, and a sample bequest language sheet marked for counsel review. It also requires a gift acceptance policy first and recommends referring donors to their own advisors.",
+      "assertions": [
+        "Recommends against the $25,000 minimum because most bequest amounts are unknown or undisclosed, and suggests any documented planned gift qualifies",
+        "Defines membership benefits (recognition unless anonymous, an annual event, a staff contact, impact updates) and a voluntary, non-binding notification-of-intent form",
+        "Provides a sample bequest language structure (specific, percentage, residuary, contingent) with the org's full legal name, EIN and address, and says final wording must be reviewed by the org's legal counsel",
+        "Says a gift acceptance policy (vehicle types, minimums, complex assets) should be in place before actively marketing planned gifts",
+        "Identifies prospects from the existing file using tenure (around 10+ years), age (60+), and deep-affinity volunteers or board alumni, and suggests raising the topic within stewardship conversations",
+        "States that materials must not give individualized tax or legal advice and should refer donors to their own attorney or financial advisor"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Board member asked me to explain charitable gift annuities at Tuesday's meeting because a donor (82, lives in Florida half the year, Minnesota the rest) asked if she can 'buy one' from us. We're a small food bank in Duluth. Can we just do this?",
+      "expected_output": "A plain-language CGA explanation that flags state-specific registration for each state where the annuitant lives, ACGA-referenced rates to verify, and the usual need for a specialized administrator or reinsurance. It recommends specialist and legal review before offering one and refers the donor to her own advisor.",
+      "assertions": [
+        "Explains that CGAs require state-specific registration or regulatory compliance and says to check rules for every state where the annuitant lives (here Minnesota and Florida) with each state insurance regulator",
+        "Mentions actuarial rate-setting commonly referencing American Council on Gift Annuities suggested rates and says to verify current rates with ACGA rather than quoting a figure",
+        "Says most small nonprofits should use a specialized gift-annuity administrator or reinsurance arrangement rather than running CGAs in-house, and warns of regulatory and financial risk if under-resourced",
+        "Recommends the donor consult her own attorney or financial advisor and avoids individualized tax advice",
+        "May mention alternatives such as a bequest or beneficiary designation, or a QCD (with current age and limit to be verified with the IRS)"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "A donor, Mr. Okafor, just told our ED he wants to set up a charitable remainder trust naming us, and asked if we can draft it for him and tell him how much he'll save in taxes. He also wants to give $40K from his IRA this year. We're Harmony Hospice Foundation in Ohio. How should we respond?",
+      "expected_output": "The response declines drafting the trust and estimating his taxes, refers him to his own estate attorney and advisor, explains the org's cultivation and stewardship role, and routes the $40K IRA gift as a current QCD to major-gift handling with the current QCD rules verified.",
+      "assertions": [
+        "States that the CRT must be drafted by the donor's own estate attorney and that the org's role is cultivation and stewardship, not drafting",
+        "Declines to estimate his tax savings or give individualized tax or legal advice, and refers him to his own advisors",
+        "Identifies the $40K IRA gift as a current qualified charitable distribution, says to verify current QCD age and limit in IRS guidance, and routes the large current gift to nonprofit-major-gifts",
+        "Recommends documenting his intent (with permission) in the legacy society roster or inviting him to join"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Prep our board chair to ask a donor for a $100K outright gift this year for our new building.", "better_skill": "nonprofit-major-gifts"},
+    {"query": "Which of our prospects have stalled in cultivation for 90+ days, and what should their next moves be?", "better_skill": "nonprofit-donor-pipeline"}
+  ]
+}

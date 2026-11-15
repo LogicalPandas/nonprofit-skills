@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-faith-volunteer-lay-leadership",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the senior pastor of Westminster Presbyterian in Des Moines (PCUSA, ~350 members). Honestly, the same twelve people run everything. One retired couple is on session, finance, personnel, and teaches Sunday school. Our nominating committee usually starts calling people in October for January installation and mostly gets the usual suspects to say yes again. Two of our elders have been on session for 9 years because 'no one else will do it.' I want to fix this for the 2028 class of elders. Where do I start?",
+      "expected_output": "Runs the same-twelve-people diagnostic (role audit, concurrent-role cap), redesigns the recruitment cycle as discernment published 60–90 days early with multi-channel nomination and slate discipline, discernment interviews, term limits with a mandatory off-year and rotating classes, a 2–3 year bench across three pools, and confirms the election method fits PCUSA polity via the governance skill.",
+      "assertions": [
+        "Recommends auditing every named leadership role and who holds multiple roles, flagging people in three or more roles as a burnout/pipeline risk",
+        "Recommends a written cap on concurrent leadership roles (e.g., two) with a waiver only by the nominating body",
+        "Replaces October phone-call recruiting with a discernment phase published to the whole congregation 60–90 days before names are surfaced, with multi-channel nominations",
+        "Recommends term limits with a mandatory off-year (e.g., three-year term renewable once, then a year off) and treats the 9-year incumbency as a red flag needing pipeline intervention",
+        "Includes nomination slate discipline (e.g., at least one nominee from outside sitting leadership, one under-represented/younger person, one first-time office-holder) and a 2–3 year bench",
+        "Notes that the ruling-elder election process must follow PCUSA polity/governing documents, routing polity questions to the church-governance skill"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "our rabbi has been here 8 yrs and is fried. board wants to give her a sabbatical but has no idea how. reform synagogue, ~200 families, ohio. what's the plan + is there funding",
+      "expected_output": "Lays out sabbatical planning as a governance project: adopt a written sabbatical policy, pursue external funding early (Lilly Clergy Renewal, Louisville Institute) with a note to verify current cycle and limits, prepare the congregation ~12 months out, coverage for pulpit and pastoral care, no-contact discipline with a lay liaison, and a re-entry plan; also suggests an ongoing Sabbath covenant.",
+      "assertions": [
+        "Recommends adopting a written sabbatical policy (eligibility, length, compensation continuing, cadence) by the governing board before planning the specific sabbatical",
+        "Names external funding sources such as the Lilly Endowment Clergy Renewal Program and/or Louisville Institute, noting the application is congregation-led and that the current cycle, ceiling and eligibility must be checked",
+        "Includes congregation preparation roughly 12 months ahead and a coverage plan for services/teaching and pastoral care (e.g., funerals, hospital visits)",
+        "Includes a written no-contact commitment on both sides with a designated lay sabbatical liaison",
+        "Includes a re-entry plan (e.g., final weeks as re-entry, light-load period before new initiatives) and/or a written ongoing Sabbath covenant"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We have a volunteer Sunday school teacher at our church (Grace Baptist, Alabama) who's taught 4th-6th graders for 6 years. He's never had a background check because everyone's known him forever. Now our deacons want to make him a paid part-time children's ministry director at $1,500/month, and separately a parent mentioned he's been texting some of the kids directly on his personal phone. How do we handle the promotion?",
+      "expected_output": "Treats safeguarding as a gate regardless of tenure: background check and training before continuing, flags direct texting of minors as a safeguarding concern that must be routed immediately to the employment/safe-sanctuary skill's misconduct and reporting workflow (not resolved in a formation conversation), pauses the promotion, and routes the move to paid staff to the clergy-comp/finance skill for classification.",
+      "assertions": [
+        "States that a background check and safe-sanctuary training are required for anyone with access to minors regardless of how long they've been known, and should be completed before he continues",
+        "Flags direct private texting of minors as a safeguarding concern and routes it to the safe-sanctuary/misconduct and mandatory-reporting workflow (the employment/ministerial-exception skill) rather than handling it as a formation or HR matter",
+        "Recommends pausing the promotion until the safeguarding concern is addressed",
+        "Routes the move from volunteer to paid staff to the clergy-comp/finance skill (or payroll advisor) for W-2/1099 and related classification questions",
+        "Mentions two-adult/observable-space rules or a digital communication standard for children's ministry"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We need 60 volunteers for our church's community Thanksgiving meal — help me build a sign-up and shift schedule.",
+      "better_skill": "nonprofit-volunteer-management"
+    },
+    {
+      "query": "Our bylaws don't say how to remove a deacon or how many members need to be at the meeting. Can you draft the amendment and the quorum rules?",
+      "better_skill": "nonprofit-faith-church-governance"
+    }
+  ]
+}

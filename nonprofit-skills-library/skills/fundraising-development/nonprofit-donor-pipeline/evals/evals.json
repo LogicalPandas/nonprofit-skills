@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-donor-pipeline",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I just became the first major gifts officer at Cascade Land Trust in Bend, Oregon ($3M budget). The board wants $1.2M in major gifts (we define that as $10K+) next fiscal year; our average major gift the last two years was about $20K. There's no real pipeline — just a spreadsheet of 340 names from wealth screening, board referrals and event lists, with notes like 'keep in touch.' Help me set up a moves-management pipeline: stages, how many prospects I actually need, and how to organize my portfolio.",
+      "expected_output": "A stage matrix (identification, qualification, cultivation, solicitation, stewardship) with entry and exit criteria and time-in-stage caps, a backward pipeline ratio table built from the $1.2M goal and $20K average gift, and portfolio guidance with qualification on capacity, affinity and propensity.",
+      "assertions": [
+        "Defines the five stages (identification, qualification, cultivation, solicitation, stewardship) in a matrix with entry criteria, exit criteria, typical duration and explicit time-in-stage caps, with each prospect in exactly one stage",
+        "Works the pipeline math backward from $1.2M / $20K (about 60 closed gifts) through an assumed solicitation-to-close rate to the number of solicitation-ready prospects, and on to a larger qualification pool, shown as an explicit ratio table, and says to swap in the org's own close rates when available",
+        "Qualifies prospects on all three axes (capacity, affinity, propensity) rather than wealth alone, with a documented rating scale",
+        "Caps the portfolio near 100-150 active prospects and says the 340 names must be triaged rather than all held",
+        "Rejects vague moves like 'keep in touch' and requires each next move to have a specific action, a date and a stated purpose",
+        "Hands ask amounts and proposal writing off to nonprofit-major-gifts and stops pipeline work at 'ready to solicit'"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Pasting my portfolio below — tell me who's stalled and what to do with them.\n\n- Gloria Tran, rated A, cultivation, last move: tour on 3/2, next: 'follow up'\n- Marcus Bell, B, qualification since January, no moves logged\n- Hank & Sue Ostrowski, A, cultivation, lunch 9/28 to discuss endowment interest, next: proposal meeting 11/20\n- Dr. Leila Haddad, C, identification, added from gala list 5/14, nothing since\n- Rev. Tom Iverson, B, solicitation, asked 8/1 for $15K, no response logged\n\ntoday is Nov 15.",
+      "expected_output": "Each prospect is checked against a 60-90 day no-move rule. Every stalled prospect gets a disposition (assign a dated next move with a purpose, downgrade, or move to the low-touch annual-appeal track), and vague moves are rewritten.",
+      "assertions": [
+        "Flags Gloria Tran, Marcus Bell, Dr. Haddad and the Iverson solicitation as stalled (no move in roughly 60-90+ days) and does not flag the Ostrowskis",
+        "Gives each stalled prospect one disposition: a dated next move with a stated purpose, a downgraded rating, or a move to a low-touch or annual-appeal track",
+        "Rewrites 'follow up' into a specific move with a purpose and date",
+        "Notes Marcus Bell has been in qualification well beyond a typical time-in-stage cap and needs a disposition",
+        "For Rev. Iverson, logs the solicitation outcome or follow-up in the pipeline and leaves ask strategy to nonprofit-major-gifts"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our ED at Bright Futures Tutoring wants to send our two gift officers to a $4,000 major-donor solicitation training because 'they're not closing.' We have 410 prospects in Raiser's Edge and they've only made 9 asks this year. Is training the right move?",
+      "expected_output": "Before recommending training, the response opens with a pipeline health audit: stage counts, time in stage and conversion by stage transition. It flags a likely cultivation-to-solicitation bottleneck or ghost pipeline, and frames the advice for the ED as a capacity question with the weakest transition highlighted.",
+      "assertions": [
+        "Recommends a pipeline health audit (stage counts, time-in-stage, stage-to-stage conversion rates) before spending on training",
+        "Suggests the problem may be stalled cultivation or a cultivation-to-solicitation bottleneck that training won't fix, since 9 asks against 410 prospects points to low solicitation volume",
+        "Raises the possibility of a ghost pipeline or oversized portfolios (beyond about 100-150 per officer) and recommends clearing prospects with no disposition",
+        "Suggests presenting findings to the ED as a funnel with the weakest transition highlighted, or putting the stage matrix and portfolio caps in a written gift-officer job aid"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "How much should I ask the Hendersons for? They gave $5K last year and just sold their company — help me draft the proposal.", "better_skill": "nonprofit-major-gifts"},
+    {"query": "We're choosing between Bloomerang and Little Green Light — which CRM handles moves management better and how do we configure stages?", "better_skill": "nonprofit-donor-crm"}
+  ]
+}

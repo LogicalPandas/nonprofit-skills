@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-outcomes-measurement",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I run Pathways Workforce Alliance in Tacoma, WA — a 16-week job training program for adults coming out of incarceration, about 120 enrollees a year, $1.4M budget. Our logic model outcomes are: (1) participants gain job-ready skills, (2) participants obtain employment, (3) participants retain employment and don't reoffend. The state Dept. of Commerce grant wants an evaluation plan with KPIs by January 15. What should it look like?",
+      "expected_output": "An evaluation plan built from the three logic-model outcomes: an indicator table with baselines, targets, denominators, data sources and cadence; a named, realistic evaluation design; method choices; a collection calendar; a response-rate floor; and a reporting layer with limitations.",
+      "assertions": [
+        "Produces an indicator table mapping each of the three outcomes to 1–3 indicators with baseline, target, data source, and cadence/owner columns",
+        "States the denominator for each rate indicator (e.g., all enrolled vs. completers vs. those with follow-up data)",
+        "Explicitly names the evaluation design (e.g., pre/post) and cautions against recommending a comparison-group or RCT design without budget, sample size and a research partner",
+        "Matches data collection methods to indicators, e.g., skills assessment with a rubric for skills, follow-up calls/employer verification for employment, and notes data-sharing agreements and consent for any recidivism record matching",
+        "Sets a follow-up response-rate floor in advance and builds a collection calendar (intake, exit, follow-up) with owners",
+        "Keeps output counts (enrollments, sessions delivered) separate from outcome indicators"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "our ED wants to tell the board our 'completion rate is 82%' but i only counted people who made it past week 4. is that ok?? how should i calc it",
+      "expected_output": "Explains that narrowing the denominator inflates the rate, shows how to define and report completion rate with an explicit denominator consistently across periods, and suggests reporting alternatives honestly.",
+      "assertions": [
+        "Identifies the practice as narrowing the denominator (denominator-shopping) and explains why it inflates the rate",
+        "Recommends defining the denominator explicitly (e.g., all enrolled) and stating that definition every time the rate is reported",
+        "Advises keeping the definition consistent with prior reporting periods, or disclosing any change",
+        "Suggests it is acceptable to report a second rate (e.g., completion among those past week 4) only if clearly labeled alongside the full-enrollment rate"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our board chair at Bright Start Literacy (we're a $600K tutoring nonprofit in Fresno, about 150 kids/year) wants us to run a randomized controlled trial this school year 'to prove to funders we work.' We have no evaluator and one data person part-time. Also, we don't actually have a logic model. Should we do it?",
+      "expected_output": "Pushes back on an RCT given budget, sample and no research partner, recommends a well-documented pre/post design with named limitations, and flags that a logic model should be built first via program design.",
+      "assertions": [
+        "Advises against launching an RCT without budget, adequate sample size, timeline and a research partner, framing an RCT as a research-partnership question rather than a default",
+        "Recommends a well-documented pre/post design with limitations stated explicitly as the realistic alternative",
+        "Flags that there is no outcomes chain to measure against and recommends building a logic model first (program design) before selecting indicators",
+        "Suggests checking for existing validated literacy assessments or instruments before building a custom one, used as validated",
+        "Cautions that causal/attribution claims in reports must match what the design can support"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We need a theory of change for our new reentry program showing how the job coaching leads to long-term stability — can you draft it with assumptions?",
+      "better_skill": "nonprofit-program-design"
+    },
+    {
+      "query": "Before we launch a tutoring program in south Fresno, how do we find out whether families actually need it and who else already provides it?",
+      "better_skill": "nonprofit-needs-assessment"
+    }
+  ]
+}

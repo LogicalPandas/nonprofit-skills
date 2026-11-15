@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-housing-continuum-planning",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the planning director at Lakeshore Community Housing, a $7M nonprofit in Kalamazoo County, Michigan. We run a 60-bed shelter and 140 units of LIHTC rental. Our board wants a real picture of the county's housing gap by income level before our strategic retreat in March. Walk me through building the gap analysis — what data, what table, and how to read it.",
+      "expected_output": "A method for building the AMI-band needs/supply table using CHAS as the spine, the Consolidated Plan, PIT/HIC, and state/local studies, computing affordable-and-available units by band and tenure, with date-stamped sources, a consistent geography, and a short findings narrative.",
+      "assertions": [
+        "Names HUD CHAS data as the spine of the AMI-band table and layers in the Consolidated Plan/Action Plan, PIT/HIC counts, and state or local needs studies",
+        "Builds the table by AMI band and tenure, including households in band, affordable units, affordable-and-available units, gap, cost burden, and pipeline",
+        "Distinguishes 'affordable' from 'affordable and available' units and computes the latter",
+        "Warns about CHAS vintage and geography mismatches (e.g., CoC-wide PIT vs. county boundaries) and asks that every source be date-stamped",
+        "Recommends reconciling figures with the jurisdiction's Consolidated Plan or explaining discrepancies",
+        "Advises inventorying all providers at every stage, not just stages the org operates"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Board member here. Our ED keeps pushing us to get into permanent supportive housing. We're a family shelter + rapid rehousing org in Reno, ~$2.5M budget, never had a CoC PSH grant. Should we? How do we even decide this?",
+      "expected_output": "Frames the decision as enter/expand/exit/partner/hold scored on mission fit, gap evidence, right to win, and financial sustainability, flags the absence of a PSH funding stream as a prerequisite, and treats partnering as a real option, structured as a where-we-play memo.",
+      "assertions": [
+        "Scores the PSH move against four tests: mission fit, gap evidence, right to win, and financial sustainability",
+        "Treats partnering (e.g., a referral MOU with a PSH operator) and holding as real options, not failures",
+        "Flags that the org has never raised the dominant PSH funding stream and treats securing it as a prerequisite before recommending entry",
+        "Warns against enter-bias or recommending what the ED already wanted, and requires alternatives to be scored",
+        "Proposes a decision memo with options, a single recommendation, a 'what we will not do' list, and first-12-month milestones"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're the only emergency shelter in Harlan County, KY (32 beds, ~$900K budget). Our board is exhausted and wants to close the shelter next June and refocus entirely on our home repair program, which donors like more. Can you write up the recommendation memo for the board to approve the exit?",
+      "expected_output": "Does not simply endorse the exit; applies the exit criteria, notes the org is the sole provider so a named successor is required, and pairs any exit with a transition plan for participants, staff, and funders, keeping findings separate from fundraising appeal.",
+      "assertions": [
+        "Tests the exit against the criteria: the gap has closed or moved, another provider has comparative advantage, or the funding stream has structurally eroded",
+        "States that the org should not recommend exiting a stage where it is the sole provider without naming a successor",
+        "Requires a transition plan for participants, staff, and funders alongside any exit recommendation",
+        "Recommends documenting the shelter-stage gap (e.g., PIT/HIC trends) before deciding, rather than relying on donor preference",
+        "Scores alternative options such as partnering or holding in the memo rather than only the exit"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Facilitate our three-year organization-wide strategic plan: mission refresh, SWOT, and goals across all our programs including housing.", "better_skill": "nonprofit-strategic-planning"},
+    {"query": "Is the 64-unit senior LIHTC deal we're looking at financially feasible? Help me build the pro forma and sources and uses.", "better_skill": "nonprofit-housing-development-finance"}
+  ]
+}

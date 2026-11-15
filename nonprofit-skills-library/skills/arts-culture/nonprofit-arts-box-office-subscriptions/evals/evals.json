@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-arts-box-office-subscriptions",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the managing director at Cedar Hollow Playhouse in Asheville, NC — 450-seat house, five-show season, $2.1M budget. We sell one fixed full-season subscription and it's shrinking every year: 2,400 packages three years ago, 1,850 this season. Our renewal rate overall was 62% and our marketing director says we just need to spend more on new-subscriber ads. I want a real plan for the 2027-28 season: what packages to offer, how to price them, and how to stop the bleeding. Can you lay it out?",
+      "expected_output": "A subscription plan that expands beyond a single fixed package (e.g., fixed full season, mini/CYO, flex pass), prices packages off the single-ticket rate, runs the retain-vs-acquire math to show the new-package target needed to hold flat, sets a cohort renewal pricing ladder and first-year onboarding, and delivers a package grid with an on-sale calendar.",
+      "assertions": [
+        "Recommends adding package types beyond the fixed full season — at least a mini/choose-your-own package and a flex pass or ticket-credit option",
+        "Computes the new-package acquisition target needed to hold flat as base × (1 − renewal rate), using the user's numbers",
+        "Distinguishes first-year from multi-year subscriber renewal and recommends a first-year onboarding sequence before increasing acquisition spend",
+        "Lays out a cohort renewal pricing ladder (loyalty lock, early-renewal incentive, new-subscriber price, lapsed win-back) and a down-sell to flex/mini before losing a subscriber",
+        "Sequences on-sales so renewals close before single tickets go on sale, and presents a package grid (type, shows, price by zone, discount vs. single, benefits, restrictions)",
+        "Advises that benchmark rates are sector studies to re-check and that published prices should get knowledgeable staff review before going live"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "we're on eventbrite for our 220-seat black box and people keep complaining the $28 ticket turns into like $33 at checkout. should we just eat the fees? also is there any legal issue here? we're in Colorado",
+      "expected_output": "Explains embedded vs. passed-through fees with checkout math, flags the FTC fees rule's all-in price display requirement and that Colorado has its own all-in pricing law, and notes Eventbrite's fit limits for reserved-seat seasons; tells the user to verify current fees and rules.",
+      "assertions": [
+        "Explains the embedded (absorbed) vs. passed-through fee choice and shows worked math of what the org would net or what face value would need to rise to",
+        "States that the FTC's fees rule requires the all-in total price, including mandatory fees, to be shown upfront and that it applies to nonprofits",
+        "Notes that Colorado is among the states with its own all-in pricing law and that buyers' state laws can apply",
+        "Tells the user to verify current platform fees and the legal rules at the source before publishing a fee schedule",
+        "Recommends displaying the all-in price everywhere (ads, site, emails, box office) with fees itemized underneath"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our second show is selling way below forecast — 38% sold two weeks out. Our ED wants to cut prices on the website by $15 across the board, and also wants to pull the school matinee program into this conversation since teachers keep asking about curriculum guides and teaching-artist visits. What do we do? (Mid-size theater in Maryland, 600 seats.)",
+      "expected_output": "Advises against visible public price drops in favor of targeted promo codes, notes late-booking patterns mean softness two weeks out may not predict a flop, keeps subscriber rates untouched, handles school-matinee booking logistics, and routes curriculum and teaching-artist work to the arts education skill.",
+      "assertions": [
+        "Advises against a visible public price drop and recommends targeted promo codes for defined groups (e.g., students, educators, lapsed subscribers) instead",
+        "Notes that post-pandemic audiences book late, so weak sales two weeks out do not by themselves predict a flop and marketing spend should be held through opening",
+        "States that subscriber per-ticket rates must not be affected by price changes",
+        "Covers only school-matinee box-office logistics (e.g., flat per-student price, chaperone comp ratio, deposits) and routes curriculum guides and teaching-artist residencies to nonprofit-arts-education-programs"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "We want to launch a membership program with three tiers and member-only benefits at our art center — what should each tier include?", "better_skill": "nonprofit-arts-membership-program"},
+    {"query": "How should we price renting our 450-seat theater to outside dance schools and churches on dark nights?", "better_skill": "nonprofit-arts-venue-rental-earned-income"}
+  ]
+}

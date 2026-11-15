@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-staff-retention",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm ED of Bridgeway Youth Services, a $3M youth shelter and outreach org in Spokane with 42 staff. We lost 14 people in the last 12 months, mostly youth care workers on overnight shifts, and 2 positions have been empty for 4 months. No raise budget this year — the county contract is flat. How do I figure out what's going on and build a retention plan?",
+      "expected_output": "A diagnostic-first retention plan: baseline regrettable turnover, exit and stay interviews, a workload vs. headcount map addressing long vacancies, burnout diagnosed by dimension, structural fixes before perks, non-cash total rewards, and 6/12-month re-measurement.",
+      "assertions": [
+        "Starts by baselining 12–24 months of departures by role, tenure and department, classified as regrettable vs. non-regrettable",
+        "Recommends exit interviews conducted by someone other than the direct manager, and quarterly stay interviews by managers prioritizing high-turnover roles",
+        "Flags the 4-month vacancies as an explicit retention risk requiring a workaround (temp support, paused work, interim redistribution with a sunset date)",
+        "Diagnoses burnout by dimension (exhaustion, cynicism/depersonalization, reduced accomplishment) and matches fixes to each",
+        "Sequences structural fixes (staffing, role clarity, manager practices) before cultural fixes like events or perks, and offers non-cash levers such as flexibility, comp time, growth or specific recognition",
+        "Sets turnover re-measurement at 6 and 12 months and routes any pay/benefit changes to HR"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "my program team is fried. two of them said they 'don't see the point anymore' and one is just exhausted. any ideas that aren't a pizza party",
+      "expected_output": "Distinguishes the burnout dimensions present (cynicism vs. exhaustion), proposes targeted manager-level interventions for each, and recommends stay interviews and workload checks rather than perks.",
+      "assertions": [
+        "Distinguishes cynicism/depersonalization ('don't see the point') from exhaustion and proposes different fixes for each",
+        "For cynicism, suggests role clarity and reconnecting staff to mission impact or outcome data; for exhaustion, workload/staffing relief",
+        "Positions the direct manager as the key retention lever and suggests stay-interview style questions, including whether staff are carrying someone else's duties",
+        "Explicitly deprioritizes perks/events in favor of structural fixes"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our staff survey says people are leaving because pay is $8K below the county agencies. Can you build us new salary bands and a pay equity plan, and also tell me how to keep people through the merger we're announcing next month?",
+      "expected_output": "Identifies that pay bands/benchmarking belong to HR and active-merger morale to change management, while offering what retention work applies (diagnosis, non-cash levers, measurement) and avoiding conflating pay with culture/workload.",
+      "assertions": [
+        "Routes salary bands, compensation benchmarking and pay equity to the HR skill rather than building them here",
+        "Routes morale during the upcoming merger to the change management skill, noting retention work picks up once the organization stabilizes",
+        "Recommends verifying whether pay is the driver through exit/stay interview themes rather than assuming, distinguishing compensation from workload/manager drivers",
+        "Offers non-cash retention levers or diagnostic steps that remain in scope",
+        "Notes pay or benefit changes must be checked against personnel policy and employment terms"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Help me write a job description and pay band for a new case manager role.",
+      "better_skill": "nonprofit-hr"
+    },
+    {
+      "query": "We're laying off 6 people next week in a restructure — how do I keep remaining staff from panicking?",
+      "better_skill": "nonprofit-change-management"
+    }
+  ]
+}

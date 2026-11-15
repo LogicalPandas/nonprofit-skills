@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-major-gifts",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Prep me for a solicitation. Prospect: Ellen and Robert Castillo. They've given to Lakeside Youth Orchestra (Madison, WI, $2.4M budget) for 9 years, largest gift $20,000 two years ago, $15K last year. Ellen chaired our 2024 gala. Robert sold his engineering firm last spring. They've toured our new El Sistema-style program twice and Ellen told our ED, Sam Whitford, it's 'exactly what Madison needs.' Board member Janet Ko is close friends with them. We want to fund the program's expansion to two more schools, $150K/year. Meeting is Dec 3.",
+      "expected_output": "A completed solicitation briefing memo: ratings on capacity (as a range), affinity and readiness; a specific ask anchored to prior gifts with a stretch multiple and possibly a multi-year structure; peer asker Janet Ko with staff partner; a walk-away minimum, fallback and objections; and next steps, including a gift agreement with legal/finance review.",
+      "assertions": [
+        "Rates the Castillos separately on capacity (as a range, not a point estimate), affinity (including Janet Ko and Ellen's involvement) and readiness (the firm sale, the stated interest)",
+        "Sets one specific internal ask number anchored to their largest gift ($20K) with a stretch multiplier (around 1.5x-3x for a well-cultivated relationship) and explains the rationale, possibly as a 3-5 year pledge for a larger total",
+        "Names a peer asker (Janet Ko) with a staff partner, and includes a rehearsal or briefing step",
+        "Includes an agreed walk-away minimum and a fallback ask, plus anticipated objections with responses",
+        "States that on a yes, a gift agreement should be drafted within about 5-10 business days and reviewed by legal and finance before signature, especially for naming, restrictions or multi-year pledges",
+        "Follows the briefing memo structure (prospect, askers, ratings, history, interest area, ask, rationale, walk-away, fallback, recognition, objections, next steps)"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Donor just verbally said yes to $500K over 5 years to name our new teen center 'The Patel Family Teen Center.' Can you draft the gift agreement? We're Boys & Girls Club of Fresno County.",
+      "expected_output": "A gift agreement draft covering amount and payment schedule, designation, naming rights and duration, reporting commitments, and a variance/redirection clause, with explicit direction to get legal and finance review before signature and to set up pledge tracking.",
+      "assertions": [
+        "The draft includes the gift amount and a 5-year payment schedule, restriction or designation, naming rights with a defined duration, and reporting commitments to the donor",
+        "Includes a variance or redirection clause for when the named purpose becomes impossible (e.g., the building closes or is repurposed) and explains why it is essential",
+        "Recommends legal and finance review before signature because of the naming rights and multi-year pledge",
+        "Tells the user to confirm the terms match the proposal and the verbal yes, and fit the org's gift acceptance and naming policies",
+        "Mentions setting up pledge reminders and payment tracking as a stewardship hand-off (nonprofit-donor-retention)"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "There's a guy in our town, Derek Lowell, who's worth maybe $40M (sold a software company). He's never given to us and nobody on our board knows him, but he came to our open house once. Our ED wants to ask him for $250K next month for our land conservation fund. What should the ask be?",
+      "expected_output": "The response says not to set an ask from capacity alone. With weak affinity and readiness, it recommends returning Lowell to cultivation and finding an inside champion before any ask.",
+      "assertions": [
+        "Warns against setting the ask from capacity alone and explains that weak affinity or readiness sharply lowers confidence in a near-term ask (the axes multiply, not add)",
+        "Recommends not soliciting next month and returning Derek Lowell to cultivation and qualification via nonprofit-donor-pipeline",
+        "Points out there is no prior gift to anchor a stretch multiple, and no inside champion or peer asker",
+        "Suggests concrete cultivation steps, such as finding a connection or champion and learning his interest areas, before revisiting the ask"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "A longtime donor wants to leave us 10% of her estate — how do we set up a legacy society and write bequest language?", "better_skill": "nonprofit-planned-giving"},
+    {"query": "Build the gift range table for our $8M capital campaign and tell us how many prospects we need at each level.", "better_skill": "nonprofit-capital-campaigns"}
+  ]
+}

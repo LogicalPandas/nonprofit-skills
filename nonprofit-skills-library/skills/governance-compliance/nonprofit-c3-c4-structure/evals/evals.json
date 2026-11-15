@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-c3-c4-structure",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Greenway Transit Alliance is a $2.4M 501(c)(3) in Denver. Next legislative session we want to go big on a state transit funding bill, including a statewide digital ad campaign urging the public to call their legislators, plus staff meetings with legislators. Some board members also want to endorse pro-transit candidates in 2028. We've never made the 501(h) election. Should we create a 501(c)(4), and should we make the 501(h) election?",
+      "expected_output": "A structure memo that separates what the c3 cannot do at all (candidate endorsements) from lobbying it can do within limits, explains 501(h) including the grassroots sub-limit, weighs the ongoing c4 compliance burden, and routes the decision to tax counsel.",
+      "assertions": [
+        "States that a 501(c)(3) cannot endorse or oppose candidates at all and that this prohibition is absolute",
+        "Explains that donations to a 501(c)(4) are not tax-deductible, so the c3 should remain the primary fundraising entity",
+        "Explains the 501(h) election is made on Form 5768 and replaces the vague substantial-part test with dollar limits",
+        "Distinguishes grassroots lobbying (the public ad campaign) from direct lobbying and notes grassroots has a separate, smaller sub-limit",
+        "Notes a c4 is an ongoing administrative commitment (separate books, timesheets, cost-sharing agreement) to weigh before recommending it",
+        "Recommends review by tax counsel and confirming limits against the statute and current IRS guidance"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "we have a c3 and a c4, 4 shared staff, one office. right now we split everything 50/50 at year end. auditor coming in feb. what should we be doing instead",
+      "expected_output": "Replaces the year-end 50/50 split with contemporaneous time tracking, a documented facilities basis, a signed cost-sharing agreement and separate books, and explains the c3-subsidy risk.",
+      "assertions": [
+        "Identifies a retroactive round-number 50/50 split as a problem and calls for contemporaneous timesheets for shared staff",
+        "Says shared rent/overhead must be allocated on a documented basis such as square footage, headcount or usage",
+        "Recommends a signed cost-sharing agreement specifying basis per cost category, payment schedule and periodic true-up",
+        "Requires separate bank accounts and books with no commingling, even temporarily",
+        "Explains that an unpaid or underpaid c4 share is in substance a c3 subsidy and, for a 501(h)-electing c3, can count as the c3's lobbying expenditure"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our c3 just received a $300k unrestricted gift. Our c4 is broke and needs money for its legislative push and for its candidate questionnaire and endorsement program. Same board for both. Can the c3 just grant it over to the c4 at our next joint board meeting?",
+      "expected_output": "Explains that c3 money cannot fund c4 political activity, that any inter-entity grant needs restriction language and monitoring, the 501(h) lobbying consequences, and governance separation, with tax counsel review.",
+      "assertions": [
+        "States the c3 cannot fund the c4's political campaign (candidate endorsement) activity in any amount",
+        "Requires restriction language and monitoring so any grant funds only activities the c3 could itself do directly",
+        "Notes that for a 501(h)-electing c3, transfers to a lobbying c4 can count against the c3's own lobbying limits",
+        "Recommends separate board meetings/minutes for each entity and conflict-of-interest recusal where applicable rather than a single joint vote",
+        "Recommends tax counsel review before any transfer"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Prepare testimony and talking points for our lobby day with state senators",
+      "better_skill": "nonprofit-legislative-advocacy"
+    },
+    {
+      "query": "Draft an MOU among the six groups in our clean-water advocacy coalition",
+      "better_skill": "nonprofit-coalition-building"
+    }
+  ]
+}

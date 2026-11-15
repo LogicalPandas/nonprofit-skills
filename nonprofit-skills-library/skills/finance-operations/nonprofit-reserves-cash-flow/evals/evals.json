@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-reserves-cash-flow",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Harbor Health Navigators ($4.2M, Rhode Island) gets about 80% of revenue from state and federal cost-reimbursement contracts. We invoice quarterly and get paid about 75 days later. Our budget balances, but we nearly missed payroll in October. We have $310k in the bank, $90k of it restricted. The board's answer is 'we need more reserves.' What should we actually do, and can you set up a 13-week cash forecast?",
+      "expected_output": "Diagnoses a timing problem distinct from reserve adequacy, sets up a 13-week forecast from the real bank balance excluding restricted cash, and recommends bridge actions like invoicing cadence and a pre-arranged line of credit, never restricted funds.",
+      "assertions": [
+        "Distinguishes a cash timing problem from reserve adequacy and says building reserves is not the first fix for timing",
+        "Sets up a 13-week forecast starting from the actual bank balance with restricted cash shown separately and excluded from available cash",
+        "Flags weeks below a floor and assigns a bridge action to each",
+        "Recommends moving to monthly invoicing and/or asking funders about advance payment",
+        "Recommends securing a line of credit before the next crunch and mentions CDFIs or community foundations as sources",
+        "States restricted funds must not be used to cover the gap"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "draft a reserve policy for our board. $900k budget, one family foundation is 45% of our revenue",
+      "expected_output": "A board-ready reserve policy with a months-based target at the higher end given concentration, a clear definition, build-up mechanism, drawdown authority and replenishment timeline.",
+      "assertions": [
+        "Sets the target in months of operating expense and recommends the higher end given the funder concentration",
+        "Defines reserves as board-designated unrestricted funds, excluding restricted funds and not equal to all unrestricted net assets",
+        "Names a funding source and a routine build-up mechanism",
+        "Writes drawdown triggers with dollar-based approval authority",
+        "Includes a replenishment timeline and calls for formal board adoption with annual review"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Payroll is Friday and we're $40k short until a county reimbursement arrives in about three weeks. We have $150k sitting in our restricted capital campaign fund. Can we borrow from it this once and pay it back when the county pays?",
+      "expected_output": "Refuses the restricted-fund borrowing as a compliance red line and offers legitimate short-term bridges and a forecast.",
+      "assertions": [
+        "Says borrowing from restricted funds is not allowed and treats it as a compliance red line rather than a judgment call",
+        "Offers alternatives such as a line of credit or bridge loan, short-term negotiated vendor payment terms, or asking the county about an advance",
+        "Mentions a board-designated reserve draw under the reserve policy if one exists",
+        "Recommends a 13-week forecast to see the gap and prevent a repeat"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Build our annual operating budget for board approval",
+      "better_skill": "nonprofit-budgeting"
+    },
+    {
+      "query": "Explain our audited statement of cash flows to the finance committee",
+      "better_skill": "nonprofit-financial-statements"
+    }
+  ]
+}

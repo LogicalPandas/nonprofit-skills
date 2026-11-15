@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-vendor-facilities",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Riverside Refugee Resettlement ($3M, Boise) gets about 60% of revenue from federal funds through a state pass-through. We need a new case management software vendor, roughly $45k a year, mostly charged to the federal award. Historically we've just used whoever our ED knows. Write us a procurement policy and walk me through doing this purchase correctly.",
+      "expected_output": "A tiered procurement policy aligned to existing approval thresholds, the 2 CFR 200 procurement elements for the federally funded purchase, COI disclosure up front, documented selection and contract-clause review, with counsel review.",
+      "assertions": [
+        "Provides a dollar-tiered purchasing policy and ties it to the approval thresholds in financial controls rather than creating a conflicting table",
+        "Applies the 2 CFR 200.317-327 procurement standards for the federally funded purchase, including full and open competition and documented cost/price analysis",
+        "Tells the user to verify current micro-purchase and simplified acquisition thresholds rather than assuming fixed figures",
+        "Requires conflict-of-interest disclosure from everyone involved before selection begins, with recusal",
+        "Requires documenting the selection decision and reviewing contract clauses including data ownership and deletion on termination",
+        "Recommends counsel review of the policy and contract"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "landlord sent our lease renewal. 5,000 sq ft, $24/sq ft, 5 yrs, 4% annual bumps, triple net. our budget occupancy line is $130k. good deal or no?",
+      "expected_output": "Models total occupancy cost including NNN pass-throughs and escalation against the budget line and suggests nonprofit-favorable terms to negotiate, with counsel review.",
+      "assertions": [
+        "Models total occupancy cost including CAM, property tax and insurance pass-throughs, not just base rent",
+        "Shows base rent alone is about $120k in year one and escalates annually, and compares the total to the $130k budget line",
+        "Suggests negotiating terms such as capped escalation, tenant improvement allowance or early termination tied to funding",
+        "Recommends counsel review before signing"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our building needs a new roof, about $180k. The plan is to put it in next year's operating budget as a repair expense. Also, our board president's brother-in-law owns a roofing company and has offered us a 'great deal.'",
+      "expected_output": "Moves the roof out of the operating budget as a capital expenditure with a dedicated funding source, and requires COI disclosure, recusal and competitive bids for the related-party offer.",
+      "assertions": [
+        "Treats the roof as a capital expenditure kept out of the operating budget",
+        "Suggests funding from a capital campaign, designated capital reserve or specific grant",
+        "Requires the board president to disclose the conflict and be recused from selection",
+        "Requires competitive bids at this dollar level and documentation of the selection",
+        "Coordinates with reserves/cash-flow planning if reserves fund it"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Book a venue and caterer for our spring gala",
+      "better_skill": "nonprofit-fundraising-events"
+    },
+    {
+      "query": "Set dollar limits for who can approve invoices and sign checks",
+      "better_skill": "nonprofit-financial-controls"
+    }
+  ]
+}

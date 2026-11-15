@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-arts-commissioning-new-work",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Harbor Light Theatre (Portland, ME, $1.4M budget) wants to commission a new play from playwright Tasha Greene about the 1947 Portland fishing strike. Our board treasurer wants the contract to say we own the script since we're paying for it, and that we can require changes if a funder objects to content. We have $12,000 for the fee. Can you outline the commission agreement and tell me what the full project will actually cost us?",
+      "expected_output": "An agreement outline that rejects copyright ownership/work-for-hire and text-approval language in favor of an exclusive premiere option, production window with reversion, billing and time-boxed subsidiary participation, with installment payments tied to milestones; plus a development pipeline budget showing the fee is the smallest line, and a recommendation for counsel review.",
+      "assertions": [
+        "Explains that the playwright customarily retains copyright and that a work-for-hire clause generally fails for a commissioned play, recommending an exclusive option, production window and subsidiary participation instead",
+        "Rejects org approval over the text, keeping org approvals to production elements and handling content concerns up front in the commission's scope",
+        "Structures the fee in installments tied to delivery milestones and includes an option exercise deadline, a production window and reversion of rights if the play is not produced",
+        "Budgets the development pipeline (readings, workshop, etc.) separately from the commission fee and warns that the fee is not the whole cost",
+        "Notes that the premiere requires a separate production contract — an option is not a license",
+        "Recommends counsel or knowledgeable staff review before signature, especially for terms departing from the Dramatists Guild model"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Two other theaters (one in Tucson, one in Albuquerque) want to co-commission a play with us. Never done this. What needs to be nailed down?",
+      "expected_output": "A co-commissioning checklist covering the written split of fee and labor, a contracted premiere order with first-refusal windows, shared billing, and a post-premiere rights framework, with mention of the rolling-premiere model as a field example.",
+      "assertions": [
+        "Recommends splitting both the fee and concrete duties (who hosts which development stage, who handles funder applications, contract administration) in writing",
+        "Calls for a contracted premiere order — one partner holds the exclusive world-premiere option and others hold first-refusal rights within defined windows/territories",
+        "Addresses co-commission billing credit and whether it follows the work in future licensing",
+        "Addresses each partner's post-premiere production rights and notes collective subsidiary participation is capped by Dramatists Guild norms",
+        "Mentions a field model for shared premieres such as NNPN's Rolling World Premiere"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our community arts center in Kansas City is commissioning a short chamber musical for our spring gala. We already have an ASCAP license for the building, so I assume we're covered for performing it. We also want to run a 29-hour reading with some Equity actors first. Anything I'm missing?",
+      "expected_output": "Corrects the assumption that the ASCAP license covers a musical — dramatic performances need grand rights licensed from the authors — so the commission agreement should include a production license; nails down rights among book writer, composer and lyricist; and routes Equity reading rules to the union skill.",
+      "assertions": [
+        "States that an ASCAP/PRO license covers only nondramatic (small) rights and does not authorize performing a dramatico-musical work, which needs grand rights from the copyright owners",
+        "Recommends the commission agreement include or promise a production license for the premiere, defining the granted performance rights explicitly",
+        "Notes that the book writer, composer and lyricist are co-authors and the org must contract with and license from all of them",
+        "Routes Equity staged-reading rules and engagement details to nonprofit-arts-union-agreements-visas rather than fully specifying them"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "How do we get the rights to stage Little Shop of Horrors next fall, and what will the royalties run?", "better_skill": "nonprofit-arts-performance-licensing"},
+    {"query": "What are the Equity rules for a two-week developmental workshop with five actors — hours, pay, and which contract applies?", "better_skill": "nonprofit-arts-union-agreements-visas"}
+  ]
+}

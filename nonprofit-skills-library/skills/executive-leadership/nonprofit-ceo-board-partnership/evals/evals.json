@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-ceo-board-partnership",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm CEO of Summit Health Access, a $9M community health worker nonprofit in Denver. Board meets December 10. I need to write my CEO report for the packet. Big items: board needs to approve the FY28 budget and a new lease, we're running 6% under budget on grant revenue, days cash dropped below the 60-day floor the board set last year, and I want the board's thinking on whether to pursue Medicaid billing. My last report was 11 pages of program updates. Help me write it.",
+      "expected_output": "A short CEO report that leads with decisions requested, reports exceptions against board-set limits (including the cash floor breach) plainly, poses a framed generative question on Medicaid billing, cuts operational detail, and observes packet timing and chair-preview discipline.",
+      "assertions": [
+        "Puts every decision requested (approve FY28 budget, approve/authorize the lease) on page one, one sentence each",
+        "Reports exceptions against board-adopted limits/goals, stating plainly and early that days cash is below the board's floor, with evidence and the CEO's response (e.g., in a limit/status/evidence/response table)",
+        "Frames the Medicaid billing question as a generative question with why now and the type of input wanted (sense-making, red-teaming, prioritization), explicitly not asking for a vote",
+        "Cuts program anecdotes and dashboard restatement, keeping the narrative to roughly 2–4 pages with deep-dive material in 'read if interested' appendices",
+        "Recommends previewing material items (cash floor breach, revenue variance) with the board chair before the packet so nothing is a surprise",
+        "Advises sending the packet 5–7 days before the meeting and checking narrative numbers against the dashboard/finance committee figures"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "annual eval coming up in feb and our board has never set written goals for me. chair just said 'we'll do the usual.' what do i do — draft my self eval?",
+      "expected_output": "Coaches the CEO to propose written criteria now, drafts the structure of a self-evaluation memo submitted before deliberation, suggests a structured 360, and keeps compensation separate.",
+      "assertions": [
+        "Flags that evaluating without pre-set written criteria is a major source of unfair reviews and recommends proposing written goals/criteria to the chair now (and adopting them at the start of the next cycle)",
+        "Outlines a self-evaluation memo: criteria recap, evidence against each including misses, organizational health signals, development areas, proposed next-cycle goals",
+        "Advises submitting the self-evaluation before the board's evaluation deliberation",
+        "Suggests a structured 360 run by the chair or an outside facilitator with a defined instrument, respondent pool and confidentiality rules",
+        "States compensation should be a separate conversation following the board-side rebuttable-presumption process"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "One of my board members, who chairs the development committee, keeps emailing my development director directly with assignments and told her to drop the spring gala. My board chair is conflict-averse. Also — the board wants me to redo our committee charters and bylaws while I'm at it. How do I handle this?",
+      "expected_output": "Treats the rogue director as a governance problem routed through the chair and full board, uses the chair 1:1 to hand over the signal, and routes charters/bylaws to board-side skills.",
+      "assertions": [
+        "Explains the CEO reports to the board as a whole, and a single director directing staff is a governance problem rather than something to absorb silently",
+        "Recommends routing the director's requests to the board chair in writing and channeling direction through the chair and full-board decisions",
+        "Notes committee authority is limited to what the board's written charter grants, so the committee chair is not a parallel boss",
+        "Uses the board-chair 1:1 ('directors needing attention') to hand the issue to the chair, who owns board-to-board management",
+        "Routes rewriting committee charters to board governance and bylaws to the bylaws/policy skill rather than treating them as CEO-side work"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Our board needs a self-assessment and new committee charters — can you design them for the governance committee?",
+      "better_skill": "nonprofit-board-governance"
+    },
+    {
+      "query": "Write my all-staff email explaining the budget cuts the board approved last night.",
+      "better_skill": "nonprofit-executive-communications"
+    }
+  ]
+}

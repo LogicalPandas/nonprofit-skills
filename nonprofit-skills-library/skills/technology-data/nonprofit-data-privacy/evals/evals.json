@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-data-privacy",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Hopewell Animal Sanctuary is based in Oregon with about 120,000 contacts nationwide (roughly 35,000 in Oregon) and a few hundred donors in the UK. Next spring we're joining a direct-mail list co-op. Our current website privacy policy says 'we never share donor information with anyone.' Please rewrite our privacy policy and tell us which privacy laws we need to worry about.",
+      "expected_output": "A rewritten donor privacy policy anchored to the Donor Bill of Rights that discloses co-op participation with opt-out, plus an applicability analysis that checks state laws covering nonprofits and GDPR/UK GDPR, flagged for counsel review.",
+      "assertions": [
+        "Flags that the current 'never share' statement would conflict with co-op participation and must be changed before joining",
+        "Discloses list sharing/co-op participation with an opt-out mechanism and committed turnaround time",
+        "Anchors the policy language to the Donor Bill of Rights",
+        "Notes Oregon's privacy law can apply to nonprofits that meet its thresholds and tells the user to verify the thresholds rather than assuming nonprofit exemption",
+        "Addresses whether GDPR/UK GDPR applies to the UK donors",
+        "Recommends legal counsel review of final compliance determinations"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "are we PCI compliant? we use a Donorbox embedded form online. for phone gifts our admin writes the card number in a spreadsheet and types it in later when she has time",
+      "expected_output": "Identifies the spreadsheet card capture as the key failure, explains SAQ A eligibility for a truly hosted form including script hygiene, and has the org confirm its tier with the processor.",
+      "assertions": [
+        "Identifies writing card numbers in a spreadsheet as a PCI failure and says full card numbers must never be stored",
+        "Explains a properly hosted/iframed payment form can qualify for SAQ A but the actual card data flow must be audited",
+        "Notes the page hosting the iframe still needs script hygiene under the current SAQ A eligibility criteria",
+        "Recommends confirming the applicable SAQ tier and any scan requirement with the payment processor",
+        "Recommends a phone-gift process that enters cards directly into the PCI-compliant system"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "A staff laptop was stolen from a car last night. It had an Excel export of 4,000 donors with names, addresses, giving history, last-4 card digits, and bank account numbers for about 60 ACH donors. Donors live in 12 states. What do we do? Also, should we just switch to a better CRM?",
+      "expected_output": "Runs the incident response checklist with notification driven by affected individuals' states and counsel involvement, and hands the CRM question to the CRM skill.",
+      "assertions": [
+        "Starts with containment (e.g., revoking access, remote wipe) and scope assessment",
+        "Says notification obligations depend on the states where affected individuals reside, with timelines varying by state",
+        "Recommends involving legal counsel before public statements",
+        "Recommends notifying relevant vendors and cyber insurance carrier and documenting the incident for the board",
+        "Hands the CRM selection question to nonprofit-donor-crm"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Help us choose between Bloomerang and Neon CRM",
+      "better_skill": "nonprofit-donor-crm"
+    },
+    {
+      "query": "Which payment processor has the lowest fees for monthly giving?",
+      "better_skill": "nonprofit-digital-fundraising-tools"
+    }
+  ]
+}

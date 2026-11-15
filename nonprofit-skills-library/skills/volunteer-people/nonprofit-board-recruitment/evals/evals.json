@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-board-recruitment",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I chair the governance committee at Hearth & Home, a $4.5M supportive housing nonprofit in Portland, Maine. We have 11 board members; 3 terms end in June 2027. Our new strategic plan prioritizes a capital campaign for a 40-unit building and deeper resident voice. Right now we're mostly bankers and retired clergy, all white, all over 55. How should we recruit for those 3 seats?",
+      "expected_output": "A matrix-driven recruitment process: build a skills/access/representation matrix, identify gaps against the strategic plan, write target profiles before naming names, source 3–5 candidates per seat, cultivate in stages, use a letter of expectation, check terms against bylaws, and onboard before the first vote.",
+      "assertions": [
+        "Builds or outlines a board matrix with expertise, access/capacity, and representation bands, including lived experience with the population served (e.g., current or former residents)",
+        "Ties gap priorities to the strategic plan, e.g., real estate/facilities and major-gift/fundraising capacity for the capital campaign and resident/lived-experience representation",
+        "Writes a target profile for each seat naming 2–3 gap attributes before identifying candidates",
+        "Recommends sourcing 3–5 candidates per open seat, including people already close to the mission (volunteers, program alumni, donors), and tracking stage like a pipeline",
+        "Describes cultivation before the ask (informational meeting, observe a meeting or serve on a committee) and preparing a letter of expectation before the ask",
+        "Includes an onboarding packet before the first vote (e.g., bylaws, budget, Form 990, strategic plan, conflict-of-interest policy to sign) and checks terms/election against the bylaws text"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "can u draft a letter of expectation for new board members? we're a small arts org, $350k budget, board meets 6x/yr, we do give-or-get of $1,000",
+      "expected_output": "A filled-in letter of expectation covering role/term, time, fundraising, fiduciary duties, conflict of interest, confidentiality, onboarding, and what the member can expect, with placeholders for bylaw references.",
+      "assertions": [
+        "Includes role and term with a reference to the bylaws/policy section, flagged as a placeholder to verify against the bylaws",
+        "States the time commitment (6 meetings/year, committee assignment, hours per month)",
+        "States the $1,000 give-or-get fundraising expectation",
+        "Describes fiduciary duties of care, loyalty and obedience",
+        "Covers conflict-of-interest disclosure/recusal, confidentiality, onboarding (orientation date, peer mentor), and what the organization provides, plus a signature line"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our founder-ED wants to put her two closest friends on the board next month because 'we need warm bodies fast' — we're down to 5 members. Also, half our board has served 15+ years and nobody wants term limits. And honestly our board meetings are a mess — no agendas, committees don't meet. Can you fix all of this?",
+      "expected_output": "Warns against relationship-first recruiting, offers a fast matrix and bench approach, frames term limits as a staggered rotation policy drafted with bylaws/policy work, and routes meeting and committee dysfunction to board governance.",
+      "assertions": [
+        "Names the risk of relationship-first recruiting (groupthink, redundant skills, shallow bench) and recommends mapping each candidate to a written matrix gap",
+        "Recommends a governance committee with a year-round recruitment charge and 3+ names per seat",
+        "Frames term limits as a staggered rotation policy rather than 'everyone must leave,' weighing institutional knowledge against disengagement",
+        "Routes drafting term-limit language to the bylaws/policy skill",
+        "Routes seated-board issues (agendas, committees, meeting function) to the board governance skill rather than handling them as recruitment"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We need committee charters and a board self-assessment for our seated board — where do we start?",
+      "better_skill": "nonprofit-board-governance"
+    },
+    {
+      "query": "Write a position description for weekend food pantry sorting volunteers.",
+      "better_skill": "nonprofit-volunteer-management"
+    }
+  ]
+}

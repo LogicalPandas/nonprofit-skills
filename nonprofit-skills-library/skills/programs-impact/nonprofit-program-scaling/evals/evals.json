@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-program-scaling",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Second Shift Tutoring has run a high-dosage math tutoring program in 4 Chicago Public Schools for 5 years — 3 cohorts of outcome data showing gains on NWEA MAP. Budget $3.2M. A national funder is offering to help us expand to Milwaukee, Detroit and Cleveland over 3 years. Our founder still personally trains every tutor. How do we plan this?",
+      "expected_output": "A scaling plan that starts with a readiness assessment (flagging founder-dependence), builds a fidelity matrix of core vs. adaptable components, recommends a named replication model, outlines program-in-a-box, new-site assessment and pilot, separates growth capital, and sets fidelity monitoring and course correction.",
+      "assertions": [
+        "Runs a readiness-to-scale assessment covering evidence strength, model clarity, organizational capacity, funding runway, and demand in the new cities, with a go / no-go / not-yet framing",
+        "Flags the founder personally training every tutor as a founder-dependence readiness risk that must be codified (e.g., a training/certification pipeline) before replication",
+        "Includes a fidelity matrix distinguishing core components (e.g., dosage, tutor training model) from adaptable periphery, with monitoring at new sites",
+        "Names and compares replication models (direct expansion, affiliate/licensing, open-source toolkit, systems adoption) and recommends one with rationale",
+        "Recommends piloting one new site against the same core outcome indicators before rolling out to all three",
+        "Separates growth capital (systems, staffing, site start-up) from ongoing program funding in the funder ask"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Board member asked if we should just post our curriculum online for free so other orgs can run our program. Pros/cons? We're small, 6 staff.",
+      "expected_output": "Evaluates open-source/toolkit dissemination against other replication models given small central capacity, making the fidelity and outcome-attribution tradeoff explicit.",
+      "assertions": [
+        "Identifies this as the open-source/toolkit dissemination replication model and contrasts it with at least one alternative (affiliate/licensing or direct expansion)",
+        "States the tradeoff explicitly: fastest, cheapest reach but weakest fidelity guarantee and weakest ability to track aggregate outcomes",
+        "Notes that a small central team may favor toolkit dissemination, but that funders wanting an aggregate outcome story may need a more controlled model",
+        "Recommends identifying core components that adopters must keep (e.g., in implementation guides) to limit fidelity drift"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We piloted our home-visiting program for one cohort of 30 families in Austin last year and the results look great. A state agency wants us to roll it out in 12 rural Texas counties starting next fall. We don't have a formal evaluation yet. Let's go for it — help me plan the rollout.",
+      "expected_output": "Cautions that single-cohort evidence is a readiness gap, recommends strengthening measurement and/or a staged pilot rather than a 12-county launch, addresses rural adaptation via a fidelity matrix and local context checks, and notes the systems-adoption path.",
+      "assertions": [
+        "Flags single-cohort pilot evidence without formal evaluation as a readiness gap and recommends strengthening measurement (outcomes measurement) before or alongside scaling",
+        "Recommends a staged approach (e.g., piloting in one or a few rural counties against the same outcome indicators) rather than launching in all 12 at once",
+        "Calls for a new-site context check in the rural counties (local demand, cultural fit, existing providers, regulatory differences)",
+        "Uses a fidelity matrix to anticipate rural adaptation risks (rigid over-fidelity vs. fidelity drift)",
+        "Recognizes state rollout as a government/systems adoption path that may require policy or advocacy capacity"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Should we add a fee-for-service social enterprise arm so we're less dependent on foundation grants?",
+      "better_skill": "nonprofit-revenue-diversification"
+    },
+    {
+      "query": "A similar tutoring nonprofit in Milwaukee wants to merge with us instead of us opening a site there — how do we evaluate that?",
+      "better_skill": "nonprofit-mergers-fiscal-sponsorship"
+    }
+  ]
+}

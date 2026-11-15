@@ -1,0 +1,56 @@
+{
+  "skill_name": "nonprofit-bylaws-policy",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "We're incorporating Harbor Light Literacy as a Washington State nonprofit corporation and will apply for 501(c)(3) status in January. Five founders will be the first board. We want the board to be able to grow to about 15 over the next few years, we don't want voting members, and we want to be able to meet and vote over Zoom and by email when needed. Please draft our bylaws.",
+      "expected_output": "A full bylaws draft covering the standard sections, with deliberate choices on membership, board size range, quorum and terms, a dissolution clause tied back to the Articles, and a clear flag for state-law and counsel review.",
+      "assertions": [
+        "States board size as a range (e.g., a minimum and maximum) rather than a fixed number",
+        "Defines quorum and specifies whether it is measured against seated directors or authorized seats",
+        "Includes staggered terms and a term-limit provision",
+        "Explicitly addresses the no-membership choice (board-only governance) rather than leaving membership undefined",
+        "Includes a dissolution clause directing assets to another 501(c)(3)/governmental entity and notes the Articles of Incorporation must carry the dedication-of-assets clause",
+        "Marks the draft for review by legal counsel and checking against the Washington nonprofit corporation statute before adoption"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "bylaws say 15 directors, quorum 8. we've had 7 directors for 2 years and kept voting on stuff. auditor here in March. help??",
+      "expected_output": "Diagnoses the bylaws-vs-practice drift and quorum problem, recommends a reconciliation and a properly adopted amendment, and sends it to counsel given the validity questions.",
+      "assertions": [
+        "Explains that the written bylaws govern over informal practice until formally amended, so past votes may be questioned",
+        "Recognizes that with 7 seated directors a quorum of 8 cannot be met and flags that counsel should advise how to validly amend and/or ratify past actions",
+        "Recommends a practice-vs-bylaws reconciliation pass before drafting amendments",
+        "Proposes amendment language using a board-size range and a quorum based on seated directors",
+        "Says the existing amendment procedure (notice, vote threshold) must be followed and the vote minuted"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're a New York nonprofit with 24 employees and about $1.6M in revenue last year. Our ops manager wants to shred everything older than three years this Saturday to clear out the storage room, including old personnel files and closed federal grant files. Last week we got a letter from a former employee's attorney about her termination. Can you write a document retention schedule so we can go ahead with the shredding?",
+      "expected_output": "Halts the planned destruction under a litigation hold, then provides a category-based retention schedule with custodian and secure destruction, and flags the New York whistleblower requirement and counsel review.",
+      "assertions": [
+        "Says destruction of documents relevant to the former employee's anticipated claim must be suspended under a litigation/investigation hold",
+        "Provides a retention schedule organized by document category with periods (e.g., corporate records and minutes permanent)",
+        "Ties grant record retention to the grant agreement and the federal 2 CFR 200.334 rule rather than a flat three years",
+        "Tells the user to verify federal minimums at the source (e.g., USCIS, IRS, eCFR) and check New York law, which may be longer",
+        "Notes New York may require a whistleblower policy for organizations of this size and tells the user to verify the current threshold",
+        "Recommends involving legal counsel given the attorney letter"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Our board meetings drag on and nothing gets decided; how should we restructure our agenda and committees?",
+      "better_skill": "nonprofit-board-governance"
+    },
+    {
+      "query": "Do we have to register with other states before our online appeal goes out nationally?",
+      "better_skill": "nonprofit-charitable-registration"
+    }
+  ]
+}

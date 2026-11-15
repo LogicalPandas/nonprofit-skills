@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-housing-repair-preservation",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the ED of Rebuild Roanoke, a small nonprofit (4 staff, $900K budget) in Roanoke, VA. We do about 60 home repairs a year for low-income senior homeowners, funded by city CDBG, a local foundation, and a utility weatherization partnership. Our waitlist is 14 months long, first-come first-served, and last winter a woman with no heat waited behind a bunch of gutter and paint jobs. We also had two contractors get paid in full before finishing. Help me redesign our intake-to-completion workflow.",
+      "expected_output": "A numbered intake-to-completion workflow with completion conditions: written eligibility, a risk-ranked waitlist with an emergency tier, whole-home inspection before scoping, line-item scopes with contingency and lead screening, recorded agreements, verified contractors and bids, hold-point inspections, final payment held until punch-list closure and permits, warranty tracking, plus separate accounting for braided funds.",
+      "assertions": [
+        "Replaces first-in-first-out with a risk-ranked waitlist by health/safety urgency, including an emergency tier with a response target, and tells applicants their tier",
+        "Requires a whole-home inspection with a coded deficiency list and photos before scoping, not scoping from the application",
+        "Holds final payment until the punch list closes and permits receive final sign-off, with hold-point inspections for concealed work",
+        "Requires verifying licenses, insurance, and EPA Lead-Safe Certified Firm status before dispatch, and screening year built for pre-1978 lead (RRP) before finalizing scope",
+        "Includes observable completion conditions for each workflow step",
+        "Requires separate accounting/eligibility tests per funder for braided CDBG and weatherization dollars"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "do our volunteers need lead certification if they're scraping and repainting porches on 1950s houses? we're a church-based repair ministry in Akron, all volunteer crews",
+      "expected_output": "Explains that the EPA RRP Rule applies to work disturbing painted surfaces above the de minimis area in pre-1978 housing regardless of volunteer status, requiring a certified firm and certified renovator, lead-safe practices, and the Renovate Right pamphlet, and adds HUD Lead Safe Housing Rule requirements if federal funds are involved.",
+      "assertions": [
+        "States that volunteer status is not an exemption from the EPA RRP Rule for pre-1978 homes",
+        "States the RRP trigger area thresholds for interior and exterior painted surfaces and says to verify current EPA rules",
+        "Explains the organization must be an EPA Lead-Safe Certified Firm with a certified renovator on the job, using lead-safe containment practices",
+        "Mentions providing occupants the Renovate Right pamphlet with documented delivery",
+        "Notes added HUD Lead Safe Housing Rule requirements (e.g., clearance testing) if federal dollars touch the home"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our weatherization crew in Duluth wants to blow in attic insulation at a 1962 house this week before the cold hits, but our assessor noticed the roof has an active leak and there's some staining in the attic. The homeowner also asked us to build a wheelchair ramp at the front door since her husband just came home from the hospital — a volunteer said he could sketch one from her description over the phone. Can we just do both?",
+      "expected_output": "Advises deferring insulation until the moisture/roof problem is fixed (sequencing roof repair before insulation, written deferral with referral), and requiring an OT assessment and code-standard ramp specs rather than a phone sketch, with ramp footings likely contractor-preferred.",
+      "assertions": [
+        "Advises not insulating over an unresolved moisture/roof leak and sequencing the roof repair before attic insulation",
+        "Recommends a written deferral with referral if the moisture problem can't be resolved under the weatherization job",
+        "Recommends an occupational-therapy assessment to specify the modification rather than building a ramp from a phone description",
+        "States ramp design standards such as 1:12 maximum slope, 36-inch clear width, and landings, built to code even if no permit is required",
+        "Notes ramp footings/excavation are contractor-preferred or should be supervised by a skilled leader, and roofing is a licensed-contractor scope"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "We want to buy a 40-unit expiring Section 8 building — help me structure the acquisition and recapitalization deal.", "better_skill": "nonprofit-housing-development-finance"},
+    {"query": "Write our organization-wide vendor management and procurement policy covering all contractors and facilities vendors.", "better_skill": "nonprofit-vendor-facilities"}
+  ]
+}

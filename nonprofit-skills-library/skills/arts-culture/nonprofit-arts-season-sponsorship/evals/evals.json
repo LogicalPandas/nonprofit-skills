@@ -1,0 +1,47 @@
+{
+  "skill_name": "nonprofit-arts-season-sponsorship",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the development director at Cascade Ballet Theatre in Tacoma — $3M budget, four productions a year including a Nutcracker that draws about 22,000 people. We've never had a season presenter; right now we just have a few $2,500 'friends of the ballet' business donors. Our 2027-28 season gets announced next April. Help me build a sponsorship program: what to sell, how to price it, and what the pitch should look like.",
+      "expected_output": "A sponsorship ladder (season presenter, production, program, day/event) with a benefits matrix across visibility, hospitality, engagement and affiliation, pricing that holds ladder arithmetic and exceeds benefits' fair market value, multi-year default terms, a prospect/category map and a one-pager structure, with tax-line cautions and CPA review.",
+      "assertions": [
+        "Proposes an underwriting ladder of distinct properties (season presenter, production sponsor, program sponsor, day/event sponsor) with credit conventions, pricing the season deal at a multiple of a single production deal",
+        "Builds a benefits matrix across visibility, hospitality, engagement and affiliation, valuing each benefit by both org marginal cost and sponsor perceived value",
+        "Requires each tier's price to exceed the fair market value of its benefits and makes a multi-year commitment (with a modest term discount) the default ask",
+        "Recommends a category-mapped prospect list tagged by sponsor objective (awareness, client entertainment, employee engagement/CSR, community positioning) and a one-page leave-behind including a mocked-up credit visual",
+        "Explains the qualified sponsorship vs. advertising line (neutral acknowledgment, no qualitative/price language) and recommends routing the QSP/UBI split through the org's CPA before signature"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Our production sponsor (a local credit union, $15k) just sent playbill copy: 'Summit CU — lowest auto loan rates in the valley! Proud sponsor of Annie.' They also want to pay '$2 per ticket sold' next year instead of a flat fee. ok to just run it?",
+      "expected_output": "Explains that the qualitative and price language converts acknowledgment into advertising (potential UBI) and proposes neutral credit language, that per-ticket contingent payments are never qualified sponsorship payments so a flat fee is needed, and recommends CPA review and a no-advertising clause in the agreement.",
+      "assertions": [
+        "Identifies qualitative or price claims (e.g., 'lowest rates') as advertising rather than acknowledgment, making that revenue potentially taxable unrelated business income",
+        "Offers a neutral replacement credit line (e.g., name/logo with 'sponsored by')",
+        "States that payments contingent on attendance or tickets sold cannot be qualified sponsorship payments and recommends a flat fee",
+        "Recommends a no-advertising clause in the sponsorship agreement and routing the tax treatment to the org's CPA"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "A regional hospital system wants to be our season presenter for $120K/year — huge for us (community theater, $1.1M budget, Iowa). But their VP mentioned they'd 'love input' on whether we do a play with an abortion storyline next spring, they want to be the 'official healthcare partner' while another clinic already sponsors our sensory-friendly shows, and they also floated putting their name on our lobby permanently as part of the deal. How do I handle this?",
+      "expected_output": "Insists on a written no-artistic-control clause, defines the exclusivity category precisely with a carve-out for the existing clinic relationship and notes exclusivity affects the QSP calculation, separates permanent lobby naming into a capital-campaign process rather than season-sponsorship pricing, and recommends staff/CPA review before signing or announcing.",
+      "assertions": [
+        "Recommends an explicit written clause that the sponsor has no approval over content, casting or programming, and does not accept sponsor input on the title choice",
+        "Addresses exclusivity by defining the category precisely with a named carve-out for the existing clinic sponsor",
+        "Notes that with exclusivity only the portion of payment exceeding the fair market value of exclusivity and other benefits is a qualified sponsorship payment, and that the estimate should be documented",
+        "Separates permanent lobby naming from the season deal, routing it to nonprofit-capital-campaigns and warning not to price it on season-sponsorship logic",
+        "Advises not publishing the presenter credit until the agreement is signed and recommends knowledgeable staff/CPA review"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "We want to sell naming rights to our new black-box theater as part of our $6M building campaign — how do we value it?", "better_skill": "nonprofit-capital-campaigns"},
+    {"query": "Design a corporate partnership strategy and cause-marketing program with a national retailer for our youth orchestra.", "better_skill": "nonprofit-corporate-sponsorships"}
+  ]
+}

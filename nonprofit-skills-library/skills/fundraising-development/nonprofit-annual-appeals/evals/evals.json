@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-annual-appeals",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the development director at Harbor Lights Food Pantry in Providence, RI (about $1.4M budget). We're planning our December year-end appeal: a mailed letter plus a 3-email series. Our file has about 4,200 donors: roughly 600 first-time donors from this year, 2,100 who gave last year and this year, 900 whose last gift was 13-24 months ago, about 150 people giving $1,000+ a year, and 450 event attendees who never gave. Our fall appeal mailed October 20. Can you give me the segmentation plan with ask strings and a draft letter and reply card? Our board chair, Denise Alvarado, signs. A $25,000 match from the Coastal Family Fund is confirmed through Dec 31.",
+      "expected_output": "A segment-by-segment plan (new, renewing, lapsing, mid-level, prospects) with a distinct messaging angle and an ask string per segment anchored to each donor's own giving history, plus a direct-response letter and a reply device whose ask amounts match the letter. The response flags spacing from the fall appeal and pre-send checks.",
+      "assertions": [
+        "Gives each segment (new, renewing, lapsing, mid-level, non-donor prospects) its own messaging angle and ask string rather than one ask ladder for the whole file",
+        "Anchors ask strings to the donor's last or highest gift (around 1.1x-1.5x) with a higher top option to invite an upgrade, instead of a fixed generic ladder like $25/$50/$100 for everyone",
+        "The letter opens with a specific person or moment rather than a mission statement, states a specific ask with the Dec 31 match deadline, and includes a P.S. that restates the ask and deadline",
+        "The reply card uses the same ask amounts and match language as the letter, and the response says the email and landing page amounts must match too",
+        "Tells the user to confirm the '$X provides Y' impact figures with finance or program staff and to test merges and suppressions (recent donors, do-not-solicit, deceased) on a seed list before sending",
+        "Checks spacing against the October 20 fall appeal and other full-file asks (avoid two full-file asks within about 2-3 weeks)"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "ugh. our spring appeal tanked. 2.1% response last spring, 1.3% this spring, avg gift flat around $68. board treasurer wants me to hire a copywriter and redo the letter for fall. small youth arts nonprofit in Tucson, ~3,000 on the mail file. what should I actually look at before we spend money on new creative?",
+      "expected_output": "Before recommending new creative, the response treats the drop as possibly a segmentation or list-hygiene problem. It asks for multi-year response rate and average gift by segment and lays out a per-segment scorecard, including cost to raise a dollar.",
+      "assertions": [
+        "Warns that falling response is often a segmentation or list-hygiene problem rather than a copywriting one, and pushes back on hiring a copywriter as the first fix",
+        "Asks for the last 2-3 years of appeal-level response rate and average gift broken out by donor type or segment",
+        "Recommends a scorecard per appeal that includes response rate (gifts / pieces sent), average gift, cost to raise a dollar, and a year-over-year comparison by segment",
+        "Treats external response-rate benchmarks as rough references and puts the org's own year-over-year trend first",
+        "Points out data or list-hygiene work that belongs in CRM or segmentation tooling (nonprofit-donor-crm), or suggests a testable variant if volume supports it"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "For our year-end mailing at Riverbend Animal Rescue I want to include everyone who hasn't given in 3-5 years too (about 1,800 people) with the same letter and the same $50/$100/$250 ask as everyone else, and also blast the same ask by email to the whole list the same week. Simplest that way. Can you just write one letter that works for all of them?",
+      "expected_output": "The response refuses to make one letter for everyone. It explains the one-ask-string failure mode and sends long-lapsed donors to a dedicated win-back track. It also warns against stacking mail and email asks in the same week and offers segmented ask strings instead.",
+      "assertions": [
+        "Explains that one ask string for everyone causes under-asks for loyal donors and over-asks for new or small donors, and recommends per-segment ask strings based on giving history",
+        "Recommends sending donors lapsed 2+ years (the 3-5 year group) to a separate win-back track and points to nonprofit-donor-retention for that work",
+        "Warns that a full-file mail ask and a full-file email ask with the same ask in the same week is appeal stacking that can spike unsubscribes and opt-outs",
+        "Still gives a usable path forward, such as a segmented plan or a letter skeleton with ask strings that vary by segment"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Design a three-touch win-back campaign for donors who haven't given since 2022 — what offer, cadence and message should we use to reactivate them?", "better_skill": "nonprofit-donor-retention"},
+    {"query": "Write our monthly email newsletter for November with program updates and a volunteer spotlight — no donation ask this time.", "better_skill": "nonprofit-email-newsletter"}
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-faith-religious-liberty-compliance",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the executive director of Catholic Community Services of the Valley in Arizona (budget $4.2M, 55 staff). HHS has offered us a $1.1M three-year direct grant for a refugee youth mentoring program. Our board meets December 10 and wants a recommendation on whether to accept it. Concerns: we start every program day with an optional prayer, we have crucifixes in every room, our board must be practicing Catholics, and we prefer hiring Catholics for program roles. Can you prepare the accept-or-decline analysis for the board?",
+      "expected_output": "Produces an accept-federal-funds decision memo following the checklist: identify instrument and operative HHS Equal Treatment rule (45 CFR Part 87) and verify current rules, confirm direct funding, inventory inherently religious activities and design time/location separation with voluntary participation, beneficiary notice and alternative-provider referral, religious-character preservation (symbols, board), the contested co-religionist hiring question needing a written agency position, Single Audit/Uniform Guidance exposure, and a three-column board memo with trip-wires, all reviewed by counsel.",
+      "assertions": [
+        "Identifies the operative HHS Equal Treatment regulation (45 CFR Part 87) and tells the user to verify the current executive order/agency rule and model notice in the Federal Register",
+        "Treats the opening prayer as an inherently religious activity that must be voluntary, separated in time or location from funded services, and not a condition of service",
+        "States that religious symbols such as crucifixes and a requirement that board members be Catholic can generally be preserved, documented in a board-adopted religious-character preservation policy",
+        "Flags that co-religionist hiring on federally funded positions is contested and recommends getting a written position from the agency's civil-rights office",
+        "Mentions federal audit exposure (Uniform Guidance / Single Audit threshold) and tells the user to verify the current threshold",
+        "Structures the board recommendation as gains vs. what is given up plus named trip-wires for reconsideration, and states counsel must review before signing"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Planning board in our town (NJ) just denied our synagogue's application to convert a former office building into a shul — said parking and 'neighborhood character.' Same board approved a fitness center and a catering hall in that zone last year. What do we do first? Board president wants to start calling council members tomorrow.",
+      "expected_output": "Advises preserving the record before negotiating (litigation hold, open-records requests), classifies RLUIPA theories with emphasis on §2(b)(1) equal-terms using the fitness center and catering hall as comparators, documents substantial burden and sincerity, notes the circuit comparator test, prepares a pre-suit demand letter copied to DOJ, and coordinates state theories, with counsel review.",
+      "assertions": [
+        "Says to issue a written litigation hold and file open-records requests immediately, before negotiating or lobbying officials",
+        "Identifies a RLUIPA equal-terms (§2(b)(1)) theory using the fitness center and catering hall as nonreligious comparators, and recommends building a comparator record from planning approvals",
+        "Also considers RLUIPA substantial-burden (§2(a)) and documents why the burden exceeds inconvenience and that the use is a sincere religious exercise",
+        "Notes that the comparator test varies by circuit (Third Circuit for New Jersey) and should be checked",
+        "Recommends a pre-suit demand letter, possibly copying DOJ's Civil Rights Division, prepared or reviewed by counsel"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our Baptist retreat center in Tennessee rents lodging and the dining hall to outside groups most weekends. A same-sex couple asked to book it for their wedding reception. Our director says we're fine to say no because RFRA and the Masterpiece Cakeshop and 303 Creative cases protect religious organizations. Is he right?",
+      "expected_output": "Explains RFRA reaches only federal action (so state RFRA/state constitution must be checked), that Masterpiece and 303 Creative are narrow and not general defenses, that religious ownership alone doesn't create a public-accommodation exemption, and that federal Title II and state/local public-accommodation coverage must each be analyzed for the specific facility before deciding; recommends counsel sign-off before declining.",
+      "assertions": [
+        "States that federal RFRA applies only to federal government action and directs checking Tennessee's state RFRA or state constitutional doctrine instead",
+        "Explains that Masterpiece Cakeshop is a narrow procedural holding and 303 Creative a narrow expressive-speech holding, neither a general religious-liberty defense",
+        "States that religious ownership alone does not establish a public-accommodation exemption and that a facility-specific coverage analysis is needed",
+        "Calls for separate analysis of federal Title II and state/local public-accommodation law",
+        "Recommends counsel review before declining the booking"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We got the HUD grant for our shelter. Now help me redesign the evening schedule and staff roles so chapel stays optional and our case managers don't mix prayer into intake.",
+      "better_skill": "nonprofit-faith-programs-social-services"
+    },
+    {
+      "query": "A worship pastor we fired says we discriminated against him because of his disability. Does the ministerial exception protect us?",
+      "better_skill": "nonprofit-faith-employment-ministerial-exception"
+    }
+  ]
+}

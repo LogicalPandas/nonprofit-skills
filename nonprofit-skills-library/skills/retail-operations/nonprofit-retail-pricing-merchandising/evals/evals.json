@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-retail-pricing-merchandising",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I manage the ReStore-style home goods and clothing shop for Coastal Women's Shelter in Wilmington, NC (6,000 sq ft, ~$700K/year). Every volunteer prices things differently, we have racks of clothes that have been out since spring, and the boutique corner is in the back by the restrooms. Help me build a real pricing system and a better floor setup.",
+      "expected_output": "A category price-band matrix, explicit boutique-tier criteria, a color-tag markdown calendar, and a floor plan with category zones, a visible boutique section and room vignettes for furniture/housewares, plus a monthly sell-through review.",
+      "assertions": [
+        "Proposes a published category price-band matrix so pricing is consistent across volunteers and shifts instead of improvised item by item",
+        "Defines explicit boutique/premium tier criteria (e.g., named brands, like-new condition, vintage indicators) aligned with the grading rubric",
+        "Sets up a color-tag rotation with a fixed calendar of markdown steps so aged stock clears mechanically",
+        "Recommends moving the boutique section to a visible, discoverable location and staging furniture/housewares as room vignettes",
+        "Recommends reviewing sell-through by category over a fixed window and diagnosing whether low sell-through is a price, stock level or placement problem before cutting prices broadly",
+        "Suggests a separate, slower markdown rule or pull-to-online step for boutique items rather than the standard color-tag schedule"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "It's Nov 15. Need a seasonal rotation calendar for our thrift shop for the next year - holiday, back to school, Halloween, etc. Keep it practical, we have a small backroom.",
+      "expected_output": "A 12-month seasonal rotation calendar that brings in categories ahead of demand windows (e.g., back-to-school and fall clothing 6-8 weeks early), stages each changeover in backstock for a single-push floor swap, and includes regular display-point refreshes.",
+      "assertions": [
+        "Provides a month-by-month calendar covering at least holiday, back-to-school and Halloween/costume categories",
+        "Schedules floor changeovers ahead of each demand window rather than reactively (e.g., back-to-school and fall clothing several weeks before the season)",
+        "Recommends staging each changeover in backstock so the floor swap happens in a single push",
+        "Includes refreshing windows, entrance tables or endcaps on a weekly to biweekly cadence",
+        "Accounts for the small backroom constraint (e.g., clearing aged stock via color-tag clearance, bag sales or liquidator pulls before staging)"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Sales at our Habitat-affiliated thrift store in Boise have been flat for six months. Our board treasurer wants us to just raise every price 20% across the board starting Monday. Is that the right move?",
+      "expected_output": "Advises against a blanket increase before diagnosing the problem: pull sell-through by category to see whether flat sales are a pricing, space/merchandising or upstream intake-quality problem, benchmark price bands against local resale competitors and sold comps, then adjust specific bands and update POS codes before retagging.",
+      "assertions": [
+        "Recommends pulling sell-through by category before changing prices, to tell whether the issue is pricing, merchandising/space, or upstream intake quality",
+        "Recommends benchmarking current price bands against comparable local resale operations or sold comps rather than applying a uniform percentage",
+        "Notes that low sell-through categories may be overpriced, overstocked or poorly placed, so a blanket increase could make some categories worse",
+        "Says any band change should be reflected in POS item codes before the floor is retagged",
+        "Suggests checking whether boutique-worthy items are being priced at standard band as a revenue opportunity"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Our cashiers keep coming up $20 short at close and we suspect sweethearting. How do we tighten cash handling at the register?",
+      "better_skill": "nonprofit-retail-store-operations"
+    },
+    {
+      "query": "We found a signed first-edition book in donations. How should we price and list it on eBay?",
+      "better_skill": "nonprofit-online-resale"
+    }
+  ]
+}
