@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-permanent-supportive-housing
-description: "Designs and operates permanent supportive housing (PSH) with Housing First fidelity: no housing-readiness conditions, voluntary services, harm reduction, standard renewable leases, scattered-site choice. Covers the USICH Housing First checklist, staffing models (ACT, intensive case management, peers), lease-up planning, retention and eviction-prevention protocols, and braided funding (CoC PSH, PBV, Medicaid 1915(i), HUD-VASH). Use when a user says 'design a PSH program', 'are we really Housing First', 'our caseloads are too high', 'write an eviction-prevention protocol', 'can Medicaid pay for our services'. Not for rapid rehousing or transitional housing (use nonprofit-housing-rapid-rehousing-transitional); shelter, outreach, diversion, or coordinated entry/HMIS (use nonprofit-housing-homelessness-services); tenant selection, income certs, or unit property/asset management (use nonprofit-housing-affordable-rental-operations); Section 42/HUD file compliance (use nonprofit-housing-lihtc-hud-compliance)."
+description: "Designs and operates permanent supportive housing (PSH) with Housing First fidelity: fidelity screens, scattered- vs. single-site models, services staffing and caseloads, lease-up, retention and eviction prevention, and braided funding (CoC, PBV, Medicaid, HUD-VASH). Use when a user says 'design a PSH program', 'are we really Housing First', 'our caseloads are too high', or 'can Medicaid pay for our services'. Not for rapid rehousing or transitional housing (use nonprofit-housing-rapid-rehousing-transitional); shelter, outreach, or coordinated entry/HMIS (use nonprofit-housing-homelessness-services); tenant selection or property management (use nonprofit-housing-affordable-rental-operations); or HUD file compliance (use nonprofit-housing-lihtc-hud-compliance)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,26 +12,11 @@ metadata:
 
 # Permanent Supportive Housing (PSH): Design and Operations
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the task is to design, fund, staff, lease up, or operate permanent
-supportive housing, or to diagnose fidelity and retention problems in an existing PSH
-program. Concrete triggers:
+This skill covers designing, funding, staffing, leasing up, and operating PSH, and diagnosing
+fidelity and retention problems (including veterans: VASH vs. SSVF). Route these out:
 
-- "Design a PSH program for chronically homeless individuals / for our new 60-unit building."
-- "Are we actually Housing First? Do our policies violate fidelity?"
-- "What staffing model and caseloads do we need for high-acuity tenants?"
-- "Write a retention / eviction-prevention protocol for our supportive housing."
-- "Can Medicaid (1915(i) or a waiver) pay for our supportive services?"
-- "Plan lease-up for our CoC PSH grant — referrals start in 90 days."
-- "A tenant is months behind on rent and using in the unit — what's the protocol?"
-- "How do we serve veterans — is that VASH or SSVF?"
-
-Audience: PSH program directors and case managers; nonprofit housing operators adding a
-services layer to a project; CoC grantees; and consultants advising an organization new
-to supportive housing.
-
-**Boundary — route these out before starting:**
 - Rapid rehousing and transitional housing design (time-limited subsidies, stabilization
   services, program exit planning) → `nonprofit-housing-rapid-rehousing-transitional`.
 - Emergency shelter, street outreach, diversion, and the operation of coordinated entry
@@ -63,33 +48,27 @@ redesign or re-route to the RRH/transitional sibling.
 
 ### Housing First: the USICH checklist elements
 
-Anchor fidelity to USICH's *Housing First Checklist* program-level elements:
+Anchor fidelity to USICH's *Housing First Checklist*. Confirm the current federal and funder
+stance on Housing First requirements (HUD NOFO language, state and local funder terms) before
+citing USICH as a binding standard. Start with USICH's four-question quick screen:
+(1) Can applicants enter with no income? (2) Can they enter without being "clean and sober" or
+treatment-compliant? (3) Can they enter with criminal justice involvement? (4) Are service plans
+voluntary — no eviction for not following through? Any "no" is a fidelity breach to fix first.
 
-- **No preconditions.** Admission is not contingent on sobriety, minimum income, lack of
-  a criminal record, treatment completion, or service participation. Screen in, don't
-  screen out: reject only where legally required (e.g., lifetime sex-offender registry,
-  methamphetamine manufacture on federally assisted property), and work everything else
-  through the coordinated entry process to another resource when you truly cannot serve
-  someone.
-- **No "housing readiness" tests.** Do not reject for poor credit, poor or no rental
-  history, minor criminal convictions, or behaviors interpreted as "not ready."
-- **Reasonable accommodation opportunities** built into application, screening, and
-  tenancy (see the fair-housing sibling for the legal standard).
-- **Tenant-driven goals.** Service plans emphasize engagement and practical
-  problem-solving over clinical compliance; plans are reviewed and offered, never
-  imposed as a condition of tenancy.
-- **Harm reduction.** Non-judgmental engagement with substance use; education on safer
-  practices; substance use alone, without an independent lease violation, is never an
-  eviction reason.
-- **Rent flexibility.** Reasonable flexibility on timely payment, payment arrangements
-  for arrears, and help with money management (including representative payee options).
+Three items programs most often miss:
+
+- **Screen in, don't screen out.** No rejection for poor credit, poor or no rental history,
+  minor convictions, or "not ready" behaviors. Reject only where legally required (e.g.,
+  lifetime sex-offender registry, methamphetamine manufacture on federally assisted
+  property), and route anyone you truly cannot serve back through coordinated entry.
+  Build reasonable accommodation into application, screening, and tenancy (legal standard:
+  the fair-housing sibling).
+- **Harm reduction and rent flexibility.** Substance use alone, without an independent
+  lease violation, is never an eviction reason. Offer payment arrangements for arrears and
+  money-management help (including representative payee options).
 - **Transfer before eviction.** Every effort to transfer a tenant whose tenancy is in
-  jeopardy; eviction to homelessness is avoided whenever possible.
-
-USICH's four-question quick screen: (1) Can applicants enter with no income? (2) Can they
-enter without being "clean and sober" or treatment-compliant? (3) Can they enter with
-criminal justice involvement? (4) Are service plans voluntary — no eviction for not
-following through? Any "no" is a fidelity breach to fix first.
+  jeopardy; eviction to homelessness is avoided whenever possible. Service plans stay
+  tenant-driven and are offered, never imposed as a condition of tenancy.
 
 ### Model choices: scattered-site vs. single-site
 
@@ -264,6 +243,21 @@ Keep rent, operating, and services money separate and name each source:
 - **Lease-up plan** — referral pacing, document supports, unit pipeline, move-in costs.
 - **Funding braid map** — payer by cost category, with terms and renewal dates.
 
+Fidelity self-assessment skeleton (one row per checklist element; score 0 = absent,
+1 = in policy only, 2 = in policy and practice):
+
+| Element | Evidence reviewed (policy, file, data) | Score (0-2) | Fix and owner | Due |
+|---|---|---|---|---|
+| No income requirement at entry | [admissions policy; rejection log] | [ ] | [ ] | [ ] |
+| No sobriety/treatment condition | [lease; house rules; screening tool] | [ ] | [ ] | [ ] |
+| Criminal history screened only as legally required | [screening criteria] | [ ] | [ ] | [ ] |
+| Voluntary services; no eviction for non-participation | [service-plan template; eviction filings] | [ ] | [ ] | [ ] |
+| Rent flexibility and arrears plans | [arrears ladder; filings per year] | [ ] | [ ] | [ ] |
+| Transfer before eviction | [transfer log] | [ ] | [ ] | [ ] |
+| [Additional checklist element] | [ ] | [ ] | [ ] | [ ] |
+
+Score practice from actual admissions, rejections, and filings data, not policy text alone.
+
 ## Common Failure Modes
 
 - **Housing-readiness creep.** "We'll house them once they're stable" — sobriety,
@@ -298,17 +292,14 @@ Keep rent, operating, and services money separate and name each source:
    quietly filters "hard" referrals away). Remedy: audit actual admissions and rejections
    data, not just policy text; include tenants in the annual review.
 
-## Practitioner vs. Advisor Split
+## For advisors
 
-- **Practitioner (PSH director, services supervisor):** Own the retention protocol, the
-  role split with property management, the after-hours decision tree, and the annual
-  fidelity self-assessment. Rehearse the "tenant in crisis with arrears plus neighbor
-  complaints" scenario with staff before it happens.
-- **Advisor/consultant:** Deliver the program design document, fidelity self-assessment,
-  staffing plan, and funding braid map, then hand off operations. If running a design
-  engagement, the output must include (a) model decision memo, (b) USICH-checklist-scored
-  self-assessment, (c) staffing plan with caseloads and budget, and (d) eviction-
-  prevention protocol draft — and you should exit when lease-up starts.
+- A design engagement delivers (a) model decision memo, (b) USICH-checklist-scored
+  self-assessment, (c) staffing plan with caseloads and budget, and (d) eviction-prevention
+  protocol draft; exit when lease-up starts.
+- Practitioners own the retention protocol, the role split with property management, the
+  after-hours decision tree, and the annual fidelity self-assessment; rehearse the "tenant in
+  crisis with arrears plus neighbor complaints" scenario with staff before it happens.
 
 ## References
 

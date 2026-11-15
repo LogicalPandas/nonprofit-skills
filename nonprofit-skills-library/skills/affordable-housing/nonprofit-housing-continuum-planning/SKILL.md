@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-continuum-planning
-description: "Maps a community's housing ecosystem across the housing continuum, from homelessness services to affordable homeownership; measures the need-vs-supply gap by AMI band and tenure using HUD CHAS, PIT, and local needs data; and helps nonprofit boards decide where the org should play: enter a stage, expand, exit, or partner. Use when a user says things like \"map our community's housing continuum,\" \"what's our county's housing gap,\" \"should we get into permanent supportive housing,\" or \"should we exit our shelter program and partner instead.\" Not for org-wide strategic planning (use nonprofit-strategic-planning), general needs-assessment methodology (use nonprofit-needs-assessment), market study or pro forma for a specific deal (use nonprofit-housing-development-finance), or design of one stage's programs (use nonprofit-housing-homelessness-services, nonprofit-housing-rapid-rehousing-transitional, nonprofit-housing-permanent-supportive-housing, nonprofit-housing-homeownership-programs)."
+description: "Maps a community's housing continuum from homelessness services to affordable homeownership, measures the need-vs-supply gap by AMI band and tenure with HUD CHAS, PIT, and local data, and helps a board decide where to play: enter, expand, exit, or partner. Use when a user says 'map our community's housing continuum', 'what's our county's housing gap', 'should we get into permanent supportive housing', or 'should we exit our shelter program and partner instead'. Not for org-wide strategic planning (use nonprofit-strategic-planning), general needs assessment (use nonprofit-needs-assessment), deal feasibility (use nonprofit-housing-development-finance), or designing one stage's programs (use the stage-specific housing skills)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,16 +12,20 @@ metadata:
 
 # Nonprofit Housing Continuum Planning
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to map a community's housing ecosystem, quantify the gap between housing need and supply by AMI band and tenure, and turn that map into "where we play" portfolio recommendations for a nonprofit board. Typical triggers: "we're writing a housing strategy — where is the gap in our county?", "how many of our renters are cost-burdened at 30% AMI?", "should our org get into permanent supportive housing?", "there's no path to ownership here — is that a gap we should fill?", "should we hand our transitional program to another agency?"
-
-**Boundary with siblings:**
-- If the board process is a full org-wide strategic plan where housing is one pillar, run `nonprofit-strategic-planning` and use this skill only for the housing-portfolio analysis inside it.
-- If the user needs general community needs-assessment methodology (surveys, focus groups, indicator dashboards across health/education/housing), use `nonprofit-needs-assessment`. This skill is specifically about housing need/supply gaps on the continuum.
-- Once a decision is made to pursue a specific deal, feasibility, market study, site control, and capital stack are `nonprofit-housing-development-finance`.
-- Designing or operating the programs at a chosen stage: street outreach/shelter/diversion/coordinated entry is `nonprofit-housing-homelessness-services`; rapid rehousing and transitional housing operations are `nonprofit-housing-rapid-rehousing-transitional`; PSH design and Housing First fidelity are `nonprofit-housing-permanent-supportive-housing`; affordable rental operations are `nonprofit-housing-affordable-rental-operations`; ownership programs are `nonprofit-housing-homeownership-programs`; repair/preservation is `nonprofit-housing-repair-preservation`; CLT/shared-equity stewardship is `nonprofit-housing-community-ownership`.
-- Housing-market advocacy and zoning reform that emerges from the gap map is `nonprofit-housing-advocacy-land-use`.
+- Full org-wide strategic plan where housing is one pillar → `nonprofit-strategic-planning`; use
+  this skill only for the housing-portfolio analysis inside it.
+- General needs-assessment methodology (surveys, focus groups, cross-sector indicators) →
+  `nonprofit-needs-assessment`.
+- Feasibility, market study, site control, capital stack for a specific deal →
+  `nonprofit-housing-development-finance`.
+- Designing or operating a chosen stage: `nonprofit-housing-homelessness-services`,
+  `nonprofit-housing-rapid-rehousing-transitional`, `nonprofit-housing-permanent-supportive-housing`,
+  `nonprofit-housing-affordable-rental-operations`, `nonprofit-housing-homeownership-programs`,
+  `nonprofit-housing-repair-preservation`, `nonprofit-housing-community-ownership`.
+- Housing advocacy and zoning reform that emerges from the gap map →
+  `nonprofit-housing-advocacy-land-use`.
 
 ## Framework 1: The Housing Continuum as an Organizing Map
 
@@ -40,19 +44,15 @@ Two rules make the continuum a planning tool rather than a diagram:
 - **People flow both directions.** A household at 25% AMI does not "graduate" to 60% AMI units in a tight market; the map must show choke points, not a one-way ladder. The most common structural failure is a community rich in shelter and rich in 60-80% AMI product with almost nothing in between — households exit shelter into homelessness, not into PSH or deeply affordable rental.
 - **Count every stage, including ones you don't operate.** A gap map with an org-shaped hole (stages where the org has no visibility) is advocacy, not analysis. Inventory the whole ecosystem: public agencies, other nonprofits, for-profit LIHTC developers, PHAs, and informal supply (family doubling-up, which CHAS and PIT both miss).
 
-**Practitioner vs. advisor:** a practitioner (housing org staff) builds the map to steer their own portfolio and to speak credibly in the local Consolidated Plan process. An advisor/consultant builds the same map but must also pressure-test the client's self-definition — boards describe what they do by program name, not continuum stage, and half the engagement is translating.
-
 ## Framework 2: AMI Bands and the 30%-of-Income Standard
 
-**AMI** (Area Median Income) is HUD's estimate of median family income for a metro area or non-metropolitan county, adjusted by household size and updated annually. Every affordability conversation in US housing resolves to AMI bands:
-
-- **≤30% AMI** — extremely low income (ELI). HUD defines ELI as the greater of 30% AMI or the federal poverty guideline.
-- **31-50% AMI** — very low income (VLI); the HCV/public-housing eligibility world.
-- **51-80% AMI** — low income; the LIHTC standard (the Section 60%-of-40%-at-50% test makes LIHTC buildings effectively serve this band).
-- **81-120% AMI** — "workforce"/middle income; served by market product or modest subsidy.
-- **Above 120% AMI** — market.
-
-**The 30% standard:** a household is *cost-burdened* when housing (rent or ownership costs plus utilities) exceeds 30% of gross income; *severely cost-burdened* at 50%. This is the federal benchmark embedded in CHAS data, in the Brooke Amendment rent ceiling for public housing, and in virtually every needs assessment. Compute the affordability line per band: at 30% AMI, an "affordable" rent is 30% of that band's income, roughly the Section 8 standard of rent-plus-utilities equal to 30% of adjusted income (tenant-paid share is income-based, not unit-based).
+Use HUD's bands: **≤30% AMI** extremely low income (ELI; HUD defines ELI as the greater of 30% AMI
+or the federal poverty guideline); **31-50%** very low income (the HCV/public-housing world);
+**51-80%** low income (the LIHTC standard; the Section 60%-of-40%-at-50% test makes LIHTC
+buildings effectively serve this band); **81-120%** workforce/middle income; **above 120%** market.
+Cost burden (30%) and severe cost burden (50%) are the federal benchmarks embedded in CHAS. Compute
+the affordability line per band: at 30% AMI, an "affordable" rent is 30% of that band's income
+(tenant-paid share under Section 8 is income-based, not unit-based).
 
 **Two traps:**
 - AMI for a 1-person household is not the 4-person AMI you see in the newspaper. Always cite the income limit for the actual household size, and never mix HUD AMI with state or city income-limit systems (some states and municipal programs publish their own, which differ).
@@ -67,7 +67,7 @@ Build the needs/supply picture from four data layers, in this order:
 3. **PIT and HIC** — the Point-in-Time count (one-night census of sheltered and unsheltered homeless persons, each January, required by HUD for each Continuum of Care) and the Housing Inventory Count (beds by program type: ES, TH, RRH, PSH, safe haven). Together they size the homelessness-services end of the continuum. PIT is an undercount with known day-to-day variance — treat it as a floor, compare 3-5 years of trend, and note the CoC geography rarely matches your service-area geography.
 4. **State/local/regional needs assessments** — state HFA housing needs studies, regional housing needs allocations (e.g., RHNA-style regional plans), city housing element gap analyses, university/PPRI studies. Layer these for the 80-120% AMI and ownership bands CHAS underexplains, and for local market dynamics (job growth, rent trends).
 
-Supplementary sources for supply-side counts: HUD's LIHTC database and state HFA allocation plans for subsidized units, the National Housing Preservation Database for expiring-use risk, HUD TRACS/public housing inventory for deep-subsidy units, and NLIHC's *The Gap* and *Out of Reach* reports for national/state benchmarks (the 2026 Gap report finds a shortage of 7.2 million affordable and available rental homes for ELI renter households nationwide, ~35 per 100 ELI renters — useful to anchor how bad local numbers are against the national picture).
+Supplementary sources for supply-side counts: HUD's LIHTC database and state HFA allocation plans for subsidized units, the National Housing Preservation Database for expiring-use risk, HUD TRACS/public housing inventory for deep-subsidy units, and NLIHC's *The Gap* and *Out of Reach* reports for national/state benchmarks (the 2026 Gap report finds a shortage of 7.2 million affordable and available rental homes for ELI renter households nationwide, ~35 per 100 ELI renters — useful to anchor how bad local numbers are against the national picture; cite the latest NLIHC edition's figure and its year in any deliverable).
 
 **The AMI-band needs/supply table** — the core analytical deliverable. For each AMI band, by tenure (renter/owner):
 
@@ -92,8 +92,6 @@ Once the gap map exists, the board question is: enter a stage, expand, exit, or 
 4. **Financial sustainability** — an operating pro forma for the stage's dominant funding stream (CoC grants for PSH/RRH, project-based vouchers for deep rental, buyer-fee models for ownership). Do not recommend entering a stage whose funding stream the org has never raised; flag it as a prerequisite.
 
 **Exit and partner are real options, not failures.** A shelter provider with full occupancy and strong RRH outcomes but no PSH pipeline should often *partner* (referral MOU with a PSH operator) rather than build PSH. Exiting a stage: recommend exit when (a) the gap has closed or moved, (b) another provider has clear comparative advantage, or (c) the funding stream has structurally eroded — and pair every exit recommendation with a transition plan for participants, staff, and funders. Never recommend an exit from a stage where the org is the sole provider without naming the successor.
-
-**Practitioner vs. advisor:** the practitioner presents the decision memo to their own board with a recommendation. The advisor presents the same evidence but should hold the recommendation loosely — the classic consultant failure is recommending entry into the stage the client's ED already wanted. Test alternatives explicitly in the memo.
 
 ## Deliverable 1: Continuum Gap Map
 
@@ -127,6 +125,8 @@ Structure (keep to 5-7 pages):
 
 ## Advisor Framing
 
+- Pressure-test the client's self-definition: boards describe what they do by program name, not continuum stage, and half the engagement is translating.
+- Hold the recommendation loosely — the classic consultant failure is recommending entry into the stage the client's ED already wanted. Test alternatives explicitly in the memo.
 - Scope data work separately from the decision memo — clients can build the gap table in-house with this skill and hire you only for the board process.
 - Present the map to the full ecosystem (CoC, city housing staff, other providers) before the client's board sees recommendations; a recommendation built on other providers' data that they haven't seen breeds coalition damage that outlasts the engagement.
 - In Consolidated Plan cycles, time the engagement so findings land during the jurisdiction's public-comment window — one engagement can shift HOME/ESG allocations, which is often the real motive behind commissioning the map.

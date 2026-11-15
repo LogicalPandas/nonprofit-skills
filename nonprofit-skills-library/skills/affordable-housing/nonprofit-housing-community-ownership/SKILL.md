@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-community-ownership
-description: "Designs shared-equity community ownership models — community land trusts (tri-partite governance, ground leases, resale formulas), limited-equity housing cooperatives (share purchase, occupancy agreements, co-op boards), and deed-restricted ownership (index-based, appreciation-capped, and equity-share formulas) — plus perpetuity stewardship and model selection. Use when a user says 'should we start a community land trust,' 'explain our resale formula to a homebuyer,' 'draft the key terms for our ground lease,' 'convert our rentals into a limited-equity co-op,' or 'our deed restriction expires soon — how do we enforce and renew it.' Not for homebuyer selection, education, or post-purchase support, or program-level shared-equity resale formulas in a conventional homeownership program (use nonprofit-housing-homeownership-programs), for developing the housing or its capital stack (use nonprofit-housing-development-finance), or for general nonprofit board governance (use nonprofit-board-governance)."
+description: "Designs shared-equity community ownership: community land trusts (tri-partite governance, ground leases), limited-equity housing cooperatives, deed-restricted ownership, resale formulas for all three, perpetual stewardship, and model selection. Use when a user says 'should we start a community land trust', 'explain our resale formula to a homebuyer', 'draft the key terms for our ground lease', or 'our deed restriction expires soon, how do we renew it'. Not for homebuyer selection, education, or post-purchase support (use nonprofit-housing-homeownership-programs), developing the housing or its capital stack (use nonprofit-housing-development-finance), or general board governance (use nonprofit-board-governance)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -12,11 +12,18 @@ metadata:
 
 # Nonprofit Housing: Community Ownership and Shared-Equity Models
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to design, explain, or steward permanently affordable ownership housing where the public or nonprofit interest is protected by a legal instrument rather than by ongoing subsidy: community land trusts (CLTs), limited-equity housing cooperatives (LEHCs), and deed-restricted shared-equity homeownership. Trigger tasks include: "should we start a community land trust or just use deed restrictions," "our CLT ground lease is up for revision — what terms matter," "explain our resale formula to a seller," "convert our scattered-site rentals into a co-op," "our deed restrictions expire in 15 years — what's our renewal and monitoring plan," or "draft a stewardship policy for our shared-equity portfolio."
+This skill covers the ownership structures and their legal/economic architecture, and it owns
+resale-formula design for all shared-equity models.
 
-**Boundary:** this skill covers the ownership structures and their legal/economic architecture only. Selecting, educating, and supporting individual homebuyers is `nonprofit-housing-homeownership-programs` (this skill defines the *structure* the buyer enters, not the program cycle around it). Acquiring land, entitling, constructing, and capitalizing the housing — LIHTC, HOME, CDBG, and the rest of the capital stack — is `nonprofit-housing-development-finance`. General nonprofit board mechanics (agendas, committees, ED evaluation) is `nonprofit-board-governance` — this skill covers only the CLT/co-op governance features that are distinctive to shared-equity structures. Fair-housing analysis of occupancy rules is `nonprofit-housing-fair-housing`.
+- Selecting, educating, and supporting individual homebuyers → `nonprofit-housing-homeownership-programs`
+  (this skill defines the structure the buyer enters, not the program cycle around it).
+- Land acquisition, entitlement, construction, and the capital stack (LIHTC, HOME, CDBG) →
+  `nonprofit-housing-development-finance`.
+- General board mechanics (agendas, committees, ED evaluation) → `nonprofit-board-governance`; this
+  skill covers only CLT/co-op governance features distinctive to shared equity.
+- Fair-housing analysis of occupancy and membership rules → `nonprofit-housing-fair-housing`.
 
 ## The Three Core Models at a Glance
 
@@ -87,7 +94,7 @@ Standard sections to specify (deliverable is a key-terms outline for attorney dr
 5. **Resale** — resale formula (by reference to the exhibit), pre-approval of any listing, marketing rights and duties of both parties, timeline for CLT to produce a qualified buyer.
 6. **CLT repurchase option / right of first refusal** — CLT may purchase at formula price within a fixed window (typically 15–45 days) after notice of intent to sell or a listed sale; procedures if the CLT declines.
 7. **Inheritance** — devise to qualified heir (spouse/child living in home often regardless of income for a defined period); CLT repurchase from non-qualified heirs at formula price.
-8. **Mortgagee protections** — this is what makes the home financeable: lender notice of default, opportunity to cure on the homeowner's behalf, assignment of lease to a new qualified buyer after acquisition, and no lease termination while a mortgage is in good standing. Leases missing standard lender protections get the home's mortgage application denied — Fannie Mae and Freddie Mac will purchase loans on CLT homes only when the ground lease meets their review criteria (a market opened up under the FHFA Duty to Serve obligation), so have lender-relations counsel confirm conformity.
+8. **Mortgagee protections** — this is what makes the home financeable: lender notice of default, opportunity to cure on the homeowner's behalf, assignment of lease to a new qualified buyer after acquisition, and no lease termination while a mortgage is in good standing. Leases missing standard lender protections get the home's mortgage application denied — Fannie Mae and Freddie Mac will purchase loans on CLT homes only when the ground lease meets their review criteria (a market opened up under the FHFA Duty to Serve obligation), so have lender-relations counsel confirm conformity against the current Fannie Mae and Freddie Mac selling-guide requirements for community land trust ground leases.
 9. **Taxes and insurance** — homeowner pays property tax on improvements; specify how the land's assessment is handled (some states permit land exemption or proration for CLTs — check state law rather than assuming). Hazard insurance naming both parties.
 10. **Maintenance, condition standards** — repair obligations, minimum condition at resale.
 11. **Default and remedies** — notice and cure periods (typically 30 days), grounds for termination, eviction as last resort with relocation obligations.
@@ -150,18 +157,37 @@ Decision drivers — walk them in order for a given context:
 1. **Land cost and market pressure.** High-cost, land-constrained markets → CLT (removing land from the price equation does the most work). Low-cost rural markets → deed restriction often sufficient.
 2. **Building type.** Scattered-site single-family → CLT or deed restriction. Single multi-family building with resident-governance appetite → LEHC.
 3. **Who must control.** Community wants durable democratic control of land → CLT's tri-partite structure. Residents want self-governance → co-op. Steward wants minimal footprint → deed restriction.
-4. **Financing reality.** CLT homes are now conventionally financeable with lender-conforming leases. Co-ops need share-loan lenders (check supply locally) and often a blanket mortgage. Deed-restricted homes finance like any home, subject to appraisal and the restriction's effect on value.
+4. **Financing reality.** CLT homes are conventionally financeable with lender-conforming leases (confirm current agency and local-lender criteria before relying on it). Co-ops need share-loan lenders (check supply locally) and often a blanket mortgage. Deed-restricted homes finance like any home, subject to appraisal and the restriction's effect on value.
 5. **Organizational capacity and capital.** CLT needs land-acquisition capital and an ongoing stewardship shop. Co-op needs strong management and reserves. Deed restriction needs the least but offers the least control.
 6. **Funding source constraints.** HOME, LIHTC (which requires rental for the compliance period), and state trust-fund programs each dictate or bias structure — reconcile model choice with the capital stack via `nonprofit-housing-development-finance` before committing.
 7. **Portfolio strategy.** Many stewards blend: CLT for clustered land, deed restrictions on dispersed subsidy units, co-op conversions for at-risk rental buildings.
 
 ## Standard Deliverables
 
+Default sequence: model-comparison memo → resale formula design memo → ground lease (or covenant /
+occupancy agreement) key-terms outline → stewardship policy. Do not start the key-terms outline
+until the board has adopted a model and a formula.
+
 - **Model-comparison memo** for a specific jurisdiction: the three (or blended) models scored against the decision drivers above, with financing feasibility and a recommendation.
 - **Resale formula design memo** with worked examples (like the one above) for each candidate formula, next-buyer affordability math, and a recommendation with exhibits.
 - **Ground lease key-terms outline** per the twelve-section list above, for attorney drafting.
 - **Stewardship policy** per the outline above: monitoring, enforcement ladder, renewal calendar, and reserve funding.
 - (For advisors) a facilitation agenda for the board/membership decision meeting on model choice.
+
+## Verify Before Acting
+
+- [ ] Every candidate formula is computed on the same worked example, and the arithmetic is
+      rechecked.
+- [ ] The next buyer's monthly payment at each resale price is computed at current rates and
+      compared with the stated affordability target (AMI band and payment ratio).
+- [ ] If HOME funds are in the unit's history, the formula meets both 24 CFR 92.254 prongs, and
+      each unit uses resale or recapture, never both.
+- [ ] The formula and its worked example sit in the instrument (lease, covenant, occupancy
+      agreement), not only in program policy.
+- [ ] The ground lease outline includes the full mortgagee-protection set, and lender conformity
+      has been confirmed.
+- [ ] Every outline is marked for state real-estate attorney drafting or review before adoption
+      or recording.
 
 ## Common Failure Modes
 
@@ -177,9 +203,14 @@ Decision drivers — walk them in order for a given context:
 - **Mixing HOME recapture and resale on one unit.** Fix: one provision per unit, documented in the written agreement at assistance.
 - **Enforcement-by-surprise.** Fix: educate the owner on the restriction at closing and at each monitoring contact; the covenant is a contract both parties should be able to recite.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the steward's staff**, your leverage is the registry and the monitoring cadence: an annual contact and a refinance-review gate prevent nearly every enforcement crisis. Bring the enforcement ladder to your board for adoption *before* the first violation, so the response is policy, not improvisation.
-- **As an advisor/consultant**, never present model choice in the abstract: score the models against the client's actual market, building stock, and funder constraints in writing, and flag every place an attorney must draft or review (ground lease, covenant, co-op documents, HOME resale/recapture election). Your deliverable is a decision memo the board can adopt and a drafting outline counsel can execute — not legal text.
+- Never present model choice in the abstract: score the models against the client's actual
+  market, building stock, and funder constraints in writing.
+- Flag every place an attorney must draft or review (ground lease, covenant, co-op documents,
+  HOME resale/recapture election). The deliverable is a decision memo the board can adopt and a
+  drafting outline counsel can execute, not legal text.
+
+## Attorney Review
 
 Every instrument this skill outlines — ground lease, deed restriction, occupancy agreement, HOME resale/recapture provision, and co-op corporate documents — must be drafted or reviewed by a real-estate attorney in the property's state before adoption or recording. Treat this skill's outlines as the functional specification, never as the legal instrument itself.

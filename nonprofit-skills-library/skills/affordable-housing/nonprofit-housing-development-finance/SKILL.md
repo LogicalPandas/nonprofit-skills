@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-development-finance
-description: "Nonprofit affordable-housing development deals: site control and phased acquisition, entitlements, market studies, development pro formas (sources-and-uses, operating pro forma, 15-year cash flow, sensitivities), the capital stack (9% and 4% LIHTC equity, HOME, CDBG, National Housing Trust Fund, state trust funds, housing bonds, soft debt), deal structures (nonprofit GP, fee developer, co-developer, developer fees), and construction oversight (draws, change orders, closeout). Use when a user says 'we want to build affordable housing on this site,' 'run a pro forma,' 'should we do a 9% or 4% deal,' 'who should be the general partner,' or 'review this construction draw.' Not for capital campaigns (use nonprofit-capital-campaigns), Section 42 certifications and post-close compliance (use nonprofit-housing-lihtc-hud-compliance), zoning advocacy (use nonprofit-housing-advocacy-land-use), ground leases and CLTs (use nonprofit-housing-community-ownership), or the org budget (use nonprofit-budgeting)."
+description: "Structures nonprofit affordable-housing development deals: site control, entitlements, market studies, pro formas (sources and uses, operating, 15-year cash flow, sensitivities), the capital stack (9% and 4% LIHTC, bonds, HOME, CDBG, trust funds, soft debt), GP and developer-fee structures, and construction draws and closeout. Use when a user says 'we want to build affordable housing on this site', 'run a pro forma', 'should we do a 9% or 4% deal', or 'review this construction draw'. Not for capital campaigns (use nonprofit-capital-campaigns), Section 42 post-close compliance (use nonprofit-housing-lihtc-hud-compliance), zoning advocacy (use nonprofit-housing-advocacy-land-use), or CLTs and ground leases (use nonprofit-housing-community-ownership)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,30 +12,23 @@ metadata:
 
 # Nonprofit Housing Development Finance
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a nonprofit is creating affordable housing as a real estate developer: evaluating
-and controlling a site, taking it through entitlements, testing whether it "pencils," assembling the
-financing, choosing a deal structure, or overseeing construction. Trigger tasks include: "we found
-a site for affordable housing — what do we do first," "run a quick pro forma on this project,"
-"should we chase a 9% application or structure this as a 4% deal," "the city offered us HOME and
-CDBG — how do those fit the stack," "we want to be the general partner but need a tax credit
-investor," "review this construction draw request," or "the contractor wants a change order for
-$180,000."
+This skill covers the development deal itself (this skill builds it;
+`nonprofit-housing-affordable-rental-operations` runs it).
 
-**Boundary:** This skill covers the development deal itself. Raising charitable dollars for the
-building is `nonprofit-capital-campaigns`. Section 42 tenant certifications, ongoing HOME/ESG
-monitoring, and audit file-readiness after close are `nonprofit-housing-lihtc-hud-compliance`.
-Campaigning for zoning reform or against NIMBY opposition is `nonprofit-housing-advocacy-land-use`.
-NMTC allocation and deal structuring, CDFI lending and award programs, Opportunity Zone funds,
-and community-facility (health center, child care, school, food retail) capital stacks are
-`nonprofit-nmtc-deals`, `nonprofit-cdfi-finance`, `nonprofit-opportunity-zones`, and
-`nonprofit-community-facilities-finance`.
-Ground leases, community land trusts, and limited-equity co-op ownership structures are
-`nonprofit-housing-community-ownership`. The organization's own annual operating budget is
-`nonprofit-budgeting`. Property management of the finished asset — rent setting, certifications,
-asset management — is `nonprofit-housing-affordable-rental-operations` (this skill builds it; that
-one runs it).
+- Raising charitable dollars for the building → `nonprofit-capital-campaigns`.
+- Section 42 certifications, HOME/ESG monitoring, post-close file readiness →
+  `nonprofit-housing-lihtc-hud-compliance`.
+- Zoning-reform campaigns or organized NIMBY opposition → `nonprofit-housing-advocacy-land-use`.
+- NMTC, CDFI lending, Opportunity Zone funds, community-facility capital stacks →
+  `nonprofit-nmtc-deals`, `nonprofit-cdfi-finance`, `nonprofit-opportunity-zones`,
+  `nonprofit-community-facilities-finance`.
+- Ground leases, CLTs, limited-equity co-ops → `nonprofit-housing-community-ownership`.
+- The organization's own operating budget → `nonprofit-budgeting`.
+- Expiring-use and NOAH preservation strategy as an advocacy or repair question →
+  `nonprofit-housing-repair-preservation`; once it becomes an acquisition/recapitalization deal,
+  underwrite it here.
 
 ## The Development Pipeline at a Glance
 
@@ -77,11 +70,9 @@ rent-up and conversion to permanent debt. Two rules govern everything:
 - Sequence: pre-application meeting with planning staff → schematic site plan and unit mix →
   staff/technical review → planning commission → city council/board. Expect 3-9 months by right to
   12-24+ months with discretionary approvals.
-- **Practice difference:** hands-on practitioners manage the applicant file, drawings, and agency
-  meetings; advisors should focus on packaging public benefit (affordability levels, AMI targets,
-  services) for the public hearing — this is *site-specific permitting*, not a campaign. If the work
-  becomes organizing support or defending the project at a contested hearing against organized
-  opposition, route to `nonprofit-housing-advocacy-land-use`.
+- This is *site-specific permitting*, not a campaign. If the work becomes organizing support or
+  defending the project at a contested hearing against organized opposition, route to
+  `nonprofit-housing-advocacy-land-use`.
 
 ## Market Study and Feasibility Screening
 
@@ -110,6 +101,28 @@ equity (at a stated price per credit), HOME/state/local loans, deferred develope
 sponsor equity. Both sides must total, and every source must carry its real-world status —
 committed, invited, applied, or projected — never present a projected source as committed.
 
+Skeleton (amounts and dates are placeholders):
+
+| Uses | Amount | Per unit | Notes |
+|---|---|---|---|
+| Land and acquisition | [$] | [$] | [basis treatment] |
+| Hard construction | [$] | [$] | [GC estimate date] |
+| Hard-cost contingency | [$] | | [__% of hard; agency minimum] |
+| A&E and other soft costs | [$] | [$] | |
+| Developer fee | [$] | | [QAP cap; deferred portion] |
+| Financing and organizational costs | [$] | | |
+| Capitalized reserves (operating deficit, replacement) | [$] | | |
+| **Total development cost** | [$] | [$] | |
+
+| Sources | Amount | Status (committed / invited / applied / projected) | Status date | Key terms |
+|---|---|---|---|---|
+| First mortgage / bonds | [$] | [status] | [date] | [rate, term, DSCR covenant] |
+| LIHTC equity | [$] | [status] | [date] | [credits × price per credit] |
+| HOME / state / local soft loans | [$] | [status] | [date] | [affordability term] |
+| Deferred developer fee | [$] | [status] | [date] | [payback source] |
+| Grants / sponsor equity | [$] | [status] | [date] | |
+| **Total sources** (must equal total uses) | [$] | | | |
+
 ### 2. Operating Pro Forma
 Per-unit-per-year residential rents at each income band, loss-to-lease/vacancy (typically 5-7%
 combined), tenant-paid utility allowances (reduce gross-to-net rent — check whether the agency
@@ -137,7 +150,7 @@ Layer these in the order investors and agencies expect:
 
 - **9% LIHTC equity.** The competitive credit — the subsidy that makes deep affordability work,
   awarded by the state housing finance agency (HFA) through an annual application scored under its
-  Qualified Allocation Plan (QAP). Expect one to two rounds a year, thresholds plus points, and a
+  Qualified Allocation Plan (QAP; read the current year's QAP, which changes annually). Expect one to two rounds a year, thresholds plus points, and a
   long lead time; scoring favors readiness (site control, entitlements, service commitments,
   nonprofit sponsorship, transit). Equity is sold at a price per credit dollar — a discount to par
   set by the market and syndication structure (recent 9% pricing has typically run in the
@@ -197,11 +210,9 @@ Bond-test references: [26 USC §42(h)(4)(A)–(B)](https://uscode.house.gov/view
 and [Public Law 119-21, §70422(b)(2), effective date and rehabilitation rule](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
 Last checked September 15, 2026; this is not bond/tax-counsel sign-off.
 
-**Practice difference:** hands-on staff track each funder's application cycle, threshold
-requirements, and award timing (a stack with a 9% award, an invited HOME allocation, and a bond
-cap request is three different calendars that must converge at one closing); advisors should focus
-on sequencing — which source to apply for first, because awarded-but-uncommitted sources unlock
-others.
+Track each funder's application cycle, threshold requirements, and award timing: a stack with a
+9% award, an invited HOME allocation, and a bond cap request is three different calendars that
+must converge at one closing.
 
 ## LIHTC Feasibility Screen for a Site
 
@@ -325,13 +336,13 @@ at Year 15, ending with a recommendation and what the board is being asked to ap
   notices and benefits before anyone is asked to move, and violations can't be fixed retroactively.
   Fix: run the URA analysis during due diligence, before any notice to occupants.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the nonprofit developer**, drive the pipeline calendar backward from the state QAP
-  application deadline; own the site control, diligence, and feasibility documents; keep the board
-  seeing one current sources-and-uses with honest status labels.
-- **As an advisor/consultant**, test the deal structure first (does this org have the capacity for
-  GP roles, or should it co-develop or hire a fee developer?), then pressure-test the pro forma
-  assumptions against downside cases, then review the developer fee schedule and Year 15 exit for
-  mission protection. Bring counsel and CPA into deal documents early — every closing document
-  here warrants professional review.
+- Test the deal structure first (does this org have the capacity for GP roles, or should it
+  co-develop or hire a fee developer?), then pressure-test the pro forma against downside cases,
+  then review the developer fee schedule and Year 15 exit for mission protection.
+- Sequence sources: which to apply for first, because awarded-but-uncommitted sources unlock
+  others. For entitlements, package public benefit (affordability levels, AMI targets, services)
+  for the hearing.
+- Bring counsel and CPA into deal documents early — every closing document here warrants
+  professional review.

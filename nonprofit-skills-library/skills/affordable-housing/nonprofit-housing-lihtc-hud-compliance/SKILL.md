@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-lihtc-hud-compliance
-description: "Compliance operating system for LIHTC (Section 42) and HUD-assisted affordable housing: income and rent limits, gross rent and utility allowances, tenant certifications, student and unit rules, credit recapture triggers, HOME/ESG/CoC/HCV monitoring, tenant file audits, and MOR/state HFA monitoring-visit prep, with a file-readiness checklist, findings-and-remedies list, and annual compliance calendar. Use when a user says 'our state HFA monitoring visit is next month', 'what counts as gross rent under Section 42', 'we missed an annual recertification', 'the agency filed a Form 8823 on us', or 'help us get tenant files audit-ready'. Not for day-to-day property management, tenant selection, or rent-setting operations (use nonprofit-housing-affordable-rental-operations), fair-housing complaints or reasonable accommodation disputes (use nonprofit-housing-fair-housing), or deal structuring and capital-stack design before close (use nonprofit-housing-development-finance)."
+description: "Runs compliance for LIHTC (Section 42) and HUD-assisted affordable housing: income and rent limits, gross rent and utility allowances, tenant certifications, student and 140% rules, recapture triggers, HOME/ESG/CoC/HCV monitoring, MOR and state HFA visit prep, file audits, findings remedies, and the annual compliance calendar. Use when a user says 'our state HFA monitoring visit is next month', 'what counts as gross rent under Section 42', 'we missed an annual recertification', or 'the agency filed a Form 8823 on us'. Not for day-to-day property management or rent setting (use nonprofit-housing-affordable-rental-operations), fair-housing disputes (use nonprofit-housing-fair-housing), or pre-close deal structuring (use nonprofit-housing-development-finance)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -12,31 +12,21 @@ metadata:
 
 # LIHTC and HUD Program Compliance
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a user asks you to do any of these:
+This skill covers program compliance, monitoring, and file-readiness only. Advisors can use the
+checklists to structure a mock audit, remediation plan, or monitoring-response engagement.
 
-- "We have a state HFA monitoring visit in six weeks — how do we prepare?"
-- "What counts as gross rent under Section 42? Do pet fees count?"
-- "We missed an annual recertification deadline — what's our exposure?"
-- "The agency sent a Form 8823 with noncompliance codes — how do we respond and cure?"
-- "A tenant's income went over 140% at recert — do we have to evict or raise rent?"
-- "Our tenant's a full-time student — is the unit still qualified?"
-- "Help me build a tenant file checklist and a compliance calendar."
-- "We just layered HOME funds onto a LIHTC deal — what extra rules apply?"
-- "HUD's contract administrator scheduled a Management and Occupancy Review."
-- "How do we avoid credit recapture when we sell in year eight?"
-
-This skill is for owners, asset managers, compliance staff, and consultants at nonprofit owners of
-affordable rental housing. Practitioners run these checklists against live portfolios; advisors
-should use them to structure a mock audit, remediation plan, or monitoring-response engagement.
-
-**Boundary:** This skill covers program compliance, monitoring, and file-readiness only. Route
-day-to-day property management — tenant selection plans, waitlists, rent collection, staffing,
-turnovers — to `nonprofit-housing-affordable-rental-operations`. Route fair-housing allegations,
-reasonable accommodation/modification disputes, disparate-impact analysis, and LEP compliance to
-`nonprofit-housing-fair-housing`. Route deal structuring before close — pro formas, capital-stack
-design, LIHTC equity negotiation, site control — to `nonprofit-housing-development-finance`.
+- Day-to-day property management (tenant selection plans, waitlists, rent collection, staffing,
+  turnovers) → `nonprofit-housing-affordable-rental-operations`.
+- Fair-housing allegations, reasonable accommodation disputes, disparate impact, LEP →
+  `nonprofit-housing-fair-housing`.
+- Deal structuring before close (pro formas, capital stack, LIHTC equity, site control) →
+  `nonprofit-housing-development-finance`.
+- ESG and CoC program design rules (eligibility definitions, shelter and prevention standards,
+  RRH design) → `nonprofit-housing-homelessness-services` and
+  `nonprofit-housing-rapid-rehousing-transitional`; this skill covers their monitoring and
+  reporting layer.
 
 ## The Compliance Landscape
 
@@ -75,7 +65,8 @@ Never assume one program's certification satisfies another's.
 ### Income and rent limits
 
 - Use the HUD Multifamily Tax Subsidy Projects (MTSP) income limits — not standard Section 8 limits —
-  for LIHTC properties. They are published annually, typically in spring, generally effective 30 days
+  for LIHTC properties. They are published annually, typically in spring (confirm the current
+  release and effective dates on HUD's MTSP income-limits page), generally effective 30 days
   after publication, and held harmless against declines at the area level: limits can plateau but not
   drop.
 - Limits are household-size-specific; a unit's rent limit is keyed to the income limit for its
@@ -192,22 +183,23 @@ within the stated correction period, cure, and confirm the agency files the clos
   (confirm exceptions with the PJ, e.g., continuous rental assistance).
 - Lease-up and expenditure deadlines tightened under the 2024 HOME Final Rule — PJs must commit
   funds within one year (limited exceptions) and complete within shorter windows than the old
-  four-year rule. A project left uncommitted risks recapture by the PJ.
+  four-year rule. A project left uncommitted risks recapture by the PJ. Verify the current
+  deadlines and effective dates in the HOME rule and HUD CPD notices with the PJ before relying
+  on them.
 - Record in IDIS on the PJ's schedule; submit annual HOME certifications; keep tenant files and rent
   records for the PJ's monitoring period, typically five years after the PJ's program-year records
   are submitted.
 
 ### ESG (24 CFR Part 576)
 
-- Maintain eligibility documentation for every rapid re-housing or prevention household: proof of
-  homelessness or at-risk status per the applicable ESG definitions, income where required, and a
-  documented housing instability reason.
-- Follow the recordkeeping requirements covering financial, participant, and service records;
-  submit the ESG CAPER on the grantee's deadline (commonly within 90 days of program-year end) and
+- Monitors test eligibility documentation for every prevention or rapid re-housing household
+  (definitions and program rules: `nonprofit-housing-homelessness-services` and
+  `nonprofit-housing-rapid-rehousing-transitional`), financial, participant, and service records,
+  and HMIS data-quality error rates, not just completeness.
+- Confirm shelter standards for any congregate facility and HMIS participation (or a comparable
+  database for victim-service providers).
+- Submit the ESG CAPER on the grantee's deadline (commonly within 90 days of program-year end) and
   any monthly/quarterly expenditure reports.
-- Meet shelter standards for any congregate facility, participate in HMIS (or a comparable database
-  for victim-service providers), and meet HMIS data-quality thresholds — grantees monitor error
-  rates, not just completeness.
 
 ### CoC (24 CFR Part 578)
 
@@ -224,7 +216,8 @@ within the stated correction period, cure, and confirm the agency files the clos
   each cycle; failures can abate HAP), and timely reporting of income and household changes.
 - Under HOTMA rules, income calculation changed materially — asset treatment (a threshold below
   which assets are self-certified), earned income disallowance availability, and exclusions. Pull
-  current HUD notices when computing income; do not rely on pre-2024 worksheets.
+  current HUD notices when computing income (including HOTMA implementation and compliance
+  dates for each program); do not rely on pre-2024 worksheets.
 - PBV adds a HAP contract with unit designation, rent-reasonableness, and waiting-list rules on top
   of the LIHTC layer.
 

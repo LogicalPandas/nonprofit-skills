@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-affordable-rental-operations
-description: "Runs the operating side of nonprofit-owned affordable rental housing: tenant selection plans, income certification and recertification, rent setting with AMI-band targeting, waitlist management, the property-management vs asset-management split, capital-needs planning and reserve studies, PM vendor selection (in-house vs third-party), HQS/NSPIRE inspection readiness, and occupancy/financial reporting to boards. Use when a user says 'draft our tenant selection plan,' 'how should we set rents across AMI bands,' 'our waitlist is a mess,' 'should we self-manage or hire a property manager,' 'get ready for our NSPIRE inspection,' or 'build a portfolio dashboard for the board.' Not for Section 42/HUD file compliance and monitoring (use nonprofit-housing-lihtc-hud-compliance), fair-housing complaints and accommodation/screening legal review (use nonprofit-housing-fair-housing), or developing new projects and capital stacks (use nonprofit-housing-development-finance)."
+description: "Runs the operating side of nonprofit-owned affordable rental housing: tenant selection plans, income certification, rent setting across AMI bands, waitlists, asset management and reserves, property-manager selection, NSPIRE readiness, and board reporting. Use when a user says 'draft our tenant selection plan', 'how should we set rents across AMI bands', 'should we self-manage or hire a property manager', or 'build a portfolio dashboard for the board'. Not for Section 42/HUD file compliance (use nonprofit-housing-lihtc-hud-compliance), fair-housing legal review (use nonprofit-housing-fair-housing), or new development (use nonprofit-housing-development-finance)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,29 +12,19 @@ metadata:
 
 # Nonprofit Housing: Affordable Rental Operations
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to operate nonprofit-owned affordable rental housing: drafting or revising a tenant
-selection plan, running initial income certification and annual recertification, setting rents
-against AMI bands, managing a waitlist, deciding whether to self-manage or contract property
-management, supervising a third-party manager, preparing for HQS/NSPIRE inspections, planning
-capital needs and reserves, and reporting occupancy and financial performance to the owner/board.
-Typical triggers: "draft our tenant selection plan," "walk me through move-in certification,"
-"which AMI bands should our units target," "our waitlist is 400 names and two years old," "should
-we bring property management in-house," "score these property-management proposals," "our NSPIRE
-inspection is in six weeks," "what goes into an annual asset-management plan," "the board wants a
-portfolio dashboard."
+This skill covers the operating layer: the recurring decisions and workflows that keep existing
+units occupied, compliant, and financially sustainable.
 
-**Boundary:** this skill covers the *operating* layer — the recurring decisions and workflows that
-keep existing units occupied, compliant, and financially sustainable. Section 42 file compliance,
-LIHTC tenant certifications for tax-credit purposes, and HUD/ESG/CoC/HOME monitoring visits are
-`nonprofit-housing-lihtc-hud-compliance` (this skill covers the income-calculation workflow; that
-skill covers what the file must contain to survive an audit). Fair-housing complaint response,
-reasonable-accommodation law, and legal review of screening criteria are
-`nonprofit-housing-fair-housing`. Developing new projects, site control, and capital stacks are
-`nonprofit-housing-development-finance`. PSH service design and Housing First fidelity are
-`nonprofit-housing-permanent-supportive-housing`. ReStore/thrift retail operations are
-`nonprofit-retail-store-operations`.
+- Section 42 file compliance, LIHTC certifications for tax-credit purposes, HUD/ESG/CoC/HOME
+  monitoring → `nonprofit-housing-lihtc-hud-compliance` (this skill runs the income-calculation
+  workflow; that skill covers what the file must contain to survive an audit).
+- Fair-housing complaints, reasonable-accommodation law, legal review of screening criteria →
+  `nonprofit-housing-fair-housing`.
+- New projects, site control, capital stacks → `nonprofit-housing-development-finance`.
+- PSH service design and Housing First fidelity → `nonprofit-housing-permanent-supportive-housing`.
+- ReStore/thrift retail operations → `nonprofit-retail-store-operations`.
 
 ## Core Framework: Two Management Lenses, One Asset
 
@@ -55,41 +45,23 @@ the second, because no one else holds the restricted-use agreements, the note te
 capital-needs picture together. Small nonprofits routinely skip the asset-management function and
 discover it ten years later as deferred maintenance their reserves cannot cover.
 
-## Standard Terminology
+## Terminology Traps
 
-- **AMI (Area Median Income)**: HUD-published median income for a household size in a metro or
-  nonmetro area, adjusted by household size (a 1-person household is typically ~70% of the
-  4-person AMI; a 8-person household ~150+%). Every income restriction is a percentage of AMI at
-  the household size of the actual applicant — never apply the 4-person figure to all households.
-- **AMI band**: the income limit group a unit is restricted to (e.g., 30%, 50%, 60%, 80% of AMI).
-  Units financed from different sources carry different bands; a single building often mixes them.
-- **Rent burden**: gross rent (contract rent + tenant-paid utilities, via a utility allowance)
-   above 30% of income; deep-targeting funder rules may cap at 30% of the *actual* AMI level rather
-   than tenant income.
+- **AMI at the applicant's household size**: every income restriction is a percentage of AMI at
+  the actual household size (a 1-person household is typically ~70% of the 4-person AMI; an
+  8-person household ~150+%). Never apply the 4-person figure to all households.
 - **MAX rent vs 30% rent**: most restrictions (notably LIHTC's 60% AMI gross-rent cap including
-   utility allowance) set a maximum *rent*, while HOME- and voucher-linked rules often set rent as
-   a *percentage of tenant income* — a unit can be legally rented at both only if the limits
-   reconcile.
-- **Compliance period / extended-use period**: the years during which income and rent restrictions
-   bind (e.g., 15-year LIHTC compliance period inside a 30+ year extended-use agreement); the
-   operating budget must survive the *longer* period.
-- **Replacement reserve**: the escrowed (or board-restricted) fund built during operations for
-   capital replacements; "funded reserves" means actually deposited per the loan/LIHTC agreement,
-   not merely budgeted.
-- **Reserve study**: a physical inspection + component-cost schedule (roof, boilers, appliances,
-   flooring, parking, ADA elements) that projects replacement timing and the annual deposit needed
-   to fund it.
-- **DSCR (debt service coverage ratio)**: net operating income ÷ annual debt service; most deals
-   covenant at 1.10–1.20. Asset management watches the *trend*, not just the covenant.
-- **Occupancy vs economic occupancy**: physical occupancy counts leased units; economic occupancy
-   nets out vacancy, concessions, and collection loss. A building can be 98% physically occupied
-   and 88% economically occupied.
-- **HQS / NSPIRE**: HUD's Housing Quality Standards (legacy) and NSPIRE (National Standards for
-   the Physical Inspection of Real Estate, which replaced HQS for most HUD programs), scored
-   inspection regimes where health/safety defects fail the unit.
-- **Tenant selection plan (TSP)**: the written policy, required by HUD-assisted housing and best
-   practice everywhere, that states eligibility, preferences, waitlist rules, screening criteria,
-   and the appeals process before the first application is taken.
+  utility allowance) set a maximum *rent*, while HOME- and voucher-linked rules often set rent as
+  a *percentage of tenant income*. A unit can be legally rented at both only if the limits
+  reconcile. Deep-targeting funder rules may cap at 30% of the *actual* AMI level rather than
+  tenant income.
+- **Compliance period vs extended-use period**: e.g., a 15-year LIHTC compliance period inside a
+  30+ year extended-use agreement; the operating budget must survive the *longer* period.
+- **Funded reserves**: actually deposited per the loan/LIHTC agreement, not merely budgeted.
+- **DSCR**: most deals covenant at 1.10–1.20; asset management watches the *trend*, not just the
+  covenant.
+- **Physical vs economic occupancy**: economic occupancy nets out vacancy, concessions, and
+  collection loss. A building can be 98% physically occupied and 88% economically occupied.
 
 ## Deliverable 1: Tenant Selection Plan Draft
 
@@ -179,9 +151,21 @@ since move-in.
    because max rent at 30% AMI rarely covers operating costs; pairing a 30%-band unit with a
    voucher or project-based subsidy is the standard structure. Balance the band mix so blended
    rental income supports the budget — this is an asset-management decision, not a leasing one.
+
+   Unit-restriction matrix skeleton (one row per unit per source; fill from the regulatory
+   agreements and the current published limits):
+
+   | Unit | Source | Income band | Max gross rent | Utility allowance (method, date) | Rent passes? |
+   |---|---|---|---|---|---|
+   | [unit #, BR] | LIHTC | [__% AMI] | [$ from HFA table] | [method, effective date] | [Y/N] |
+   | [unit #, BR] | HOME | [__% AMI] | [$ from HUD HOME rents] | [method, effective date] | [Y/N] |
+   | [unit #, BR] | [state/local source] | [__% AMI] | [$ per agreement] | [method, effective date] | [Y/N] |
+   | **Binding rent** | | | [lowest passing rent] | | |
 5. **Publish a rent schedule by unit type and band** effective each new income-limit release
    (HUD limits publish each spring; apply per each program's effective-date rule, which differ —
-   Section 42 uses the earlier of the release or 45-day deadline while other programs differ).
+   Section 42 uses the earlier of the release or 45-day deadline while other programs differ;
+   verify current release dates and effective-date rules with HUD's income-limits page and the
+   state HFA each year).
    Completion condition: a rent-addenda-ready schedule where every unit's rent passes every
    source's test and the utility allowance is current.
 
@@ -279,7 +263,8 @@ mission alignment at any size.
 ## HQS/NSPIRE Inspection Readiness
 
 1. **Know which regime applies to each funding source** — NSPIRE replaced HQS for most HUD
-   programs; state CRIA and LIHTC physical inspections are separate regimes with their own
+   programs (verify the current implementation date for each program, including vouchers, on
+   HUD's NSPIRE page); state CRIA and LIHTC physical inspections are separate regimes with their own
    standards. A building can face more than one.
 2. **Run the NSPIRE inspection areas proactively**: unit, inside, outside, and systems —
    prioritize the health-and-safety (H&S) defects that fail or abate scoring: smoke/CO alarms,
@@ -312,6 +297,18 @@ The board-level portfolio dashboard is one page per portfolio (one section per p
 Report monthly to staff/committee, quarterly to the board, with the annual asset-management plan
 as the yearly deep-dive. Consultants: build the dashboard *with* staff so it survives your
 departure; every metric should name its source system.
+
+## Verify Before Acting
+
+- [ ] Every income limit and rent is pulled from the current HUD/HFA table at the household's
+      actual size, and its effective date matches the program's rule.
+- [ ] Each unit's rent passes every funding source's test in the unit-restriction matrix, with a
+      current utility allowance.
+- [ ] Every TSP preference, screening criterion, and purge rule has a justification and an appeal
+      path, and the draft is flagged for fair-housing review before board adoption.
+- [ ] Manager-reported occupancy and delinquency tie to the general ledger for the period.
+- [ ] Reserve balances and deposits in the asset-management plan reconcile to the regulatory
+      agreement and the latest reserve study.
 
 ## Common Failure Modes
 

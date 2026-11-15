@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-repair-preservation
-description: "Designs and operates nonprofit home repair and preservation programs: critical home repair intake-to-completion workflow (roof, HVAC, plumbing, ramps), DOE Weatherization Assistance Program weatherization, CAPABLE-style aging-in-place modifications, EPA RRP lead-safe work, work-scope and cost estimating, contractor vs. volunteer labor decisions, income eligibility and affordability covenants, and preserving at-risk stock (expiring-use and NOAH). Use when a user says 'set up a critical home repair program,' 'our repair waitlist is a year long,' 'help us scope and estimate a roof replacement,' 'do we need lead certification for pre-1978 homes,' 'should volunteers or contractors do ramp builds,' or 'how do we keep NOAH units affordable.' Not for building new homes or development finance (nonprofit-housing-development-finance), volunteer build-day operations and crew site safety (nonprofit-housing-construction-volunteers), or general vendor/contractor management policy (nonprofit-vendor-facilities)."
+description: "Designs and operates nonprofit home repair and preservation programs: critical home repair intake-to-completion workflow, work scopes and bid comparison, eligibility policy and affordability covenants, DOE WAP weatherization, CAPABLE-style aging-in-place modifications, EPA RRP lead-safe work, contractor vs. volunteer labor, and expiring-use/NOAH monitoring. Use when a user says 'set up a critical home repair program', 'our repair waitlist is a year long', 'do we need lead certification for pre-1978 homes', or 'should volunteers or contractors do ramp builds'. Not for new construction or development finance (use nonprofit-housing-development-finance), volunteer build-day operations (use nonprofit-housing-construction-volunteers), or vendor management policy (use nonprofit-vendor-facilities)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,11 +12,16 @@ metadata:
 
 # Nonprofit Home Repair & Housing Preservation
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the organization repairs, modifies, or preserves homes people already live in, or works to keep existing affordable housing stock affordable. Typical triggers: designing or fixing a critical home repair program (roof, HVAC, plumbing, electrical, accessibility ramps), running an intake and waitlist, scoping and estimating repair work, deciding contractor vs. volunteer labor, building aging-in-place or weatherization programming, handling lead paint in pre-1978 homes, writing repair-program eligibility policy and affordability covenants, or responding to expiring-use and NOAH (Naturally Occurring Affordable Housing) loss.
+This skill covers repairing, modifying, weatherizing, and preserving homes people already live in, and monitoring existing affordable stock at risk of loss. Route these out:
 
-**Boundary:** This is repair, modification, weatherization, and preservation of existing homes. Not new construction, site control, or development finance (`nonprofit-housing-development-finance`). Not volunteer build-day scheduling, crew leadership, or site safety management for volunteer crews (`nonprofit-housing-construction-volunteers` — though this skill tells you *which* work to hand them). Not organization-wide vendor selection or contractor management policy (`nonprofit-vendor-facilities` — this skill covers bid comparison for a specific repair job, not the procurement policy). Tenant-based rental assistance and nonprofit-owned rental property operations belong to `nonprofit-housing-affordable-rental-operations`; buyer-selection and sweat-equity for homeownership programs belong to `nonprofit-housing-homeownership-programs`.
+- New construction, site control, development finance, and expiring-use or NOAH acquisition transactions → `nonprofit-housing-development-finance`.
+- Volunteer build-day scheduling, crew leadership, and volunteer site safety → `nonprofit-housing-construction-volunteers` (this skill decides *which* work to hand them).
+- Organization-wide vendor selection and contractor management policy → `nonprofit-vendor-facilities` (this skill covers bid comparison for a specific repair job).
+- Tenant-based rental assistance and nonprofit-owned rental property operations → `nonprofit-housing-affordable-rental-operations`.
+- Buyer selection and sweat equity for homeownership programs → `nonprofit-housing-homeownership-programs`.
+- Fair-housing questions in eligibility design → `nonprofit-housing-fair-housing`.
 
 ## Program Architecture: Name the Program Type First
 
@@ -120,6 +125,8 @@ Blended-cost rule: compare fully loaded costs. Volunteer labor isn't free (crew 
 
 ## Weatherization (DOE WAP Framework)
 
+Verify the state WAP plan's current income limit, per-unit average cost limit, and health-and-safety cap with the state WAP grantee (and DOE's current program notices) before scoping or accepting applications.
+
 - **Whole-home energy audit first.** WAP requires a priority-based audit (NEAT for single-family) to rank measures by savings-to-investment ratio (SIR ≥ 1 required for most energy measures); do not install measures the audit doesn't justify with federal WAP dollars.
 - **Typical measure stack:** air sealing, attic insulation, heating-system repair/replacement (where allowed), duct sealing, ventilation (ASHRAE-based, to avoid creating combustion backdrafting), plus limited related repairs that enable the measures.
 - **Health-and-safety funds are separate** from energy-measure funds in WAP: combustion safety testing, CO/smoke detectors, and some incidental repairs are health-and-safety line items with their own caps — keep the accounting separate or you'll fail monitoring.
@@ -144,12 +151,11 @@ Blended-cost rule: compare fully loaded costs. Volunteer labor isn't free (crew 
 
 ## Preserving At-Risk Affordable Stock (Expiring-Use / NOAH)
 
-Repair programs naturally lead into preservation strategy; know when to escalate:
+Repair programs naturally lead into preservation strategy. This skill owns the monitoring and the repair lens; acquisitions, rent covenants, and capital deals go to `nonprofit-housing-development-finance` (and `nonprofit-housing-affordable-rental-operations` for operating the units).
 
-- **Expiring-use federally assisted housing:** older HUD-subsidized properties (project-based Section 8 contracts, Section 236, BMIR) reach contract or mortgage events where owners can exit affordability. Signals: subsidy contract expiration dates, notice of prepayment or opt-out, sale listings. Responses (resident notification triggers, purchase efforts, state intervention) run through development finance — route transactions to `nonprofit-housing-development-finance`, but the *monitoring* (a watchlist of expiration dates in your service area) is preservation-program work.
-- **NOAH:** unsubsidized, market-rate stock affordable only because of age/condition/location. The repair lens: a large repair burden (roof, systems) is often the trigger for a small landlord to sell or for rents to jump. Nonprofit responses include acquisition/rehab, repair-grant or low-interest-loan programs conditioned on rent or affordability commitments, and code-enforcement partnerships that pair citations with repair resources. Rent covenant terms and acquisition deals belong with `nonprofit-housing-development-finance` and `nonprofit-housing-affordable-rental-operations`.
-- **Owner-occupied preservation is preservation:** keeping a low-income owner in a paid-off home is often the cheapest affordability intervention in a market — frame repair programs in housing-policy terms (cost per unit preserved vs. cost per unit built) when advocating for funding.
-- **Data to maintain:** count of income-restricted units and expiration dates by year (from HUD and state agency lists), NOAH segment estimates, and your repair-program deferral/loss data (homes lost to disrepair, tax sale, or condemnation).
+- **Expiring-use watchlist:** older HUD-subsidized properties (project-based Section 8 contracts, Section 236, BMIR) reach contract or mortgage events where owners can exit affordability. Track subsidy contract expiration dates, prepayment or opt-out notices, and sale listings in your service area (from HUD and state agency lists); escalate transactions to development finance.
+- **NOAH repair lens:** a large repair burden (roof, systems) is often what triggers a small landlord to sell or raise rents. Program responses: repair-grant or low-interest-loan programs conditioned on rent or affordability commitments, and code-enforcement partnerships that pair citations with repair resources.
+- **Owner-occupied preservation is preservation:** keeping a low-income owner in a paid-off home is often the cheapest affordability intervention in a market — frame repair programs as cost per unit preserved vs. cost per unit built when advocating for funding, using your deferral/loss data (homes lost to disrepair, tax sale, or condemnation).
 
 ## Common Failure Modes
 
@@ -165,7 +171,8 @@ Repair programs naturally lead into preservation strategy; know when to escalate
 - **Insulating over moisture** — weatherization that seals in a roof or crawlspace moisture problem creates mold and condemnation risk.
 - **Ramps built from phone specs** — wrong entrance, wrong rise, unused ramp; OT assessment fixes this.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the practitioner** (repair program staff): live in the workflow — triage tiers, inspection-to-scope discipline, and the bid sheet are your daily tools; track cost-per-job actuals per labor model and per measure so estimating and procurement improve every quarter.
-- **As the advisor/consultant** (assessing or designing a program for a client): diagnose against the six program tiers and the ten workflow steps; the highest-leverage findings are usually missing eligibility policy documents, unrecorded covenants, lead screening gaps, and unranked waitlists. Be explicit about which fixes are program-design work (this skill) versus capital transactions or new development (`nonprofit-housing-development-finance`), and route fair-housing questions in eligibility design to `nonprofit-housing-fair-housing`.
+- Diagnose against the six program tiers and the workflow steps; the highest-leverage findings are usually missing eligibility policy documents, unrecorded covenants, lead screening gaps, and unranked waitlists.
+- Be explicit about which fixes are program-design work (this skill) versus capital transactions or new development (`nonprofit-housing-development-finance`).
+- Practitioners should track cost-per-job actuals per labor model and per measure so estimating and procurement improve every quarter.

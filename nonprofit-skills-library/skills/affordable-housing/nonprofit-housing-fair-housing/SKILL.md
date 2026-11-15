@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-fair-housing
-description: "Builds fair housing compliance for nonprofit housing providers: FHA protected classes and prohibited practices, advertising language review, applicant and criminal-history screening policy, reasonable accommodation and modification procedures including assistance animals, Section 504/ADA obligations, disparate impact and neutral-policy risk, limited English proficiency, steering and testing risk, and AFFH duties. Use when a user says 'review our ad for fair housing language', 'write a reasonable accommodation procedure', 'can we deny an applicant with a criminal record', 'how do we handle an emotional support animal request', 'HUD sent us a fair housing complaint', or 'update our screening policy'. Not for drafting the tenant selection plan itself (use nonprofit-housing-affordable-rental-operations; this skill performs its fair-housing legal review), LIHTC certifications and file audits (use nonprofit-housing-lihtc-hud-compliance), or org-wide risk registers (use nonprofit-risk-management)."
+description: "Builds fair-housing compliance for nonprofit housing providers: advertising review, applicant and criminal-history screening, reasonable accommodations and assistance animals, Section 504/ADA, disparate-impact risk, limited English proficiency, steering and testing, complaint response, AFFH, and staff training. Use when a user says 'review our ad for fair housing language', 'write a reasonable accommodation procedure', 'can we deny an applicant with a criminal record', or 'HUD sent us a fair housing complaint'. Not for drafting the tenant selection plan (use nonprofit-housing-affordable-rental-operations), LIHTC file audits (use nonprofit-housing-lihtc-hud-compliance), or org-wide risk registers (use nonprofit-risk-management)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -12,25 +12,16 @@ metadata:
 
 # Fair Housing Compliance for Nonprofit Housing Providers
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill whenever a nonprofit that owns, manages, or programs housing needs to prevent,
-detect, or respond to housing discrimination risk. Trigger tasks: "review our listing/ad for
-fair housing language," "write a reasonable accommodation procedure," "can we deny an applicant
-with a criminal record," "how do we handle an emotional support animal request," "HUD sent us a
-complaint — what do we do now," "is our guest policy / credit cutoff / income rule
-discriminatory," "do we need to translate our leasing documents," "what does AFFH require of
-us," or "train our property staff on fair housing."
-
-Boundary: this skill covers fair housing law and compliance practice — protected classes,
-screening policy, accommodations, advertising, complaints, testing, LEP, and AFFH. Drafting the
-tenant selection plan itself (waitlist mechanics, income certification steps, rent setting,
-unit-transfer rules) is `nonprofit-housing-affordable-rental-operations` — this skill performs
-the fair-housing legal review of that plan once drafted. LIHTC/HOME/ESG file certifications and
-monitoring audit-readiness are `nonprofit-housing-lihtc-hud-compliance` (this skill supplies the
-nondiscrimination constraints those files must reflect). Organization-wide risk registers and
-insurance decisions are `nonprofit-risk-management`. Zoning and land-use advocacy are
-`nonprofit-housing-advocacy-land-use`.
+- Drafting the tenant selection plan itself (waitlist mechanics, income certification, rent
+  setting, unit transfers) → `nonprofit-housing-affordable-rental-operations`; this skill performs
+  the fair-housing legal review of that plan once drafted.
+- LIHTC/HOME/ESG file certifications and monitoring readiness →
+  `nonprofit-housing-lihtc-hud-compliance` (this skill supplies the nondiscrimination constraints
+  those files must reflect).
+- Organization-wide risk registers and insurance decisions → `nonprofit-risk-management`.
+- Zoning and land-use advocacy → `nonprofit-housing-advocacy-land-use`.
 
 **Supervision is expert-required**: every legal position this skill produces — screening policy
 language, accommodation denials, complaint responses, advertising sign-offs — must be reviewed
@@ -39,7 +30,8 @@ by fair-housing counsel before adoption, filing, or denial.
 ## Current Federal Landscape (read first — changed materially 2025–2026)
 
 Author guidance against the statute and case law, not against rescinded HUD guidance. As of
-this skill's review date:
+this skill's review date (re-verify every dated item below in the Federal Register, on HUD.gov,
+and with fair-housing counsel before relying on it; this section goes stale fastest):
 
 - **Statute unchanged.** The Fair Housing Act (42 U.S.C. § 3604) still prohibits
   discrimination on seven protected classes — race, color, national origin, religion, sex
@@ -83,20 +75,10 @@ precedent, Section 504/Title VI/ADA regulations, program statutes, and state/loc
 
 ## FHA Protected Classes and Prohibited Practices
 
-Memorize the § 3604 structure. Prohibited practices include:
-
-1. Refusing to sell, rent, or "otherwise make unavailable" housing because of a protected
-   class — includes denial, steering, and refusal to negotiate.
-2. Changing terms, conditions, privileges, services, or facilities — different lease terms,
-   deposits, rules enforcement, repairs.
-3. Advertising or making statements indicating preference or limitation — includes
-   marketing plans and platform targeting, not just the ad copy (§ 3604(c)).
-4. Misrepresenting availability ("that unit just rented" to a tester or protected-class
-   applicant).
-5. Blockbusting (inducing panic selling/renting by referencing neighborhood demographic
-   change).
-6. Refusing reasonable accommodations or modifications for disability (§ 3604(f)).
-7. Discrimination in residential real-estate transactions and brokerage services.
+Section 3604 reaches refusals and "otherwise make unavailable" (including steering), different
+terms and services, statements and advertising (including marketing plans and platform targeting,
+§ 3604(c)), misrepresenting availability to testers, blockbusting, refusing disability
+accommodations or modifications (§ 3604(f)), and discrimination in brokerage services.
 
 Exemptions rarely save a nonprofit: the "Mrs. Murphy" single-family exemption is lost the
 moment a broker is used or the owner owns 3+ such homes; the 55-and-older housing exemption
@@ -208,6 +190,24 @@ Deliverable: a reasonable-accommodation/modification procedure. Required element
    raise other duties).
 8. Completion condition: procedure names intake channels, decision-maker, timeline, appeal
    route, and a tracking log with outcomes.
+
+Procedure skeleton (fill from the org's policies; route to counsel before adoption):
+
+```
+Reasonable Accommodation and Modification Procedure — [Organization], v[__], adopted [date]
+1. Policy statement and scope (applicants, residents, program participants)
+2. How to request: [form], [email], verbally to any staff, through a representative
+3. Staff duty to log every request on receipt: [log location]; no "magic words" required
+4. Response timeline: acknowledge within [__] business days; urgent requests within [__] hours
+5. Information we may request (disability if not apparent; disability-related need) and from whom
+6. Decision-maker: [title]; alternatives discussed in the interactive process
+7. Denial standard (undue burden / fundamental alteration), attorney approval required
+8. Assistance animals: not pets; no pet fees, breed, or weight rules; individualized review
+9. Modifications: who pays under [504 / program / standard rental] rules
+10. Written decision and appeal to [title not involved in the original decision], within [__] days
+11. Confidentiality and record retention: [period, location]
+12. Tracking log fields: date, request, decision, date decided, appeal, outcome
+```
 
 ## Section 504, ADA, and Program-Level Accessibility
 
@@ -382,15 +382,11 @@ Deliverable: a training outline with schedule and roster plan. Minimum curriculu
 - **Editing records after a complaint.** Immediate litigation hold; single custodian;
   attorney gate on everything that leaves the building.
 
-## Practitioner Notes: Hands-On vs. Advisor Roles
+## For advisors
 
-- **Hands-on practitioner (nonprofit property/program staff)**: your deliverables are the
-  five artifacts — reasonable-accommodation procedure, screening-policy review checklist,
-  advertising copy review, complaint-response protocol, staff training outline. Every one
-  ships to counsel before adoption.
-- **Advisor/consultant**: your engagement is a gap analysis — pull the client's current
-  screening policy, ads, accommodation log, and last complaint file; score them against
-  each section above; deliver findings as a prioritized exposure list (steering and
-  criminal-history screens first, accessibility second, LEP third), then co-author the
-  remediation plan. Distinguish what is legally settled (statute, case law) from what is
-  enforcement-posture-dependent (guidance rescissions) in every client memo.
+- Run the engagement as a gap analysis: pull the client's current screening policy, ads,
+  accommodation log, and last complaint file; score them against each section above; deliver a
+  prioritized exposure list (steering and criminal-history screens first, accessibility second,
+  LEP third), then co-author the remediation plan.
+- In every client memo, distinguish what is legally settled (statute, case law) from what is
+  enforcement-posture-dependent (guidance rescissions).

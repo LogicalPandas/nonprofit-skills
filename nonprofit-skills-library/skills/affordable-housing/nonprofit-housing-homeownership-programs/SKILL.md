@@ -1,6 +1,6 @@
 ---
 name: nonprofit-housing-homeownership-programs
-description: "Designs and operates nonprofit affordable homeownership programs — the Habitat-style cycle from homebuyer eligibility and selection through sweat equity, below-market financing (0% first mortgages, silent seconds, forgivable loans), underwriting, closing, and post-purchase support. Use when a user says 'draft our homebuyer selection policy', 'how many sweat equity hours should we require', 'should we use a 0% first mortgage or a silent second', 'can this family afford our house at 60% AMI', 'our homebuyer is 60 days delinquent', or 'what resale formula should our program use'. Not for community land trusts, limited-equity co-ops, or perpetual deed restrictions (use nonprofit-housing-community-ownership), build-day volunteer operations (use nonprofit-housing-construction-volunteers), the development capital stack (use nonprofit-housing-development-finance), or raising donor funds for construction (use nonprofit-capital-campaigns)."
+description: "Designs and operates nonprofit affordable homeownership programs on the Habitat-style cycle: homebuyer selection, sweat equity, below-market financing (0% firsts, silent seconds, forgivable loans), underwriting, lending compliance touchpoints, closing, and post-purchase support. Use when a user says 'draft our homebuyer selection policy', 'how many sweat equity hours should we require', 'can this family afford our house at 60% AMI', or 'our homebuyer is 60 days delinquent'. Not for community land trusts, co-ops, deed restrictions, or resale-formula design (use nonprofit-housing-community-ownership), build-day volunteer operations (use nonprofit-housing-construction-volunteers), or the development capital stack (use nonprofit-housing-development-finance)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,43 +12,26 @@ metadata:
 
 # Nonprofit Affordable Homeownership Programs
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when the task is to design, document, or operate a nonprofit affordable
-homeownership program — the full cycle from recruiting and selecting homebuyers through
-sweat equity, financing, closing, and post-purchase support. This is the Habitat-style
-model where the nonprofit builds or rehabs the home, selects the family, and often holds
-the mortgage itself. Concrete triggers:
+This is the Habitat-style model where the nonprofit builds or rehabs the home, selects the
+family, and often holds the mortgage itself.
 
-- "Draft our homebuyer selection policy" / "What selection criteria can we legally use?"
-- "How many sweat equity hours should we require, and how do we track them?"
-- "Should we do a 0% first mortgage, a below-market rate, or a silent second?"
-- "Can this family afford the payment? Walk us through the underwriting."
-- "Our affiliate is the lender — what disclosure rules apply to us?"
-- "Our homebuyer is 60 days delinquent. What's our playbook?"
-- "What resale formula should our shared-equity program use?"
-
-**Boundary — read before starting:**
-- Community land trusts, limited-equity co-ops, 99-year ground leases, and perpetual
-  stewardship of deed-restricted stock are `nonprofit-housing-community-ownership`. This
-  skill covers resale formulas and shared-equity seconds *as features of a homeownership
-  program*; the institutional shared-equity stewardship models belong to that sibling.
-- Running volunteer build days — scheduling crews, site safety, skilled/unskilled mix —
-  is `nonprofit-housing-construction-volunteers`. This skill treats buyer sweat equity as
-  a *program requirement*, not as volunteer program management (general volunteer
-  programs are `nonprofit-volunteer-management`).
-- Assembling the development capital stack (LIHTC, HOME/CDBG awards, bonds) to build the
-  homes is `nonprofit-housing-development-finance`. Raising donor funds for construction
-  is `nonprofit-capital-campaigns`.
-- Selection criteria with disparate-impact risk (criminal history, credit cutoffs),
-  reasonable accommodation in application processes, and affirmative marketing law are
-  `nonprofit-housing-fair-housing` — apply that skill alongside selection-policy work.
-- Deciding how the org fits the community's housing continuum is
-  `nonprofit-housing-continuum-planning`. Measuring program outcomes generally is
+- Community land trusts, limited-equity co-ops, ground leases, perpetual stewardship, and
+  resale-formula design → `nonprofit-housing-community-ownership`. This skill applies a chosen
+  formula through the program's recorded second or covenant.
+- Volunteer build days (crews, site safety, skilled/unskilled mix) →
+  `nonprofit-housing-construction-volunteers`; general volunteer programs →
+  `nonprofit-volunteer-management`. This skill treats sweat equity as a program requirement.
+- Development capital stack → `nonprofit-housing-development-finance`; donor funds for
+  construction → `nonprofit-capital-campaigns`.
+- Selection criteria with disparate-impact risk, accommodation in applications, affirmative
+  marketing law → `nonprofit-housing-fair-housing` (apply alongside selection-policy work).
+- Continuum fit → `nonprofit-housing-continuum-planning`; general outcome measurement →
   `nonprofit-outcomes-measurement`.
-- The note, deed of trust, shared-equity second, and restrictive covenants themselves are
-  legal instruments: draft the business terms here, then route documents to counsel
-  before signing (see supervision note).
+- The note, deed of trust, shared-equity second, and restrictive covenants are legal
+  instruments: draft the business terms here, then route documents to counsel before signing
+  (see supervision note).
 
 ## The Program Cycle
 
@@ -63,10 +46,8 @@ a stage:
 5. **Support** → post-purchase plan, early-default counseling
 6. **Resale or steward** → resale formula enforcement
 
-Practitioners (program directors, affiliate staff) need operational detail: tracking
-sheets, hour logs, servicing cadences. Advisors/consultants should push for written,
-board-adopted policies at each stage — most affiliates that fail compliance reviews or
-fair-housing complaints failed at the *documentation* step, not the intent step.
+Push for written, board-adopted policies at each stage — most affiliates that fail compliance
+reviews or fair-housing complaints failed at the *documentation* step, not the intent step.
 
 ## Homebuyer Eligibility and Selection Policy
 
@@ -221,7 +202,8 @@ Last checked September 15, 2026; this is not a lending-law review.
     10th anniversary); balances the mission goal (stability) against subsidy recapture.
   - **Due-on-sale / shared-appreciation:** sits silently until resale, refinance, or
     transfer, then recoups principal plus a share of appreciation. This is the standard
-    enforcement vehicle for program-level shared equity (below).
+    enforcement vehicle for program-level shared equity (formula design in
+    `nonprofit-housing-community-ownership`).
 - **Grant + recapture.** Direct price subsidy with a recorded recapture note returning
   subsidy from resale proceeds.
 
@@ -273,7 +255,9 @@ a creditor — not merely a grantmaker. Touchpoints that change behavior:
   insurance placement, or closing services.
 - **Servicing rules.** If your loans are covered mortgage loans, early-intervention
   expectations apply — live contact by roughly day 36 of delinquency and written notice
-  with loss-mitigation info by day 45 — good operating practice regardless of coverage.
+  with loss-mitigation info by day 45 (verify current Regulation X servicing timelines and
+  small-servicer exemptions with CFPB guidance and counsel) — good operating practice regardless
+  of coverage.
   Servicing-transfer notices apply if you move servicing out.
 - **HOME funds.** Subsidy from HUD's HOME program brings the underwriting, value-limit,
   and resale/recapture provisions in 24 CFR Part 92 noted above.
@@ -283,20 +267,16 @@ business terms and flags the touchpoints.
 
 ## Homebuyer Education
 
-Require it, fund it, and count sweat equity hours for it. Components to set in policy:
+Require it, fund it, and count sweat equity hours for it. Decisions to set in policy:
 
-- **Pre-purchase course:** a minimum curriculum (budgeting, credit, the mortgage and note,
-  taxes and insurance, maintenance and utilities, predatory-lending awareness), typically
-  8+ classroom hours. If your organization is or partners with a **HUD-approved housing
-  counseling agency**, remember counselors must be HUD-certified (post-2021 rule) for
-  HUD-program participation.
-- **One-on-one counseling:** individual budget review against the actual house payment,
-  including an escrowed taxes-and-insurance walk-through.
-- **Maintenance module:** hands-on or video series covering HVAC filters, water shutoffs,
-  caulk/paint, GFCI outlets, and when to call a pro — this is default prevention as much
-  as the counseling is.
-- **Documentation:** certificate of completion required before closing; log it in the
-  family file alongside sweat equity.
+- **Minimum hours and curriculum:** pre-purchase course typically 8+ classroom hours, plus
+  one-on-one budget review against the actual house payment, including an escrowed
+  taxes-and-insurance walk-through and a home-maintenance module.
+- **Who teaches:** if your organization is or partners with a **HUD-approved housing counseling
+  agency**, counselors must be HUD-certified (post-2021 rule) for HUD-program participation;
+  confirm current certification requirements on HUD's housing counseling pages.
+- **Completion gate:** certificate of completion required before closing; log it in the family
+  file alongside sweat equity.
 
 ## Post-Purchase Support and Early-Default Counseling
 
@@ -319,7 +299,8 @@ this section exists to prevent. Structure the plan in four layers:
    forbearing early — the 0% loan gives you room.
 4. **Foreclosure-prevention counseling partnership.** Formal referral relationship with a
    HUD-approved counseling agency for buyers in serious default, and to the state's
-   HAF-type assistance programs or legal aid while they exist.
+   HAF-type assistance programs or legal aid while they exist (check the state housing finance
+   agency for what is currently funded).
 
 Failure-and-remedy: silent-second programs with no post-purchase contact discover
 unauthorized refinance attempts at resale; annual outreach including "call us before you
@@ -327,31 +308,13 @@ refinance or list" protects both the family and the affordability mechanism.
 
 ## Shared-Equity Resale Formulas (Program Level)
 
-When the program holds a shared-appreciation or recapture second, the **resale formula**
-determines what the seller receives and what the program recaptures. Choose one, write it
-into recorded instruments, and apply it mechanically:
-
-- **Fixed-rate equity growth (common among Habitat affiliates).** Seller receives their
-  initial equity plus a fixed annual appreciation credit (often roughly 1-2%) plus the
-  documented cost of capital improvements. Predictable; insulates the buyer from market
-  swings in both directions; simple to compute at closing.
-- **Index-based.** Growth indexed to area AMI or CPI — keeps pace with what the *next*
-  income-qualified family can afford, at the cost of market-tracking complexity.
-- **Shared-appreciation split.** Sale proceeds split between seller and program by a stated
-  percentage (25-50% to the program is common), typically pairing with a resale to the
-  program at an affordable price.
-- **Pairing requirements.** Every formula needs: the program's option or right of first
-  refusal to purchase, a resale-to-income-qualified-buyer requirement (how HOME resale
-  provisions work), a defined term for the affordability obligation, and the recorded
-  second mortgage or covenant as the enforcement mechanism.
-
-Balance test: the formula trades homeowner wealth-building against keeping the home
-affordable for the next family. State the tradeoff in policy and pick deliberately —
-fixed-growth favors predictability and stability; index/shared-appreciation favors
-perpetual affordability. Stewardship of a perpetual portfolio (ground leases, CLT
-membership, institutional stewardship) is `nonprofit-housing-community-ownership`.
-Every formula requires counsel-drafted instruments and a resale price calculation
-procedure the closing agent can execute without interpretation.
+When the program holds a shared-appreciation or recapture second, choose the resale formula with
+`nonprofit-housing-community-ownership` (it owns the formula families, the worked comparison, and
+next-buyer affordability math). At program level, make sure every formula has: the program's
+option or right of first refusal to purchase, a resale-to-income-qualified-buyer requirement (how
+HOME resale provisions work), a defined affordability term, and the recorded second mortgage or
+covenant as the enforcement mechanism. Every formula requires counsel-drafted instruments and a
+resale price calculation procedure the closing agent can execute without interpretation.
 
 ## Common Failure Modes
 
