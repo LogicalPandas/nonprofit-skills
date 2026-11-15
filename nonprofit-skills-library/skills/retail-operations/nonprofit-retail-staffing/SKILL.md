@@ -1,6 +1,6 @@
 ---
 name: nonprofit-retail-staffing
-description: "Designs the paid-plus-volunteer staffing model for a resale storefront: shift scheduling, retail-specific training, and floor role design. Use for 'schedule our store shifts,' 'train new thrift-store staff and volunteers,' 'design register/floor role coverage.' General hiring/personnel policy is nonprofit-hr; general volunteer program design is nonprofit-volunteer-management."
+description: "Designs the paid-plus-volunteer staffing model for a resale storefront: floor role matrix by shift, minimum paid keyholder rule, shift scheduling, retail-specific onboarding and cross-training. Use for 'we can't cover Saturday shifts,' 'schedule our store shifts,' 'train new volunteers on the register,' or 'design register and floor role coverage.' Not for hiring, pay or FLSA classification (use nonprofit-hr) or volunteer recruitment and program design (use nonprofit-volunteer-management)."
 license: MIT
 metadata:
   supervision: "review"
@@ -11,24 +11,13 @@ metadata:
 
 # Nonprofit Retail Staffing
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to design or fix the staffing layer specific to running a resale storefront: building
-shift schedules that blend paid staff and volunteers, writing retail-specific training (register/POS,
-grading, customer service, loss prevention), and designing floor roles (cashier, sorter, greeter,
-floor merchandiser, shift lead). Typical triggers: "we can't cover Saturday shifts," "train new
-volunteers on the register," "design our floor role structure," "our paid-to-volunteer ratio feels
-off," "build an onboarding checklist for new store staff."
-
-**Boundary:** this skill is the retail-floor scheduling/training/role-design layer only. General
-nonprofit hiring, compensation benchmarking, personnel policy, employee handbooks, and FLSA
-classification are `nonprofit-hr` — use that skill to actually hire or set pay/classification for a
-retail position, then bring the resulting employee into this skill's scheduling and training system.
-General volunteer program design (recruitment funnels, screening, onboarding process, recognition
-events, retention diagnosis) is `nonprofit-volunteer-management` — use that skill to build the
-volunteer pipeline feeding the store, then use this skill to schedule and train volunteers once
-they're in the door. This skill sits on top of both: it is specifically about coordinating paid staff
-and volunteers together on a retail floor.
+- Hiring, compensation, personnel policy, handbooks, and FLSA classification for retail positions:
+  `nonprofit-hr`. Bring the hired employee into this skill's scheduling and training system.
+- Volunteer recruitment, screening, general orientation, recognition, and retention:
+  `nonprofit-volunteer-management`. This skill schedules and trains volunteers once they're in the door.
+- Cash-handling, key-access, and opening/closing controls: `nonprofit-retail-store-operations`.
 
 ## Core Framework: The Blended Staffing Model
 
@@ -46,19 +35,15 @@ keyholder/cash-accountable paid staff member on every shift) so volunteer no-sho
 shift without anyone accountable for cash and keys — this single rule prevents the most common
 retail-staffing failure in thrift operations.
 
-## Standard Terminology
+## Role Definitions
 
-- **Keyholder**: staff/senior volunteer authorized to open/close and access safe/cash — should
-  always be a paid, vetted role given cash-handling exposure, not a rotating volunteer assignment.
-- **Floor role matrix**: a table mapping each shift to required role coverage (e.g., 1 cashier, 1
-  sorter/pricer, 1 floor/greeter, 1 keyholder) used to build schedules and identify gaps, showing
-  which minimum required roles are filled and which desired-but-optional roles remain open.
-- **Shift lead**: a designated person per shift (paid or senior trained volunteer) responsible for
-  floor decisions and volunteer supervision during that shift, distinct from the store manager who
-  isn't present every shift.
-- **Retail onboarding track**: the specific first-shift-to-independent training sequence for a new
-  store staff/volunteer (register, grading basics, customer service, safety) — distinct from general
-  volunteer orientation, which covers organizational mission/policy rather than register mechanics.
+- **Keyholder**: a paid, vetted staff member authorized to open/close and access the safe/cash. Given
+  cash-handling exposure, keyholder is never a rotating volunteer assignment.
+- **Shift lead**: a designated person per shift (paid staff or senior trained volunteer) responsible for
+  floor decisions and volunteer supervision, distinct from the store manager who isn't present every
+  shift. A volunteer shift lead does not replace the paid keyholder.
+- **Retail onboarding track**: register, grading basics, customer service, and safety — distinct from
+  general volunteer orientation, which covers organizational mission/policy.
 - **Paid-to-volunteer ratio**: the store's staffing-model target (e.g., 1 paid staff per 4-6 volunteer
   shift-hours) used to plan hiring and recruitment targets jointly with `nonprofit-hr` and
   `nonprofit-volunteer-management`.
@@ -90,6 +75,19 @@ retail-staffing failure in thrift operations.
 9. **Review the paid-to-volunteer ratio and role matrix quarterly** against actual store traffic and
    sales volume, adjusting as the store's hours or footprint change.
 
+## Floor Role Matrix Template
+
+| Day-part            | Keyholder (paid, required) | Shift lead (required) | Cashier, certified (min) | Sorter/pricer (min) | Floor/greeter (optional) | Filled by (paid / volunteer) | Gap? |
+|---------------------|----------------------------|-----------------------|--------------------------|---------------------|--------------------------|------------------------------|------|
+| Weekday open-1 pm   | 1                          | 1                     | 1                        | 1                   | 0-1                      |                              |      |
+| Weekday 1 pm-close  | 1                          | 1                     | 1                        | 1                   | 0-1                      |                              |      |
+| Saturday open-1 pm  | 1                          | 1                     | 2                        | 2                   | 1                        |                              |      |
+| Saturday 1 pm-close | 1                          | 1                     | 2                        | 1                   | 1                        |                              |      |
+| Sunday              | 1                          | 1                     | 1                        | 1                   | 0-1                      |                              |      |
+
+Headcounts are placeholders; set them from the store's traffic and sales by day-part. One person may
+hold keyholder and shift lead together.
+
 ## Standard Deliverables
 
 - Floor role matrix by shift/day-part
@@ -97,6 +95,18 @@ retail-staffing failure in thrift operations.
 - Retail onboarding/training track with certification checkpoints
 - Shift schedule template with role coverage flagging
 - No-show/gap tracking report by shift and role
+
+## Verify Before Acting
+
+- [ ] Every scheduled shift has a paid keyholder and a cashier-certified person named, not just a
+      headcount.
+- [ ] No volunteer is scheduled into a keyholder or cash-accountable role.
+- [ ] No paid employee is scheduled for unpaid "volunteer" hours at the store; any paid/volunteer
+      overlap has been checked with `nonprofit-hr` and, where unclear, employment counsel.
+- [ ] Onboarding sign-offs (register certification, safety briefing) are recorded before a person is
+      scheduled for an unsupervised shift.
+- [ ] Hiring or recruitment gaps from the ratio review were handed to `nonprofit-hr` and
+      `nonprofit-volunteer-management` with numbers.
 
 ## Common Failure Modes
 
@@ -112,14 +122,13 @@ retail-staffing failure in thrift operations.
   minute scrambling instead of a recruitment or incentive fix.
 - **Paid-to-volunteer ratio never reviewed**, so staffing model drifts out of sync with actual store
   traffic as hours or footprint change.
+- **Blurring paid and volunteer work**: letting paid staff "volunteer" extra unpaid hours doing their
+  regular store duties, or filling a vacated paid role with volunteers doing the same job. Both create
+  wage-and-hour exposure; route any such arrangement through `nonprofit-hr` before scheduling it.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As a store manager**, build the floor role matrix before touching the schedule software — most
-  "we can't cover shifts" complaints are actually role-matrix gaps (missing a qualified cashier or
-  keyholder), not raw headcount shortages, and the fix is training/cross-training, not just
-  recruiting more warm bodies.
-- **As a consultant advising a resale operation on staffing**, resist treating this as a pure
-  volunteer-recruitment problem and routing it entirely to `nonprofit-volunteer-management` — first
-  check whether the minimum-paid-staff rule and role matrix are even defined; a store without those
-  will keep feeling short-staffed no matter how many volunteers are recruited.
+- Most "we can't cover shifts" complaints are role-matrix gaps (no qualified cashier or keyholder), not
+  raw headcount shortages; the fix is training/cross-training, not just recruiting more volunteers.
+- Before routing the problem to `nonprofit-volunteer-management`, check whether the minimum-paid-staff
+  rule and role matrix are even defined.

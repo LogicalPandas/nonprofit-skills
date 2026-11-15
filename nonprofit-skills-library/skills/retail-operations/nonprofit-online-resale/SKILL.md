@@ -1,6 +1,6 @@
 ---
 name: nonprofit-online-resale
-description: "Runs multi-channel online resale of high-value donated items through marketplaces (ShopGoodwill, eBay-style auctions): identifying/photographing items, writing listings, shipping logistics, online customer service. Use for 'list this on ShopGoodwill,' 'set up our eBay auction workflow,' 'handle online resale shipping.' In-store pricing/floor merchandising lives in nonprofit-retail-pricing-merchandising."
+description: "Runs online resale of high-value donated items through marketplaces (ShopGoodwill, eBay-style auctions, an own storefront): identifying online-worthy items, sold-comp research, photography, listings with condition disclosure, shipping and online customer service. Use for 'we found a valuable item, should we list it online,' 'list this on ShopGoodwill,' 'set up our eBay auction workflow,' or 'handle online resale shipping.' Not for floor pricing (use nonprofit-retail-pricing-merchandising), intake grading (use nonprofit-donation-intake-grading), or donor tax valuation (use nonprofit-in-kind-gift-acceptance)."
 license: MIT
 metadata:
   supervision: "unsupervised"
@@ -11,22 +11,14 @@ metadata:
 
 # Nonprofit Online Resale
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill to build or run an online resale channel for donated goods identified as too valuable,
-too niche, or too collectible for standard floor pricing: marketplace/auction listing operations
-(ShopGoodwill, eBay-style platforms, or a nonprofit's own e-commerce storefront), item photography and
-research, shipping/fulfillment logistics, and online customer service. Typical triggers: "we found a
-valuable item, should we list it online," "set up our ShopGoodwill/eBay workflow," "reduce shipping
-complaints on online orders," "build a research process for identifying high-value donations."
-
-**Boundary:** this skill covers the online marketplace channel only. Identifying that a specific item
-is online-worthy happens partly during grading (`nonprofit-donation-intake-grading` — items flagged
-during triage as high-value get routed here) and the floor-facing pricing/display of everything else
-stays in `nonprofit-retail-pricing-merchandising`. Register/POS operations and cash handling for
-in-store sales are `nonprofit-retail-store-operations`. If an item needs formal tax-valuation
-documentation for the donor (Form 8283, qualified appraisal), that's
-`nonprofit-in-kind-gift-acceptance` — handle that in parallel with, not instead of, the listing decision.
+- This skill covers the online marketplace channel only. Items flagged as high-value during triage
+  arrive from `nonprofit-donation-intake-grading`.
+- Floor-facing pricing and display of everything else: `nonprofit-retail-pricing-merchandising`.
+- Register/POS operations and in-store cash handling: `nonprofit-retail-store-operations`.
+- Formal donor tax-valuation documentation (Form 8283, qualified appraisal): `nonprofit-in-kind-gift-acceptance`,
+  handled in parallel with, not instead of, the listing decision.
 
 ## Core Framework: The Online Resale Pipeline
 
@@ -45,20 +37,15 @@ Treat online resale as a distinct operational pipeline parallel to the floor, no
    marketplace's service-level expectations, since marketplace seller ratings directly affect future
    listing visibility.
 
-## Standard Terminology
+## Key Terms
 
 - **Sold comps**: completed/sold listing prices for comparable items on the same platform — the only
   reliable pricing signal for resale goods; active/asking prices overstate achievable value.
-- **Reserve price**: the minimum acceptable sale price on an auction-format listing, set to protect
-  against a low-ball final bid on a genuinely valuable item.
-- **Handling time**: the marketplace-stated number of business days between order and ship-by date;
-  consistently missing it degrades seller rating and future listing placement.
-- **Condition grade disclosure**: a standardized, marketplace-appropriate condition description (New,
-  Like New, Good, Fair, For Parts) stated explicitly in every listing — the leading driver of buyer
-  disputes when omitted or inflated.
-- **Seller rating / feedback score**: the marketplace's cumulative reputation metric for the
-  organization's account; a small number of unresolved disputes can disproportionately suppress
-  visibility, so protecting it is an operational priority, not just a customer-service nicety.
+- **Condition grade disclosure**: a standardized condition description (New, Like New, Good, Fair, For
+  Parts) stated explicitly in every listing — the leading driver of buyer disputes when omitted or
+  inflated.
+- **Seller rating**: a small number of unresolved disputes can disproportionately suppress visibility,
+  so protecting it is an operational priority, not just a customer-service nicety.
 
 ## Step-by-Step: Running the Online Resale Channel
 
@@ -91,6 +78,22 @@ Treat online resale as a distinct operational pipeline parallel to the floor, no
    through time, shipping cost as % of sale price, and dispute/return rate — use this to recalibrate
    the identification threshold and photography/listing quality over time.
 
+## Listing Template
+
+```
+Title: [Brand/maker] [item type] [model/style] [size/dimensions] [key feature]
+Condition grade: [New / Like New / Good / Fair / For Parts]
+Flaws: [each flaw, with photo number: e.g., "chip on base rim, photo 6"]
+Measurements / specs: [H x W x D, weight; size tag and actual measurements for clothing;
+  model number, tested/working status for electronics]
+Maker's marks / authenticity: [marks, serials, labels photographed: photo numbers]
+Comps used: [3 sold listings: platform, date sold, price]  (internal, not published)
+Format: [fixed price $__ / auction start $__, reserve $__]  Reason: [comp strength]
+Shipping: [packed weight and box size, carrier/service, handling time __ days, charge $__]
+Returns: [policy per platform rules]
+Listed by / date: ____
+```
+
 ## Standard Deliverables
 
 - Online-eligibility identification criteria (threshold + category triggers)
@@ -98,6 +101,15 @@ Treat online resale as a distinct operational pipeline parallel to the floor, no
 - Photography setup guide
 - Shipping/packaging standard by category
 - Monthly online-channel performance report
+
+## Verify Before Acting
+
+- [ ] Price or reserve is based on at least three sold comps, not asking prices.
+- [ ] Every visible flaw in the photos is named in the listing text, and the condition grade matches.
+- [ ] Packed weight and box size were measured, not estimated, before setting the shipping charge.
+- [ ] The item is not recalled or restricted on the target platform (check the platform's prohibited
+      items policy and CPSC recalls).
+- [ ] Brand-name or designer items have been checked for authenticity before listing under the brand.
 
 ## Common Failure Modes
 
@@ -112,14 +124,13 @@ Treat online resale as a distinct operational pipeline parallel to the floor, no
   visibility over time.
 - **Shipping cost absorbed silently**, eroding the margin advantage this channel is supposed to
   capture over floor sale.
+- **Listing a suspected counterfeit under the brand name**; marketplaces can remove listings or
+  restrict the account. List as "unbranded" or route to the floor when authenticity is unclear.
+- **Listing recalled or platform-restricted items** that slipped past intake, which risks takedowns
+  and account penalties on top of buyer safety issues.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the staff/volunteer running online resale**, protect the seller rating as the channel's most
-  valuable asset — a slightly lower sale price from generous dispute resolution almost always beats
-  the compounding cost of a damaged rating suppressing every future listing.
-- **As a consultant advising a resale operation on launching or scaling online sales**, size the
-  channel realistically against available labor — photography, listing-writing, and fulfillment are
-  genuinely time-intensive per item, so recommend starting with a narrow, high-confidence category
-  (e.g., only designer clothing or only collectibles) before promising the org broad online coverage
-  it doesn't have staffing to sustain.
+- Size the channel realistically against available labor: photography, listing-writing, and
+  fulfillment are time-intensive per item, so start with a narrow, high-confidence category (e.g., only
+  designer clothing or only collectibles) before promising broad online coverage.
