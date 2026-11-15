@@ -1,6 +1,6 @@
 ---
 name: nonprofit-major-gifts
-description: "Sets major and principal gift strategy: rating prospect capacity and readiness, setting a specific ask amount, structuring a gift proposal or one-page case document, and drafting/negotiating gift agreements including multi-year pledges and named-gift terms. Use when a user asks how much to ask a specific donor for, wants help structuring a major-gift proposal or gift agreement, needs a capacity/readiness rating for one prospect, or is preparing a solicitation visit. Does not cover moving a prospect through general pipeline stages (use nonprofit-donor-pipeline), bequests/estate and legacy gifts (use nonprofit-planned-giving), or campaign-wide gift tables and campaign leadership (use nonprofit-capital-campaigns)."
+description: "Sets major and principal gift strategy for one prospect: capacity, affinity and readiness rating, a specific ask amount and structure, proposals and one-page cases, solicitation briefings, and gift agreements including multi-year pledges and naming terms. Use when a user says 'how much should we ask this donor for?', 'help me structure a $500K proposal', 'draft a gift agreement for a named fund' or 'prep me for a solicitation meeting'. Not for moving prospects through pipeline stages (use nonprofit-donor-pipeline), bequests and legacy gifts (use nonprofit-planned-giving), or campaign-wide gift tables (use nonprofit-capital-campaigns)."
 license: MIT
 metadata:
   supervision: "expert-required"
@@ -11,20 +11,14 @@ metadata:
 
 # Major & Principal Gift Strategy
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for the strategy and mechanics of a specific major or principal gift ask — not for
-tracking where a prospect sits in the general pipeline (`nonprofit-donor-pipeline`), not for
-bequests or legacy society gifts (`nonprofit-planned-giving`), and not for a capital campaign's
-overall gift table or leadership structure (`nonprofit-capital-campaigns`, which then calls this
-skill for the mechanics of each individual ask within the campaign). Typical triggers:
-
-- "How much should we ask this donor for?"
-- "Help me structure a proposal for a $500K gift"
-- "Draft a gift agreement for a named endowment fund"
-- "Rate this prospect's giving capacity and readiness"
-- "Prep me for a solicitation meeting next week"
-- "What should our multi-year pledge structure look like?"
+- Tracking where a prospect sits in the general pipeline: `nonprofit-donor-pipeline`.
+- Bequests and legacy society gifts: `nonprofit-planned-giving`.
+- A capital campaign's overall gift table and leadership: `nonprofit-capital-campaigns`, which
+  calls this skill for each individual ask.
+- Proposals to foundation or institutional funders: `nonprofit-grant-writing`.
+- Pledge reminders and stewardship after the gift: `nonprofit-donor-retention`.
 
 Most organizations define "major gift" as a threshold relative to their own median gift (commonly
 the top 1-10% of donors or a fixed floor like $10K-$25K+); "principal gift" typically denotes the
@@ -39,7 +33,7 @@ Score each prospect on three independent axes before setting an ask:
    business ownership, stock holdings/SEC filings, past gift sizes to peer organizations, art/
    foundation affiliations). Express as a *range*, not a point estimate (e.g., "$50K-$150K
    capacity over 3-5 years").
-2. **Affinity/Linkage** — strength of connection to the mission and to an inside champion (board
+2. **Affinity** — strength of connection to the mission and to an inside champion (board
    member, staff, peer donor) who can open or accompany the ask.
 3. **Readiness** — timing signals: recent liquidity event, life stage, past response to
    cultivation moves, explicitly stated interest. A high-capacity, high-affinity prospect with low
@@ -70,9 +64,8 @@ confidence in a near-term ask.
 - **One-page case/proposal summary** — problem, solution, specific funding need tied to a concrete
   budget line or project, requested amount, naming/recognition offered, timeline.
 - **Formal proposal document** (for $100K+ or campaign gifts) — narrative case, budget detail,
-  organizational credibility section, gift structure options, next steps. If this proposal targets
-  a foundation/institutional funder rather than an individual, the drafting mechanics live in
-  `nonprofit-grant-writing`; this skill covers the individual/family major-donor version.
+  organizational credibility section, gift structure options, next steps (individual/family
+  donors; institutional funders go to `nonprofit-grant-writing`).
 - **Gift agreement** — legally reviewable document specifying: gift amount and payment schedule,
   restriction/designation of funds, naming rights and duration, reporting commitments back to the
   donor, and a variance/redirection clause if the named purpose becomes impossible to fulfill
@@ -98,6 +91,37 @@ confidence in a near-term ask.
 8. On a multi-year pledge, set up pledge reminder and payment tracking (a stewardship handoff to
    `nonprofit-donor-retention`).
 
+### Output template: solicitation briefing memo
+
+```
+Prospect: [name]          Asker(s): [peer asker + staff partner]     Meeting: [date, place]
+Ratings: Capacity [range over N years] | Affinity [high/med/low + champion] | Readiness [signal]
+Relationship history: [prior gifts with dates and amounts; key cultivation moves]
+Donor's interest area: [what they have said they care about]
+Ask: [specific amount] for [purpose / budget line], structure [outright / N-year pledge / blended]
+Rationale: [largest prior gift, peer gifts, stretch multiple used]
+Walk-away minimum: [amount]          Fallback ask: [amount or structure]
+Recognition offered: [naming / recognition, subject to gift acceptance policy]
+Anticipated objections and responses: [objection -> response]
+Next step if yes: [gift agreement within 5-10 business days; legal/finance review]
+Next step if "not now": [return-to-cultivation move and date]
+```
+
+## Verify Before Acting
+
+Before the ask, and again before any gift agreement is signed:
+
+- [ ] The prospect is marked ready in the pipeline and has a rating on all three axes, not
+  capacity alone.
+- [ ] The internal team has agreed a specific ask number and a walk-away minimum, and the asker is
+  briefed.
+- [ ] Gift agreement amount, payment schedule, restriction, naming term and duration, reporting
+  commitments and variance clause match the proposal and the donor's verbal yes.
+- [ ] The org can deliver any restricted purpose long term, and naming terms fit its gift
+  acceptance and naming policies.
+- [ ] Legal and finance have reviewed any agreement with naming rights, restrictions or a
+  multi-year pledge before signature.
+
 ## Common Failure Modes
 
 - **Underasking**: staff self-censor and ask well below true capacity out of discomfort — counter
@@ -110,13 +134,14 @@ confidence in a near-term ask.
   be asking.
 - **Proposal-agreement mismatch**: gift agreement terms that drift from what was actually proposed
   and verbally agreed — reconcile documents before signature.
+- **Training before diagnosis**: when proposal-to-close is low, diagnose whether the failure is the
+  ask amount (asking wrong), the asker (wrong messenger) or readiness (asking too soon) before
+  recommending training; each has a different fix.
 
-## For Advisors
+## For advisors
 
-Bring an outside, dispassionate capacity read — clients routinely underestimate their own top
-donors' capacity because staff proximity breeds caution. Use documented peer-gift comparisons to
-justify a stretch ask to a skittish ED or board. When a client's proposal-to-close ratio is low,
-diagnose whether the failure is at ask-amount-setting (asking wrong) versus asker selection (wrong
-messenger) versus readiness (asking too soon) before recommending training — these have different
-fixes. Always insist on a written gift agreement template with a variance clause as a standard
-deliverable; its absence is a governance red flag worth raising with the board directly.
+- Bring an outside, dispassionate capacity read; clients routinely underestimate their top donors'
+  capacity because staff proximity breeds caution. Use documented peer-gift comparisons to justify a
+  stretch ask to a skittish ED or board.
+- Insist on a written gift agreement template with a variance clause as a standard deliverable; its
+  absence is a governance red flag worth raising with the board directly.

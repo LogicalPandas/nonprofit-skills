@@ -1,6 +1,6 @@
 ---
 name: nonprofit-grant-research
-description: "Finds and vets foundation, government, and corporate grant funders: prospect research and fit scoring, RFP/NOFO tracking, funder database searches (Candid/Foundation Directory, grants.gov, state portals), and building a grant calendar of deadlines and renewal dates. Use when a user asks to find funders for a specific program, build or maintain a grant prospect list or grants calendar, score how well a funder matches the org's mission, or track upcoming RFP/NOFO deadlines. Does not cover writing the LOI or proposal itself (use nonprofit-grant-writing)."
+description: "Finds and vets foundation, government and corporate grant funders: prospect research and fit scoring, 990-PF giving checks, funder database searches (Candid/Foundation Directory, grants.gov, state portals), RFP/NOFO tracking, and a grant calendar of deadlines and renewals. Use when a user says 'find foundations that fund our program', 'is this funder a good fit?', 'build us a grants calendar' or 'which funders are due for renewal?'. Not for writing the LOI or proposal (use nonprofit-grant-writing) or corporate sponsorship and cause marketing (use nonprofit-corporate-sponsorships)."
 license: MIT
 metadata:
   supervision: "unsupervised"
@@ -11,18 +11,11 @@ metadata:
 
 # Grant Prospect Research & Pipeline Tracking
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill for finding, vetting, and scheduling funders — stop at the point of "we should
-apply to this funder for this program by this date" and hand off to `nonprofit-grant-writing` for
-drafting. Typical triggers:
-
-- "Find foundations that fund [program area] in [geography]"
-- "Is [funder] a good fit for our mission?"
-- "Build us a grants calendar for next fiscal year"
-- "Track open RFPs/NOFOs relevant to our programs"
-- "Research this funder's giving history and typical grant size before we approach them"
-- "Which of our current funders are due for renewal and when?"
+- Stop at "we should apply to this funder for this program by this date" and hand off to
+  `nonprofit-grant-writing` for drafting, with the funder profile brief attached.
+- Cause-marketing and sponsorship engagement with businesses: `nonprofit-corporate-sponsorships`.
 
 ## Funder Types & Sources
 
@@ -39,7 +32,8 @@ drafting. Typical triggers:
 - **Government grants** — federal via grants.gov (search by CFDA/Assistance Listing number) and
   agency-specific NOFOs; state/local via each state's grants portal; these carry compliance
   obligations (2 CFR 200 Uniform Guidance, indirect cost rate rules) heavier than most private
-  funders — flag this distinction for the writing/finance team early.
+  funders — flag this distinction for the writing/finance team early, and confirm the current
+  text of 2 CFR 200 at eCFR rather than relying on a remembered version.
 - **Donor-advised fund and giving-circle referrals** — often sourced through board/staff
   relationships rather than databases; log these in the same pipeline even though discovery method
   differs.
@@ -64,6 +58,12 @@ Score each candidate funder on a simple weighted rubric before adding to the act
 
 Assign each factor a score (e.g., 0-2) and set a minimum threshold (e.g., 8/12) before committing
 research and writing time — this keeps the team from chasing prestigious but poor-fit funders.
+
+Example row (illustrative funder, not real data):
+
+| Funder | Mission | Geography | Size fit | Eligibility | Timing | Relationship | Total | Decision |
+|---|---|---|---|---|---|---|---|---|
+| [Example Family Foundation] | 2 (funds early literacy explicitly) | 2 (county in service area) | 1 (median grant below ask) | 2 | 1 (cycle opens after need date) | 0 (no contact) | 8/12 | Add; request a smaller first grant |
 
 ## Standard Deliverables
 
@@ -111,15 +111,14 @@ research and writing time — this keeps the team from chasing prestigious but p
   submissions when that person is out.
 - **Chasing prestige over fit**: pursuing a well-known foundation with a poor size/geography match
   instead of a strong-fit, lower-profile funder.
+- **Cold prospecting before mining renewals**: many clients have an underused pipeline of good-fit
+  renewal or lapsed funders that outperforms cold prospecting; review it before chasing new names.
 - **Stale funder data**: reusing a funder profile from 2+ years ago without checking for new
   leadership, strategy pivots, or closed funding cycles.
 
-## For Advisors
+## For advisors
 
-When engaged to grow a client's grant revenue, build the fit-scored prospect list and grant
-calendar as the first deliverable before recommending any specific new funder chase — many clients
-already have an underused pipeline of good-fit renewal or lapsed funders that outperforms cold
-prospecting. Use 990-PF actual-grant data, not funder websites, to challenge a client's assumption
-about which funders are "reaches" versus realistic targets. When advising on capacity, translate
-findings into a writing-capacity plan (how many LOIs/proposals per month is realistic given staff
-time) so the client doesn't build a prospect list larger than they can execute against.
+- Build the fit-scored prospect list and grant calendar as the first deliverable before
+  recommending any specific new funder chase.
+- Translate findings into a writing-capacity plan (how many LOIs/proposals per month staff time
+  supports) so the prospect list does not outgrow what the client can execute.

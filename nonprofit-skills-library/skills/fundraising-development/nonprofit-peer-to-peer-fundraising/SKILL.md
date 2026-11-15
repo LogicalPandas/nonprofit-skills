@@ -1,6 +1,6 @@
 ---
 name: nonprofit-peer-to-peer-fundraising
-description: "Plans and runs walk/run/ride and team-fundraising campaigns: participant and team-captain recruitment, individual fundraising page copy templates, team captain toolkits, incentive/leaderboard mechanics, and peer-to-peer email/social prompts to participants' own networks. Use when a user asks to plan a walkathon/run/ride fundraiser, recruit or support team captains, write participant fundraising-page copy or coaching emails, design a leaderboard or incentive structure, or grow per-participant fundraising averages. Does not cover corporate sponsorship of the event (use nonprofit-corporate-sponsorships), venue/day-of event logistics (use nonprofit-fundraising-events), or one-time appeal letters not routed through individual participant networks (use nonprofit-annual-appeals)."
+description: "Plans and runs peer-to-peer and team fundraising such as walks, runs, rides and DIY or birthday campaigns: team captain recruitment and toolkits, participant fundraising-page copy, coaching email sequences, and leaderboard and incentive design. Use when a user says 'plan our annual walk fundraiser', 'write emails participants can send to their networks', 'design a team captain toolkit' or 'raise our per-participant average'. Not for sponsorship sales for the event (use nonprofit-corporate-sponsorships), venue and day-of logistics (use nonprofit-fundraising-events), or org-to-donor mass appeals (use nonprofit-annual-appeals)."
 license: MIT
 metadata:
   supervision: "unsupervised"
@@ -11,27 +11,16 @@ metadata:
 
 # Peer-to-Peer & Team Fundraising
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill specifically for campaigns where individual participants or teams raise money from
-their own personal networks (walks, runs, rides, "birthday fundraisers," DIY campaigns) — not for
-sponsorship sales for the same event (`nonprofit-corporate-sponsorships`), not for venue/day-of
-logistics (`nonprofit-fundraising-events`), and not for a direct org-to-donor mass appeal
-(`nonprofit-annual-appeals`). Typical triggers:
-
-- "Plan our annual walk/run/ride fundraiser"
-- "Write email templates for participants to send to their networks"
-- "Design a team captain toolkit"
-- "Set up a leaderboard and fundraising incentives/prizes"
-- "How do we recruit more team captains and raise our per-participant average?"
-- "Write fundraising-page copy participants can copy and personalize"
+- Sponsorship sales for the same event: `nonprofit-corporate-sponsorships`.
+- Venue and day-of logistics: `nonprofit-fundraising-events`.
+- Direct org-to-donor mass appeals: `nonprofit-annual-appeals`.
+- Acknowledgment of donors new to the org's file: `nonprofit-donor-retention`.
 
 ## Core Model
 
-Peer-to-peer (P2P) fundraising works by converting participants into fundraisers who solicit their
-own networks — the org's job is to recruit and equip participants, not to solicit end donors
-directly. Revenue is a function of three levers, and diagnosing underperformance means checking
-each independently:
+Diagnose underperformance by checking each lever independently:
 
 \[ \text{Total raised} = \text{(number of participants)} \times \text{(participation-to-fundraising conversion rate)} \times \text{(average amount raised per active fundraiser)} \]
 
@@ -39,9 +28,8 @@ each independently:
   personalize their page or send a single ask — the highest-leverage intervention is usually
   converting registrants into active askers within the first few days, not recruiting more
   registrants.
-- **Team structure**: participants recruited onto a team (led by a captain) consistently
-  out-fundraise unaffiliated individual participants, because captains apply direct peer pressure
-  and coaching.
+- **Teams**: participants on a captain-led team consistently out-fundraise unaffiliated
+  individuals.
 
 ## Team Captain Toolkit
 
@@ -63,6 +51,33 @@ distinct from individual participant incentives.
 3. **Ask-string guidance for participants**: coach them to suggest specific amounts tied to the
    cause's impact framing (mirroring the ask-string logic in `nonprofit-annual-appeals` but
    personalized to the participant's own story) rather than leaving asks fully open-ended.
+
+### Output template: launch email and fundraising page
+
+```
+Subject: [Participant name] is [walking/running/riding] for [cause] — will you help?
+
+Hi [first name],
+
+On [event date] I'm [walking/running/riding] [distance] with [org name] because [personal reason,
+1-2 sentences in the participant's own words].
+
+My goal is to raise [$goal] by [date]. [$amount] [concrete impact, confirmed by the org].
+
+Would you give [$suggested amount] — or any amount — at [personal page link]?
+
+Thank you,
+[Name]
+P.S. [Deadline or match, if real]
+```
+
+```
+Page headline: [Name]'s [event] for [cause]
+Photo: [participant's own photo]
+Why I'm doing this: [personal story, 2-4 sentences]
+My goal: [$goal]    Team: [team name, if any]
+What your gift does: [$amount] = [org-confirmed impact]
+```
 
 ## Standard Deliverables
 
@@ -111,17 +126,17 @@ distinct from individual participant incentives.
   and coaching effect teams provide.
 - **Weak final-week push**: under-communicating in the final days, missing the urgency-driven
   giving spike most P2P campaigns rely on.
+- **Marketing for registrants when the gap is coaching**: when revenue plateaus, get the
+  three-lever breakdown (registrants, conversion rate, average per fundraiser) before recommending
+  any tactic.
 - **Incentive cost exceeding lift**: prize structures that cost more than the marginal revenue they
   generate — budget and evaluate incentives against actual incremental fundraising, not just
   participant enthusiasm.
 
-## For Advisors
+## For advisors
 
-When a client's P2P event revenue plateaus or declines, get the three-lever breakdown
-(registrants, conversion rate, average per fundraiser) before recommending any tactic — clients
-often default to "we need more marketing to get more registrants" when the actual gap is
-onboarding/coaching registrants into active askers. Recommend a dedicated, calendared captain
-recruitment push starting well before general registration opens, since captain quality and count
-predict overall campaign performance more reliably than total registrant count. Advise clients to
-track and report the conversion-rate metric to the board explicitly, since it's the actionable lever
-most orgs never measure.
+- Recommend a dedicated, calendared captain recruitment push well before general registration
+  opens; captain quality and count predict campaign performance more reliably than registrant
+  count.
+- Have clients report the registrant-to-fundraiser conversion rate to the board; it is the
+  actionable lever most orgs never measure.
