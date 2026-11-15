@@ -1,6 +1,6 @@
 ---
 name: nonprofit-executive-communications
-description: "Drafts first-person nonprofit CEO/ED communications to staff, board, funders, and close stakeholders: all-staff and monthly notes, crisis and layoff/RIF/restructure announcements (with manager talking points and internal FAQ), funder and partner letters, town-hall scripts and Q&A, 'from the ED' newsletter columns, culture-setting notes, and public statements paired with a 'should we speak?' decision memo. Use when writing, revising, or gut-checking a message going out under the ED/CEO's own name — hard-news announcements, layoff letters, tone-setting notes, or personal statements on public issues affecting the org. Does not cover organizational brand voice or marketing (use nonprofit-brand-messaging), press releases and reporter relationships (use nonprofit-media-relations), donor appeals, annual reports, or donation pages (use nonprofit-annual-report, nonprofit-annual-appeals, or nonprofit-donation-page-copy), or CEO-to-board work like board reports and 1:1 agendas (use nonprofit-ceo-board-partnership)."
+description: "Drafts first-person CEO/ED messages: all-staff notes, layoff/RIF and restructure announcements with manager talking points and FAQ, funder letters, town-hall scripts, 'from the ED' columns, and public statements with a 'should we speak?' memo. Use when someone says 'write my all-staff email about the layoff,' 'draft a letter to our funders about the cut,' or 'should I put out a statement on this.' Not for the change plan or stakeholder map (use nonprofit-change-management), brand voice (use nonprofit-brand-messaging), press work (use nonprofit-media-relations), donor appeals (use nonprofit-annual-appeals), or board reports (use nonprofit-ceo-board-partnership)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,24 +12,21 @@ metadata:
 
 # Nonprofit Executive Communications
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill whenever a message will go out **under the ED/CEO's own name** to an audience of
-staff, board members, major funders, close partners, or the public speaking as the leader (not as
-the organization's brand). Trigger tasks include: "write an all-staff email announcing a layoff,"
-"draft my monthly note to staff," "we're restructuring — help me write the announcement plus
-manager talking points and an internal FAQ," "write a letter to our top ten funders about the
-funding cut," "town-hall opening script and anticipated Q&A on the merger," "my 'from the ED'
-column for the newsletter this quarter," "internal note setting the tone after a hard week," or
-"should I put out a public statement on [current event], and if yes, draft it."
+This skill is **first-person CEO/ED voice to internal and close-stakeholder audiences**, including
+hard-news bundles (the message, manager talking points, internal FAQ, and 1:1 talking track).
 
-Boundary: this skill is **first-person CEO/ED voice to internal and close-stakeholder audiences.**
-For organizational brand voice and marketing messaging, use `nonprofit-brand-messaging`. For press
-releases, media pitches, and reporter relationships, use `nonprofit-media-relations`. For donor
-appeals, annual reports, and donation-page copy (which use organizational voice, not CEO voice),
-use `nonprofit-annual-report`, `nonprofit-annual-appeals`, or `nonprofit-donation-page-copy`. For
-CEO-to-board written work like board reports, dashboards, and 1:1 agendas, use
-`nonprofit-ceo-board-partnership`.
+- Stakeholder impact map, change plan, and reinforcement for a restructure, merger, or other
+  organizational change: `nonprofit-change-management`. That skill hands the CEO-voice drafting
+  back here.
+- Organizational brand voice and marketing messaging: `nonprofit-brand-messaging`.
+- Press releases, media pitches, reporter relationships: `nonprofit-media-relations`.
+- Donor appeals, annual reports, donation-page copy (organizational voice, not CEO voice):
+  `nonprofit-annual-appeals`, `nonprofit-annual-report`, `nonprofit-donation-page-copy`.
+- Program roundup newsletters: `nonprofit-email-newsletter`.
+- CEO-to-board work like board reports, dashboards, and 1:1 agendas:
+  `nonprofit-ceo-board-partnership`.
 
 ## Core Principle: CEO Voice, Not Corporate Voice
 
@@ -41,30 +38,22 @@ chapter"). Fix by rewriting in the ED's own cadence: short sentences, active ver
 singular for decisions ("I decided"), first person plural for shared work ("we will"), named
 concrete objects instead of categories ("the two program teams in Oakland" not "impacted staff").
 
-Named frameworks this skill uses:
+Default tools — use the first three on every message; add the others when they apply:
 
-- **BLUF (Bottom Line Up Front)** — the first two sentences state the news and what it means for
-  the reader. Everything else is context. Never bury the decision in paragraph four.
-- **CCL crisis-communication principles** (Center for Creative Leadership): **acknowledge / commit
-  / act / update** — name what happened, commit to what you'll do, describe the actions already
-  underway, and set an explicit next-update time. Skipping the "when I'll update you next" step is
-  what makes staff assume the worst.
-- **SCARF model** (David Rock) for change messages: any restructure, RIF, or policy shift threatens
-  one or more of **Status** (rank/identity), **Certainty** (predictability), **Autonomy** (control
-  over one's work), **Relatedness** (belonging to the team), and **Fairness** (equitable process).
-  Diagnose which SCARF domains a piece of news threatens, then explicitly address those in the
-  message rather than leaving them to fester.
-- **Grunig's two-way symmetric model** for funder and partner letters: communication is dialogue,
-  not broadcast — invite the specific response you want ("I'd value a fifteen-minute call this
-  week"), and design the message to be answerable, not just received.
-- **Plain-language / grade-level discipline** — aim for roughly a 9th-grade reading level for
-  internal and stakeholder messages (Flesch-Kincaid, Hemingway app, or equivalent). Kill jargon,
-  acronyms without expansion, and sentences over 25 words. Hard news read at 9th grade lands
-  cleanly; the same content at 14th grade reads as evasion.
-- **Steel-man the objection** — before publishing hard news, write the single strongest, most
+- **BLUF** (always) — the first two sentences state the news and what it means for the reader.
+  Never bury the decision in paragraph four.
+- **Acknowledge / commit / act / update** (always, for hard news; Center for Creative Leadership
+  crisis principles) — skipping the explicit next-update time is what makes staff assume the worst.
+- **Plain language** (always) — roughly a 9th-grade reading level; no unexpanded acronyms; no
+  sentences over 25 words. The same hard news at 14th grade reads as evasion.
+- **SCARF check** (change messages) — name which of Status, Certainty, Autonomy, Relatedness, or
+  Fairness the news threatens, and address those domains explicitly in the message.
+- **Answerable letters** (funders and partners) — invite the specific response you want ("I'd
+  value a fifteen-minute call this week"); design the message to be answered, not just received.
+- **Steel-man the objection** (hard news) — before publishing, write the strongest, most
   sympathetic version of the reader's likely objection ("this looks like leadership protecting
-  itself while cutting the people doing the work"), then decide whether the draft actually answers
-  it. If it doesn't, revise the draft, not the objection.
+  itself while cutting the people doing the work"). If the draft doesn't answer it, revise the
+  draft, not the objection.
 
 ## Hard-News Message: Numbered Checklist
 
@@ -96,6 +85,26 @@ game.
    within 24–72 hours), the next written update (with a real date), the manager check-in rhythm,
    and the point at which the topic returns to normal operating cadence. Announced follow-through
    that never happens is worse than none.
+
+### All-staff hard-news skeleton
+
+```
+Subject: [The news, in plain words]
+
+[BLUF: what is happening, and what it means for you — two sentences.]
+
+Why: [The one or two reasons that actually drove the decision.]
+
+What I know: [Facts confirmed today.]
+What I don't yet know: [Open questions, named honestly.]
+When I will update you next: [Specific date and channel.]
+
+What happens now: [Town hall / Q&A date, where the FAQ lives, who to talk to.]
+
+My ask of you: [One request.]
+
+[First name — signed personally]
+```
 
 ## Standard Deliverables
 
@@ -130,6 +139,15 @@ first-person from the ED unless noted.
   appropriate); and what are we prepared to *do*, not just say. If the answer to "should we speak"
   is no or not yet, the deliverable is the memo, not a statement.
 
+## Verify Before Acting
+
+- [ ] The ONE thing to communicate fits in a single sentence and appears in the first two sentences.
+- [ ] The audience sequence is written down, and affected people are told 1:1 before any group message.
+- [ ] The what I know / what I don't yet know / next-update-date block is present, with a real date.
+- [ ] Facts (numbers of positions, dates, dollar amounts) match the decision record and the FAQ.
+- [ ] Layoff/RIF content has gone to employment counsel before sending (see supervision note).
+- [ ] Read aloud: it sounds like this ED, and the steel-manned objection is answered.
+
 ## Common Failure Modes
 
 - **Burying the lead.** The decision or news arrives in paragraph four after context and
@@ -155,17 +173,12 @@ first-person from the ED unless noted.
   future obligation to speak on every subsequent issue and internal conflict over which issues
   count. Fix: run the decision memo first, every time, even when the answer feels obvious.
 
-## Practitioner vs. Advisor Framing
+## For advisors
 
-- **As the ED writing your own communication**, do the audience sequencing and manager
-  talking-points work *before* you draft the message — sequencing is where hard-news
-  communications actually succeed or fail, not word choice. Read the draft aloud; if it doesn't
-  sound like you, it isn't ready. Have one trusted person (chief of staff, board chair, or a peer
-  ED) steel-man the strongest objection before you send.
-- **As an advisor drafting for or coaching an ED**, interview the ED for cadence and vocabulary
-  before writing a word — read three of their prior messages and mirror sentence length, opener
-  patterns, and signature phrases. Deliver the RIF-style bundle as a package (message + manager
-  talking points + FAQ + follow-through calendar), not the message alone; delivering only the
-  message is what causes execution to fail even when the words are right. For public-statement
-  requests, deliver the decision memo first and refuse to draft the statement until the "should
-  we speak" question is answered on paper.
+- Interview the ED for cadence and vocabulary before writing a word — read three of their prior
+  messages and mirror sentence length, opener patterns, and signature phrases.
+- Deliver the RIF-style bundle as a package (message + manager talking points + FAQ +
+  follow-through calendar), not the message alone; delivering only the message is what causes
+  execution to fail even when the words are right.
+- For public-statement requests, deliver the decision memo first and do not draft the statement
+  until the "should we speak" question is answered on paper.
