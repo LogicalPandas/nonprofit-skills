@@ -7,6 +7,7 @@ metadata:
   supervision_note: "Privacy policy, PCI-DSS scope and breach response carry statutory obligations."
   date_added: "2026-09-07"
   date_added_source: "git:1860ed47a83901ff5e6d45abc4a2ef05be8fd4cd"
+  last_reviewed: "2026-11-11"
 ---
 
 # Nonprofit Data Privacy
@@ -37,7 +38,9 @@ data, rather than the systems that store it. Concrete triggers:
 
 The **Donor Bill of Rights** (jointly issued by AFP, AHP, CASE, and the Giving Institute) is the
 sector-standard baseline: donors have the right to know how their gift is used, to be informed of
-who is soliciting them, to have their name kept confidential/removed from lists on request, and to
+whether those soliciting them are volunteers, staff, or hired solicitors, to have information about
+their gifts handled with confidentiality to the extent provided by law, to have the opportunity to
+have their names deleted from mailing lists the organization intends to share, and to
 expect that all relationships with the organization are handled with respect and professionalism.
 Anchor your privacy policy language to these commitments, not generic legalese.
 
@@ -60,6 +63,9 @@ website) covers:
 6. **Anonymous gift handling**: how donor-requested anonymity is enforced internally (e.g., a
    restricted-visibility flag in the CRM, not just a note).
 7. **Children's data** if the org runs youth programs (COPPA considerations for under-13 data).
+   COPPA covers commercial sites and services; per the FTC, most nonprofits are generally not
+   subject to it, but nonprofits operating for the profit of commercial members may be, and the FTC
+   encourages nonprofits to extend COPPA's protections anyway. Confirm with counsel.
 8. **Contact point** for privacy questions/requests.
 
 ### 3. PCI-DSS: scope it correctly, don't over-build
@@ -68,7 +74,10 @@ Most small/mid nonprofits should **never touch raw card numbers** — use a PCI-
 processor/gateway (Stripe, Authorize.Net, PayPal, or a giving platform with a hosted/embedded
 payment field) so cardholder data never transits the org's own servers. This qualifies for
 **SAQ A** (Self-Assessment Questionnaire A) — the lightest PCI compliance tier, applicable when
-payment fields are fully outsourced to a PCI-validated third party via redirect or iframe.
+payment fields are fully outsourced to a PCI-validated third party via redirect or iframe. Under
+the SAQ A revision effective March 31, 2025 (PCI DSS v4.0.1), an eligibility criterion requires the
+merchant to confirm its site is not susceptible to attacks from scripts that could affect its
+e-commerce systems — so the page hosting the iframe or redirect still needs script hygiene.
 
 - **Common failure mode**: a staff member takes a donor's card number over the phone and types it
   into a non-PCI system, or a form vendor's fields aren't truly hosted/iframed (this pushes the
@@ -92,16 +101,22 @@ payment fields are fully outsourced to a PCI-validated third party via redirect 
 
 ### 5. State and international privacy law applicability
 
-- **CCPA/CPRA (California)**: applies based on revenue/data-volume thresholds that most nonprofits
-  fall under, but nonprofits are not categorically exempt for all activities (e.g., a nonprofit
-  running a for-profit-like data business could trigger obligations) — check current thresholds
-  rather than assuming blanket exemption, and note that CCPA's consumer-vs-nonprofit exemption is
-  narrower than many assume.
-- **GDPR**: applies if the org has donors/website visitors in the EU/UK and processes their
-  personal data — commonly relevant to nonprofits with international program work or European
+- **CCPA/CPRA (California)**: its definition of "business" covers entities organized or operated
+  for the profit of shareholders or owners, so most nonprofits fall outside it. But nonprofits are
+  not categorically exempt: a nonprofit that controls or is controlled by a covered business and
+  shares common branding with it, or a joint venture of covered businesses, can be covered — check
+  affiliate structures rather than assuming blanket exemption.
+- **Other state comprehensive privacy laws**: several states do *not* exempt nonprofits. Colorado,
+  Oregon, and Minnesota, for example, apply to nonprofits that meet their thresholds (generally
+  personal data of 100,000+ state residents a year, or a lower count paired with revenue from
+  selling data). Oregon also requires honoring opt-out preference signals from January 1, 2026.
+  Check each state where the org has a meaningful number of donors or constituents.
+- **GDPR**: can apply to an org outside the EU when it offers goods or services (paid or free) to
+  people in the EU or monitors their behavior there (Art. 3(2)); the UK has its own parallel UK
+  GDPR — commonly relevant to nonprofits with international program work or European
   fundraising. Requires a lawful basis for processing, clear consent for marketing email, and a
   data subject rights process (access, deletion, portability).
-- **State breach notification laws**: nearly all US states require notifying affected individuals
+- **State breach notification laws**: all 50 US states require notifying affected individuals
   (and sometimes the state AG) within a defined window after a breach involving specific data
   types (SSN, financial account, etc.) — the notification clock and required content vary by
   state; identify which states the affected individuals reside in, not just where the org is
