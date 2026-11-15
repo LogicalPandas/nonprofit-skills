@@ -7,6 +7,7 @@ metadata:
   supervision_note: "FASB ASC 958 statements are audited and published."
   date_added: "2026-09-07"
   date_added_source: "git:1860ed47a83901ff5e6d45abc4a2ef05be8fd4cd"
+  last_reviewed: "2026-11-11"
 ---
 
 # Nonprofit Financial Statements
@@ -43,25 +44,36 @@ filing mechanics are `nonprofit-form-990`. Formal indirect cost rate calculation
 3. **Statement of Functional Expenses**: every expense cross-tabbed by *natural category* (rows:
    salaries, benefits, occupancy, supplies, travel, professional fees, depreciation) against
    *functional category* (columns: Program Services — often split by individual program —
-   Management & General, Fundraising). Required for most nonprofits' audited statements and feeds
-   Form 990 Part IX directly.
-4. **Statement of Cash Flows**: operating/investing/financing activities, reconciling change in net
-   assets to change in cash — often the most-skipped statement in board packets but the one that
-   answers "do we actually have the cash," which the accrual-basis statement of activities does not.
+   Management & General, Fundraising). Since ASU 2016-14, every nonprofit reporting under GAAP must
+   present this nature-by-function analysis, either on the face of the statement of activities, as a
+   separate statement, or in the notes, with a disclosure of the cost allocation methods used. It
+   also feeds Form 990 Part IX (501(c)(3) and 501(c)(4) filers must complete columns B-D), but GAAP
+   and 990 amounts can differ, so reconcile rather than copy.
+4. **Statement of Cash Flows**: operating/investing/financing activities, explaining the change in
+   cash (under the indirect method, by reconciling change in net assets to operating cash flow; that
+   reconciliation is optional if the direct method is used) — often the most-skipped statement in
+   board packets but the one that answers "do we actually have the cash," which the accrual-basis
+   statement of activities does not.
 
 ## Net Asset Classification — Get This Right
 
 - **Without donor restrictions**: available for any purpose consistent with mission, including
   board-designated funds (e.g., a board-designated reserve) — board designations are *internal* and
-  do NOT create a donor-restricted class; they stay in the "without restrictions" bucket but should be
-  footnoted/schedule-disclosed separately so the board can see what's actually free vs.
-  self-restricted.
+  do NOT create a donor-restricted class; they stay in the "without restrictions" bucket, and ASU
+  2016-14 requires disclosure of their amounts and purposes (on the face of the statements or in the
+  notes) so the board can see what's actually free vs. self-restricted.
 - **With donor restrictions**: purpose-restricted (must be spent on X), time-restricted (can't be
-  spent until year Y), or perpetual (endowment corpus that must be held forever, with only earnings
-  spendable per the spending policy). A pledge/multi-year grant is restricted revenue in full at the
-  time it's unconditionally promised, recognized in the year pledged, not spread across the years
-  it will be spent — this is the single most common recognition error in nonprofit books and it
-  distorts year-over-year comparisons if done inconsistently.
+  spent until year Y), or perpetual (endowment corpus that must be held in perpetuity, with
+  appropriations for spending governed by the spending policy and state UPMIFA). A
+  pledge/multi-year grant is restricted revenue in full at the time it's unconditionally promised,
+  recognized in the year pledged, not spread across the years it will be spent — this is the
+  single most common recognition error in nonprofit books and it distorts year-over-year
+  comparisons if done inconsistently. Payments due in future periods are
+  presumed time-restricted unless the donor makes clear the gift supports the current period.
+  First, though, test whether the promise is *conditional* (ASU 2018-08): if the agreement has both a
+  barrier to entitlement and a right of return or release, recognize revenue only when the condition
+  is substantially met, and book cash received in advance as a refundable advance (a liability).
+  Grants that pay only for qualifying expenses incurred are often conditional.
 - Endowments follow UPMIFA (Uniform Prudent Management of Institutional Funds Act) state law for what
   counts as corpus vs. spendable appreciation; don't assume all realized gains are free to spend
   without checking the gift instrument and state UPMIFA rules.
@@ -125,7 +137,9 @@ filing mechanics are `nonprofit-form-990`. Formal indirect cost rate calculation
   hand over raw statements with no cover explanation.
 - **As an advisor**, use these statements diagnostically in a client engagement: check whether net
   asset classification is correctly bifurcated post-ASU 2016-14, whether board designations are
-  disclosed separately from true unrestricted funds, and whether the functional allocation
+  disclosed separately from true unrestricted funds, whether the required liquidity and availability
+  disclosure (financial assets available for general expenditures within one year) is present, and
+  whether the functional allocation
   methodology is documented and consistent — inconsistent or undocumented allocation is one of the
   most common audit management-letter findings and a frequent driver of a `nonprofit-financial-controls`
   engagement.
