@@ -1,6 +1,6 @@
 ---
 name: nonprofit-disaster-recovery-finance
-description: "US disaster recovery and mitigation finance for nonprofits: the federal rebuild funding map (FEMA Public Assistance for private nonprofits, SBA disaster loans, HUD CDBG-DR/CDBG-MIT through state grantees), PN eligibility and registration checklists, CDBG-DR subrecipient readiness, the FEMA PA appeal path, and rebuild capital stacks layering insurance, SBA, CDBG-DR gap fill, philanthropy, and CDFI lending. Use when a user says 'our nonprofit building flooded — how do we pay to rebuild,' 'are we eligible for FEMA Public Assistance,' 'the state announced CDBG-DR funds — how do we get some,' 'should we take the SBA disaster loan,' 'FEMA denied our project — can we appeal,' or 'how do we stack the rebuild funding.' Not for international humanitarian response (use the intl-aid pack), CDFI lending programs generally (use nonprofit-cdfi-finance), community facilities financing outside a disaster (use nonprofit-community-facilities-finance), or risk registers and continuity planning (use nonprofit-risk-management)."
+description: "Finances US disaster recovery and mitigation for nonprofits: the federal rebuild funding map (FEMA Public Assistance for private nonprofits, SBA disaster loans, HUD CDBG-DR/CDBG-MIT), PNP eligibility and registration, the FEMA PA appeal path, CDBG-DR subrecipient readiness, duplication of benefits, and rebuild capital stacks. Use when a user says 'our nonprofit building flooded — how do we pay to rebuild', 'are we eligible for FEMA Public Assistance', 'should we take the SBA disaster loan', or 'FEMA denied our project — can we appeal'. Not for CDFI lending outside a disaster (use nonprofit-cdfi-finance), community facilities financing with no declared disaster (use nonprofit-community-facilities-finance), or risk registers and continuity planning (use nonprofit-risk-management)."
 license: MIT
 metadata:
   supervision: "review"
@@ -12,25 +12,21 @@ metadata:
 
 # Nonprofit Disaster Recovery Finance
 
-## When to Use This Skill
+## Boundaries
 
-Use this skill when a US nonprofit is paying for disaster damage and mitigation: getting declared-disaster
-money for a damaged facility, deciding whether to take an SBA disaster loan, chasing CDBG-DR or CDBG-MIT
-funds through a state or local grantee, appealing a FEMA determination, or assembling the full capital
-stack to rebuild. Trigger tasks include: "the flood destroyed our community center — what federal money
-exists," "are we eligible for FEMA Public Assistance as a nonprofit," "FEMA says we're not an eligible
-facility — what now," "the county got a CDBG-DR allocation and has an RFP for subrecipients," "SBA offered
-us a loan at 3.625% — take it or wait for grants," "how do we avoid duplication of benefits," or "build
-us a timeline from registration to closeout."
+This skill covers the US federal disaster-recovery funding stack for a nonprofit paying for disaster
+damage and mitigation: declared-disaster money for a damaged facility, SBA disaster loans, CDBG-DR or
+CDBG-MIT through a state or local grantee, FEMA appeals, and the full rebuild capital stack. Route these out:
 
-**Boundary:** This skill covers the US federal disaster-recovery funding stack for nonprofits.
-International humanitarian and disaster response is outside this US-focused library. CDFI lending programs,
-certification, and deal structures outside a disaster context are `nonprofit-cdfi-finance`. Financing
-community facilities (health centers, child care, charter schools, food retail) with no declared disaster
-in play is `nonprofit-community-facilities-finance`. Org-wide risk registers, insurance reviews, and
-business continuity planning are `nonprofit-risk-management`. Day-to-day operating liquidity and lines of
-credit are `nonprofit-reserves-cash-flow`; charitable fundraising campaigns for a rebuild are
-`nonprofit-capital-campaigns`.
+- International humanitarian and disaster response is outside this US-focused library.
+- CDFI lending programs, certification, and deal structures outside a disaster context →
+  `nonprofit-cdfi-finance`.
+- Community facilities financing (health centers, child care, charter schools, food retail) with no
+  declared disaster in play → `nonprofit-community-facilities-finance`.
+- Org-wide risk registers, insurance reviews, and business continuity planning →
+  `nonprofit-risk-management`.
+- Day-to-day operating liquidity and lines of credit → `nonprofit-reserves-cash-flow`.
+- Charitable fundraising campaigns for a rebuild → `nonprofit-capital-campaigns`.
 
 ## What Changed, 2025-2026 — Verify Before You Advise
 
@@ -69,8 +65,8 @@ Work the map in this order — sequence matters because eligibility and duplicat
 
 | Program | What it funds for a nonprofit | Nonprofit access path |
 |---|---|---|
-| **FEMA PA, Categories A-B** | Debris removal, emergency protective measures | Direct applicant if critical PN, or via the legally responsible government |
-| **FEMA PA, Categories C-G** | Repair/replace damaged facility to pre-disaster function + code upgrades | Direct applicant if critical PN; noncritical PNs only for costs SBA won't cover |
+| **FEMA PA, Categories A-B** | Debris removal, emergency protective measures | Direct applicant if critical PNP, or via the legally responsible government |
+| **FEMA PA, Categories C-G** | Repair/replace damaged facility to pre-disaster function + code upgrades | Direct applicant if critical PNP; noncritical PNPs only for costs SBA won't cover |
 | **SBA physical disaster loan** | Repair/replace real estate, equipment, inventory, leaseholds; +20% mitigation add-on | Direct borrower, apply within 60 days of declaration |
 | **SBA EIDL** | Operating capital for disaster-caused economic injury | Direct borrower, ~9-month window |
 | **FEMA HMGP (Section 404)** | Post-disaster mitigation projects (75/25 cost share) | Subapplicant through the state/tribe; requires FEMA-approved local mitigation plan |
@@ -116,7 +112,7 @@ gap. Taking the full SBA loan you can afford is often correct — it arrives yea
 
 ### Emergency Work (Categories A-B) for Nonprofits
 
-Noncritical PNs are generally **not** reimbursed directly for emergency protective measures because those
+Noncritical PNPs are generally **not** reimbursed directly for emergency protective measures because those
 are legally the state's/local government's responsibility — get deployed at the government's request and
 funded through that government as the applicant, with certification. Exceptions where the PNP is funded
 directly: medical/custodial facility patient evacuation costs, and urgent life-safety facility components
@@ -131,7 +127,7 @@ facility's own property.
 2. **Submit a Request for Public Assistance (RPA) in FEMA's Grants Portal within 30 days of the date
    your area is designated** — this is a hard gate; late RPAs need a time-extension request with
    justification. **Completion condition:** RPA confirmation in Grants Portal.
-3. **Assemble proof of PN status**: IRS ruling letter effective at declaration, articles/bylaws, evidence
+3. **Assemble proof of PNP status**: IRS ruling letter effective at declaration, articles/bylaws, evidence
    of facility ownership or a written legal responsibility to operate (leases count where they transfer
    restoration responsibility). **Completion condition:** eligibility documents uploaded to Grants Portal.
 4. **Assign a Grants Portal owner and a single point of contact**; attend the applicant briefings the
@@ -200,7 +196,7 @@ As of 2025-2026 SBA announcements and sba.gov/disaster:
   declarations; SBA will not decline solely for lack of collateral.
 
 Sequence rule: **apply to SBA regardless** — the application is free, the denial letter is exactly what a
-noncritical PN needs to unlock FEMA PA permanent work, and a low-cost loan closes the gap years before
+noncritical PNP needs to unlock FEMA PA permanent work, and a low-cost loan closes the gap years before
 CDBG-DR money moves.
 
 ## FEMA Individual Assistance Interfaces
@@ -288,7 +284,7 @@ order:
 |---|---|---|---|
 | 1 | Insurance proceeds (property, business interruption, flood via NFIP if mapped) | Weeks-months | RC vs ACV valuation; coinsurance; code-ordinance coverage; document offsets for DOB |
 | 2 | FEMA PA Categories C-G | 1-3 years | 75%+ share; estimate vs actuals by size; codes/standards upgrades covered only if in codes; appeals |
-| 3 | SBA physical disaster loan (incl. 20% mitigation add-on) | 6-18 months | 60-day application window; loan decision gates FEMA PA for noncritical PNs; collateral over $50k |
+| 3 | SBA physical disaster loan (incl. 20% mitigation add-on) | 6-18 months | 60-day application window; loan decision gates FEMA PA for noncritical PNPs; collateral over $50k |
 | 4 | CDBG-DR gap fill | 2-5 years | Last dollar in; DOB audit of all layers; national objective; environmental review before commitment |
 | 5 | HMGP / Section 406 mitigation | 1-4 years | 75/25; jurisdiction must hold a FEMA-approved mitigation plan; state subapplication cycles |
 | 6 | Philanthropic rebuild grants and campaigns | Continuous | Convert to match for non-federal share; donors move fast — use for bridge and match |
@@ -318,7 +314,7 @@ Anchor dates from declaration (DR) forward; actual dates vary by disaster — bu
 - **Months 2-6**: Project worksheets scoped and written; small projects obligated; insurance settlements
   negotiated and documented; first HMGP subapplication window (state sets deadlines).
 - **Months 3-9**: SBA loan decision — accept, decline, or accept partial (decline/insufficiency letters
-  unlock FEMA PA permanent work for noncritical PNs); CDBG-DR AAN and state action-plan comment period
+  unlock FEMA PA permanent work for noncritical PNPs); CDBG-DR AAN and state action-plan comment period
   (90 days post-AAN) — comment and apply.
 - **Months 6-24**: CDBG-DR program guidelines published; subrecipient RFPs; environmental review
   clearance before any construction commitment; large-project construction and draws.
@@ -330,11 +326,27 @@ Anchor dates from declaration (DR) forward; actual dates vary by disaster — bu
   retention requirements), insurance maintained (failure to insure threatens future awards), audit
   responses complete.
 
+## Verify Before Acting
+
+Before any FEMA, SBA, or CDBG-DR filing:
+
+- [ ] Declaration number, incident period, designated counties, and declared assistance types read
+      from the declaration and its amendments on fema.gov.
+- [ ] Current PAPPG version for the incident's declaration date confirmed, and any superseding FEMA
+      policy or rescission checked.
+- [ ] Cost-share percentage, project-size thresholds, and minimum-damage thresholds for this
+      declaration's fiscal year confirmed.
+- [ ] SBA interest rates, loan caps, and application deadlines (including extensions) taken from the
+      declaration's SBA fact sheet.
+- [ ] CDBG-DR grantee action plan, Federal Register allocation notice, and subrecipient RFP terms read
+      for the current requirements.
+- [ ] Duplication-of-benefits ledger current, and counsel engaged for any appeal.
+
 ## Failure Modes
 
 - **Missing the 30-day RPA or 60-day SBA deadlines.** Remedy: calendar both on declaration day; request
   written extensions immediately if missed — silence forfeits.
-- **Noncritical PN assumes FEMA will rebuild the facility.** Remedy: run the SBA-first path on day one;
+- **Noncritical PNP assumes FEMA will rebuild the facility.** Remedy: run the SBA-first path on day one;
   treat FEMA PA permanent work as the residual, CDBG-DR as the long-gap filler.
 - **Cleaning up before documenting.** Remedy: photograph everything, keep debris and disposal records,
   log volunteer labor — pre-cleanup evidence is the claim.
