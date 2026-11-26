@@ -1,0 +1,56 @@
+{
+  "skill_name": "nonprofit-legislative-advocacy",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Our ED and a board member at Northern Plains Recovery Alliance (a $2M behavioral health nonprofit in Fargo, ND, 501(h) elected) have a 20-minute meeting next Wednesday with State Senator Dana Kowalski's legislative aide about SB 2184, which would expand Medicaid reimbursement for peer recovery coaches. We want her to co-sponsor. We have a client from her district willing to come. Help us prep.",
+      "expected_output": "A meeting plan using the Ask-Story-Ask structure with a stated co-sponsorship ask, district-specific story and data, pushback prep, a commitment-level close and a post-meeting log, flagged as direct lobbying for 501(h) tracking.",
+      "assertions": [
+        "Structures the meeting as ask-early, evidence (constituent story plus a district-specific data point), then restated ask with a specific next step, not burying the ask",
+        "States the ask concretely (co-sponsor SB 2184) and suggests getting a commitment or a stated reason they can't commit",
+        "Prepares rebuttals to likely objections (e.g., fiscal cost) and advises saying 'let me get back to you' rather than guessing",
+        "Includes a post-meeting log capturing attendees, ask, a commitment rating on a yes / lean yes / undecided / lean no / no scale, and follow-up owed",
+        "Classifies the meeting as direct lobbying and says to log staff time/costs for the 501(h) expenditure tracking",
+        "Assigns roles (e.g., notetaker, who tells the story) and a thank-you/follow-up within a short window"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "does our spring newsletter article explaining HB 77 (we oppose it, it cuts child care subsidies) count as grassroots lobbying? no 'call your rep' line in it, just analysis + our position. we're 501(h).",
+      "expected_output": "Applies the 501(h) grassroots lobbying test (specific legislation + view + call to action), concludes the article likely isn't grassroots lobbying without a call to action while flagging the exceptions to check, and recommends logging and counsel confirmation.",
+      "assertions": [
+        "Explains grassroots lobbying requires referring to specific legislation, reflecting a view, and a call to action",
+        "Lists what counts as a call to action (e.g., telling readers to contact legislators, giving legislator contact info, a petition/postcard, or naming legislators as opposed/undecided/the reader's own rep/committee members)",
+        "Concludes that without a call to action the article generally isn't grassroots lobbying, while warning that adding contact info or naming undecided legislators would change that",
+        "Flags exceptions to check, such as communications aimed mainly at the org's own members following separate allocation rules, or paid mass-media ads shortly before a vote",
+        "Recommends counsel or a tax advisor confirm classification given the exempt-status stakes"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're planning our first-ever lobby day in DC for 40 volunteers in March to meet with House and Senate offices about the Child Care for Working Families Act. A few of us will also testify at a Dept. of Education rulemaking hearing that week. Our policy director is basically full-time on this. What compliance stuff do we need to watch beyond our 501(h) limits?",
+      "expected_output": "Covers lobby day planning essentials and flags that rulemaking testimony is generally not 501(h) lobbying but other regimes (LDA, state rules, federal award cost rules) may apply, recommending counsel confirm before the lobby day.",
+      "assertions": [
+        "Explains that agency rulemaking testimony is generally not a 501(h) lobbying expenditure but may still be lobbying under the federal Lobbying Disclosure Act or state laws",
+        "Flags that the policy director's time and the org's spend could trigger Lobbying Disclosure Act registration and reporting, and tells the user to confirm current thresholds at the official source rather than relying on a remembered figure",
+        "Notes lobbying costs cannot be charged to federal awards",
+        "Recommends having counsel confirm which lobbying regimes apply before the lobby day",
+        "Includes lobby day logistics such as scheduling against the congressional calendar, requesting meetings weeks ahead, a delegation lead and notetaker per meeting, prep training, same-day debrief, and 48-hour follow-up",
+        "Recommends logging lobbying activity and reconciling against the 501(h) ceiling quarterly rather than at year-end"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Draft a 2-page issue brief on SB 2184 with background, evidence and our recommended position for the board to adopt.",
+      "better_skill": "nonprofit-policy-analysis"
+    },
+    {
+      "query": "Should we elect 501(h) or set up a 501(c)(4) sister organization to do more lobbying next year?",
+      "better_skill": "nonprofit-c3-c4-structure"
+    }
+  ]
+}

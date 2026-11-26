@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-housing-advocacy-land-use",
+  "version": "0.1.0",
+  "description": "Nonprofit Housing Advocacy and Land Use",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Housing Advocacy and Land Use"
+      }
+    }
+  }
+}

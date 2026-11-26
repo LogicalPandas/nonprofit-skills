@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-community-facilities-finance",
+  "version": "0.1.0",
+  "description": "Nonprofit Community Facilities Finance",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Community Facilities Finance"
+      }
+    }
+  }
+}

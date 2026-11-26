@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-arts-education-programs",
+  "version": "0.1.0",
+  "description": "Teaching Artists and Arts Education Programs",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Teaching Artists and Arts Education Programs"
+      }
+    }
+  }
+}

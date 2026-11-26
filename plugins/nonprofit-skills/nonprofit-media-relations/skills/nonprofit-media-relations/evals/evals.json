@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-media-relations",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "We're opening the first free youth mental health drop-in center in Lane County, Oregon on January 12, 2027 — Open Door Youth Collective (we're a $2M org). Ribbon cutting at 10am at 455 W 8th Ave, Eugene, with the mayor attending. Our ED is Marisol Vega. We expect to serve about 1,200 young people ages 12-24 in year one. I need a press release, a media advisory for the ribbon cutting, and a plan for which reporters to pitch and how.",
+      "expected_output": "An inverted-pyramid release with a news headline, a 5W lead, a data point, a value-adding quote from Marisol Vega, boilerplate from the messaging house and a contact block, plus a short advisory. The pitch plan is beat-segmented and personalized, with news-hook subject lines, timing advice, visuals and an optional exclusive.",
+      "assertions": [
+        "The release headline states the news (first free youth mental health drop-in center in Lane County) rather than the mission, and the lead answers who, what, when, where and why in the first 2-3 sentences",
+        "Includes a quote from Marisol Vega that adds perspective rather than repeating the lead, and at least one concrete data point (e.g., about 1,200 young people expected)",
+        "Ends with 'About' boilerplate (noted as pulled verbatim from the messaging house or marked as a placeholder), a media contact block with name, phone and email, and ### or -30-",
+        "Provides a separate media advisory with the event's who, what, when and where for the 10am ribbon cutting",
+        "The pitch plan segments the media list by beat (local news, health or youth beat reporters, nonprofit trade press) and calls for personalized pitches that reference each reporter's past coverage, with the news hook in the subject line",
+        "Advises having visuals (photos, b-roll) ready, considering an exclusive for deeper coverage, and timing pitches to avoid Friday afternoons or holidays"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "KGW wants our ED live on the 6pm news tomorrow about our new tenant hotline. Problem: a story ran last month saying we spent too much on a consultant. ED is nervous. Prep doc please — Portland Renters United",
+      "expected_output": "A media prep one-pager with three key messages, bridging phrases, the consultant-spending question with a drafted and vetted answer, alternatives to 'no comment', and live-broadcast coaching (short soundbites, a practiced opening line).",
+      "assertions": [
+        "Provides 3 key messages for the ED to land regardless of the questions, tied to the org's messaging pillars",
+        "Includes bridging phrases for redirecting off-message or hostile questions back to the key messages",
+        "Anticipates the consultant-spending question with a drafted answer and says the ED should rehearse it before going on air",
+        "Tells the ED never to say 'no comment' and gives an alternative (e.g., offering to follow up with details)",
+        "Gives broadcast and live-specific coaching: tight soundbites (around 20 seconds or less) and a calm, practiced opening line"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "A reporter from the Dallas Morning News just called asking about an allegation that one of our after-school staff hit a child. We're Lone Star Kids Club. We don't know the details yet. Our program director wants to post a statement on Facebook right now saying the staffer is a great guy and the parent is lying, and two board members are already talking to the press. What do we do in the next hour?",
+      "expected_output": "Following the crisis protocol, the response says to acknowledge the inquiry and commit to a timeframe, verify the facts, and issue a holding statement that neither admits fault nor assigns blame. It routes the statement through the ED and legal counsel (a safeguarding issue), names a single spokesperson, stops the board members from freelancing, and informs internal stakeholders first.",
+      "assertions": [
+        "Advises acknowledging the reporter's inquiry and committing to a response timeframe instead of going silent or speculating",
+        "Rejects the program director's statement because it speculates and assigns blame, and provides a holding statement (acknowledge, values, actions underway, next update time, single contact) that avoids admitting fault or blaming",
+        "Requires ED approval and legal counsel review because the allegation involves safeguarding and liability",
+        "Says to designate one spokesperson and stop board members from giving separate statements to the press",
+        "Says to coordinate with internal stakeholders (board, staff, affected families) so they don't learn the public position from the news"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Draft written testimony for our ED to deliver to the state Senate Health Committee on the Medicaid bill.", "better_skill": "nonprofit-legislative-advocacy"},
+    {"query": "Write an all-staff email from our ED announcing the layoffs before the news goes public.", "better_skill": "nonprofit-executive-communications"}
+  ]
+}

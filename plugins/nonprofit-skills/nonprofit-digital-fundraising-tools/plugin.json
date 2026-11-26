@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-digital-fundraising-tools",
+  "version": "0.1.0",
+  "description": "Nonprofit Digital Fundraising Tools",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Digital Fundraising Tools"
+      }
+    }
+  }
+}

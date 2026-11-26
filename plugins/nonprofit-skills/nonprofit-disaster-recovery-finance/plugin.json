@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-disaster-recovery-finance",
+  "version": "0.1.0",
+  "description": "Nonprofit Disaster Recovery Finance",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Disaster Recovery Finance"
+      }
+    }
+  }
+}

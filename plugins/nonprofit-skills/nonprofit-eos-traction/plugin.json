@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-eos-traction",
+  "version": "0.1.0",
+  "description": "Nonprofit EOS/Traction Operating System",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit EOS/Traction Operating System"
+      }
+    }
+  }
+}

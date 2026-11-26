@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-arts-education-programs",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the new education director at Sol y Sombra Dance Company in Fresno, CA ($900K budget). We've been paying our six teaching artists $45/hour as 1099 contractors for 10-week residencies in Fresno Unified elementary schools — I set the curriculum, assign class periods, and approve their lesson plans. Our ED wants me to expand to 12 schools next year and asked me to set new pay rates and a standard contract. Where do I start?",
+      "expected_output": "Flags that recurring residency teaching under the org's control is employee-shaped work and that California's ABC test makes 1099 status very hard to defend, recommends W-2 with payroll load budgeted and classification review via the HR skill, proposes a two-rate (planning vs. delivery) pay structure with paid planning time, lists contract terms, and requires youth-safety clearances under California law before expansion.",
+      "assertions": [
+        "Identifies that the org's control over curriculum, schedule and lesson plans makes this employee-shaped work and that California's ABC test (especially the usual-course-of-business prong) makes 1099 classification hard to defend for recurring residency teaching",
+        "Recommends W-2 for recurring residency teaching, budgets the added payroll tax/administrative cost into the program budget and grant asks, and routes the full classification analysis to nonprofit-hr",
+        "Proposes a two-rate structure separating paid planning from delivery and budgets a share of TA time as paid planning, framing any rates as benchmarks to verify locally",
+        "Lists written teaching-artist agreement terms such as scope including planning hours, rate and payment schedule, classification status, cancellation terms, background-check compliance and media/IP terms",
+        "Requires fingerprint-based background checks and mandated-reporter training before first session, noting California's youth-service-organization requirements, and recommends knowledgeable staff review before launch",
+        "Recommends at least two qualified roster members per program rather than building a partnership on one teaching artist"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "district curriculum coordinator says our proposal needs 'standards alignment' and wants to know how we'll measure impact. it's a 6-session theater residency for 4th graders in Austin. we kinda wrote that it boosts reading scores lol. help",
+      "expected_output": "Advises citing Texas's own arts standards codes per session (not just national standards), naming cross-curricular links only where a classroom teacher co-teaches, dropping unsupported reading-score transfer claims, and measuring artistic growth with rubric-scored student work keyed to anchor standards, engagement counts and teacher surveys.",
+      "assertions": [
+        "Tells the user to cite the state's (Texas's) own arts standards codes for each session's arts objective rather than generic or national-only alignment",
+        "Advises naming cross-curricular (e.g., reading/ELA) links only where the classroom teacher actually co-plans and co-teaches them",
+        "Recommends dropping or not leading with the claim that the residency raises reading scores, explaining that arts-to-academic transfer evidence is thin and reviewers discount it",
+        "Proposes evaluation based on artistic growth — pre/post student work scored with a rubric keyed to anchor standards — plus engagement counts and teacher pre/post surveys, right-sized to a short residency",
+        "Notes that six sessions fits a sequential residency arc with a planning meeting, reflection and culminating sharing"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We run Saturday youth pottery classes (ages 8-14) at our community arts center in Pennsylvania. One of our volunteer instructors offered to give a student private lessons at his home studio and drive her there. He's a 'contractor' so we never ran a background check on him. Is that OK? Also our board wants to post class photos on Instagram.",
+      "expected_output": "Says the arrangement violates two-adult/no-one-on-one practice, that contractor status does not waive youth-safety duties, that Pennsylvania's clearance regime should be checked and clearances obtained before further minor contact, requires mandated-reporter training, and requires a consent flag on record before posting any minor's image; recommends knowledgeable review and risk-management follow-up.",
+      "assertions": [
+        "Advises against the private lessons and rides because they violate a two-adult / no-one-on-one rule for contact with minors",
+        "States that contractor or volunteer status does not waive background-check obligations and that a clearance should be on file before any further contact with minors",
+        "Notes Pennsylvania has its own clearance requirements and tells the user to verify current state law",
+        "Requires a recorded opt-in media release/consent flag before posting any minor's image or full name",
+        "Recommends mandated-reporter training for adults working with minors and a knowledgeable staff review, routing insurance/waivers to nonprofit-risk-management"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Build a logic model and theory of change for our new after-school literacy program for middle schoolers.", "better_skill": "nonprofit-program-design"},
+    {"query": "Our theater's school matinee groups keep asking about deposits and refund deadlines — what group sales terms should we publish?", "better_skill": "nonprofit-arts-box-office-subscriptions"}
+  ]
+}

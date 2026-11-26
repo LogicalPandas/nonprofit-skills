@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-housing-lihtc-hud-compliance",
+  "version": "0.1.0",
+  "description": "LIHTC and HUD Program Compliance",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "LIHTC and HUD Program Compliance"
+      }
+    }
+  }
+}

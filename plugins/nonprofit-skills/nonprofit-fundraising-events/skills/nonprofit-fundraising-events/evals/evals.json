@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-fundraising-events",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm planning the first-ever gala for Desert Bloom Refugee Services in Phoenix — target date April 25, ~250 guests at a hotel ballroom. The hotel quoted $95/person for food and bev plus a $4,000 room fee. We want to net $120,000. We're thinking live auction, silent auction and some kind of paddle raise. Can you build the budget with ticket pricing and a revenue plan?",
+      "expected_output": "A budget with conservative, target and stretch scenarios across every revenue stream and a full expense list including staff time, platform fees, insurance and a 5-10% contingency. It shows net alongside gross and cost to raise a dollar, prices tickets cost-plus-philanthropy with the deductible portion stated, and sets a fixed-cost floor so fund-a-need is not the make-or-break line.",
+      "assertions": [
+        "Starts from the $120,000 net goal and works backward to the required revenue mix, presenting net revenue alongside gross",
+        "Models conservative, target and stretch scenarios for each revenue stream (tickets, sponsorships, live auction, silent auction, fund-a-need)",
+        "The expense budget includes auction platform fees, insurance, staff time and a contingency line of about 5-10%",
+        "Prices tickets cost-plus-philanthropy (covering the ~$95 per-plate cost plus a premium) and notes receipts must state the deductible portion above fair market value, to be checked against IRS Publication 1771",
+        "Identifies a ticket and sponsorship floor that covers fixed costs at conservative attendance so the paddle raise isn't relied on to avoid a loss",
+        "Calculates cost to raise a dollar (expense / revenue) and treats any external benchmark as a rough reference only"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Gala is in 3 weeks. Need the run of show. Doors at 6, dinner, a client speaker, live auction with 14 lots, fund-a-need for our new teen center, silent auction closes at some point. We have 20 volunteers. — Mia, Westfield Boys & Girls Club",
+      "expected_output": "A minute-by-minute run of show with named owners and scripted transitions. The beneficiary story comes right before the tiered fund-a-need, the live auction is trimmed from 14 lots, and the staffing plan prioritizes checkout.",
+      "assertions": [
+        "Provides a timed run of show (doors, cocktail and silent auction window, seating, program, speaker, live auction, fund-a-need, silent close and checkout, end) with a named owner or role for each segment",
+        "Recommends cutting the live auction from 14 lots toward about 5-10, citing bidder fatigue",
+        "Places the client speaker or beneficiary story right before the fund-a-need ask and structures the ask in tiered giving levels",
+        "The volunteer plan covers check-in, auction runners, VIP hosting and especially checkout/payment, flagged as the most common day-of bottleneck",
+        "Notes every auction item needs a documented fair market value on its bid sheet"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our board wants to add a 50/50 raffle and a 'wine pull' game to our gala at Hope House (we're in Texas), and the board chair also wants to tell the board we 'raised $310,000' last year. Expenses were about $175,000 including the hotel and auction platform but not counting staff time. Thoughts on both?",
+      "expected_output": "The response tells the user to check raffle and game-of-chance legality with the state regulator before adding them. It also argues for reporting net revenue (and cost to raise a dollar including staff time) instead of the $310K gross.",
+      "assertions": [
+        "Says raffles and games of chance are state-regulated and must be checked against current rules from the state regulator (attorney general or gaming commission) for Texas before being added, without asserting what Texas law permits",
+        "Advises reporting net revenue alongside gross: $310K gross minus about $175K expense nets about $135K, and that is before staff time",
+        "Notes staff time is often left out of event expenses, which overstates profit, and recommends including it in cost to raise a dollar",
+        "Calculates or recommends cost to raise a dollar (expense / revenue) as the efficiency metric"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Design Presenting, Gold and Silver sponsorship packages for our gala and price them.", "better_skill": "nonprofit-corporate-sponsorships"},
+    {"query": "Plan our 5K charity run where participants recruit friends to sponsor them — team captain toolkit and fundraising page goals.", "better_skill": "nonprofit-peer-to-peer-fundraising"}
+  ]
+}

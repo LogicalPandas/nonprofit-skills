@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-housing-rapid-rehousing-transitional",
+  "version": "0.1.0",
+  "description": "Rapid Re-Housing and Transitional Housing Programs",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Rapid Re-Housing and Transitional Housing Programs"
+      }
+    }
+  }
+}

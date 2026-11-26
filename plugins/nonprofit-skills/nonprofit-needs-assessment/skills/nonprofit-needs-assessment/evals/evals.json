@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-needs-assessment",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the program director at Riverbend Family Services, a $2.1M human services nonprofit in Dayton, Ohio. We're thinking about launching an after-school mentoring program for middle schoolers (ages 11-14) in zip codes 45402, 45405 and 45417, and the Kettering Family Foundation says our LOI needs 'evidence of community need.' We have about 4 months and maybe $15,000 for the study. Can you lay out how we should actually do the needs assessment?",
+      "expected_output": "A scoped needs assessment plan that defines population and geography, starts with secondary data, adds primary quantitative and qualitative collection to fill specific gaps, runs a provider/asset scan, and ends in a gap analysis with an organizational implication and report structure.",
+      "assertions": [
+        "Recommends all three data types: secondary data, primary quantitative (e.g., surveys), and primary qualitative (e.g., interviews, focus groups, listening sessions), warning against relying on secondary data alone",
+        "Names concrete secondary sources to check first, such as Census/ACS, county health department, school district data, 211 data, or existing hospital/United Way/community foundation assessments",
+        "Includes a landscape/asset scan inventorying other providers of youth mentoring or after-school services in those zip codes (capacity, eligibility, waitlists, access barriers) and community assets, not just deficits",
+        "Structures findings as need → current capacity → gap → implication for the organization (fill, partner/refer, or stand down)",
+        "Addresses representative recruitment (not just families already served) and participant accessibility, consent, or compensation for focus groups",
+        "Outlines the report sections including methodology with sample sizes, response rates and limitations, and recommends a refresh cadence"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "quick q - board wants to know if we should keep running our senior congregate meal site in Fairview. attendance down like 40% in 2 yrs. how do i figure out if the need is still there or if we should just close it?",
+      "expected_output": "Frames the work as a sunset/continue/redesign decision and lays out a compact assessment of current need, existing providers and why attendance dropped, ending in decision-ready options for the board.",
+      "assertions": [
+        "Reframes the question as an explicit sunset / continue / redesign decision with 2–3 concrete options for the board",
+        "Distinguishes declining attendance from declining need, proposing primary input from seniors not currently attending (e.g., interviews or listening sessions) to learn barriers like transportation, hours or location",
+        "Recommends mapping other meal providers serving Fairview seniors (e.g., home-delivered meals, other sites) to check for duplication or a capacity/access gap",
+        "Warns that surveying only current attendees would bias the findings and miss the unserved population",
+        "Hands off to program design if the finding is to continue and redesign"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We already have a really thorough needs assessment — honestly it's mostly the county health department's 2021 Community Health Needs Assessment plus ACS tables I pulled. It clearly shows food insecurity is high in our county. Can you just turn that into the 'need' section of our grant? We don't really have time to talk to anyone.",
+      "expected_output": "Flags that a secondary-data-only, dated assessment is the most common shortfall funders probe, explains what it can't show, and proposes a lightweight primary-data add plus a provider scan and gap statement, while noting proposal prose belongs to grant writing.",
+      "assertions": [
+        "Flags that relying on secondary data alone is a common quality shortfall because it doesn't show that this specific population in this service area experiences the need in a way the org can address",
+        "Notes the data may be stale and that figures should be pulled from the current release at the source agency with source and year cited",
+        "Proposes a minimal, time-boxed primary data component (e.g., a few key informant interviews or a short survey or listening session) to capture lived experience and barriers",
+        "Recommends a landscape scan of existing food providers (pantries, SNAP outreach, etc.) so the need section states a specific gap rather than only that a problem exists",
+        "Notes that writing the funder-facing narrative itself is a grant-writing task, or keeps the output to a gap-analysis summary to feed it"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We confirmed there's a big need for youth mentoring in our zip codes — now help me build a logic model showing how our mentoring sessions lead to better school attendance.",
+      "better_skill": "nonprofit-program-design"
+    },
+    {
+      "query": "Our mentoring program has run for 3 years; what KPIs and follow-up survey schedule should we use to show the funder it's working?",
+      "better_skill": "nonprofit-outcomes-measurement"
+    }
+  ]
+}

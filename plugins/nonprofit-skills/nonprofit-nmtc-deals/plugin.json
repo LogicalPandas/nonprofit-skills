@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-nmtc-deals",
+  "version": "0.1.0",
+  "description": "Nonprofit NMTC Deals (New Markets Tax Credit)",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit NMTC Deals (New Markets Tax Credit)"
+      }
+    }
+  }
+}

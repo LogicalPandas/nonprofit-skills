@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-arts-union-agreements-visas",
+  "version": "0.1.0",
+  "description": "Union Agreements and Guest-Artist Visas",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Union Agreements and Guest-Artist Visas"
+      }
+    }
+  }
+}

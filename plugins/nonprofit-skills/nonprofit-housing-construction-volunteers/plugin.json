@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-housing-construction-volunteers",
+  "version": "0.1.0",
+  "description": "Volunteer Home Construction Program (the Habitat Build Model)",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Volunteer Home Construction Program (the Habitat Build Model)"
+      }
+    }
+  }
+}

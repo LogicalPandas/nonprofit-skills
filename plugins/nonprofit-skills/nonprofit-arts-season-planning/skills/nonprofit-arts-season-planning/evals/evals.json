@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-arts-season-planning",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the producing artistic director at Millbrook Stage Company in Burlington, VT — 350-seat house, six-show September–May season, $2.4M budget. It's November 2026 and I'm starting to plan the 2028-29 season. I've got a candidate pool of about 18 titles: big licensed musicals, a couple of August Wilson plays, two new plays we could premiere, and a family holiday show. Board wants the season by next fall. Can you give me a planning timeline and a method for picking the six?",
+      "expected_output": "A backward-planned calendar anchored on the season announcement with rights checks/applications for anchor titles well ahead, per-title budget modeling before the artistic debate, board approval, contracting and pricing milestones; plus a five-dimension balance scorecard read at the season level, subscription-anchor and premiere-vs-licensed considerations, and a season grid template.",
+      "assertions": [
+        "Builds the timeline backward from the season announcement date rather than from opening night",
+        "Puts availability checks and rights applications for 1-2 anchor titles early (well before board approval) and states that no title is announced before it is licensed",
+        "Calls for a per-title budget model with fixed and variable lines (and target/stretch versions) before the selection debate, using licensor quotes rather than remembered royalty figures",
+        "Provides a balance scorecard across genre/form, scale, risk, audience segment and mission, read for the season as a whole (e.g., at most one high-risk title, one for money/mission/future)",
+        "Addresses which titles can anchor the subscription campaign and the economics of a premiere vs. licensed slot",
+        "Recommends review by knowledgeable staff or board leadership before the calendar locks"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "our holiday musical is selling like crazy, 94% full. AD wants to add 2 weeks. we spent $85k on the set so it'd be crazy not to milk it right?? next show loads in 10 days after current closing. how do I decide",
+      "expected_output": "An extension decision memo framework: count only incremental (variable) costs, treat the set as sunk, project revenue at the current trend with a late-buying price mix, subtract opportunity cost including the next show's load-in, get a written license amendment before announcing, and decide against a stated occupancy floor.",
+      "assertions": [
+        "States the $85K set is a sunk cost and irrelevant to the extension decision",
+        "Counts only incremental costs per added week (royalties, running personnel and union extension terms, front-of-house, per-show operations)",
+        "Projects incremental revenue at the run's trend rather than peak and with a marginal (late-buyer/discount) price mix",
+        "Flags the opportunity cost of compressing or displacing the next production's load-in/tech",
+        "Requires a written license amendment from the licensor before announcing any extension, and a go/no-go stated against a named occupancy floor"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Small nonprofit gallery in Santa Fe here, $400K budget. Our curator wants to do a show next fall built around 12 borrowed works from three regional museums, plus she'd like us to commission a new site-specific installation for the lobby. Board meets in January to approve the exhibition calendar. Is next fall realistic and what should the budget include?",
+      "expected_output": "Flags that a loan-based exhibition typically needs a 2-3 year horizon so next fall is likely unrealistic, lists the exhibition budget anatomy with shipping/couriers, crating, insurance and de-install/return freight quoted not estimated, and routes the commissioned installation's agreement to the commissioning skill.",
+      "assertions": [
+        "States that exhibitions built on borrowed works generally need a 2-3 year planning horizon and that next fall is likely too compressed",
+        "Lists exhibition budget lines including shipping/couriers, crating, wall-to-wall insurance, installation, registrar/condition reporting, and de-installation and return shipping",
+        "Says shipping, insurance and crating should be quoted numbers, not estimates, for shows with borrowed works",
+        "Routes the commissioned lobby installation's agreement terms to nonprofit-arts-commissioning-new-work"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "What should go in our commission agreement with the playwright — fee schedule, option, and who owns the script?", "better_skill": "nonprofit-arts-commissioning-new-work"},
+    {"query": "Help us run a three-year strategic planning process with the board and staff for our symphony.", "better_skill": "nonprofit-strategic-planning"}
+  ]
+}

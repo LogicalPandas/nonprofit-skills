@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-faith-stewardship-giving",
+  "version": "0.1.0",
+  "description": "Faith-Community Stewardship and Giving",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Faith-Community Stewardship and Giving"
+      }
+    }
+  }
+}

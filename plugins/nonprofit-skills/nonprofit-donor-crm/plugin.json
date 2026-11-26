@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-donor-crm",
+  "version": "0.1.0",
+  "description": "Nonprofit Donor CRM",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Donor CRM"
+      }
+    }
+  }
+}

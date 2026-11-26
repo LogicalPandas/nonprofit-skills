@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-faith-facilities-sanctuary",
+  "version": "0.1.0",
+  "description": "Faith Facilities and Sanctuary Space (Worship-Building Operations)",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Faith Facilities and Sanctuary Space (Worship-Building Operations)"
+      }
+    }
+  }
+}

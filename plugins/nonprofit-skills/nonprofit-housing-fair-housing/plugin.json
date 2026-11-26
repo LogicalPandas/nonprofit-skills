@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-housing-fair-housing",
+  "version": "0.1.0",
+  "description": "Fair Housing Compliance for Nonprofit Housing Providers",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Fair Housing Compliance for Nonprofit Housing Providers"
+      }
+    }
+  }
+}

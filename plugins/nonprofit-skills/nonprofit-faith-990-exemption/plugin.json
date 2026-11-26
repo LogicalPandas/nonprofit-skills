@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-faith-990-exemption",
+  "version": "0.1.0",
+  "description": "Church, Integrated-Auxiliary, and Convention/Association Federal Tax Status (IRC §§508, 6033, 7611)",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Church, Integrated-Auxiliary, and Convention/Association Federal Tax Status (IRC §§508, 6033, 7611)"
+      }
+    }
+  }
+}

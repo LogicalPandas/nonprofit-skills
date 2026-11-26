@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-succession-planning",
+  "version": "0.1.0",
+  "description": "Nonprofit Succession Planning",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Succession Planning"
+      }
+    }
+  }
+}

@@ -1,0 +1,166 @@
+---
+name: nonprofit-arts-grant-writing
+description: "Writes and manages grants from arts funders: NEA Grants for Arts Projects (eligibility, two-part application, Challenge America and Our Town disciplines, 1:1 cost share), state arts agencies and regional arts organizations, arts foundations, what panels score, and post-award compliance (REACH, FFR, Final Descriptive Report). Use when a user says 'should we apply to the NEA,' 'our state arts agency deadline is coming,' 'what do panels actually score,' or 'how does the 1:1 match work with in-kind.' Not for general proposal craft (use nonprofit-grant-writing), prospect research (use nonprofit-grant-research), outcomes systems (use nonprofit-outcomes-measurement), arts-ed program design (use nonprofit-arts-education-programs), or season underwriting (use nonprofit-arts-season-sponsorship)."
+license: MIT
+metadata:
+  supervision: "review"
+  supervision_note: "Applications, budgets, and reports to NEA and state arts agencies become official public records of a federal or state grant, and grant agreements bind the organization — knowledgeable staff must review before anything is submitted or filed."
+  last_reviewed: "2026-09-13"
+  date_added: "2026-09-14"
+  date_added_source: "git:726373473479010893fcb0eb8a5a7b264c16b856"
+---
+
+# Arts Grant Writing
+
+## Boundaries
+
+Covers arts funders specifically (the NEA, the 56 state and jurisdictional arts agencies, the six regional arts organizations, and arts-focused foundations): door selection, panel-ready writing, match mechanics, and public-funder grants management. Hand off:
+
+- Proposal structure, budget-to-ask logic, LOIs, general foundation applications: `nonprofit-grant-writing`
+- Long-list building and fit scoring across funders: `nonprofit-grant-research` (this skill assumes the shortlist)
+- Outcome systems, indicators, data collection: `nonprofit-outcomes-measurement` (this skill covers the arts outcomes vocabulary panels expect)
+- Arts-education program design (teaching artists, school partnerships, matinees): `nonprofit-arts-education-programs` — an arts-ed project can still be the NEA ask; use both
+- Corporate season and production underwriting: `nonprofit-arts-season-sponsorship`; major gifts: `nonprofit-major-gifts`
+- Narrative for other channels: `nonprofit-storytelling`
+- The org-wide budget the match draws from: `nonprofit-budgeting`; shared-cost allocation: `nonprofit-cost-allocation`; reducing federal dependency: `nonprofit-revenue-diversification`
+
+## The Arts-Funder Landscape (verified as of September 2026)
+
+### The NEA: one front door
+
+The NEA's grants for organizations now run primarily through **Grants for Arts Projects (GAP)** — the agency's principal category, funding project-based work across artistic disciplines: Arts Education, Dance, Design & Our Town, Folk & Traditional Arts, Literary Arts, Local Arts Agencies, Museums, Music, Opera, Presenting & Multidisciplinary Works, Theater & Musical Theater, and Visual & Media Arts. Two formerly separate programs now live *inside* GAP as disciplines:
+
+- **Challenge America** — $10,000 only, for organizations with an operating budget under $250,000 in the most recently completed fiscal year, for projects focused on underserved groups and communities (those whose opportunities to experience the arts are limited by geography, ethnicity, economic status, or disability). Requests above $10,000 in this discipline are marked ineligible. It was **canceled as a standalone FY 2026 round** and returned as a GAP discipline for the FY 2027 cycle — treat its status as cycle-by-cycle and verify.
+- **Design & Our Town** — the NEA's creative placemaking funding; apply through GAP choosing this discipline at the February or July deadline.
+
+**Research Awards** (Research Grants in the Arts; NEA Research Labs) are the other organization category, and a separate Research application is allowable in the same year as a GAP application. Otherwise an organization may generally submit **no more than one application per calendar year**. Eligible applicants: 501(c)(3) nonprofits (plus units of state/local government and federally recognized tribes), with **at least five years of arts programming** completed before the deadline and at least **$20,000 in operating expenses** in the most recently completed fiscal year. Individuals and **fiscal sponsors are not eligible** — a hard bar that ends many first conversations.
+
+### 2025-2026 turbulence — verify every date before relying on it
+
+The mechanics changed mid-cycle more than once, which is why every date needs re-checking:
+
+- **February 2025:** FY 2026 guidelines were revised on short notice — the February 13, 2025 GAP deadline moved to March 11, 2025 (GAP 1) and July 10, 2025 (GAP 2); Challenge America was canceled for FY 2026; guidelines began encouraging an **America250** (semiquincentennial) component.
+- **May 2025:** On May 2, 2025 — the day the FY 2026 budget proposal sought to eliminate the agency — the NEA began bulk-terminating awarded grants, cut programs (including the Creative Writing Fellowship), and lost most program leadership. Grantees had roughly a week to appeal (RAOs urged appeals by May 9, 2025, after drawing down allowable costs).
+- **Litigation:** A federal judge ruled in May 2026 that the parallel mass termination of more than 1,400 NEH grants was "unlawful, unconstitutional, ultra vires, and without legal effect"; NEA-adjacent cases (including First Amendment challenges to 2025 certification requirements) remained active as of September 2026. Remedies exist but are slow.
+- **Congress:** rejected the elimination proposal — the FY 2026 appropriation (P.L. 119-74, signed late January 2026) funds the NEA at **$207 million**, roughly level with prior years, and preserves the requirement that **40% of NEA grantmaking funds flow to state and regional partners**. Grantmaking continues.
+- **FY 2027 cycle (live as of September 2026):** guidelines released December 11, 2025, with the two-part application restored.
+
+Treat every program name, deadline, and priority here as "verify at arts.gov/grants before acting." The next guidelines release is anticipated by late December 2026.
+
+### State arts agencies and regional arts organizations — where most public arts money actually moves
+
+The NEA's **State & Regional Partnership Agreement grants** go to the nation's **56 state and jurisdictional arts agencies (SAAs)** and the **six regional arts organizations (RAOs)**. That 40% share is the most important structural fact for an arts nonprofit: most NEA dollars reach organizations as **pass-through money** through SAA grant programs, not as direct NEA grants.
+
+- **Your SAA** is almost always the more accessible public funder: smaller asks, simpler applications, faster cycles, and program officers who typically answer the phone and will often review a draft concept before you apply. Programs, deadlines, and award sizes vary by state, and several states run on fiscal calendars different from the NEA's. Find the agency and its grant calendar through NASAA (nasaa-arts.org) or the agency's site; many SAAs post deadlines, sample applications, and reviewer scoring rubrics publicly.
+- **The six RAOs** — Arts Midwest (nine upper-Midwest states), Creative West (formerly WESTAF), Mid-America Arts Alliance (AR, KS, MO, NE, OK, TX), Mid Atlantic Arts, New England Foundation for the Arts (NEFA), and South Arts — run regional programs arts orgs can apply to directly: touring and fee-support programs for presenters, artist-roster and exchange programs (such as the Performing Arts Global Exchange roster), and periodic field-wide funds (the Mellon-funded United States Regional Arts Resilience Fund supported small and midsized orgs through the RAOs). RAOs also regrant foundation money regionally.
+- **Partnership mechanics to know:** the SAA side of a Partnership Agreement must be matched 1:1 by state-appropriated funds, and partnership funds flow to SAAs/RAOs, not directly to organizations. FY 2027 Partnership Agreement applications are due **September 29, 2026** (verify the current cycle at arts.gov) — a deadline for your SAA, not you; you apply to the SAA programs those agreements fund.
+
+### Arts-focused private foundations
+
+| Funder | What it funds | How to get in | Cycle (verified Sept 2026) |
+|---|---|---|---|
+| **Mellon Foundation** | Arts and Culture program (visionary cultural institutions, artist-centered practice), plus Humanities in Place, Higher Learning, Public Knowledge, and Presidential Initiatives | Predominantly invitation-driven; few unsolicited routes. Realistic path: cultivation of program officers, or Mellon-funded **regranting intermediaries** (service organizations and RAO programs that regrant Mellon money to smaller orgs) | No application deadlines; board-driven |
+| **Wallace Foundation** | Defined arts initiatives (e.g., its multiyear initiative with arts organizations of color) and arts audience research | Initiative/RFP-driven; does not run an open application. Watch its publications and RFPs; position for the next cohort | RFP-driven, no standing cycle |
+| **Doris Duke Foundation** | Contemporary dance, jazz, and theater; Doris Duke Artist Awards; performing-arts technology (Artists Make Technology Lab, tech infrastructure grants with Ford) | "Most of our grants are by invitation; we do accept unsolicited proposals" — plus occasional open calls with fixed portal windows (the AMT Lab portal has opened for roughly a one-month window in late winter) | Varies by program; open calls announced on site |
+| **Andy Warhol Foundation for the Visual Arts** | Visual arts: exhibition support (solo, two-person, thematic shows 6 months–2 years after notification), curatorial research, multi-year program support, regranting partners | Open application — proposals from 501(c)(3)s reviewed twice a year | **March 1 and September 1** annually; decisions July 1 and January 1. Spring 2026 cycle: $5.166M to 78 organizations |
+| **Kresge Foundation (Arts & Culture)** | Place-based creative placemaking and culture-driven community development; initiatives like Culture of Justice 2.0 | RFP/cohort model; open opportunities listed on its Current Funding Opportunities page | Varies; apply to posted opportunities only |
+
+Two patterns. First, the big generalist arts funders (Mellon, Wallace) are mostly **not apply-to** shops for a midsized organization — their realistic money arrives through regranting intermediaries and field-wide initiatives, so track the intermediaries. Second, the **apply-to** arts funders with real deadlines (Warhol is the cleanest example) reward the craft in Part 2. For building the longer candidate list and scoring fit, use `nonprofit-grant-research`.
+
+## Part 1 — Pick the Right Door Before Writing Anything
+
+1. **Run the NEA eligibility gate first.** 501(c)(3) (or unit of government/tribe), five completed years of arts programming, $20,000+ operating expenses in the last completed fiscal year, no fiscal sponsor. Pandemic-era exception to the five-year rule has been allowed in recent guidelines (examples from 2018-2019 could count where programming was suspended) — verify current wording. **Completion: if any gate fails, route to the SAA/private path instead and stop.**
+2. **Check the one-application rule against your calendar.** One NEA application per calendar year (Research Awards excepted). Pick the cycle whose notification and earliest-start dates fit the project: GAP 1 notifies in November and funds projects starting January 1 of the following year; GAP 2 notifies in April and funds projects starting June 1 (confirm both in the current GAP guidelines). A project that begins before the earliest start date is ineligible — schedule backward from notification.
+3. **Start federal registration before drafting.** Part 1 goes through Grants.gov, which requires an active SAM.gov registration and UEI — a new registration can take weeks, and an expired one silently blocks submission. The NEA estimates ~24 hours to draft and submit after registration; registration is the long pole. **Completion: SAM.gov status shows active, and a Grants.gov workspace is created for the opportunity, before you invest in narrative work.**
+4. **Respect the two-part trap.** Part 1 (the short federal form on Grants.gov) is the entry ticket; Part 2 (the actual Grant Application Form — narrative, budget, work samples, bios — in the NEA Applicant Portal) opens only after the Part 1 window and closes days later (FY 2027 cycle: Part 1 February 12 and July 9, 2026; Part 2 portal opened February 18 / July 14 and closed February 25 / July 21, 2026). Missing Part 1 locks you out of Part 2 — there is no cure. Courtesy emails can land in spam; non-receipt is not grounds for extension.
+5. **Sequence the SAA in parallel.** Most orgs should hold an SAA grant before or alongside a first NEA grant: the ask is smaller, the feedback loop is real, and a current SAA grant demonstrates public-funder competence on the later NEA application. Many SAAs also require their own final reports, with rhythms mirroring the NEA's. **Completion: the SAA program calendar for your state is in the org's grants calendar with deadlines for the current cycle.**
+6. **Check the RAO programs relevant to your discipline.** Presenters booking touring work should check fee-support and roster programs (e.g., Performing Arts Global Exchange) at their RAO; these are often the fastest public dollars a presenting org can get.
+7. **Make the private-funder call explicitly.** For each shortlisted foundation: is there an open application (Warhol — yes, March 1/September 1), an open call window (Doris Duke's occasional labs), an RFP cohort (Kresge), or invitation-only (Mellon, Wallace — work the intermediaries)? Cold proposals to invitation-only shops are wasted effort. Route list-building to `nonprofit-grant-research`; the output here is a decision: apply / cultivate / route-to-intermediary / pass.
+8. **Decision output.** A one-page grants calendar for the next 18 months: funder, program, ask amount, Part 1/Part 2 deadlines (NEA), match source, and the lead writer — with every date footnoted "verified on [date] at [source]."
+
+## Part 2 — What Panels Actually Score
+
+### The two statutory criteria
+
+Congress wrote the review criteria into the NEA's authorizing statute (20 U.S.C. § 954(d)(1)): **artistic excellence** and **artistic merit**. As operationalized in the guidelines: excellence is the quality of the artists, organizations, works, and services involved, and their relevance to the audience or communities served; merit is the importance and appropriateness of the project to the field, the audience, and the organization's mission. Everything else (budgets, access plans, evaluation) is evidence for these two, not criteria in themselves. Recent guidelines add that **funding priority goes to projects aligning with stated agency funding priorities** (the live example: America250 — a semiquincentennial component can sit inside a larger project). Verify the priority language each cycle.
+
+### How the review actually runs
+
+Staff screen for eligibility and completeness first — ineligible applications never reach a panel. Eligible applications go to **advisory panels** of arts experts and other reviewers (each panel includes at least one layperson; panels must be conflict-free, are announced in the Federal Register, and cannot be attended by the public when confidential material is discussed). The panel recommends projects; staff reconcile the recommendations with available money; the **National Council on the Arts votes in open public session**; and the **Chair holds final authority** on every award. Two implications for writing:
+
+- **Panelists read fast and judge art first.** A panelist typically has minutes per application, plus your work samples. The artistic work — named artists with verifiable credits, the actual production or exhibition plan, samples that show quality — carries the decision. A polished narrative about a thin artistic idea loses; a strong artistic case with a plain narrative often wins.
+- **Write the first two sentences for the skim.** Lead the project description with who, what, when, where, and why in concrete terms — "a new production of [play] by [named playwright], directed by [named director with credits], running [dates] at [venue], reaching [audience/community]" — before any mission framing. Panels that must reconstruct the project from paragraph three score it down.
+
+### The panel-ready writing checklist
+
+1. **Name names and dates everywhere.** Artistic directors, choreographers, curators, composers, teaching artists — with the credits that establish them — plus venues, partner organizations, and service areas. Generic personnel ("experienced local artists") read as unfunded risk; the same goes for venues, partner organizations, and service areas.
+2. **Give concrete production evidence.** Run dates, rehearsal weeks, venue capacity, touring route, exhibition square footage, engagement numbers from comparable past projects ("our last three productions averaged X paid admissions") — your own track record is the panel's only proof of execution.
+3. **Plan work samples deliberately.** The application requires artistic work samples (excerpts, renderings, video, as specified per discipline). Choose samples that show the work this project will produce — the commissioned composer's recent pieces, the director's last production — not generic organizational footage. Verify format and length limits in the current Application Instructions; they change.
+4. **Write the access and public engagement section factually.** Panels and guidelines still ask who benefits and how the org reaches them — underserved communities (limited by geography, economic status, ethnicity, or disability, per the Challenge America definition), ticket-price mechanisms, partnerships, geographic service area, disability access. Describe audiences by place, price, age, and circumstance, and state the mechanism ("$15 all-seats preview nights; partner free-ticket distribution through the public library"), not advocacy framing. Post-2025 guidelines scrubbed several diversity-related terms from NEA materials, and certification language was contested in litigation — follow the *current* guidelines' own vocabulary, never a template's.
+5. **Use the arts outcomes vocabulary, not the social-service vocabulary.** Arts panels expect **access** (who can participate, and what removed the barrier), **engagement** (what people actually did — attended, made, performed, learned), **reach** (numbers and geography served), and quality of artistic experience — not graduation rates, crime reductions, or health outcomes, which make an arts application read as written for the wrong funder. For outcome *systems*, route to `nonprofit-outcomes-measurement`.
+6. **Commit only to numbers you can report.** You will re-attest every promised participation and engagement figure in the Final Descriptive Report; under-promise attendance you can document.
+7. **Proof the project is fundable at the ask.** The budget, timeline, and personnel together should show the project fully realized *at the amount requested and its match* — a $100,000 request for a project that visibly costs $500,000 with no other funding identified reads as unexecutable.
+
+## Part 3 — The 1:1 Cost Share and the Budget
+
+The NEA's statute requires a **1:1 cost share (match)**: total project costs must be at least **twice** the requested/awarded amount and no more than **ten times** it. A $10,000 request must sit inside a project of $20,000-$100,000; a $50,000 request, $100,000-$500,000. Match may be **cash or in-kind**, but must be **non-federal**, and the project budget cannot include costs supported by other federal funds.
+
+1. **Source the match before drafting the narrative.** Qualifying match: board-designated gifts, individual contributions, private foundation grants, corporate gifts, earned revenue allocated to the project, and (in general) state and local government funds. Non-qualifying: any federal money — including, in most cases, **NEA funds passed through your SAA**, which are federal dollars. Where the line is unclear (a mixed SAA program, a fiscal-sponsorship arrangement), ask the NEA program specialist in writing and keep the answer. **Completion: every match dollar has a named source and a written confirmation it is non-federal.**
+2. **Use in-kind honestly and document it as you go.** Donated goods and services count at what they would cost to purchase — donated venue time at the published rental rate, professional services at the practitioner's real rate. Record valuation contemporaneously (a letter from the donor stating the fair value) — retrofitted in-kind schedules are the classic audit failure.
+3. **Build the budget in the NEA's own categories** (personnel, fringe, travel, materials, other direct costs, indirect per current instructions) and keep the match line-by-line symmetric with the request: a reviewer should see which NEA dollars and which match dollars fund which project costs. Budget-to-ask craft generally is `nonprofit-grant-writing`; the arts-specific mechanics are the 1:1/2x-10x test, the non-federal sourcing, and the work-sample/artistic-cost composition.
+4. **Stress-test the match at award size, not request size.** NEA awards often come in below the request; the 1:1 requirement attaches to the *awarded* amount, which relaxes the match — but a materially downsized award can break a project whose fixed costs exceed the new total. Model the project at 50-70% of request before submitting.
+5. **Watch the small-org exception economics.** For Challenge America ($10,000 fixed), the match is $10,000 — often the realistic first federal grant for an org under $250K. Don't skip it because "federal."
+
+## Part 4 — After the Award: Public-Funder Grants Management
+
+A federal arts grant is not banked income: it is a reimbursement-based award with active compliance obligations, and 2025 proved awards can be terminated mid-period.
+
+1. **Read the grant agreement before announcing anything.** The award amount, project period, approved budget, and reporting terms are in the official grant award notification and agreement — the agreement governs, not the application. Any material change to the project (dates, personnel, scope, venue) requires prior approval from the NEA program specialist; budget changes among approved items are permitted while still meeting the 1:1 match, but confirm significant reallocations in writing.
+2. **Operate the drawdown rhythm.** Awards are managed in the NEA's eGMS **REACH** system, with cash drawn as costs are incurred. The compliance trigger: a **progress report is required the first time cumulative payment requests exceed two-thirds of the award** — calendar this at award receipt, not when you notice it.
+3. **Close out on time — it gates future awards.** Final reports are due **no later than 90 days after the end of the grant period**: the **Federal Financial Report (FFR)** and the **Final Descriptive Report (FDR)** — the narrative attestation of what happened, including the attendance and engagement figures you promised. The NEA generally will not make a new award to an organization with overdue final reports, and unmatched funds may have to be returned. Set the FDR owner and date in the grant agreement week, and draft from a file of production reports assembled during the project, not from memory afterward.
+4. **Treat the file as a public record.** The NEA publishes grantee names, and applications, award documents, and reports are subject to disclosure. Never put anything in a federal application or report you would not want printed — it is an official record of the organization, which is why this skill's supervision level is review.
+5. **Apply Uniform Guidance at arts scale.** NEA awards are federal financial assistance under the Uniform Guidance (2 CFR 200). At typical arts award sizes, the lived obligations are budget discipline, prior approvals, documented match, and procurement only where purchases are significant — but track total federal awards for the fiscal year: cross the Single Audit expenditure threshold (raised to $1 million for fiscal years beginning on or after October 1, 2024 — verify the current figure at cfo.gov) and a Single Audit becomes mandatory. Allocation questions route to `nonprofit-cost-allocation`.
+6. **Plan for termination and appeal as a live scenario.** The May 2025 bulk terminations are the case study: grantees had roughly a week to appeal and were advised to draw down allowable costs immediately; courts later ruled the parallel NEH mass termination unlawful, but litigation takes years. The resilience practices: draw funds as incurred rather than holding draws; keep every approval and the award agreement archived; read termination notices for appeal deadlines and act on them in days; and never build the season budget on federal money that has not been drawn down. Portfolio diversification routes to `nonprofit-revenue-diversification`.
+
+## Standard Deliverables
+
+1. **Arts grant calendar and door-selection memo** — 18-month calendar (NEA Part 1/Part 2, SAA, RAO, private deadlines with verification dates) and a per-funder decision: apply / cultivate / route-to-intermediary / pass, with the eligibility gate and match-source evidence attached.
+2. **Panel-ready application package** — project description with a concrete who/what/when/where lead, named personnel with credits, production evidence from track record, access and public engagement plan in the current guidelines' vocabulary, work-sample plan with formats/lengths from the live instructions, and a budget meeting the 2x-10x rule with a documented non-federal match.
+3. **Match documentation file** — source-by-source match schedule, non-federal confirmations, in-kind valuation letters, and a stress version of the budget at reduced award size.
+4. **Post-award compliance calendar** — grant agreement summary (amount, period, approved budget, change rules), drawdown schedule with the two-thirds progress-report trigger flagged, change-approval protocol, and the 90-day FFR/FDR closeout with a named owner.
+
+### Project narrative outline
+
+Follow the live Application Instructions' headings and limits; use this as the drafting skeleton:
+
+```
+Project Narrative — [Org], [Funder/program/discipline], request $[ ] — draft [date]
+1. Lead (2 sentences): [what production/exhibition] by [named artists with credits],
+   [dates] at [venue], reaching [audience/community]
+2. Artistic excellence: artists, works, and why their quality is evidenced (credits, reviews, samples)
+3. Artistic merit: importance to the field, the audience, and the mission; any current agency
+   priority the project genuinely aligns with (verify the live guidelines' wording)
+4. Project activities and timeline: rehearsal weeks, run dates, touring route, partner roles
+5. Access and public engagement: audiences by place, price, age, circumstance; the mechanism
+6. Track record: comparable past projects with your own attendance/engagement numbers
+7. Outcomes you will report: access, engagement, reach — with how each is counted
+8. Budget summary: request, match by named non-federal source, total (2x-10x check)
+9. Work-sample plan: items, formats, lengths per current instructions
+```
+
+## Common Failure Modes
+
+- **Missing Part 1 and losing the whole cycle.** The short Grants.gov form gets left for deadline week, and a lapsed SAM.gov registration or missed Part 1 date locks the org out of Part 2. Fix: start registration the day the cycle opens; file Part 1 early.
+- **Writing mission statements instead of projects.** Fix: every paragraph names the project's art, artists, dates, and audience.
+- **Generic personnel and vague samples.** "Renowned guest artists" and stock marketing footage score as zero evidence. Fix: names, credits, and samples of the actual work.
+- **Importing social-service outcomes.** A theater application promising reduced dropout rates reads as off-mission and sets unreportable FDR commitments. Fix: access, engagement, reach, with counting mechanisms.
+- **Discovering the match after the award.** Requested $50,000, awarded $30,000, and the "match" was aspirational — now an official report must attest match that never existed. Fix: source and document match pre-submission; test the budget at reduced award size.
+- **Counting federal pass-through as match.** NEA-derived SAA subgrant dollars are federal and generally cannot match NEA funds. Fix: ask the program specialist in writing before budgeting; keep the answer.
+- **Announcing before approval.** Publicizing an award or changed project before the agreement is signed and changes approved creates official-record problems. Fix: no announcements, changed dates, or substitutions until written approval.
+- **Treating the award as income.** Sitting on drawdowns, spending ahead of approval, and planning the season around undrawn federal money all failed badly in 2025. Fix: draw as incurred; treat undrawn federal funds as contingent.
+- **Cold applications to invitation-only funders.** Fix: target regranting intermediaries and watch for RFP cohorts (Mellon, Wallace).
+- **Trusting remembered deadlines.** FY 2026's February deadline was canceled on a week's notice; Challenge America vanished for a year and returned inside GAP. Fix: verify every date at arts.gov/grants and Grants.gov in the week you plan, and again before filing.
+
+## Verify Before Acting
+
+Program status, deadlines, and funder-lineup details in this skill are anchored to sources verified **as of September 2026**: arts.gov grant pages and the FY 2027 GAP Program Guidelines (deadlines February 12 and July 9, 2026 for Part 1, February 25 and July 21, 2026 for Part 2, notifications November 2026 and April 2027); the NEA's February 6, 2025 FY 2026 guidelines-update release; NASAA's federal updates (FY 2026 appropriation of $207 million under P.L. 119-74, 40% state/regional share preserved); and the current foundation pages for Mellon, Wallace, Doris Duke, the Warhol Foundation (March 1 / September 1 deadlines), and Kresge. The next NEA guidelines are anticipated by late December 2026, and every cycle since 2025 has carried changes. Before any application: check arts.gov/grants and Grants.gov for the live opportunity and its current dates; confirm Challenge America and Our Town discipline status in the current GAP guidelines; check your SAA's grant calendar; and confirm foundation access routes (open call vs. invitation) on the funder's own site. Route any submitted federal application through knowledgeable staff review before filing — it becomes an official public record.

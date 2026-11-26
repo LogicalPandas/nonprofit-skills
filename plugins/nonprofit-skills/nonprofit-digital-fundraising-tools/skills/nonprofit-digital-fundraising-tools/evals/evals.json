@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-digital-fundraising-tools",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Northside Food Collective ($1.1M, Milwaukee) raises about $140k a year online from roughly 2,100 gifts; 30% of online revenue is monthly recurring. We use Little Green Light as our CRM and currently just have a PayPal donate button. We're considering Givebutter, Donorbox and Classy. Build a comparison and recommend one.",
+      "expected_output": "A fee-and-feature comparison modeled on the org's actual volume that separates platform, processor and CRM decisions, weighs recurring features and CRM sync, and plans recurring-donor migration, with vendor pricing verified.",
+      "assertions": [
+        "Separates the giving platform, payment processor and CRM as distinct decisions",
+        "Checks how each platform syncs with the CRM (native, middleware or CSV) before assuming integration",
+        "Models net dollars to mission using the org's volume and an explicit donor-covered-fee opt-in rate below 100%",
+        "Weights recurring features: card updater, dunning and payment-token portability",
+        "Addresses migrating existing recurring PayPal donors (token migration vs. re-enrollment attrition)",
+        "Tells the user to verify current published pricing on vendor sites"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "giving tuesday is in 2 wks and we have a brand new donation form. what do i check before launch",
+      "expected_output": "A pre-launch technical checklist centered on testing the full donor path, receipts, thank-you flow and source tracking into the CRM.",
+      "assertions": [
+        "Recommends testing the full donor path including a new card, recurring setup, wallet payment and a failed-card scenario",
+        "Checks the automatic receipt includes IRS substantiation language (no goods/services or their fair market value)",
+        "Checks a custom thank-you page and confirmation email rather than a generic processor screen",
+        "Checks source tracking on campaign links carries through to the CRM gift record",
+        "Recommends mobile-responsive checkout with Apple Pay/Google Pay enabled"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our monthly donors dropped from 410 to 330 this year. Our development director says we need a big retention campaign with new thank-you videos. Anything else we should look at first?",
+      "expected_output": "Checks for a technical cause of recurring attrition (card updater and dunning) and recommends tracking recurring churn separately before assuming a stewardship problem.",
+      "assertions": [
+        "Raises that missing card-updater or dunning setup can cause silent recurring attrition that looks like a retention problem",
+        "Recommends enabling account updater services for expiring or reissued cards",
+        "Recommends dunning with automatic retries, donor notification and a grace period before cancellation",
+        "Recommends tracking a recurring-gift churn rate separate from overall donor retention"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Write the copy and ask amounts for our year-end donation page",
+      "better_skill": "nonprofit-donation-page-copy"
+    },
+    {
+      "query": "Is our embedded donation form PCI compliant?",
+      "better_skill": "nonprofit-data-privacy"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-in-kind-gift-acceptance",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the development director at Riverbend Animal Rescue (budget about $900K, Missouri). A longtime supporter just gave us a bronze sculpture she says is worth about $18,000, which we plan to sell at our spring auction in April. She emailed asking us to 'sign the IRS form' and send a letter with the value on it. We've never handled anything like this. What do we need to do, step by step, on our side?",
+      "expected_output": "Places the gift in the over-$5,000 tier, explains the donor needs a qualified appraisal and Form 8283 Section B, says the org signs only to acknowledge receipt and never states or agrees to the value, issues a CWA without a value, and flags that selling within 3 years likely triggers Form 8282. It recommends tax professional review.",
+      "assertions": [
+        "Classifies the gift in the over-$5,000 tier requiring a qualified appraisal by a qualified appraiser and Form 8283 Section B",
+        "States that the organization's signature on Section B acknowledges receipt of the property only, not the appraised value, and advises not to sign until the appraisal is in hand",
+        "Advises sending a contemporaneous written acknowledgment that describes the sculpture without stating a dollar value",
+        "Flags that selling the sculpture at the April auction (within 3 years) may require filing Form 8282 with the IRS within 125 days of the sale and sending a copy to the donor, and recommends logging the item in a tracking register",
+        "Tells the user to confirm current thresholds/forms against current IRS guidance and recommends review by a tax professional or qualified advisor, since the donor's deduction depends on it"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Board chair here (small food pantry, Maine). Someone offered us 12 acres of land with an old barn and we said yes on the phone. Now our treasurer is nervous. Do we even have a gift acceptance policy? We don't. Can you draft one?",
+      "expected_output": "A draft board-adopted gift acceptance policy covering acceptable and unacceptable in-kind gift types, high-risk categories like real estate with environmental or carrying-cost issues, an exception approval chain, documentation duties, and a review cycle, plus advice to pause the informal 'yes' and route the land offer through the approval process.",
+      "assertions": [
+        "Drafts a policy that names categories the organization will and won't accept, specifically addressing real estate with environmental liability, encumbered property, and gifts with ongoing carrying costs",
+        "Defines an exception-approval chain (e.g., ED, finance committee, board) based on gift size or type rather than acceptance at the point of donation",
+        "Flags that the informal phone 'yes' is the kind of point-of-donation acceptance the policy should prevent, and recommends running the land offer through the policy's review before finalizing",
+        "Calls for board adoption and periodic review/re-adoption of the policy (roughly every 1-2 years or when a new gift type appears)",
+        "Includes or references the documentation steps (CWA, Form 8283/appraisal for higher-value gifts) the policy should require"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We run Wheels for Hope, a youth job-training nonprofit in Arizona that takes donated cars and sells them at auction. A donor gave us a 2017 pickup in August, we sold it for $7,400 in October, and our intake person handed him our standard drop-off receipt with no value. He's now saying his accountant told him he can deduct $14,000 Kelley Blue Book. What do we owe him and the IRS?",
+      "expected_output": "Explains the vehicle special rules: for a vehicle claimed over $500, the org must furnish a written acknowledgment (Form 1098-C Copy B can serve) within 30 days of the sale and file 1098-C with the IRS, and the deduction is generally limited to gross proceeds ($7,400) absent a qualifying exception. It flags that the basic receipt was insufficient and recommends tax professional review.",
+      "assertions": [
+        "Identifies vehicles as a special case requiring a contemporaneous written acknowledgment such as Form 1098-C furnished within 30 days of the sale, plus filing Form 1098-C with the IRS",
+        "Explains that when the organization sells the vehicle, the donor's deduction is generally limited to the gross sale proceeds unless an exception applies (significant intervening use, material improvement, or below-market transfer to a needy individual)",
+        "States that without the required acknowledgment the donor's deduction is capped at $500",
+        "Notes that the standard drop-off receipt was insufficient and recommends training intake staff to hand off vehicle and stated-value requests",
+        "Advises the organization not to endorse or state the donor's $14,000 valuation",
+        "Recommends confirming current rules with IRS guidance and involving a tax professional, given the deadline may already have passed"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Volunteers at our thrift store keep accepting broken furniture and our dumpster is overflowing. How should we set up the donation drop-off and sorting?",
+      "better_skill": "nonprofit-donation-intake-grading"
+    },
+    {
+      "query": "Our board is debating whether to open a thrift store as a new earned-revenue stream. Is it worth it?",
+      "better_skill": "nonprofit-revenue-diversification"
+    }
+  ]
+}

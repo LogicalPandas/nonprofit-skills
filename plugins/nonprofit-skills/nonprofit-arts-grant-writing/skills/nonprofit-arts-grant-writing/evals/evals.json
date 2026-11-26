@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-arts-grant-writing",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Prairie Wind Opera in Lincoln, Nebraska (founded 2019, $410K operating budget) wants to apply to the NEA for a $40,000 Grants for Arts Projects award to produce a new chamber opera about the Dust Bowl in spring 2028. Our match would be a $15,000 Nebraska Arts Council grant, $10,000 from a local family foundation, and donated rehearsal space. I've never done a federal grant. Walk me through whether we can do this and how.",
+      "expected_output": "Runs the eligibility gates (501(c)(3), five years of programming, operating expenses, no fiscal sponsor), checks the 2x–10x cost-share rule against the $40K ask, flags that SAA money may include federal pass-through that cannot count as match, explains SAM.gov/Grants.gov registration and the two-part application, and produces a calendar and narrative approach with everything flagged to verify at arts.gov.",
+      "assertions": [
+        "Checks the eligibility gates, including at least five completed years of arts programming before the deadline (relevant given a 2019 founding), and tells the user to verify current wording",
+        "Applies the 1:1 cost share: total project cost must be at least twice and no more than ten times the request, and checks whether the proposed match is sufficient",
+        "Flags that state arts agency funds may include NEA pass-through (federal) dollars that generally cannot count as match, and recommends confirming with the NEA program specialist in writing",
+        "Explains that Part 1 on Grants.gov requires active SAM.gov registration/UEI and must be filed to unlock Part 2, recommending registration start before narrative work",
+        "Advises documenting in-kind (donated space) at fair value contemporaneously and stress-testing the budget at a reduced award size",
+        "Tells the user to verify all deadlines and program details at arts.gov/Grants.gov and to have knowledgeable staff review before submission because it becomes a public record"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Can you punch up our project description for the state arts council app? Right now it opens: 'Since 1998, Mosaic Arts Collective has believed in the transformative power of art to heal communities and reduce youth violence.' The project is a summer mural series with 3 local artists in Dayton.",
+      "expected_output": "Rewrites the lead to state who/what/when/where concretely with named artists and credits before mission framing, replaces social-service outcomes like reduced youth violence with access, engagement and reach, and advises naming specific personnel, track-record numbers and relevant work samples.",
+      "assertions": [
+        "Rewrites the opening so the first sentences state the concrete project — what, by which named artists, when, where, reaching whom — before mission language",
+        "Advises replacing social-service outcome claims (reducing youth violence) with arts outcomes vocabulary: access, engagement, reach and quality of artistic experience",
+        "Asks for or uses placeholders for named artists with verifiable credits rather than generic personnel",
+        "Recommends including the org's own track-record numbers and work samples that show the artists' actual work, and committing only to numbers that can be reported later"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're a 3-year-old Latinx theater collective in Tucson, fiscally sponsored by a local arts council, budget about $85K. A board member says we should apply for NEA Challenge America this cycle since we serve underserved audiences. Should we? If not, what should we go after instead?",
+      "expected_output": "Concludes the collective fails the NEA eligibility gates (fiscal sponsorship and fewer than five years of programming) and should stop pursuing the NEA, redirecting to the state arts agency, the regional arts organization and appropriate private funders, with an apply/cultivate/route/pass decision and verification caveats.",
+      "assertions": [
+        "States that fiscally sponsored groups are not eligible for NEA organizational grants",
+        "Notes the five-year arts-programming requirement and that a 3-year-old org likely fails it",
+        "Redirects to the state arts agency (Arizona) and the relevant regional arts organization, and suggests putting the SAA calendar in the grants calendar",
+        "Treats private foundations by access route (open call vs. invitation-only/intermediary) rather than recommending cold applications to invitation-only funders",
+        "Tells the user to verify Challenge America's current status and eligibility at arts.gov since it has changed cycle to cycle"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Build me a prospect list of community foundations in Ohio that fund youth arts programs, with fit scores.", "better_skill": "nonprofit-grant-research"},
+    {"query": "Help me write an LOI to a family foundation for general operating support for our food bank.", "better_skill": "nonprofit-grant-writing"}
+  ]
+}

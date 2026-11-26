@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-voter-engagement",
+  "version": "0.1.0",
+  "description": "Nonprofit Voter Engagement",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Voter Engagement"
+      }
+    }
+  }
+}

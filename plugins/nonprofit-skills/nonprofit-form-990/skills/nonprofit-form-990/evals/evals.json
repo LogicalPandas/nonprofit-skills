@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-form-990",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm ED of Lakeside Youth Theater, a calendar-year 501(c)(3) in Wisconsin. 2026 gross receipts will be about $420k and total assets about $310k. We filed 990-EZ last year. We have a written conflict-of-interest policy but no whistleblower or document retention policy, and our practice is to tell board members the 990 is 'available if they want it.' Our treasurer is preparing the 2026 return. Which form and schedules do we need, and can you draft our Part VI governance answers?",
+      "expected_output": "Determines the full 990 is required, lists the likely schedules, drafts honest Part VI responses with Schedule O narrative, and flags the policy gaps and board-review answer, with CPA review.",
+      "assertions": [
+        "Concludes the full Form 990 is required based on gross receipts and tells the user to verify current IRS thresholds",
+        "Includes Schedule A (public support test) and Schedule O among the schedules needed",
+        "States that telling board members the return is 'available on request' means answering No to the line asking whether a complete copy was provided to the board before filing",
+        "Recommends providing a complete copy to every voting member with a documented, minuted review window before filing",
+        "Answers the whistleblower and document retention questions honestly as not adopted and points to adopting those policies (nonprofit-bylaws-policy)",
+        "Recommends review by a CPA or qualified preparer before filing"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "guy just walked into our front office asking for copies of our 990s. do we have to give them to him?? he also wants our donor list",
+      "expected_output": "Explains the public disclosure duty for the last three 990s and the exemption application, timing, fees, the widely-available exception, and that Schedule B donor names and addresses are withheld.",
+      "assertions": [
+        "States the organization must provide its three most recent Form 990s and its exemption application (Form 1023/1024 with IRS letters)",
+        "Says in-person requests are generally fulfilled the same day",
+        "Says Schedule B contributor names and addresses are not disclosed (for a non-private-foundation filer)",
+        "Explains the widely-available exception (posted on own site or a qualifying database like Candid/ProPublica) still requires telling him where it is posted",
+        "Notes a reasonable copying fee may be charged but the request cannot be refused, and refusal carries per-day penalties on responsible individuals"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our garden club takes in about $15k a year. We never filed our 990-N for 2023, 2024 or 2025 (calendar year). A board member says we can just file an extension now and catch up. Is that right?",
+      "expected_output": "Explains that three consecutive missed 990-Ns trigger automatic revocation, that Form 8868 cannot extend a 990-N, and the reinstatement paths, with professional help recommended.",
+      "assertions": [
+        "States that failing to file for three consecutive years, including the 990-N, triggers automatic revocation of exemption",
+        "States that Form 8868 cannot extend a 990-N",
+        "Explains revocation takes effect on the original due date of the third missed return regardless of whether IRS notices were read",
+        "Explains reinstatement requires a new exemption application with the user fee and describes retroactive options (streamlined within 15 months or reasonable cause)",
+        "Recommends getting help from a CPA or attorney"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Prepare our statement of functional expenses for the audit",
+      "better_skill": "nonprofit-financial-statements"
+    },
+    {
+      "query": "Renew our charitable solicitation registration in Pennsylvania and New Jersey",
+      "better_skill": "nonprofit-charitable-registration"
+    }
+  ]
+}

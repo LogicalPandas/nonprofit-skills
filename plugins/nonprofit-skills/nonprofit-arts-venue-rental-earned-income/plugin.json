@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-arts-venue-rental-earned-income",
+  "version": "0.1.0",
+  "description": "Venue Rental and Ancillary Earned Income",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Venue Rental and Ancillary Earned Income"
+      }
+    }
+  }
+}

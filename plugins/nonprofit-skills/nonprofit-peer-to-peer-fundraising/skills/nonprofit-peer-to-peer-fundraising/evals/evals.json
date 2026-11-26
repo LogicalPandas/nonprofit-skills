@@ -1,0 +1,47 @@
+{
+  "skill_name": "nonprofit-peer-to-peer-fundraising",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I coordinate the 'Steps for Sobriety' 5K walk for Pathways Recovery Center in Asheville, NC. It's May 16, 2027. Last year: 410 registrants, raised $61,000, but honestly most people just paid the registration and never fundraised; we didn't track how many. Goal for 2027 is $90,000. We had 12 teams. Can you plan the campaign — timeline, captain toolkit, and the emails participants send to their friends?",
+      "expected_output": "A campaign plan built on the participants x conversion x average-per-active-fundraiser model. It backs the $90K goal into needed active fundraisers, recruits captains first, adds a 48-hour personalization nudge, provides a captain toolkit, a launch/midpoint/final-week/thank-you sequence for participants' networks, and a timeline, and recommends tracking conversion rate.",
+      "assertions": [
+        "Frames total raised as participants x registrant-to-fundraiser conversion x average raised per active fundraiser, and backs into the $90K goal using per-active-fundraiser figures, not per-registrant",
+        "Says the biggest lever is likely converting registrants into active askers (via a personalization nudge within about 48 hours of registration) rather than recruiting more registrants",
+        "Includes a captain toolkit with a recruitment email, a goal worksheet, a team comms cadence (kickoff, midpoint, final week), sample social posts and captain-specific recognition",
+        "Provides participant email templates for a week-one launch ask, a midpoint update, a final-week urgency ask and a personal thank-you to every donor, with specific suggested amounts tied to impact",
+        "Lays out a timeline that recruits captains before general registration and includes a final-week push",
+        "Recommends tracking and reporting the share of registrants who became active fundraisers"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "can you write me a fundraising page template our walkers can copy? lots of them just leave the default 'Help me support Hope Cancer Alliance' text and raise like $0",
+      "expected_output": "A page template built on a personal reason, a specific goal, a dollar-tied impact statement and the participant's own photo, plus coaching that personalized pages far outperform the default.",
+      "assertions": [
+        "The page template includes a personal reason in the participant's own words, a specific fundraising goal, a concrete impact statement tied to a dollar amount, and a personal photo",
+        "Explains that personalized pages greatly outperform the default template and recommends making personalization coaching a required onboarding step",
+        "Uses bracketed placeholders for impact figures and says they should be confirmed by the org rather than inventing them",
+        "Suggests a nudge email or call prompting participants to personalize soon after registering"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our Ride for Rivers bike ride revenue has been stuck at $140K for three years. Our marketing person wants to spend $15K on Facebook ads to get more registrants, and our board wants to add iPad prizes for anyone who raises $250. We're Clean Water Trust of Michigan. Good ideas?",
+      "expected_output": "Before agreeing to ads or prizes, the response asks for the three-lever breakdown (registrants, conversion, average per fundraiser). It warns against optimizing registration volume when the gap may be coaching, and says incentive cost must be weighed against incremental lift.",
+      "assertions": [
+        "Asks for the three-lever breakdown (registrant count, registrant-to-fundraiser conversion rate, average per active fundraiser) before recommending any tactic",
+        "Warns that buying more registrants wastes spend if the real gap is conversion or coaching",
+        "Flags that the iPad-at-$250 prize may cost more than the incremental revenue it generates, and says incentives should be budgeted and evaluated against actual lift",
+        "Offers alternative levers such as the personalization nudge, captain recruitment or a stronger final-week push"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Which local businesses should we pitch as sponsors for our charity walk, and what should the Gold package include?", "better_skill": "nonprofit-corporate-sponsorships"},
+    {"query": "Write our year-end appeal letter from the ED to all donors on our file.", "better_skill": "nonprofit-annual-appeals"}
+  ]
+}

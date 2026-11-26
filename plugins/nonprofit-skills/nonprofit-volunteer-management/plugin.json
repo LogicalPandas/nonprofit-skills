@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-volunteer-management",
+  "version": "0.1.0",
+  "description": "Nonprofit Volunteer Management",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Volunteer Management"
+      }
+    }
+  }
+}

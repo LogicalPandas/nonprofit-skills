@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-grant-writing",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Please draft the full proposal narrative for the Ridgeway Community Foundation's 'Thriving Families' RFP. Sections they require, in this order: 'Organizational Background' (300 words), 'Community Need' (500 words), 'Project Activities' (600 words), 'Measuring Success' (400 words), 'Budget Justification' (400 words). We're Eastside Family Resource Center in Spokane, WA ($1.6M budget). We're asking $60,000 for a parent-coaching program serving 120 families. Total project cost is $145,000; the rest comes from county funds ($55K) and our general operating budget. Staff: 0.75 FTE family coach at $52,000 + 24% fringe. Last year we 'served 95 families' in a pilot. Our logic model is done.",
+      "expected_output": "A draft in the funder's exact section names, order and word limits, with locally specific need data (or placeholders for it). Outcomes are SMART and distinct from outputs, the budget justification states the basis for each line and reconciles $60K to the $145K total with other sources named, and the draft ends with an internal review and attachments checklist.",
+      "assertions": [
+        "Uses the funder's five section names in the given order and respects each word limit, rather than a generic proposal skeleton",
+        "Uses or asks for locally specific need data with named sources (Spokane or county level) instead of national statistics only, and uses placeholders rather than invented statistics",
+        "Writes SMART objectives that are outcomes (change in families) and treats 'served 95 families' as an output, not an outcome",
+        "The budget justification shows the basis for figures (e.g., 0.75 FTE x $52,000 + 24% fringe) and reconciles the $60,000 request to the $145,000 total with county and operating funds covering the balance",
+        "Any indirect cost line is marked for finance's approved rate and base rather than assumed",
+        "Includes a pre-submission review: program staff, finance and ED or board chair sign-off, plus required attachments such as a W-9, determination letter, board list and audited financials"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "LOI due Friday to the Benton Health Fund. They fund 'oral health access for underserved children in the Columbia Gorge.' We're Gorge Smiles, mobile school dental sealant program, 4 school districts, want $40k. Keep it tight.",
+      "expected_output": "A 1-2 page LOI with a brief org description, a 2-3 sentence problem statement, the project and the $40K ask, alignment quoting the funder's own priority language, and one differentiator, leaving out full-proposal detail.",
+      "assertions": [
+        "Keeps the LOI to roughly 1-2 pages and leaves out full-proposal material (detailed evaluation plan, full budget narrative)",
+        "Includes a brief org description, a short problem statement of about 2-3 sentences, the proposed project and the $40,000 amount",
+        "Explicitly ties the project to the funder's stated priority language ('oral health access for underserved children in the Columbia Gorge')",
+        "Names one clear differentiator for the program",
+        "Uses placeholders or asks for local data rather than inventing statistics about the districts"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're applying for a federal HHS sub-award through our state as pass-through. We don't have a negotiated indirect rate. My ED says just put 10% indirect on the whole $300K project budget since 'that's the federal default.' The state also says they 'prefer' indirect be capped at 5%. Can you write the budget narrative indirect section that way?",
+      "expected_output": "The response corrects the premise: the de minimis election is up to 15% of MTDC (not an automatic 10% of the whole budget), and eligibility needs no current federal negotiated rate. It shows MTDC arithmetic, sends rate selection and the cap question to cost allocation and finance, and marks unresolved assumptions for review.",
+      "assertions": [
+        "Corrects the '10% of total budget' assumption: an eligible de minimis election is up to 15% of modified total direct costs (MTDC), not an automatic or universal rate",
+        "Says the narrative should apply the rate to the MTDC base with arithmetic and exclusions shown, not a percentage of the whole project budget",
+        "Notes that a pass-through's preference alone does not override protections for negotiated or elected rates, and asks finance to verify the legal authority for any conflicting cap",
+        "Routes rate selection, MTDC exclusions and federal cap questions to nonprofit-cost-allocation or a qualified reviewer, and keeps unresolved rate assumptions visibly marked rather than presented as approved",
+        "Points the user to verify current 2 CFR 200 text (e.g., 200.414) and award terms rather than relying on memory"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Find me 10 foundations in Colorado that fund adult literacy and build a grant deadline calendar.", "better_skill": "nonprofit-grant-research"},
+    {"query": "We need to calculate our indirect cost rate and decide whether to negotiate a NICRA or use de minimis.", "better_skill": "nonprofit-cost-allocation"}
+  ]
+}

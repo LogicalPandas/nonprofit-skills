@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-housing-permanent-supportive-housing",
+  "version": "0.1.0",
+  "description": "Permanent Supportive Housing (PSH): Design and Operations",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Permanent Supportive Housing (PSH): Design and Operations"
+      }
+    }
+  }
+}

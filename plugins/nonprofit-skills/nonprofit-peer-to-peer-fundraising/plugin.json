@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-peer-to-peer-fundraising",
+  "version": "0.1.0",
+  "description": "Peer-to-Peer & Team Fundraising",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Peer-to-Peer & Team Fundraising"
+      }
+    }
+  }
+}

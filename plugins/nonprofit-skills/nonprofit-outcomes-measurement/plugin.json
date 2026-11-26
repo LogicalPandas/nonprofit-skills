@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-outcomes-measurement",
+  "version": "0.1.0",
+  "description": "Nonprofit Outcomes Measurement",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Outcomes Measurement"
+      }
+    }
+  }
+}

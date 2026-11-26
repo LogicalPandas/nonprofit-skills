@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-faith-programs-social-services",
+  "version": "0.1.0",
+  "description": "Faith-Based Programs and Social Services (Direct-Service Delivery)",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Faith-Based Programs and Social Services (Direct-Service Delivery)"
+      }
+    }
+  }
+}

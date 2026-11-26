@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-grant-writing",
+  "version": "0.1.0",
+  "description": "Grant Writing: LOIs, Proposals & Reports",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Grant Writing: LOIs, Proposals & Reports"
+      }
+    }
+  }
+}

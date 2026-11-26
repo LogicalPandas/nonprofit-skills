@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-faith-finance-clergy-comp",
+  "version": "0.1.0",
+  "description": "Faith-Based Finance and Clergy Compensation (US Tax Mechanics)",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Faith-Based Finance and Clergy Compensation (US Tax Mechanics)"
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "skill_name": "nonprofit-cdfi-finance",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm CFO of Mesa Verde Youth Center, a $3.1M nonprofit in Pueblo, Colorado. We're buying and renovating a 14,000 sq ft former grocery into a youth center; total cost $4.6M. Our bank will lend $2.4M senior but wants someone to take a subordinate position. Our board chair says 'find a CDFI.' How do we find the right one, and what should our loan request package look like?",
+      "expected_output": "A partner-selection approach (shortlist of 5-8 CDFIs by type, Target Market geography, sector and deal size, capacity screen, verified certification) plus a loan-request package outline with sources-and-uses showing the subordinate CDFI tranche, a global cash-flow view, DSCR at policy and stress levels, impact evidence, and term-sheet asks.",
+      "assertions": [
+        "Recommends building a shortlist from CDFI Fund award/certified lists and industry directories, filtered by institution type, Target Market geography, sector focus and deal size, rather than proximity",
+        "Recommends confirming each CDFI's current certification status against the CDFI Fund's published list",
+        "Includes a global cash-flow view that consolidates the organization and the project entity, noting that many nonprofit declines are global-cash-flow declines",
+        "Includes sources-and-uses showing the CDFI subordinate tranche's position, plus DSCR analysis at stabilized and stress assumptions compared with the lender's minimum",
+        "Frames the pitch around community impact and Target Market fit (character/mission weighting), not only bank-style ratios",
+        "Mentions that CDFIs may require covenants, reserves, outcome reporting or development services, and recommends cross-shopping terms between CDFIs"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "We're a small nonprofit loan fund in rural New Mexico (~$6M loan book, mostly microloans to farmers and small businesses). Board keeps asking if we should get CDFI certified. Thoughts? Be straight with me.",
+      "expected_output": "A certification readiness assessment: run the 60%-by-number and 60%-by-dollar Target Market test on actual transaction data, check the seven certification criteria with a gaps memo, weigh the compliance burden, and give a go/no-go recommendation with an Emerging CDFI + TA path if not ready, with experienced practitioner review before filing.",
+      "assertions": [
+        "Explains that certification requires at least 60% of loans by number and 60% by dollar amount to an eligible Target Market, and recommends testing both on real geocoded transaction data",
+        "Covers the other certification criteria such as primary community development mission, financing as predominant activity, development services, accountability to the Target Market, and non-government status",
+        "Prices in the compliance burden (ACR, TLR, five-year recertification, staff time) when weighing the decision",
+        "Offers Emerging CDFI status with a Technical Assistance award as an on-ramp if the benchmarks aren't met yet",
+        "Ends with a go/no-go type recommendation structure (apply now / after a lending-plan year / TA-first / stay a partner)",
+        "Recommends experienced-practitioner review before filing a certification application with Treasury"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our certified CDFI loan fund in Detroit applied for a CDFI Program Financial Assistance award. Our ED wants to sign a lease on a new office and hire two loan officers now, paid for out of the expected FA grant, because the NOFA said awards would be announced months ago. Our match would come from a pending foundation PRI. Reasonable?",
+      "expected_output": "Warns against committing payroll or a lease against an anticipated CDFI Fund award given recent cycle delays, notes FA is lending capital requiring dollar-for-dollar non-federal match (not operating support), tells the user to verify current status at cdfifund.gov, and recommends treating the award as upside.",
+      "assertions": [
+        "Advises not to make payroll, a lease or other commitments contingent on an anticipated CDFI Fund award",
+        "Notes that recent FA cycles have been delayed well past their stated announcement dates and recommends modeling award receipt 12-24 months after application",
+        "Explains that FA is lending capital rather than operating support, so using it for an office lease and salaries may not fit",
+        "Flags that the dollar-for-dollar non-federal match needs to be secured, so a pending PRI is a risk",
+        "Tells the user to verify current program and award status at cdfifund.gov / the Federal Register rather than relying on remembered dates"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "A CDE has offered our health center $8M of New Markets Tax Credit allocation. How does the leverage loan structure work?",
+      "better_skill": "nonprofit-nmtc-deals"
+    },
+    {
+      "query": "We need a short-term line of credit to cover payroll while we wait for our state contract reimbursements.",
+      "better_skill": "nonprofit-reserves-cash-flow"
+    }
+  ]
+}

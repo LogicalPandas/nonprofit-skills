@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-fundraising-events",
+  "version": "0.1.0",
+  "description": "Fundraising Events: Galas, Auctions & Benefits",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Fundraising Events: Galas, Auctions & Benefits"
+      }
+    }
+  }
+}

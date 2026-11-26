@@ -1,0 +1,46 @@
+{
+  "skill_name": "nonprofit-brand-messaging",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "We're Tri-County Immigrant Legal Aid in New Jersey, 14 staff, $2.1M budget. Our website says we 'empower immigrant communities to thrive,' our grant boilerplate talks about 'access to justice,' and our board chair describes us as 'basically a law firm for people who can't pay.' Two other orgs in our area do immigration services too (Garden State Refugee Network and Newark Family Services). Can you build us a messaging house — positioning, pillars, voice, boilerplate, the works?",
+      "expected_output": "A messaging house with a foundation, a positioning statement tested against the named peers, 3-4 pillars each with a proof point, a voice guide with sounds-like/not-like pairs, boilerplate and a lexicon, packaged as a one-page guide. It recommends a materials audit and stakeholder interviews and placeholders for unverified proof points.",
+      "assertions": [
+        "Recommends auditing current materials and interviewing about 5-8 stakeholders across roles, treating divergent answers (website vs. boilerplate vs. board chair) as a sign of unclear internal positioning",
+        "Drafts a positioning statement (who it serves, what is distinct, the change it creates) and pressure-tests it by asking whether Garden State Refugee Network or Newark Family Services could say the same sentence; flags 'empower communities to thrive' as generic",
+        "Provides 3-4 pillars, each with a claim, a proof point (or a placeholder for a verifiable fact rather than an invented statistic) and supporting language",
+        "The voice guide pairs 3-5 voice traits with 'we sound like this / not like this' example sentences and separates fixed voice from tone that flexes by context",
+        "Includes a 2-4 sentence boilerplate and a lexicon of approved and avoided terms, packaged as a one-page guide with an owner and annual review date"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "our brand voice doc just says 'authentic, passionate, bold.' staff still write totally differently. fix it? we're a small animal sanctuary in Vermont",
+      "expected_output": "The response explains that adjectives alone don't change how people write, and rewrites the voice guide with contrastive example pairs per trait plus tone shifts by context.",
+      "assertions": [
+        "Explains that voice defined only by adjectives doesn't change how staff write and that contrastive example sentences do",
+        "Gives each voice trait a 'we sound like this' and a 'not like this' example sentence",
+        "Separates fixed voice traits from tone that flexes by context (e.g., crisis vs. celebration vs. volunteer recruitment)",
+        "Suggests rollout steps, such as a short staff walkthrough and a note on where the guide lives and who owns it"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're rebranding Hearth & Home Family Services. The board wants to start with a new logo and colors and get the designer going next week, then 'figure out the words later.' Our new pillar draft says 'We serve the whole family,' though honestly only our parenting program works with whole families. Thoughts?",
+      "expected_output": "The response says messaging should be drafted before or independent of the visual rebrand, and that the 'whole family' pillar is a liability unless it is backed by a proof point. It recommends rewriting the pillar to match program reality.",
+      "assertions": [
+        "Says logo and color choices are visual identity, not messaging, and that the messaging house can and should be drafted before or independent of the visual rebrand",
+        "Flags 'We serve the whole family' as unprovable if only one program does it, and says each pillar must be backed by a specific fact or proof point",
+        "Proposes rewriting or rescoping the pillar to match what programs actually deliver",
+        "Recommends getting internal alignment before external rollout"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Write a press release announcing our new executive director and pitch it to local reporters.", "better_skill": "nonprofit-media-relations"},
+    {"query": "Make a 4-week Instagram and LinkedIn content calendar with captions for our fall volunteer drive.", "better_skill": "nonprofit-social-media"}
+  ]
+}

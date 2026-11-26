@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-coalition-building",
+  "version": "0.1.0",
+  "description": "Nonprofit Coalition Building",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Coalition Building"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-board-recruitment",
+  "version": "0.1.0",
+  "description": "Nonprofit Board Recruitment",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Board Recruitment"
+      }
+    }
+  }
+}

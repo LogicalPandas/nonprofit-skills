@@ -1,0 +1,51 @@
+{
+  "skill_name": "nonprofit-housing-fair-housing",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the compliance manager at Prairie Gate Homes, a nonprofit with 380 affordable units (LIHTC + some HOME) in Kansas and Missouri. Our screening policy currently says 'No applicants with any felony conviction or any arrest in the last 10 years.' Our new property manager says HUD rescinded its criminal-records guidance last year so we're fine to keep it. Can you review the policy and tell me what to change?",
+      "expected_output": "A screening-policy review that explains the guidance rescission did not change the statute or Inclusive Communities disparate-impact liability, rewrites the criminal-history criterion (exclude arrests, relevance to safety, lookback windows, individualized assessment, notice and appeal, documented business justification), keeps program-mandated screens, and requires fair-housing counsel review.",
+      "assertions": [
+        "States that rescission of HUD guidance changed enforcement posture but not the Fair Housing Act, and that disparate-impact liability under Inclusive Communities and private suits/state law remain",
+        "Recommends excluding arrests that did not lead to conviction from consideration",
+        "Recommends limiting screening to convictions relevant to resident/property safety with lookback windows and individualized assessment (what happened, how long ago, rehabilitation)",
+        "Requires written notice and an appeal or reevaluation path, and documenting the business justification for each criterion",
+        "Notes that program-mandated screening (e.g., lifetime sex-offender registration bans, VAWA) still applies and that state law may restrict criminal-history screening further",
+        "Recommends fair-housing counsel review before the revised policy is adopted"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Can you check this listing before we post it on Facebook? 'Sunny 2BR at Elm Court! Perfect for young professionals or a quiet couple. Walk to St. Mary's church and great schools. No pets. No Section 8. Must speak English to apply.' We're in Portland OR.",
+      "expected_output": "An ad-copy review memo that flags each problematic phrase with the reason and a rewrite describing the housing rather than the tenant, notes Oregon source-of-income protection risk, flags ad targeting on the platform, and routes sign-off to fair-housing counsel.",
+      "assertions": [
+        "Flags 'perfect for young professionals or a quiet couple' as describing a desired tenant (familial status/age preference) and rewrites to describe the housing",
+        "Flags the religious landmark reference and 'Must speak English' (national-origin cue)",
+        "Flags 'No Section 8' as a risk where source of income is protected under state or local law, telling the user to verify Oregon's rule",
+        "Flags 'No pets' lacking an assistance-animal carve-out",
+        "Warns that platform audience targeting itself can create § 3604(c) advertising risk and that an Equal Housing Opportunity disclaimer does not cure discriminatory content",
+        "Recommends fair-housing counsel sign-off before posting"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We just got a HUD fair housing complaint notice from a former applicant at our 60-unit building in Tucson who says our leasing agent told her the building 'wasn't a good fit for families with little kids.' The leasing agent wants to go back into the system and add notes explaining why the applicant was really denied. Also our maintenance supervisor wants to stop doing repair tickets for her sister, who still lives there. What do we do this week?",
+      "expected_output": "A complaint-response protocol: immediate litigation hold with no editing of records, identify the administrative track and response deadline, no retaliation against the sister or witnesses, independent investigation with comparable files, consider conciliation, remediation, and attorney sign-off on all responses.",
+      "assertions": [
+        "Instructs placing records under a litigation hold and explicitly forbids the leasing agent from adding, editing, or 'cleaning up' notes",
+        "Identifies this as a HUD administrative complaint with a response deadline in the notice and advises answering only what is asked",
+        "Warns that refusing the sister's repair tickets would be retaliation, which is independently actionable, and instructs briefing staff",
+        "Recommends an independent internal investigation, including review of comparable applicant files against the written policy",
+        "Mentions conciliation as a possible resolution and remediation (e.g., retraining) regardless of outcome",
+        "Requires fair-housing counsel (and notifying insurance where applicable) to sign off on all written responses"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Draft our tenant selection plan for the new 72-unit building, including waitlist procedures and income certification steps.", "better_skill": "nonprofit-housing-affordable-rental-operations"},
+    {"query": "Build an organization-wide risk register for our housing nonprofit covering insurance, cyber, and key-person risk.", "better_skill": "nonprofit-risk-management"}
+  ]
+}

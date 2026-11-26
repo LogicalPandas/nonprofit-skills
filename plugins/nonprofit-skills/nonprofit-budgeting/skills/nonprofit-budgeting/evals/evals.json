@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-budgeting",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm finance director at Cedar Ridge Literacy Network, $2.7M budget, fiscal year starts July 1. We just lost a $400k state contract, other revenue is roughly flat, we run five programs, and we haven't seriously revisited our program mix since 2019. The board votes on the FY2028 budget on June 10, 2027. Lay out how we should build this budget, the calendar, and what the board summary should look like.",
+      "expected_output": "Recommends and justifies a zero-based or priority-based method, a backward-built calendar starting with written assumptions, probability-weighted revenue, a functional roll-up and a one-page board summary with reserve impact and variance monitoring.",
+      "assertions": [
+        "Recommends zero-based or priority-based budgeting (not incremental) and states why given the revenue loss and stale program mix",
+        "Builds a calendar working backward from the June board vote, with written assumptions circulated before departments draft",
+        "Uses probability weighting for uncommitted revenue and ties each revenue line to a named source or pipeline entry",
+        "Includes a functional roll-up to Program Services, Management & General and Fundraising",
+        "Provides a one-page board summary that shows net surplus/deficit and reserve impact, with detail as an appendix",
+        "Sets a budget-to-actual variance threshold that triggers written explanation"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "board treasurer here. ED's draft has individual giving jumping from $310k to $520k 'because we're going to try harder,' and an $85k deficit with no mention of reserves. what do I push back on before finance committee thursday",
+      "expected_output": "Identifies the goal-not-pipeline revenue line and the unaddressed deficit as the main problems and gives concrete questions and fixes.",
+      "assertions": [
+        "Flags that the individual giving line is a goal without a pipeline behind it and asks for it to be tied to the development plan or pipeline with probability weights",
+        "Requires the deficit to state the dollar amount and its reserve impact, checked against the reserve policy",
+        "Asks for a written one-page assumptions memo",
+        "Points reserve-policy questions to nonprofit-reserves-cash-flow"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "A funder flagged our 31% overhead. Our budget puts all rent, IT and our office manager's salary in admin. Can you just move 20% of those costs into programs so we land under 20%?",
+      "expected_output": "Declines an arbitrary shift but explains that allocating shared costs to programs on a documented usage basis is legitimate, warns against over-allocation, and hands method documentation to cost-allocation.",
+      "assertions": [
+        "Declines to shift a flat percentage without a documented, reproducible allocation basis",
+        "Explains that dumping all shared occupancy, IT and admin costs into M&G inflates the overhead ratio and that allocating a reasonable share by actual usage (e.g., time studies, square footage) is appropriate",
+        "Warns that over-allocating to programs to look lean fails audit or funder cost review",
+        "Notes there is no single correct overhead ratio and suggests benchmarking against similar organizations",
+        "Points to nonprofit-cost-allocation for choosing and documenting the allocation method"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "How many months of operating reserves should a $2M nonprofit hold?",
+      "better_skill": "nonprofit-reserves-cash-flow"
+    },
+    {
+      "query": "Calculate the indirect cost rate we should put on our new federal HHS grant",
+      "better_skill": "nonprofit-cost-allocation"
+    }
+  ]
+}

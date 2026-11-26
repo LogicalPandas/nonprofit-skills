@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-charitable-registration",
+  "version": "0.1.0",
+  "description": "Nonprofit Charitable Solicitation Registration",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Charitable Solicitation Registration"
+      }
+    }
+  }
+}

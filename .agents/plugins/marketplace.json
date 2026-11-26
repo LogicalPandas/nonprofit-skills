@@ -5,10 +5,1222 @@
   },
   "plugins": [
     {
-      "name": "nonprofit-skills",
+      "name": "nonprofit-coalition-building",
       "source": {
         "source": "local",
-        "path": "./nonprofit-skills-library"
+        "path": "./plugins/nonprofit-skills/nonprofit-coalition-building"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-grassroots-mobilization",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-grassroots-mobilization"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-legislative-advocacy",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-legislative-advocacy"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-policy-analysis",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-policy-analysis"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-voter-engagement",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-voter-engagement"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-advocacy-land-use",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-advocacy-land-use"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-affordable-rental-operations",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-affordable-rental-operations"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-community-ownership",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-community-ownership"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-construction-volunteers",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-construction-volunteers"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-continuum-planning",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-continuum-planning"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-development-finance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-development-finance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-fair-housing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-fair-housing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-homelessness-services",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-homelessness-services"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-homeownership-programs",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-homeownership-programs"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-lihtc-hud-compliance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-lihtc-hud-compliance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-permanent-supportive-housing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-permanent-supportive-housing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-rapid-rehousing-transitional",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-rapid-rehousing-transitional"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-housing-repair-preservation",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-housing-repair-preservation"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-arts-ad-ed-partnership",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-arts-ad-ed-partnership"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-arts-box-office-subscriptions",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-arts-box-office-subscriptions"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-arts-commissioning-new-work",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-arts-commissioning-new-work"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-arts-education-programs",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-arts-education-programs"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-arts-grant-writing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-arts-grant-writing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-arts-membership-program",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-arts-membership-program"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-arts-performance-licensing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-arts-performance-licensing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-arts-season-planning",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-arts-season-planning"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-arts-season-sponsorship",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-arts-season-sponsorship"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-arts-union-agreements-visas",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-arts-union-agreements-visas"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-arts-venue-rental-earned-income",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-arts-venue-rental-earned-income"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-annual-report",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-annual-report"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-brand-messaging",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-brand-messaging"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-donation-page-copy",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-donation-page-copy"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-email-newsletter",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-email-newsletter"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-media-relations",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-media-relations"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-social-media",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-social-media"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-storytelling",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-storytelling"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-cdfi-finance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-cdfi-finance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-community-facilities-finance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-community-facilities-finance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-disaster-recovery-finance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-disaster-recovery-finance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-nmtc-deals",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-nmtc-deals"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-opportunity-zones",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-opportunity-zones"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-ceo-board-partnership",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-ceo-board-partnership"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-executive-communications",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-executive-communications"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-executive-dashboard",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-executive-dashboard"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-executive-search",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-executive-search"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-executive-transitions",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-executive-transitions"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-faith-990-exemption",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-faith-990-exemption"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-faith-church-governance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-faith-church-governance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-faith-communications-pastoral",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-faith-communications-pastoral"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-faith-employment-ministerial-exception",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-faith-employment-ministerial-exception"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-faith-facilities-sanctuary",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-faith-facilities-sanctuary"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-faith-finance-clergy-comp",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-faith-finance-clergy-comp"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-faith-programs-social-services",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-faith-programs-social-services"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-faith-religious-liberty-compliance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-faith-religious-liberty-compliance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-faith-stewardship-giving",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-faith-stewardship-giving"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-faith-volunteer-lay-leadership",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-faith-volunteer-lay-leadership"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-budgeting",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-budgeting"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-cost-allocation",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-cost-allocation"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-financial-controls",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-financial-controls"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-financial-statements",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-financial-statements"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-hr",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-hr"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-reserves-cash-flow",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-reserves-cash-flow"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-vendor-facilities",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-vendor-facilities"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-annual-appeals",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-annual-appeals"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-capital-campaigns",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-capital-campaigns"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-corporate-sponsorships",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-corporate-sponsorships"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-donor-pipeline",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-donor-pipeline"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-donor-retention",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-donor-retention"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-fundraising-events",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-fundraising-events"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-grant-research",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-grant-research"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-grant-writing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-grant-writing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-major-gifts",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-major-gifts"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-peer-to-peer-fundraising",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-peer-to-peer-fundraising"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-planned-giving",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-planned-giving"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-board-governance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-board-governance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bylaws-policy",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bylaws-policy"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-c3-c4-structure",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-c3-c4-structure"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-charitable-registration",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-charitable-registration"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-form-990",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-form-990"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-risk-management",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-risk-management"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-needs-assessment",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-needs-assessment"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-outcomes-measurement",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-outcomes-measurement"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-program-design",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-program-design"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-program-scaling",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-program-scaling"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-donation-intake-grading",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-donation-intake-grading"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-in-kind-gift-acceptance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-in-kind-gift-acceptance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-online-resale",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-online-resale"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-retail-pricing-merchandising",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-retail-pricing-merchandising"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-retail-staffing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-retail-staffing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-retail-store-operations",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-retail-store-operations"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-change-management",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-change-management"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-eos-traction",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-eos-traction"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-mergers-fiscal-sponsorship",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-mergers-fiscal-sponsorship"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-revenue-diversification",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-revenue-diversification"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-strategic-planning",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-strategic-planning"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-data-privacy",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-data-privacy"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-digital-fundraising-tools",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-digital-fundraising-tools"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-donor-crm",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-donor-crm"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-board-recruitment",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-board-recruitment"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-staff-retention",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-staff-retention"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-succession-planning",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-succession-planning"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-volunteer-management",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-volunteer-management"
       },
       "policy": {
         "installation": "AVAILABLE",

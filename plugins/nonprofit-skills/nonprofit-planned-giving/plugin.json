@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-planned-giving",
+  "version": "0.1.0",
+  "description": "Planned & Legacy Giving",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Planned & Legacy Giving"
+      }
+    }
+  }
+}

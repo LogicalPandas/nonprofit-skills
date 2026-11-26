@@ -1,0 +1,57 @@
+{
+  "skill_name": "nonprofit-community-facilities-finance",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm ED of Little Sprouts Early Learning, a nonprofit child care provider in Waycross, Georgia (population around 13,000). We want to build a new 120-slot center; estimated total cost $5.8M. Revenue is tuition plus state CAPS subsidy, margins are thin, and we've raised $600K in pledges. Our banker suggested looking at USDA Community Facilities. Can you help us figure out how to finance this?",
+      "expected_output": "A child care facility capital-stack plan: identifies the facility type's thin revenue base and grant-heavy stack, runs the USDA CF geography and essential-facility tests (direct loan/grant possible at ≤20,000 population), sizes debt from a standalone facility pro forma, layers CDFI subordinated debt, grants and philanthropy, and sets out a readiness checklist with counsel/advisor review.",
+      "assertions": [
+        "Recognizes that child care has thin margins and typically needs a grant-heavy stack with subordinated CDFI debt and only a modest senior loan",
+        "Runs the USDA CF geography test, noting the direct loan/grant population limit versus the larger guaranteed-loan limit, and recommends confirming eligibility on USDA's eligibility map",
+        "Advises applying for loan-plus-grant but planning on a loan-only base case, since grants are awarded competitively as funds allow",
+        "Recommends a standalone multi-year facility operating pro forma showing DSCR by year, including ramp-up, before sizing debt",
+        "Produces or outlines a sources-and-uses table with each layer's status and timing, with contingency and financing costs on the uses side, and a bridge for pledges and grants that pay on reimbursement",
+        "Tells the user to verify current USDA rates and percentages at rd.usda.gov and recommends qualified counsel/financial advisor review before applications or agreements"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Charter school CFO, Arizona. We need ~$9M for a new campus. Board member says we should do a 'bank-qualified bond' through the county IDA because our deal is small and that'll save us a full point on rate. True?",
+      "expected_output": "Explains the conduit structure, that bank-qualified status depends on the governmental issuer's calendar-year issuance (not just the borrower's deal size), that the 2009-2010 borrower-level rule no longer applies, that no fixed rate saving should be promised, and that bond counsel must determine eligibility in writing. It also touches on charter-specific enrollment risk and state facility funding.",
+      "assertions": [
+        "Explains that a 501(c)(3) borrows tax-exempt bond proceeds through a conduit governmental issuer and repays from its own revenues",
+        "States that bank-qualified screening depends on the issuer's reasonably anticipated calendar-year tax-exempt issuance, aggregation and designation limits, not just the school's deal size",
+        "Notes that a $9M project size alone does not establish bank-qualified eligibility and that the old borrower-as-issuer rule from 2009-2010 should not be relied on",
+        "Cautions against promising a fixed interest-rate saving",
+        "Recommends getting the issuer's issuance schedule and a written eligibility determination from bond counsel, plus a municipal advisor",
+        "Mentions charter-specific factors such as enrollment-based underwriting/covenants or verifying whether Arizona offers charter facility funding or credit enhancement"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're a nonprofit opening a full-service grocery in a food desert in Gary, Indiana (pop ~67,000). Cost is $7M. Our consultant says apply for a USDA Community Facilities grant for 75% of the cost and we'll close in March with the grant money. Also she thinks NMTC could cover the rest, so we'll worry about that after we sign the construction contract. Sound right?",
+      "expected_output": "Corrects several errors: Gary's population likely exceeds USDA CF limits (route to bonds/NMTC/CDFI), grocery is a commercial-adjacent use needing an essential-service case, grants reimburse rather than fund closing, NMTC needs 6-12 months of CDE lead time, and NMTC structuring belongs to the NMTC skill. It points to the food-retail anchor funders (HFFI, NMTC, CDFI retail lenders).",
+      "assertions": [
+        "Flags that a ~67,000 population likely exceeds USDA CF limits (≤20,000 for direct loan/grant, ≤50,000 for guarantees) and recommends confirming on USDA's map and redirecting to bonds, NMTC or CDFI capital",
+        "Notes that a nonprofit grocery needs a documented food-access/essential-service case and that the 75% maximum grant tier applies only to the smallest, lowest-income places",
+        "Explains that grants reimburse or pay on milestones and don't fund closing, so a bridge is needed",
+        "Warns that NMTC requires 6-12 months of CDE relationship lead time and should start at concept design, not after signing the construction contract",
+        "Names food-retail anchor sources such as HFFI, NMTC equity and CDFI retail lenders, and routes NMTC structure details to the NMTC deals skill (nonprofit-nmtc-deals)",
+        "Tells the user to verify current program cycles and rules at the source"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We're building 60 units of affordable senior housing with 9% LIHTC and HOME funds. Help us put together the capital stack.",
+      "better_skill": "nonprofit-housing-development-finance"
+    },
+    {
+      "query": "How do we run the quiet phase of a $4M capital campaign for our new community center?",
+      "better_skill": "nonprofit-capital-campaigns"
+    }
+  ]
+}

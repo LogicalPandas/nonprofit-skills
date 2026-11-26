@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-annual-report",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the comms manager at Greenway Youth Conservation Corps in Sacramento ($3.8M budget, FY ends June 30). We need our FY2026 annual report out by February for our donor stewardship season. Big things this year: we opened a second crew base in Stockton, 82% of corps members earned a certification, and we lost a major state contract mid-year, which forced two layoffs. Our audit is supposed to be done mid-January. Can you outline the whole report and tell me how to sequence the work?",
+      "expected_output": "A section-by-section outline (cover theme, leadership letter, at-a-glance stats, impact stories, financial summary, donor recognition, leadership list, call to action). The sequencing puts the audit before the financial section, sources stories from storytelling work, drafts the letter last, double-checks the donor list against the CRM and adds a board review pass. The leadership letter names the contract loss honestly.",
+      "assertions": [
+        "Outlines the sections in order: cover and theme, leadership letter, at-a-glance stats (3-5 headline numbers), program impact stories, financial summary, donor recognition, board and staff list, and call to action",
+        "Says the leadership letter should state the biggest win, the biggest challenge honestly (the lost state contract and layoffs) and a forward priority, and that it should be drafted last",
+        "Sequences the financial section after the audit is finalized and warns against building charts from unaudited estimates, with figures that must tie to the audit or 990",
+        "Recommends selecting finished, consent-cleared stories from nonprofit-storytelling rather than drafting new beneficiary narratives in the report",
+        "Calls for cross-checking the donor recognition list against the CRM export at least twice, including spelling, tier accuracy and anonymity flags",
+        "Includes a review by the ED, the board chair and at least one non-marketing board member before design lock"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Can you turn this into the one-page financial summary for our annual report? From our audited FY25 statements: total revenue $1,940,000 (incl. a one-time $400K bequest), contributions $1,100,000, gov grants $520,000, program fees $320,000. Expenses: program $1,310,000, M&G $210,000, fundraising $130,000. Board chair wants a big '85% goes to programs!' headline. — Oakridge Literacy Council",
+      "expected_output": "A one-page summary using only the provided audited figures. It shows functional percentages with a methodology note, calls out the one-time bequest, asks for prior-year figures for a 2-3 year trend, and replaces the overhead-ratio boast with balanced context, plus a tie-out line.",
+      "assertions": [
+        "Uses only the provided audited figures and leaves prior-year cells blank or requests them rather than inventing numbers",
+        "Computes functional expense shares from the given totals (program about 79%, not the 85% the chair wants), and the figures reconcile to the audited numbers",
+        "Calls out the one-time $400K bequest so it isn't mistaken for recurring revenue, and recommends a 2-3 year trend",
+        "Advises against an 'X% goes to programs' or low-overhead boast because it fuels the overhead myth, and suggests a plain-language context line instead",
+        "Includes a methodology note on shared-cost allocation and a tie-out line naming the audit or 990 source and a checker"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our annual report is going to print Friday. Our auditor won't finish until next month, so I estimated the financials from our QuickBooks — close enough. Also could you write three short client stories for the report? Just make up composite kids, that's fine for an annual report. We're Bright Path Mentoring in Columbus.",
+      "expected_output": "The response warns against printing unaudited estimates, which risk a mismatch with the audit or a trust-eroding 'preliminary' disclaimer, and recommends resequencing. It declines to invent stories inside this skill and routes them to storytelling for real, consent-cleared narratives.",
+      "assertions": [
+        "Warns that financial figures must match the audited statements or 990 and recommends waiting for or resequencing around the audit rather than printing QuickBooks estimates",
+        "Notes that a 'preliminary/unaudited' disclaimer or a later mismatch undercuts credibility",
+        "Declines to fabricate composite client stories and routes story writing to nonprofit-storytelling, recommending real, consent-cleared narratives",
+        "Mentions that generic or invented stories disconnected from program data hurt the report's credibility"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Help me prepare our audited statement of functional expenses and the notes for this year's audit.", "better_skill": "nonprofit-financial-statements"},
+    {"query": "Write a dignity-preserving story about a client who found housing through our program, with consent steps.", "better_skill": "nonprofit-storytelling"}
+  ]
+}

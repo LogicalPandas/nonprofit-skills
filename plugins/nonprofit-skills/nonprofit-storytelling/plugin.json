@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-storytelling",
+  "version": "0.1.0",
+  "description": "Nonprofit Storytelling",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Storytelling"
+      }
+    }
+  }
+}

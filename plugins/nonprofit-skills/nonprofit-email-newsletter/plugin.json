@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-email-newsletter",
+  "version": "0.1.0",
+  "description": "Nonprofit Email Newsletter",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Email Newsletter"
+      }
+    }
+  }
+}

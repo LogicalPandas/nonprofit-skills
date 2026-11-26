@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-arts-ad-ed-partnership",
+  "version": "0.1.0",
+  "description": "The Artistic and Executive Directorship Partnership",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "The Artistic and Executive Directorship Partnership"
+      }
+    }
+  }
+}

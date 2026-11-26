@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-housing-community-ownership",
+  "version": "0.1.0",
+  "description": "Nonprofit Housing: Community Ownership and Shared-Equity Models",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Housing: Community Ownership and Shared-Equity Models"
+      }
+    }
+  }
+}

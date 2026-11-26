@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-housing-repair-preservation",
+  "version": "0.1.0",
+  "description": "Nonprofit Home Repair & Housing Preservation",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Home Repair & Housing Preservation"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-reserves-cash-flow",
+  "version": "0.1.0",
+  "description": "Nonprofit Reserves & Cash Flow",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit Reserves & Cash Flow"
+      }
+    }
+  }
+}

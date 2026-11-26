@@ -1,0 +1,47 @@
+{
+  "skill_name": "nonprofit-donor-retention",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the ED of Northside Neighbors Tenant Union in Milwaukee ($650K budget, 1.5 fundraising staff). Last year we had 1,100 donors; this year only 520 of them have given again so far, though total dollars are up because a viral campaign brought in 700 new donors. Right now our receipts go out in a batch at the end of each month as a plain email from our donation platform. Can you calculate what's going on and design a thank-you and stewardship process that fixes it?",
+      "expected_output": "The response calculates overall retention, notes that rising dollars from acquisition hide the retention problem, and separates new-donor retention. It then designs an acknowledgment process: 24-48 hour receipts, required receipt elements, a warm thank-you separate from the receipt, a first-gift welcome series and a tiered stewardship matrix.",
+      "assertions": [
+        "Calculates retention as donors who gave both years divided by last year's donors (520/1,100, about 47%) and warns that total dollars rising on new acquisition masks a retention problem",
+        "Calls for tracking new-donor (first-year) retention separately and treating the 700 new donors' first 90 days as the highest-risk window, with an onboarding or welcome sequence",
+        "Flags month-end batch receipts as too slow and sets a 24-48 hour acknowledgment standard, treating anything beyond a week as a process failure",
+        "Lists required receipt elements (legal name, amount and date, goods-or-services statement with value if any, EIN or tax-exempt language) and says to verify them against current IRS Publication 1771",
+        "Separates the formal receipt from a warm, specific thank-you and provides a stewardship matrix that ties gift tiers to thank-you method, owner and follow-up",
+        "Recommends reporting retention rate to the board alongside total dollars, with at least 3 years of trend"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "need a win-back plan for lapsed donors asap. we're a small humane society in Iowa. ~800 people gave in 2025 but not 2026, and ~2,300 more gave sometime before that but not since. was just going to resend our fall appeal letter to all of them",
+      "expected_output": "The response splits the lapsed donors into LYBUNT and SYBUNT with different messaging and investment, uses distinct win-back copy instead of the fall appeal, and measures results separately.",
+      "assertions": [
+        "Segments the ~800 as LYBUNT (higher win-back odds) and the ~2,300 as SYBUNT (lower odds), with different messaging and investment levels for each",
+        "Advises against resending the fall appeal copy verbatim and recommends a distinct win-back message or offer (acknowledging the gap, a reduced or first-gift-level ask, or a new impact story)",
+        "Suggests diagnosing likely lapse causes (bounced renewal, bad experience, inattention) and tailoring messaging instead of one generic 'we miss you' email",
+        "Says to set a realistic win-back conversion expectation and measure it separately from acquisition and standard renewal"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our gala tickets at Lakeshore Arts Collective were $200 each and included a dinner worth about $85. Can you write our standard thank-you/receipt template so we can reuse the same one for gala tickets and regular online donations? Keep it short — one email that does both the receipt and the thank you.",
+      "expected_output": "The response provides receipt language with a goods-and-services statement and a good-faith value, so the gala receipt differs from a regular donation receipt. It recommends pairing the compliant receipt with a separate warm thank-you, and tells the user to verify quid pro quo rules in IRS Publication 1771 and coordinate event receipting.",
+      "assertions": [
+        "Says gala ticket receipts need a goods-or-services statement with a good-faith estimated value (the ~$85 dinner), unlike a regular gift with none, so one identical template for both is not appropriate",
+        "Tells the user to verify current substantiation and quid pro quo disclosure rules in IRS Publication 1771 before finalizing templates",
+        "Recommends pairing the formal receipt with a genuine, specific thank-you rather than merging both into one transactional email",
+        "Provides a receipt skeleton with legal name, EIN or tax-exempt language, donor, date, amount and a goods-or-services line"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "We have 60 wealthy prospects from a screening — how do we qualify and cultivate them toward a first major gift?", "better_skill": "nonprofit-donor-pipeline"},
+    {"query": "Build ask strings for each donor segment in our spring direct-mail appeal.", "better_skill": "nonprofit-annual-appeals"}
+  ]
+}

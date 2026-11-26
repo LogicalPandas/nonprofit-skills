@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-c3-c4-structure",
+  "version": "0.1.0",
+  "description": "Nonprofit 501(c)(3)/501(c)(4) Dual-Entity Structure",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nonprofit 501(c)(3)/501(c)(4) Dual-Entity Structure"
+      }
+    }
+  }
+}

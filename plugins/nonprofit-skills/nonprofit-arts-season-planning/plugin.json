@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-arts-season-planning",
+  "version": "0.1.0",
+  "description": "Season and Exhibition Planning",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Season and Exhibition Planning"
+      }
+    }
+  }
+}

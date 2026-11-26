@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-arts-box-office-subscriptions",
+  "version": "0.1.0",
+  "description": "Box Office and Season Subscriptions",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Box Office and Season Subscriptions"
+      }
+    }
+  }
+}

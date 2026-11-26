@@ -1,0 +1,53 @@
+{
+  "skill_name": "nonprofit-eos-traction",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm ED of Green Acres Community Garden Network in Madison, WI — 12 staff, $1.6M. Board adopted a 3-year strategic plan in September with 4 priorities. Our leadership team meetings are status-update marathons and nothing gets done between them. I've read Traction and want to implement EOS starting January. Where do I start?",
+      "expected_output": "A nonprofit EOS rollout anchored in the existing strategic plan: V/TO translated from the plan, Accountability Chart surfacing multi-seat holders, conservative first-quarter Rocks, a sustainable weekly Scorecard, the L10 agenda, and someone besides the ED holding meeting discipline.",
+      "assertions": [
+        "Anchors the V/TO's 3-Year Picture and 1-Year Plan in the board-adopted strategic plan's priorities rather than re-deriving vision",
+        "Builds an Accountability Chart with functional seats, one name per seat, flags people holding 3+ seats, and addresses whether the ED is Visionary, Integrator or a hybrid",
+        "Recommends a conservative first quarter of 3–5 organizational Rocks, each with one owner and a binary done definition",
+        "Describes a Scorecard of weekly leading indicators with targets designed with the finance/data lead so numbers can be pulled weekly without a manual scramble",
+        "Lays out the L10 fixed agenda with most time on IDS of top issues and a closing rating",
+        "Recommends someone besides the ED hold L10 discipline (internal Integrator or licensed EOS Implementer) and notes EOS terms are trademarked with certified rollout as a separate paid path"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "help me write our core values for EOS. right now they're 'equity, compassion, excellence, community.' team says they're meaningless",
+      "expected_output": "Rewrites aspirational values as 3–5 observable behaviors usable in hiring, reviews and recognition, framed in mission-driven language.",
+      "assertions": [
+        "Explains that values should be observable behaviors the org hires, fires, reviews and recognizes against rather than aspirational words",
+        "Proposes 3–5 rewritten values phrased as behaviors (e.g., 'we finish what we start')",
+        "Tests each value by whether it could be used in a hiring interview or performance conversation",
+        "Frames the work in mission-driven terms to avoid it reading as corporate jargon"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're a brand-new $400K organization, 5 staff, no strategic plan, and I'm the founder doing fundraising, programs, finance AND HR. A consultant says EOS will fix everything. Also can we use the L10 format for our board meetings?",
+      "expected_output": "Cautions that EOS doesn't substitute for strategy, points to strategic planning first (or the V/TO 3-Year Picture as a lightweight substitute), names the founder holding many seats as the real capacity problem, and routes board meetings to board governance.",
+      "assertions": [
+        "Warns that adopting EOS without a strategic plan risks running efficient meetings about unvalidated priorities, recommending strategic planning first or the V/TO 3-Year Picture as a lightweight parallel substitute",
+        "Names the founder occupying 3+ seats / Visionary-Integrator collapse as the presenting capacity problem that EOS structure alone won't fix without a staffing or delegation change",
+        "States that the L10 and Accountability Chart cover the staff leadership team and routes board meeting structure to the board governance skill",
+        "Recommends a conservative start (e.g., few Rocks) if they proceed"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Our 3-year strategic plan expires next year — help me design the planning process and board retreat.",
+      "better_skill": "nonprofit-strategic-planning"
+    },
+    {
+      "query": "Build me a one-page KPI dashboard for the board with yellow/red thresholds each quarter.",
+      "better_skill": "nonprofit-executive-dashboard"
+    }
+  ]
+}

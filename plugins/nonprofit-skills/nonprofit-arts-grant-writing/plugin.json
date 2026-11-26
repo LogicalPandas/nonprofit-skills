@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-arts-grant-writing",
+  "version": "0.1.0",
+  "description": "Arts Grant Writing",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Arts Grant Writing"
+      }
+    }
+  }
+}

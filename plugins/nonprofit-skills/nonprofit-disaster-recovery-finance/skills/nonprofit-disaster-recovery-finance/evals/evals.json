@@ -1,0 +1,56 @@
+{
+  "skill_name": "nonprofit-disaster-recovery-finance",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Hurricane flooding hit our community center and senior meal site in Lake Charles, Louisiana two weeks ago. There's a presidential disaster declaration for our parish with Public Assistance. We're a 501(c)(3), budget $1.4M, own the building, and have flood insurance but probably not enough. Damage looks like $900K. I'm the ED and I have no idea where to start — what money is out there and what do we have to do first?",
+      "expected_output": "Lays out the federal rebuild funding map in order (insurance, FEMA PA and SBA in parallel, then HMGP and CDBG-DR as gap fill, with philanthropy and CDFI as bridge), identifies the center as a noncritical PNP subject to the SBA-first rule, gives the first-30-day registration checklist (RPA within 30 days, SBA within 60 days, documentation, insurance), and starts a duplication-of-benefits ledger.",
+      "assertions": [
+        "Classifies a community/senior center as a noncritical essential social service PNP and explains the SBA-first rule: FEMA PA permanent work covers only what an SBA disaster loan won't",
+        "Flags the Request for Public Assistance deadline (30 days from designation) in Grants Portal as urgent given two weeks have passed, and the SBA physical loan application deadline (60 days from declaration)",
+        "Recommends applying to SBA regardless, since a denial or insufficient-amount letter unlocks FEMA PA permanent work",
+        "Includes documentation steps: photograph damage before cleanup, keep invoices/payroll records, document pre-disaster condition, and notify the insurer",
+        "Tells the user to start a duplication-of-benefits ledger from day one, since insurance, FEMA and SBA reduce eligibility for CDBG-DR for the same loss",
+        "Tells the user to verify cost share, thresholds and SBA terms from the specific declaration and its amendments"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "FEMA just denied our project worksheet for our flooded preschool building — says we didn't show legal responsibility because we lease. Determination letter is dated Oct 30. Vermont. What now??",
+      "expected_output": "Explains the two-tier PA appeal path with 60-day clocks (first appeal to the Recipient/state within 60 days of the determination, then to the FEMA Regional Administrator), calculates the urgent deadline, advises gathering lease evidence that transfers restoration responsibility, using FEMA's PA appeals database, and engaging counsel or an experienced consultant.",
+      "assertions": [
+        "Explains the first appeal goes in writing to the Recipient (state) within 60 days of FEMA's determination, then a second appeal to the FEMA Regional Administrator within 60 days of the first-appeal decision",
+        "Puts the first-appeal deadline on the calendar based on the October 30 determination and treats it as urgent",
+        "Recommends documenting that the lease transfers restoration responsibility to the preschool, citing PAPPG/Stafford Act authority",
+        "Suggests reviewing FEMA's public PA Appeals database for similar legal-responsibility arguments",
+        "Recommends engaging counsel or an experienced disaster-recovery consultant, noting that the first-appeal record binds the second appeal",
+        "Notes that center-based childcare is an eligible PNP service even if not open to the general public"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're a Puerto Rico-based housing counseling nonprofit. Our state recovery office just announced a CDBG-DR allocation and says subrecipient RFPs will come out 'in a few months.' Our board wants to (1) start rebuilding our damaged office now with expected CDBG-DR money, and (2) know what to do to win a subrecipient contract. Also, someone mentioned we could get extra federal cost share for adding mitigation, and apply to BRIC. Help us plan.",
+      "expected_output": "Warns not to commit CDBG-DR funds or start construction before environmental review clearance, sets out a subrecipient readiness plan, urges commenting on the action plan during the public comment period, and corrects the outdated mitigation assumptions (BRIC ended; mitigation cost-share incentive rescinded), pointing to HMGP, CDBG-MIT and Section 406 instead.",
+      "assertions": [
+        "Warns that CDBG-DR funds cannot be committed and construction must not start before HUD environmental review/clearance",
+        "Provides a subrecipient readiness plan covering active SAM/UEI, audited financials, 2 CFR 200-compliant procurement and financial management policies, conflict-of-interest policy, and single-audit readiness",
+        "Recommends commenting on the grantee's action plan during the public comment period and building relationships with the grantee's recovery office",
+        "Corrects the assumptions that BRIC is available and that a mitigation cost-share incentive applies, pointing to HMGP, CDBG-MIT and Section 406 instead, and says to re-verify at the source",
+        "Explains CDBG-DR is the last dollar in, subject to duplication-of-benefits review of all other assistance"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We want to build a business continuity plan and risk register so we're ready if a hurricane hits next season.",
+      "better_skill": "nonprofit-risk-management"
+    },
+    {
+      "query": "Our rural health clinic wants to expand; no disaster involved. Are we eligible for a USDA Community Facilities loan?",
+      "better_skill": "nonprofit-community-facilities-finance"
+    }
+  ]
+}

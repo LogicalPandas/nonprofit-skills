@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-faith-communications-pastoral",
+  "version": "0.1.0",
+  "description": "Faith-Based Nonprofit Pastoral Communications",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Faith-Based Nonprofit Pastoral Communications"
+      }
+    }
+  }
+}

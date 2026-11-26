@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-arts-venue-rental-earned-income",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm ED of the Larkspur Arts Center in Savannah, GA — we own a renovated 1920s building (still carrying a mortgage from the renovation) with a 400-seat theater, a gallery, two dance studios, and a courtyard. Our board wants rental income to grow from $40K to $150K next fiscal year, mostly by booking weddings and corporate events. Right now we rent at a flat $1,500 for anyone, and staff often volunteer to help at rentals. Where should we start?",
+      "expected_output": "A rental-program plan: audit inventory and true dark hours by space, build channel-based rate tiers benchmarked against comparable venues with staffing/A/V/setup billed separately, a written discount policy, a per-event cost model that ends unpaid staff help, a master calendar where the season is senior, and a UBIT check including the mortgage (debt-financed property), with CPA and staff review.",
+      "assertions": [
+        "Starts with an inventory audit of each rentable space (capacity/legal occupancy, condition) and computes dark hours by space from the production calendar",
+        "Replaces the flat rate with channel-based tiers (community/nonprofit, private events, corporate, production, rehearsal) benchmarked against comparable local venues, with staffing, A/V, setup/strike and overtime billed separately from base rent",
+        "Calls for a per-event cost model and says all rental staffing should be scheduled, compensated and billed rather than volunteered off the clock",
+        "Requires one master calendar where the artistic/production calendar is senior and rentals never bump productions, with production and install blackouts",
+        "Flags that because the building carries acquisition debt, rental income may be debt-financed income depending on exempt-use share, and that ancillary lines like parking and bar are generally taxable — with the CPA to confirm",
+        "Recommends a written discount policy for mission-fit renters and booking donated space as in-kind"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Wedding renter just sent their COI — it's an ACORD form with our name typed under 'additional insured.' They also want their cousin to bartend with booze they bring. Event is in 3 weeks in Texas. Are we fine?",
+      "expected_output": "Explains a certificate alone confers no coverage — require an actual additional insured endorsement, primary and non-contributory wording, policy dates spanning the event, and liquor liability — and prohibits renter-poured service in favor of a licensed caterer or org-run bar with trained servers, telling the user to verify Texas permit rules and to have staff review the agreement.",
+      "assertions": [
+        "States that a typed additional-insured line on an ACORD 25 certificate confers no coverage and that an actual additional insured endorsement is required",
+        "Asks for primary and non-contributory coverage, policy dates spanning the event, and liquor liability coverage since alcohol is served",
+        "Prohibits renter-poured or self-serve alcohol and recommends a licensed caterer or org-run bar with trained/certified servers",
+        "Notes that whoever controls alcohol service typically carries dram-shop liability",
+        "Tells the user to verify Texas/local alcohol permit rules and lead times with the state authority rather than generalizing"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "A local promoter wants to rent our 600-seat hall for a concert series: they'd pay $2,500 base rent per night plus 10% of their net profits, and they want our lighting rig, sound system and pianos included — which would be about 60% of the total price. They'd also play recorded music between sets. Our board treasurer says rent is never taxable for a nonprofit. Is that right?",
+      "expected_output": "Explains that the real-property rent exclusion is lost when rent depends on net profits (whereas a fixed percentage of gross would not by itself disqualify it), that if more than half the rent is for personal property none of it is excluded so equipment should be repriced or unbundled, routes music licensing to the licensing skill, and requires CPA review.",
+      "assertions": [
+        "Explains that rent determined in whole or part by net income or profits loses the rent-from-real-property exclusion, and does not claim the $2,500 base stays automatically excluded",
+        "Distinguishes a fixed percentage of gross receipts, which does not by itself disqualify the exclusion, from a net-profits share",
+        "States that if more than 50% of total rent is attributable to personal property (equipment), none of the lease's rent is excluded, and suggests repricing or unbundling equipment",
+        "Routes the renter's music performance-rights questions to nonprofit-arts-performance-licensing and suggests a contract clause placing that liability",
+        "Recommends the org's CPA review the full arrangement before adopting the structure, with deep 990-T mechanics routed to nonprofit-form-990"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "How should we price our own season's subscription packages and single tickets for the 400-seat hall?", "better_skill": "nonprofit-arts-box-office-subscriptions"},
+    {"query": "We're planning our annual gala with an auction in our theater lobby — help me build the run-of-show and sponsorship levels.", "better_skill": "nonprofit-fundraising-events"}
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-retail-staffing",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the store manager at Bridges Thrift in Fort Collins, CO, which funds a refugee resettlement nonprofit. Open Tue-Sun 10-6. I have 3 paid staff (me, an assistant manager, one part-time cashier) and about 45 active volunteers. Saturdays are a disaster: last month two Saturdays had only volunteers in the building and nobody could open the safe. Can you design our staffing model and a weekly coverage plan?",
+      "expected_output": "A blended paid-plus-volunteer staffing model built around a minimum paid-keyholder-per-shift rule, a floor role matrix by day-part with required roles, a shift lead per shift, cross-training, and a gap analysis that hands volunteer and hiring gaps to the right functions.",
+      "assertions": [
+        "Sets an explicit rule that every shift has at least one paid, vetted keyholder, and never assigns a volunteer as keyholder",
+        "Provides a floor role matrix by day-part listing required roles (keyholder, shift lead, certified cashier, sorter, floor) and treats Saturday as needing heavier coverage",
+        "Schedules by role qualification rather than headcount alone, e.g., checking that a cashier-certified person is on each shift",
+        "Recommends cross-training (cashier, sorter, floor) so one no-show doesn't break minimum coverage",
+        "Hands volunteer-hour gaps to volunteer management/recruitment and paid-hire gaps to HR (or names nonprofit-volunteer-management and nonprofit-hr) rather than designing recruiting or pay itself",
+        "Notes that three paid staff over six days may not cover a keyholder on every shift, and flags that a paid hire or schedule change may be needed"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "need a training checklist for new register volunteers at our hospital auxiliary gift & thrift shop. they get the general volunteer orientation from HR already. what else?",
+      "expected_output": "A retail-specific onboarding track separate from general orientation: shadow shift, register/POS certification checkpoint, grading basics, customer service, safety/loss-prevention briefing, recorded sign-offs, and a defined clearance point for unsupervised shifts.",
+      "assertions": [
+        "Distinguishes retail onboarding from the general volunteer orientation rather than repeating mission/policy content",
+        "Includes a shadow shift and a register/POS certification checkpoint before the volunteer works the register alone",
+        "Includes grading basics and a safety/loss-prevention briefing",
+        "Requires recorded sign-offs and a defined point at which the volunteer is cleared for unsupervised shifts"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our paid assistant manager (hourly, ~32 hrs/week) at our animal shelter's thrift store says she'd love to 'volunteer' Sunday afternoons pricing and running the register since she believes in the mission. Also, our paid cashier quit and a couple of volunteers offered to cover her shifts permanently so we can save the wage. Both sound great for our budget, right? We're in Pennsylvania.",
+      "expected_output": "Flags both arrangements as blurring paid and volunteer work with wage-and-hour exposure, advises not to schedule them, and routes the question to HR and, where unclear, employment counsel. It also notes that volunteers can't take the cash-accountable/keyholder role.",
+      "assertions": [
+        "Warns that a paid employee doing her regular store duties as unpaid 'volunteer' hours creates wage-and-hour exposure",
+        "Warns that filling a vacated paid role with volunteers doing the same job also creates wage-and-hour risk",
+        "Recommends routing both arrangements through HR (or nonprofit-hr) and employment counsel before scheduling them",
+        "Notes that volunteers covering the cashier's shifts should not be placed in keyholder or cash-accountable roles, so a paid keyholder is still required on those shifts",
+        "Does not give a definitive legal ruling and instead defers classification questions to HR or counsel"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We need to recruit 20 more volunteers for our thrift store this spring. How do we run a recruitment campaign and screen applicants?",
+      "better_skill": "nonprofit-volunteer-management"
+    },
+    {
+      "query": "Should our thrift store cashiers be classified as exempt or non-exempt, and what should we pay them?",
+      "better_skill": "nonprofit-hr"
+    }
+  ]
+}
