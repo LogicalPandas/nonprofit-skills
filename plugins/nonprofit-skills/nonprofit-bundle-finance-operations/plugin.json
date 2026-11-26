@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-bundle-finance-operations",
+  "version": "0.1.0",
+  "description": "Includes 7 nonprofit skills for Finance & Operations.",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Finance & Operations Bundle"
+      }
+    }
+  }
+}

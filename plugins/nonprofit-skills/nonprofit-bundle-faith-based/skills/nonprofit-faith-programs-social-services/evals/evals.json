@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-faith-programs-social-services",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm program director at New Hope Mission, a Christian nonprofit in Fresno, California running a 40-bed men's shelter. Right now it's all private money (~$700K/yr from churches and donors) and men must stay sober and attend nightly chapel to keep their bed. Our county CoC just told us we could get about $350,000 a year in HUD Continuum of Care funding for 20 of the beds. Our board really wants the money but also says 'chapel is the heart of what we do.' How would we redesign the program to take the HUD money without losing who we are?",
+      "expected_output": "Maps the funding stack and explains that HUD CoC-funded beds must be low-barrier with no sobriety or religious-participation preconditions; presents program-mode options (secular delivery of funded beds with optional separate chapel vs. keeping a discipleship program on private funds) and walks the voluntary/separate/not-a-condition test, beneficiary notice with HUD model language, alternative-provider MOU, two-lane staffing, and two separate outcome reports, with legal review.",
+      "assertions": [
+        "Distinguishes religious motivation (protected) from conditioning service on religious participation, and states that HUD CoC-funded beds cannot require chapel or sobriety for admission or continued stay",
+        "Walks the voluntary / separate / not-a-condition test for chapel, including no attendance-taking or absence follow-up and no benefits for attendees",
+        "Offers program-mode options such as funded beds delivered secularly with optional separate chapel, while any discipleship-integrated track stays on private funds",
+        "Requires a written beneficiary notice using the agency's model language and a named secular alternative provider under a referral MOU",
+        "Recommends separating paid funded-service staff from volunteers/chaplains offering spiritual support only on request",
+        "Recommends keeping funded-service outcomes separate from mission/faith metrics, with no religious content in the HUD report"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Starting a food pantry out of our church basement (Lutheran, Milwaukee). We'll get food from Feeding America Eastern Wisconsin and some TEFAP. Pastor wants volunteers to pray with each family and hand out a devotional before they get their box. Fine?",
+      "expected_output": "Says no to prayer/devotional as a precondition: TEFAP's civil-rights assurance and the Feeding America partner agreement bar conditioning distribution on religious activity; recommends distribution without religious message at the point of service with an optional prayer table or chaplain on request, posting the USDA nondiscrimination poster, and considering a client-choice model.",
+      "assertions": [
+        "States that requiring prayer or a devotional before food would violate the TEFAP/USDA civil-rights assurance and/or the Feeding America partner-pantry agreement",
+        "Notes that the partner agreement can restrict religious content even for non-federal food",
+        "Recommends distributing without a religious message at the point of service, with prayer or literature available separately only for those who ask",
+        "Mentions posting the required USDA 'And Justice for All' nondiscrimination poster",
+        "Distinguishes the congregation's religious motivation from conditioning service, rather than telling them to remove religious identity altogether"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We run Restoration Ranch, a 12-month Christ-centered residential recovery program in Arkansas, all privately funded. A county probation officer wants to start sending us court-ordered clients as a condition of probation, and the state block-grant office says we could get SAMHSA pass-through funds too. Both sound great for growth. What do we need to watch out for?",
+      "expected_output": "Flags that court-mandated participants routed to a religious program without a genuine secular alternative create Establishment Clause exposure (Warner/Kerr/Inouye line), requiring a documented secular option; explains SAMHSA pass-through triggers Charitable Choice rules so the discipleship curriculum must be unbundled or privately funded, with notice and alternative provider; distinguishes vouchers; routes the rule questions to the religious-liberty skill and counsel.",
+      "assertions": [
+        "Warns that accepting court-ordered clients without a genuine secular alternative creates Establishment Clause exposure, citing the Warner line of cases or equivalent",
+        "Recommends documenting at intake that the client was offered and declined a secular option, or declining court-mandated intake without one",
+        "Explains that SAMHSA/state block-grant pass-through funds trigger Charitable Choice rules so the discipleship curriculum must be unbundled or paid from private funds, with an alternative provider available on request",
+        "Distinguishes direct funding from indirect voucher funding as a different compliance path",
+        "Recommends routing the statutory questions to counsel and/or the religious-liberty compliance skill before accepting either stream"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Our county denied our church's permit to add a weekday food pantry, citing traffic, but approved a banquet hall down the road. Do we have a RLUIPA claim and what goes in a demand letter?",
+      "better_skill": "nonprofit-faith-religious-liberty-compliance"
+    },
+    {
+      "query": "Help me build a logic model and outcome indicators for our secular youth mentoring program's foundation grant.",
+      "better_skill": "nonprofit-program-design"
+    }
+  ]
+}

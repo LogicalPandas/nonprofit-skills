@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-charitable-registration",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Bright Paws Rescue is a Tennessee 501(c)(3) with about $650k in revenue, registered for charitable solicitation only in Tennessee. In January we're launching our first national email appeal to 18,000 subscribers in 46 states, adding a donate button to the website, and running a peer-to-peer walk with participant teams in Georgia, Florida and North Carolina. Which states do we need to register in, and how do we do it?",
+      "expected_output": "Explains that registration follows solicitation of residents, builds the footprint map first, applies the Charleston Principles to email and the donate button, and gives a filing approach without a memorized state list, with compliance review.",
+      "assertions": [
+        "Explains that registration is triggered by soliciting residents of a state, not by where the organization is incorporated",
+        "Recommends building a solicitation footprint map by channel (email, website, peer-to-peer, events) before filing",
+        "Treats the email appeal like direct mail under the Charleston Principles, so it can trigger registration in recipients' states",
+        "Says to register before the first solicitation in a new state",
+        "Tells the user to confirm each state's requirement and exemptions on the regulator's site or NASCO map rather than giving a definitive memorized list",
+        "Notes the URS has limited utility now and many states require their own forms or supplements"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "registered in 22 states, we've missed 3 renewals this year. build me a tracker. our FY ends June 30",
+      "expected_output": "A per-state registration tracker built around each state's own renewal rule, with fee and 990-version columns and a named owner.",
+      "assertions": [
+        "Explains renewal dates are not uniform and many are set relative to the organization's fiscal year-end rather than a calendar date",
+        "Provides a per-state tracker with columns such as trigger, status, form, fee with date checked, renewal basis, next due date, 990 version attached and owner",
+        "Says the Form 990 attached should be the same version filed federally",
+        "Tells the user to confirm fees and forms on each state regulator's current site",
+        "Recommends treating registration as a standing program with an owner, and/or a commercial multi-state filing service at this scale"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're tiny, all-volunteer, about $18k a year, so we're exempt from charitable registration everywhere, right? Also we just signed with a telemarketing firm to call donors in Ohio and Pennsylvania for our spring drive.",
+      "expected_output": "Corrects the blanket-exemption assumption, explains state-by-state exemption claims, and flags paid-solicitor registration and contract filing before the vendor starts, with compliance review.",
+      "assertions": [
+        "Does not confirm a blanket exemption and says exemptions vary by state and must be verified per state",
+        "Notes some states require an annual exemption claim or filing even for exempt organizations",
+        "Flags that the telemarketing firm may need its own paid-solicitor registration in each state",
+        "Notes some states require the paid-solicitor contract itself to be filed before the vendor begins work",
+        "Recommends review by a compliance owner or counsel before submitting filings"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Which form do we file with the IRS this year, the 990-N or the 990-EZ?",
+      "better_skill": "nonprofit-form-990"
+    },
+    {
+      "query": "We're opening an office in Arizona; do we need to qualify our corporation to do business there?",
+      "better_skill": "none"
+    }
+  ]
+}

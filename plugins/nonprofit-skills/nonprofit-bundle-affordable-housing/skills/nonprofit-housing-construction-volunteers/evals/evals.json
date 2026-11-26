@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-housing-construction-volunteers",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the volunteer coordinator at Habitat for Humanity of Greater Pinewood (affiliate in central Georgia, 6 houses a year, 1 construction supervisor, 2 AmeriCorps members). Next season we have three houses: permits for House A in mid-February, House B in mid-March, House C in early May, and we want all three closed by mid-November. Our big volunteer days are Saturdays, and we lose a lot of folks in July/August heat. Can you build me a build-season calendar plan across the three sites?",
+      "expected_output": "A build-season calendar approach scheduled backward from inspection gates with staggered sites so every Saturday has a volunteer-friendly phase, crew-based capacity, explicit no-volunteer/heat days, and a published phase-named calendar, coordinated with the supervisor.",
+      "assertions": [
+        "Schedules each house backward from inspection gates (e.g., foundation, framing, rough-in, insulation, final) with buffer days after each gate",
+        "Staggers the three sites so each Saturday has at least one site in a volunteer-friendly phase (framing, insulation, drywall hanging, finish, landscaping) rather than licensed-trade or inspection-hold phases",
+        "Sets capacity as named crews with one crew leader per 4–8 volunteers rather than raw headcount",
+        "Explicitly marks no-volunteer days such as paid-trade phases, inspection holds, and extreme-heat windows",
+        "Recommends publishing the calendar months ahead with phase names so sponsors can book specific tasks",
+        "Recommends a fallback task bank for failed inspections, weather, or no-show crews"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "write me the saturday morning safety talk for our build site. we're putting on roof sheathing on house 2 and doing interior paint on house 1. we usually get a youth group from a church, some 15 and 16 yr olds",
+      "expected_output": "A site safety orientation following the outlined segments, tailored to today's hazards (roof work and open edges, paint), with PPE, tool orientation, the 6-foot fall-protection rule, ladder rules, minor-volunteer restrictions, and incident steps; flags the under-16 youth issue and notes a construction staffer should review.",
+      "assertions": [
+        "Follows a timed orientation structure covering the day's scope, today's site hazards, PPE and tools, safety rules, what to do if someone is hurt, logistics, and waiver/age verification",
+        "Includes fall protection at 6 feet (guardrails, hole covers, or harness systems) for the roof work",
+        "Applies the minor-volunteer policy: flags that 15-year-olds should not be on the active construction site and that 16–17-year-olds may not use power tools, work above 6 feet, or do roofing",
+        "States a 'no orientation, no tool' rule for power tools",
+        "Recommends that a knowledgeable construction staff member review the safety plan before use"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Budget's tight at our affiliate in Lubbock this year. One of our regular volunteers is a retired licensed electrician. Our construction manager suggested we just have him and a crew of volunteers do all the electrical rough-in on our next two houses instead of paying our electrical sub, and maybe have our AmeriCorps member take over the construction manager's site duties on Tuesdays and Thursdays to save on overtime. Good idea?",
+      "expected_output": "Explains that licensed scopes stay under the licensed contractor of record who pulls the permit, volunteers may only assist where code and the trade lead allow and the building official confirms, and that using an AmeriCorps member as a staff substitute risks grant compliance.",
+      "assertions": [
+        "States that electrical scope remains with the licensed contractor of record who pulls the permit and owns the work; a licensed volunteer may serve but volunteers only assist within code",
+        "Recommends confirming with the local building official what assisting is permitted on the permit before the day",
+        "Warns against shifting a licensed scope to volunteers to save budget, noting the supervisor not the budget decides task assignment",
+        "States that AmeriCorps members may not displace staff and that having a member do the construction supervisor's job puts the grant out of compliance",
+        "Notes AmeriCorps members are not employees, so duties and hours follow the member agreement"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Help me design a volunteer recognition program and retention survey for all our volunteers across the organization.", "better_skill": "nonprofit-volunteer-management"},
+    {"query": "How many sweat-equity hours should our partner families have to complete, and what activities should count toward them?", "better_skill": "nonprofit-housing-homeownership-programs"}
+  ]
+}

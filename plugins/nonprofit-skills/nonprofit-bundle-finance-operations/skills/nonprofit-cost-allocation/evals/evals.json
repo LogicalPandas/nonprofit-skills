@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-cost-allocation",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Pathways Workforce Partners ($3.5M, Ohio) has never had a negotiated indirect rate. We just received a subaward from our state workforce board under a federal Department of Labor award the state received in March 2025. Our budget: $180,000 salaries and fringe, $25,000 supplies and travel, a $90,000 subaward to Clark Community College, $15,000 equipment, and $12,000 in participant support stipends. The state says it caps indirect at 10%. What indirect can we charge?",
+      "expected_output": "Confirms award applicability and de minimis eligibility, computes MTDC with the correct exclusions and subaward limit, challenges the 10% cap's authority, and stops for qualified review.",
+      "assertions": [
+        "Checks which version of the Uniform Guidance applies to the award (the October 1, 2024 revisions) before selecting a percentage",
+        "Explains the de minimis rate is up to 15% of MTDC, is optional, and is available only without a current federal negotiated rate",
+        "Builds MTDC including only the first $50,000 of the subaward and excluding equipment and participant support",
+        "Asks for the written authority behind the state's 10% cap, noting a pass-through generally cannot force a lower rate than an eligible recipient's de minimis election unless statute or regulation requires it",
+        "Quantifies any unrecovered amount as an organizational subsidy rather than assuming it counts as cost share",
+        "Recommends review by a CPA or indirect-cost specialist before submission"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "board member keeps asking what our afterschool program 'really costs' per kid. 140 kids, $410k direct. rent, finance, HR are shared across our 4 programs. how do i figure it out",
+      "expected_output": "Walks through a true-cost-per-unit analysis that adds a documented share of shared cost pools, divides by units of service, and compares to what funders pay to reveal the subsidy.",
+      "assertions": [
+        "Adds the program's share of each shared cost pool using a documented, benefit-based basis (e.g., square footage for rent, headcount for HR)",
+        "Divides total cost by units of service (e.g., participants) to get a per-unit cost",
+        "Compares the true per-unit cost to what funders or fees actually pay to show the annual unrestricted subsidy",
+        "Distinguishes this internal true-cost figure from a federal compliance or de minimis indirect rate",
+        "Suggests presenting the subsidy math alongside the program's mission case for the board"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We have a 2023 NICRA with HHS that uses a $25,000-per-subaward base. Our program officer at a different agency says under the new rules we can just bump the subaward base to $50,000, and also use the 15% de minimis on this one grant since it's higher than our negotiated rate. OK to do both?",
+      "expected_output": "Says no to both: honor the NICRA's approved base until revised, de minimis is unavailable with a current negotiated rate, and switching methods per grant fails consistency; escalate for qualified review.",
+      "assertions": [
+        "Says not to replace the NICRA's $25,000 subaward base with $50,000 unless the agreement is appropriately revised",
+        "States de minimis is not available while the organization has a current federal negotiated rate",
+        "Warns against switching methods on individual grants to maximize recovery (consistency requirement)",
+        "Recommends checking the award's rule version/effective date and escalating to a grants/finance specialist or the cognizant agency before acting"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Build our FY28 operating budget with program-by-program detail",
+      "better_skill": "nonprofit-budgeting"
+    },
+    {
+      "query": "Will we run short of cash in March while we wait on grant reimbursements?",
+      "better_skill": "nonprofit-reserves-cash-flow"
+    }
+  ]
+}

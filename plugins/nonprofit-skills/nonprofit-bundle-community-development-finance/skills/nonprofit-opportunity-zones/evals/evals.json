@@ -1,0 +1,56 @@
+{
+  "skill_name": "nonprofit-opportunity-zones",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm ED of Main Street Revival, a 501(c)(3) in a small town in rural Kansas (pop 4,200). We own a vacant 1920s downtown building we want to turn into a business incubator and community kitchen; renovation is about $2.2M. A local family just sold farmland and their advisor says they could invest the capital gain through an Opportunity Zone fund into our project in early 2027. What role should we play, and is this a good fit?",
+      "expected_output": "An OZ suitability memo (tract status and survival on the 2027 map, gain timing, asset-test viability, capital-stack fit, mission benefit, recommendation) plus a role comparison recommending a sponsor/QOZB role through a taxable subsidiary or JV rather than the 501(c)(3) itself. It covers OZ 2.0 rural features, community-benefit covenants and tax counsel/CPA review.",
+      "assertions": [
+        "Recommends confirming the tract is designated and survives the new designation map effective January 1, 2027, since the investment would be made in 2027",
+        "Explains that a 501(c)(3) cannot itself be a QOF and recommends the sponsor/QOZB role via a taxable subsidiary or joint venture, keeping fees at market-documented rates",
+        "Applies OZ 2.0 rules for 2027 investments (rolling five-year deferral, single step-up) and notes the rural QROF and relaxed substantial-improvement benefits may apply, telling the user to confirm current guidance",
+        "Addresses the substantial-improvement requirement for an existing building and the 180-day gain reinvestment window versus project readiness",
+        "Warns OZ equity expects market-rate returns and shouldn't crowd out cheaper capital such as grants, CDFI loans or NMTC",
+        "Recommends binding, measurable community-benefit covenants and states that tax counsel and a CPA must review before any filing or binding election"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Our family foundation (private, $40M assets) got pitched an LP stake in a qualified opportunity fund doing workforce housing. Pitch deck says we'd get 'tax deferral plus impact.' Worth it?",
+      "expected_output": "Explains a tax-exempt foundation gets little OZ benefit since deferral is an election on taxable capital gain, flags UBIT from debt-financed income and excess business holdings risks, recommends evaluating it as a PRI with counsel or skipping, and routes the allocation question to the foundation's investment policy and counsel.",
+      "assertions": [
+        "Explains that a tax-exempt investor has little or no capital-gains tax to defer, so the 'tax deferral' pitch provides little benefit",
+        "Flags that an LP interest can generate UBIT through debt-financed income flowing through K-1s",
+        "Flags excess business holdings rules as a possible limit on foundation ownership",
+        "Recommends evaluating any participation as a program-related investment with counsel, or skipping it",
+        "Routes the question of whether the endowment should allocate to OZ funds to the foundation's investment policy and counsel",
+        "Notes OZ law itself requires no affordability or community-benefit commitments, so impact claims need contractual covenants"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're the nonprofit sponsor/QOZB in an OZ deal for a community health and retail building in Memphis. The QOF raised $8M in March but our permits are stuck, so the cash is sitting in the fund. Also the developer wants to lease a corner unit to a liquor store, and our community partner wants a 'commitment to hire locally' in the deal docs. Our calendar-year QOZB has never sent the QOF any annual statement. What should we be worried about?",
+      "expected_output": "Flags that undeployed cash in the QOF risks failing the 90% asset test and recommends moving cash into the QOZB under a written working-capital safe-harbor plan. It also flags the liquor store tenant as a sin business that can break qualification, replaces the vague hiring pledge with numbered, dated, enforceable covenants, flags the missed 6039L QOZB statement and penalty exposure, and requires tax counsel/CPA review.",
+      "assertions": [
+        "Warns that cash sitting undeployed in the QOF threatens the 90% investment standard at its semiannual testing dates and recommends deploying into the QOZB under a written working-capital safe-harbor plan and schedule",
+        "Flags that a liquor store tenant is a prohibited sin business that can break QOZB qualification, and recommends tenant-use restrictions",
+        "Replaces 'commitment to hire locally' with measurable, dated, recorded covenant terms that include remedies",
+        "Flags the QOZB's annual statement obligation to the QOF (due by the first day of the second month after year-end) and per-day penalty exposure, telling the user to check current final rules and form instructions",
+        "Recommends tax counsel and CPA review before any cure election, statement or filing"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We're pitching a CDE for New Markets Tax Credit allocation for our clinic. What do CDEs look for?",
+      "better_skill": "nonprofit-nmtc-deals"
+    },
+    {
+      "query": "We need help structuring the LIHTC and HOME layers for our 80-unit affordable housing project in a qualified opportunity zone.",
+      "better_skill": "nonprofit-housing-development-finance"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-faith-facilities-sanctuary",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the business administrator at First Presbyterian of Lancaster, Pennsylvania (PCUSA, ~500 members). Our pastor has been saying yes to outside groups for years on a handshake: two AA meetings, a Scout troop, a homeschool co-op, a Korean congregation that rents the sanctuary Sunday afternoons, a piano teacher who uses the fellowship hall for paid lessons, and the occasional non-member wedding. Nobody gives us insurance certificates and fees are all over the place. We still owe about $600K on the loan for the fellowship-hall addition. The session asked me to bring them a facility use policy in January. What should it include and how do I clean up the current mess?",
+      "expected_output": "Lays out a facility use policy built from the checklist: inventory users, set eligibility categories and content-based mission-alignment criteria before fees, tiered fee schedule, COI with additional-insured status from every user, rules on alcohol/kitchen/AV/keys/cleaning, indemnification and cancellation, written session adoption cited by date, and a denial-review process; plans a transition for existing users and flags the debt-financed fellowship hall rentals for UBIT analysis.",
+      "assertions": [
+        "Recommends inventorying current users and sorting them into categories (members, other faith communities, community nonprofits, civic, commercial/for-profit, life-cycle) before setting fees",
+        "Requires a certificate of insurance naming the church as additional insured (not merely certificate holder) from every outside user, with a deadline for existing users",
+        "Includes explicit rules for alcohol, kitchen, AV, keys and cleaning plus indemnification/hold-harmless and cancellation terms",
+        "Calls for the session to adopt the policy in writing, with agreements citing it by date, and a pre-set process for reviewing denials or close calls",
+        "Flags that rentals in the debt-financed fellowship hall (e.g., the paid piano lessons) need §514 debt-financed UBIT analysis, routing the tax analysis to the federal-tax skill or a tax advisor",
+        "Recommends counsel review of any mission-alignment, wedding-eligibility, or denial clause against state and local public-accommodation law"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "county assessor just sent a notice saying our parsonage and a vacant lot we bought for future expansion may no longer be exempt, plus they want info on the cell antenna in our steeple. appeal deadline is in 30 days. small AME church in north carolina. what do we send them",
+      "expected_output": "Treats exemption as a parcel-by-parcel state-law question: walks each parcel through ownership, primary use, mixed use and debt, notes parsonage and vacant-land treatment varies by state, prepares a parcel-data response (title proof, use inventory with square footage/hours/photos, pro-rata worksheet for the antenna, adopted policy), and urges local property-tax counsel before the appeal deadline.",
+      "assertions": [
+        "Explains that property-tax exemption is decided parcel by parcel under state law and is separate from federal 501(c)(3)/church status",
+        "Analyzes each parcel (parsonage, vacant lot, steeple/antenna area) separately by ownership and primary use, noting that land held for future use and parsonage treatment vary by state",
+        "Identifies the cell antenna as likely producing a small taxable pro-rata carve-out and recommends documenting a mixed-use calculation",
+        "Recommends responding with parcel data — proof of ownership, use inventory with square footage, hours and photos, pro-rata worksheet — rather than theological arguments",
+        "Urges engaging local property-tax-exemption counsel promptly because of the short appeal deadline"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our congregation (Sacred Heart Episcopal, Dayton, Ohio) has shrunk to 40 people and the vestry wants to sell the building to a developer for $1.2M and give the proceeds to our favorite local homeless shelter before we close. The vestry already voted. A broker is ready to list it next week. Anything we're missing?",
+      "expected_output": "Flags that the vestry cannot simply sell and give away proceeds: the Episcopal Dennis Canon likely holds the property in trust for the diocese, requiring diocesan approval; walks the deed, state statute, articles/bylaws, trust clause, deconsecration, buyer/reuse and proceeds-distribution steps, and routes to denominational counsel and the governance skill before listing.",
+      "assertions": [
+        "Identifies the Episcopal Dennis Canon trust clause as likely requiring diocesan/judicatory approval for the sale",
+        "Recommends reading the deed for reversionary clauses or use restrictions and the state statute on religious-corporation property conveyance before listing",
+        "States that distribution of sale proceeds is constrained by denominational rules, state law and dissolution provisions, so the vestry cannot simply give the money to a chosen cause",
+        "Mentions completing a deconsecration rite before closing and considering reuse-buyer implications or restrictive covenants",
+        "Recommends engaging denominational counsel (and coordinating governance questions with the church-governance skill) before the listing proceeds"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "We rent our church parking lot to a stadium on game days through an attendant company. Do we need to file a 990-T on that income?",
+      "better_skill": "nonprofit-faith-990-exemption"
+    },
+    {
+      "query": "The city denied our mosque's permit to expand, saying a nearby banquet hall got approval under different rules. Do we have a RLUIPA claim and how strong is it?",
+      "better_skill": "nonprofit-faith-religious-liberty-compliance"
+    }
+  ]
+}

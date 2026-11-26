@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-housing-permanent-supportive-housing",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I run program design at New Roots Supportive Services in Albuquerque ($3.8M budget). We're opening a 48-unit single-site PSH building next fall for people experiencing chronic homelessness, with project-based vouchers for rent. We have a services budget from a 3-year county grant and we're wondering about Medicaid. Our board also wants house rules like 'residents must meet with case manager weekly' and 'no alcohol in units.' Help me draft the program design: model, staffing, funding braid, and lease-up.",
+      "expected_output": "A PSH program design document that locks Housing First into documents (removing service-participation and sobriety conditions), sets staffing by acuity with caseloads and the services/property role split, builds a funding braid with Medicaid verification and warning against single-grant dependence, and paces lease-up to service capacity via coordinated entry.",
+      "assertions": [
+        "Flags mandatory weekly case manager meetings and alcohol bans as Housing First breaches (services must be voluntary; no sobriety conditions), using the USICH quick screen or checklist",
+        "Requires a written role split: the property manager owns the lease and services staff never enforce it",
+        "Proposes a staffing model matched to acuity with caseload ranges, supervision ratios, and after-hours coverage with a live decision-maker",
+        "Builds a funding braid separating rent, operating, and services, notes Medicaid cannot pay rent, and says to confirm covered services/provider qualifications (e.g., 1915(i)/waivers) with the state in writing",
+        "Warns that a services budget carried by one time-limited grant is a retention risk",
+        "Paces lease-up to services staffing capacity, accepting coordinated entry referrals under a written pacing agreement, and housing while documenting rather than making documents a gate"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "are we actually housing first?? our scattered-site PSH (65 households, Columbus) rejects people with evictions in the last 3 yrs and our retention dropped to 71%. case managers have like 30 clients each. what do i look at",
+      "expected_output": "A Housing First fidelity self-assessment approach scored from actual admissions/rejection/filing data, flagging the eviction-history screen, caseload inflation, and retention below benchmark, with remediation items and owners.",
+      "assertions": [
+        "Applies the USICH four-question quick screen (no income, no sobriety/treatment, criminal justice involvement, voluntary services)",
+        "Flags rejecting applicants for prior evictions/poor rental history as a screen-out practice contrary to Housing First",
+        "Identifies caseloads around 30 as likely too high for the acuity served and recommends right-sizing to acuity or narrowing the acuity band",
+        "Compares 71% retention against the stated benchmark for high-fidelity PSH and recommends tracking 12/24-month retention and exits to homelessness",
+        "Recommends scoring fidelity from actual admissions, rejections, and eviction-filing data rather than policy text, using a scored self-assessment with fixes and owners"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Tenant in our single-site PSH in Tacoma is $640 behind on rent (3 months) and neighbors have complained about loud arguments. Our property manager wants to file eviction this week, and he's asking the tenant's case manager to write up a statement about her drinking for the court file. What should we do?",
+      "expected_output": "Applies the arrears and behavior response ladders before any filing, rejects using substance use as eviction grounds, keeps the case manager out of lease enforcement, offers transfer before eviction and legal-aid referral, and flags reasonable accommodation questions to the fair-housing skill.",
+      "assertions": [
+        "Applies an arrears ladder (personal outreach, affordable repayment agreement, flexible funds, benefit/income fixes) and states that filing for arrears alone is a protocol failure",
+        "Applies a behavior ladder (engagement, increased voluntary supports, time-limited lease-compliance plan, neighbor mediation, transfer offer) before any legal action",
+        "States that substance use alone is not an eviction reason; grounds come from the lease",
+        "Says the case manager should not provide statements for lease enforcement, because services staff never enforce the lease",
+        "Recommends referring the tenant to legal aid before any filing and flags reasonable accommodation questions for fair-housing review"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Our rapid rehousing program's rental assistance tapers after 9 months — how should we structure the step-down and exit planning?", "better_skill": "nonprofit-housing-rapid-rehousing-transitional"},
+    {"query": "Help us redesign coordinated entry access points and the HMIS data quality process for our CoC.", "better_skill": "nonprofit-housing-homelessness-services"}
+  ]
+}

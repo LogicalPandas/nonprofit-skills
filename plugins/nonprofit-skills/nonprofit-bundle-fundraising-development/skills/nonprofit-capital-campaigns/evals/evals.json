@@ -1,0 +1,47 @@
+{
+  "skill_name": "nonprofit-capital-campaigns",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Our board at Maple Valley Community Health Center (FQHC in rural Vermont, $9M operating budget) just voted to explore a $6M capital campaign to build a dental and behavioral health wing. Our largest gift ever was $150,000. We've never done a campaign. Can you build us a gift range table for $6M and lay out the campaign phases and timeline? Our ED, Dr. Priya Raman, wants to bring something to the January board meeting.",
+      "expected_output": "A gift range table built backward from $6M, with a lead gift around 10-20% of the goal, each tier about half the one above, and prospects needed exceeding gifts needed. It also gives a four-phase plan (planning, quiet, public, close) and says the goal should be tested by a feasibility study and pipeline check before it becomes public.",
+      "assertions": [
+        "Builds the gift table backward from $6M with a lead gift of about 10-20% of the goal, each later tier about half the previous gift size, more gifts per tier as size drops, and the table footing to the goal",
+        "Includes a prospects-needed column larger than gifts-needed and a place for named prospects per tier, noting the top 2-3 tiers need identified, qualified prospects for the goal to be real",
+        "Flags that a lead gift far above the org's largest-ever gift ($150,000) needs testing, and recommends a feasibility study (often run by an outside consultant, with confidential stakeholder interviews) before committing to a public goal",
+        "Lays out the four phases (planning, quiet, public, close), including securing board and internal gifts first (ideally 100% board participation) and reaching a public-launch threshold (commonly 50-70% of goal committed) before announcing",
+        "Calls for coordinating the campaign calendar with the annual appeal calendar so the same donors are not over-solicited"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "quick q — who should chair our campaign? options are (a) our most famous board member, a local TV anchor who's given $500/yr, or (b) a retired construction CEO who gave $75k last year but hates public speaking. also how should the cabinet be set up? $3.2M library expansion, small-town Friends of the Library group in Ohio.",
+      "expected_output": "The response recommends the chair who can give a lead gift and ask peers over the one with general prominence. It then outlines the chair, cabinet and staff campaign director roles and their give-and-get expectations.",
+      "assertions": [
+        "Recommends prioritizing the candidate able to make or secure a lead gift and personally solicit peers (the retired CEO), explaining that willingness to give visibly and ask matters more than general prominence",
+        "Notes that chair selection is often the single biggest factor in quiet-phase success",
+        "Describes a steering committee or cabinet split by gift tier or constituency (e.g., major gifts, corporate/foundation, community) whose members are expected to give and get",
+        "Distinguishes the staff campaign director's coordinating role (logistics, prospect tracking, materials) from volunteer leadership, who drive relationships and asks",
+        "May suggest co-chairs or a visible public-phase role for the TV anchor, but not as the lead solicitor"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our feasibility consultant just delivered her report for our $4M shelter renovation campaign at Safe Harbor Women's Shelter. Of 24 interviewees, only 5 said they'd consider a lead-level gift, and nobody wanted to chair. Our ED is pushing to announce the $4M goal publicly at our spring gala in April anyway because 'momentum will carry us.' We have about $600K committed. How do I respond?",
+      "expected_output": "The response says the findings (below roughly a third willing at lead level, no viable chair) signal delaying or rescoping. It advises against a public launch at about 15% committed and recommends presenting the honest findings to the board.",
+      "assertions": [
+        "Identifies that fewer than roughly a third of interviewees willing to give at lead level, plus no viable campaign chair, is a signal to delay or rescope rather than proceed on the original goal",
+        "Advises against launching publicly at about $600K of $4M committed, citing the common public-launch threshold of 50-70% committed and the risk of losing momentum and a public shortfall",
+        "Recommends presenting the feasibility findings to the board even though they are unwelcome, possibly with a lower goal or delay",
+        "Proposes concrete next steps such as recruiting a chair, securing board participation, extending the quiet phase, or rescoping the goal against the actual pipeline"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "I'm meeting a donor who could give $250K to our building project next week — help me pick the ask amount and draft the proposal and gift agreement.", "better_skill": "nonprofit-major-gifts"},
+    {"query": "Plan our year-end direct mail appeal for the annual fund, including ask strings by segment.", "better_skill": "nonprofit-annual-appeals"}
+  ]
+}

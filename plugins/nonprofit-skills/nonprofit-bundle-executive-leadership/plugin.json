@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-bundle-executive-leadership",
+  "version": "0.1.0",
+  "description": "Includes 5 nonprofit skills for Executive Leadership.",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Executive Leadership Bundle"
+      }
+    }
+  }
+}

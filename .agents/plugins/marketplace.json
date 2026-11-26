@@ -5,6 +5,186 @@
   },
   "plugins": [
     {
+      "name": "nonprofit-bundle-advocacy-policy",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-advocacy-policy"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-affordable-housing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-affordable-housing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-arts-culture",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-arts-culture"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-communications-marketing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-communications-marketing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-community-development-finance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-community-development-finance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-executive-leadership",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-executive-leadership"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-faith-based",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-faith-based"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-finance-operations",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-finance-operations"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-fundraising-development",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-fundraising-development"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-governance-compliance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-governance-compliance"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-programs-impact",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-programs-impact"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-retail-operations",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-retail-operations"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-strategy-growth",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-strategy-growth"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-technology-data",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-technology-data"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "nonprofit-bundle-volunteer-people",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nonprofit-skills/nonprofit-bundle-volunteer-people"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
       "name": "nonprofit-coalition-building",
       "source": {
         "source": "local",

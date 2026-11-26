@@ -1,0 +1,56 @@
+{
+  "skill_name": "nonprofit-nmtc-deals",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm CFO of Eastside Community Health, an FQHC in Toledo, Ohio. We're planning a $14M new clinic building in a census tract our consultant says has a 34% poverty rate. We have site control, a $3M capital campaign underway, and could support maybe $6M of debt. Board wants to know if New Markets Tax Credits make sense and what the deal would look like.",
+      "expected_output": "Runs the five-gate NMTC suitability screen (size, eligible use, location/LIC, debt capacity, tolerance) and, if it passes, describes the leveraged structure (investor equity plus leverage loan into an investment fund, QEI to CDE, QLICI to a QALICB subsidiary), the 7-year compliance and recapture exposure, a CDE pitch approach, and the need for tax counsel and CPA review.",
+      "assertions": [
+        "Applies a structured suitability screen covering deal size, eligible use, Low-Income Community tract status, debt capacity and organizational tolerance for 7-year compliance",
+        "Recommends verifying the tract's LIC status with the CDFI Fund's NMTC mapping tool",
+        "Describes the leveraged structure: investor equity and a leverage loan into an investment fund that makes the QEI into a CDE, which makes QLICI loans to a QALICB (typically a single-purpose LLC of the nonprofit)",
+        "Explains that nonprofits pitch projects to CDEs that already hold allocation and recommends pitching several CDEs in parallel with a project summary",
+        "Warns against treating NMTC as a grant or assuming automatic loan forgiveness, and calls for modeling fees, debt service and the year-7 exit",
+        "States that tax counsel and a CPA must review the structure before reliance and that the board should review the financing decision"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "we closed our NMTC deal for our job training center last year. who on our team needs to do what for the next 7 years? I'm the new controller and nobody handed me anything.",
+      "expected_output": "A dated 7-year compliance calendar with a named owner: annual QALICB certification of the 50%/40%/40% tests and prohibited-business screen, leverage-loan covenant reporting, credit-allowance-date confirmations, records retention, change control, a recapture-trigger watch list and the exit window.",
+      "assertions": [
+        "Includes annual QALICB certification of the gross-income, tangible-property and services tests plus the prohibited-business and residential-rental screens",
+        "Recommends putting deadlines on the calendar ahead of each QLICI anniversary and naming an internal owner for compliance",
+        "Includes credit-allowance-date confirmations to the investor/CDE for each of the seven years and ongoing loan covenant reporting",
+        "Lists recapture triggers (early QEI redemption, failed tests or non-qualifying use of proceeds, CDE decertification) and explains the nonprofit's indemnity exposure",
+        "Requires running refinancing, new major tenants, expansion or restructuring past counsel and the CDE before acting",
+        "Plans for the exit/unwind window at the end of the compliance period"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're a community development corporation in Baltimore planning a mixed-use building: 48 affordable apartments on floors 2-5 and a 9,000 sq ft health clinic plus a corner store on the ground floor. Total $26M. Can we use NMTC for the whole building? And the corner store operator plans to make beer and wine the main thing she sells. Our ED also wants to know how to price the LIHTC side.",
+      "expected_output": "Explains NMTC cannot fund the residential rental portion (80% dwelling-income rule), so it should fund only the commercial/community component through a separate QALICB, often with a condo split, and the corner store's alcohol-focused business is a prohibited use. LIHTC pricing and the housing stack go to the housing development finance skill, and tax counsel/CPA review is required.",
+      "assertions": [
+        "States that NMTC cannot fund residential rental real estate (property with 80%+ of gross rental income from dwelling units) and should fund only the clinic/commercial component",
+        "Recommends a separate QALICB entity for the commercial/community component (e.g., condominium split or separate parcel) with clean cost allocation between entities",
+        "Flags that a store whose main business is selling alcohol for off-premises consumption is a prohibited business, including as a lessee, which can break QALICB qualification",
+        "Routes LIHTC pricing and the residential capital stack to the housing development finance skill (nonprofit-housing-development-finance) rather than pricing it",
+        "Recommends tax counsel and CPA review of the structure"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Should our nonprofit loan fund apply for CDFI certification so we can get Financial Assistance awards?",
+      "better_skill": "nonprofit-cdfi-finance"
+    },
+    {
+      "query": "A real estate investor wants to put capital gains into our project through a qualified opportunity fund. Should we be the QOZB?",
+      "better_skill": "nonprofit-opportunity-zones"
+    }
+  ]
+}

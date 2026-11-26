@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-bundle-volunteer-people",
+  "version": "0.1.0",
+  "description": "Includes 4 nonprofit skills for Volunteer & People Management.",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Volunteer & People Management Bundle"
+      }
+    }
+  }
+}

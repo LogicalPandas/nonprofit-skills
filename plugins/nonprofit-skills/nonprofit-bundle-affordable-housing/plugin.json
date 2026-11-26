@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-bundle-affordable-housing",
+  "version": "0.1.0",
+  "description": "Includes 13 nonprofit skills for Affordable Housing.",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Affordable Housing Bundle"
+      }
+    }
+  }
+}

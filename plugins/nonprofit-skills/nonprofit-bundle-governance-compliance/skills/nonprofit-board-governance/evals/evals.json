@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-board-governance",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm board chair of Riverbend Family Services, a $3.2M human services nonprofit in Dayton, Ohio with 13 directors. Our bimonthly meetings run three hours. The packet goes out the morning of the meeting, every committee chair reads their full report aloud, and the one item that actually matters this year (whether to open a second site in Springfield) keeps getting squeezed into the last 20 minutes. We vote on budgets and contracts directly; we've never adopted Ends or Executive Limitations policies. Redesign our meeting agenda and tell me what to change first.",
+      "expected_output": "A redesigned agenda built on a consent agenda, decision-importance ordering and timeboxes, with packet timing fixed first and the governance model named before structure is recommended.",
+      "assertions": [
+        "Includes a consent agenda bundling routine items (e.g., minutes, standard reports) and notes any director can pull an item off it before the vote",
+        "Places the second-site strategic discussion early-to-mid meeting rather than at the end",
+        "Assigns a minute allocation to each agenda item and/or recommends a timekeeper",
+        "Recommends sending the board packet roughly 5-7 days ahead instead of the day of the meeting",
+        "Has committees report by exception (only items needing board action) rather than reading full reports",
+        "Identifies the board as operating under the traditional (not Carver/Policy Governance) model and fits the advice to that"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "quick q. 9-person board, $900k budget arts org. finance and audit are one committee. also our exec committee (chair, VC, treasurer) basically decides everything the week before board meetings and the rest of the board just votes yes. what committees should we actually have? and draft a finance committee charter pls",
+      "expected_output": "Recommends a committee structure that flags the combined finance/audit independence tension and the executive-committee-as-shadow-board problem, plus a written finance committee charter with the standard fields.",
+      "assertions": [
+        "Flags the independence tension of combining Finance and Audit on a small board rather than silently accepting it",
+        "Warns that the executive committee is acting as a shadow board and limits it to time-sensitive matters between meetings",
+        "Provides a finance committee charter that states purpose, authority (recommends vs. acts), membership, chair appointment/term and reporting cadence",
+        "Notes that any authority for the committee to act on its own must be permitted by the organization's bylaws",
+        "Describes finance committee responsibilities such as budget oversight, financial statement review and recommending reserve levels"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our ED Marisol's annual review is next month. No written goals were ever set for her this year. Our board chair wants to take her to lunch, offer a 9% raise, and tell the board afterward. Also, one director, Tom, is Marisol's cousin and has volunteered to lead the review committee. How should we handle this?",
+      "expected_output": "Redirects to a board-run evaluation in executive session and an IRS rebuttable-presumption compensation process with the conflicted director excluded, and avoids inventing retroactive goals.",
+      "assertions": [
+        "Says the compensation decision should use the rebuttable presumption of reasonableness process: approval by an independent body, comparability data, and contemporaneous documentation",
+        "States that Tom should not lead the committee or vote on the compensation because of his family relationship (conflict of interest)",
+        "Rejects the chair acting alone and channels the decision through the full board or a designated committee",
+        "Recommends delivering the evaluation in executive session rather than as a surprise or informal lunch",
+        "Recommends setting written goals jointly at the start of the next review period rather than inventing goals retroactively for this one"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Draft a conflict-of-interest policy and an annual disclosure form for our directors",
+      "better_skill": "nonprofit-bylaws-policy"
+    },
+    {
+      "query": "We need three new board members with finance and legal backgrounds; build our board recruitment matrix and cultivation plan",
+      "better_skill": "nonprofit-board-recruitment"
+    }
+  ]
+}

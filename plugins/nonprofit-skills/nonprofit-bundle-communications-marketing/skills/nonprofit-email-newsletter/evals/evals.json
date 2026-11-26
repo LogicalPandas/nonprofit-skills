@@ -1,0 +1,47 @@
+{
+  "skill_name": "nonprofit-email-newsletter",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the solo communications person at Riverside Literacy Partners in Richmond, VA. We have about 9,000 email addresses: website signups, donors, about 400 volunteer tutors, and our board. Right now we send a 'newsletter' whenever someone remembers, the same email to everyone, and it's usually 'subject: Riverside Literacy News.' Help me design a monthly newsletter program: template, what each group should get, and a plan to keep it running.",
+      "expected_output": "A reusable template (subject and preview, opening note, lead story, quick hits, rotating spotlight, secondary CTA block, footer with unsubscribe) with segment-specific content logic and a consistent monthly cadence. It covers a 4-8 week content calendar, specific short subject lines, list hygiene and QA, and hands list setup to CRM tooling.",
+      "assertions": [
+        "Provides a template with subject and preview text, an opening note, a lead story, a quick-hits section, a rotating spotlight, a dates/CTA block where giving stays secondary, and a footer with an unsubscribe or preference link (CAN-SPAM)",
+        "Defines different content for general subscribers, active donors, volunteers, the board (possibly a separate board update) and lapsed or inactive subscribers",
+        "Replaces generic subject lines with specific ones under about 50 characters and recommends a consistent send day and time",
+        "Recommends list hygiene (suppressing hard bounces and long-term non-openers on a set schedule) because poor deliverability can push appeal emails into spam too",
+        "Includes a rolling 4-8 week content calendar shared with social and annual report work, and pre-send QA (links, personalization tags, mobile preview)",
+        "Hands technical segmentation or ESP setup to nonprofit-donor-crm and confirms the tool can execute the segments before committing"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Quick one — our ED wants to put a big 'DONATE NOW — help us close our $50K gap!' banner at the top of this month's newsletter plus a donate button after every story. Newsletter or appeal?",
+      "expected_output": "Applying the newsletter-vs-appeal test, the response says a primary 'donate now' CTA makes this an appeal belonging to annual-appeals. It recommends a soft secondary giving link in the newsletter or a separate appeal send, warning about ask creep.",
+      "assertions": [
+        "Applies the test that an email whose primary CTA is 'donate now' is an appeal (nonprofit-annual-appeals), even when sent to the same list",
+        "Says a newsletter can carry only a soft, secondary giving mention",
+        "Warns about ask creep, list fatigue and rising unsubscribes, and recommends splitting the gap ask into a separate appeal send",
+        "Notes that multiple CTAs per issue hurt click-through compared with a single primary CTA"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our newsletter open rate dropped from 31% to 17% over a year and unsubscribes doubled. Our list is 22,000 but we haven't removed anyone since 2019. Also over the past year we started adding a donation ask to most issues. Should I just try new subject lines and a fresh template? — Pine Ridge Watershed Council",
+      "expected_output": "The response first diagnoses the strategic problem (the newsletter has become an appeal channel) and the deliverability problem (no list cleaning since 2019) before any tactical subject-line or template fixes. It recommends splitting the tracks and a hygiene and sunset plan.",
+      "assertions": [
+        "Checks first whether the newsletter has become an appeal channel (ask creep) and says this needs a strategic fix (separate appeal and newsletter tracks) before template or subject-line changes",
+        "Flags the lack of list cleaning since 2019 as a deliverability risk and recommends suppressing hard bounces and long-term non-openers, with a re-engagement track or sunset policy for inactive subscribers",
+        "Notes that degraded sender reputation can also push appeal emails into spam",
+        "Recommends reviewing open, click and unsubscribe rates by segment, treating rising unsubscribes as an early signal"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Write the 3-email year-end giving series with the match deadline and ask amounts.", "better_skill": "nonprofit-annual-appeals"},
+    {"query": "How do I set up segments and tags in Mailchimp synced from Bloomerang?", "better_skill": "nonprofit-donor-crm"}
+  ]
+}

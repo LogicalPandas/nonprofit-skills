@@ -1,0 +1,47 @@
+{
+  "skill_name": "nonprofit-arts-ad-ed-partnership",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm board chair of Riverbend Repertory Theatre in Spokane, WA — a $3.2M producing regional theater with an Artistic Director (Marisol Vega, 8 years in) and a Managing Director (Dan Okafor, hired 18 months ago). Both report to the board as co-equals on paper. In practice they keep colliding: Marisol hired a guest director at a fee Dan says blew the production budget, Dan raised single-ticket prices without telling her, and they both cultivated the same major donor last month and made conflicting asks. Nothing about who decides what is written down anywhere. Can you help me fix this before our January board retreat?",
+      "expected_output": "A diagnosis that the core problem is undocumented decision rights rather than personality, plus a draft partnership charter built from a decision-rights matrix (Decides/Consulted/Informed/board role/tiebreaker) with no-surprises thresholds, an overage rule, a donor-portfolio split, meeting rhythm and escalation path, and a recommendation that board leadership review it before adoption.",
+      "assertions": [
+        "Frames the conflict as undocumented decision rights rather than a personality problem and recommends a written partnership charter",
+        "Provides a decision-rights matrix covering at least season/artistic hires, production budget overages, ticket pricing and donor relationships, assigning a Decides party and a board role for each, and naming a tiebreaker for jointly held rows",
+        "Recommends segmenting the donor portfolio so each donor above a threshold has one named lead and one backup, with any money or program ask confirmed by both leaders before it is made",
+        "Includes a weekly AD/MD 1:1 and a written escalation path ending at the board chair (e.g., the 1:1 attempted before taking a dispute to the board)",
+        "Tells the user to check the charter against the organization's bylaws and both leaders' employment agreements, and to have it signed by both leaders and reviewed by board leadership before adoption"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "quick q — our board wants to vote on each show title before the AD announces the season. a couple trustees keep pushing for Mamma Mia. is that normal? we're a small community theater in Ohio, ~$600k budget",
+      "expected_output": "Explains the three-tier board authority ladder (approve artistic policy and budget; ratify the season as a whole; advise only on titles, casting and creative choices), names title-by-title voting and trustee lobbying as governance drift, and suggests an advisory-only artistic committee if the board wants standing input.",
+      "assertions": [
+        "Distinguishes board approval of artistic policy/mission fit and the budget from ratification of the season as a whole and from advice on individual titles",
+        "Identifies title-by-title approval or trustee lobbying for specific shows as board overreach or governance drift, with lobbying routed to the AD once through the chair",
+        "If suggesting an artistic committee, specifies it should be advisory with no approval authority and should see the season at the same time as the full board",
+        "Advises checking the bylaws, since some bylaws give the board formal season approval"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our Executive Director at Lakeshore Chamber Orchestra (Milwaukee, $1.8M budget) just gave notice — she leaves March 31. Our music director, Henrik Aalto, has been here 15 years and has already told two trustees he wants to 'help shape' the ED job description and sit on the search committee. A board member suggested we save money by just making Henrik the CEO and hiring an office manager. What should the board do first?",
+      "expected_output": "Warns that the remaining partner's power shifts immediately, recommends the board re-charter decision rights and settle the combine/split question before searching, define the survivor's interim role without a veto over the successor, and treats combining roles to save money as risky without controls; routes the search and transition process to the sibling skills.",
+      "assertions": [
+        "Recommends revisiting/re-chartering the decision-rights matrix and reporting structure before launching the search",
+        "Advises the board to define what the music director may and may not decide during the interim and not give him a veto over the successor",
+        "Addresses the combine-the-roles idea by naming its risks (e.g., single point of failure, no internal check on artistic spending, burnout) and the controls needed if combined, rather than endorsing it as a cost saving",
+        "Notes that a music director is often part-time or seasonally absent, which bears on whether he can hold the executive role",
+        "Routes the search process to nonprofit-executive-search and/or interim and transition mechanics to nonprofit-executive-transitions rather than fully running them"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Our ED wants a better rhythm for board chair 1:1s and a template for her quarterly report to the board. Can you draft an agenda?", "better_skill": "nonprofit-ceo-board-partnership"},
+    {"query": "We need to hire a new artistic director for our theater — help me write the position profile and set up the search committee timeline.", "better_skill": "nonprofit-executive-search"}
+  ]
+}

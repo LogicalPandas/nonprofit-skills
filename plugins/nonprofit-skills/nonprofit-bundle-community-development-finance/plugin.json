@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-bundle-community-development-finance",
+  "version": "0.1.0",
+  "description": "Includes 5 nonprofit skills for Community Development Finance.",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Community Development Finance Bundle"
+      }
+    }
+  }
+}

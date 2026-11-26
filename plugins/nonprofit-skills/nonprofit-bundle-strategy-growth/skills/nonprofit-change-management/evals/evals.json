@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-change-management",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Our boards just voted to merge Eastside Neighborhood Services ($5M, 60 staff) into Metro Family Alliance ($11M) effective July 1, 2027. I'm the Eastside ED. About 8 admin roles will be eliminated and our name will go away. Staff have heard rumors and are anxious. How do we roll this out?",
+      "expected_output": "A change plan: stakeholder impact map, guiding coalition, core narrative with what's not yet decided, a sequenced communication calendar with 1:1 notice for affected staff before any group message, emotional transition support, short-term wins, reinforcement and debrief, with CEO-voice drafts handed to executive communications and layoff steps reviewed by counsel/HR.",
+      "assertions": [
+        "Builds a stakeholder impact map covering staff by team, board, funders, clients, partners and volunteers with impact/influence ratings and who needs 1:1 advance notice",
+        "Drafts a core narrative covering why, why now, what stays the same (mission continuity), what's changing, and what is not yet decided",
+        "Sequences communications: senior team/board chair, full board, directly affected staff individually before any group announcement, all staff live with FAQ, key funders proactively, clients/partners, then public if warranted",
+        "Addresses emotional transition explicitly (e.g., naming loss of the Eastside name, listening sessions, neutral-zone dip) and avoids corporate vocabulary like 'synergies' in favor of mission-anchored language",
+        "Includes a guiding coalition across levels, 60–90 day short-term wins, reinforcement owners (job descriptions, org chart), and a 3–6 month debrief",
+        "Recommends employment counsel or HR review of the layoff steps and hands CEO-voice drafts to the executive communications skill"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "we announced a reorg 6 weeks ago, it was well planned, but now everyone's dragging and productivity's tanked. board is asking if the reorg failed. did it?",
+      "expected_output": "Explains the expected neutral-zone dip using Bridges, diagnoses stuck individuals with ADKAR, and recommends short-term wins, listening sessions and reinforcement rather than declaring failure.",
+      "assertions": [
+        "Explains the post-announcement dip as the expected 'neutral zone' (Bridges) rather than evidence the change failed, provided there's a plan to move through it",
+        "Suggests using ADKAR to diagnose which element (awareness, desire, knowledge, ability, reinforcement) individuals or teams are missing, with different interventions for each",
+        "Recommends generating and publicizing short-term wins within the first 60–90 days",
+        "Recommends holding space for loss (e.g., listening session) rather than only forward-looking messaging",
+        "Checks that reinforcement items (job descriptions, org chart, review criteria) have owners so the change doesn't revert"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Board chair wants to announce the layoffs of 5 program staff at Monday's all-staff meeting and then send an email — 'rip off the bandaid.' Can you also just write the all-staff email and the individual layoff scripts for me?",
+      "expected_output": "Firmly pushes back on announcing job losses in a group setting, resequences to individual notice first, and hands drafting of the all-staff email and 1:1 talking tracks to executive communications, with counsel/HR review.",
+      "assertions": [
+        "Advises that affected staff must receive individual notice before any group announcement and never learn of job loss in a group setting or by email",
+        "Lays out a corrected sequence (board, affected individuals, then live all-staff with FAQ and named contact, then funders)",
+        "Hands drafting of the all-staff announcement and 1:1 layoff talking track to the executive communications skill, providing the core narrative and sequence",
+        "Recommends employment counsel or HR review of the layoff steps before announcing",
+        "Suggests the advisor/ED say the hard thing to the board chair about the timeline rather than just executing it"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Help me write the all-staff email announcing our merger, in my voice as ED, plus manager talking points.",
+      "better_skill": "nonprofit-executive-communications"
+    },
+    {
+      "query": "We're considering merging with another youth org — what due diligence should we do first?",
+      "better_skill": "nonprofit-mergers-fiscal-sponsorship"
+    }
+  ]
+}

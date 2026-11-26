@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-faith-employment-ministerial-exception",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the head of school at St. Brigid Catholic School in Sacramento (K-8, 240 students, 22 teachers). We want to not renew the contract of our 5th-grade teacher, Ms. Alvarez, for performance reasons. She's 58 and has hinted she'd file an age discrimination complaint. Her title is just 'Classroom Teacher' and she isn't a religious sister, but she teaches religion daily from the diocesan curriculum, leads morning prayer, and takes her class to weekly Mass. Our principal says we're covered by the ministerial exception. Are we? What should we do before we send the non-renewal letter?",
+      "expected_output": "Applies the functional ministerial-exception test (Our Lady of Guadalupe) to her actual duties rather than title, explains that a lay religion-teaching teacher who prays with and prepares students for Mass is likely inside, notes the exception bars ADEA claims but not contract/tort/wage claims, and insists on a contemporaneous scope memo, documentation and counsel review before the personnel action.",
+      "assertions": [
+        "Applies a functional, duties-based test (citing Our Lady of Guadalupe and/or Hosanna-Tabor) rather than relying on her title or lack of ordination",
+        "Maps her actual duties (teaching religion, leading prayer, preparing students for Mass) to religious-mission functions and concludes she is likely inside the exception",
+        "States that the exception generally bars age (ADEA) discrimination claims by a ministerial employee but does not categorically bar breach-of-contract, tort, or wage-and-hour claims",
+        "Recommends writing a contemporaneous ministerial-exception scope memo, with evidence of duties, before the non-renewal rather than after",
+        "Recommends counsel review of the analysis and of the non-renewal letter"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Can our evangelical food pantry ministry require our new warehouse manager to sign our statement of faith? And can we let him go later if he stops attending church? We're a 501c3, about 15 staff, in Texas. Board says 'ministerial exception covers everybody here.'",
+      "expected_output": "Corrects the framework confusion: a warehouse manager is likely outside the ministerial exception, but Title VII §702 may let a qualifying religious organization prefer co-religionists for any position; walks through confirming religious-organization status, writing the religious standard in advance, consistent enforcement, staying within religion, and §702's limits, with counsel review.",
+      "assertions": [
+        "Explains that the warehouse manager role is likely outside the ministerial exception and that the relevant framework is Title VII §702 religious-organization exemption, correcting the board's claim",
+        "Advises confirming the ministry qualifies as a religious organization under §702 (e.g., religious purpose in governing documents, operations, holding itself out as religious)",
+        "Recommends defining the statement of faith and any conduct expectation in writing in the posting, offer letter and handbook before hiring",
+        "Warns that §702 covers religion-based decisions only, not other protected classes or claims (e.g., ADA, ADEA, race, sex), and that selective enforcement can turn a religious decision into a discrimination claim",
+        "Notes state fair-employment law may have narrower religious-employer exemptions and/or recommends counsel review"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "This is urgent. Last night a mom in our church told our senior pastor that our volunteer youth leader, a 24-year-old named Kyle, has been sending her 14-year-old daughter private Snapchat messages that seemed sexual. We're a nondenominational church in Indiana, about 400 people. Our board chair wants to talk to Kyle first and look into it quietly before we involve anyone outside, and get our lawyer's advice next week. What should we do right now?",
+      "expected_output": "Puts child safety and legally required reporting first: report to civil authorities immediately without waiting for internal review, counsel or insurer, then follows the first-72-hours runbook (written intake, response team within 24 hours, insurer notice, leave/remove Kyle from access to minors, independent investigator, preserve documents, pastoral care), and warns against the board chair's 'look into it quietly' approach.",
+      "assertions": [
+        "Directs that a report be made to civil authorities (e.g., child protective services/law enforcement) immediately, and that reporting and emergency protection must not wait for counsel, the board, or an internal investigation",
+        "Rejects talking to Kyle first or 'looking into it quietly' internally before reporting",
+        "Notes mandatory-reporter duties run to individuals and tells the user to confirm the specific state statute rather than assume no duty",
+        "Recommends immediately restricting Kyle's access to minors and the family, and preserving messages and records (litigation hold)",
+        "Recommends prompt insurer notification and an independent investigator rather than an internal investigation by peers",
+        "Recommends independent pastoral care for the girl and her family"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "How should we structure our new associate pastor's compensation package between salary and housing allowance, and does he get a W-2 or a 1099?",
+      "better_skill": "nonprofit-faith-finance-clergy-comp"
+    },
+    {
+      "query": "Our church is getting a federal subrecipient grant through the state for a reentry program — can we keep hiring only Christians for the program staff funded by it?",
+      "better_skill": "nonprofit-faith-religious-liberty-compliance"
+    }
+  ]
+}

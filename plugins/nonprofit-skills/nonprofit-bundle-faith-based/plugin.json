@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-bundle-faith-based",
+  "version": "0.1.0",
+  "description": "Includes 10 nonprofit skills for Faith-Based Organizations.",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Faith-Based Organizations Bundle"
+      }
+    }
+  }
+}

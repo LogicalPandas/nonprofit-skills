@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-faith-finance-clergy-comp",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the new treasurer at Bethel Missionary Baptist Church in Richmond, Virginia (about 200 members, $420K budget). We're calling Rev. Marcus Hill as senior pastor starting January 4, 2027. The personnel committee agreed on $68,000 total cash and wants 'a chunk of it' to be housing allowance — he owns his home. The previous treasurer withheld Social Security and Medicare from our last pastor's checks and matched it like any other employee. Can you walk me through how to set up his pay correctly and what paperwork the deacon board needs to adopt before his first paycheck?",
+      "expected_output": "Explains clergy dual tax status (W-2 employee for income tax, self-employed for SECA; church must not withhold or match FICA and should correct prior over-withholding), and walks the housing-allowance designation: confirm minister status functionally, pastor's written cost estimate, lesser-of cap against FRV plus utilities, board resolution adopted and minuted before the first payroll with a carry-forward clause, payroll/W-2 box 14 treatment, and voluntary withholding to cover SECA.",
+      "assertions": [
+        "Explains dual tax status: the pastor gets a W-2 for income tax but owes SECA as self-employed, and the church must not withhold FICA or pay the employer match",
+        "Flags the prior FICA withholding as an error and recommends stopping it and correcting open quarters (e.g., via Form 941-X) and refunding improperly withheld amounts, ideally with a tax professional",
+        "Requires a written governing-body resolution designating the housing allowance, naming the minister, period and amount, minuted before the first affected payroll date, and notes it cannot be applied retroactively",
+        "Explains the exclusion is the lesser of the designated amount, actual housing costs, and fair rental value plus utilities, and that the allowance remains subject to SECA",
+        "Specifies W-2 reporting: housing allowance excluded from box 1 and shown in box 14, with nothing in the Social Security/Medicare boxes",
+        "Recommends voluntary income-tax withholding sized to cover SECA and tells the user to verify current rates/thresholds in IRS Pub. 517 or Pub. 1828"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "deacons want to take up a special Christmas offering for our pastor like every year, last year it was about $9k cash handed to him in a card. someone said that might be taxable?? also a member wants to give $2,000 through the church for a widow in our congregation who's behind on rent and get a tax receipt. both ok?",
+      "expected_output": "Explains that a church-solicited, church-collected Christmas offering is taxable compensation under Duberstein/Goodwin and belongs on the W-2 and in the SECA base (and last year's should be trued up), and that a gift designated for a named individual through the church is not deductible and collapses benevolence treatment; recommends a general benevolence fund with a written policy and paying the landlord directly, or a direct personal gift.",
+      "assertions": [
+        "States that a love offering solicited or collected through the church is taxable compensation (citing Goodwin and/or Duberstein) to be included in W-2 wages and the SECA base",
+        "Recommends correcting last year's untaxed offering by adding it to wages / truing up withholding",
+        "Explains that a contribution designated for a named individual is generally not deductible and the church should not issue a charitable acknowledgment for it",
+        "Recommends instead a discretionary general benevolence fund governed by a written policy (need documentation, approval authority, no donor-directed grants), or that the donor give directly to the widow",
+        "Suggests paying the landlord/vendor directly from benevolence funds rather than cash to the individual"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our worship leader at Harvest Point Church (Colorado, nondenominational) is titled 'Minister of Music' but isn't ordained or licensed — he plans music, leads the band on Sundays, and does some admin. He's been paid on a 1099 since he started 3 years ago because he asked for it, and he wants us to designate $24,000 of his $55,000 as housing allowance for 2027 and keep the 1099. Also, he's heard he can opt out of Social Security by filing some form because he 'doesn't believe in government programs.' Can we do all this?",
+      "expected_output": "Applies the Rev. Rul. 70-549 functional test to show the title alone doesn't make him a minister for §107, so a housing allowance may not be available; explains he is likely a common-law employee who should be on a W-2 (reclassify prospectively, consider correcting prior years); and refuses to treat Form 4361 as an option based on economic/political objection, noting it requires religious opposition, is irrevocable and time-limited.",
+      "assertions": [
+        "Applies the functional 'minister of the gospel' test (Rev. Rul. 70-549 factors such as sacraments, worship, leadership, ordination/licensing, recognition) and states that a 'Minister of Music' title alone does not qualify him for a housing allowance",
+        "Concludes he is likely a common-law employee who should be reclassified to W-2 prospectively, noting the risks of the 1099 and possible correction of prior years",
+        "States that Form 4361 requires conscientious religious opposition to public insurance, not economic or political disagreement, and is irrevocable",
+        "Declines to recommend filing Form 4361 on these stated grounds without a substantive conversation about religious belief",
+        "Recommends review by a tax professional before acting, given direct tax consequences"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "What has to go on our year-end contribution statements to members, and how do we handle the quid-pro-quo disclosure for our dinner fundraiser?",
+      "better_skill": "nonprofit-faith-stewardship-giving"
+    },
+    {
+      "query": "Our elders want to terminate our associate pastor next month. What does the termination letter need to say and can she sue us?",
+      "better_skill": "nonprofit-faith-employment-ministerial-exception"
+    }
+  ]
+}

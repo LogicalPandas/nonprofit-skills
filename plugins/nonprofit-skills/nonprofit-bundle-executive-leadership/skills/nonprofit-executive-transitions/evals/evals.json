@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-executive-transitions",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I start January 5 as the new executive director of Lighthouse Refugee Services in Columbus, Ohio ($6M, 55 staff). I'm coming from outside. The prior ED left abruptly after 4 years; staff morale is low and there's a $300K deficit. Board chair says 'we need you to fix things fast.' Build my 30/60/90-day plan.",
+      "expected_output": "A 90-day entry plan: pre-Day-1 negotiating-success conversation and reading, a STARS hypothesis, listen-first posture, a structured listening tour, a synthesis readout, low-risk early wins, and a day-90 board brief, with structural changes deferred unless turnaround is authorized.",
+      "assertions": [
+        "Includes a pre-Day-1 negotiating-success conversation with the board chair producing written 6/12-month success criteria, decision rights and resources",
+        "Diagnoses the situation using STARS (e.g., a turnaround vs. realignment hypothesis) and revises it after the listening tour",
+        "Commits to a listen-first posture with no structural changes in the first ~60 days, while confirming cash, restricted funds and compliance issues early",
+        "Designs a listening tour across board, staff, funders, partners and participants with consistent questions and a private synthesis log",
+        "Synthesizes 3–5 themes and shares the readout with staff and board before acting, then pilots visible, low-risk, reversible early wins",
+        "Ends with a day-90 written board brief and only allows restructuring/layoffs in the window if turnaround is diagnosed and explicitly authorized by the board"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "I'm the interim ED for the next ~6 months while they search. what goes in my workplan? also should I apply for the permanent job?",
+      "expected_output": "An interim workplan with written mandate constraints focused on stabilization, a 30/60/90/180 structure, chair check-ins, monthly board updates and a hand-off document, plus guidance on eligibility for the permanent role.",
+      "assertions": [
+        "Defines written mandate constraints: no irreversible strategic decisions (rebrands, strategic plans, major launches/shutdowns, non-essential layoffs) and a stabilization focus (cash, funders, commitments, team, compliance)",
+        "Structures a 30/60/90/180 plan with weekly board-chair check-ins and monthly written updates to the full board",
+        "Includes a hand-off document for the permanent ED updated monthly",
+        "Explains most interims should be ineligible for the permanent role, and a 'bridge and eligible' interim needs a documented conflict-management plan and separate interview panel",
+        "Warns against both acting-permanent behavior and stalling decisions"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "I'm succeeding our founder, Ruth, who ran the org for 22 years. She's staying on the board and told donors 'call me anytime.' Staff still go to her for decisions. The board also wants me to write the emergency succession plan and help them hire my deputy. Where do I start?",
+      "expected_output": "Builds a founder-transition risk register with a written hard stop, bounded founder role, co-cultivation then step-back, no-return and no-public-critique terms, and governance guidance, while routing emergency succession planning to the succession skill.",
+      "assertions": [
+        "Builds a founder-transition risk register covering informal authority, board composition, fundraising relationships, identity, founder return and governance, with owners and time-boxed mitigations",
+        "Recommends Ruth communicate a written hard-stop date to staff, board and top funders, after which decisions route to the new CEO, with any founder role written into a description including what she does not do",
+        "Recommends co-cultivation of top donors for a defined period followed by the founder stepping back from solicitation, replacing open-ended 'call me anytime'",
+        "Advises that the founder not chair the board and ideally cycle off within a defined period, plus a written no-return / no-public-critique agreement",
+        "Routes the emergency succession plan to the succession planning skill"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Our founder retires in 2 years — help the board build a long-range succession plan and assess our internal candidate.",
+      "better_skill": "nonprofit-succession-planning"
+    },
+    {
+      "query": "I am the outgoing ED — draft my all-staff email announcing my departure and introducing my successor.",
+      "better_skill": "nonprofit-executive-communications"
+    }
+  ]
+}

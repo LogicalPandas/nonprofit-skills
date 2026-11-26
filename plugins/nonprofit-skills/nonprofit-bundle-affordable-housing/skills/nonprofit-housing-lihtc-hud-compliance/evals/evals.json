@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-housing-lihtc-hud-compliance",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the compliance coordinator at Oak Hollow Housing Corp, a nonprofit that owns Brookside Apartments in Raleigh — 84 units, LIHTC (year 6 of compliance) with 9 HOME-designated units. The North Carolina HFA notified us of an on-site monitoring review in about 7 weeks. Last review we had findings for two late recerts and a utility allowance that wasn't updated. Our long-time compliance person left in the spring. Give me a prep plan.",
+      "expected_output": "A week-by-week monitoring-visit preparation plan starting with the agency instrument and prior findings, a file-readiness checklist on the likely sample, rent roll and gross-rent reconciliation, over-income tracking, mock NSPIRE inspection, binder assembly, staff briefing, day-of conduct, and a root-cause corrective action plan, with a layered HOME matrix and attorney/CPA review.",
+      "assertions": [
+        "Sequences prep backward from the visit, starting with obtaining the agency's monitoring instrument and confirming evidence that last cycle's corrective actions (late recerts, utility allowance) are in place",
+        "Runs a file-readiness checklist on the likely sample (all move-ins since the last review, flagged files, plus a random share) with columns for evidence, pass/fail, fix date, and owner",
+        "Reconciles the rent roll so every unit's gross rent (rent + mandatory fees + current utility allowance) is at or below the current limit, and checks over-income/next-available-unit tracking",
+        "Addresses the layered HOME units with a unit-by-unit program matrix applying the strictest rule per dimension",
+        "Specifies that corrective action plans should include root cause and a durable control (e.g., a recert tickler), not just single-file fixes, and that staff turnover requires systems that survive the person",
+        "Recommends attorney or CPA review of filings/responses before submission"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "lihtc q: we charge $25/mo mandatory 'amenity fee' and a $35 pet fee (only if you have a pet) and $15 for optional storage. 2BR 60% unit, rent $1,050, UA $142. does any of that count toward gross rent?",
+      "expected_output": "Explains gross rent as rent plus mandatory charges plus utility allowance: the mandatory amenity fee counts, optional storage does not, and a pet fee counts only if mandatory as a condition of occupancy; computes gross rent and says to compare to the HFA's published rent limit table, noting that even small overages are noncompliance.",
+      "assertions": [
+        "Defines gross rent as rent charged plus mandatory charges plus the utility allowance",
+        "Counts the mandatory amenity fee in gross rent and excludes the optional storage charge",
+        "Treats the pet fee according to whether it is a mandatory condition of occupancy rather than an optional choice",
+        "Computes gross rent of at least $1,217 ($1,050 + $25 + $142) and says to compare it to the HFA's published 2BR 60% rent limit rather than computing the limit independently",
+        "Warns that even a few dollars over the limit makes the unit noncompliant and that refunds/prospective adjustment would be required"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "At recert, one of our tenants in a 2BR LIHTC unit (60% set-aside, Milwaukee) now makes about 160% of the current income limit — she got a big promotion. Our property manager wants to either raise her rent to market or give her notice, and in the meantime rent the next 2BR that opens up to a market-rate applicant since 'we're already over our set-aside anyway.' Is that right?",
+      "expected_output": "Explains the over-income (140%) rule: the tenant is over-income but not out of compliance, so no eviction or rent above the limit; the next available unit rule requires the next comparable or smaller vacant unit to go to a qualified household, otherwise the original unit permanently loses qualified status; recommends tracking and staff training, with professional review.",
+      "assertions": [
+        "States that a household exceeding 140% of the current limit at recert is over-income but not out of compliance, and should not be evicted or charged rent above the limit",
+        "Explains the next available unit rule: the next comparable or smaller vacant unit must be rented to a qualified low-income household at a restricted rent",
+        "Warns that renting a comparable or larger unit to a non-qualifying household first causes the original unit to permanently lose qualified status",
+        "Rejects or challenges the 'already over our set-aside' reasoning, noting the set-aside is tested continuously at the building level and each unit's qualified status matters",
+        "Recommends flagging over-income households in the rent roll, maintaining a next-available-unit log, and training leasing staff"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "How should we set rents across our 30%, 50%, and 60% AMI units to keep the property's budget balanced, and should we self-manage?", "better_skill": "nonprofit-housing-affordable-rental-operations"},
+    {"query": "We're structuring a new 4% LIHTC deal with bonds — help me build the sources and uses and 15-year cash flow.", "better_skill": "nonprofit-housing-development-finance"}
+  ]
+}

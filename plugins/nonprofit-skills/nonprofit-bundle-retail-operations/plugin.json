@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-bundle-retail-operations",
+  "version": "0.1.0",
+  "description": "Includes 6 nonprofit skills for Retail & Resale Operations.",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Retail & Resale Operations Bundle"
+      }
+    }
+  }
+}

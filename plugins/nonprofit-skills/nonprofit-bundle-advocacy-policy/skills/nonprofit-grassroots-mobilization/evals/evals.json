@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-grassroots-mobilization",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the comms manager at Clean Rivers Pennsylvania (501(c)(3), 501(h) elected, ~18,000 email subscribers, ~2,500 of whom have taken action before). HB 1120 would weaken stream buffer protections and goes to the House Environmental Resources Committee vote on April 22. Our policy director's adopted position is 'oppose.' Write the action alert email and tell me how to set up the email-your-legislator tool.",
+      "expected_output": "A single-ask action alert following the alert structure plus a district-matched, editable email tool, segmented by activation-ladder rung, with lobbying classification and approval checks.",
+      "assertions": [
+        "The alert contains exactly one primary ask (contact the legislator to oppose HB 1120), not bundled with donate/petition asks",
+        "Subject line names the specific bill and the real April 22 deadline rather than vague 'urgent' framing, and the action link appears near the top and again at the bottom",
+        "Specifies the email tool uses address/zip legislator lookup so supporters reach their own representative (or committee members representing them) rather than any legislator",
+        "Recommends an editable pre-drafted message and encourages a personal edit, rather than a locked identical template",
+        "Segments by activation ladder, e.g., a higher-effort call ask for the ~2,500 past activists and a lower-effort ask for others, and tracks completions rather than page views",
+        "Flags the alert as grassroots lobbying whose costs should be logged against the org's lobbying limits, and calls for review by whoever approves public statements"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "need petition copy asking the Tucson city council to fund 3 more cooling centers this summer. short pls, also what happens after ppl sign?",
+      "expected_output": "Short, specific petition copy naming the target and ask in the first sentence, plus a signature funnel with a next-rung thank-you page, a delivery plan and health metrics.",
+      "assertions": [
+        "Petition's first sentence names the specific target (Tucson City Council) and the specific ask (fund three more cooling centers)",
+        "Designs a thank-you page that offers the next activation-ladder action (share, email a councilmember, or event RSVP) instead of a dead end",
+        "Plans a delivery moment for the signatures (e.g., delivery event, count cited at a council meeting, press release)",
+        "Recommends tracking signature velocity and conversion rates rather than just total count"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "The state senate just scheduled a surprise floor vote on the payday lending cap for tomorrow at 10am. Our ED wants a blast out tonight saying 'Senator Hollis is up for reelection in November — remind her voters are watching!' plus a donate button so we can fund more ads. Can you write it?",
+      "expected_output": "Builds a fast rapid-response alert but removes the election/candidate framing and the bundled donation ask, confirms the position with the policy lead, and pushes the fastest channels first.",
+      "assertions": [
+        "Refuses to include the reelection/candidate framing, explaining that referencing a candidate's election moves the alert into the stricter nonpartisan election rules (voter-engagement territory) and should not be blended with a legislative alert",
+        "Removes the donate button or separates it, keeping the alert to a single ask",
+        "Recommends confirming the ask and position with the policy lead before sending despite the time pressure",
+        "Recommends pushing via the highest-reach fast channel (SMS/push/social) first, then email, with a stated deadline tied to the 10am vote",
+        "Flags the alert as grassroots lobbying for logging and as requiring approval by whoever approves public statements"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Help me plan a nonpartisan voter registration table at our food pantry before the November election.",
+      "better_skill": "nonprofit-voter-engagement"
+    },
+    {
+      "query": "We testify Tuesday before the Senate Banking Committee on the payday lending cap — help me write a 3-minute oral testimony.",
+      "better_skill": "nonprofit-legislative-advocacy"
+    }
+  ]
+}

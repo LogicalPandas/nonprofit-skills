@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-hr",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "We're hiring a Development Manager at Sunrise Senior Services (22 staff, $2M budget, Fort Collins, Colorado). Salary budget is $58-64k. The role manages our annual appeal, a small donor portfolio and grant reports, and will occasionally visit clients at our day program. Write the job posting and design the interview process. Also, will this role be exempt from overtime?",
+      "expected_output": "A mission-forward posting with a salary range, a structured interview process with rubric and work sample, and an FLSA analysis applying both duties and salary tests with verification and counsel review.",
+      "assertions": [
+        "Includes the salary range in the posting and notes pay-range disclosure is legally required in some states/cities",
+        "Designs a structured interview with the same core questions and a scoring rubric for all candidates",
+        "Includes a practical work sample (e.g., a mock donor email or grant report exercise)",
+        "Explains exemption requires both a duties test and a salary threshold, tells the user to verify the current DOL figure, and notes Colorado may set a higher threshold",
+        "Recommends a background check policy because the role has contact with vulnerable older adults",
+        "Recommends employment counsel review of the classification decision"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "we pay our weekend program facilitators as 1099 contractors. ~15 hrs/wk, we set the schedule, they teach our curriculum, been like this 3 years. we're in Oakland. is that fine",
+      "expected_output": "Flags likely misclassification under the IRS common-law test and California's stricter ABC test, notes the shifting DOL standard, explains exposure and recommends counsel.",
+      "assertions": [
+        "Applies the IRS common-law factors (behavioral control, financial control, relationship type)",
+        "Notes California's ABC test is stricter than the federal standard",
+        "Concludes that recurring, schedule-controlled facilitators are very likely employees",
+        "Notes the DOL economic-reality rule is in flux and tells the user to check DOL's current rule",
+        "Lists exposure such as back payroll taxes, penalties and unpaid benefits, and recommends employment counsel"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Can you write our employee handbook? Just grab a standard template. We're headquartered in Portland, Oregon but have remote staff in Idaho, Texas and New York. 30 employees.",
+      "expected_output": "Drafts handbook sections while warning that a generic template misses multi-state obligations, and requires employment counsel review before adoption.",
+      "assertions": [
+        "Warns that a generic template will miss obligations triggered by multi-state remote staff",
+        "Covers standard sections including at-will statement, EEO/anti-harassment with reporting process, classification/overtime, PTO and leave (state/local paid sick leave, FMLA if covered), code of conduct and remote work",
+        "Recommends employment counsel review before adoption",
+        "Says the handbook should reflect the organization's actual practices rather than a policy it does not follow"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Morale is low after layoffs; how do we keep our remaining staff from quitting?",
+      "better_skill": "nonprofit-staff-retention"
+    },
+    {
+      "query": "Build a recruitment plan for 40 volunteer reading tutors",
+      "better_skill": "nonprofit-volunteer-management"
+    }
+  ]
+}

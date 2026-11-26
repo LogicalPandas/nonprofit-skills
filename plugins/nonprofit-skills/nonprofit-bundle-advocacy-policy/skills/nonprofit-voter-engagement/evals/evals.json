@@ -1,0 +1,54 @@
+{
+  "skill_name": "nonprofit-voter-engagement",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "We're Casa del Pueblo, a 501(c)(3) community center in Las Cruces, NM serving mostly Latino families (about 3,000 visitors a month). For the November 2027 city election we want to (1) host a forum for the 4 mayoral candidates, (2) run a voter registration drive, and (3) send GOTV reminders. Help us plan all three so we stay compliant.",
+      "expected_output": "Plans each activity against the absolute 501(c)(3) candidate-intervention ban using the nonpartisanship factors, with forum, registration and GOTV designs, documentation, disclaimers, training and pre-clearance.",
+      "assertions": [
+        "States that 501(c)(3)s are absolutely prohibited from intervening for or against any candidate, with no dollar threshold, distinguishing this from 501(h) lobbying limits",
+        "Forum plan invites all legally qualified candidates in writing with equal notice, uses an identical neutral question set, a neutral moderator, and neutral handling of an empty seat",
+        "Registration drive targets unregistered visitors generally by nonpartisan criteria, uses the nonpartisan national or state form, a scripted neutral volunteer pitch, and does not track party affiliation",
+        "GOTV reminders are factual (deadlines, early voting, polling lookup) and sent at volumes consistent with normal communications",
+        "Recommends documenting even-handedness per activity (invitations, materials) plus a 'does not endorse any candidate' disclaimer and pre-cycle staff/volunteer training",
+        "Recommends pre-clearance by a designated reviewer or counsel given exempt-status risk"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Can our ED post on her personal Instagram that she's voting for Jensen for county commissioner? She's kinda well known as our ED.",
+      "expected_output": "Explains that a staff member's personal endorsement is allowed on personal time and accounts but must never use organizational resources or identity, recommends safeguards and training, and suggests counsel review for a high-profile ED.",
+      "assertions": [
+        "Explains that personal political activity is permitted on the ED's own time and personal account but must not use org letterhead, logo, email signature, official accounts, or resources",
+        "Advises against the post being framed in her organizational capacity (e.g., speaking as the ED or tagging the org)",
+        "Recommends pre-cycle staff training on the personal vs. organizational distinction",
+        "Recommends checking with counsel given the absolute ban and her high public profile"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our board wants to (a) publish a scorecard grading the state legislative candidates A–F on housing votes, and (b) campaign hard for Measure 4, the affordable housing bond on the same ballot. A board member says we can't do either because we're a 501(c)(3). Who's right?",
+      "expected_output": "Distinguishes the absolute bar on candidate intervention (the graded scorecard is high-risk de facto endorsement) from ballot-measure advocacy, which a c3 may do subject to lobbying limits, and recommends counsel review.",
+      "assertions": [
+        "Identifies the A–F candidate scorecard as a high-risk de facto endorsement/opposition and advises against it, offering a neutral side-by-side guide using candidates' own words instead",
+        "Explains that a 501(c)(3) may support or oppose a ballot measure because it is issue advocacy, not candidate intervention",
+        "Notes ballot-measure advocacy counts toward 501(h) lobbying limits if applicable and should be tracked (coordinating with legislative advocacy)",
+        "States the board member is partly wrong — candidates are an absolute bar, ballot measures are capped, not banned",
+        "Recommends counsel review or pre-clearance before publishing"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Our 501(c)(3) wants to endorse a city council candidate who champions our issues — how do we set up a 501(c)(4) to do that legally?",
+      "better_skill": "nonprofit-c3-c4-structure"
+    },
+    {
+      "query": "Write an action alert urging supporters to email their state reps to vote yes on the housing bond bill in committee next week.",
+      "better_skill": "nonprofit-grassroots-mobilization"
+    }
+  ]
+}

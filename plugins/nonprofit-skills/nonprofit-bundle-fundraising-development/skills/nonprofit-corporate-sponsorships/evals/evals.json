@@ -1,0 +1,47 @@
+{
+  "skill_name": "nonprofit-corporate-sponsorships",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I run development at Big Sky Literacy Project in Bozeman, MT ($1.1M budget). Our annual 'Read Between the Wines' gala is March 14, about 350 attendees, mostly local professionals and business owners; we have 6,000 email subscribers and about 4,500 Instagram followers. Last year we just took whatever sponsors offered. Please design a sponsorship tier structure with pricing and benefits, plus a fulfillment tracker template. A local bank and a brewery have both shown interest in the top spot.",
+      "expected_output": "A 3-5 tier grid (including an in-kind tier), priced top-down, where each lower tier is a visibly smaller bundle and exclusivity or naming rights appear only in the top tiers. It includes a fulfillment checklist with owners, dates and proof, flags qualified-sponsorship/UBIT questions for finance review, and handles the two competing top-tier prospects.",
+      "assertions": [
+        "Presents 3-5 tiers including a separate in-kind tier, priced starting from the top tier and anchored to what only that sponsor gets and to comparable market rates",
+        "Limits category exclusivity and naming rights to the top 1-2 tiers and makes each lower tier a visibly smaller bundle, not just a smaller logo",
+        "Includes a fulfillment tracker with sponsor, benefit promised, owner, due date, delivered date and proof (photos, screenshots, analytics)",
+        "Flags benefits beyond acknowledgment (advertising language, high-value hospitality) for finance review against current IRS qualified sponsorship guidance, without giving definitive tax advice",
+        "Says the bank and brewery should not both get the presenting slot or overlapping exclusivity, and that new exclusivity grants must be checked against existing agreements"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Need a pitch one-pager for Fernandez Auto Group (5 dealerships in our county) to be presenting sponsor of our Turkey Trot 5K on Thanksgiving. We're Second Chance Youth Mentoring, ~1,200 runners last year. Make it punchy, I'm meeting their marketing VP Thursday.",
+      "expected_output": "A one-pager that leads with audience fit and reach data rather than org history, shows the tier grid or the specific tier, and makes a named presenting-sponsor ask tied to the dealership's community footprint, with one clear next step.",
+      "assertions": [
+        "Leads with audience and reach (runner count, demographics, email and social reach) rather than opening with organizational history",
+        "Makes a specific, named presenting-sponsor ask tied to Fernandez Auto Group's own business and community presence instead of 'let us know what works for you'",
+        "Includes the tier benefits or tier grid so the prospect can compare levels",
+        "Ends with one clear next step and a point of contact",
+        "Uses bracketed placeholders or asks for any reach and demographic figures the user didn't provide, rather than inventing them"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Two things. Our sponsorship revenue for the Harvest Festival has been flat for 3 years and 4 of our 11 sponsors didn't renew — my ED thinks our deck is stale and wants a redesign. Also our Gold sponsor (a credit union, $5K) is asking us to add a 30-second ad in our program video saying their rates are the best in town and to give them 'exclusive financial sponsor' status. Is that reasonable for their tier?",
+      "expected_output": "Before redesigning the deck, the response says to audit fulfillment records. It declines the credit union's request as benefit creep: exclusivity belongs only in top tiers, and comparative advertising language raises qualified-sponsorship/UBIT issues that need finance review.",
+      "assertions": [
+        "Recommends auditing fulfillment records for prior sponsors before changing the pitch deck or pricing, noting that missed benefits are the most common cause of non-renewal",
+        "Recommends contacting the non-renewing sponsors directly rather than assuming budget was the reason",
+        "Says granting a Gold sponsor category exclusivity is benefit creep, since exclusivity belongs only in the top 1-2 tiers and erodes what top sponsors pay for",
+        "Flags the 'best rates in town' ad as advertising language beyond acknowledgment, with possible UBIT and deductibility implications, and routes it to finance review against current IRS qualified sponsorship guidance instead of giving a definitive tax ruling"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "The Acme Corp Foundation has an open RFP for community health grants — help me figure out if we're a fit and when it's due.", "better_skill": "nonprofit-grant-research"},
+    {"query": "Build the budget and run-of-show for our sponsored gala: venue, catering, auction logistics and volunteer roles.", "better_skill": "nonprofit-fundraising-events"}
+  ]
+}

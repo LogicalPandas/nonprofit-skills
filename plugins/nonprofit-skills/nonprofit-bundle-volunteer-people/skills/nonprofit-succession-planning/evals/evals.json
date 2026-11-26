@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-succession-planning",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm board chair of Valley Literacy Council in Yakima, WA ($1.8M, 22 staff). Our founder and ED, Margaret, started the org 27 years ago and told us she'll retire in June 2028. She holds nearly all the major donor relationships. We have a program director who might be a candidate. We've never done succession planning. What should the board do?",
+      "expected_output": "Separates an immediate emergency plan from a long-range plan, forms a transition committee, runs a readiness assessment naming founder's-syndrome and donor-concentration risk, assesses the internal candidate against a competency framework, decides the path, sets a realistic timeline and bounded handoff with donor re-introduction, routing search mechanics elsewhere.",
+      "assertions": [
+        "Distinguishes an emergency succession plan from a long-range succession plan and recommends ratifying an emergency plan now regardless of the known retirement",
+        "Recommends a separate transition committee of a few board members distinct from the standing governance committee",
+        "Explicitly names founder's-syndrome and donor-concentration risk and recommends a structured donor/funder relationship transfer plan",
+        "Recommends assessing the program director against a written leadership competency framework with a development plan, not tenure alone",
+        "Calls for a documented decision among internal promotion, open search, or interim-then-search, with a realistic search timeline and extra runway for a founder transition",
+        "Recommends defining Margaret's post-departure role with bounded authority and a capped handoff period to avoid shadow leadership, and hands search mechanics to the executive search skill"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "we don't have an emergency succession plan for our ED. can you give me one to fill in? small org, 6 staff, deputy director is Luis Ortega",
+      "expected_output": "A fill-in emergency succession plan naming the acting authority and backup, authority limits, board contact, signatory changes, document locations without passwords, communication order and the path to a longer-term decision, ratified by board vote with an annual review.",
+      "assertions": [
+        "Provides a template naming Luis Ortega as acting authority with a backup",
+        "Spells out what the acting leader may and may not do without board approval, including signing thresholds",
+        "Lists signatory changes (bank, payroll, grants portals) and where key accounts/documents are stored, explicitly without writing passwords into the plan",
+        "Requires ratification by board vote recorded in minutes with an annual review date and confirming named people have agreed",
+        "Includes notification order and a deadline for the board to meet to decide interim vs. search"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our ED had a stroke last night and won't be back for at least 3 months, maybe ever. We have no plan. The board is freaking out — some want to post the ED job tomorrow. What do we do this week?",
+      "expected_output": "Stands up emergency acting authority with defined limits immediately, warns against rushing an open search, and points to the interim workplan, communications and search skills for their parts.",
+      "assertions": [
+        "Recommends immediately naming an acting leader by board vote with written scope, authority limits and signing thresholds, plus a board point of contact",
+        "Advises against posting the ED job immediately, noting rushed searches are a common cause of failed placements and the board should first decide interim vs. search",
+        "Covers urgent signatory/account access steps (bank, payroll) owned by a named board officer",
+        "Defines an interim arrangement with a scope and end/review date rather than open-ended, routing the detailed interim workplan to the executive transitions skill",
+        "Routes staff/funder announcement drafting to the executive communications or change management skill"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Our ED is leaving in March — help us write the position profile and set the salary range for the search.",
+      "better_skill": "nonprofit-executive-search"
+    },
+    {
+      "query": "I'm the interim ED starting Monday — help me draft my 90-day workplan and mandate.",
+      "better_skill": "nonprofit-executive-transitions"
+    }
+  ]
+}

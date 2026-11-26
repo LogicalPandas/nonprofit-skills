@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-housing-development-finance",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Westgate Neighborhood Partners (CDC in Columbus, Ohio, $4M budget, we've done two small rehab projects but never new construction) has an option on a 2.1-acre parcel that's zoned for multifamily by right. We're thinking about 70 units of family rental at 30%, 50%, and 60% AMI. The city has said it might put $1.5M of HOME in. Should we pursue a 9% or a 4% deal, and what should the feasibility screen look like before we spend money on architecture?",
+      "expected_output": "A LIHTC feasibility screen that sets the program, prices credits for both 9% and 4%, documents the 4% bond-test route with counsel confirmation, identifies the real sources-and-uses gap and named sources, checks QAP TDC caps and other traps, and recommends an application cycle, plus a note on deal structure given limited capacity.",
+      "assertions": [
+        "Lays out the credit pricing logic (eligible basis × applicable fraction × credit rate × 10 years × investor price per credit) for both 9% and 4% screens",
+        "For the 4% option, requires documenting the applicable tax-exempt bond-financing test using building-and-land basis with dates, and having bond/tax counsel confirm it, rather than assuming a single universal 50% or 25% threshold",
+        "Distinguishes the bond-financing percentage from the funding gap and says not to call it a 4% deal if the gap needs a competitive 9% award",
+        "Flags HOME-specific requirements such as environmental review clearing before acquisition or construction commitments and Davis-Bacon on projects with 9+ HOME units",
+        "Recommends checking the current QAP, including per-unit TDC caps, before design proceeds",
+        "Ends with a feasibility screen memo or go/no-go memo specifying basis, credit type, equity at a stated price, the gap, named gap sources, and target cycle, and raises co-development or fee-developer options given the org's limited new-construction capacity"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "GC just sent draw #7 on our 52-unit senior project, $612k, and they're asking us to approve 3 change orders verbally so they don't lose a week. our construction lender wants sign-off by Friday. what do I check",
+      "expected_output": "A draw-review checklist: match to schedule of values and pay application, verify work-in-place with architect/inspector, hold retainage, no paying ahead of work; and a change-order rule requiring written approval with price, schedule impact, and funding source logged in a register before approval.",
+      "assertions": [
+        "Recommends matching the requisition to the schedule of values and pay application and verifying work-in-place with the architect or inspector before payment",
+        "Says to hold retainage and never approve a draw that pays ahead of completed work",
+        "Rejects verbal change-order approval: requires written approval before the work, with stated price, schedule impact, and funding source",
+        "Requires a change-order register with cumulative totals, and says no draw should be approved without a current register attached",
+        "Mentions monthly oversight items such as job cost vs budget or construction loan interest tracking"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "There's a 24-unit occupied apartment building in Eugene, OR that the owner will sell us for $3.1M if we close in 45 days. Board is excited — we could buy it outright with our reserves and a bridge loan, then apply for state HOME money and maybe CDBG to rehab it next year. Tenants would need to move out during the rehab. Can you help me prep the board resolution to close?",
+      "expected_output": "Warns against an unconditional close before financing is tested, flags that HUD environmental review must clear before acquisition commitments for HOME/CDBG to stay eligible, requires a URA relocation analysis before any tenant notice, and recommends option/phased control and a feasibility memo first, with counsel review.",
+      "assertions": [
+        "Warns against buying land or property before financing is tested and recommends option, extended due diligence, or phased closing instead",
+        "Flags that committing to acquisition before the HUD environmental review clears can make HOME/CDBG funds ineligible",
+        "Flags federal URA relocation requirements for the occupied building and says to run the relocation analysis before any notice to occupants",
+        "Notes small deal size (24 units) may struggle to carry the fixed costs of a layered capital stack",
+        "Recommends a go/no-go feasibility memo and counsel/CPA review before the board commits"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "We need a $6M capital campaign plan for our new housing building — feasibility study, lead gifts, and campaign cabinet.", "better_skill": "nonprofit-capital-campaigns"},
+    {"query": "Our LIHTC building placed in service last year — what do we need for the 8609s and the first-year tenant file compliance review?", "better_skill": "nonprofit-housing-lihtc-hud-compliance"}
+  ]
+}

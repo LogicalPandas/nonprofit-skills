@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-coalition-building",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Seven organizations in Minnesota — two food banks, a legal aid org, a tenants' union (it's a 501(c)(4)), two immigrant-serving nonprofits and a county public health association — want to work together to pass a state bill expanding school meal eligibility in the 2027 session. Nobody's in charge yet and we've only met twice. Can you propose how we should govern ourselves and draft the coalition MOU?",
+      "expected_output": "Recommends a deliberate governance model suited to seven members (steering committee by default), drafts an MOU covering all required sections, and flags lobbying-status differences among members, with ED review before signing.",
+      "assertions": [
+        "Recommends a specific governance model with rationale tied to coalition size (a steering committee for roughly 6–15 orgs) rather than defaulting to informal consensus",
+        "MOU draft includes purpose and scope with explicit out-of-scope items, membership criteria, and decision rules with thresholds that distinguish delegated vs. full-membership decisions",
+        "MOU includes a spokesperson/joint-statement approval protocol and a credit/visibility section",
+        "MOU includes resource/cost-sharing, exit and dissolution terms, and a sunset review date (e.g., end of session)",
+        "Flags that members have different lobbying statuses (e.g., the c4 vs. 501(h)-electing or non-electing c3s) and states each member tracks its own lobbying rather than the coalition absorbing that risk",
+        "Recommends each organization's ED or designee review the MOU before signing"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "ugh. one of our coalition partners just went to the Star Tribune and called the governor's budget 'a betrayal of working families' — totally off our agreed message and we're supposed to be nonpartisan-ish. what do we do now and how do we stop this happening again",
+      "expected_output": "Handles the immediate off-message incident and diagnoses the root cause, pointing to the spokesperson/messaging protocol, the coalition-says vs. members-may-say distinction, and whether the issue is governance or genuine strategic disagreement.",
+      "assertions": [
+        "Identifies the lack of (or breach of) a written spokesperson and messaging protocol as the core problem and recommends adding or enforcing it in the MOU",
+        "Distinguishes what the coalition says from what members may say individually in their own channels as long as they don't contradict the shared ask",
+        "Recommends a one-page shared message framework with the core ask, supporting points, and out-of-bounds framings",
+        "Suggests diagnosing whether the conflict is a governance gap or a real strategic disagreement, and if the latter, narrowing scope or splitting rather than forcing consensus",
+        "Recommends documenting how the disagreement was resolved (e.g., a decision log)"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "We're the backbone org for a 12-member coalition on paid family leave. We need to get a joint sign-on letter to the House Labor Committee before the hearing on March 3. Last time, one partner kept requesting edits for two weeks and we missed the window. Also — does signing this count toward everyone's lobbying limits, and can our coalition just handle that tracking centrally?",
+      "expected_output": "Sets up a locked, versioned sign-on process with a signature deadline and default-approve clause, and makes clear that each member tracks its own lobbying, routing detailed lobbying-limit questions to the appropriate skill/counsel.",
+      "assertions": [
+        "Recommends circulating a locked final draft with a firm signature deadline and publishing a dated, versioned final so a single signer can't hold the letter hostage",
+        "Recommends a default-approve clause or comment deadline for the review stage",
+        "States that each member organization is individually responsible for tracking its own lobbying and the coalition should not imply it absorbs that responsibility",
+        "Notes that members' lobbying statuses differ and routes detailed limit or classification questions to the lobbying-structure skill or counsel rather than resolving them inside the coalition",
+        "Works back from the March 3 hearing date to set internal comment and signature deadlines"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "I'm meeting our state senator's chief of staff Thursday about the paid leave bill — can you prep me with talking points and an ask?",
+      "better_skill": "nonprofit-legislative-advocacy"
+    },
+    {
+      "query": "Write an action alert asking our supporters to call their reps about the paid family leave bill before the committee vote.",
+      "better_skill": "nonprofit-grassroots-mobilization"
+    }
+  ]
+}

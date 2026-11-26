@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-housing-rapid-rehousing-transitional",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Family Bridges of Chattanooga (family shelter, $2.1M budget) just got a new CoC RRH award of $640K plus some ESG RRH from the city. We need to serve about 45 families in year one. Median 2BR asking rent here is a bit above FMR. Can you help me write the RRH program design — who gets what, staffing, budget, and outcome targets?",
+      "expected_output": "An RRH program design document covering population/eligibility with coordinated entry and PSH screening, the three core components with a dedicated landlord liaison and caseloads, progressive engagement, a budget sized from medians, a privately funded risk-mitigation fund, outcome targets, and a written-standards crosswalk distinguishing CoC vs ESG rules.",
+      "assertions": [
+        "Builds the design around the three RRH core components: housing identification, rental and move-in assistance, and voluntary case management",
+        "Distinguishes CoC and ESG RRH rules (e.g., ESG's 24-months-in-3-years limit and FMR/rent reasonableness; CoC deposit limits) and says local CoC written standards and ESG recipient caps override national defaults",
+        "Staffs a dedicated housing navigator/landlord liaison separate from case managers and states a case manager caseload range",
+        "Sizes the financial-assistance pool from expected medians rather than caps, and reports cost per household and cost per successful exit",
+        "Sets outcome targets including exits to permanent housing, days to move-in, returns to homelessness at 6/12/24 months, and unknown destinations under about 10%",
+        "Includes PSH screening at entry with coordinated entry as the referral path, and notes a knowledgeable staffer should check the design against current CoC written standards and HUD notices"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Our case managers in Boise are just cutting RRH rent help on a set schedule — 100% months 1-3, 50% months 4-6, then done. Families keep coming back to shelter. Need a progressive engagement assistance policy, short version.",
+      "expected_output": "A progressive-engagement financial assistance policy that starts with the least assistance, re-assesses at defined intervals, tapers only on documented income or rent-burden change, escalates in steps, tracks ESG cumulative months, and includes an exceptions process.",
+      "assertions": [
+        "Replaces calendar-based step-downs with tapering only on documented income or rent-burden change",
+        "Starts with the least assistance that resolves the episode and escalates in steps (one-time help → partial subsidy → full time-limited subsidy) tied to documented need",
+        "Sets defined re-assessment intervals (e.g., 30/60/90 days then monthly), ideally generating tasks in HMIS",
+        "Includes tracking of cumulative months of ESG assistance against the 24-months-in-3-years limit with early flags",
+        "Includes documentation requirements per step plus taper/termination rules and an exceptions process, and notes monthly case manager contact is required but services are not a condition of assistance"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our board in rural Garrett County, MD wants to convert our scattered-site RRH into an 18-month congregate transitional housing building for families, with mandatory sobriety and required life-skills classes, because 'RRH families aren't ready.' Several of our current families have a parent with serious mental illness who's been homeless for years. Write me the case for the board.",
+      "expected_output": "A TH-vs-RRH decision analysis for the named population using the matrix and Family Options evidence, noting legitimate TH signals (thin rural market) but warning that sobriety/required services produce poor exits, screening high-acuity long-homeless families for PSH first, and naming a metric that would prove the choice wrong.",
+      "assertions": [
+        "Applies the TH-vs-RRH decision matrix dimensions (market depth, income, barrier type, safety, population evidence, cost per exit) to this specific population",
+        "Cites the HUD Family Options Study finding that RRH exited families from shelter faster and cheaper than project-based TH, with benchmark costs flagged as study-era dollars to inflate",
+        "Flags that families with a parent with serious mental illness and long homelessness should be screened for PSH first, which outranks the TH/RRH choice",
+        "Warns that making sobriety or services a condition of TH housing produces poor exits and that services should be voluntary",
+        "Acknowledges a thin rural rental market as a legitimate TH signal and names a monitoring metric (e.g., exits to permanent housing or length of stay) that would prove the choice wrong within a year"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Plan our January Point-in-Time count: volunteers, canvass map, and survey instrument.", "better_skill": "nonprofit-housing-homelessness-services"},
+    {"query": "HUD is monitoring our CoC rapid rehousing grant next month — what files and APR documentation do they check?", "better_skill": "nonprofit-housing-lihtc-hud-compliance"}
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "skill_name": "nonprofit-donor-crm",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "Maple Valley Hospice Foundation ($2.3M, Vermont) has two fundraisers and a part-time data person. Donor data lives in Excel, an old DonorPerfect instance nobody fully trusts, and Mailchimp. Several board members want us to 'just buy Salesforce.' Help us pick a new CRM.",
+      "expected_output": "Frames the decision by tier fit, provides a weighted comparison matrix staff complete themselves with 3-year TCO and export rights, and runs discovery with development staff, verifying vendor details.",
+      "assertions": [
+        "Matches the organization to a CRM tier based on size and staffing before comparing features, addressing whether an enterprise system needing an admin fits",
+        "Provides a weighted comparison matrix that staff score themselves",
+        "Includes 3-year total cost of ownership covering license, implementation, migration and training",
+        "Includes data ownership and full export rights as a criterion",
+        "Recommends discovery that interviews the staff who touch donor data and looks for shadow spreadsheets",
+        "Tells the user to verify current vendor products and pricing"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "migrating ~9k records next month from spreadsheets + old system. spouses are separate rows, matching gifts were entered as regular gifts. how do i not screw this up",
+      "expected_output": "A pre-migration plan: record standard with households, field map, explicit soft-credit logic, and an audited test migration.",
+      "assertions": [
+        "Defines a constituent record standard including households (one record per person, not per gift)",
+        "Builds a field map and parks unmapped fields in custom fields rather than dropping data",
+        "Sets explicit soft-credit logic so spouse and matching gifts are not posted as duplicate hard credits",
+        "Recommends a test migration on a subset audited by two staff against source records",
+        "Picks a single source of truth per field when merging systems"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Our CRM is full of duplicates and our gala invitation went to the same household three times. Can you fix our data process and also write our year-end appeal with ask strings for each segment?",
+      "expected_output": "Sets up ongoing dedup, a data entry policy, a named CRM steward and NCOA, and hands the appeal copy and ask strings to the annual appeals skill.",
+      "assertions": [
+        "Recommends a dedup pass at least quarterly using the CRM's native or marketplace dedup tool",
+        "Recommends a written data entry policy with required fields and naming conventions",
+        "Recommends assigning a named CRM steward responsible for hygiene",
+        "Recommends NCOA or address updates before major mailings",
+        "Hands the appeal copy and ask strings to nonprofit-annual-appeals"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "Write ask strings for our lapsed-donor spring appeal",
+      "better_skill": "nonprofit-annual-appeals"
+    },
+    {
+      "query": "Set up a Classy peer-to-peer page for our 5K",
+      "better_skill": "nonprofit-digital-fundraising-tools"
+    }
+  ]
+}

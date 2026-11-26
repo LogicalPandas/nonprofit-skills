@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nonprofit-bundle-governance-compliance",
+  "version": "0.1.0",
+  "description": "Includes 6 nonprofit skills for Governance & Compliance.",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Governance & Compliance Bundle"
+      }
+    }
+  }
+}

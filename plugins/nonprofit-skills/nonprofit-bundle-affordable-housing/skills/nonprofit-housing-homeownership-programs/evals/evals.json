@@ -1,0 +1,49 @@
+{
+  "skill_name": "nonprofit-housing-homeownership-programs",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm the family services manager at Habitat for Humanity of the Coulee Region (La Crosse, WI). We build 5 homes a year and hold 0% mortgages in-house. Our homebuyer selection 'policy' is basically a two-paragraph memo from 2014, and the selection committee kind of decides based on interviews. Last cycle an applicant who was denied complained she never got a reason. Can you draft a real homebuyer selection policy we can take to the board in March?",
+      "expected_output": "A selection policy draft built on need, ability to pay, and willingness to partner with objective scored criteria, income band and limits table, ratio/residual thresholds, sweat equity and education requirements, committee conflict-of-interest and written-criteria rules, waitlist rules, written criteria-based denials with appeal, a rubric appendix, board adoption by resolution, and fair-housing review of risky criteria.",
+      "assertions": [
+        "Structures the policy around need for shelter, ability to pay, and willingness to partner, each with objective, verifiable criteria",
+        "Defines need as a scored checklist (e.g., overcrowding, cost burden, physical defects, instability) rather than a narrative impression",
+        "Includes committee rules: conflict-of-interest recusal and scoring against written criteria only, with a scoring rubric appendix",
+        "Requires written, criteria-based denial letters and an appeal path reviewed by someone not involved in the original decision",
+        "Flags criminal-history screens, credit-score cutoffs, or 'stable employment' language for fair-housing (disparate-impact) review and suggests alternative credit histories",
+        "Recommends board adoption by resolution and an annual update tied to HUD income-limit publication"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Can the Ramirez family afford House #3? Household gross income $3,400/mo. Our 0% first mortgage is 30 yrs. Taxes ~$220/mo and insurance ~$110/mo (local quotes). Our front-end ceiling is 30%. House price $195,000, they're putting $1,000 down. They have a $310/mo car payment and $90 in card minimums, 3 kids, currently paying $875 rent. Quick answer pls.",
+      "expected_output": "Runs the affordability worksheet: allowable housing payment, available P&I after taxes and insurance, supported 0% balance as payment × number of payments, reconciliation to price minus contribution, back-end ratio, residual income, and payment-shock check, stating the monthly payment and supported balance.",
+      "assertions": [
+        "Computes allowable monthly housing payment as income × 30% ($1,020) and subtracts taxes and insurance to get available P&I of about $690",
+        "Computes the supported 0% loan balance as monthly P&I × number of payments (about $690 × 360 ≈ $248,400), not confusing the payment with the balance",
+        "Reconciles the needed first mortgage (price minus buyer contribution, about $194,000) against the supported balance and states the resulting monthly P&I/PITI",
+        "Calculates a back-end ratio including the car payment and card minimums and compares it to a stated ceiling",
+        "Runs a residual-income check (noting household size) and a payment-shock comparison against current rent"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "One of our homeowners in Dayton (0% Habitat mortgage, closed 14 months ago) is now 60 days behind. Honestly nobody's talked to her since closing. Our treasurer wants to send it to our attorney to start foreclosure so it doesn't 'set a precedent.' What should we be doing?",
+      "expected_output": "Advises immediate live outreach and loss-mitigation offer, a documented escalation ladder (counseling, forbearance, modification, negative-equity options) with foreclosure as last resort, notes servicing-rule timelines to verify with counsel, a HUD-approved counseling referral, and a post-purchase contact plan to prevent recurrence.",
+      "assertions": [
+        "Recommends immediate live outreach and offering loss-mitigation options rather than proceeding straight to foreclosure",
+        "Lays out an escalation sequence: outreach → counseling → forbearance → modification → short sale/deed-in-lieu → foreclosure as last resort, documented in the servicing file",
+        "Notes that early-intervention servicing timelines (live contact and written loss-mitigation notice early in delinquency) may apply and should be verified with CFPB guidance and counsel",
+        "Recommends referral to a HUD-approved housing counseling agency and checking state assistance programs or legal aid",
+        "Recommends a post-purchase support plan with scheduled contacts (e.g., 30 days, 6 months, 12 months) to prevent recurrence"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Which resale formula should our community land trust use — shared appreciation or AMI-indexed? Show the worked comparison.", "better_skill": "nonprofit-housing-community-ownership"},
+    {"query": "Draft a build-day run-of-show for Saturday with 40 volunteers across two Habitat houses.", "better_skill": "nonprofit-housing-construction-volunteers"}
+  ]
+}

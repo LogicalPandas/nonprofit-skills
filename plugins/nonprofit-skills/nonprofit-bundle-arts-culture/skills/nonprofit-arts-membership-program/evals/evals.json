@@ -1,0 +1,48 @@
+{
+  "skill_name": "nonprofit-arts-membership-program",
+  "evals": [
+    {
+      "id": 1,
+      "type": "core",
+      "prompt": "I'm development director at the Bayside Contemporary Art Museum in Tampa (about $2.6M budget, 3,100 members). Our membership menu has seven tiers from $40 to $1,000, and the top three differ mostly by whose name gets listed on the donor wall. Front desk staff can't explain them, and our first-year renewal is around 45%. The ED wants a redesigned program for the July 2027 relaunch. Can you propose a new tier structure and pricing approach?",
+      "expected_output": "A 3-4 tier architecture (Individual, Household as the default, Patron as the bridge, optional young-patron tier) built on access benefits rather than recognition, with capped benefits and a fulfillment sheet, pricing anchored to single-ticket/admission value, the local market and the annual-fund entry ask, a per-tier deductible-portion calculation, and a first-60-day activation plan for first-year members.",
+      "assertions": [
+        "Recommends cutting to 3-4 tiers, with the Household/Dual tier positioned as the default offer",
+        "Identifies the recognition-based upper tiers as donor recognition/gift societies rather than membership and recommends access benefits lead, routing recognition-driven tiers to nonprofit-major-gifts",
+        "Anchors pricing first to the arithmetic value of benefits (the 'membership pays for itself' test), then to local comparables, then to the annual-fund entry ask",
+        "Caps countable benefits and calls for a benefit-fulfillment sheet with per-member cost and owner",
+        "Ties low first-year renewal to benefit activation and proposes a first-60-day welcome/activation sequence",
+        "Includes a per-tier deductible-portion (quid pro quo) disclosure and requires staff review before tiers, prices or deductibility statements are published"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "varied",
+      "prompt": "Our $95 household membership at the theater includes 4 member-price tickets, two free dress-rehearsal passes, and a logo tote at join plus a logo mug at renewal. Website says the whole $95 is tax-deductible. Is that right??",
+      "expected_output": "Explains that at $95 (over $75) with real benefits, a quid-pro-quo disclosure with a good-faith FMV estimate is required and the full amount is not deductible, that the disregard rules apply only at $75 or under, that tote and mug aggregate for the low-cost-article test, and gives one-line disclosure language, with current-year IRS figures to be verified.",
+      "assertions": [
+        "States that a payment over $75 with benefits requires a written disclosure that only the amount exceeding the fair market value of benefits is deductible, with a good-faith estimate of that value",
+        "Explains that the membership-benefit disregard rules apply only to dues of $75 or less, so the $95 tier must be valued",
+        "Notes the aggregation rule: multiple logo items to the same member in a calendar year count as one article for the low-cost test",
+        "Provides or describes a one-line disclosure for receipts/confirmation/webpage stating benefit value and deductible portion",
+        "Tells the user to verify the current-year inflation-adjusted IRS figures (e.g., low-cost article amount) at the source rather than relying on a remembered number"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "edge",
+      "prompt": "Members at our symphony aren't renewing — our marketing manager wants to fix it by turning membership into a 20% ticket discount and folding it into our subscription packages so it's simpler. Also she wants to start sending lapsed members a 'FINAL NOTICE' after a year. Good idea?",
+      "expected_output": "Pushes back on turning membership into a discount (the membership-as-discount war) and on merging it with subscriptions, keeps the subscriber/member/donor ladder distinct, replaces the shame-file approach with a T-60 to grace to 90-day winback sequence, and recommends tracking first-year and multi-year renewal separately; routes package pricing to the box-office skill.",
+      "assertions": [
+        "Warns that selling membership purely as a ticket discount makes renewal track the season's popularity, and recommends at least one non-ticket belonging benefit per tier",
+        "Distinguishes subscriptions (a product) from membership (belonging) and keeps them as separate rungs, routing subscription package design to nonprofit-arts-box-office-subscriptions",
+        "Lays out a timed renewal sequence (soft value touch around 60 days out, direct ask, deadline touches, grace window) and a short post-expiry winback (about 90 days) instead of a year-later final notice",
+        "Recommends tracking first-year and multi-year renewal rates separately because they need different fixes"
+      ]
+    }
+  ],
+  "should_not_trigger": [
+    {"query": "Should we switch from fixed subscriptions to a flex pass, and how should we price the credits?", "better_skill": "nonprofit-arts-box-office-subscriptions"},
+    {"query": "Draft our year-end direct mail appeal and a monthly giving upsell for the theater's annual fund.", "better_skill": "nonprofit-annual-appeals"}
+  ]
+}
