@@ -1,0 +1,45 @@
+name: Sync nonprofit skills marketplace
+
+on:
+  schedule:
+    - cron: '23 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nonprofit-skills-marketplace-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'LogicalPandas/nonprofit-skills' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Merge upstream main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch --no-tags https://github.com/sector-skills/nonprofit-skills.git main
+          base=$(git merge-base HEAD FETCH_HEAD)
+          if ! git diff --quiet "$base" FETCH_HEAD -- .github .agents plugins/nonprofit-skills; then
+            echo '::error::Upstream changed marketplace or workflow paths. Review before merging.'
+            exit 1
+          fi
+          git merge --no-edit FETCH_HEAD
+
+      - name: Build and publish marketplace
+        run: |
+          python3 .github/scripts/build_marketplace.py
+          git add -A -- .agents/plugins/marketplace.json plugins/nonprofit-skills
+          if ! git diff --cached --quiet; then
+            git commit -m 'Rebuild nonprofit skills marketplace'
+          fi
+          git push origin HEAD:main
