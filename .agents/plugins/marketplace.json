@@ -1,0 +1,20 @@
+{
+  "name": "nonprofit-skills-marketplace",
+  "interface": {
+    "displayName": "Nonprofit Skills Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "nonprofit-skills",
+      "source": {
+        "source": "local",
+        "path": "./nonprofit-skills-library"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
